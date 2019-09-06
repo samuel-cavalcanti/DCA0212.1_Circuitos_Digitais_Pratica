@@ -1,0 +1,42 @@
+|decodificador
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
