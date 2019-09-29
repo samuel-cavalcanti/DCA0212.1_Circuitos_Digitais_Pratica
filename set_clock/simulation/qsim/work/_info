@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/set_clock/simulation/qsim
+vset_clock
+Z1 !s100 R::9B1X?ldI_kS:GLW4Se0
+Z2 Il>IkCX6_JMDH_1cg5VGXW0
+Z3 VkFk@@]4aD68T;<emI]9k_3
+Z4 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/set_clock/simulation/qsim
+Z5 w1569614298
+Z6 8set_clock.vo
+Z7 Fset_clock.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|set_clock.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1569614298.977901
+Z12 !s107 set_clock.vo|
+!s101 -O0
+vset_clock_vlg_check_tst
+!i10b 1
+Z13 !s100 SJA^zU;o?Qn2PZc4NRckM2
+Z14 IQa@>mTFDTjYRC2gk]8_GZ1
+Z15 VCTZmCj6IYIG>z34[1@5n52
+R4
+Z16 w1569614294
+Z17 8set_clock.vt
+Z18 Fset_clock.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z19 !s108 1569614299.014410
+Z20 !s107 set_clock.vt|
+Z21 !s90 -work|work|set_clock.vt|
+!s101 -O0
+R10
+vset_clock_vlg_sample_tst
+!i10b 1
+Z22 !s100 60Rg3gSDhY<;aYjQDkBnE3
+Z23 I;`MBDlQz_dDj6nOK9z;JM2
+Z24 VmS:1DYRnC15:<JCQ?h8=M3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vset_clock_vlg_vec_tst
+!i10b 1
+Z25 !s100 HOR0oH>Bf>P6J:UYJo4DA0
+Z26 IQ5M?l:WTD4Yh`[:CidmMK0
+Z27 VB?ZbT7TEAz^`F4]h:ijiY1
+R4
+R16
+R17
+R18
+Z28 L0 312
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
