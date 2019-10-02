@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity pacemaker is 
+port (s :in bit;
+		p: out bit);
+end pacemaker;
+
+
+architecture behavior of pacemaker is 
+
+constant clock_frequency : integer :=100e6; -- 100 MHZ
+constant clock_period : time := 1000 ms / clock_frequency;
+signal clk : std_logic : ='1';
+
+signal t : bit: = '1';
+
+
+
+end behavior;

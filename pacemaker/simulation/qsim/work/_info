@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/simulation/qsim
+vcontraction
+Z1 IC@:5U3^S4jF698a?1WSkb2
+Z2 Vje[>[JB@;0E`AKZOjSQ8c1
+Z3 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/simulation/qsim
+Z4 w1569897051
+Z5 8pacemaker.vo
+Z6 Fpacemaker.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 N^P@^YF5>Z6ZeeAaX@?`[3
+Z10 !s108 1569897051.776816
+Z11 !s107 pacemaker.vo|
+Z12 !s90 -work|work|pacemaker.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontraction_vlg_check_tst
+Z13 I3d9N@E:23dFFGg5l_G8M>1
+Z14 V45EXeX7?1V4F6>G4V?C>J0
+R3
+Z15 w1569897048
+Z16 8pacemaker.vt
+Z17 Fpacemaker.vt
+L0 59
+R7
+r1
+31
+Z18 !s108 1569897051.827971
+Z19 !s107 pacemaker.vt|
+Z20 !s90 -work|work|pacemaker.vt|
+R8
+Z21 !s100 ?h9U=_l[`Q[I@fWX1>9=z2
+!i10b 1
+!s85 0
+!s101 -O0
+vcontraction_vlg_sample_tst
+Z22 IRRQL;YCMMlmeY`mZXfJ332
+Z23 V_zGJGCHo@7W6Cg`?8[4i^3
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z24 !s100 1RZgQOk:hSfgV:W<PQeoo3
+!i10b 1
+!s85 0
+!s101 -O0
+vcontraction_vlg_vec_tst
+Z25 IlO``VmlkYDEC3o4@l?bWZ1
+Z26 VA=@kZ@T64;EAG32]@6X:e2
+R3
+R15
+R16
+R17
+Z27 L0 154
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z28 !s100 zOj6U=AQLb_aHf[1M>UZF2
+!i10b 1
+!s85 0
+!s101 -O0
+vpacemaker_controller
+Z29 IEXI=CJJdXC=e5=zd>gz9f2
+Z30 V1D`6z6cF[oh1L?>1W4IG13
+R3
+Z31 w1569898058
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+!i10b 1
+Z32 !s100 alDnjXN5?4<i<azB:6MzE3
+!s85 0
+Z33 !s108 1569898059.083583
+R11
+!s101 -O0
+vpacemaker_controller_vlg_check_tst
+!i10b 1
+!s100 FAO=_aA4ejIRAj;k4OS4>0
+IfF`g?n9;QCFV2FJ@e[1l`0
+VM63k<DdM5mb>EV6iXQm^z2
+R3
+Z34 w1569898055
+R16
+R17
+L0 59
+R7
+r1
+!s85 0
+31
+Z35 !s108 1569898059.116301
+Z36 !s107 pacemaker.vt|
+R20
+!s101 -O0
+R8
+vpacemaker_controller_vlg_sample_tst
+!i10b 1
+!s100 nB91FPHZ9<UI:TD7hzoFI2
+I^`g3=ea=2zPX:UP_=V`Gz0
+Vf0;80l2LE6Ee:^z;;>mN80
+R3
+R34
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R35
+R36
+R20
+!s101 -O0
+R8
+vpacemaker_controller_vlg_vec_tst
+!i10b 1
+!s100 dW2TKT2]=d<XMKZ=JONRS1
+IDJQ@TOe>19GGZlEK_9AZV0
+VUV@n12ffbI`F7RIZjB6n[2
+R3
+R34
+R16
+R17
+L0 181
+R7
+r1
+!s85 0
+31
+R35
+R36
+R20
+!s101 -O0
+R8

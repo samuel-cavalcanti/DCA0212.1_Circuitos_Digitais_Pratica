@@ -1,0 +1,13 @@
+entity pacemaker_controller is
+port(s,z:in bit;
+	  t,p:out bit);
+end pacemaker_controller;
+
+architecture behavior of pacemaker_controller is 
+begin
+		
+		t <= not ( not s and  not z );
+		p <= not s and z;
+		
+end behavior;
+	

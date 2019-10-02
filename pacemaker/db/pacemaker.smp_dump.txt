@@ -1,0 +1,6 @@
+
+State Machine - |pacemaker|state
+Name state.contraction_state state.wait_state state.reset_timer_state 
+state.reset_timer_state 0 0 0 
+state.wait_state 0 1 1 
+state.contraction_state 1 0 1 

@@ -1,0 +1,77 @@
+|pacemaker
+recieved_contraction => state.OUTPUTSELECT
+recieved_contraction => state.OUTPUTSELECT
+recieved_contraction => state.OUTPUTSELECT
+make_contraction <= make_contraction~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pacemaker|timer:timer
+clock => milliseconds[0].CLK
+clock => milliseconds[1].CLK
+clock => milliseconds[2].CLK
+clock => milliseconds[3].CLK
+clock => milliseconds[4].CLK
+clock => milliseconds[5].CLK
+clock => milliseconds[6].CLK
+clock => milliseconds[7].CLK
+clock => milliseconds[8].CLK
+clock => milliseconds[9].CLK
+clock => milliseconds[10].CLK
+clock => milliseconds[11].CLK
+clock => milliseconds[12].CLK
+clock => milliseconds[13].CLK
+clock => milliseconds[14].CLK
+clock => milliseconds[15].CLK
+clock => milliseconds[16].CLK
+clock => milliseconds[17].CLK
+clock => milliseconds[18].CLK
+clock => milliseconds[19].CLK
+clock => milliseconds[20].CLK
+clock => milliseconds[21].CLK
+clock => milliseconds[22].CLK
+clock => milliseconds[23].CLK
+clock => milliseconds[24].CLK
+clock => milliseconds[25].CLK
+clock => milliseconds[26].CLK
+clock => milliseconds[27].CLK
+clock => milliseconds[28].CLK
+clock => milliseconds[29].CLK
+clock => milliseconds[30].CLK
+clock => milliseconds[31].CLK
+clock => time_is_over~reg0.CLK
+start_timer => time_is_over.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+start_timer => milliseconds.OUTPUTSELECT
+time_is_over <= time_is_over~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

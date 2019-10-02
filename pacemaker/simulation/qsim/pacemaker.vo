@@ -1,0 +1,230 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "09/30/2019 23:47:38"
+
+// 
+// Device: Altera EP2C35F672C6 Package FBGA672
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module pacemaker_controller (
+	s,
+	z,
+	t,
+	p);
+input 	s;
+input 	z;
+output 	t;
+output 	p;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \s~combout ;
+wire \z~combout ;
+wire \t~0_combout ;
+wire \p~0_combout ;
+
+
+cycloneii_io \s~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\s~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(s));
+// synopsys translate_off
+defparam \s~I .input_async_reset = "none";
+defparam \s~I .input_power_up = "low";
+defparam \s~I .input_register_mode = "none";
+defparam \s~I .input_sync_reset = "none";
+defparam \s~I .oe_async_reset = "none";
+defparam \s~I .oe_power_up = "low";
+defparam \s~I .oe_register_mode = "none";
+defparam \s~I .oe_sync_reset = "none";
+defparam \s~I .operation_mode = "input";
+defparam \s~I .output_async_reset = "none";
+defparam \s~I .output_power_up = "low";
+defparam \s~I .output_register_mode = "none";
+defparam \s~I .output_sync_reset = "none";
+// synopsys translate_on
+
+cycloneii_io \z~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\z~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(z));
+// synopsys translate_off
+defparam \z~I .input_async_reset = "none";
+defparam \z~I .input_power_up = "low";
+defparam \z~I .input_register_mode = "none";
+defparam \z~I .input_sync_reset = "none";
+defparam \z~I .oe_async_reset = "none";
+defparam \z~I .oe_power_up = "low";
+defparam \z~I .oe_register_mode = "none";
+defparam \z~I .oe_sync_reset = "none";
+defparam \z~I .operation_mode = "input";
+defparam \z~I .output_async_reset = "none";
+defparam \z~I .output_power_up = "low";
+defparam \z~I .output_register_mode = "none";
+defparam \z~I .output_sync_reset = "none";
+// synopsys translate_on
+
+cycloneii_lcell_comb \t~0 (
+// Equation(s):
+// \t~0_combout  = (\s~combout ) # (\z~combout )
+
+	.dataa(\s~combout ),
+	.datab(\z~combout ),
+	.datac(vcc),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\t~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \t~0 .lut_mask = 16'hEEEE;
+defparam \t~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_lcell_comb \p~0 (
+// Equation(s):
+// \p~0_combout  = (\z~combout  & !\s~combout )
+
+	.dataa(\z~combout ),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\s~combout ),
+	.cin(gnd),
+	.combout(\p~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \p~0 .lut_mask = 16'h00AA;
+defparam \p~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneii_io \t~I (
+	.datain(\t~0_combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(t));
+// synopsys translate_off
+defparam \t~I .input_async_reset = "none";
+defparam \t~I .input_power_up = "low";
+defparam \t~I .input_register_mode = "none";
+defparam \t~I .input_sync_reset = "none";
+defparam \t~I .oe_async_reset = "none";
+defparam \t~I .oe_power_up = "low";
+defparam \t~I .oe_register_mode = "none";
+defparam \t~I .oe_sync_reset = "none";
+defparam \t~I .operation_mode = "output";
+defparam \t~I .output_async_reset = "none";
+defparam \t~I .output_power_up = "low";
+defparam \t~I .output_register_mode = "none";
+defparam \t~I .output_sync_reset = "none";
+// synopsys translate_on
+
+cycloneii_io \p~I (
+	.datain(\p~0_combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(p));
+// synopsys translate_off
+defparam \p~I .input_async_reset = "none";
+defparam \p~I .input_power_up = "low";
+defparam \p~I .input_register_mode = "none";
+defparam \p~I .input_sync_reset = "none";
+defparam \p~I .oe_async_reset = "none";
+defparam \p~I .oe_power_up = "low";
+defparam \p~I .oe_register_mode = "none";
+defparam \p~I .oe_sync_reset = "none";
+defparam \p~I .operation_mode = "output";
+defparam \p~I .output_async_reset = "none";
+defparam \p~I .output_power_up = "low";
+defparam \p~I .output_register_mode = "none";
+defparam \p~I .output_sync_reset = "none";
+// synopsys translate_on
+
+endmodule

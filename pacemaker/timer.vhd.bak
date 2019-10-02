@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity timer is 
+generic (clock_frequency_Hz : integer);
+port( clk : in std_logic;
+		reset : in std_logic;
+		z : out std_logic);
+end entity;
+
+architecture behavior of timer is 
+	signal count_period_clock : integer;
+	
+	
+	begin
+	
+		process (clk) is begin
+		
+			if rising_edge(clk) then
+				
+				if count_period_clock = 799 then
+					reset <= '1';
+					z <= '1';
+				else
+					z <= '0';
+				end if;
+				
+				if reset = '1' then
+					count_period_clock <= 0;
+				end if;
+				
+			end if;
+		end process;
+		
+end architecture;
+	
