@@ -1,0 +1,35 @@
+|ffd
+input_data[0] => data[0]~reg0.DATAIN
+input_data[1] => data[1]~reg0.DATAIN
+input_data[2] => data[2]~reg0.DATAIN
+input_data[3] => data[3]~reg0.DATAIN
+input_data[4] => data[4]~reg0.DATAIN
+input_data[5] => data[5]~reg0.DATAIN
+input_data[6] => data[6]~reg0.DATAIN
+input_data[7] => data[7]~reg0.DATAIN
+load => data[0]~reg0.ENA
+load => data[1]~reg0.ENA
+load => data[2]~reg0.ENA
+load => data[3]~reg0.ENA
+load => data[4]~reg0.ENA
+load => data[5]~reg0.ENA
+load => data[6]~reg0.ENA
+load => data[7]~reg0.ENA
+clock => data[0]~reg0.CLK
+clock => data[1]~reg0.CLK
+clock => data[2]~reg0.CLK
+clock => data[3]~reg0.CLK
+clock => data[4]~reg0.CLK
+clock => data[5]~reg0.CLK
+clock => data[6]~reg0.CLK
+clock => data[7]~reg0.CLK
+data[0] << data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[1] << data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[2] << data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[3] << data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[4] << data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[5] << data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[6] << data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[7] << data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
