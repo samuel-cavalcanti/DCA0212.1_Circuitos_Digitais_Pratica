@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity register_bank is 
+
+port ( index : in std_logic_vector (3 downto 0);
+		input_data : in std_logic_vector (7 downto 0);
+		write_option : in std_logic;
+		output_data : in std_logic_vector (7 downto 0));
+
+end entity;
