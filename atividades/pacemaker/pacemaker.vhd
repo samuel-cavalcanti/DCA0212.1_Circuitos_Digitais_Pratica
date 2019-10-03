@@ -21,15 +21,7 @@ type t_state is (reset_timer_state, wait_state, contraction_state);
 signal state : t_state;
 
 
-begin
-
---	pace_controller : entity work.pacemaker_controller(behavior)
-	--port map(
-	-- recieved_contraction => recieved_contraction,
-	-- time_is_over => time_is_over,
-	-- start_timer => start_timer,
-	-- make_contraction => make_contraction);
-	 
+begin	 
 	 timer : entity work.timer(behavior)
 	 port map (
 		clock => clock,
@@ -46,25 +38,25 @@ begin
 			when reset_timer_state =>
 				make_contraction <= '0';
 				start_timer <= '1';
-			
+				state <= wait_state;
+				
 			when wait_state =>
 				if recieved_contraction = '1'then
 					start_timer <= '0';
 					state <= reset_timer_state;
 				elsif time_is_over = '1' then
 					state <= contraction_state;
+				else
+					state <= wait_state;
 				end if;
 								
 			when contraction_state =>
 			 make_contraction <='1';
 			 start_timer <= '0';
 			 state <= reset_timer_state;
-			 
-			
 			
 		end case;
 		
-	
 	end process;
 		
 end architecture;

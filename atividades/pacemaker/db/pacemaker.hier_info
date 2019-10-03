@@ -2,7 +2,7 @@
 recieved_contraction => start_timer.OUTPUTSELECT
 recieved_contraction => state.OUTPUTSELECT
 recieved_contraction => state.OUTPUTSELECT
-recieved_contraction => state.OUTPUTSELECT
+recieved_contraction => Selector2.IN2
 make_contraction <= make_contraction~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
