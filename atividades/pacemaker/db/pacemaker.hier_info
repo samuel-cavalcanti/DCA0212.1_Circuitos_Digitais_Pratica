@@ -1,4 +1,5 @@
 |pacemaker
+recieved_contraction => start_timer.OUTPUTSELECT
 recieved_contraction => state.OUTPUTSELECT
 recieved_contraction => state.OUTPUTSELECT
 recieved_contraction => state.OUTPUTSELECT

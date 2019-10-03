@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pacemaker
-Tue Oct  1 16:24:22 2019
+Thu Oct  3 13:41:18 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct  1 16:24:22 2019           ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct  3 13:41:18 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pacemaker                                       ;
 ; Top-level Entity Name              ; pacemaker                                       ;
@@ -157,14 +157,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                   ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------+---------+
-; pacemaker.vhd                    ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/pacemaker.vhd ;         ;
-; timer.vhd                        ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/timer.vhd     ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+; pacemaker.vhd                    ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/pacemaker.vhd ;         ;
+; timer.vhd                        ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/timer.vhd     ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -279,7 +279,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Oct  1 16:24:20 2019
+    Info: Processing started: Thu Oct  3 13:41:16 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pacemaker -c pacemaker
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file pacemaker_controller.vhd
@@ -303,9 +303,9 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 1 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 617 megabytes
-    Info: Processing ended: Tue Oct  1 16:24:22 2019
+    Info: Peak virtual memory: 620 megabytes
+    Info: Processing ended: Thu Oct  3 13:41:18 2019
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

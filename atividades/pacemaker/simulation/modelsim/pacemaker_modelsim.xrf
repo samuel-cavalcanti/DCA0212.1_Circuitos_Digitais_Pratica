@@ -1,9 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/pacemaker_controller.vhd
-source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/Waveform.vwf
-source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/pacemaker.vhd
-source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/timer.vhd
-source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/pacemaker/db/pacemaker.cbx.xml
+source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/pacemaker_controller.vhd
+source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/Waveform.vwf
+source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/pacemaker.vhd
+source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/timer.vhd
+source_file = 1, /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/db/pacemaker.cbx.xml
 source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /opt/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd

@@ -48,8 +48,8 @@ begin
 				start_timer <= '1';
 			
 			when wait_state =>
-			
 				if recieved_contraction = '1'then
+					start_timer <= '0';
 					state <= reset_timer_state;
 				elsif time_is_over = '1' then
 					state <= contraction_state;
