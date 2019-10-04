@@ -8,20 +8,19 @@ port( clock : in std_logic;
 end entity;
 
 architecture behavior of timer is 
-	signal milliseconds : integer;
-	
+	signal milliseconds : integer range 0 to 800 ;
 	
 	begin
 	
 		process (clock) is begin
 		
-			if rising_edge(clock) then
-				
+			if (clock'event and clock ='1') then
 				
 				if start_timer = '1' then 
 						
-					if milliseconds = 799 then -- 800ms = 0.8s 
+					if milliseconds = 800 then -- 800ms = 0.8s 
 						time_is_over <= '1';
+						milliseconds <= 0;
 					else
 						milliseconds <= milliseconds + 1;
 					end if;

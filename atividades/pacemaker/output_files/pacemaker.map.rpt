@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pacemaker
-Thu Oct  3 13:52:36 2019
+Fri Oct  4 14:57:22 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,13 +13,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |pacemaker|state
-  9. Logic Cells Representing Combinational Loops
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. State Machine - |pacemaker|next_state
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct  3 13:52:36 2019           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct  4 14:57:22 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pacemaker                                       ;
 ; Top-level Entity Name              ; pacemaker                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 82                                              ;
-;     Total combinational functions  ; 82                                              ;
-;     Dedicated logic registers      ; 38                                              ;
-; Total registers                    ; 38                                              ;
-; Total pins                         ; 2                                               ;
+; Total logic elements               ; 21                                              ;
+;     Total combinational functions  ; 21                                              ;
+;     Dedicated logic registers      ; 16                                              ;
+; Total registers                    ; 16                                              ;
+; Total pins                         ; 3                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -67,6 +65,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
 ; Top-level entity name                                                      ; pacemaker          ; pacemaker          ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -167,34 +166,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 82            ;
-;                                             ;               ;
-; Total combinational functions               ; 82            ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 12            ;
-;     -- 3 input functions                    ; 5             ;
-;     -- <=2 input functions                  ; 65            ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 51            ;
-;     -- arithmetic mode                      ; 31            ;
-;                                             ;               ;
-; Total registers                             ; 38            ;
-;     -- Dedicated logic registers            ; 38            ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 2             ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
-; Maximum fan-out node                        ; start_timer~1 ;
-; Maximum fan-out                             ; 39            ;
-; Total fan-out                               ; 301           ;
-; Average fan-out                             ; 2.47          ;
-+---------------------------------------------+---------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 21    ;
+;                                             ;       ;
+; Total combinational functions               ; 21    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 6     ;
+;     -- 3 input functions                    ; 4     ;
+;     -- <=2 input functions                  ; 11    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 12    ;
+;     -- arithmetic mode                      ; 9     ;
+;                                             ;       ;
+; Total registers                             ; 16    ;
+;     -- Dedicated logic registers            ; 16    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 3     ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 16    ;
+; Total fan-out                               ; 100   ;
+; Average fan-out                             ; 2.50  ;
++---------------------------------------------+-------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -202,33 +201,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------+--------------+
-; |pacemaker                 ; 82 (6)            ; 38 (5)       ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |pacemaker             ; work         ;
-;    |timer:timer|           ; 76 (76)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pacemaker|timer:timer ; work         ;
+; |pacemaker                 ; 21 (5)            ; 16 (5)       ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |pacemaker             ; work         ;
+;    |timer:timer|           ; 16 (16)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pacemaker|timer:timer ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------+
-; State Machine - |pacemaker|state                                                               ;
-+-------------------------+-------------------------+------------------+-------------------------+
-; Name                    ; state.contraction_state ; state.wait_state ; state.reset_timer_state ;
-+-------------------------+-------------------------+------------------+-------------------------+
-; state.reset_timer_state ; 0                       ; 0                ; 0                       ;
-; state.wait_state        ; 0                       ; 1                ; 1                       ;
-; state.contraction_state ; 1                       ; 0                ; 1                       ;
-+-------------------------+-------------------------+------------------+-------------------------+
-
-
-+------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops               ;
-+--------------------------------------------------------+---+
-; Logic Cell Name                                        ;   ;
-+--------------------------------------------------------+---+
-; start_timer~0                                          ;   ;
-; Number of logic cells representing combinational loops ; 1 ;
-+--------------------------------------------------------+---+
-Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
++--------------------------------------------------------------------------------------------------------------------+
+; State Machine - |pacemaker|next_state                                                                              ;
++------------------------------+------------------------------+-----------------------+------------------------------+
+; Name                         ; next_state.contraction_state ; next_state.wait_state ; next_state.reset_timer_state ;
++------------------------------+------------------------------+-----------------------+------------------------------+
+; next_state.reset_timer_state ; 0                            ; 0                     ; 0                            ;
+; next_state.wait_state        ; 0                            ; 1                     ; 1                            ;
+; next_state.contraction_state ; 1                            ; 0                     ; 1                            ;
++------------------------------+------------------------------+-----------------------+------------------------------+
 
 
 +------------------------------------------------------+
@@ -236,35 +224,23 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 38    ;
-; Number of registers using Synchronous Clear  ; 1     ;
+; Total registers                              ; 16    ;
+; Number of registers using Synchronous Clear  ; 10    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; timer:timer|milliseconds[0]            ; 2       ;
-; timer:timer|milliseconds[31]           ; 2       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |pacemaker|timer:timer|milliseconds[15] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |pacemaker|timer:timer|milliseconds[0]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |pacemaker|timer:timer|milliseconds[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
 +-------------------------------+
@@ -282,7 +258,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct  3 13:52:35 2019
+    Info: Processing started: Fri Oct  4 14:57:21 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pacemaker -c pacemaker
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file pacemaker_controller.vhd
@@ -295,16 +271,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file timer.v
     Info (12022): Found design unit 1: timer-behavior
     Info (12023): Found entity 1: timer
 Info (12127): Elaborating entity "pacemaker" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at pacemaker.vhd(34): signal "next_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12129): Elaborating entity "timer" using architecture "A:behavior" for hierarchy "timer:timer"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
+Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 82 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 612 megabytes
-    Info: Processing ended: Thu Oct  3 13:52:36 2019
+    Info (21061): Implemented 21 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 623 megabytes
+    Info: Processing ended: Fri Oct  4 14:57:22 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 

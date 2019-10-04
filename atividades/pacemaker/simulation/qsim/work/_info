@@ -79,11 +79,11 @@ Z28 !s100 zOj6U=AQLb_aHf[1M>UZF2
 !i10b 1
 !s85 0
 !s101 -O0
-vpacemaker_controller
-Z29 IEXI=CJJdXC=e5=zd>gz9f2
-Z30 V1D`6z6cF[oh1L?>1W4IG13
-R3
-Z31 w1569898058
+vpacemaker
+Z29 IeGY`_md[J44IPaZiMO8bl2
+Z30 V9mXU=CaY33e^j9bb`8ODT1
+Z31 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/simulation/qsim
+Z32 w1570210388
 R5
 R6
 L0 31
@@ -93,18 +93,94 @@ r1
 R12
 R8
 !i10b 1
-Z32 !s100 alDnjXN5?4<i<azB:6MzE3
+Z33 !s100 ?4E0ETM_I7J9`@c@]GDTK3
 !s85 0
-Z33 !s108 1569898059.083583
+Z34 !s108 1570210389.225761
 R11
 !s101 -O0
-vpacemaker_controller_vlg_check_tst
-!i10b 1
-!s100 FAO=_aA4ejIRAj;k4OS4>0
-IfF`g?n9;QCFV2FJ@e[1l`0
-VM63k<DdM5mb>EV6iXQm^z2
+vpacemaker_controller
+Z35 IEXI=CJJdXC=e5=zd>gz9f2
+Z36 V1D`6z6cF[oh1L?>1W4IG13
 R3
-Z34 w1569898055
+Z37 w1569898058
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+Z38 !s100 alDnjXN5?4<i<azB:6MzE3
+Z39 !s108 1569898059.083583
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vpacemaker_controller_vlg_check_tst
+Z40 IfF`g?n9;QCFV2FJ@e[1l`0
+Z41 VM63k<DdM5mb>EV6iXQm^z2
+R3
+Z42 w1569898055
+R16
+R17
+L0 59
+R7
+r1
+31
+Z43 !s108 1569898059.116301
+R19
+R20
+R8
+Z44 !s100 FAO=_aA4ejIRAj;k4OS4>0
+!i10b 1
+!s85 0
+!s101 -O0
+vpacemaker_controller_vlg_sample_tst
+Z45 I^`g3=ea=2zPX:UP_=V`Gz0
+Z46 Vf0;80l2LE6Ee:^z;;>mN80
+R3
+R42
+R16
+R17
+L0 29
+R7
+r1
+31
+R43
+R19
+R20
+R8
+Z47 !s100 nB91FPHZ9<UI:TD7hzoFI2
+!i10b 1
+!s85 0
+!s101 -O0
+vpacemaker_controller_vlg_vec_tst
+Z48 IDJQ@TOe>19GGZlEK_9AZV0
+Z49 VUV@n12ffbI`F7RIZjB6n[2
+R3
+R42
+R16
+R17
+Z50 L0 181
+R7
+r1
+31
+R43
+R19
+R20
+R8
+Z51 !s100 dW2TKT2]=d<XMKZ=JONRS1
+!i10b 1
+!s85 0
+!s101 -O0
+vpacemaker_vlg_check_tst
+!i10b 1
+Z52 !s100 0Hmn>d5fb<i=4j320i?8D0
+Z53 I1@EDR=@m[1]K=Q5O_z0e53
+Z54 V2[Plc=40Co07h3Q<GL3?P1
+R31
+Z55 w1570210386
 R16
 R17
 L0 59
@@ -112,18 +188,18 @@ R7
 r1
 !s85 0
 31
-Z35 !s108 1569898059.116301
-Z36 !s107 pacemaker.vt|
+Z56 !s108 1570210389.269565
+Z57 !s107 pacemaker.vt|
 R20
 !s101 -O0
 R8
-vpacemaker_controller_vlg_sample_tst
+vpacemaker_vlg_sample_tst
 !i10b 1
-!s100 nB91FPHZ9<UI:TD7hzoFI2
-I^`g3=ea=2zPX:UP_=V`Gz0
-Vf0;80l2LE6Ee:^z;;>mN80
-R3
-R34
+Z58 !s100 9gWVB_;_ZkO@D?MlgR?GI3
+Z59 IhBMdo^9N2hjXbfk@B4c7K3
+Z60 V;ljV2ZoKG0oM4M99jc]^O1
+R31
+R55
 R16
 R17
 L0 29
@@ -131,27 +207,103 @@ R7
 r1
 !s85 0
 31
-R35
-R36
+R56
+R57
 R20
 !s101 -O0
 R8
-vpacemaker_controller_vlg_vec_tst
+vpacemaker_vlg_vec_tst
 !i10b 1
-!s100 dW2TKT2]=d<XMKZ=JONRS1
-IDJQ@TOe>19GGZlEK_9AZV0
-VUV@n12ffbI`F7RIZjB6n[2
-R3
-R34
+Z61 !s100 AAe7Qd=nHF`;6>L7=l?EQ3
+Z62 I1MU6;YHmgAk5:gJ0QX1KV3
+Z63 VOn8f4d5GFaZOOTnh9<m@Q3
+R31
+R55
 R16
 R17
-L0 181
+R27
 R7
 r1
 !s85 0
 31
-R35
-R36
+R56
+R57
 R20
 !s101 -O0
 R8
+vtimer
+Z64 ID6]Sz97>H4NZhNCJbFi1P2
+Z65 Vob`L[R6WZ9We?7Yoh72U^2
+R31
+Z66 w1570202373
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+Z67 !s100 hA2]n^UfZ=66W^@YW4gBk2
+Z68 !s108 1570202374.497925
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vtimer_vlg_check_tst
+Z69 !s100 ?Xo^AbC^kl0Xg4X>]HH<83
+Z70 I1eBK`<nEJTBbM?lVd_oPl2
+Z71 VH>iTeBeQGfWzj7J<Dob@53
+R31
+Z72 w1570202370
+R16
+R17
+L0 59
+R7
+r1
+31
+Z73 !s108 1570202374.556397
+R19
+R20
+R8
+!i10b 1
+!s85 0
+!s101 -O0
+vtimer_vlg_sample_tst
+Z74 !s100 AG=la=RR[[[U]XbZ@fLlb2
+Z75 IUQmc7MVO9KIO1[eL62Q7d1
+Z76 VIDPIC4gaoGCXm^>Cmg`_91
+R31
+R72
+R16
+R17
+L0 29
+R7
+r1
+31
+R73
+R19
+R20
+R8
+!i10b 1
+!s85 0
+!s101 -O0
+vtimer_vlg_vec_tst
+Z77 !s100 GJN@f^UcI?6oX=2MKiFCW3
+Z78 I91jJgVmJa>NJCGoReVzZH2
+Z79 VAl?cbDe7`4Fcm]j;8m6Cc1
+R31
+R72
+R16
+R17
+Z80 L0 771
+R7
+r1
+31
+R73
+R19
+R20
+R8
+!i10b 1
+!s85 0
+!s101 -O0
