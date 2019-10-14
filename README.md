@@ -10,6 +10,8 @@ atividades e exercícios dados em sala aula da disciplina Circuitos digitais
 
 - [marca-passo](atividades/pacemaker)
 
+- [medidor de  distância ](atividades/utrasonic_decision)
+
 
 ## exercícios dados em aula  
 

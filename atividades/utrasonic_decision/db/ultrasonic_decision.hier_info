@@ -1,11 +1,21 @@
-|ultrasonic_decision
-start_button => current_state.OUTPUTSELECT
-start_button => current_state.OUTPUTSELECT
-start_button => current_state.OUTPUTSELECT
-start_button => current_state.OUTPUTSELECT
-clock => current_state~5.DATAIN
-decision_array[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-decision_array[1] <= decision_array[1].DB_MAX_OUTPUT_PORT_TYPE
-decision_array[2] <= decision_array[2].DB_MAX_OUTPUT_PORT_TYPE
+|frequency_divider
+current_frequency => out_frequency~reg0.CLK
+current_frequency => frequency_counter[0].CLK
+current_frequency => frequency_counter[1].CLK
+current_frequency => frequency_counter[2].CLK
+current_frequency => frequency_counter[3].CLK
+current_frequency => frequency_counter[4].CLK
+current_frequency => frequency_counter[5].CLK
+current_frequency => frequency_counter[6].CLK
+current_frequency => frequency_counter[7].CLK
+current_frequency => frequency_counter[8].CLK
+current_frequency => frequency_counter[9].CLK
+current_frequency => frequency_counter[10].CLK
+current_frequency => frequency_counter[11].CLK
+current_frequency => frequency_counter[12].CLK
+current_frequency => frequency_counter[13].CLK
+current_frequency => frequency_counter[14].CLK
+current_frequency => frequency_counter[15].CLK
+out_frequency <> out_frequency~reg0
 
 
