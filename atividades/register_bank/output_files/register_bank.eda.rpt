@@ -1,5 +1,5 @@
 EDA Netlist Writer report for register_bank
-Thu Oct  3 11:10:53 2019
+Mon Oct 14 15:21:43 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct  3 11:10:53 2019 ;
+; EDA Netlist Writer Status ; Successful - Mon Oct 14 15:21:43 2019 ;
 ; Revision Name             ; register_bank                         ;
 ; Top-level Entity Name     ; register_bank                         ;
 ; Family                    ; Cyclone II                            ;
@@ -44,38 +44,34 @@ applicable agreement for further details.
 +---------------------------+---------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                        ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-; Option                                                                                            ; Setting                ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate netlist for functional simulation only                                                   ; Off                    ;
-; Time scale                                                                                        ; 1 ps                   ;
-; Truncate long hierarchy paths                                                                     ; Off                    ;
-; Map illegal HDL characters                                                                        ; Off                    ;
-; Flatten buses into individual nodes                                                               ; Off                    ;
-; Maintain hierarchy                                                                                ; Off                    ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
-; Enable glitch filtering                                                                           ; Off                    ;
-; Do not write top level VHDL entity                                                                ; Off                    ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
-; Architecture name in VHDL output netlist                                                          ; structure              ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
-+---------------------------------------------------------------------------------------------------+------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Option                                                                                            ; Setting                   ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
+; Generate netlist for functional simulation only                                                   ; On                        ;
+; Truncate long hierarchy paths                                                                     ; Off                       ;
+; Map illegal HDL characters                                                                        ; Off                       ;
+; Flatten buses into individual nodes                                                               ; Off                       ;
+; Maintain hierarchy                                                                                ; Off                       ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
+; Enable glitch filtering                                                                           ; Off                       ;
+; Do not write top level VHDL entity                                                                ; Off                       ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
+; Architecture name in VHDL output netlist                                                          ; structure                 ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
++---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                          ;
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                     ;
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/register_bank/simulation/modelsim/register_bank.vho          ;
-; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/register_bank/simulation/modelsim/register_bank_fast.vho     ;
-; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/register_bank/simulation/modelsim/register_bank_vhd.sdo      ;
-; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/register_bank/simulation/modelsim/register_bank_vhd_fast.sdo ;
-+-------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                           ;
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                      ;
++--------------------------------------------------------------------------------------------------------------------------------------+
+; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/register_bank/simulation/modelsim/register_bank.vo ;
++--------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct  3 11:10:52 2019
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off register_bank -c register_bank
-Info (204026): Generated files "register_bank.vho", "register_bank_fast.vho", "register_bank_vhd.sdo" and "register_bank_vhd_fast.sdo" in directory "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/register_bank/simulation/modelsim/" for EDA simulation tool
+    Info: Processing started: Mon Oct 14 15:21:43 2019
+Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog register_bank -c register_bank
+Info (204019): Generated file register_bank.vo in folder "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/register_bank/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 792 megabytes
-    Info: Processing ended: Thu Oct  3 11:10:53 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 783 megabytes
+    Info: Processing ended: Mon Oct 14 15:21:43 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

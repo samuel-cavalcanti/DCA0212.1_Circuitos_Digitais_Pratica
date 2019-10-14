@@ -7,7 +7,7 @@ entity register_bank is
 port ( index : in std_logic_vector (3 downto 0);
 		input_data : in std_logic_vector (7 downto 0);
 		write_option : in std_logic;
-		read_option : in std_logic;
+		read_option : in std_logic_vector (7 downto 0);
 		output_data : out std_logic_vector (7 downto 0));
 
 end entity;
@@ -22,9 +22,6 @@ signal outputs : all_registers_output;
 type four_registers is array(0 to 3) of std_logic_vector(7 downto 0);
 signal output_for_ors : four_registers;
  
-
-constant clock_frequency : integer :=100e6; -- 100 MHZ
-constant clock_period : time := 1000 ms / clock_frequency;
 
 begin
 	
@@ -73,25 +70,9 @@ begin
 			vec3 => output_for_ors(2),
 			vec4 => output_for_ors(3),
 			output_vec => registers_output);
-
+			
 	
-	clock <= not clock after clock_period /2;
-	
-	process (clock,read_option)
-	begin
-			if clock'event and clock ='1' then
-		
-				
-				if read_option = '1' then
-					output_data <= registers_output;
-				else
-					output_data <= "00000000";
-				
-				end if;
-				
-				
+	output_data <= registers_output and read_option ;
 
-			end if;
-	end process;
 	
 end architecture;

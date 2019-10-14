@@ -1,0 +1,60 @@
+$comment
+	File created using the following command:
+		vcd file register_bank.msim.vcd -direction
+$end
+$date
+	Mon Oct 14 15:21:44 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module register_bank_vlg_vec_tst $end
+$var reg 4 ! index [3:0] $end
+$var reg 8 " input_data [7:0] $end
+$var reg 8 # read_option [7:0] $end
+$var reg 1 $ write_option $end
+$var wire 1 % output_data [7] $end
+$var wire 1 & output_data [6] $end
+$var wire 1 ' output_data [5] $end
+$var wire 1 ( output_data [4] $end
+$var wire 1 ) output_data [3] $end
+$var wire 1 * output_data [2] $end
+$var wire 1 + output_data [1] $end
+$var wire 1 , output_data [0] $end
+$var wire 1 - sampler $end
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b1010 "
+b11111111 #
+1$
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+x-
+0.
+1/
+x0
+11
+12
+13
+$end
+#1000000

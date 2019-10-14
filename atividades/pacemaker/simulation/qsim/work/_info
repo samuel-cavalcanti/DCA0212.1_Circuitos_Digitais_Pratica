@@ -80,10 +80,11 @@ Z28 !s100 zOj6U=AQLb_aHf[1M>UZF2
 !s85 0
 !s101 -O0
 vpacemaker
-Z29 IeGY`_md[J44IPaZiMO8bl2
-Z30 V9mXU=CaY33e^j9bb`8ODT1
-Z31 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/simulation/qsim
-Z32 w1570210388
+Z29 !s100 60Rn7O>hF=C]OA`b0fDnK2
+Z30 IW2__iNmcCoQQh5@8iH<O^2
+Z31 V9mXU=CaY33e^j9bb`8ODT1
+Z32 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/pacemaker/simulation/qsim
+Z33 w1570223002
 R5
 R6
 L0 31
@@ -93,9 +94,8 @@ r1
 R12
 R8
 !i10b 1
-Z33 !s100 ?4E0ETM_I7J9`@c@]GDTK3
 !s85 0
-Z34 !s108 1570210389.225761
+Z34 !s108 1570223002.564043
 R11
 !s101 -O0
 vpacemaker_controller
@@ -179,8 +179,8 @@ vpacemaker_vlg_check_tst
 Z52 !s100 0Hmn>d5fb<i=4j320i?8D0
 Z53 I1@EDR=@m[1]K=Q5O_z0e53
 Z54 V2[Plc=40Co07h3Q<GL3?P1
-R31
-Z55 w1570210386
+R32
+Z55 w1570222999
 R16
 R17
 L0 59
@@ -188,7 +188,7 @@ R7
 r1
 !s85 0
 31
-Z56 !s108 1570210389.269565
+Z56 !s108 1570223002.589538
 Z57 !s107 pacemaker.vt|
 R20
 !s101 -O0
@@ -198,7 +198,7 @@ vpacemaker_vlg_sample_tst
 Z58 !s100 9gWVB_;_ZkO@D?MlgR?GI3
 Z59 IhBMdo^9N2hjXbfk@B4c7K3
 Z60 V;ljV2ZoKG0oM4M99jc]^O1
-R31
+R32
 R55
 R16
 R17
@@ -217,7 +217,7 @@ vpacemaker_vlg_vec_tst
 Z61 !s100 AAe7Qd=nHF`;6>L7=l?EQ3
 Z62 I1MU6;YHmgAk5:gJ0QX1KV3
 Z63 VOn8f4d5GFaZOOTnh9<m@Q3
-R31
+R32
 R55
 R16
 R17
@@ -234,7 +234,7 @@ R8
 vtimer
 Z64 ID6]Sz97>H4NZhNCJbFi1P2
 Z65 Vob`L[R6WZ9We?7Yoh72U^2
-R31
+R32
 Z66 w1570202373
 R5
 R6
@@ -254,7 +254,7 @@ vtimer_vlg_check_tst
 Z69 !s100 ?Xo^AbC^kl0Xg4X>]HH<83
 Z70 I1eBK`<nEJTBbM?lVd_oPl2
 Z71 VH>iTeBeQGfWzj7J<Dob@53
-R31
+R32
 Z72 w1570202370
 R16
 R17
@@ -273,7 +273,7 @@ vtimer_vlg_sample_tst
 Z74 !s100 AG=la=RR[[[U]XbZ@fLlb2
 Z75 IUQmc7MVO9KIO1[eL62Q7d1
 Z76 VIDPIC4gaoGCXm^>Cmg`_91
-R31
+R32
 R72
 R16
 R17
@@ -292,7 +292,7 @@ vtimer_vlg_vec_tst
 Z77 !s100 GJN@f^UcI?6oX=2MKiFCW3
 Z78 I91jJgVmJa>NJCGoReVzZH2
 Z79 VAl?cbDe7`4Fcm]j;8m6Cc1
-R31
+R32
 R72
 R16
 R17

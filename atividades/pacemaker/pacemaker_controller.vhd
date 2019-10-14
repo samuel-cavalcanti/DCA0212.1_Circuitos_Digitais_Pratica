@@ -2,17 +2,26 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity pacemaker_controller is
-port(recieved_contraction : in std_logic;
-	  time_is_over : in std_logic;	
-	  start_timer : out std_logic;
-	  make_contraction : out std_logic);
+port(recebeu_contracao : in std_logic;
+	  tempo_acabou : in std_logic;	
+	  estado_atual: in std_logic_vector (1 downto 0);
+	  proximo_estado: out std_logic_vector (1 downto 0);
+	  resetar_temporizador : out std_logic;
+	  enviar_estimulo : out std_logic);
 	  
 end pacemaker_controller;
 
 architecture behavior of pacemaker_controller is 
 begin
 		
-		start_timer <= not ( not recieved_contraction and  not time_is_over );
-		make_contraction <= not recieved_contraction and time_is_over;
+		resetar_temporizador <= not estado_atual(1) and not estado_atual(0);
+		
+		enviar_estimulo <= estado_atual(0) and not estado_atual(1);
+		
+		proximo_estado(1) <= (not estado_atual(1) and not estado_atual(0)) or
+		( not recebeu_contracao and not tempo_acabou and not estado_atual(0) and estado_atual(1) );
+		
+		proximo_estado(0) <= not recebeu_contracao and tempo_acabou and estado_atual(1);
+		
 	
 end architecture;

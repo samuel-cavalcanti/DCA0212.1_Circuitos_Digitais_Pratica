@@ -1,0 +1,11 @@
+|ultrasonic_decision
+start_button => current_state.OUTPUTSELECT
+start_button => current_state.OUTPUTSELECT
+start_button => current_state.OUTPUTSELECT
+start_button => current_state.OUTPUTSELECT
+clock => current_state~5.DATAIN
+decision_array[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+decision_array[1] <= decision_array[1].DB_MAX_OUTPUT_PORT_TYPE
+decision_array[2] <= decision_array[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

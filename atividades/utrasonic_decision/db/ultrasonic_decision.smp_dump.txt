@@ -1,0 +1,7 @@
+
+State Machine - |ultrasonic_decision|current_state
+Name current_state.decision_state current_state.read_sensors_state current_state.wait_state current_state.start_state 
+current_state.start_state 0 0 0 0 
+current_state.wait_state 0 0 1 1 
+current_state.read_sensors_state 0 1 0 1 
+current_state.decision_state 1 0 0 1 

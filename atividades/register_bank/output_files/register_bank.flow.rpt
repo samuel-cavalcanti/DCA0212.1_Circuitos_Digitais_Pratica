@@ -1,5 +1,5 @@
 Flow report for register_bank
-Thu Oct  3 11:10:53 2019
+Mon Oct 14 15:21:43 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct  3 11:10:53 2019           ;
+; Flow Status                        ; Successful - Mon Oct 14 15:21:43 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; register_bank                                   ;
 ; Top-level Entity Name              ; register_bank                                   ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 337 / 33,216 ( 1 % )                            ;
-;     Total combinational functions  ; 209 / 33,216 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 264 / 33,216 ( < 1 % )                          ;
-; Total registers                    ; 264                                             ;
-; Total pins                         ; 22 / 475 ( 5 % )                                ;
+; Total logic elements               ; 0 / 33,216 ( 0 % )                              ;
+;     Total combinational functions  ; 0 / 33,216 ( 0 % )                              ;
+;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 29 / 475 ( 6 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/03/2019 11:10:35 ;
+; Start date & time ; 10/14/2019 14:17:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; register_bank       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.157011183535965      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.157107342301981      ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057               ; --            ; --          ; Top            ;
@@ -90,12 +90,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 580 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 704 MB              ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 536 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 485 MB              ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 586 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 704 MB              ; 00:00:07                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 554 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 481 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 777 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:11                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 789 MB              ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 783 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,6 +111,8 @@ applicable agreement for further details.
 ; Assembler                 ; Archlinux        ; Arch Linux ; Arch Linux ; x86_64         ;
 ; TimeQuest Timing Analyzer ; Archlinux        ; Arch Linux ; Arch Linux ; x86_64         ;
 ; EDA Netlist Writer        ; Archlinux        ; Arch Linux ; Arch Linux ; x86_64         ;
+; EDA Netlist Writer        ; Archlinux        ; Arch Linux ; Arch Linux ; x86_64         ;
+; EDA Netlist Writer        ; Archlinux        ; Arch Linux ; Arch Linux ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -120,6 +124,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off register_bank -
 quartus_asm --read_settings_files=off --write_settings_files=off register_bank -c register_bank
 quartus_sta register_bank -c register_bank
 quartus_eda --read_settings_files=off --write_settings_files=off register_bank -c register_bank
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog register_bank -c register_bank --vector_source="/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/register_bank/simulation/Waveform.vwf" --testbench_file=./simulation/qsim/register_bank.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog register_bank -c register_bank
 
 
 

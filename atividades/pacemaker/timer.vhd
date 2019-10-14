@@ -8,7 +8,7 @@ port( clock : in std_logic;
 end entity;
 
 architecture behavior of timer is 
-	signal milliseconds : integer range 0 to 800 ;
+	signal milliseconds : integer range 0 to 4 ;
 	
 	begin
 	
@@ -18,7 +18,7 @@ architecture behavior of timer is
 				
 				if start_timer = '1' then 
 						
-					if milliseconds = 800 then -- 800ms = 0.8s 
+					if milliseconds = 4 then -- 800ms = 0.8s 
 						time_is_over <= '1';
 						milliseconds <= 0;
 					else
