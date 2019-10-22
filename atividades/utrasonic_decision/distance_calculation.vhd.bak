@@ -1,0 +1,41 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity distance_calculation is
+	generic (number_bits : positive :=10);
+
+	port (clock : in std_logic;
+			calculation_reset : in std_logic;
+			pulse: in std_logic;
+			distance: out std_logic_vector ( number_bits - 1 downto 0));
+
+end entity;
+
+
+architecture behavior of distance_calculation is 
+
+--component counter is 
+--	generic(size_counter : positive :=10);
+--	
+--	port (clock : in std_logic;
+--			enable : in std_logic;
+--			reset :  in std_logic;
+--			counter_data : out integer range 0 to size_counter);
+--end component;
+
+signal pulse_width : integer;
+
+
+begin
+
+counter_pulse : entity work.counter(behavior)
+					 generic map (number_bits => 10)
+					 port map(clock => clock,
+								 enable => pulse,
+								 reset  => not calculation_reset,
+								 counter_data => pulse_width);
+								 
+	
+end architecture;

@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity ultrasonic_decision is 
 port (start_button : in std_logic;
 		clock : in std_logic;
-		decision_array : out std_logic_vector(2 downto 0) );
+		decision_array : out std_logic_vector(1 downto 0) );
 end entity; 
 
 
@@ -25,22 +25,22 @@ signal data_banck  : std_logic_vector (9 downto 0);
 
 begin  
 
-  frequency_divider  : entity work.frequency_divider (behavior)
+ frequency_divider  : entity work.frequency_divider (behavior)
+  generic map(5e4)
   port map (
 			current_frequency  => clock,
 			out_frequency  => milliseconds_clock );
 	
-timer : entity work.timer(behavior)
-		  port map (
+ timer : entity work.timer(behavior) 
+  generic map(1e3) -- number
+  port map (
 			start_timer => start_timer ,
 			time_is_over => time_is_over ,
-			clock => milliseconds_clock );
+ 			clock => milliseconds_clock );
 	
 --register_banck : entity work.register_banck (behavior)
 --					port (option_banck => option,
 --							data_banck);
-
-	 
 
 process (clock) is  begin
 
@@ -76,7 +76,6 @@ process (clock) is  begin
 						decision_array <= "10";
 						
 					end if;
-					
 					current_state <= wait_state ;
 					
 				end case;

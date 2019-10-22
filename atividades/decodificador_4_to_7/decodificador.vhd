@@ -1,4 +1,10 @@
-entity decodificador  is port ( s: in bit_vector(4 downto 1); h: out bit_vector(6 downto 0 ));
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity decodificador  is 
+	port ( s: in std_logic_vector (4 downto 1);
+       	 h: out std_logic_vector (6 downto 0 ));
+			 
 end decodificador;
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ultrasonic_decision
-Mon Oct 14 17:14:53 2019
+Tue Oct 22 09:27:59 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,9 +13,17 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |utrassonic_sensor
+ 13. Parameter Settings for User Entity Instance: trigger_control:trigger_control|frequency_divider:frequency_divider_triger
+ 14. Parameter Settings for User Entity Instance: trigger_control:trigger_control|timer:timer_triger
+ 15. Parameter Settings for User Entity Instance: binary_to_decimal:binary_to_decimal
+ 16. Port Connectivity Checks: "binary_to_decimal:binary_to_decimal"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +49,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 14 17:14:53 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 22 09:27:59 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ultrasonic_decision                             ;
-; Top-level Entity Name              ; frequency_divider                               ;
+; Top-level Entity Name              ; utrassonic_sensor                               ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 22                                              ;
-;     Total combinational functions  ; 22                                              ;
-;     Dedicated logic registers      ; 17                                              ;
-; Total registers                    ; 17                                              ;
-; Total pins                         ; 2                                               ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 32                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +72,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value       ;
 +----------------------------------------------------------------------------+--------------------+---------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                     ;
-; Top-level entity name                                                      ; frequency_divider  ; ultrasonic_decision ;
+; Top-level entity name                                                      ; utrassonic_sensor  ; ultrasonic_decision ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX       ;
 ; Use smart compilation                                                      ; Off                ; Off                 ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                  ;
@@ -154,43 +162,43 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                               ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; frequency_divider.vhd            ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/frequency_divider.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                               ; Library ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; timer.vhd                                 ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/timer.vhd             ;         ;
+; frequency_divider.vhd                     ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/frequency_divider.vhd ;         ;
+; utrassonic_sensor.vhd                     ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/utrassonic_sensor.vhd ;         ;
+; trigger_control.vhd                       ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/trigger_control.vhd   ;         ;
+; binary_to_decimal.vhd                     ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/binary_to_decimal.vhd ;         ;
+; ../decodificador_4_to_7/decodificador.vhd ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/decodificador_4_to_7/decodificador.vhd   ;         ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                     ;
-+---------------------------------------------+-------------------+
-; Resource                                    ; Usage             ;
-+---------------------------------------------+-------------------+
-; Estimated Total logic elements              ; 22                ;
-;                                             ;                   ;
-; Total combinational functions               ; 22                ;
-; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 5                 ;
-;     -- 3 input functions                    ; 1                 ;
-;     -- <=2 input functions                  ; 16                ;
-;                                             ;                   ;
-; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 8                 ;
-;     -- arithmetic mode                      ; 14                ;
-;                                             ;                   ;
-; Total registers                             ; 17                ;
-;     -- Dedicated logic registers            ; 17                ;
-;     -- I/O registers                        ; 0                 ;
-;                                             ;                   ;
-; I/O pins                                    ; 2                 ;
-; Embedded Multiplier 9-bit elements          ; 0                 ;
-; Maximum fan-out node                        ; current_frequency ;
-; Maximum fan-out                             ; 17                ;
-; Total fan-out                               ; 88                ;
-; Average fan-out                             ; 2.15              ;
-+---------------------------------------------+-------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 32    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -198,9 +206,40 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |frequency_divider         ; 22 (22)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |frequency_divider  ; work         ;
+; |utrassonic_sensor         ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |utrassonic_sensor  ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                      ;
++----------------------------------------------------------------------------------------------------+--------------------+
+; Register name                                                                                      ; Reason for Removal ;
++----------------------------------------------------------------------------------------------------+--------------------+
+; trigger_control:trigger_control|timer:timer_triger|time_is_over                                    ; Lost fanout        ;
+; trigger_control:trigger_control|timer:timer_triger|count_clock[0..6]                               ; Lost fanout        ;
+; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|out_frequency~reg0      ; Lost fanout        ;
+; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[0..8] ; Lost fanout        ;
+; Total Number of Removed Registers = 18                                                             ;                    ;
++----------------------------------------------------------------------------------------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                             ;
++-----------------------------------------------------------------+--------------------+--------------------------------------------------------------------------------------------------+
+; Register name                                                   ; Reason for Removal ; Registers Removed due to This Register                                                           ;
++-----------------------------------------------------------------+--------------------+--------------------------------------------------------------------------------------------------+
+; trigger_control:trigger_control|timer:timer_triger|time_is_over ; Lost Fanouts       ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|out_frequency~reg0,   ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[1], ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[0], ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[2], ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[3], ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[4], ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[5], ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[6], ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[7], ;
+;                                                                 ;                    ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[8]  ;
++-----------------------------------------------------------------+--------------------+--------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -208,7 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 17    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -216,6 +255,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |utrassonic_sensor|trigger_control:trigger_control|timer:timer_triger|count_clock[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |utrassonic_sensor ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; number_bits    ; 12    ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: trigger_control:trigger_control|frequency_divider:frequency_divider_triger ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; n              ; 500   ; Signed Integer                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: trigger_control:trigger_control|timer:timer_triger ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; n              ; 100   ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_to_decimal:binary_to_decimal ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; number_bits    ; 12    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "binary_to_decimal:binary_to_decimal" ;
++-----------------+-------+----------+----------------------------+
+; Port            ; Type  ; Severity ; Details                    ;
++-----------------+-------+----------+----------------------------+
+; distance[3..2]  ; Input ; Info     ; Stuck at VCC               ;
+; distance[11..9] ; Input ; Info     ; Stuck at GND               ;
+; distance[7..6]  ; Input ; Info     ; Stuck at GND               ;
+; distance[1..0]  ; Input ; Info     ; Stuck at GND               ;
+; distance[8]     ; Input ; Info     ; Stuck at VCC               ;
+; distance[5]     ; Input ; Info     ; Stuck at VCC               ;
+; distance[4]     ; Input ; Info     ; Stuck at GND               ;
++-----------------+-------+----------+----------------------------+
 
 
 +-------------------------------+
@@ -233,7 +336,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 14 17:14:52 2019
+    Info: Processing started: Tue Oct 22 09:27:56 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ultrasonic_decision -c ultrasonic_decision
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ultrasonic_decision.vhd
@@ -245,24 +348,86 @@ Info (12021): Found 2 design units, including 1 entities, in source file timer.v
 Info (12021): Found 2 design units, including 1 entities, in source file frequency_divider.vhd
     Info (12022): Found design unit 1: frequency_divider-behavior
     Info (12023): Found entity 1: frequency_divider
-Info (12127): Elaborating entity "frequency_divider" for the top level hierarchy
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "out_frequency" and its non-tri-state driver.
-Info (13060): One or more bidirs are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "out_frequency" is moved to its source
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "out_frequency~synth"
+Info (12021): Found 2 design units, including 1 entities, in source file utrassonic_sensor.vhd
+    Info (12022): Found design unit 1: utrassonic_sensor-behavior
+    Info (12023): Found entity 1: utrassonic_sensor
+Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
+    Info (12022): Found design unit 1: counter-behavior
+    Info (12023): Found entity 1: counter
+Info (12021): Found 2 design units, including 1 entities, in source file distance_calculation.vhd
+    Info (12022): Found design unit 1: distance_calculation-behavior
+    Info (12023): Found entity 1: distance_calculation
+Info (12021): Found 2 design units, including 1 entities, in source file trigger_control.vhd
+    Info (12022): Found design unit 1: trigger_control-behavior
+    Info (12023): Found entity 1: trigger_control
+Info (12021): Found 2 design units, including 1 entities, in source file binary_to_decimal.vhd
+    Info (12022): Found design unit 1: binary_to_decimal-behavior
+    Info (12023): Found entity 1: binary_to_decimal
+Info (12021): Found 2 design units, including 1 entities, in source file /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/decodificador_4_to_7/decodificador.vhd
+    Info (12022): Found design unit 1: decodificador-table
+    Info (12023): Found entity 1: decodificador
+Info (12127): Elaborating entity "utrassonic_sensor" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at utrassonic_sensor.vhd(25): used explicit default value for signal "distance" because signal was never assigned a value
+Info (12129): Elaborating entity "trigger_control" using architecture "A:behavior" for hierarchy "trigger_control:trigger_control"
+Warning (10492): VHDL Process Statement warning at trigger_control.vhd(39): signal "current_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at trigger_control.vhd(43): signal "waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at trigger_control.vhd(50): signal "time_of_triger_is_over" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at trigger_control.vhd(36): inferring latch(es) for signal or variable "start_timer_triger", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at trigger_control.vhd(36): inferring latch(es) for signal or variable "trigger", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at trigger_control.vhd(36): inferring latch(es) for signal or variable "current_state", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at trigger_control.vhd(36): inferring latch(es) for signal or variable "waiting", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "waiting" at trigger_control.vhd(36)
+Info (10041): Inferred latch for "current_state" at trigger_control.vhd(36)
+Info (10041): Inferred latch for "trigger" at trigger_control.vhd(36)
+Info (10041): Inferred latch for "start_timer_triger" at trigger_control.vhd(36)
+Info (12129): Elaborating entity "frequency_divider" using architecture "A:behavior" for hierarchy "trigger_control:trigger_control|frequency_divider:frequency_divider_triger"
+Info (12129): Elaborating entity "timer" using architecture "A:behavior" for hierarchy "trigger_control:trigger_control|timer:timer_triger"
+Info (12129): Elaborating entity "binary_to_decimal" using architecture "A:behavior" for hierarchy "binary_to_decimal:binary_to_decimal"
+Info (12129): Elaborating entity "decodificador" using architecture "A:table" for hierarchy "decodificador:\seven_segments_generate:0:seven_segments"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "waiting" is stuck at VCC
+    Warning (13410): Pin "trigger" is stuck at GND
+    Warning (13410): Pin "thousands_display[0]" is stuck at GND
+    Warning (13410): Pin "thousands_display[1]" is stuck at GND
+    Warning (13410): Pin "thousands_display[2]" is stuck at VCC
+    Warning (13410): Pin "thousands_display[3]" is stuck at GND
+    Warning (13410): Pin "thousands_display[4]" is stuck at GND
+    Warning (13410): Pin "thousands_display[5]" is stuck at VCC
+    Warning (13410): Pin "thousands_display[6]" is stuck at GND
+    Warning (13410): Pin "hundreds_display[0]" is stuck at VCC
+    Warning (13410): Pin "hundreds_display[1]" is stuck at GND
+    Warning (13410): Pin "hundreds_display[2]" is stuck at GND
+    Warning (13410): Pin "hundreds_display[3]" is stuck at VCC
+    Warning (13410): Pin "hundreds_display[4]" is stuck at VCC
+    Warning (13410): Pin "hundreds_display[5]" is stuck at GND
+    Warning (13410): Pin "hundreds_display[6]" is stuck at GND
+    Warning (13410): Pin "tens_display[0]" is stuck at GND
+    Warning (13410): Pin "tens_display[1]" is stuck at GND
+    Warning (13410): Pin "tens_display[2]" is stuck at GND
+    Warning (13410): Pin "tens_display[3]" is stuck at GND
+    Warning (13410): Pin "tens_display[4]" is stuck at GND
+    Warning (13410): Pin "tens_display[5]" is stuck at GND
+    Warning (13410): Pin "tens_display[6]" is stuck at VCC
+    Warning (13410): Pin "units_display[0]" is stuck at GND
+    Warning (13410): Pin "units_display[1]" is stuck at GND
+    Warning (13410): Pin "units_display[2]" is stuck at GND
+    Warning (13410): Pin "units_display[3]" is stuck at GND
+    Warning (13410): Pin "units_display[4]" is stuck at GND
+    Warning (13410): Pin "units_display[5]" is stuck at GND
+    Warning (13410): Pin "units_display[6]" is stuck at VCC
+Info (17049): 18 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 0 output pins
-    Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 22 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 636 megabytes
-    Info: Processing ended: Mon Oct 14 17:14:53 2019
-    Info: Elapsed time: 00:00:01
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "pulse"
+    Warning (15610): No output dependent on input pin "fpga_clock"
+Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 30 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
+    Info: Peak virtual memory: 637 megabytes
+    Info: Processing ended: Tue Oct 22 09:27:59 2019
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

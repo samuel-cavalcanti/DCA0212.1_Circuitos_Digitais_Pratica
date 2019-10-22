@@ -1,4 +1,45 @@
-|frequency_divider
+|utrassonic_sensor
+waiting << trigger_control:trigger_control.waiting
+fpga_clock => trigger_control:trigger_control.clock
+pulse => ~NO_FANOUT~
+trigger <= trigger_control:trigger_control.trigger
+thousands_display[0] <= decodificador:seven_segments_generate:3:seven_segments.h[0]
+thousands_display[1] <= decodificador:seven_segments_generate:3:seven_segments.h[1]
+thousands_display[2] <= decodificador:seven_segments_generate:3:seven_segments.h[2]
+thousands_display[3] <= decodificador:seven_segments_generate:3:seven_segments.h[3]
+thousands_display[4] <= decodificador:seven_segments_generate:3:seven_segments.h[4]
+thousands_display[5] <= decodificador:seven_segments_generate:3:seven_segments.h[5]
+thousands_display[6] <= decodificador:seven_segments_generate:3:seven_segments.h[6]
+hundreds_display[0] <= decodificador:seven_segments_generate:2:seven_segments.h[0]
+hundreds_display[1] <= decodificador:seven_segments_generate:2:seven_segments.h[1]
+hundreds_display[2] <= decodificador:seven_segments_generate:2:seven_segments.h[2]
+hundreds_display[3] <= decodificador:seven_segments_generate:2:seven_segments.h[3]
+hundreds_display[4] <= decodificador:seven_segments_generate:2:seven_segments.h[4]
+hundreds_display[5] <= decodificador:seven_segments_generate:2:seven_segments.h[5]
+hundreds_display[6] <= decodificador:seven_segments_generate:2:seven_segments.h[6]
+tens_display[0] <= decodificador:seven_segments_generate:1:seven_segments.h[0]
+tens_display[1] <= decodificador:seven_segments_generate:1:seven_segments.h[1]
+tens_display[2] <= decodificador:seven_segments_generate:1:seven_segments.h[2]
+tens_display[3] <= decodificador:seven_segments_generate:1:seven_segments.h[3]
+tens_display[4] <= decodificador:seven_segments_generate:1:seven_segments.h[4]
+tens_display[5] <= decodificador:seven_segments_generate:1:seven_segments.h[5]
+tens_display[6] <= decodificador:seven_segments_generate:1:seven_segments.h[6]
+units_display[0] <= decodificador:seven_segments_generate:0:seven_segments.h[0]
+units_display[1] <= decodificador:seven_segments_generate:0:seven_segments.h[1]
+units_display[2] <= decodificador:seven_segments_generate:0:seven_segments.h[2]
+units_display[3] <= decodificador:seven_segments_generate:0:seven_segments.h[3]
+units_display[4] <= decodificador:seven_segments_generate:0:seven_segments.h[4]
+units_display[5] <= decodificador:seven_segments_generate:0:seven_segments.h[5]
+units_display[6] <= decodificador:seven_segments_generate:0:seven_segments.h[6]
+
+
+|utrassonic_sensor|trigger_control:trigger_control
+waiting <= <VCC>
+clock => frequency_divider:frequency_divider_triger.current_frequency
+trigger <= trigger$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|utrassonic_sensor|trigger_control:trigger_control|frequency_divider:frequency_divider_triger
 current_frequency => out_frequency~reg0.CLK
 current_frequency => frequency_counter[0].CLK
 current_frequency => frequency_counter[1].CLK
@@ -9,13 +50,249 @@ current_frequency => frequency_counter[5].CLK
 current_frequency => frequency_counter[6].CLK
 current_frequency => frequency_counter[7].CLK
 current_frequency => frequency_counter[8].CLK
-current_frequency => frequency_counter[9].CLK
-current_frequency => frequency_counter[10].CLK
-current_frequency => frequency_counter[11].CLK
-current_frequency => frequency_counter[12].CLK
-current_frequency => frequency_counter[13].CLK
-current_frequency => frequency_counter[14].CLK
-current_frequency => frequency_counter[15].CLK
 out_frequency <> out_frequency~reg0
+
+
+|utrassonic_sensor|trigger_control:trigger_control|timer:timer_triger
+clock => count_clock[0].CLK
+clock => count_clock[1].CLK
+clock => count_clock[2].CLK
+clock => count_clock[3].CLK
+clock => count_clock[4].CLK
+clock => count_clock[5].CLK
+clock => count_clock[6].CLK
+clock => time_is_over~reg0.CLK
+start_timer => time_is_over.OUTPUTSELECT
+start_timer => count_clock.OUTPUTSELECT
+start_timer => count_clock.OUTPUTSELECT
+start_timer => count_clock.OUTPUTSELECT
+start_timer => count_clock.OUTPUTSELECT
+start_timer => count_clock.OUTPUTSELECT
+start_timer => count_clock.OUTPUTSELECT
+start_timer => count_clock.OUTPUTSELECT
+time_is_over <= time_is_over~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|utrassonic_sensor|binary_to_decimal:binary_to_decimal
+distance[0] => LessThan15.IN8
+distance[0] => Add15.IN8
+distance[0] => bdc.DATAA
+distance[1] => LessThan12.IN8
+distance[1] => Add12.IN8
+distance[1] => bdc.DATAA
+distance[2] => LessThan9.IN8
+distance[2] => Add9.IN8
+distance[2] => bdc.DATAA
+distance[3] => LessThan7.IN8
+distance[3] => Add7.IN8
+distance[3] => bdc.DATAA
+distance[4] => LessThan5.IN8
+distance[4] => Add5.IN8
+distance[4] => bdc.DATAA
+distance[5] => LessThan3.IN8
+distance[5] => Add3.IN8
+distance[5] => bdc.DATAA
+distance[6] => LessThan2.IN8
+distance[6] => Add2.IN8
+distance[6] => bdc.DATAA
+distance[7] => LessThan1.IN8
+distance[7] => Add1.IN8
+distance[7] => bdc.DATAA
+distance[8] => LessThan0.IN8
+distance[8] => Add0.IN8
+distance[8] => bdc.DATAA
+distance[9] => LessThan0.IN7
+distance[9] => Add0.IN7
+distance[9] => bdc.DATAA
+distance[10] => LessThan0.IN6
+distance[10] => Add0.IN6
+distance[10] => bdc.DATAA
+distance[11] => LessThan0.IN5
+distance[11] => Add0.IN5
+distance[11] => bdc.DATAA
+thousands_mm[0] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+thousands_mm[1] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+thousands_mm[2] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+thousands_mm[3] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+hundreds_mm[0] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+hundreds_mm[1] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+hundreds_mm[2] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+hundreds_mm[3] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+tens_mm[0] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+tens_mm[1] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+tens_mm[2] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+tens_mm[3] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+units_mm[0] <= <GND>
+units_mm[1] <= LessThan22.DB_MAX_OUTPUT_PORT_TYPE
+units_mm[2] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+units_mm[3] <= bdc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|utrassonic_sensor|decodificador:\seven_segments_generate:0:seven_segments
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|utrassonic_sensor|decodificador:\seven_segments_generate:1:seven_segments
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|utrassonic_sensor|decodificador:\seven_segments_generate:2:seven_segments
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|utrassonic_sensor|decodificador:\seven_segments_generate:3:seven_segments
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
 
 

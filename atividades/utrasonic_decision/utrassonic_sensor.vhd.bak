@@ -1,0 +1,6 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity utrassonic_sensor is port(is_read : inout std_logic;
+											output_time : out integer  range 1024 to 0 );
+end entity;
