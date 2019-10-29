@@ -15,7 +15,6 @@ type t_state is (start_state,wait_state, read_sensors_state, decision_state);
 
 signal current_state : t_state := start_state;
 signal sensor_status : std_logic_vector (1 downto 0) := "00";
-signal distance_array : real range 0.0 to 30.0 ;
 signal decision_status :  std_logic_vector (1 downto 0) := "00";
 signal start_timer : std_logic := '0';
 signal time_is_over : std_logic := '0';

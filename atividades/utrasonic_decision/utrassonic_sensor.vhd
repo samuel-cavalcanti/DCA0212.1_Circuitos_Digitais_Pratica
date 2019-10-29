@@ -6,7 +6,7 @@ entity utrassonic_sensor is
 	port(waiting : buffer std_logic; -- key 0
     	 fpga_clock : in std_logic; -- CLOCK_50 
 		 pulse: in std_logic; -- nao sei 
-		 trigger : out std_logic; -- nao sei 
+		 trigger : inout   std_logic; -- nao sei 
 		 thousands_display: out std_logic_vector(6 downto 0 ); -- hex3
 		 hundreds_display : out std_logic_vector(6 downto 0 ); -- hex2
 		 tens_display : out std_logic_vector(6 downto 0 ); -- hex1
@@ -37,24 +37,24 @@ begin
 										  clock => fpga_clock,
 										  trigger => trigger);
 	 
--- distance_calculation : entity work.distance_calculation(behavior)
---									generic map(number_bits) -- length of distance
---									port map(clock => fpga_clock,
---												calculation_reset => not waiting,
---												pulse => pulse,
---												distance => distance);
---																					
+ distance_calculation : entity work.distance_calculation(behavior)
+									generic map(number_bits) -- length of distance
+									port map(clock => fpga_clock,
+												calculation_reset => not waiting,
+												pulse => pulse,
+												distance => distance);
+																					
 	
 												
-binary_to_decimal : entity work.binary_to_decimal(behavior)
-							generic map (number_bits)
-							port map ( distance=>distance,
-										  units_mm => decimal_places(0),
-										  tens_mm => decimal_places(1),
-										  hundreds_mm => decimal_places(2),
-										  thousands_mm => decimal_places(3));
+ binary_to_decimal : entity work.binary_to_decimal(behavior)
+								generic map (number_bits)
+								port map ( distance=>distance,
+											  units_mm => decimal_places(0),
+											  tens_mm => decimal_places(1),
+											  hundreds_mm => decimal_places(2),
+											  thousands_mm => decimal_places(3));
 
-seven_segments_generate: for i in 0 to 3 generate
+ seven_segments_generate: for i in 0 to 3 generate
 					seven_segments: entity work.decodificador(table)
 							port map(s => decimal_places(i),
 										h => display_places(i));

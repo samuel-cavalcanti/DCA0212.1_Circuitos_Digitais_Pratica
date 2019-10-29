@@ -13,10 +13,10 @@
 -- applicable agreement for further details.
 
 -- VENDOR "Altera"
--- PROGRAM "Quartus II 64-Bit"
+-- PROGRAM "Quartus II 32-bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "10/22/2019 10:41:03"
+-- DATE "10/25/2019 14:02:39"
 
 -- 
 -- Device: Altera EP2C35F672C6 Package FBGA672

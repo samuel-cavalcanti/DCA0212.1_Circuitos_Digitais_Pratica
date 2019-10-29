@@ -1,8 +1,9 @@
 |utrassonic_sensor
 waiting << trigger_control:trigger_control.waiting
 fpga_clock => trigger_control:trigger_control.clock
-pulse => ~NO_FANOUT~
-trigger <= trigger_control:trigger_control.trigger
+fpga_clock => distance_calculation:distance_calculation.clock
+pulse => distance_calculation:distance_calculation.pulse
+trigger <> trigger
 thousands_display[0] <= decodificador:seven_segments_generate:3:seven_segments.h[0]
 thousands_display[1] <= decodificador:seven_segments_generate:3:seven_segments.h[1]
 thousands_display[2] <= decodificador:seven_segments_generate:3:seven_segments.h[2]
@@ -71,6 +72,113 @@ start_timer => count_clock.OUTPUTSELECT
 start_timer => count_clock.OUTPUTSELECT
 start_timer => count_clock.OUTPUTSELECT
 time_is_over <= time_is_over~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|utrassonic_sensor|distance_calculation:distance_calculation
+clock => frequency_divider:frequency_divider_triger.current_frequency
+calculation_reset => counter:counter_pulse.reset
+pulse => counter:counter_pulse.enable
+pulse => distance[0]~reg0.CLK
+pulse => distance[1]~reg0.CLK
+pulse => distance[2]~reg0.CLK
+pulse => distance[3]~reg0.CLK
+pulse => distance[4]~reg0.CLK
+pulse => distance[5]~reg0.CLK
+pulse => distance[6]~reg0.CLK
+pulse => distance[7]~reg0.CLK
+pulse => distance[8]~reg0.CLK
+pulse => distance[9]~reg0.CLK
+pulse => distance[10]~reg0.CLK
+pulse => distance[11]~reg0.CLK
+distance[0] <= distance[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[1] <= distance[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[2] <= distance[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[3] <= distance[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[4] <= distance[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[5] <= distance[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[6] <= distance[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[7] <= distance[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[8] <= distance[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[9] <= distance[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[10] <= distance[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+distance[11] <= distance[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|utrassonic_sensor|distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger
+current_frequency => out_frequency~reg0.CLK
+current_frequency => frequency_counter[0].CLK
+current_frequency => frequency_counter[1].CLK
+current_frequency => frequency_counter[2].CLK
+current_frequency => frequency_counter[3].CLK
+current_frequency => frequency_counter[4].CLK
+current_frequency => frequency_counter[5].CLK
+current_frequency => frequency_counter[6].CLK
+current_frequency => frequency_counter[7].CLK
+current_frequency => frequency_counter[8].CLK
+out_frequency <> out_frequency~reg0
+
+
+|utrassonic_sensor|distance_calculation:distance_calculation|counter:counter_pulse
+clock => count[0].CLK
+clock => count[1].CLK
+clock => count[2].CLK
+clock => count[3].CLK
+clock => count[4].CLK
+clock => count[5].CLK
+clock => count[6].CLK
+clock => count[7].CLK
+clock => count[8].CLK
+clock => count[9].CLK
+clock => count[10].CLK
+clock => count[11].CLK
+clock => count[12].CLK
+clock => count[13].CLK
+clock => count[14].CLK
+enable => count[0].ENA
+enable => count[1].ENA
+enable => count[2].ENA
+enable => count[3].ENA
+enable => count[4].ENA
+enable => count[5].ENA
+enable => count[6].ENA
+enable => count[7].ENA
+enable => count[8].ENA
+enable => count[9].ENA
+enable => count[10].ENA
+enable => count[11].ENA
+enable => count[12].ENA
+enable => count[13].ENA
+enable => count[14].ENA
+reset => count[0].ACLR
+reset => count[1].ACLR
+reset => count[2].ACLR
+reset => count[3].ACLR
+reset => count[4].ACLR
+reset => count[5].ACLR
+reset => count[6].ACLR
+reset => count[7].ACLR
+reset => count[8].ACLR
+reset => count[9].ACLR
+reset => count[10].ACLR
+reset => count[11].ACLR
+reset => count[12].ACLR
+reset => count[13].ACLR
+reset => count[14].ACLR
+counter_data[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[9] <= count[9].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[10] <= count[10].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[11] <= count[11].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[12] <= count[12].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[13] <= count[13].DB_MAX_OUTPUT_PORT_TYPE
+counter_data[14] <= count[14].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |utrassonic_sensor|binary_to_decimal:binary_to_decimal

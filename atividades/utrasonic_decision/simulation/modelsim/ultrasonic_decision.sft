@@ -1,5 +1,1 @@
-set tool_name "ModelSim-Altera (VHDL)"
-set corner_file_list {
-	{{"Slow Model"} {ultrasonic_decision.vho ultrasonic_decision_vhd.sdo}}
-	{{"Fast Model"} {ultrasonic_decision_fast.vho ultrasonic_decision_vhd_fast.sdo}}
-}
+set tool_name "ModelSim-Altera (Verilog)"
