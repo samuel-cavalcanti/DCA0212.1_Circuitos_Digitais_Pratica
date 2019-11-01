@@ -1,6 +1,6 @@
 Flow report for ultrasonic_decision
-Tue Oct 29 15:57:56 2019
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Nov  1 13:47:51 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Oct 29 15:57:56 2019           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Flow Status                        ; Successful - Fri Nov  1 13:47:51 2019           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ultrasonic_decision                             ;
 ; Top-level Entity Name              ; utrassonic_sensor                               ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 394 / 33,216 ( 1 % )                            ;
+; Total logic elements               ; 395 / 33,216 ( 1 % )                            ;
 ;     Total combinational functions  ; 394 / 33,216 ( 1 % )                            ;
 ;     Dedicated logic registers      ; 37 / 33,216 ( < 1 % )                           ;
 ; Total registers                    ; 37                                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/29/2019 15:57:21 ;
+; Start date & time ; 11/01/2019 13:47:29 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ultrasonic_decision ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------+---------------------+-------------------+----------------+
 ; Assignment Name                     ; Value                     ; Default Value       ; Entity Name       ; Section Id     ;
 +-------------------------------------+---------------------------+---------------------+-------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.157237544104466         ; --                  ; --                ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.157262684803134         ; --                  ; --                ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                        ; --                  ; --                ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl               ; --                  ; --                ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog) ; <None>              ; --                ; --             ;
@@ -94,12 +94,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 369 MB              ; 00:00:06                           ;
-; Fitter                    ; 00:00:11     ; 1.0                     ; 471 MB              ; 00:00:11                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 348 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 305 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 309 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:25                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 615 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 701 MB              ; 00:00:08                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 536 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 501 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 777 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:16                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
