@@ -18,3 +18,8 @@ atividades e exercícios dados em sala aula da disciplina Circuitos digitais
 - [divisor de clock](aula/set_clock)  
 
 - [flip-flop D](aula/ffd)
+
+
+# referencias
+
+- [guia de instalação Quartus no Linux](quartusLinux.md) (__INCOMPLETO__)

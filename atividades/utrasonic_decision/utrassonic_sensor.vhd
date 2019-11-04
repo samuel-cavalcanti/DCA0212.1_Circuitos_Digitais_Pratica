@@ -5,8 +5,8 @@ entity utrassonic_sensor is
 	generic(number_bits : positive :=12);
 	port(waiting : buffer std_logic; -- key 0
     	 fpga_clock : in std_logic; -- CLOCK_50 
-		 pulse: in std_logic;  -- GPIO10 --PIN_N18 
-		 trigger : inout   std_logic; -- GPIO9 --PIN_F26
+		 pulse: in std_logic;  -- GPIO A6 --PIN_J21 
+		 trigger : inout   std_logic; -- GPIO A7 --PIN_J20
 		 thousands_display: out std_logic_vector(6 downto 0 ); -- hex3
 		 hundreds_display : out std_logic_vector(6 downto 0 ); -- hex2
 		 tens_display : out std_logic_vector(6 downto 0 ); -- hex1
