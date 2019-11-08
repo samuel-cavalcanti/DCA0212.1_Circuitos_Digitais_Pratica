@@ -4,9 +4,8 @@ use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
 entity binary_to_decimal is 
- generic(number_bits : positive :=12);
- port ( distance : in std_logic_vector (number_bits-1 downto 0);
-		  thousands_mm : out std_logic_vector(3 downto 0); -- extender isso a milhares
+ port ( distance : in std_logic_vector (8 downto 0);
+		  thousands_mm : out std_logic_vector(3 downto 0);
         hundreds_mm : out std_logic_vector(3 downto 0);
 		  tens_mm : out std_logic_vector(3 downto 0);
 		  units_mm : out std_logic_vector(3 downto 0));
@@ -37,7 +36,8 @@ architecture behavior of binary_to_decimal is
     bcd := (others => '0');
     
     -- read input into temp variable
-    temp(11 downto 0) := distance;
+	 temp(11 downto 9) := "000"; 
+    temp(8 downto 0) := distance;
     
     -- cycle 12 times as we have 12 input bits
     -- this could be optimized, we do not need to check and add 3 for the 

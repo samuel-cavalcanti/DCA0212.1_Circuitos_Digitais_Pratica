@@ -2,9 +2,16 @@ library ieee;
 use ieee.std_logic_1164.all; 
 
 entity ultrasonic_decision is 
-port (start_button : in std_logic;
-		clock : in std_logic;
-		decision_array : out std_logic_vector(1 downto 0) );
+port (start_button : in std_logic;  -- key 0 --PIN_G26
+		clock : in std_logic;  -- CLOCK_50 --PIN_N2
+		pulse : in std_logic; -- GPIO A0 --PIN_D25 
+		trigger : out std_logic; -- GPIO A1 --PIN_J22
+--		right_motor : out std_logic_vector(8 downto 0);
+--		left_motor : out std_logic_vector(8 downto 0);
+		thousands_display: out std_logic_vector(6 downto 0 ); -- hex3
+		hundreds_display : out std_logic_vector(6 downto 0 ); -- hex2
+		tens_display : out std_logic_vector(6 downto 0 ); -- hex1
+		units_display : out std_logic_vector(6 downto 0 )); -- hex0
 end entity; 
 
 
@@ -21,21 +28,21 @@ signal time_is_over : std_logic := '0';
 signal milliseconds_clock  : std_logic :='0';
 signal option_banck  : std_logic := '0'; -- 0 para ler, 1 para escrever
 signal data_banck  : std_logic_vector (9 downto 0);
+signal distance : std_logic_vector(8 downto 0);
+signal waiting : std_logic := '1';
 
 begin  
 
- frequency_divider  : entity work.frequency_divider (behavior)
-  generic map(5e4)
-  port map (
-			current_frequency  => clock,
-			out_frequency  => milliseconds_clock );
-	
- timer : entity work.timer(behavior) 
-  generic map(1e3) -- number
-  port map (
-			start_timer => start_timer ,
-			time_is_over => time_is_over ,
- 			clock => milliseconds_clock );
+ultrasonic : entity work.utrassonic_sensor(behavior)
+					port map (fpga_clock => clock,
+								 pulse => pulse,
+								 waiting => waiting,
+								 trigger => trigger,
+								 distance => distance,
+								 thousands_display => thousands_display,
+								 tens_display =>tens_display,
+								 units_display =>units_display);
+
 	
 --register_banck : entity work.register_banck (behavior)
 --					port (option_banck => option,
@@ -67,14 +74,14 @@ process (clock) is  begin
 					end if ;
 					
 				when decision_state => 
-					if (data_banck < "1010") then -- 10 em binario ,  um exemplo
-						decision_array  <= "00";
-					elsif (data_banck < "10100") then
-						decision_array  <= "01";
-					else
-						decision_array <= "10";
+--					if (data_banck < "1010") then -- 10 em binario ,  um exemplo
+--						decision_array  <= "00";
+--					elsif (data_banck < "10100") then
+--						decision_array  <= "01";
+--					else
+--						decision_array <= "10";
 						
-					end if;
+--					end if;
 					current_state <= wait_state ;
 					
 				end case;

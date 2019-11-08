@@ -3,75 +3,67 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'pulse'
-Slack : -34.094
-TNS   : -247.800
-
-Type  : Slow Model Setup 'distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|out_frequency~reg0'
-Slack : -1.574
-TNS   : -15.366
+Slack : -4.408
+TNS   : -38.055
 
 Type  : Slow Model Setup 'fpga_clock'
-Slack : -1.467
-TNS   : -10.668
+Slack : -2.349
+TNS   : -58.369
 
 Type  : Slow Model Hold 'fpga_clock'
-Slack : -2.558
-TNS   : -2.558
-
-Type  : Slow Model Hold 'distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|out_frequency~reg0'
-Slack : 0.391
+Slack : 0.227
 TNS   : 0.000
 
 Type  : Slow Model Hold 'pulse'
-Slack : 1.985
+Slack : 2.156
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'fpga_clock'
+Slack : -3.146
+TNS   : -135.214
+
+Type  : Slow Model Removal 'fpga_clock'
+Slack : 2.346
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'fpga_clock'
 Slack : -1.380
-TNS   : -11.380
+TNS   : -47.380
 
 Type  : Slow Model Minimum Pulse Width 'pulse'
 Slack : -1.222
-TNS   : -13.222
-
-Type  : Slow Model Minimum Pulse Width 'distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|out_frequency~reg0'
-Slack : -0.500
-TNS   : -15.000
+TNS   : -10.222
 
 Type  : Fast Model Setup 'pulse'
-Slack : -14.618
-TNS   : -105.780
-
-Type  : Fast Model Setup 'distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|out_frequency~reg0'
-Slack : -0.189
-TNS   : -0.609
+Slack : -1.985
+TNS   : -17.163
 
 Type  : Fast Model Setup 'fpga_clock'
-Slack : -0.132
-TNS   : -0.265
+Slack : -0.614
+TNS   : -7.523
 
 Type  : Fast Model Hold 'fpga_clock'
-Slack : -1.599
-TNS   : -1.599
-
-Type  : Fast Model Hold 'distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|out_frequency~reg0'
-Slack : 0.135
-TNS   : 0.000
+Slack : -0.223
+TNS   : -2.446
 
 Type  : Fast Model Hold 'pulse'
-Slack : 1.191
+Slack : 1.420
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'fpga_clock'
+Slack : -0.992
+TNS   : -40.758
+
+Type  : Fast Model Removal 'fpga_clock'
+Slack : 1.170
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'fpga_clock'
 Slack : -1.380
-TNS   : -11.380
+TNS   : -47.380
 
 Type  : Fast Model Minimum Pulse Width 'pulse'
 Slack : -1.222
-TNS   : -13.222
-
-Type  : Fast Model Minimum Pulse Width 'distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|out_frequency~reg0'
-Slack : -0.500
-TNS   : -15.000
+TNS   : -10.222
 
 ------------------------------------------------------------

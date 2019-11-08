@@ -2,11 +2,12 @@ library ieee;
 use ieee.std_logic_1164.all; 
 
 entity utrassonic_sensor is 
-	generic(number_bits : positive :=12);
-	port(waiting : buffer std_logic; -- key 0
+	port(--waiting : buffer std_logic; -- key 0
     	 fpga_clock : in std_logic; -- CLOCK_50 
-		 pulse: in std_logic;  -- GPIO A6 --PIN_J21 
-		 trigger : inout   std_logic; -- GPIO A7 --PIN_J20
+		 pulse: in std_logic;  -- GPIO A0 --PIN_D25 
+		 waiting : in std_logic; -- para testes Key 0 --PIN_G26
+		 trigger : out std_logic; -- GPIO A1 --PIN_J22
+		 distance : out std_logic_vector(8 downto 0);
 		 thousands_display: out std_logic_vector(6 downto 0 ); -- hex3
 		 hundreds_display : out std_logic_vector(6 downto 0 ); -- hex2
 		 tens_display : out std_logic_vector(6 downto 0 ); -- hex1
@@ -22,33 +23,34 @@ signal thousands_mm : std_logic_vector(3 downto 0) ;
 signal hundreds_mm : std_logic_vector(3 downto 0);
 signal tens_mm : std_logic_vector(3 downto 0);
 signal units_mm : std_logic_vector(3 downto 0);
-signal distance : std_logic_vector(number_bits-1 downto 0) := "000100101100";
+
 type decimal_places_type is array(0 to 3) of std_logic_vector(3 downto 0);
 type display_places_type is array(0 to 3) of std_logic_vector(6 downto 0 );
 
 signal decimal_places : decimal_places_type;
 signal display_places : display_places_type;
 
+signal trigger_out : std_logic := '0';
+signal dist : std_logic_vector(8 downto 0) := "000000000";
+
 begin
 
 
- trigger_control : entity work.trigger_control(behavior)
-							 port map( waiting=>waiting,
-										  clock => fpga_clock,
-										  trigger => trigger);
+trigger_generator : entity work.trigger_generator(Behavioral)
+							port map (clk => fpga_clock,
+										 waiting => waiting,
+										 trigger => trigger_out);
 	 
- distance_calculation : entity work.distance_calculation(behavior)
-									generic map(number_bits) -- length of distance
-									port map(clock => fpga_clock,
-												calculation_reset => not waiting,
+distance_calculator : entity work.distance_calculator(Behavioral)
+									port map(clk => fpga_clock,
+												Calculation_Reset => trigger_out, 
 												pulse => pulse,
-												distance => distance);
+												Distance => dist);
 																					
 	
 												
  binary_to_decimal : entity work.binary_to_decimal(behavior)
-								generic map (number_bits)
-								port map ( distance=>distance,
+								port map ( distance=>dist,
 											  units_mm => decimal_places(0),
 											  tens_mm => decimal_places(1),
 											  hundreds_mm => decimal_places(2),
@@ -64,6 +66,7 @@ begin
 	tens_display <= display_places(1);
 	hundreds_display <= display_places(2);
 	thousands_display <= display_places(3);
-						  
+	distance <= dist;
+	trigger <= trigger_out;
 										 
 end architecture;

@@ -1,0 +1,44 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity trigger_generator is 
+
+port (clock : in std_logic ;
+		trigger : out std_logic);
+
+end entity;
+
+
+architecture behavior of trigger_generator is 
+	constant ms250 : integer := 12500000;
+	constant ms250and100us : integer := 12505000;
+	signal reset_counter : std_logic;
+	signal count : integer range 0 to ms250and100us;
+	
+	
+	begin
+		counter_trigger : entity work.counter(behavior)
+					 generic map (ms250and100us)
+					 port map(clock => clock, 
+								 enable => '1',
+								 reset  => reset_counter,
+								 counter_data => count);
+								 
+	process (clock) begin
+	
+		if (count > ms250 and  count < ms250and100us) then
+			 trigger <= '1';
+		else
+			 trigger <= '0';
+		
+		end if;
+		
+		if (count >= ms250and100us) then
+			 reset_counter <= 1;
+		end if;
+		
+	
+	end process;
+								 
+				
+end architecture

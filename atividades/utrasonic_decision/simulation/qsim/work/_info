@@ -3,117 +3,60 @@ K3
 13
 cModel Technology
 Z0 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/simulation/qsim
-vtrigger_control
-Z1 InQ_zi]JOeS7Fm7iYGm_2M0
-Z2 V9P;5W?_?83nKPSBci>iW40
-Z3 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/simulation/qsim
-Z4 w1572026366
-Z5 8ultrasonic_decision.vo
-Z6 Fultrasonic_decision.vo
+vutrassonic_sensor
+Z1 !s100 dA3NTn=eSj?@KSYLC<7I>0
+Z2 IaC9lhkWzZLkWN]SA09WY?0
+Z3 VHn^cIXm<zAD7X?EUj0PdB3
+Z4 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/simulation/qsim
+Z5 w1572980234
+Z6 8ultrasonic_decision.vo
+Z7 Fultrasonic_decision.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|ultrasonic_decision.vo|
-Z9 o-work work -O0
-Z10 !s100 DP4AS^OJN^Z8m[J4R?IEO0
-Z11 !s108 1572026367.257731
-Z12 !s107 ultrasonic_decision.vo|
+Z9 !s90 -work|work|ultrasonic_decision.vo|
+Z10 o-work work -O0
 !i10b 1
 !s85 0
+Z11 !s108 1572980234.708209
+Z12 !s107 ultrasonic_decision.vo|
 !s101 -O0
-vtrigger_control_vlg_sample_tst
-Z13 ICnWWF?GWdFE1eZ_z1gDcW1
-Z14 VU3`oO`Sm`z;VCT<kloL7=3
-R3
-Z15 w1572026364
+vutrassonic_sensor_vlg_sample_tst
+!i10b 1
+Z13 !s100 zag4D1cFllUiO]^S:]5Eg0
+Z14 ICfS8PTASEVhIaj7dHY:XM3
+Z15 V6E^Skh7ohc<oUf6b=@e0E3
+R4
+w1572980229
 Z16 8ultrasonic_decision.vt
 Z17 Fultrasonic_decision.vt
 L0 29
-R7
+R8
 r1
+!s85 0
 31
-Z18 !s108 1572026367.278125
+Z18 !s108 1572980234.741725
 Z19 !s107 ultrasonic_decision.vt|
 Z20 !s90 -work|work|ultrasonic_decision.vt|
-R9
-Z21 !s100 UGkCAZ?^S:9CQINb1;@<W2
-!i10b 1
-!s85 0
 !s101 -O0
-vtrigger_control_vlg_vec_tst
-Z22 IiPS[H3BghO]CGlR5=BJ_52
-Z23 V56aB<:>HiaWUc9FOzPTJE0
-R3
+R10
+vutrassonic_sensor_vlg_vec_tst
+!i10b 1
+Z21 !s100 25eI2?GVlHFdo6KV^agNi1
+Z22 IXA=_o[WCmT<3C_Z9[c3V:2
+Z23 VYLR@Vh50Y5c^N=oMb@:gm2
+R4
 w0
 R16
 R17
-Z24 L0 181
-R7
+Z24 L0 690
+R8
 r1
+!s85 0
 31
 R18
 R19
 R20
-R9
-Z25 !s100 nm`3c:6[F4aT1c21ZK6oN3
-!i10b 1
-!s85 0
 !s101 -O0
-vutrassonic_sensor
-Z26 IK]Vj^:44g<53^o^eg@o022
-Z27 V;QlEa=>EM<AUPJDgO4HnS3
-R3
-Z28 w1572026926
-R5
-R6
-L0 31
-R7
-r1
-31
-R8
-R9
-!i10b 1
-Z29 !s100 @emJceLGC;KSWQfIJ@g9?2
-!s85 0
-Z30 !s108 1572026927.100407
-R12
-!s101 -O0
-vutrassonic_sensor_vlg_sample_tst
-!i10b 1
-!s100 fE8l2<[iNHPa7Dgcg8SEb2
-InFYK:CUGC?H@ZZ[Q:a9d32
-VSmK29HO5^V78_EX5QmfLE1
-R3
-w1572026923
-R16
-R17
-L0 29
-R7
-r1
-!s85 0
-31
-Z31 !s108 1572026927.205039
-Z32 !s107 ultrasonic_decision.vt|
-R20
-!s101 -O0
-R9
-vutrassonic_sensor_vlg_vec_tst
-!i10b 1
-!s100 ]LKhF:^iDFLGclM8K_0_?2
-Ig`o<i@1M8I:^1UVg5_Ine3
-Z33 VYLR@Vh50Y5c^N=oMb@:gm2
-R3
-w0
-R16
-R17
-L0 675
-R7
-r1
-!s85 0
-31
-R31
-R32
-R20
-!s101 -O0
-R9
+R10

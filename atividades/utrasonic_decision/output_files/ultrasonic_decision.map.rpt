@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ultrasonic_decision
-Fri Nov  1 13:47:33 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Wed Nov  6 17:25:32 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -13,20 +13,12 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |utrassonic_sensor
- 13. Parameter Settings for User Entity Instance: trigger_control:trigger_control|frequency_divider:frequency_divider_triger
- 14. Parameter Settings for User Entity Instance: trigger_control:trigger_control|timer:timer_triger
- 15. Parameter Settings for User Entity Instance: distance_calculation:distance_calculation
- 16. Parameter Settings for User Entity Instance: distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger
- 17. Parameter Settings for User Entity Instance: distance_calculation:distance_calculation|counter:counter_pulse
- 18. Parameter Settings for User Entity Instance: binary_to_decimal:binary_to_decimal
- 19. Parameter Settings for Inferred Entity Instance: distance_calculation:distance_calculation|lpm_divide:Div0
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Trigger_generator:trigger_generator|Counter:trigg
+ 10. Parameter Settings for User Entity Instance: Distance_calculator:distance_calculator|Counter:Counter_pulse
+ 11. Port Connectivity Checks: "Trigger_generator:trigger_generator|Counter:trigg"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -52,16 +44,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov  1 13:47:33 2019           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov  6 17:25:32 2019           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ultrasonic_decision                             ;
 ; Top-level Entity Name              ; utrassonic_sensor                               ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 394                                             ;
-;     Total combinational functions  ; 394                                             ;
-;     Dedicated logic registers      ; 37                                              ;
-; Total registers                    ; 37                                              ;
-; Total pins                         ; 32                                              ;
+; Total logic elements               ; 155                                             ;
+;     Total combinational functions  ; 155                                             ;
+;     Dedicated logic registers      ; 55                                              ;
+; Total registers                    ; 55                                              ;
+; Total pins                         ; 41                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -165,111 +157,66 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                 ;
-+-------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                    ; Library ;
-+-------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; timer.vhd                                 ; yes             ; User VHDL File               ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/timer.vhd                  ;         ;
-; frequency_divider.vhd                     ; yes             ; User VHDL File               ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/frequency_divider.vhd      ;         ;
-; utrassonic_sensor.vhd                     ; yes             ; User VHDL File               ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/utrassonic_sensor.vhd      ;         ;
-; counter.vhd                               ; yes             ; User VHDL File               ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/counter.vhd                ;         ;
-; distance_calculation.vhd                  ; yes             ; User VHDL File               ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/distance_calculation.vhd   ;         ;
-; trigger_control.vhd                       ; yes             ; User VHDL File               ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/trigger_control.vhd        ;         ;
-; binary_to_decimal.vhd                     ; yes             ; User VHDL File               ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/binary_to_decimal.vhd      ;         ;
-; ../decodificador_4_to_7/decodificador.vhd ; yes             ; User VHDL File               ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/decodificador_4_to_7/decodificador.vhd        ;         ;
-; lpm_divide.tdf                            ; yes             ; Megafunction                 ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf                                                              ;         ;
-; abs_divider.inc                           ; yes             ; Megafunction                 ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc                                                             ;         ;
-; sign_div_unsign.inc                       ; yes             ; Megafunction                 ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                         ;         ;
-; aglobal130.inc                            ; yes             ; Megafunction                 ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                              ;         ;
-; db/lpm_divide_kem.tdf                     ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/db/lpm_divide_kem.tdf      ;         ;
-; db/sign_div_unsign_ulh.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/db/sign_div_unsign_ulh.tdf ;         ;
-; db/alt_u_div_u2f.tdf                      ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/db/alt_u_div_u2f.tdf       ;         ;
-; db/add_sub_lkc.tdf                        ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/db/add_sub_lkc.tdf         ;         ;
-; db/add_sub_mkc.tdf                        ; yes             ; Auto-Generated Megafunction  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/db/add_sub_mkc.tdf         ;         ;
-+-------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                 ;
++-------------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                 ; Library ;
++-------------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------+---------+
+; utrassonic_sensor.vhd                     ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/utrassonic_sensor.vhd   ;         ;
+; counter.vhd                               ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/counter.vhd             ;         ;
+; binary_to_decimal.vhd                     ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/binary_to_decimal.vhd   ;         ;
+; ../decodificador_4_to_7/decodificador.vhd ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/decodificador_4_to_7/decodificador.vhd     ;         ;
+; trigger_generator.vhd                     ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/trigger_generator.vhd   ;         ;
+; distance_calculator.vhd                   ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/distance_calculator.vhd ;         ;
++-------------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 394   ;
-;                                             ;       ;
-; Total combinational functions               ; 394   ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 138   ;
-;     -- 3 input functions                    ; 100   ;
-;     -- <=2 input functions                  ; 156   ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 282   ;
-;     -- arithmetic mode                      ; 112   ;
-;                                             ;       ;
-; Total registers                             ; 37    ;
-;     -- Dedicated logic registers            ; 37    ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 32    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; pulse ;
-; Maximum fan-out                             ; 27    ;
-; Total fan-out                               ; 1240  ;
-; Average fan-out                             ; 2.68  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 155        ;
+;                                             ;            ;
+; Total combinational functions               ; 155        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 66         ;
+;     -- 3 input functions                    ; 42         ;
+;     -- <=2 input functions                  ; 47         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 91         ;
+;     -- arithmetic mode                      ; 64         ;
+;                                             ;            ;
+; Total registers                             ; 55         ;
+;     -- Dedicated logic registers            ; 55         ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 41         ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+; Maximum fan-out node                        ; fpga_clock ;
+; Maximum fan-out                             ; 46         ;
+; Total fan-out                               ; 687        ;
+; Average fan-out                             ; 2.74       ;
++---------------------------------------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                    ;
-+--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                          ; Library Name ;
-+--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |utrassonic_sensor                                           ; 394 (0)           ; 37 (0)       ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |utrassonic_sensor                                                                                                                                           ; work         ;
-;    |binary_to_decimal:binary_to_decimal|                     ; 72 (72)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|binary_to_decimal:binary_to_decimal                                                                                                       ; work         ;
-;    |decodificador:\seven_segments_generate:0:seven_segments| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|decodificador:\seven_segments_generate:0:seven_segments                                                                                   ; work         ;
-;    |decodificador:\seven_segments_generate:1:seven_segments| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|decodificador:\seven_segments_generate:1:seven_segments                                                                                   ; work         ;
-;    |decodificador:\seven_segments_generate:2:seven_segments| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|decodificador:\seven_segments_generate:2:seven_segments                                                                                   ; work         ;
-;    |decodificador:\seven_segments_generate:3:seven_segments| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|decodificador:\seven_segments_generate:3:seven_segments                                                                                   ; work         ;
-;    |distance_calculation:distance_calculation|               ; 294 (33)          ; 37 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|distance_calculation:distance_calculation                                                                                                 ; work         ;
-;       |counter:counter_pulse|                                ; 15 (15)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|distance_calculation:distance_calculation|counter:counter_pulse                                                                           ; work         ;
-;       |frequency_divider:frequency_divider_triger|           ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger                                                      ; work         ;
-;       |lpm_divide:Div0|                                      ; 227 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|distance_calculation:distance_calculation|lpm_divide:Div0                                                                                 ; work         ;
-;          |lpm_divide_kem:auto_generated|                     ; 227 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|distance_calculation:distance_calculation|lpm_divide:Div0|lpm_divide_kem:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_ulh:divider|                    ; 227 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|distance_calculation:distance_calculation|lpm_divide:Div0|lpm_divide_kem:auto_generated|sign_div_unsign_ulh:divider                       ; work         ;
-;                |alt_u_div_u2f:divider|                       ; 227 (227)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|distance_calculation:distance_calculation|lpm_divide:Div0|lpm_divide_kem:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_u2f:divider ; work         ;
-+--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                        ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Library Name ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
+; |utrassonic_sensor                                           ; 155 (0)           ; 55 (0)       ; 0           ; 0            ; 0       ; 0         ; 41   ; 0            ; |utrassonic_sensor                                                               ; work         ;
+;    |Distance_calculator:distance_calculator|                 ; 58 (36)           ; 31 (9)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|Distance_calculator:distance_calculator                       ; work         ;
+;       |Counter:Counter_pulse|                                ; 22 (22)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|Distance_calculator:distance_calculator|Counter:Counter_pulse ; work         ;
+;    |Trigger_generator:trigger_generator|                     ; 38 (14)           ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|Trigger_generator:trigger_generator                           ; work         ;
+;       |Counter:trigg|                                        ; 24 (24)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|Trigger_generator:trigger_generator|Counter:trigg             ; work         ;
+;    |binary_to_decimal:binary_to_decimal|                     ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|binary_to_decimal:binary_to_decimal                           ; work         ;
+;    |decodificador:\seven_segments_generate:0:seven_segments| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|decodificador:\seven_segments_generate:0:seven_segments       ; work         ;
+;    |decodificador:\seven_segments_generate:1:seven_segments| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|decodificador:\seven_segments_generate:1:seven_segments       ; work         ;
+;    |decodificador:\seven_segments_generate:2:seven_segments| ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |utrassonic_sensor|decodificador:\seven_segments_generate:2:seven_segments       ; work         ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                      ;
-+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                   ; Reason for Removal                                                                                                    ;
-+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[1] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[1] ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[0] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[0] ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[2] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[2] ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[3] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[3] ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[4] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[4] ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[5] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[5] ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[6] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[6] ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[7] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[7] ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|frequency_counter[8] ; Merged with distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger|frequency_counter[8] ;
-; trigger_control:trigger_control|timer:timer_triger|time_is_over                                 ; Lost fanout                                                                                                           ;
-; trigger_control:trigger_control|timer:timer_triger|count_clock[0..6]                            ; Lost fanout                                                                                                           ;
-; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|out_frequency~reg0   ; Lost fanout                                                                                                           ;
-; Total Number of Removed Registers = 18                                                          ;                                                                                                                       ;
-+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                          ;
-+-----------------------------------------------------------------+--------------------+-----------------------------------------------------------------------------------------------+
-; Register name                                                   ; Reason for Removal ; Registers Removed due to This Register                                                        ;
-+-----------------------------------------------------------------+--------------------+-----------------------------------------------------------------------------------------------+
-; trigger_control:trigger_control|timer:timer_triger|time_is_over ; Lost Fanouts       ; trigger_control:trigger_control|frequency_divider:frequency_divider_triger|out_frequency~reg0 ;
-+-----------------------------------------------------------------+--------------------+-----------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -277,116 +224,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 37    ;
+; Total registers                              ; 55    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 46    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 14    ;
+; Number of registers using Clock Enable       ; 21    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |utrassonic_sensor|trigger_control:trigger_control|timer:timer_triger|count_clock[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |utrassonic_sensor ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; number_bits    ; 12    ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: trigger_control:trigger_control|frequency_divider:frequency_divider_triger ;
-+----------------+-------+------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                           ;
-+----------------+-------+------------------------------------------------------------------------------------------------+
-; n              ; 500   ; Signed Integer                                                                                 ;
-+----------------+-------+------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: trigger_control:trigger_control|timer:timer_triger ;
-+----------------+-------+------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                   ;
-+----------------+-------+------------------------------------------------------------------------+
-; n              ; 100   ; Signed Integer                                                         ;
-+----------------+-------+------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: distance_calculation:distance_calculation ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; number_bits    ; 12    ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: distance_calculation:distance_calculation|frequency_divider:frequency_divider_triger ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                     ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------+
-; n              ; 500   ; Signed Integer                                                                                           ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: distance_calculation:distance_calculation|counter:counter_pulse ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; size_counter   ; 23200 ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: binary_to_decimal:binary_to_decimal ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; number_bits    ; 12    ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Trigger_generator:trigger_generator|Counter:trigg ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n              ; 24    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: distance_calculation:distance_calculation|lpm_divide:Div0 ;
-+------------------------+----------------+------------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                             ;
-+------------------------+----------------+------------------------------------------------------------------+
-; LPM_WIDTHN             ; 18             ; Untyped                                                          ;
-; LPM_WIDTHD             ; 6              ; Untyped                                                          ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                          ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                          ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                          ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                          ;
-; CBXI_PARAMETER         ; lpm_divide_kem ; Untyped                                                          ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                          ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                          ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                     ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                   ;
-+------------------------+----------------+------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Distance_calculator:distance_calculator|Counter:Counter_pulse ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; n              ; 22    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Trigger_generator:trigger_generator|Counter:trigg" ;
++--------+-------+----------+---------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                           ;
++--------+-------+----------+---------------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                      ;
++--------+-------+----------+---------------------------------------------------+
 
 
 +-------------------------------+
@@ -394,7 +268,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -402,9 +276,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov  1 13:47:28 2019
+    Info: Processing started: Wed Nov  6 17:25:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ultrasonic_decision -c ultrasonic_decision
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ultrasonic_decision.vhd
@@ -420,11 +294,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file utrasso
     Info (12022): Found design unit 1: utrassonic_sensor-behavior
     Info (12023): Found entity 1: utrassonic_sensor
 Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
-    Info (12022): Found design unit 1: counter-behavior
-    Info (12023): Found entity 1: counter
-Info (12021): Found 2 design units, including 1 entities, in source file distance_calculation.vhd
-    Info (12022): Found design unit 1: distance_calculation-behavior
-    Info (12023): Found entity 1: distance_calculation
+    Info (12022): Found design unit 1: Counter-Behavioral
+    Info (12023): Found entity 1: Counter
 Info (12021): Found 2 design units, including 1 entities, in source file trigger_control.vhd
     Info (12022): Found design unit 1: trigger_control-behavior
     Info (12023): Found entity 1: trigger_control
@@ -434,60 +305,38 @@ Info (12021): Found 2 design units, including 1 entities, in source file binary_
 Info (12021): Found 2 design units, including 1 entities, in source file /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/decodificador_4_to_7/decodificador.vhd
     Info (12022): Found design unit 1: decodificador-table
     Info (12023): Found entity 1: decodificador
+Info (12021): Found 2 design units, including 1 entities, in source file trigger_generator.vhd
+    Info (12022): Found design unit 1: Trigger_generator-Behavioral
+    Info (12023): Found entity 1: Trigger_generator
+Info (12021): Found 2 design units, including 1 entities, in source file distance_calculator.vhd
+    Info (12022): Found design unit 1: Distance_calculator-Behavioral
+    Info (12023): Found entity 1: Distance_calculator
 Info (12127): Elaborating entity "utrassonic_sensor" for the top level hierarchy
-Info (12129): Elaborating entity "trigger_control" using architecture "A:behavior" for hierarchy "trigger_control:trigger_control"
-Warning (10492): VHDL Process Statement warning at trigger_control.vhd(39): signal "current_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at trigger_control.vhd(43): signal "waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at trigger_control.vhd(50): signal "time_of_triger_is_over" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at trigger_control.vhd(36): inferring latch(es) for signal or variable "start_timer_triger", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at trigger_control.vhd(36): inferring latch(es) for signal or variable "trigger", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at trigger_control.vhd(36): inferring latch(es) for signal or variable "current_state", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at trigger_control.vhd(36): inferring latch(es) for signal or variable "waiting", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "waiting" at trigger_control.vhd(36)
-Info (10041): Inferred latch for "current_state" at trigger_control.vhd(36)
-Info (10041): Inferred latch for "trigger" at trigger_control.vhd(36)
-Info (10041): Inferred latch for "start_timer_triger" at trigger_control.vhd(36)
-Info (12129): Elaborating entity "frequency_divider" using architecture "A:behavior" for hierarchy "trigger_control:trigger_control|frequency_divider:frequency_divider_triger"
-Info (12129): Elaborating entity "timer" using architecture "A:behavior" for hierarchy "trigger_control:trigger_control|timer:timer_triger"
-Info (12129): Elaborating entity "distance_calculation" using architecture "A:behavior" for hierarchy "distance_calculation:distance_calculation"
-Info (12129): Elaborating entity "counter" using architecture "A:behavior" for hierarchy "distance_calculation:distance_calculation|counter:counter_pulse"
-Warning (10492): VHDL Process Statement warning at counter.vhd(28): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12129): Elaborating entity "Trigger_generator" using architecture "A:behavioral" for hierarchy "Trigger_generator:trigger_generator"
+Warning (10492): VHDL Process Statement warning at trigger_generator.vhd(42): signal "waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "Counter" for hierarchy "Trigger_generator:trigger_generator|Counter:trigg"
+Info (12129): Elaborating entity "Distance_calculator" using architecture "A:behavioral" for hierarchy "Distance_calculator:distance_calculator"
+Info (12128): Elaborating entity "Counter" for hierarchy "Distance_calculator:distance_calculator|Counter:Counter_pulse"
 Info (12129): Elaborating entity "binary_to_decimal" using architecture "A:behavior" for hierarchy "binary_to_decimal:binary_to_decimal"
 Info (12129): Elaborating entity "decodificador" using architecture "A:table" for hierarchy "decodificador:\seven_segments_generate:0:seven_segments"
-Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "distance_calculation:distance_calculation|Div0"
-Info (12130): Elaborated megafunction instantiation "distance_calculation:distance_calculation|lpm_divide:Div0"
-Info (12133): Instantiated megafunction "distance_calculation:distance_calculation|lpm_divide:Div0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "18"
-    Info (12134): Parameter "LPM_WIDTHD" = "6"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_kem.tdf
-    Info (12023): Found entity 1: lpm_divide_kem
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_ulh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_ulh
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_u2f.tdf
-    Info (12023): Found entity 1: alt_u_div_u2f
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
-    Info (12023): Found entity 1: add_sub_lkc
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
-    Info (12023): Found entity 1: add_sub_mkc
-Warning (13032): The following tri-state nodes are fed by constants
-    Warning (13033): The pin "trigger" is fed by GND
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "waiting" is stuck at VCC
-Info (17049): 9 registers lost all their fanouts during netlist optimizations.
+    Warning (13410): Pin "thousands_display[0]" is stuck at GND
+    Warning (13410): Pin "thousands_display[1]" is stuck at GND
+    Warning (13410): Pin "thousands_display[2]" is stuck at GND
+    Warning (13410): Pin "thousands_display[3]" is stuck at GND
+    Warning (13410): Pin "thousands_display[4]" is stuck at GND
+    Warning (13410): Pin "thousands_display[5]" is stuck at GND
+    Warning (13410): Pin "thousands_display[6]" is stuck at VCC
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 426 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 394 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 638 megabytes
-    Info: Processing ended: Fri Nov  1 13:47:33 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+Info (21057): Implemented 196 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 155 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 362 megabytes
+    Info: Processing ended: Wed Nov  6 17:25:32 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 
