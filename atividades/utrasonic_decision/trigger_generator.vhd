@@ -6,7 +6,7 @@ entity Trigger_generator is
 		-- Clock
 		clk: in std_logic; 
 		-- waiting
-		waiting : in std_logic;
+		start_button: in std_logic;
 		
 		-- Saida de onda sonora
 		trigger: out std_logic 
@@ -38,8 +38,8 @@ begin
 	process(clk, output_counter) 
 	constant ms250: std_logic_vector(23 downto 0) := "101111101011110000100000"; -- 12500000 ms
  	constant ms250and100us: std_logic_vector(23 downto 0) := "101111101100000000001000";-- 12501000 ms
-	begin
-		if(output_counter > ms250 and output_counter < ms250and100us and waiting = '0') then
+	begin--and start_button = '1'
+		if(output_counter > ms250 and output_counter < ms250and100us) then
 			trigger <= '1';
 		else
 			trigger <= '0';

@@ -1,14 +1,28 @@
 # do ultrasonic_decision.do 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module utrassonic_sensor
+# -- Compiling module decision_controller
 # 
 # Top level modules:
-# 	utrassonic_sensor
+# 	decision_controller
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module utrassonic_sensor_vlg_sample_tst
-# -- Compiling module utrassonic_sensor_vlg_check_tst
-# ** Error: ultrasonic_decision.vt(98): Port mode is incompatible with declaration: trigger
-# -- Compiling module utrassonic_sensor_vlg_vec_tst
-# ** Error: /opt/altera/13.0sp1/modelsim_ase/linuxaloem/vlog failed.
-# Executing ONERROR command at macro ./ultrasonic_decision.do line 4
+# -- Compiling module decision_controller_vlg_sample_tst
+# -- Compiling module decision_controller_vlg_check_tst
+# -- Compiling module decision_controller_vlg_vec_tst
+# 
+# Top level modules:
+# 	decision_controller_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.decision_controller_vlg_vec_tst 
+# Loading work.decision_controller_vlg_vec_tst
+# Loading work.decision_controller
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading work.decision_controller_vlg_sample_tst
+# Loading work.decision_controller_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Simulation passed !
+# ** Note: $finish    : ultrasonic_decision.vt(425)
+#    Time: 1 us  Iteration: 0  Instance: /decision_controller_vlg_vec_tst/tb_out

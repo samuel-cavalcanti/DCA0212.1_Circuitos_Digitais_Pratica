@@ -4,7 +4,7 @@ USE ieee.numeric_std.ALL;
 entity controller is
 	port (clock : in std_logic;
 			readed : in std_logic;
-			distance: in std_logic_vector(8 downto 0)
+			distance: in std_logic_vector(8 downto 0);
 			start_button : in std_logic;
 			left_motor : out std_logic_vector(8 downto 0);
 			right_motor : out std_logic_vector(8 downto 0);
@@ -42,7 +42,7 @@ begin
 					
 					
 				when decision_state => 
-				 int_dist := to_integer(unsigned(a));
+				 int_dist := to_integer(unsigned(distance));
 				 
 				 if int_dist < 30 then
 					left_motor <= "000000000";
@@ -58,6 +58,6 @@ begin
 		
 		end if;
 	
-	end process
+	end process;
 
 end architecture;

@@ -33,15 +33,15 @@ signal waiting : std_logic := '1';
 
 begin  
 
-ultrasonic : entity work.utrassonic_sensor(behavior)
-					port map (fpga_clock => clock,
-								 pulse => pulse,
-								 waiting => waiting,
-								 trigger => trigger,
-								 distance => distance,
-								 thousands_display => thousands_display,
-								 tens_display =>tens_display,
-								 units_display =>units_display);
+--ultrasonic : entity work.utrassonic_sensor(behavior)
+--					port map (fpga_clock => clock,
+--								 pulse => pulse,
+--								 waiting => waiting,
+--								 trigger => trigger,
+--								 distance => distance,
+--								 thousands_display => thousands_display,
+--								 tens_display =>tens_display,
+--								 units_display =>units_display);
 
 	
 --register_banck : entity work.register_banck (behavior)

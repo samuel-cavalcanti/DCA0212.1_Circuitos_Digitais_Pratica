@@ -3,27 +3,27 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'pulse'
-Slack : -4.408
-TNS   : -38.055
+Slack : -4.810
+TNS   : -40.609
 
 Type  : Slow Model Setup 'fpga_clock'
-Slack : -2.349
-TNS   : -58.369
+Slack : -2.223
+TNS   : -56.460
 
 Type  : Slow Model Hold 'fpga_clock'
-Slack : 0.227
+Slack : 0.124
 TNS   : 0.000
 
 Type  : Slow Model Hold 'pulse'
-Slack : 2.156
+Slack : 2.547
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'fpga_clock'
-Slack : -3.146
-TNS   : -135.214
+Slack : -3.074
+TNS   : -135.465
 
 Type  : Slow Model Removal 'fpga_clock'
-Slack : 2.346
+Slack : 2.343
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'fpga_clock'
@@ -35,27 +35,27 @@ Slack : -1.222
 TNS   : -10.222
 
 Type  : Fast Model Setup 'pulse'
-Slack : -1.985
-TNS   : -17.163
+Slack : -2.177
+TNS   : -18.455
 
 Type  : Fast Model Setup 'fpga_clock'
-Slack : -0.614
-TNS   : -7.523
+Slack : -0.557
+TNS   : -6.681
 
 Type  : Fast Model Hold 'fpga_clock'
-Slack : -0.223
-TNS   : -2.446
+Slack : -0.265
+TNS   : -3.439
 
 Type  : Fast Model Hold 'pulse'
-Slack : 1.420
+Slack : 1.634
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'fpga_clock'
-Slack : -0.992
-TNS   : -40.758
+Slack : -0.964
+TNS   : -41.380
 
 Type  : Fast Model Removal 'fpga_clock'
-Slack : 1.170
+Slack : 1.172
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'fpga_clock'

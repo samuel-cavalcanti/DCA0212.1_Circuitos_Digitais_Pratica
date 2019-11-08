@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 32-bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/05/2019 15:57:14"
+// DATE "11/08/2019 14:11:55"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -28,54 +28,40 @@
 
 `timescale 1 ps/ 1 ps
 
-module utrassonic_sensor (
-	fpga_clock,
-	pulse,
-	trigger,
-	thousands_display,
-	hundreds_display,
-	tens_display,
-	units_display);
-input 	fpga_clock;
-input 	pulse;
-output 	trigger;
-output 	[6:0] thousands_display;
-output 	[6:0] hundreds_display;
-output 	[6:0] tens_display;
-output 	[6:0] units_display;
+module decision_controller (
+	distance,
+	left_motor,
+	right_motor);
+input 	[8:0] distance;
+output 	[7:0] left_motor;
+output 	[7:0] right_motor;
 
 // Design Ports Information
-// fpga_clock	=>  Location: PIN_N2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// pulse	=>  Location: PIN_D25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// trigger	=>  Location: PIN_J22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// thousands_display[0]	=>  Location: PIN_Y23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// thousands_display[1]	=>  Location: PIN_AA25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// thousands_display[2]	=>  Location: PIN_AA26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// thousands_display[3]	=>  Location: PIN_Y26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// thousands_display[4]	=>  Location: PIN_Y25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// thousands_display[5]	=>  Location: PIN_U22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// thousands_display[6]	=>  Location: PIN_W24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// hundreds_display[0]	=>  Location: PIN_AB23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// hundreds_display[1]	=>  Location: PIN_V22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// hundreds_display[2]	=>  Location: PIN_AC25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// hundreds_display[3]	=>  Location: PIN_AC26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// hundreds_display[4]	=>  Location: PIN_AB26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// hundreds_display[5]	=>  Location: PIN_AB25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// hundreds_display[6]	=>  Location: PIN_Y24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// tens_display[0]	=>  Location: PIN_V20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// tens_display[1]	=>  Location: PIN_V21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// tens_display[2]	=>  Location: PIN_W21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// tens_display[3]	=>  Location: PIN_Y22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// tens_display[4]	=>  Location: PIN_AA24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// tens_display[5]	=>  Location: PIN_AA23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// tens_display[6]	=>  Location: PIN_AB24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// units_display[0]	=>  Location: PIN_AF10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// units_display[1]	=>  Location: PIN_AB12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// units_display[2]	=>  Location: PIN_AC12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// units_display[3]	=>  Location: PIN_AD11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// units_display[4]	=>  Location: PIN_AE11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// units_display[5]	=>  Location: PIN_V14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// units_display[6]	=>  Location: PIN_V13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// left_motor[0]	=>  Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// left_motor[1]	=>  Location: PIN_D8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// left_motor[2]	=>  Location: PIN_AE5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// left_motor[3]	=>  Location: PIN_U17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// left_motor[4]	=>  Location: PIN_U21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// left_motor[5]	=>  Location: PIN_F25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// left_motor[6]	=>  Location: PIN_P6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// left_motor[7]	=>  Location: PIN_AA6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// right_motor[0]	=>  Location: PIN_U5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// right_motor[1]	=>  Location: PIN_AA2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// right_motor[2]	=>  Location: PIN_V3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// right_motor[3]	=>  Location: PIN_V6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// right_motor[4]	=>  Location: PIN_T4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// right_motor[5]	=>  Location: PIN_T6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// right_motor[6]	=>  Location: PIN_U7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// right_motor[7]	=>  Location: PIN_Y1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// distance[0]	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// distance[1]	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// distance[2]	=>  Location: PIN_R6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// distance[3]	=>  Location: PIN_U2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// distance[4]	=>  Location: PIN_U1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// distance[5]	=>  Location: PIN_T7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// distance[6]	=>  Location: PIN_U9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// distance[7]	=>  Location: PIN_U10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// distance[8]	=>  Location: PIN_V1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -89,10 +75,14 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+wire \LessThan0~1_combout ;
+wire \LessThan0~0_combout ;
+wire \LessThan0~2_combout ;
+wire [8:0] \distance~combout ;
 
 
-// Location: PIN_N2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \fpga_clock~I (
+// Location: PIN_U2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[3]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -106,29 +96,29 @@ cycloneii_io \fpga_clock~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(),
+	.combout(\distance~combout [3]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(fpga_clock));
+	.padio(distance[3]));
 // synopsys translate_off
-defparam \fpga_clock~I .input_async_reset = "none";
-defparam \fpga_clock~I .input_power_up = "low";
-defparam \fpga_clock~I .input_register_mode = "none";
-defparam \fpga_clock~I .input_sync_reset = "none";
-defparam \fpga_clock~I .oe_async_reset = "none";
-defparam \fpga_clock~I .oe_power_up = "low";
-defparam \fpga_clock~I .oe_register_mode = "none";
-defparam \fpga_clock~I .oe_sync_reset = "none";
-defparam \fpga_clock~I .operation_mode = "input";
-defparam \fpga_clock~I .output_async_reset = "none";
-defparam \fpga_clock~I .output_power_up = "low";
-defparam \fpga_clock~I .output_register_mode = "none";
-defparam \fpga_clock~I .output_sync_reset = "none";
+defparam \distance[3]~I .input_async_reset = "none";
+defparam \distance[3]~I .input_power_up = "low";
+defparam \distance[3]~I .input_register_mode = "none";
+defparam \distance[3]~I .input_sync_reset = "none";
+defparam \distance[3]~I .oe_async_reset = "none";
+defparam \distance[3]~I .oe_power_up = "low";
+defparam \distance[3]~I .oe_register_mode = "none";
+defparam \distance[3]~I .oe_sync_reset = "none";
+defparam \distance[3]~I .operation_mode = "input";
+defparam \distance[3]~I .output_async_reset = "none";
+defparam \distance[3]~I .output_power_up = "low";
+defparam \distance[3]~I .output_register_mode = "none";
+defparam \distance[3]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_D25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \pulse~I (
+// Location: PIN_T7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[5]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -142,30 +132,333 @@ cycloneii_io \pulse~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(),
+	.combout(\distance~combout [5]),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(pulse));
+	.padio(distance[5]));
 // synopsys translate_off
-defparam \pulse~I .input_async_reset = "none";
-defparam \pulse~I .input_power_up = "low";
-defparam \pulse~I .input_register_mode = "none";
-defparam \pulse~I .input_sync_reset = "none";
-defparam \pulse~I .oe_async_reset = "none";
-defparam \pulse~I .oe_power_up = "low";
-defparam \pulse~I .oe_register_mode = "none";
-defparam \pulse~I .oe_sync_reset = "none";
-defparam \pulse~I .operation_mode = "input";
-defparam \pulse~I .output_async_reset = "none";
-defparam \pulse~I .output_power_up = "low";
-defparam \pulse~I .output_register_mode = "none";
-defparam \pulse~I .output_sync_reset = "none";
+defparam \distance[5]~I .input_async_reset = "none";
+defparam \distance[5]~I .input_power_up = "low";
+defparam \distance[5]~I .input_register_mode = "none";
+defparam \distance[5]~I .input_sync_reset = "none";
+defparam \distance[5]~I .oe_async_reset = "none";
+defparam \distance[5]~I .oe_power_up = "low";
+defparam \distance[5]~I .oe_register_mode = "none";
+defparam \distance[5]~I .oe_sync_reset = "none";
+defparam \distance[5]~I .operation_mode = "input";
+defparam \distance[5]~I .output_async_reset = "none";
+defparam \distance[5]~I .output_power_up = "low";
+defparam \distance[5]~I .output_register_mode = "none";
+defparam \distance[5]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_J22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \trigger~I (
+// Location: PIN_U9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[6]~I (
 	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\distance~combout [6]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(distance[6]));
+// synopsys translate_off
+defparam \distance[6]~I .input_async_reset = "none";
+defparam \distance[6]~I .input_power_up = "low";
+defparam \distance[6]~I .input_register_mode = "none";
+defparam \distance[6]~I .input_sync_reset = "none";
+defparam \distance[6]~I .oe_async_reset = "none";
+defparam \distance[6]~I .oe_power_up = "low";
+defparam \distance[6]~I .oe_register_mode = "none";
+defparam \distance[6]~I .oe_sync_reset = "none";
+defparam \distance[6]~I .operation_mode = "input";
+defparam \distance[6]~I .output_async_reset = "none";
+defparam \distance[6]~I .output_power_up = "low";
+defparam \distance[6]~I .output_register_mode = "none";
+defparam \distance[6]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_U10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[7]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\distance~combout [7]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(distance[7]));
+// synopsys translate_off
+defparam \distance[7]~I .input_async_reset = "none";
+defparam \distance[7]~I .input_power_up = "low";
+defparam \distance[7]~I .input_register_mode = "none";
+defparam \distance[7]~I .input_sync_reset = "none";
+defparam \distance[7]~I .oe_async_reset = "none";
+defparam \distance[7]~I .oe_power_up = "low";
+defparam \distance[7]~I .oe_register_mode = "none";
+defparam \distance[7]~I .oe_sync_reset = "none";
+defparam \distance[7]~I .operation_mode = "input";
+defparam \distance[7]~I .output_async_reset = "none";
+defparam \distance[7]~I .output_power_up = "low";
+defparam \distance[7]~I .output_register_mode = "none";
+defparam \distance[7]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_U1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[4]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\distance~combout [4]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(distance[4]));
+// synopsys translate_off
+defparam \distance[4]~I .input_async_reset = "none";
+defparam \distance[4]~I .input_power_up = "low";
+defparam \distance[4]~I .input_register_mode = "none";
+defparam \distance[4]~I .input_sync_reset = "none";
+defparam \distance[4]~I .oe_async_reset = "none";
+defparam \distance[4]~I .oe_power_up = "low";
+defparam \distance[4]~I .oe_register_mode = "none";
+defparam \distance[4]~I .oe_sync_reset = "none";
+defparam \distance[4]~I .operation_mode = "input";
+defparam \distance[4]~I .output_async_reset = "none";
+defparam \distance[4]~I .output_power_up = "low";
+defparam \distance[4]~I .output_register_mode = "none";
+defparam \distance[4]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y13_N10
+cycloneii_lcell_comb \LessThan0~1 (
+// Equation(s):
+// \LessThan0~1_combout  = (!\distance~combout [5] & (!\distance~combout [6] & (!\distance~combout [7] & !\distance~combout [4])))
+
+	.dataa(\distance~combout [5]),
+	.datab(\distance~combout [6]),
+	.datac(\distance~combout [7]),
+	.datad(\distance~combout [4]),
+	.cin(gnd),
+	.combout(\LessThan0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~1 .lut_mask = 16'h0001;
+defparam \LessThan0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_V1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[8]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\distance~combout [8]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(distance[8]));
+// synopsys translate_off
+defparam \distance[8]~I .input_async_reset = "none";
+defparam \distance[8]~I .input_power_up = "low";
+defparam \distance[8]~I .input_register_mode = "none";
+defparam \distance[8]~I .input_sync_reset = "none";
+defparam \distance[8]~I .oe_async_reset = "none";
+defparam \distance[8]~I .oe_power_up = "low";
+defparam \distance[8]~I .oe_register_mode = "none";
+defparam \distance[8]~I .oe_sync_reset = "none";
+defparam \distance[8]~I .operation_mode = "input";
+defparam \distance[8]~I .output_async_reset = "none";
+defparam \distance[8]~I .output_power_up = "low";
+defparam \distance[8]~I .output_register_mode = "none";
+defparam \distance[8]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\distance~combout [0]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(distance[0]));
+// synopsys translate_off
+defparam \distance[0]~I .input_async_reset = "none";
+defparam \distance[0]~I .input_power_up = "low";
+defparam \distance[0]~I .input_register_mode = "none";
+defparam \distance[0]~I .input_sync_reset = "none";
+defparam \distance[0]~I .oe_async_reset = "none";
+defparam \distance[0]~I .oe_power_up = "low";
+defparam \distance[0]~I .oe_register_mode = "none";
+defparam \distance[0]~I .oe_sync_reset = "none";
+defparam \distance[0]~I .operation_mode = "input";
+defparam \distance[0]~I .output_async_reset = "none";
+defparam \distance[0]~I .output_power_up = "low";
+defparam \distance[0]~I .output_register_mode = "none";
+defparam \distance[0]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\distance~combout [1]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(distance[1]));
+// synopsys translate_off
+defparam \distance[1]~I .input_async_reset = "none";
+defparam \distance[1]~I .input_power_up = "low";
+defparam \distance[1]~I .input_register_mode = "none";
+defparam \distance[1]~I .input_sync_reset = "none";
+defparam \distance[1]~I .oe_async_reset = "none";
+defparam \distance[1]~I .oe_power_up = "low";
+defparam \distance[1]~I .oe_register_mode = "none";
+defparam \distance[1]~I .oe_sync_reset = "none";
+defparam \distance[1]~I .operation_mode = "input";
+defparam \distance[1]~I .output_async_reset = "none";
+defparam \distance[1]~I .output_power_up = "low";
+defparam \distance[1]~I .output_register_mode = "none";
+defparam \distance[1]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_R6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \distance[2]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\distance~combout [2]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(distance[2]));
+// synopsys translate_off
+defparam \distance[2]~I .input_async_reset = "none";
+defparam \distance[2]~I .input_power_up = "low";
+defparam \distance[2]~I .input_register_mode = "none";
+defparam \distance[2]~I .input_sync_reset = "none";
+defparam \distance[2]~I .oe_async_reset = "none";
+defparam \distance[2]~I .oe_power_up = "low";
+defparam \distance[2]~I .oe_register_mode = "none";
+defparam \distance[2]~I .oe_sync_reset = "none";
+defparam \distance[2]~I .operation_mode = "input";
+defparam \distance[2]~I .output_async_reset = "none";
+defparam \distance[2]~I .output_power_up = "low";
+defparam \distance[2]~I .output_register_mode = "none";
+defparam \distance[2]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y13_N0
+cycloneii_lcell_comb \LessThan0~0 (
+// Equation(s):
+// \LessThan0~0_combout  = (((!\distance~combout [2]) # (!\distance~combout [1])) # (!\distance~combout [0])) # (!\distance~combout [3])
+
+	.dataa(\distance~combout [3]),
+	.datab(\distance~combout [0]),
+	.datac(\distance~combout [1]),
+	.datad(\distance~combout [2]),
+	.cin(gnd),
+	.combout(\LessThan0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~0 .lut_mask = 16'h7FFF;
+defparam \LessThan0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y13_N20
+cycloneii_lcell_comb \LessThan0~2 (
+// Equation(s):
+// \LessThan0~2_combout  = (\LessThan0~1_combout  & (!\distance~combout [8] & \LessThan0~0_combout ))
+
+	.dataa(\LessThan0~1_combout ),
+	.datab(\distance~combout [8]),
+	.datac(vcc),
+	.datad(\LessThan0~0_combout ),
+	.cin(gnd),
+	.combout(\LessThan0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \LessThan0~2 .lut_mask = 16'h2200;
+defparam \LessThan0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \left_motor[0]~I (
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -182,26 +475,26 @@ cycloneii_io \trigger~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(trigger));
+	.padio(left_motor[0]));
 // synopsys translate_off
-defparam \trigger~I .input_async_reset = "none";
-defparam \trigger~I .input_power_up = "low";
-defparam \trigger~I .input_register_mode = "none";
-defparam \trigger~I .input_sync_reset = "none";
-defparam \trigger~I .oe_async_reset = "none";
-defparam \trigger~I .oe_power_up = "low";
-defparam \trigger~I .oe_register_mode = "none";
-defparam \trigger~I .oe_sync_reset = "none";
-defparam \trigger~I .operation_mode = "output";
-defparam \trigger~I .output_async_reset = "none";
-defparam \trigger~I .output_power_up = "low";
-defparam \trigger~I .output_register_mode = "none";
-defparam \trigger~I .output_sync_reset = "none";
+defparam \left_motor[0]~I .input_async_reset = "none";
+defparam \left_motor[0]~I .input_power_up = "low";
+defparam \left_motor[0]~I .input_register_mode = "none";
+defparam \left_motor[0]~I .input_sync_reset = "none";
+defparam \left_motor[0]~I .oe_async_reset = "none";
+defparam \left_motor[0]~I .oe_power_up = "low";
+defparam \left_motor[0]~I .oe_register_mode = "none";
+defparam \left_motor[0]~I .oe_sync_reset = "none";
+defparam \left_motor[0]~I .operation_mode = "output";
+defparam \left_motor[0]~I .output_async_reset = "none";
+defparam \left_motor[0]~I .output_power_up = "low";
+defparam \left_motor[0]~I .output_register_mode = "none";
+defparam \left_motor[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_Y23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \thousands_display[0]~I (
-	.datain(gnd),
+// Location: PIN_D8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \left_motor[1]~I (
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -218,26 +511,26 @@ cycloneii_io \thousands_display[0]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(thousands_display[0]));
+	.padio(left_motor[1]));
 // synopsys translate_off
-defparam \thousands_display[0]~I .input_async_reset = "none";
-defparam \thousands_display[0]~I .input_power_up = "low";
-defparam \thousands_display[0]~I .input_register_mode = "none";
-defparam \thousands_display[0]~I .input_sync_reset = "none";
-defparam \thousands_display[0]~I .oe_async_reset = "none";
-defparam \thousands_display[0]~I .oe_power_up = "low";
-defparam \thousands_display[0]~I .oe_register_mode = "none";
-defparam \thousands_display[0]~I .oe_sync_reset = "none";
-defparam \thousands_display[0]~I .operation_mode = "output";
-defparam \thousands_display[0]~I .output_async_reset = "none";
-defparam \thousands_display[0]~I .output_power_up = "low";
-defparam \thousands_display[0]~I .output_register_mode = "none";
-defparam \thousands_display[0]~I .output_sync_reset = "none";
+defparam \left_motor[1]~I .input_async_reset = "none";
+defparam \left_motor[1]~I .input_power_up = "low";
+defparam \left_motor[1]~I .input_register_mode = "none";
+defparam \left_motor[1]~I .input_sync_reset = "none";
+defparam \left_motor[1]~I .oe_async_reset = "none";
+defparam \left_motor[1]~I .oe_power_up = "low";
+defparam \left_motor[1]~I .oe_register_mode = "none";
+defparam \left_motor[1]~I .oe_sync_reset = "none";
+defparam \left_motor[1]~I .operation_mode = "output";
+defparam \left_motor[1]~I .output_async_reset = "none";
+defparam \left_motor[1]~I .output_power_up = "low";
+defparam \left_motor[1]~I .output_register_mode = "none";
+defparam \left_motor[1]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AA25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \thousands_display[1]~I (
-	.datain(gnd),
+// Location: PIN_AE5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \left_motor[2]~I (
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -254,26 +547,26 @@ cycloneii_io \thousands_display[1]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(thousands_display[1]));
+	.padio(left_motor[2]));
 // synopsys translate_off
-defparam \thousands_display[1]~I .input_async_reset = "none";
-defparam \thousands_display[1]~I .input_power_up = "low";
-defparam \thousands_display[1]~I .input_register_mode = "none";
-defparam \thousands_display[1]~I .input_sync_reset = "none";
-defparam \thousands_display[1]~I .oe_async_reset = "none";
-defparam \thousands_display[1]~I .oe_power_up = "low";
-defparam \thousands_display[1]~I .oe_register_mode = "none";
-defparam \thousands_display[1]~I .oe_sync_reset = "none";
-defparam \thousands_display[1]~I .operation_mode = "output";
-defparam \thousands_display[1]~I .output_async_reset = "none";
-defparam \thousands_display[1]~I .output_power_up = "low";
-defparam \thousands_display[1]~I .output_register_mode = "none";
-defparam \thousands_display[1]~I .output_sync_reset = "none";
+defparam \left_motor[2]~I .input_async_reset = "none";
+defparam \left_motor[2]~I .input_power_up = "low";
+defparam \left_motor[2]~I .input_register_mode = "none";
+defparam \left_motor[2]~I .input_sync_reset = "none";
+defparam \left_motor[2]~I .oe_async_reset = "none";
+defparam \left_motor[2]~I .oe_power_up = "low";
+defparam \left_motor[2]~I .oe_register_mode = "none";
+defparam \left_motor[2]~I .oe_sync_reset = "none";
+defparam \left_motor[2]~I .operation_mode = "output";
+defparam \left_motor[2]~I .output_async_reset = "none";
+defparam \left_motor[2]~I .output_power_up = "low";
+defparam \left_motor[2]~I .output_register_mode = "none";
+defparam \left_motor[2]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AA26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \thousands_display[2]~I (
-	.datain(gnd),
+// Location: PIN_U17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \left_motor[3]~I (
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -290,26 +583,26 @@ cycloneii_io \thousands_display[2]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(thousands_display[2]));
+	.padio(left_motor[3]));
 // synopsys translate_off
-defparam \thousands_display[2]~I .input_async_reset = "none";
-defparam \thousands_display[2]~I .input_power_up = "low";
-defparam \thousands_display[2]~I .input_register_mode = "none";
-defparam \thousands_display[2]~I .input_sync_reset = "none";
-defparam \thousands_display[2]~I .oe_async_reset = "none";
-defparam \thousands_display[2]~I .oe_power_up = "low";
-defparam \thousands_display[2]~I .oe_register_mode = "none";
-defparam \thousands_display[2]~I .oe_sync_reset = "none";
-defparam \thousands_display[2]~I .operation_mode = "output";
-defparam \thousands_display[2]~I .output_async_reset = "none";
-defparam \thousands_display[2]~I .output_power_up = "low";
-defparam \thousands_display[2]~I .output_register_mode = "none";
-defparam \thousands_display[2]~I .output_sync_reset = "none";
+defparam \left_motor[3]~I .input_async_reset = "none";
+defparam \left_motor[3]~I .input_power_up = "low";
+defparam \left_motor[3]~I .input_register_mode = "none";
+defparam \left_motor[3]~I .input_sync_reset = "none";
+defparam \left_motor[3]~I .oe_async_reset = "none";
+defparam \left_motor[3]~I .oe_power_up = "low";
+defparam \left_motor[3]~I .oe_register_mode = "none";
+defparam \left_motor[3]~I .oe_sync_reset = "none";
+defparam \left_motor[3]~I .operation_mode = "output";
+defparam \left_motor[3]~I .output_async_reset = "none";
+defparam \left_motor[3]~I .output_power_up = "low";
+defparam \left_motor[3]~I .output_register_mode = "none";
+defparam \left_motor[3]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_Y26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \thousands_display[3]~I (
-	.datain(gnd),
+// Location: PIN_U21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \left_motor[4]~I (
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -326,26 +619,26 @@ cycloneii_io \thousands_display[3]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(thousands_display[3]));
+	.padio(left_motor[4]));
 // synopsys translate_off
-defparam \thousands_display[3]~I .input_async_reset = "none";
-defparam \thousands_display[3]~I .input_power_up = "low";
-defparam \thousands_display[3]~I .input_register_mode = "none";
-defparam \thousands_display[3]~I .input_sync_reset = "none";
-defparam \thousands_display[3]~I .oe_async_reset = "none";
-defparam \thousands_display[3]~I .oe_power_up = "low";
-defparam \thousands_display[3]~I .oe_register_mode = "none";
-defparam \thousands_display[3]~I .oe_sync_reset = "none";
-defparam \thousands_display[3]~I .operation_mode = "output";
-defparam \thousands_display[3]~I .output_async_reset = "none";
-defparam \thousands_display[3]~I .output_power_up = "low";
-defparam \thousands_display[3]~I .output_register_mode = "none";
-defparam \thousands_display[3]~I .output_sync_reset = "none";
+defparam \left_motor[4]~I .input_async_reset = "none";
+defparam \left_motor[4]~I .input_power_up = "low";
+defparam \left_motor[4]~I .input_register_mode = "none";
+defparam \left_motor[4]~I .input_sync_reset = "none";
+defparam \left_motor[4]~I .oe_async_reset = "none";
+defparam \left_motor[4]~I .oe_power_up = "low";
+defparam \left_motor[4]~I .oe_register_mode = "none";
+defparam \left_motor[4]~I .oe_sync_reset = "none";
+defparam \left_motor[4]~I .operation_mode = "output";
+defparam \left_motor[4]~I .output_async_reset = "none";
+defparam \left_motor[4]~I .output_power_up = "low";
+defparam \left_motor[4]~I .output_register_mode = "none";
+defparam \left_motor[4]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_Y25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \thousands_display[4]~I (
-	.datain(gnd),
+// Location: PIN_F25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \left_motor[5]~I (
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -362,26 +655,26 @@ cycloneii_io \thousands_display[4]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(thousands_display[4]));
+	.padio(left_motor[5]));
 // synopsys translate_off
-defparam \thousands_display[4]~I .input_async_reset = "none";
-defparam \thousands_display[4]~I .input_power_up = "low";
-defparam \thousands_display[4]~I .input_register_mode = "none";
-defparam \thousands_display[4]~I .input_sync_reset = "none";
-defparam \thousands_display[4]~I .oe_async_reset = "none";
-defparam \thousands_display[4]~I .oe_power_up = "low";
-defparam \thousands_display[4]~I .oe_register_mode = "none";
-defparam \thousands_display[4]~I .oe_sync_reset = "none";
-defparam \thousands_display[4]~I .operation_mode = "output";
-defparam \thousands_display[4]~I .output_async_reset = "none";
-defparam \thousands_display[4]~I .output_power_up = "low";
-defparam \thousands_display[4]~I .output_register_mode = "none";
-defparam \thousands_display[4]~I .output_sync_reset = "none";
+defparam \left_motor[5]~I .input_async_reset = "none";
+defparam \left_motor[5]~I .input_power_up = "low";
+defparam \left_motor[5]~I .input_register_mode = "none";
+defparam \left_motor[5]~I .input_sync_reset = "none";
+defparam \left_motor[5]~I .oe_async_reset = "none";
+defparam \left_motor[5]~I .oe_power_up = "low";
+defparam \left_motor[5]~I .oe_register_mode = "none";
+defparam \left_motor[5]~I .oe_sync_reset = "none";
+defparam \left_motor[5]~I .operation_mode = "output";
+defparam \left_motor[5]~I .output_async_reset = "none";
+defparam \left_motor[5]~I .output_power_up = "low";
+defparam \left_motor[5]~I .output_register_mode = "none";
+defparam \left_motor[5]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_U22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \thousands_display[5]~I (
-	.datain(gnd),
+// Location: PIN_P6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \left_motor[6]~I (
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -398,26 +691,26 @@ cycloneii_io \thousands_display[5]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(thousands_display[5]));
+	.padio(left_motor[6]));
 // synopsys translate_off
-defparam \thousands_display[5]~I .input_async_reset = "none";
-defparam \thousands_display[5]~I .input_power_up = "low";
-defparam \thousands_display[5]~I .input_register_mode = "none";
-defparam \thousands_display[5]~I .input_sync_reset = "none";
-defparam \thousands_display[5]~I .oe_async_reset = "none";
-defparam \thousands_display[5]~I .oe_power_up = "low";
-defparam \thousands_display[5]~I .oe_register_mode = "none";
-defparam \thousands_display[5]~I .oe_sync_reset = "none";
-defparam \thousands_display[5]~I .operation_mode = "output";
-defparam \thousands_display[5]~I .output_async_reset = "none";
-defparam \thousands_display[5]~I .output_power_up = "low";
-defparam \thousands_display[5]~I .output_register_mode = "none";
-defparam \thousands_display[5]~I .output_sync_reset = "none";
+defparam \left_motor[6]~I .input_async_reset = "none";
+defparam \left_motor[6]~I .input_power_up = "low";
+defparam \left_motor[6]~I .input_register_mode = "none";
+defparam \left_motor[6]~I .input_sync_reset = "none";
+defparam \left_motor[6]~I .oe_async_reset = "none";
+defparam \left_motor[6]~I .oe_power_up = "low";
+defparam \left_motor[6]~I .oe_register_mode = "none";
+defparam \left_motor[6]~I .oe_sync_reset = "none";
+defparam \left_motor[6]~I .operation_mode = "output";
+defparam \left_motor[6]~I .output_async_reset = "none";
+defparam \left_motor[6]~I .output_power_up = "low";
+defparam \left_motor[6]~I .output_register_mode = "none";
+defparam \left_motor[6]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_W24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \thousands_display[6]~I (
-	.datain(gnd),
+// Location: PIN_AA6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \left_motor[7]~I (
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -434,26 +727,26 @@ cycloneii_io \thousands_display[6]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(thousands_display[6]));
+	.padio(left_motor[7]));
 // synopsys translate_off
-defparam \thousands_display[6]~I .input_async_reset = "none";
-defparam \thousands_display[6]~I .input_power_up = "low";
-defparam \thousands_display[6]~I .input_register_mode = "none";
-defparam \thousands_display[6]~I .input_sync_reset = "none";
-defparam \thousands_display[6]~I .oe_async_reset = "none";
-defparam \thousands_display[6]~I .oe_power_up = "low";
-defparam \thousands_display[6]~I .oe_register_mode = "none";
-defparam \thousands_display[6]~I .oe_sync_reset = "none";
-defparam \thousands_display[6]~I .operation_mode = "output";
-defparam \thousands_display[6]~I .output_async_reset = "none";
-defparam \thousands_display[6]~I .output_power_up = "low";
-defparam \thousands_display[6]~I .output_register_mode = "none";
-defparam \thousands_display[6]~I .output_sync_reset = "none";
+defparam \left_motor[7]~I .input_async_reset = "none";
+defparam \left_motor[7]~I .input_power_up = "low";
+defparam \left_motor[7]~I .input_register_mode = "none";
+defparam \left_motor[7]~I .input_sync_reset = "none";
+defparam \left_motor[7]~I .oe_async_reset = "none";
+defparam \left_motor[7]~I .oe_power_up = "low";
+defparam \left_motor[7]~I .oe_register_mode = "none";
+defparam \left_motor[7]~I .oe_sync_reset = "none";
+defparam \left_motor[7]~I .operation_mode = "output";
+defparam \left_motor[7]~I .output_async_reset = "none";
+defparam \left_motor[7]~I .output_power_up = "low";
+defparam \left_motor[7]~I .output_register_mode = "none";
+defparam \left_motor[7]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AB23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \hundreds_display[0]~I (
-	.datain(gnd),
+// Location: PIN_U5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \right_motor[0]~I (
+	.datain(!\LessThan0~2_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -470,26 +763,26 @@ cycloneii_io \hundreds_display[0]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(hundreds_display[0]));
+	.padio(right_motor[0]));
 // synopsys translate_off
-defparam \hundreds_display[0]~I .input_async_reset = "none";
-defparam \hundreds_display[0]~I .input_power_up = "low";
-defparam \hundreds_display[0]~I .input_register_mode = "none";
-defparam \hundreds_display[0]~I .input_sync_reset = "none";
-defparam \hundreds_display[0]~I .oe_async_reset = "none";
-defparam \hundreds_display[0]~I .oe_power_up = "low";
-defparam \hundreds_display[0]~I .oe_register_mode = "none";
-defparam \hundreds_display[0]~I .oe_sync_reset = "none";
-defparam \hundreds_display[0]~I .operation_mode = "output";
-defparam \hundreds_display[0]~I .output_async_reset = "none";
-defparam \hundreds_display[0]~I .output_power_up = "low";
-defparam \hundreds_display[0]~I .output_register_mode = "none";
-defparam \hundreds_display[0]~I .output_sync_reset = "none";
+defparam \right_motor[0]~I .input_async_reset = "none";
+defparam \right_motor[0]~I .input_power_up = "low";
+defparam \right_motor[0]~I .input_register_mode = "none";
+defparam \right_motor[0]~I .input_sync_reset = "none";
+defparam \right_motor[0]~I .oe_async_reset = "none";
+defparam \right_motor[0]~I .oe_power_up = "low";
+defparam \right_motor[0]~I .oe_register_mode = "none";
+defparam \right_motor[0]~I .oe_sync_reset = "none";
+defparam \right_motor[0]~I .operation_mode = "output";
+defparam \right_motor[0]~I .output_async_reset = "none";
+defparam \right_motor[0]~I .output_power_up = "low";
+defparam \right_motor[0]~I .output_register_mode = "none";
+defparam \right_motor[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_V22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \hundreds_display[1]~I (
-	.datain(gnd),
+// Location: PIN_AA2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \right_motor[1]~I (
+	.datain(!\LessThan0~2_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -506,26 +799,26 @@ cycloneii_io \hundreds_display[1]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(hundreds_display[1]));
+	.padio(right_motor[1]));
 // synopsys translate_off
-defparam \hundreds_display[1]~I .input_async_reset = "none";
-defparam \hundreds_display[1]~I .input_power_up = "low";
-defparam \hundreds_display[1]~I .input_register_mode = "none";
-defparam \hundreds_display[1]~I .input_sync_reset = "none";
-defparam \hundreds_display[1]~I .oe_async_reset = "none";
-defparam \hundreds_display[1]~I .oe_power_up = "low";
-defparam \hundreds_display[1]~I .oe_register_mode = "none";
-defparam \hundreds_display[1]~I .oe_sync_reset = "none";
-defparam \hundreds_display[1]~I .operation_mode = "output";
-defparam \hundreds_display[1]~I .output_async_reset = "none";
-defparam \hundreds_display[1]~I .output_power_up = "low";
-defparam \hundreds_display[1]~I .output_register_mode = "none";
-defparam \hundreds_display[1]~I .output_sync_reset = "none";
+defparam \right_motor[1]~I .input_async_reset = "none";
+defparam \right_motor[1]~I .input_power_up = "low";
+defparam \right_motor[1]~I .input_register_mode = "none";
+defparam \right_motor[1]~I .input_sync_reset = "none";
+defparam \right_motor[1]~I .oe_async_reset = "none";
+defparam \right_motor[1]~I .oe_power_up = "low";
+defparam \right_motor[1]~I .oe_register_mode = "none";
+defparam \right_motor[1]~I .oe_sync_reset = "none";
+defparam \right_motor[1]~I .operation_mode = "output";
+defparam \right_motor[1]~I .output_async_reset = "none";
+defparam \right_motor[1]~I .output_power_up = "low";
+defparam \right_motor[1]~I .output_register_mode = "none";
+defparam \right_motor[1]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AC25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \hundreds_display[2]~I (
-	.datain(gnd),
+// Location: PIN_V3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \right_motor[2]~I (
+	.datain(!\LessThan0~2_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -542,26 +835,26 @@ cycloneii_io \hundreds_display[2]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(hundreds_display[2]));
+	.padio(right_motor[2]));
 // synopsys translate_off
-defparam \hundreds_display[2]~I .input_async_reset = "none";
-defparam \hundreds_display[2]~I .input_power_up = "low";
-defparam \hundreds_display[2]~I .input_register_mode = "none";
-defparam \hundreds_display[2]~I .input_sync_reset = "none";
-defparam \hundreds_display[2]~I .oe_async_reset = "none";
-defparam \hundreds_display[2]~I .oe_power_up = "low";
-defparam \hundreds_display[2]~I .oe_register_mode = "none";
-defparam \hundreds_display[2]~I .oe_sync_reset = "none";
-defparam \hundreds_display[2]~I .operation_mode = "output";
-defparam \hundreds_display[2]~I .output_async_reset = "none";
-defparam \hundreds_display[2]~I .output_power_up = "low";
-defparam \hundreds_display[2]~I .output_register_mode = "none";
-defparam \hundreds_display[2]~I .output_sync_reset = "none";
+defparam \right_motor[2]~I .input_async_reset = "none";
+defparam \right_motor[2]~I .input_power_up = "low";
+defparam \right_motor[2]~I .input_register_mode = "none";
+defparam \right_motor[2]~I .input_sync_reset = "none";
+defparam \right_motor[2]~I .oe_async_reset = "none";
+defparam \right_motor[2]~I .oe_power_up = "low";
+defparam \right_motor[2]~I .oe_register_mode = "none";
+defparam \right_motor[2]~I .oe_sync_reset = "none";
+defparam \right_motor[2]~I .operation_mode = "output";
+defparam \right_motor[2]~I .output_async_reset = "none";
+defparam \right_motor[2]~I .output_power_up = "low";
+defparam \right_motor[2]~I .output_register_mode = "none";
+defparam \right_motor[2]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AC26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \hundreds_display[3]~I (
-	.datain(gnd),
+// Location: PIN_V6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \right_motor[3]~I (
+	.datain(!\LessThan0~2_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -578,26 +871,26 @@ cycloneii_io \hundreds_display[3]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(hundreds_display[3]));
+	.padio(right_motor[3]));
 // synopsys translate_off
-defparam \hundreds_display[3]~I .input_async_reset = "none";
-defparam \hundreds_display[3]~I .input_power_up = "low";
-defparam \hundreds_display[3]~I .input_register_mode = "none";
-defparam \hundreds_display[3]~I .input_sync_reset = "none";
-defparam \hundreds_display[3]~I .oe_async_reset = "none";
-defparam \hundreds_display[3]~I .oe_power_up = "low";
-defparam \hundreds_display[3]~I .oe_register_mode = "none";
-defparam \hundreds_display[3]~I .oe_sync_reset = "none";
-defparam \hundreds_display[3]~I .operation_mode = "output";
-defparam \hundreds_display[3]~I .output_async_reset = "none";
-defparam \hundreds_display[3]~I .output_power_up = "low";
-defparam \hundreds_display[3]~I .output_register_mode = "none";
-defparam \hundreds_display[3]~I .output_sync_reset = "none";
+defparam \right_motor[3]~I .input_async_reset = "none";
+defparam \right_motor[3]~I .input_power_up = "low";
+defparam \right_motor[3]~I .input_register_mode = "none";
+defparam \right_motor[3]~I .input_sync_reset = "none";
+defparam \right_motor[3]~I .oe_async_reset = "none";
+defparam \right_motor[3]~I .oe_power_up = "low";
+defparam \right_motor[3]~I .oe_register_mode = "none";
+defparam \right_motor[3]~I .oe_sync_reset = "none";
+defparam \right_motor[3]~I .operation_mode = "output";
+defparam \right_motor[3]~I .output_async_reset = "none";
+defparam \right_motor[3]~I .output_power_up = "low";
+defparam \right_motor[3]~I .output_register_mode = "none";
+defparam \right_motor[3]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AB26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \hundreds_display[4]~I (
-	.datain(gnd),
+// Location: PIN_T4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \right_motor[4]~I (
+	.datain(!\LessThan0~2_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -614,26 +907,26 @@ cycloneii_io \hundreds_display[4]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(hundreds_display[4]));
+	.padio(right_motor[4]));
 // synopsys translate_off
-defparam \hundreds_display[4]~I .input_async_reset = "none";
-defparam \hundreds_display[4]~I .input_power_up = "low";
-defparam \hundreds_display[4]~I .input_register_mode = "none";
-defparam \hundreds_display[4]~I .input_sync_reset = "none";
-defparam \hundreds_display[4]~I .oe_async_reset = "none";
-defparam \hundreds_display[4]~I .oe_power_up = "low";
-defparam \hundreds_display[4]~I .oe_register_mode = "none";
-defparam \hundreds_display[4]~I .oe_sync_reset = "none";
-defparam \hundreds_display[4]~I .operation_mode = "output";
-defparam \hundreds_display[4]~I .output_async_reset = "none";
-defparam \hundreds_display[4]~I .output_power_up = "low";
-defparam \hundreds_display[4]~I .output_register_mode = "none";
-defparam \hundreds_display[4]~I .output_sync_reset = "none";
+defparam \right_motor[4]~I .input_async_reset = "none";
+defparam \right_motor[4]~I .input_power_up = "low";
+defparam \right_motor[4]~I .input_register_mode = "none";
+defparam \right_motor[4]~I .input_sync_reset = "none";
+defparam \right_motor[4]~I .oe_async_reset = "none";
+defparam \right_motor[4]~I .oe_power_up = "low";
+defparam \right_motor[4]~I .oe_register_mode = "none";
+defparam \right_motor[4]~I .oe_sync_reset = "none";
+defparam \right_motor[4]~I .operation_mode = "output";
+defparam \right_motor[4]~I .output_async_reset = "none";
+defparam \right_motor[4]~I .output_power_up = "low";
+defparam \right_motor[4]~I .output_register_mode = "none";
+defparam \right_motor[4]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AB25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \hundreds_display[5]~I (
-	.datain(gnd),
+// Location: PIN_T6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \right_motor[5]~I (
+	.datain(!\LessThan0~2_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -650,26 +943,26 @@ cycloneii_io \hundreds_display[5]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(hundreds_display[5]));
+	.padio(right_motor[5]));
 // synopsys translate_off
-defparam \hundreds_display[5]~I .input_async_reset = "none";
-defparam \hundreds_display[5]~I .input_power_up = "low";
-defparam \hundreds_display[5]~I .input_register_mode = "none";
-defparam \hundreds_display[5]~I .input_sync_reset = "none";
-defparam \hundreds_display[5]~I .oe_async_reset = "none";
-defparam \hundreds_display[5]~I .oe_power_up = "low";
-defparam \hundreds_display[5]~I .oe_register_mode = "none";
-defparam \hundreds_display[5]~I .oe_sync_reset = "none";
-defparam \hundreds_display[5]~I .operation_mode = "output";
-defparam \hundreds_display[5]~I .output_async_reset = "none";
-defparam \hundreds_display[5]~I .output_power_up = "low";
-defparam \hundreds_display[5]~I .output_register_mode = "none";
-defparam \hundreds_display[5]~I .output_sync_reset = "none";
+defparam \right_motor[5]~I .input_async_reset = "none";
+defparam \right_motor[5]~I .input_power_up = "low";
+defparam \right_motor[5]~I .input_register_mode = "none";
+defparam \right_motor[5]~I .input_sync_reset = "none";
+defparam \right_motor[5]~I .oe_async_reset = "none";
+defparam \right_motor[5]~I .oe_power_up = "low";
+defparam \right_motor[5]~I .oe_register_mode = "none";
+defparam \right_motor[5]~I .oe_sync_reset = "none";
+defparam \right_motor[5]~I .operation_mode = "output";
+defparam \right_motor[5]~I .output_async_reset = "none";
+defparam \right_motor[5]~I .output_power_up = "low";
+defparam \right_motor[5]~I .output_register_mode = "none";
+defparam \right_motor[5]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_Y24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \hundreds_display[6]~I (
-	.datain(gnd),
+// Location: PIN_U7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \right_motor[6]~I (
+	.datain(!\LessThan0~2_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -686,26 +979,26 @@ cycloneii_io \hundreds_display[6]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(hundreds_display[6]));
+	.padio(right_motor[6]));
 // synopsys translate_off
-defparam \hundreds_display[6]~I .input_async_reset = "none";
-defparam \hundreds_display[6]~I .input_power_up = "low";
-defparam \hundreds_display[6]~I .input_register_mode = "none";
-defparam \hundreds_display[6]~I .input_sync_reset = "none";
-defparam \hundreds_display[6]~I .oe_async_reset = "none";
-defparam \hundreds_display[6]~I .oe_power_up = "low";
-defparam \hundreds_display[6]~I .oe_register_mode = "none";
-defparam \hundreds_display[6]~I .oe_sync_reset = "none";
-defparam \hundreds_display[6]~I .operation_mode = "output";
-defparam \hundreds_display[6]~I .output_async_reset = "none";
-defparam \hundreds_display[6]~I .output_power_up = "low";
-defparam \hundreds_display[6]~I .output_register_mode = "none";
-defparam \hundreds_display[6]~I .output_sync_reset = "none";
+defparam \right_motor[6]~I .input_async_reset = "none";
+defparam \right_motor[6]~I .input_power_up = "low";
+defparam \right_motor[6]~I .input_register_mode = "none";
+defparam \right_motor[6]~I .input_sync_reset = "none";
+defparam \right_motor[6]~I .oe_async_reset = "none";
+defparam \right_motor[6]~I .oe_power_up = "low";
+defparam \right_motor[6]~I .oe_register_mode = "none";
+defparam \right_motor[6]~I .oe_sync_reset = "none";
+defparam \right_motor[6]~I .operation_mode = "output";
+defparam \right_motor[6]~I .output_async_reset = "none";
+defparam \right_motor[6]~I .output_power_up = "low";
+defparam \right_motor[6]~I .output_register_mode = "none";
+defparam \right_motor[6]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_V20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \tens_display[0]~I (
-	.datain(gnd),
+// Location: PIN_Y1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \right_motor[7]~I (
+	.datain(!\LessThan0~2_combout ),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -722,489 +1015,21 @@ cycloneii_io \tens_display[0]~I (
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(tens_display[0]));
+	.padio(right_motor[7]));
 // synopsys translate_off
-defparam \tens_display[0]~I .input_async_reset = "none";
-defparam \tens_display[0]~I .input_power_up = "low";
-defparam \tens_display[0]~I .input_register_mode = "none";
-defparam \tens_display[0]~I .input_sync_reset = "none";
-defparam \tens_display[0]~I .oe_async_reset = "none";
-defparam \tens_display[0]~I .oe_power_up = "low";
-defparam \tens_display[0]~I .oe_register_mode = "none";
-defparam \tens_display[0]~I .oe_sync_reset = "none";
-defparam \tens_display[0]~I .operation_mode = "output";
-defparam \tens_display[0]~I .output_async_reset = "none";
-defparam \tens_display[0]~I .output_power_up = "low";
-defparam \tens_display[0]~I .output_register_mode = "none";
-defparam \tens_display[0]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_V21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \tens_display[1]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(tens_display[1]));
-// synopsys translate_off
-defparam \tens_display[1]~I .input_async_reset = "none";
-defparam \tens_display[1]~I .input_power_up = "low";
-defparam \tens_display[1]~I .input_register_mode = "none";
-defparam \tens_display[1]~I .input_sync_reset = "none";
-defparam \tens_display[1]~I .oe_async_reset = "none";
-defparam \tens_display[1]~I .oe_power_up = "low";
-defparam \tens_display[1]~I .oe_register_mode = "none";
-defparam \tens_display[1]~I .oe_sync_reset = "none";
-defparam \tens_display[1]~I .operation_mode = "output";
-defparam \tens_display[1]~I .output_async_reset = "none";
-defparam \tens_display[1]~I .output_power_up = "low";
-defparam \tens_display[1]~I .output_register_mode = "none";
-defparam \tens_display[1]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_W21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \tens_display[2]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(tens_display[2]));
-// synopsys translate_off
-defparam \tens_display[2]~I .input_async_reset = "none";
-defparam \tens_display[2]~I .input_power_up = "low";
-defparam \tens_display[2]~I .input_register_mode = "none";
-defparam \tens_display[2]~I .input_sync_reset = "none";
-defparam \tens_display[2]~I .oe_async_reset = "none";
-defparam \tens_display[2]~I .oe_power_up = "low";
-defparam \tens_display[2]~I .oe_register_mode = "none";
-defparam \tens_display[2]~I .oe_sync_reset = "none";
-defparam \tens_display[2]~I .operation_mode = "output";
-defparam \tens_display[2]~I .output_async_reset = "none";
-defparam \tens_display[2]~I .output_power_up = "low";
-defparam \tens_display[2]~I .output_register_mode = "none";
-defparam \tens_display[2]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_Y22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \tens_display[3]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(tens_display[3]));
-// synopsys translate_off
-defparam \tens_display[3]~I .input_async_reset = "none";
-defparam \tens_display[3]~I .input_power_up = "low";
-defparam \tens_display[3]~I .input_register_mode = "none";
-defparam \tens_display[3]~I .input_sync_reset = "none";
-defparam \tens_display[3]~I .oe_async_reset = "none";
-defparam \tens_display[3]~I .oe_power_up = "low";
-defparam \tens_display[3]~I .oe_register_mode = "none";
-defparam \tens_display[3]~I .oe_sync_reset = "none";
-defparam \tens_display[3]~I .operation_mode = "output";
-defparam \tens_display[3]~I .output_async_reset = "none";
-defparam \tens_display[3]~I .output_power_up = "low";
-defparam \tens_display[3]~I .output_register_mode = "none";
-defparam \tens_display[3]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_AA24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \tens_display[4]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(tens_display[4]));
-// synopsys translate_off
-defparam \tens_display[4]~I .input_async_reset = "none";
-defparam \tens_display[4]~I .input_power_up = "low";
-defparam \tens_display[4]~I .input_register_mode = "none";
-defparam \tens_display[4]~I .input_sync_reset = "none";
-defparam \tens_display[4]~I .oe_async_reset = "none";
-defparam \tens_display[4]~I .oe_power_up = "low";
-defparam \tens_display[4]~I .oe_register_mode = "none";
-defparam \tens_display[4]~I .oe_sync_reset = "none";
-defparam \tens_display[4]~I .operation_mode = "output";
-defparam \tens_display[4]~I .output_async_reset = "none";
-defparam \tens_display[4]~I .output_power_up = "low";
-defparam \tens_display[4]~I .output_register_mode = "none";
-defparam \tens_display[4]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_AA23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \tens_display[5]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(tens_display[5]));
-// synopsys translate_off
-defparam \tens_display[5]~I .input_async_reset = "none";
-defparam \tens_display[5]~I .input_power_up = "low";
-defparam \tens_display[5]~I .input_register_mode = "none";
-defparam \tens_display[5]~I .input_sync_reset = "none";
-defparam \tens_display[5]~I .oe_async_reset = "none";
-defparam \tens_display[5]~I .oe_power_up = "low";
-defparam \tens_display[5]~I .oe_register_mode = "none";
-defparam \tens_display[5]~I .oe_sync_reset = "none";
-defparam \tens_display[5]~I .operation_mode = "output";
-defparam \tens_display[5]~I .output_async_reset = "none";
-defparam \tens_display[5]~I .output_power_up = "low";
-defparam \tens_display[5]~I .output_register_mode = "none";
-defparam \tens_display[5]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_AB24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \tens_display[6]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(tens_display[6]));
-// synopsys translate_off
-defparam \tens_display[6]~I .input_async_reset = "none";
-defparam \tens_display[6]~I .input_power_up = "low";
-defparam \tens_display[6]~I .input_register_mode = "none";
-defparam \tens_display[6]~I .input_sync_reset = "none";
-defparam \tens_display[6]~I .oe_async_reset = "none";
-defparam \tens_display[6]~I .oe_power_up = "low";
-defparam \tens_display[6]~I .oe_register_mode = "none";
-defparam \tens_display[6]~I .oe_sync_reset = "none";
-defparam \tens_display[6]~I .operation_mode = "output";
-defparam \tens_display[6]~I .output_async_reset = "none";
-defparam \tens_display[6]~I .output_power_up = "low";
-defparam \tens_display[6]~I .output_register_mode = "none";
-defparam \tens_display[6]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_AF10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \units_display[0]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(units_display[0]));
-// synopsys translate_off
-defparam \units_display[0]~I .input_async_reset = "none";
-defparam \units_display[0]~I .input_power_up = "low";
-defparam \units_display[0]~I .input_register_mode = "none";
-defparam \units_display[0]~I .input_sync_reset = "none";
-defparam \units_display[0]~I .oe_async_reset = "none";
-defparam \units_display[0]~I .oe_power_up = "low";
-defparam \units_display[0]~I .oe_register_mode = "none";
-defparam \units_display[0]~I .oe_sync_reset = "none";
-defparam \units_display[0]~I .operation_mode = "output";
-defparam \units_display[0]~I .output_async_reset = "none";
-defparam \units_display[0]~I .output_power_up = "low";
-defparam \units_display[0]~I .output_register_mode = "none";
-defparam \units_display[0]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_AB12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \units_display[1]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(units_display[1]));
-// synopsys translate_off
-defparam \units_display[1]~I .input_async_reset = "none";
-defparam \units_display[1]~I .input_power_up = "low";
-defparam \units_display[1]~I .input_register_mode = "none";
-defparam \units_display[1]~I .input_sync_reset = "none";
-defparam \units_display[1]~I .oe_async_reset = "none";
-defparam \units_display[1]~I .oe_power_up = "low";
-defparam \units_display[1]~I .oe_register_mode = "none";
-defparam \units_display[1]~I .oe_sync_reset = "none";
-defparam \units_display[1]~I .operation_mode = "output";
-defparam \units_display[1]~I .output_async_reset = "none";
-defparam \units_display[1]~I .output_power_up = "low";
-defparam \units_display[1]~I .output_register_mode = "none";
-defparam \units_display[1]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_AC12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \units_display[2]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(units_display[2]));
-// synopsys translate_off
-defparam \units_display[2]~I .input_async_reset = "none";
-defparam \units_display[2]~I .input_power_up = "low";
-defparam \units_display[2]~I .input_register_mode = "none";
-defparam \units_display[2]~I .input_sync_reset = "none";
-defparam \units_display[2]~I .oe_async_reset = "none";
-defparam \units_display[2]~I .oe_power_up = "low";
-defparam \units_display[2]~I .oe_register_mode = "none";
-defparam \units_display[2]~I .oe_sync_reset = "none";
-defparam \units_display[2]~I .operation_mode = "output";
-defparam \units_display[2]~I .output_async_reset = "none";
-defparam \units_display[2]~I .output_power_up = "low";
-defparam \units_display[2]~I .output_register_mode = "none";
-defparam \units_display[2]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_AD11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \units_display[3]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(units_display[3]));
-// synopsys translate_off
-defparam \units_display[3]~I .input_async_reset = "none";
-defparam \units_display[3]~I .input_power_up = "low";
-defparam \units_display[3]~I .input_register_mode = "none";
-defparam \units_display[3]~I .input_sync_reset = "none";
-defparam \units_display[3]~I .oe_async_reset = "none";
-defparam \units_display[3]~I .oe_power_up = "low";
-defparam \units_display[3]~I .oe_register_mode = "none";
-defparam \units_display[3]~I .oe_sync_reset = "none";
-defparam \units_display[3]~I .operation_mode = "output";
-defparam \units_display[3]~I .output_async_reset = "none";
-defparam \units_display[3]~I .output_power_up = "low";
-defparam \units_display[3]~I .output_register_mode = "none";
-defparam \units_display[3]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_AE11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \units_display[4]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(units_display[4]));
-// synopsys translate_off
-defparam \units_display[4]~I .input_async_reset = "none";
-defparam \units_display[4]~I .input_power_up = "low";
-defparam \units_display[4]~I .input_register_mode = "none";
-defparam \units_display[4]~I .input_sync_reset = "none";
-defparam \units_display[4]~I .oe_async_reset = "none";
-defparam \units_display[4]~I .oe_power_up = "low";
-defparam \units_display[4]~I .oe_register_mode = "none";
-defparam \units_display[4]~I .oe_sync_reset = "none";
-defparam \units_display[4]~I .operation_mode = "output";
-defparam \units_display[4]~I .output_async_reset = "none";
-defparam \units_display[4]~I .output_power_up = "low";
-defparam \units_display[4]~I .output_register_mode = "none";
-defparam \units_display[4]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_V14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \units_display[5]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(units_display[5]));
-// synopsys translate_off
-defparam \units_display[5]~I .input_async_reset = "none";
-defparam \units_display[5]~I .input_power_up = "low";
-defparam \units_display[5]~I .input_register_mode = "none";
-defparam \units_display[5]~I .input_sync_reset = "none";
-defparam \units_display[5]~I .oe_async_reset = "none";
-defparam \units_display[5]~I .oe_power_up = "low";
-defparam \units_display[5]~I .oe_register_mode = "none";
-defparam \units_display[5]~I .oe_sync_reset = "none";
-defparam \units_display[5]~I .operation_mode = "output";
-defparam \units_display[5]~I .output_async_reset = "none";
-defparam \units_display[5]~I .output_power_up = "low";
-defparam \units_display[5]~I .output_register_mode = "none";
-defparam \units_display[5]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: PIN_V13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-cycloneii_io \units_display[6]~I (
-	.datain(gnd),
-	.oe(vcc),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(units_display[6]));
-// synopsys translate_off
-defparam \units_display[6]~I .input_async_reset = "none";
-defparam \units_display[6]~I .input_power_up = "low";
-defparam \units_display[6]~I .input_register_mode = "none";
-defparam \units_display[6]~I .input_sync_reset = "none";
-defparam \units_display[6]~I .oe_async_reset = "none";
-defparam \units_display[6]~I .oe_power_up = "low";
-defparam \units_display[6]~I .oe_register_mode = "none";
-defparam \units_display[6]~I .oe_sync_reset = "none";
-defparam \units_display[6]~I .operation_mode = "output";
-defparam \units_display[6]~I .output_async_reset = "none";
-defparam \units_display[6]~I .output_power_up = "low";
-defparam \units_display[6]~I .output_register_mode = "none";
-defparam \units_display[6]~I .output_sync_reset = "none";
+defparam \right_motor[7]~I .input_async_reset = "none";
+defparam \right_motor[7]~I .input_power_up = "low";
+defparam \right_motor[7]~I .input_register_mode = "none";
+defparam \right_motor[7]~I .input_sync_reset = "none";
+defparam \right_motor[7]~I .oe_async_reset = "none";
+defparam \right_motor[7]~I .oe_power_up = "low";
+defparam \right_motor[7]~I .oe_register_mode = "none";
+defparam \right_motor[7]~I .oe_sync_reset = "none";
+defparam \right_motor[7]~I .operation_mode = "output";
+defparam \right_motor[7]~I .output_async_reset = "none";
+defparam \right_motor[7]~I .output_power_up = "low";
+defparam \right_motor[7]~I .output_register_mode = "none";
+defparam \right_motor[7]~I .output_sync_reset = "none";
 // synopsys translate_on
 
 endmodule

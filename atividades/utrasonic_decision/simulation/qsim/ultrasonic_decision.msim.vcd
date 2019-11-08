@@ -1,0 +1,94 @@
+$comment
+	File created using the following command:
+		vcd file ultrasonic_decision.msim.vcd -direction
+$end
+$date
+	Fri Nov  8 14:11:56 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module decision_controller_vlg_vec_tst $end
+$var reg 9 ! distance [8:0] $end
+$var wire 1 " left_motor [7] $end
+$var wire 1 # left_motor [6] $end
+$var wire 1 $ left_motor [5] $end
+$var wire 1 % left_motor [4] $end
+$var wire 1 & left_motor [3] $end
+$var wire 1 ' left_motor [2] $end
+$var wire 1 ( left_motor [1] $end
+$var wire 1 ) left_motor [0] $end
+$var wire 1 * right_motor [7] $end
+$var wire 1 + right_motor [6] $end
+$var wire 1 , right_motor [5] $end
+$var wire 1 - right_motor [4] $end
+$var wire 1 . right_motor [3] $end
+$var wire 1 / right_motor [2] $end
+$var wire 1 0 right_motor [1] $end
+$var wire 1 1 right_motor [0] $end
+$var wire 1 2 sampler $end
+$scope module i1 $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 5 unknown $end
+$var tri1 1 6 devclrn $end
+$var tri1 1 7 devpor $end
+$var tri1 1 8 devoe $end
+$var wire 1 9 LessThan0~1_combout $end
+$var wire 1 : LessThan0~0_combout $end
+$var wire 1 ; LessThan0~2_combout $end
+$var wire 1 < distance~combout [8] $end
+$var wire 1 = distance~combout [7] $end
+$var wire 1 > distance~combout [6] $end
+$var wire 1 ? distance~combout [5] $end
+$var wire 1 @ distance~combout [4] $end
+$var wire 1 A distance~combout [3] $end
+$var wire 1 B distance~combout [2] $end
+$var wire 1 C distance~combout [1] $end
+$var wire 1 D distance~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1110 !
+1)
+1(
+1'
+1&
+1%
+1$
+1#
+1"
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+x2
+03
+14
+x5
+16
+17
+18
+19
+1:
+1;
+0D
+1C
+1B
+1A
+0@
+0?
+0>
+0=
+0<
+$end
+#1000000

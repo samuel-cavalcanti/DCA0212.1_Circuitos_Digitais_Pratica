@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+USE ieee.numeric_std.ALL;
+
+entity decision_controller is 
+	port ( distance : in std_logic_vector( 8 downto 0); --start_button : in std_logic;
+			 motor_left : out std_logic_vector(7 downto 0)
+			 motor_right : out std_logic_vector(7 downto 0));
+			 
+end entity; 
+
+
+
+
+architecture behavior of decision_controller is 
+
+signal last_distance : integer range 0 to 511; -- 511 e a distancia maxima 
+
+
+
+	begin
+	
+	process (distance)
+		variable int_distance : integer range 0 to 511;
+		
+		begin
+		
+			int_distance := to_integer(unsigned(distance));
+			
+			if int_distance < 15 then
+				motor_left <=  "11111111";
+				motor_right <= "00000000";
+			
+			else 
+				motor_left <=  "11111111";
+				motor_right <=  "11111111";
+			end if ;
+			
+			last_distance <= int_distance;
+			
+	end process;
+	
+	
+	
+	
+	end architecture;
