@@ -3,7 +3,7 @@ $comment
 		vcd file ultrasonic_decision.msim.vcd -direction
 $end
 $date
-	Fri Nov  8 14:11:56 2019
+	Fri Nov  8 18:50:15 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -12,83 +12,81 @@ $timescale
 	1ps
 $end
 $scope module decision_controller_vlg_vec_tst $end
-$var reg 9 ! distance [8:0] $end
-$var wire 1 " left_motor [7] $end
-$var wire 1 # left_motor [6] $end
-$var wire 1 $ left_motor [5] $end
-$var wire 1 % left_motor [4] $end
-$var wire 1 & left_motor [3] $end
-$var wire 1 ' left_motor [2] $end
-$var wire 1 ( left_motor [1] $end
-$var wire 1 ) left_motor [0] $end
-$var wire 1 * right_motor [7] $end
-$var wire 1 + right_motor [6] $end
-$var wire 1 , right_motor [5] $end
-$var wire 1 - right_motor [4] $end
-$var wire 1 . right_motor [3] $end
-$var wire 1 / right_motor [2] $end
-$var wire 1 0 right_motor [1] $end
-$var wire 1 1 right_motor [0] $end
-$var wire 1 2 sampler $end
+$var reg 9 ! distance_front [8:0] $end
+$var reg 9 " distance_left [8:0] $end
+$var wire 1 # left_motor $end
+$var wire 1 $ right_motor $end
+$var wire 1 % sampler $end
 $scope module i1 $end
-$var wire 1 3 gnd $end
-$var wire 1 4 vcc $end
-$var wire 1 5 unknown $end
-$var tri1 1 6 devclrn $end
-$var tri1 1 7 devpor $end
-$var tri1 1 8 devoe $end
-$var wire 1 9 LessThan0~1_combout $end
-$var wire 1 : LessThan0~0_combout $end
-$var wire 1 ; LessThan0~2_combout $end
-$var wire 1 < distance~combout [8] $end
-$var wire 1 = distance~combout [7] $end
-$var wire 1 > distance~combout [6] $end
-$var wire 1 ? distance~combout [5] $end
-$var wire 1 @ distance~combout [4] $end
-$var wire 1 A distance~combout [3] $end
-$var wire 1 B distance~combout [2] $end
-$var wire 1 C distance~combout [1] $end
-$var wire 1 D distance~combout [0] $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , LessThan0~1_combout $end
+$var wire 1 - LessThan0~0_combout $end
+$var wire 1 . LessThan0~2_combout $end
+$var wire 1 / LessThan1~0_combout $end
+$var wire 1 0 LessThan1~1_combout $end
+$var wire 1 1 process_0~0_combout $end
+$var wire 1 2 distance_left~combout [8] $end
+$var wire 1 3 distance_left~combout [7] $end
+$var wire 1 4 distance_left~combout [6] $end
+$var wire 1 5 distance_left~combout [5] $end
+$var wire 1 6 distance_left~combout [4] $end
+$var wire 1 7 distance_left~combout [3] $end
+$var wire 1 8 distance_left~combout [2] $end
+$var wire 1 9 distance_left~combout [1] $end
+$var wire 1 : distance_left~combout [0] $end
+$var wire 1 ; distance_front~combout [8] $end
+$var wire 1 < distance_front~combout [7] $end
+$var wire 1 = distance_front~combout [6] $end
+$var wire 1 > distance_front~combout [5] $end
+$var wire 1 ? distance_front~combout [4] $end
+$var wire 1 @ distance_front~combout [3] $end
+$var wire 1 A distance_front~combout [2] $end
+$var wire 1 B distance_front~combout [1] $end
+$var wire 1 C distance_front~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b1110 !
-1)
-1(
-1'
-1&
-1%
-1$
+b10 !
+b10100 "
 1#
-1"
-01
+0$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+1,
+1-
+1.
+1/
 00
-0/
-0.
-0-
-0,
-0+
-0*
-x2
-03
-14
-x5
-16
-17
+11
+0:
+09
 18
-19
-1:
-1;
-0D
-1C
+07
+16
+05
+04
+03
+02
+0C
 1B
-1A
+0A
 0@
 0?
 0>
 0=
 0<
+0;
 $end
 #1000000

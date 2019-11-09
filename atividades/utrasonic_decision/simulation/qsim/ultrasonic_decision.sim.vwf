@@ -35,7 +35,7 @@ HEADER
 
 
 
-SIGNAL("distance")
+SIGNAL("distance_front")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -45,277 +45,217 @@ SIGNAL("distance")
 	PARENT = "";
 }
 
-SIGNAL("distance[8]")
+SIGNAL("distance_front[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
 }
 
-SIGNAL("distance[7]")
+SIGNAL("distance_front[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
 }
 
-SIGNAL("distance[6]")
+SIGNAL("distance_front[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
 }
 
-SIGNAL("distance[5]")
+SIGNAL("distance_front[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
 }
 
-SIGNAL("distance[4]")
+SIGNAL("distance_front[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
 }
 
-SIGNAL("distance[3]")
+SIGNAL("distance_front[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
 }
 
-SIGNAL("distance[2]")
+SIGNAL("distance_front[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
 }
 
-SIGNAL("distance[1]")
+SIGNAL("distance_front[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
 }
 
-SIGNAL("distance[0]")
+SIGNAL("distance_front[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "distance";
+	PARENT = "distance_front";
+}
+
+SIGNAL("distance_left")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 9;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("distance_left[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
+}
+
+SIGNAL("distance_left[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
+}
+
+SIGNAL("distance_left[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
+}
+
+SIGNAL("distance_left[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
+}
+
+SIGNAL("distance_left[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
+}
+
+SIGNAL("distance_left[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
+}
+
+SIGNAL("distance_left[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
+}
+
+SIGNAL("distance_left[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
+}
+
+SIGNAL("distance_left[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "distance_left";
 }
 
 SIGNAL("left_motor")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
-}
-
-SIGNAL("left_motor[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "left_motor";
-}
-
-SIGNAL("left_motor[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "left_motor";
-}
-
-SIGNAL("left_motor[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "left_motor";
-}
-
-SIGNAL("left_motor[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "left_motor";
-}
-
-SIGNAL("left_motor[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "left_motor";
-}
-
-SIGNAL("left_motor[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "left_motor";
-}
-
-SIGNAL("left_motor[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "left_motor";
-}
-
-SIGNAL("left_motor[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "left_motor";
 }
 
 SIGNAL("right_motor")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("right_motor[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "right_motor";
-}
-
-SIGNAL("right_motor[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "right_motor";
-}
-
-SIGNAL("right_motor[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "right_motor";
-}
-
-SIGNAL("right_motor[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "right_motor";
-}
-
-SIGNAL("right_motor[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "right_motor";
-}
-
-SIGNAL("right_motor[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "right_motor";
-}
-
-SIGNAL("right_motor[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "right_motor";
-}
-
-SIGNAL("right_motor[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "right_motor";
-}
-
-TRANSITION_LIST("distance[8]")
+TRANSITION_LIST("distance_front[8]")
 {
 	NODE
 	{
@@ -323,7 +263,7 @@ TRANSITION_LIST("distance[8]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("distance[7]")
+TRANSITION_LIST("distance_front[7]")
 {
 	NODE
 	{
@@ -331,7 +271,7 @@ TRANSITION_LIST("distance[7]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("distance[6]")
+TRANSITION_LIST("distance_front[6]")
 {
 	NODE
 	{
@@ -339,7 +279,7 @@ TRANSITION_LIST("distance[6]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("distance[5]")
+TRANSITION_LIST("distance_front[5]")
 {
 	NODE
 	{
@@ -347,7 +287,7 @@ TRANSITION_LIST("distance[5]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("distance[4]")
+TRANSITION_LIST("distance_front[4]")
 {
 	NODE
 	{
@@ -355,7 +295,23 @@ TRANSITION_LIST("distance[4]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("distance[3]")
+TRANSITION_LIST("distance_front[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("distance_front[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("distance_front[1]")
 {
 	NODE
 	{
@@ -363,23 +319,7 @@ TRANSITION_LIST("distance[3]")
 		LEVEL 1 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("distance[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("distance[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("distance[0]")
+TRANSITION_LIST("distance_front[0]")
 {
 	NODE
 	{
@@ -387,71 +327,7 @@ TRANSITION_LIST("distance[0]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("left_motor[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("left_motor[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("left_motor[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("left_motor[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("left_motor[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("left_motor[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("left_motor[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("left_motor[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("right_motor[7]")
+TRANSITION_LIST("distance_left[8]")
 {
 	NODE
 	{
@@ -459,7 +335,7 @@ TRANSITION_LIST("right_motor[7]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("right_motor[6]")
+TRANSITION_LIST("distance_left[7]")
 {
 	NODE
 	{
@@ -467,7 +343,7 @@ TRANSITION_LIST("right_motor[6]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("right_motor[5]")
+TRANSITION_LIST("distance_left[6]")
 {
 	NODE
 	{
@@ -475,7 +351,7 @@ TRANSITION_LIST("right_motor[5]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("right_motor[4]")
+TRANSITION_LIST("distance_left[5]")
 {
 	NODE
 	{
@@ -483,7 +359,15 @@ TRANSITION_LIST("right_motor[4]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("right_motor[3]")
+TRANSITION_LIST("distance_left[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("distance_left[3]")
 {
 	NODE
 	{
@@ -491,7 +375,15 @@ TRANSITION_LIST("right_motor[3]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("right_motor[2]")
+TRANSITION_LIST("distance_left[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("distance_left[1]")
 {
 	NODE
 	{
@@ -499,7 +391,7 @@ TRANSITION_LIST("right_motor[2]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("right_motor[1]")
+TRANSITION_LIST("distance_left[0]")
 {
 	NODE
 	{
@@ -507,7 +399,15 @@ TRANSITION_LIST("right_motor[1]")
 		LEVEL 0 FOR 1000.0;
 	}
 }
-TRANSITION_LIST("right_motor[0]")
+TRANSITION_LIST("left_motor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("right_motor")
 {
 	NODE
 	{
@@ -519,7 +419,7 @@ TRANSITION_LIST("right_motor[0]")
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance";
+	CHANNEL = "distance_front";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 0;
@@ -529,7 +429,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[8]";
+	CHANNEL = "distance_front[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 1;
@@ -539,7 +439,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[7]";
+	CHANNEL = "distance_front[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 2;
@@ -549,7 +449,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[6]";
+	CHANNEL = "distance_front[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 3;
@@ -559,7 +459,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[5]";
+	CHANNEL = "distance_front[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 4;
@@ -569,7 +469,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[4]";
+	CHANNEL = "distance_front[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 5;
@@ -579,7 +479,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[3]";
+	CHANNEL = "distance_front[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 6;
@@ -589,7 +489,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[2]";
+	CHANNEL = "distance_front[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 7;
@@ -599,7 +499,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[1]";
+	CHANNEL = "distance_front[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 8;
@@ -609,7 +509,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "distance[0]";
+	CHANNEL = "distance_front[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 9;
@@ -619,17 +519,17 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor";
+	CHANNEL = "distance_left";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 0;
-	CHILDREN = 11, 12, 13, 14, 15, 16, 17, 18;
+	CHILDREN = 11, 12, 13, 14, 15, 16, 17, 18, 19;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor[7]";
+	CHANNEL = "distance_left[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 11;
@@ -639,7 +539,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor[6]";
+	CHANNEL = "distance_left[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 12;
@@ -649,7 +549,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor[5]";
+	CHANNEL = "distance_left[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 13;
@@ -659,7 +559,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor[4]";
+	CHANNEL = "distance_left[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 14;
@@ -669,7 +569,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor[3]";
+	CHANNEL = "distance_left[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 15;
@@ -679,7 +579,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor[2]";
+	CHANNEL = "distance_left[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 16;
@@ -689,7 +589,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor[1]";
+	CHANNEL = "distance_left[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 17;
@@ -699,7 +599,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "left_motor[0]";
+	CHANNEL = "distance_left[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 18;
@@ -709,92 +609,30 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "right_motor";
+	CHANNEL = "distance_left[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 19;
-	TREE_LEVEL = 0;
-	CHILDREN = 20, 21, 22, 23, 24, 25, 26, 27;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "right_motor[7]";
+	CHANNEL = "left_motor";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 20;
-	TREE_LEVEL = 1;
-	PARENT = 19;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "right_motor[6]";
+	CHANNEL = "right_motor";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 21;
-	TREE_LEVEL = 1;
-	PARENT = 19;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "right_motor[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 22;
-	TREE_LEVEL = 1;
-	PARENT = 19;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "right_motor[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 23;
-	TREE_LEVEL = 1;
-	PARENT = 19;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "right_motor[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 24;
-	TREE_LEVEL = 1;
-	PARENT = 19;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "right_motor[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 25;
-	TREE_LEVEL = 1;
-	PARENT = 19;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "right_motor[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 26;
-	TREE_LEVEL = 1;
-	PARENT = 19;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "right_motor[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 27;
-	TREE_LEVEL = 1;
-	PARENT = 19;
+	TREE_LEVEL = 0;
 }
 TIME_BAR
 {

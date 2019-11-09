@@ -1,55 +1,75 @@
 |robot
-fpga_clock => utrassonic_sensor:ultrassonic.fpga_clock
-pulse => utrassonic_sensor:ultrassonic.pulse
-trigger <= utrassonic_sensor:ultrassonic.trigger
-start_button => utrassonic_sensor:ultrassonic.start_button
-thousands_display[0] <= display:display.thousands_display[0]
-thousands_display[1] <= display:display.thousands_display[1]
-thousands_display[2] <= display:display.thousands_display[2]
-thousands_display[3] <= display:display.thousands_display[3]
-thousands_display[4] <= display:display.thousands_display[4]
-thousands_display[5] <= display:display.thousands_display[5]
-thousands_display[6] <= display:display.thousands_display[6]
-hundreds_display[0] <= display:display.hundreds_display[0]
-hundreds_display[1] <= display:display.hundreds_display[1]
-hundreds_display[2] <= display:display.hundreds_display[2]
-hundreds_display[3] <= display:display.hundreds_display[3]
-hundreds_display[4] <= display:display.hundreds_display[4]
-hundreds_display[5] <= display:display.hundreds_display[5]
-hundreds_display[6] <= display:display.hundreds_display[6]
-tens_display[0] <= display:display.tens_display[0]
-tens_display[1] <= display:display.tens_display[1]
-tens_display[2] <= display:display.tens_display[2]
-tens_display[3] <= display:display.tens_display[3]
-tens_display[4] <= display:display.tens_display[4]
-tens_display[5] <= display:display.tens_display[5]
-tens_display[6] <= display:display.tens_display[6]
-units_display[0] <= display:display.units_display[0]
-units_display[1] <= display:display.units_display[1]
-units_display[2] <= display:display.units_display[2]
-units_display[3] <= display:display.units_display[3]
-units_display[4] <= display:display.units_display[4]
-units_display[5] <= display:display.units_display[5]
-units_display[6] <= display:display.units_display[6]
+fpga_clock => utrassonic_sensor:ultrassonic_front.fpga_clock
+fpga_clock => utrassonic_sensor:ultrassonic_left.fpga_clock
+pulse_front => utrassonic_sensor:ultrassonic_front.pulse
+trigger_front <= utrassonic_sensor:ultrassonic_front.trigger
+pulse_left => utrassonic_sensor:ultrassonic_left.pulse
+trigger_left <= utrassonic_sensor:ultrassonic_left.trigger
+start_button => utrassonic_sensor:ultrassonic_front.start_button
+start_button => utrassonic_sensor:ultrassonic_left.start_button
+thousands_display_front[0] <= display:display_front.thousands_display[0]
+thousands_display_front[1] <= display:display_front.thousands_display[1]
+thousands_display_front[2] <= display:display_front.thousands_display[2]
+thousands_display_front[3] <= display:display_front.thousands_display[3]
+thousands_display_front[4] <= display:display_front.thousands_display[4]
+thousands_display_front[5] <= display:display_front.thousands_display[5]
+thousands_display_front[6] <= display:display_front.thousands_display[6]
+hundreds_display_front[0] <= display:display_front.hundreds_display[0]
+hundreds_display_front[1] <= display:display_front.hundreds_display[1]
+hundreds_display_front[2] <= display:display_front.hundreds_display[2]
+hundreds_display_front[3] <= display:display_front.hundreds_display[3]
+hundreds_display_front[4] <= display:display_front.hundreds_display[4]
+hundreds_display_front[5] <= display:display_front.hundreds_display[5]
+hundreds_display_front[6] <= display:display_front.hundreds_display[6]
+tens_display_front[0] <= display:display_front.tens_display[0]
+tens_display_front[1] <= display:display_front.tens_display[1]
+tens_display_front[2] <= display:display_front.tens_display[2]
+tens_display_front[3] <= display:display_front.tens_display[3]
+tens_display_front[4] <= display:display_front.tens_display[4]
+tens_display_front[5] <= display:display_front.tens_display[5]
+tens_display_front[6] <= display:display_front.tens_display[6]
+units_display_front[0] <= display:display_front.units_display[0]
+units_display_front[1] <= display:display_front.units_display[1]
+units_display_front[2] <= display:display_front.units_display[2]
+units_display_front[3] <= display:display_front.units_display[3]
+units_display_front[4] <= display:display_front.units_display[4]
+units_display_front[5] <= display:display_front.units_display[5]
+units_display_front[6] <= display:display_front.units_display[6]
+thousands_display_left[0] <= display:display_left.thousands_display[0]
+thousands_display_left[1] <= display:display_left.thousands_display[1]
+thousands_display_left[2] <= display:display_left.thousands_display[2]
+thousands_display_left[3] <= display:display_left.thousands_display[3]
+thousands_display_left[4] <= display:display_left.thousands_display[4]
+thousands_display_left[5] <= display:display_left.thousands_display[5]
+thousands_display_left[6] <= display:display_left.thousands_display[6]
+hundreds_display_left[0] <= display:display_left.hundreds_display[0]
+hundreds_display_left[1] <= display:display_left.hundreds_display[1]
+hundreds_display_left[2] <= display:display_left.hundreds_display[2]
+hundreds_display_left[3] <= display:display_left.hundreds_display[3]
+hundreds_display_left[4] <= display:display_left.hundreds_display[4]
+hundreds_display_left[5] <= display:display_left.hundreds_display[5]
+hundreds_display_left[6] <= display:display_left.hundreds_display[6]
+tens_display_left[0] <= display:display_left.tens_display[0]
+tens_display_left[1] <= display:display_left.tens_display[1]
+tens_display_left[2] <= display:display_left.tens_display[2]
+tens_display_left[3] <= display:display_left.tens_display[3]
+tens_display_left[4] <= display:display_left.tens_display[4]
+tens_display_left[5] <= display:display_left.tens_display[5]
+tens_display_left[6] <= display:display_left.tens_display[6]
+units_display_left[0] <= display:display_left.units_display[0]
+units_display_left[1] <= display:display_left.units_display[1]
+units_display_left[2] <= display:display_left.units_display[2]
+units_display_left[3] <= display:display_left.units_display[3]
+units_display_left[4] <= display:display_left.units_display[4]
+units_display_left[5] <= display:display_left.units_display[5]
+units_display_left[6] <= display:display_left.units_display[6]
 left_motor[0] <= decision_controller:decision_controller.left_motor[0]
 left_motor[1] <= decision_controller:decision_controller.left_motor[1]
-left_motor[2] <= decision_controller:decision_controller.left_motor[2]
-left_motor[3] <= decision_controller:decision_controller.left_motor[3]
-left_motor[4] <= decision_controller:decision_controller.left_motor[4]
-left_motor[5] <= decision_controller:decision_controller.left_motor[5]
-left_motor[6] <= decision_controller:decision_controller.left_motor[6]
-left_motor[7] <= decision_controller:decision_controller.left_motor[7]
 right_motor[0] <= decision_controller:decision_controller.right_motor[0]
 right_motor[1] <= decision_controller:decision_controller.right_motor[1]
-right_motor[2] <= decision_controller:decision_controller.right_motor[2]
-right_motor[3] <= decision_controller:decision_controller.right_motor[3]
-right_motor[4] <= decision_controller:decision_controller.right_motor[4]
-right_motor[5] <= decision_controller:decision_controller.right_motor[5]
-right_motor[6] <= decision_controller:decision_controller.right_motor[6]
-right_motor[7] <= decision_controller:decision_controller.right_motor[7]
 
 
-|robot|utrassonic_sensor:ultrassonic
+|robot|utrassonic_sensor:ultrassonic_front
 fpga_clock => trigger_generator:trigger_generator.clk
 fpga_clock => distance_calculator:distance_calculator.clk
 pulse => distance_calculator:distance_calculator.pulse
@@ -66,13 +86,13 @@ distance[7] <= distance_calculator:distance_calculator.Distance[7]
 distance[8] <= distance_calculator:distance_calculator.Distance[8]
 
 
-|robot|utrassonic_sensor:ultrassonic|Trigger_generator:trigger_generator
+|robot|utrassonic_sensor:ultrassonic_front|Trigger_generator:trigger_generator
 clk => Counter:trigg.clk
 start_button => ~NO_FANOUT~
 trigger <= process_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robot|utrassonic_sensor:ultrassonic|Trigger_generator:trigger_generator|Counter:trigg
+|robot|utrassonic_sensor:ultrassonic_front|Trigger_generator:trigger_generator|Counter:trigg
 clk => count[0].CLK
 clk => count[1].CLK
 clk => count[2].CLK
@@ -171,7 +191,7 @@ count_out[22] <= count[22].DB_MAX_OUTPUT_PORT_TYPE
 count_out[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robot|utrassonic_sensor:ultrassonic|Distance_calculator:distance_calculator
+|robot|utrassonic_sensor:ultrassonic_front|Distance_calculator:distance_calculator
 clk => Counter:Counter_pulse.clk
 Calculation_Reset => Counter:Counter_pulse.reset
 pulse => Counter:Counter_pulse.enable
@@ -195,7 +215,7 @@ Distance[7] <= Distance[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Distance[8] <= Distance[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robot|utrassonic_sensor:ultrassonic|Distance_calculator:distance_calculator|Counter:Counter_pulse
+|robot|utrassonic_sensor:ultrassonic_front|Distance_calculator:distance_calculator|Counter:Counter_pulse
 clk => count[0].CLK
 clk => count[1].CLK
 clk => count[2].CLK
@@ -286,7 +306,244 @@ count_out[20] <= count[20].DB_MAX_OUTPUT_PORT_TYPE
 count_out[21] <= count[21].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robot|display:display
+|robot|utrassonic_sensor:ultrassonic_left
+fpga_clock => trigger_generator:trigger_generator.clk
+fpga_clock => distance_calculator:distance_calculator.clk
+pulse => distance_calculator:distance_calculator.pulse
+start_button => trigger_generator:trigger_generator.start_button
+trigger <= trigger_generator:trigger_generator.trigger
+distance[0] <= distance_calculator:distance_calculator.Distance[0]
+distance[1] <= distance_calculator:distance_calculator.Distance[1]
+distance[2] <= distance_calculator:distance_calculator.Distance[2]
+distance[3] <= distance_calculator:distance_calculator.Distance[3]
+distance[4] <= distance_calculator:distance_calculator.Distance[4]
+distance[5] <= distance_calculator:distance_calculator.Distance[5]
+distance[6] <= distance_calculator:distance_calculator.Distance[6]
+distance[7] <= distance_calculator:distance_calculator.Distance[7]
+distance[8] <= distance_calculator:distance_calculator.Distance[8]
+
+
+|robot|utrassonic_sensor:ultrassonic_left|Trigger_generator:trigger_generator
+clk => Counter:trigg.clk
+start_button => ~NO_FANOUT~
+trigger <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|utrassonic_sensor:ultrassonic_left|Trigger_generator:trigger_generator|Counter:trigg
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+enable => count[23].ENA
+enable => count[22].ENA
+enable => count[21].ENA
+enable => count[20].ENA
+enable => count[19].ENA
+enable => count[18].ENA
+enable => count[17].ENA
+enable => count[16].ENA
+enable => count[15].ENA
+enable => count[14].ENA
+enable => count[13].ENA
+enable => count[12].ENA
+enable => count[11].ENA
+enable => count[10].ENA
+enable => count[9].ENA
+enable => count[8].ENA
+enable => count[7].ENA
+enable => count[6].ENA
+enable => count[5].ENA
+enable => count[4].ENA
+enable => count[3].ENA
+enable => count[2].ENA
+enable => count[1].ENA
+enable => count[0].ENA
+reset => count[0].ACLR
+reset => count[1].ACLR
+reset => count[2].ACLR
+reset => count[3].ACLR
+reset => count[4].ACLR
+reset => count[5].ACLR
+reset => count[6].ACLR
+reset => count[7].ACLR
+reset => count[8].ACLR
+reset => count[9].ACLR
+reset => count[10].ACLR
+reset => count[11].ACLR
+reset => count[12].ACLR
+reset => count[13].ACLR
+reset => count[14].ACLR
+reset => count[15].ACLR
+reset => count[16].ACLR
+reset => count[17].ACLR
+reset => count[18].ACLR
+reset => count[19].ACLR
+reset => count[20].ACLR
+reset => count[21].ACLR
+reset => count[22].ACLR
+reset => count[23].ACLR
+count_out[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count_out[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count_out[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+count_out[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+count_out[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+count_out[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+count_out[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+count_out[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+count_out[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
+count_out[9] <= count[9].DB_MAX_OUTPUT_PORT_TYPE
+count_out[10] <= count[10].DB_MAX_OUTPUT_PORT_TYPE
+count_out[11] <= count[11].DB_MAX_OUTPUT_PORT_TYPE
+count_out[12] <= count[12].DB_MAX_OUTPUT_PORT_TYPE
+count_out[13] <= count[13].DB_MAX_OUTPUT_PORT_TYPE
+count_out[14] <= count[14].DB_MAX_OUTPUT_PORT_TYPE
+count_out[15] <= count[15].DB_MAX_OUTPUT_PORT_TYPE
+count_out[16] <= count[16].DB_MAX_OUTPUT_PORT_TYPE
+count_out[17] <= count[17].DB_MAX_OUTPUT_PORT_TYPE
+count_out[18] <= count[18].DB_MAX_OUTPUT_PORT_TYPE
+count_out[19] <= count[19].DB_MAX_OUTPUT_PORT_TYPE
+count_out[20] <= count[20].DB_MAX_OUTPUT_PORT_TYPE
+count_out[21] <= count[21].DB_MAX_OUTPUT_PORT_TYPE
+count_out[22] <= count[22].DB_MAX_OUTPUT_PORT_TYPE
+count_out[23] <= count[23].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|utrassonic_sensor:ultrassonic_left|Distance_calculator:distance_calculator
+clk => Counter:Counter_pulse.clk
+Calculation_Reset => Counter:Counter_pulse.reset
+pulse => Counter:Counter_pulse.enable
+pulse => Distance[0]~reg0.CLK
+pulse => Distance[1]~reg0.CLK
+pulse => Distance[2]~reg0.CLK
+pulse => Distance[3]~reg0.CLK
+pulse => Distance[4]~reg0.CLK
+pulse => Distance[5]~reg0.CLK
+pulse => Distance[6]~reg0.CLK
+pulse => Distance[7]~reg0.CLK
+pulse => Distance[8]~reg0.CLK
+Distance[0] <= Distance[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distance[1] <= Distance[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distance[2] <= Distance[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distance[3] <= Distance[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distance[4] <= Distance[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distance[5] <= Distance[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distance[6] <= Distance[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distance[7] <= Distance[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Distance[8] <= Distance[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|utrassonic_sensor:ultrassonic_left|Distance_calculator:distance_calculator|Counter:Counter_pulse
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+enable => count[21].ENA
+enable => count[20].ENA
+enable => count[19].ENA
+enable => count[18].ENA
+enable => count[17].ENA
+enable => count[16].ENA
+enable => count[15].ENA
+enable => count[14].ENA
+enable => count[13].ENA
+enable => count[12].ENA
+enable => count[11].ENA
+enable => count[10].ENA
+enable => count[9].ENA
+enable => count[8].ENA
+enable => count[7].ENA
+enable => count[6].ENA
+enable => count[5].ENA
+enable => count[4].ENA
+enable => count[3].ENA
+enable => count[2].ENA
+enable => count[1].ENA
+enable => count[0].ENA
+reset => count[0].ACLR
+reset => count[1].ACLR
+reset => count[2].ACLR
+reset => count[3].ACLR
+reset => count[4].ACLR
+reset => count[5].ACLR
+reset => count[6].ACLR
+reset => count[7].ACLR
+reset => count[8].ACLR
+reset => count[9].ACLR
+reset => count[10].ACLR
+reset => count[11].ACLR
+reset => count[12].ACLR
+reset => count[13].ACLR
+reset => count[14].ACLR
+reset => count[15].ACLR
+reset => count[16].ACLR
+reset => count[17].ACLR
+reset => count[18].ACLR
+reset => count[19].ACLR
+reset => count[20].ACLR
+reset => count[21].ACLR
+count_out[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+count_out[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+count_out[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+count_out[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+count_out[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+count_out[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+count_out[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+count_out[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+count_out[8] <= count[8].DB_MAX_OUTPUT_PORT_TYPE
+count_out[9] <= count[9].DB_MAX_OUTPUT_PORT_TYPE
+count_out[10] <= count[10].DB_MAX_OUTPUT_PORT_TYPE
+count_out[11] <= count[11].DB_MAX_OUTPUT_PORT_TYPE
+count_out[12] <= count[12].DB_MAX_OUTPUT_PORT_TYPE
+count_out[13] <= count[13].DB_MAX_OUTPUT_PORT_TYPE
+count_out[14] <= count[14].DB_MAX_OUTPUT_PORT_TYPE
+count_out[15] <= count[15].DB_MAX_OUTPUT_PORT_TYPE
+count_out[16] <= count[16].DB_MAX_OUTPUT_PORT_TYPE
+count_out[17] <= count[17].DB_MAX_OUTPUT_PORT_TYPE
+count_out[18] <= count[18].DB_MAX_OUTPUT_PORT_TYPE
+count_out[19] <= count[19].DB_MAX_OUTPUT_PORT_TYPE
+count_out[20] <= count[20].DB_MAX_OUTPUT_PORT_TYPE
+count_out[21] <= count[21].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|display:display_front
 distance[0] => binary_to_decimal:binary_to_decimal.distance[0]
 distance[1] => binary_to_decimal:binary_to_decimal.distance[1]
 distance[2] => binary_to_decimal:binary_to_decimal.distance[2]
@@ -326,7 +583,7 @@ units_display[5] <= decodificador:seven_segments_generate:0:seven_segments.h[5]
 units_display[6] <= decodificador:seven_segments_generate:0:seven_segments.h[6]
 
 
-|robot|display:display|binary_to_decimal:binary_to_decimal
+|robot|display:display_front|binary_to_decimal:binary_to_decimal
 distance[0] => units_mm[0].DATAIN
 distance[1] => LessThan7.IN8
 distance[1] => Add7.IN8
@@ -370,7 +627,7 @@ units_mm[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
 units_mm[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robot|display:display|decodificador:\seven_segments_generate:0:seven_segments
+|robot|display:display_front|decodificador:\seven_segments_generate:0:seven_segments
 s[1] => h.IN1
 s[1] => h.IN1
 s[1] => h.IN1
@@ -412,7 +669,7 @@ h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
 h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robot|display:display|decodificador:\seven_segments_generate:1:seven_segments
+|robot|display:display_front|decodificador:\seven_segments_generate:1:seven_segments
 s[1] => h.IN1
 s[1] => h.IN1
 s[1] => h.IN1
@@ -454,7 +711,7 @@ h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
 h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robot|display:display|decodificador:\seven_segments_generate:2:seven_segments
+|robot|display:display_front|decodificador:\seven_segments_generate:2:seven_segments
 s[1] => h.IN1
 s[1] => h.IN1
 s[1] => h.IN1
@@ -496,7 +753,259 @@ h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
 h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|robot|display:display|decodificador:\seven_segments_generate:3:seven_segments
+|robot|display:display_front|decodificador:\seven_segments_generate:3:seven_segments
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|display:display_left
+distance[0] => binary_to_decimal:binary_to_decimal.distance[0]
+distance[1] => binary_to_decimal:binary_to_decimal.distance[1]
+distance[2] => binary_to_decimal:binary_to_decimal.distance[2]
+distance[3] => binary_to_decimal:binary_to_decimal.distance[3]
+distance[4] => binary_to_decimal:binary_to_decimal.distance[4]
+distance[5] => binary_to_decimal:binary_to_decimal.distance[5]
+distance[6] => binary_to_decimal:binary_to_decimal.distance[6]
+distance[7] => binary_to_decimal:binary_to_decimal.distance[7]
+distance[8] => binary_to_decimal:binary_to_decimal.distance[8]
+thousands_display[0] <= decodificador:seven_segments_generate:3:seven_segments.h[0]
+thousands_display[1] <= decodificador:seven_segments_generate:3:seven_segments.h[1]
+thousands_display[2] <= decodificador:seven_segments_generate:3:seven_segments.h[2]
+thousands_display[3] <= decodificador:seven_segments_generate:3:seven_segments.h[3]
+thousands_display[4] <= decodificador:seven_segments_generate:3:seven_segments.h[4]
+thousands_display[5] <= decodificador:seven_segments_generate:3:seven_segments.h[5]
+thousands_display[6] <= decodificador:seven_segments_generate:3:seven_segments.h[6]
+hundreds_display[0] <= decodificador:seven_segments_generate:2:seven_segments.h[0]
+hundreds_display[1] <= decodificador:seven_segments_generate:2:seven_segments.h[1]
+hundreds_display[2] <= decodificador:seven_segments_generate:2:seven_segments.h[2]
+hundreds_display[3] <= decodificador:seven_segments_generate:2:seven_segments.h[3]
+hundreds_display[4] <= decodificador:seven_segments_generate:2:seven_segments.h[4]
+hundreds_display[5] <= decodificador:seven_segments_generate:2:seven_segments.h[5]
+hundreds_display[6] <= decodificador:seven_segments_generate:2:seven_segments.h[6]
+tens_display[0] <= decodificador:seven_segments_generate:1:seven_segments.h[0]
+tens_display[1] <= decodificador:seven_segments_generate:1:seven_segments.h[1]
+tens_display[2] <= decodificador:seven_segments_generate:1:seven_segments.h[2]
+tens_display[3] <= decodificador:seven_segments_generate:1:seven_segments.h[3]
+tens_display[4] <= decodificador:seven_segments_generate:1:seven_segments.h[4]
+tens_display[5] <= decodificador:seven_segments_generate:1:seven_segments.h[5]
+tens_display[6] <= decodificador:seven_segments_generate:1:seven_segments.h[6]
+units_display[0] <= decodificador:seven_segments_generate:0:seven_segments.h[0]
+units_display[1] <= decodificador:seven_segments_generate:0:seven_segments.h[1]
+units_display[2] <= decodificador:seven_segments_generate:0:seven_segments.h[2]
+units_display[3] <= decodificador:seven_segments_generate:0:seven_segments.h[3]
+units_display[4] <= decodificador:seven_segments_generate:0:seven_segments.h[4]
+units_display[5] <= decodificador:seven_segments_generate:0:seven_segments.h[5]
+units_display[6] <= decodificador:seven_segments_generate:0:seven_segments.h[6]
+
+
+|robot|display:display_left|binary_to_decimal:binary_to_decimal
+distance[0] => units_mm[0].DATAIN
+distance[1] => LessThan7.IN8
+distance[1] => Add7.IN8
+distance[1] => bcd.DATAA
+distance[2] => LessThan5.IN8
+distance[2] => Add5.IN8
+distance[2] => bcd.DATAA
+distance[3] => LessThan3.IN8
+distance[3] => Add3.IN8
+distance[3] => bcd.DATAA
+distance[4] => LessThan2.IN8
+distance[4] => Add2.IN8
+distance[4] => bcd.DATAA
+distance[5] => LessThan1.IN8
+distance[5] => Add1.IN8
+distance[5] => bcd.DATAA
+distance[6] => LessThan0.IN6
+distance[6] => Add0.IN6
+distance[6] => bcd.DATAA
+distance[7] => LessThan0.IN5
+distance[7] => Add0.IN5
+distance[7] => bcd.DATAA
+distance[8] => LessThan0.IN4
+distance[8] => Add0.IN4
+distance[8] => bcd.DATAA
+thousands_mm[0] <= <GND>
+thousands_mm[1] <= <GND>
+thousands_mm[2] <= <GND>
+thousands_mm[3] <= <GND>
+hundreds_mm[0] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+hundreds_mm[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+hundreds_mm[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+hundreds_mm[3] <= <GND>
+tens_mm[0] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+tens_mm[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+tens_mm[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+tens_mm[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+units_mm[0] <= distance[0].DB_MAX_OUTPUT_PORT_TYPE
+units_mm[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+units_mm[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+units_mm[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|display:display_left|decodificador:\seven_segments_generate:0:seven_segments
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|display:display_left|decodificador:\seven_segments_generate:1:seven_segments
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|display:display_left|decodificador:\seven_segments_generate:2:seven_segments
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[1] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[2] => h.IN1
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[3] => h.IN0
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+s[4] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robot|display:display_left|decodificador:\seven_segments_generate:3:seven_segments
 s[1] => h.IN1
 s[1] => h.IN1
 s[1] => h.IN1
@@ -539,30 +1048,27 @@ h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |robot|decision_controller:decision_controller
-distance[0] => LessThan0.IN18
-distance[1] => LessThan0.IN17
-distance[2] => LessThan0.IN16
-distance[3] => LessThan0.IN15
-distance[4] => LessThan0.IN14
-distance[5] => LessThan0.IN13
-distance[6] => LessThan0.IN12
-distance[7] => LessThan0.IN11
-distance[8] => LessThan0.IN10
-left_motor[0] <= <VCC>
+distance_front[0] => LessThan0.IN18
+distance_front[1] => LessThan0.IN17
+distance_front[2] => LessThan0.IN16
+distance_front[3] => LessThan0.IN15
+distance_front[4] => LessThan0.IN14
+distance_front[5] => LessThan0.IN13
+distance_front[6] => LessThan0.IN12
+distance_front[7] => LessThan0.IN11
+distance_front[8] => LessThan0.IN10
+distance_left[0] => LessThan1.IN18
+distance_left[1] => LessThan1.IN17
+distance_left[2] => LessThan1.IN16
+distance_left[3] => LessThan1.IN15
+distance_left[4] => LessThan1.IN14
+distance_left[5] => LessThan1.IN13
+distance_left[6] => LessThan1.IN12
+distance_left[7] => LessThan1.IN11
+distance_left[8] => LessThan1.IN10
+left_motor[0] <= <GND>
 left_motor[1] <= <VCC>
-left_motor[2] <= <VCC>
-left_motor[3] <= <VCC>
-left_motor[4] <= <VCC>
-left_motor[5] <= <VCC>
-left_motor[6] <= <VCC>
-left_motor[7] <= <VCC>
-right_motor[0] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-right_motor[1] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-right_motor[2] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-right_motor[3] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-right_motor[4] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-right_motor[5] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-right_motor[6] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
-right_motor[7] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+right_motor[0] <= <GND>
+right_motor[1] <= process_0.DB_MAX_OUTPUT_PORT_TYPE
 
 

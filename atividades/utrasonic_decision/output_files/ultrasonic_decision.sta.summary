@@ -2,67 +2,91 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'pulse'
-Slack : -4.810
-TNS   : -40.609
+Type  : Slow Model Setup 'pulse_left'
+Slack : -4.535
+TNS   : -39.126
+
+Type  : Slow Model Setup 'pulse_front'
+Slack : -4.459
+TNS   : -38.612
 
 Type  : Slow Model Setup 'fpga_clock'
-Slack : -2.223
-TNS   : -56.460
+Slack : -2.203
+TNS   : -80.473
 
 Type  : Slow Model Hold 'fpga_clock'
-Slack : 0.124
+Slack : 0.149
 TNS   : 0.000
 
-Type  : Slow Model Hold 'pulse'
-Slack : 2.547
+Type  : Slow Model Hold 'pulse_left'
+Slack : 2.301
+TNS   : 0.000
+
+Type  : Slow Model Hold 'pulse_front'
+Slack : 2.307
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'fpga_clock'
-Slack : -3.074
-TNS   : -135.465
+Slack : -3.023
+TNS   : -197.076
 
 Type  : Slow Model Removal 'fpga_clock'
-Slack : 2.343
+Slack : 2.499
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'fpga_clock'
 Slack : -1.380
-TNS   : -47.380
+TNS   : -69.380
 
-Type  : Slow Model Minimum Pulse Width 'pulse'
+Type  : Slow Model Minimum Pulse Width 'pulse_front'
 Slack : -1.222
 TNS   : -10.222
 
-Type  : Fast Model Setup 'pulse'
-Slack : -2.177
-TNS   : -18.455
+Type  : Slow Model Minimum Pulse Width 'pulse_left'
+Slack : -1.222
+TNS   : -10.222
+
+Type  : Fast Model Setup 'pulse_left'
+Slack : -2.055
+TNS   : -17.852
+
+Type  : Fast Model Setup 'pulse_front'
+Slack : -2.015
+TNS   : -17.496
 
 Type  : Fast Model Setup 'fpga_clock'
-Slack : -0.557
-TNS   : -6.681
+Slack : -0.540
+TNS   : -9.214
 
 Type  : Fast Model Hold 'fpga_clock'
-Slack : -0.265
-TNS   : -3.439
+Slack : -0.243
+TNS   : -5.315
 
-Type  : Fast Model Hold 'pulse'
-Slack : 1.634
+Type  : Fast Model Hold 'pulse_front'
+Slack : 1.505
+TNS   : 0.000
+
+Type  : Fast Model Hold 'pulse_left'
+Slack : 1.522
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'fpga_clock'
-Slack : -0.964
-TNS   : -41.380
+Slack : -0.978
+TNS   : -61.014
 
 Type  : Fast Model Removal 'fpga_clock'
-Slack : 1.172
+Slack : 1.226
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'fpga_clock'
 Slack : -1.380
-TNS   : -47.380
+TNS   : -69.380
 
-Type  : Fast Model Minimum Pulse Width 'pulse'
+Type  : Fast Model Minimum Pulse Width 'pulse_front'
+Slack : -1.222
+TNS   : -10.222
+
+Type  : Fast Model Minimum Pulse Width 'pulse_left'
 Slack : -1.222
 TNS   : -10.222
 

@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/simulation/qsim
 vdecision_controller
-Z1 !s100 TNWzJjYcLTVo<7fGdJ`ZI2
-Z2 IjoPV7<89Q_SCXW;3<gkZD3
-Z3 VC0O:[R0MLNJ7A0ig_fFKI1
+Z1 !s100 1Cc[KQQ?=9^mzkmR:PE^D0
+Z2 IXZR1ehoe0WW2eIRWQ8Dhn1
+Z3 V8@8cg2N2UYS?8;5bIj=Ib0
 Z4 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/utrasonic_decision/simulation/qsim
-Z5 w1573233115
+Z5 w1573249814
 Z6 8ultrasonic_decision.vo
 Z7 Fultrasonic_decision.vo
 L0 31
@@ -19,33 +19,33 @@ Z9 !s90 -work|work|ultrasonic_decision.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1573233116.090519
+Z11 !s108 1573249814.890477
 Z12 !s107 ultrasonic_decision.vo|
 !s101 -O0
 vdecision_controller_vlg_check_tst
 !i10b 1
-Z13 !s100 GJG[^`A2UaoJC[W[1oQiM1
-Z14 I;?aWWih32U=i3UVO753<61
-Z15 Vm:WFiELbT_AnAZlcAiIA81
+Z13 !s100 Uh^QQ29K`2X13f:H5Nknc0
+Z14 Iihk2OdGdgzm?^fMTM7:og3
+Z15 VoYaTYgY=S5R9Ze9C9VF0T3
 R4
-Z16 w1573233111
+Z16 w1573249812
 Z17 8ultrasonic_decision.vt
 Z18 Fultrasonic_decision.vt
-L0 57
+L0 59
 R8
 r1
 !s85 0
 31
-Z19 !s108 1573233116.123198
+Z19 !s108 1573249814.917488
 Z20 !s107 ultrasonic_decision.vt|
 Z21 !s90 -work|work|ultrasonic_decision.vt|
 !s101 -O0
 R10
 vdecision_controller_vlg_sample_tst
 !i10b 1
-Z22 !s100 PLRNmJAIl;BoX3>J@C3;k3
-Z23 I;789EiU153?<6Ja<;MIh?0
-Z24 VlmoZHeh?_]<NGo;9KWYGB0
+Z22 !s100 3L9@G79?k?Rige;edeZCk0
+Z23 I3?Z8]AkeL3_NmhRV2_9m02
+Z24 V_eLCQ4>E<59HVa@bYPkNa3
 R4
 R16
 R17
@@ -62,14 +62,14 @@ R21
 R10
 vdecision_controller_vlg_vec_tst
 !i10b 1
-!s100 fabPOG`ERG0SHO9;lEY9]2
-IagX2U[LH<?RhC:V]?HRaM3
+!s100 QT2m_?[@cRLKKlFV40OfR2
+I_ZT^bh<XXVhl[OS]:zO6@2
 Z25 V2V5HeoHFoS_bET=ba?84z1
 R4
 R16
 R17
 R18
-Z26 L0 429
+Z26 L0 181
 R8
 r1
 !s85 0

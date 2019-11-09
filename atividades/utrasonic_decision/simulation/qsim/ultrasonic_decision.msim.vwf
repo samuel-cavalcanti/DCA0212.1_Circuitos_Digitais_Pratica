@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -42,97 +42,197 @@ SIGNAL("decision_controller_vlg_vec_tst|distance")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[8]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[7]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[6]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[5]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[4]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[3]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[2]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[1]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|distance[0]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_front[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "decision_controller_vlg_vec_tst|distance";
+	PARENT = "decision_controller_vlg_vec_tst|distance_front";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|left_motor[7]")
+SIGNAL("decision_controller_vlg_vec_tst|distance_left")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 9;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|distance_left[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "decision_controller_vlg_vec_tst|distance_left";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|left_motor")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -142,147 +242,7 @@ SIGNAL("decision_controller_vlg_vec_tst|left_motor[7]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|left_motor[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|left_motor[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|left_motor[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|left_motor[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|left_motor[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|left_motor[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|left_motor[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|right_motor[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|right_motor[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|right_motor[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|right_motor[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|right_motor[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|right_motor[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|right_motor[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("decision_controller_vlg_vec_tst|right_motor[0]")
+SIGNAL("decision_controller_vlg_vec_tst|right_motor")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -392,7 +352,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|LessThan0~2_combout")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[8]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|LessThan1~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -402,7 +362,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[8]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[7]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|LessThan1~1_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -412,7 +372,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[7]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[6]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|process_0~0_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -422,7 +382,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[6]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[5]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -432,7 +392,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[5]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[4]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -442,7 +402,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[4]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[3]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -452,7 +412,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[3]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[2]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -462,7 +422,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[2]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[1]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -472,7 +432,7 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[1]")
 	PARENT = "";
 }
 
-SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[0]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -482,7 +442,127 @@ SIGNAL("decision_controller_vlg_vec_tst|i1|distance~combout[0]")
 	PARENT = "";
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[8]")
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_left~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("decision_controller_vlg_vec_tst|i1|distance_front~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[8]")
 {
 	NODE
 	{
@@ -491,7 +571,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[8]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[7]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[7]")
 {
 	NODE
 	{
@@ -500,7 +580,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[7]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[6]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[6]")
 {
 	NODE
 	{
@@ -509,7 +589,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[6]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[5]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[5]")
 {
 	NODE
 	{
@@ -518,7 +598,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[5]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[4]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[4]")
 {
 	NODE
 	{
@@ -527,7 +607,25 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[4]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[3]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[1]")
 {
 	NODE
 	{
@@ -536,25 +634,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[3]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[0]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_front[0]")
 {
 	NODE
 	{
@@ -563,79 +643,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|distance[0]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[7]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[8]")
 {
 	NODE
 	{
@@ -644,7 +652,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[7]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[6]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[7]")
 {
 	NODE
 	{
@@ -653,7 +661,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[6]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[5]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[6]")
 {
 	NODE
 	{
@@ -662,7 +670,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[5]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[4]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[5]")
 {
 	NODE
 	{
@@ -671,7 +679,16 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[4]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[3]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[3]")
 {
 	NODE
 	{
@@ -680,7 +697,16 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[3]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[2]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[1]")
 {
 	NODE
 	{
@@ -689,7 +715,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[2]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[1]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|distance_left[0]")
 {
 	NODE
 	{
@@ -698,7 +724,16 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[1]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor[0]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|left_motor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|right_motor")
 {
 	NODE
 	{
@@ -797,52 +832,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|LessThan0~2_combout")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[3]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|LessThan1~0_combout")
 {
 	NODE
 	{
@@ -851,7 +841,16 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[3]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[2]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|LessThan1~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|process_0~0_combout")
 {
 	NODE
 	{
@@ -860,7 +859,43 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[2]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[1]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[4]")
 {
 	NODE
 	{
@@ -869,7 +904,115 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[1]")
 	}
 }
 
-TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[0]")
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_left~combout[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance_front~combout[0]")
 {
 	NODE
 	{
@@ -880,7 +1023,7 @@ TRANSITION_LIST("decision_controller_vlg_vec_tst|i1|distance~combout[0]")
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -890,7 +1033,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[8]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -900,7 +1043,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[7]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -910,7 +1053,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[6]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -920,7 +1063,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[5]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -930,7 +1073,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[4]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -940,7 +1083,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[3]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -950,7 +1093,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[2]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -960,7 +1103,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[1]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -970,7 +1113,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|distance[0]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_front[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -980,97 +1123,107 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|left_motor[7]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 0;
+	CHILDREN = 11, 12, 13, 14, 15, 16, 17, 18, 19;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|left_motor[6]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|left_motor[5]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|left_motor[4]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|left_motor[3]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|left_motor[2]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|left_motor[1]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|left_motor[0]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|right_motor[7]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|right_motor[6]";
+	CHANNEL = "decision_controller_vlg_vec_tst|distance_left[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 10;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|right_motor[5]";
+	CHANNEL = "decision_controller_vlg_vec_tst|left_motor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
@@ -1079,7 +1232,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|right_motor[4]";
+	CHANNEL = "decision_controller_vlg_vec_tst|right_motor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -1088,7 +1241,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|right_motor[3]";
+	CHANNEL = "decision_controller_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
@@ -1097,7 +1250,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|right_motor[2]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
@@ -1106,7 +1259,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|right_motor[1]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
@@ -1115,7 +1268,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|right_motor[0]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -1124,7 +1277,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|sampler";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
@@ -1133,7 +1286,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|gnd";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
@@ -1142,7 +1295,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|vcc";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
@@ -1151,7 +1304,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|unknown";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|LessThan0~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
@@ -1160,7 +1313,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|LessThan0~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
@@ -1169,7 +1322,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|devpor";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|LessThan0~2_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
@@ -1178,7 +1331,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|devoe";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|LessThan1~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -1187,7 +1340,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|LessThan0~1_combout";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|LessThan1~1_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
@@ -1196,7 +1349,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|LessThan0~0_combout";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|process_0~0_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -1205,7 +1358,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|LessThan0~2_combout";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -1214,7 +1367,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[8]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -1223,7 +1376,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[7]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -1232,7 +1385,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[6]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -1241,7 +1394,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[5]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -1250,7 +1403,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[4]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -1259,7 +1412,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[3]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -1268,7 +1421,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[2]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -1277,7 +1430,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[1]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_left~combout[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -1286,10 +1439,82 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance~combout[0]";
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 45;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 46;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 47;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 48;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 49;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 50;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 51;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "decision_controller_vlg_vec_tst|i1|distance_front~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 52;
 	TREE_LEVEL = 0;
 }
 ;
