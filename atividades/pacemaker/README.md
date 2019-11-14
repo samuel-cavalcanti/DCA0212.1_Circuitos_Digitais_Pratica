@@ -6,6 +6,8 @@
 
 - SAMUEL CAVALCANTI  
 
+- TIAGO FELIPE DE SOUZA
+
 # RTL view  
 
 ![RTL VIEW](rtl_view.png)
