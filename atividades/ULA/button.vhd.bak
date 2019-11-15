@@ -18,12 +18,10 @@ begin
 	process (key_0)
 		variable on_off : std_logic:= '0';
 		begin
-			if key_0'event and key_0 ='1' then
 		
-				on_off := not on_off;
+			on_off := not on_off;
 			
-				keyonoff <= on_off;
-			end if ;
+			keyonoff <= on_off;
 		
 		end process;
 
