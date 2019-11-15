@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity maiorque is
+	port(inputdata1: in std_logic_vector (3 downto 0);
+		  inputdata2: in std_logic_vector (3 downto 0);
+		  resulmaq: out std_logic;);
+end entity;
+
+architecture behavior of somador id
+begin
+	process(inputdata1, inputdata2)
+		variable maq: std_logic;
+		begin
+			if inputdata1(3) > inputdata2(3) then
+				maq := 1; -- inputdata1 é o maior
+			elsif inputdata1(2) > inputdata2(2) then
+				maq := 1;
+			elsif inputdata1(1) > inputdata2(1) then
+				maq := 1;
+			elsif inputdata1(0) > inputdata2(0) then
+				maq := 1;
+			end if;
+	end process;
+end behavior;

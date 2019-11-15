@@ -12,6 +12,7 @@ atividades e exercícios dados em sala aula da disciplina Circuitos digitais
 
 - [medidor de  distância ](atividades/utrasonic_decision)
 
+- [ULA](atividades/ULA)
 
 ## exercícios dados em aula  
 

@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ula is
+	port (inputdata1: in std_logic_vector(7 downto 0); 
+			inputdata2: in std_logic_vector(7 downto 0);
+			operate: in std_logic_vector(1 downto 0);
+			outputdata: out std_logic_vector(7 downto 0));
+end entity;
+
+architecture behavior of ula is
+signal output_3: std_logic_vector(7 downto 0);
+begin
+	 somador: process (inputdata1, inputdata2, operate)
+		variable result: std_logic_vector(7 downto 0);
+		variable int1, int2, int3: integer;
+			begin
+			if operate = "00" then
+			int1:= to_integer(unsigned(inputdata1));
+			int2:= to_integer(unsigned(inputdata2));
+			int3:= (int1 + int2);
+			result:= std_logic_vector(to_unsigned(int3, output_3'length));
+			end if;
+			outputdata <= result;
+	end process;
+end behavior;

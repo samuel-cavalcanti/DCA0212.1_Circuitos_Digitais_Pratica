@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\tiago\Documents\ULA\simulation\modelsim
+Eula
+Z1 w1573449701
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\tiago\Documents\ULA\simulation\modelsim
+Z6 8C:/Users/tiago/Documents/ULA/ula.vhd
+Z7 FC:/Users/tiago/Documents/ULA/ula.vhd
+l0
+L5
+VdHUN^lc3[g>A2HAWWV2GE1
+!s100 ETNCOlAD]@oW?bE1UQkS=1
+Z8 OV;C;10.1d;51
+31
+!i10b 1
+Z9 !s108 1573449826.320000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/tiago/Documents/ULA/ula.vhd|
+Z11 !s107 C:/Users/tiago/Documents/ULA/ula.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+Abehavior
+R2
+R3
+R4
+DEx4 work 3 ula 0 22 dHUN^lc3[g>A2HAWWV2GE1
+l15
+L14
+VjQ]3EVhNoecIfW6B>Ka]Y1
+!s100 iLgCk9l2@OKfXc;e1EPon3
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13

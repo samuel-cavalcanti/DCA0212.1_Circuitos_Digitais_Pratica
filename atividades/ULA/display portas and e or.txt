@@ -1,0 +1,16 @@
+when "0000" => display <= not (d(0) and d(1) and d(2) and d(3) and d(4) and d(5)) and d(6);
+				when "0001" => display <= d(0) and d(1) and d(2) and not d(3) and not d(4) and d(5) and d(6); 
+				when "0010" => display <= d(0) and  not d(1) and not d(2) and d(3) and not (d(4 and d(5) and d(6)));
+				when "0011" => display <= d(0) and d(1) and (not (d(2) and d(3) and d(4) and d(5) and d(6)));
+				when "0100" => display <= not d(0) and d(1) and d(2) and not d(3) and not d(4) and d(5) and not d(6);
+				when "0101" => display <= not d(0) and d(1) and not d(2) and not d(3) and d(4) and not d(5) and not d(6);
+				when "0110" => display <= (not (d(0) and d(1) and d(2) and d(3))) and d(4) and not d(5) and not d(6);
+				when "0111" => display <= d(0) and d(1) and d(2) and (not (d(3) and d(4) and d(5) and d(6)));
+				when "1000" => display <= not( d(0) and d(1) and d(2) and d(3) and d(4) and d(5) and d(6));
+				when "1001" => display <= not d(0) and d(1) and d(2) and (not (d(3) and d(4) and d(5) and d(6)));
+				when "1010" => display <= not d(0) and not d(1) and d(2) and (not (d(3) and d(4) and d(5) and d(6)));
+				when "1011" => display <= not (d(0) and d(1) and d(2) and d(3)) and d(4) and d(5) and not d(6);
+				when "1100" => display <= not d(0) and not d(1) and not d(2) and d(3) and d(4) and not d(5) and d(6);
+				when "1101" => display <= d(0) and (not (d(1) and d(2) and d(3) and d(4))) and d(5) and not d(6);
+				when "1110" => display <= not d(0) and not d(1) and not d(2) and d(3) and d(4) and not d(5) and not d(6);
+				when "1111" => display <= not d(0) and not d(1) and d(2) and d(3) and d(4) and not d(5) and not d(6);

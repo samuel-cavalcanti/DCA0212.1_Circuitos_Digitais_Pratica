@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity mux is
+	port(insoma: in std_logic_vector(3 downto 0);
+		  insubt: in std_logic_vector(3 downto 0);
+		  inmaq: in std_logic;
+		  inmeq: in std_logic;
+		  ininv: in std_logic_vector(3 downto 0);
+		  operate0: in std_logic;
+		  operate1: in std_logic;
+		  operate2: in std_logic;
+		  keyonoff: in std_logic;
+		  co: out std_logic;
+		  y: out std_logic_vector(3 downto 0);
+		  ctrl: out std_logic_vector (1 downto 0));
+end entity;

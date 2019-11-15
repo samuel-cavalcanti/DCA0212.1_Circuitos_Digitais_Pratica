@@ -1,0 +1,271 @@
+|ula
+inputdata1[0] => somador:soma_1.inputdata1[0]
+inputdata1[0] => subtrator:subt_1.inputdata1[0]
+inputdata1[0] => maiorq:maq_1.inputdata1[0]
+inputdata1[0] => menorq:meq_1.inputdata1[0]
+inputdata1[0] => inverter:inv_1.inputdata1[0]
+inputdata1[1] => somador:soma_1.inputdata1[1]
+inputdata1[1] => subtrator:subt_1.inputdata1[1]
+inputdata1[1] => maiorq:maq_1.inputdata1[1]
+inputdata1[1] => menorq:meq_1.inputdata1[1]
+inputdata1[1] => inverter:inv_1.inputdata1[1]
+inputdata1[2] => somador:soma_1.inputdata1[2]
+inputdata1[2] => subtrator:subt_1.inputdata1[2]
+inputdata1[2] => maiorq:maq_1.inputdata1[2]
+inputdata1[2] => menorq:meq_1.inputdata1[2]
+inputdata1[2] => inverter:inv_1.inputdata1[2]
+inputdata1[3] => somador:soma_1.inputdata1[3]
+inputdata1[3] => subtrator:subt_1.inputdata1[3]
+inputdata1[3] => maiorq:maq_1.inputdata1[3]
+inputdata1[3] => menorq:meq_1.inputdata1[3]
+inputdata1[3] => inverter:inv_1.inputdata1[3]
+inputdata2[0] => somador:soma_1.inputdata2[0]
+inputdata2[0] => subtrator:subt_1.inputdata2[0]
+inputdata2[0] => maiorq:maq_1.inputdata2[0]
+inputdata2[0] => menorq:meq_1.inputdata2[0]
+inputdata2[1] => somador:soma_1.inputdata2[1]
+inputdata2[1] => subtrator:subt_1.inputdata2[1]
+inputdata2[1] => maiorq:maq_1.inputdata2[1]
+inputdata2[1] => menorq:meq_1.inputdata2[1]
+inputdata2[2] => somador:soma_1.inputdata2[2]
+inputdata2[2] => subtrator:subt_1.inputdata2[2]
+inputdata2[2] => maiorq:maq_1.inputdata2[2]
+inputdata2[2] => menorq:meq_1.inputdata2[2]
+inputdata2[3] => somador:soma_1.inputdata2[3]
+inputdata2[3] => subtrator:subt_1.inputdata2[3]
+inputdata2[3] => maiorq:maq_1.inputdata2[3]
+inputdata2[3] => menorq:meq_1.inputdata2[3]
+operator[0] => mux_ula:mux_1.operator[0]
+operator[1] => mux_ula:mux_1.operator[1]
+operator[2] => mux_ula:mux_1.operator[2]
+key_0 => button:button.key_0
+led <= mux_ula:mux_1.saida_led
+display[0] <= convdisplay:convdisplay_1.display[0]
+display[1] <= convdisplay:convdisplay_1.display[1]
+display[2] <= convdisplay:convdisplay_1.display[2]
+display[3] <= convdisplay:convdisplay_1.display[3]
+display[4] <= convdisplay:convdisplay_1.display[4]
+display[5] <= convdisplay:convdisplay_1.display[5]
+display[6] <= convdisplay:convdisplay_1.display[6]
+
+
+|ula|button:button
+key_0 => ~NO_FANOUT~
+keyonoff <= keyonoff.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|somador:soma_1
+inputdata1[0] => s.IN0
+inputdata1[0] => c.IN0
+inputdata1[0] => c.IN0
+inputdata1[1] => s.IN0
+inputdata1[1] => c.IN0
+inputdata1[1] => c.IN1
+inputdata1[2] => s.IN0
+inputdata1[2] => c.IN0
+inputdata1[2] => c.IN1
+inputdata1[3] => s.IN0
+inputdata1[3] => c.IN0
+inputdata1[3] => c.IN1
+inputdata2[0] => s.IN1
+inputdata2[0] => c.IN1
+inputdata2[0] => c.IN0
+inputdata2[1] => s.IN1
+inputdata2[1] => c.IN1
+inputdata2[1] => c.IN1
+inputdata2[2] => s.IN1
+inputdata2[2] => c.IN1
+inputdata2[2] => c.IN1
+inputdata2[3] => s.IN1
+inputdata2[3] => c.IN1
+inputdata2[3] => c.IN1
+cin => s.IN1
+cin => c.IN1
+cin => c.IN1
+cin => cout[0].DATAIN
+cout[0] <= cin.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= c.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= c.DB_MAX_OUTPUT_PORT_TYPE
+cout[4] <= c.DB_MAX_OUTPUT_PORT_TYPE
+resultsoma[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+resultsoma[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+resultsoma[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+resultsoma[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+resultsoma[4] <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|subtrator:subt_1
+inputdata1[0] => result.IN0
+inputdata1[0] => carry.IN0
+inputdata1[0] => carry.IN0
+inputdata1[1] => result.IN0
+inputdata1[1] => carry.IN0
+inputdata1[1] => carry.IN1
+inputdata1[2] => result.IN0
+inputdata1[2] => carry.IN0
+inputdata1[2] => carry.IN1
+inputdata1[3] => result.IN0
+inputdata1[3] => carry.IN0
+inputdata1[3] => carry.IN1
+inputdata2[0] => result.IN1
+inputdata2[0] => carry.IN1
+inputdata2[0] => carry.IN0
+inputdata2[1] => result.IN1
+inputdata2[1] => carry.IN1
+inputdata2[1] => carry.IN1
+inputdata2[2] => result.IN1
+inputdata2[2] => carry.IN1
+inputdata2[2] => carry.IN1
+inputdata2[3] => result.IN1
+inputdata2[3] => carry.IN1
+inputdata2[3] => carry.IN1
+cin => result.IN1
+cin => carry.IN1
+cin => carry.IN1
+cin => cout[0].DATAIN
+cout[0] <= cin.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+cout[4] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+resultsubt[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+resultsubt[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+resultsubt[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+resultsubt[3] <= result.DB_MAX_OUTPUT_PORT_TYPE
+resultsubt[4] <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|maiorq:maq_1
+inputdata1[0] => process_0.IN0
+inputdata1[1] => process_0.IN0
+inputdata1[2] => process_0.IN0
+inputdata1[3] => process_0.IN0
+inputdata2[0] => process_0.IN1
+inputdata2[1] => process_0.IN1
+inputdata2[2] => process_0.IN1
+inputdata2[3] => process_0.IN1
+resultmaq <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|menorq:meq_1
+inputdata1[0] => process_0.IN0
+inputdata1[1] => process_0.IN0
+inputdata1[2] => process_0.IN0
+inputdata1[3] => process_0.IN0
+inputdata2[0] => process_0.IN1
+inputdata2[1] => process_0.IN1
+inputdata2[2] => process_0.IN1
+inputdata2[3] => process_0.IN1
+resultmeq <= meq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|inverter:inv_1
+inputdata1[0] => resultinv[0].DATAIN
+inputdata1[1] => resultinv[1].DATAIN
+inputdata1[2] => resultinv[2].DATAIN
+inputdata1[3] => resultinv[3].DATAIN
+resultinv[0] <= inputdata1[0].DB_MAX_OUTPUT_PORT_TYPE
+resultinv[1] <= inputdata1[1].DB_MAX_OUTPUT_PORT_TYPE
+resultinv[2] <= inputdata1[2].DB_MAX_OUTPUT_PORT_TYPE
+resultinv[3] <= inputdata1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|mux_ula:mux_1
+insoma[0] => y[0].DATAB
+insoma[1] => y[1].DATAB
+insoma[2] => y[2].DATAB
+insoma[3] => y[3].DATAB
+insoma[4] => saida_led.DATAB
+insubt[0] => y[0].DATAB
+insubt[1] => y[1].DATAB
+insubt[2] => y[2].DATAB
+insubt[3] => y[3].DATAB
+insubt[4] => ~NO_FANOUT~
+inmaq => ctrl[0].DATAB
+inmaq => ctrl[0].DATAB
+inmaq => saida_led.DATAB
+inmaq => y[3].DATAB
+inmaq => saida_led.DATAB
+inmaq => ctrl[1].DATAB
+inmeq => ctrl[0].DATAB
+inmeq => saida_led.DATAB
+inmeq => ctrl[1].DATAB
+ininv[0] => y[0].DATAA
+ininv[1] => y[1].DATAA
+ininv[2] => y[2].DATAA
+ininv[3] => y[3].DATAA
+operator[0] => Equal0.IN2
+operator[0] => Equal1.IN2
+operator[0] => Equal2.IN1
+operator[0] => Equal3.IN2
+operator[0] => Equal4.IN1
+operator[1] => Equal0.IN1
+operator[1] => Equal1.IN1
+operator[1] => Equal2.IN2
+operator[1] => Equal3.IN1
+operator[1] => Equal4.IN0
+operator[2] => Equal0.IN0
+operator[2] => Equal1.IN0
+operator[2] => Equal2.IN0
+operator[2] => Equal3.IN0
+operator[2] => Equal4.IN2
+keyonoff => y[3].IN1
+keyonoff => comb.IN1
+keyonoff => ctrl[0].IN1
+keyonoff => ctrl[1].IN1
+keyonoff => saida_led$latch.PRESET
+keyonoff => comb.IN1
+saida_led <= saida_led$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ctrl[0] <= ctrl[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ctrl[1] <= ctrl[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ula|convdisplay:convdisplay_1
+iny[0] => Mux0.IN19
+iny[0] => Mux1.IN19
+iny[0] => Mux2.IN19
+iny[0] => Mux3.IN19
+iny[0] => Mux4.IN19
+iny[0] => Mux5.IN19
+iny[0] => Mux6.IN19
+iny[1] => Mux0.IN18
+iny[1] => Mux1.IN18
+iny[1] => Mux2.IN18
+iny[1] => Mux3.IN18
+iny[1] => Mux4.IN18
+iny[1] => Mux5.IN18
+iny[1] => Mux6.IN18
+iny[2] => Mux0.IN17
+iny[2] => Mux1.IN17
+iny[2] => Mux2.IN17
+iny[2] => Mux3.IN17
+iny[2] => Mux4.IN17
+iny[2] => Mux5.IN17
+iny[2] => Mux6.IN17
+iny[3] => Mux0.IN16
+iny[3] => Mux1.IN16
+iny[3] => Mux2.IN16
+iny[3] => Mux3.IN16
+iny[3] => Mux4.IN16
+iny[3] => Mux5.IN16
+iny[3] => Mux6.IN16
+inctrl[0] => Equal0.IN1
+inctrl[0] => Equal1.IN1
+inctrl[0] => Equal2.IN0
+inctrl[1] => Equal0.IN0
+inctrl[1] => Equal1.IN0
+inctrl[1] => Equal2.IN1
+display[0] <= display[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[1] <= display[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[2] <= display[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[3] <= display[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[4] <= display[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[5] <= display[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+display[6] <= display[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
