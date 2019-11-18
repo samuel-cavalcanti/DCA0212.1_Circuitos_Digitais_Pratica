@@ -21,29 +21,30 @@ begin
 	begin
 	
 	if keyonoff = '0' then
-			saida_led <= '1';
+			saida_led <= '0';
 			ctrl <= "10";
+			
 
 	elsif (operator = "000") then -- somador
 		if insoma(4) = '1'  then 
 			ctrl <= "00";
 			y <= insoma(3 downto 0);
-			saida_led <= '0';
+			saida_led <= '1';
 		else
 			ctrl <= "00";
 			y <= insoma(3 downto 0);
-			saida_led <= '1';
+			saida_led <= '0';
 		end if;
 	
 	elsif (operator = "001") then -- subtrator
 	
-		if inmaq = '0' then
+		if insubt(4)= '0' then
 			y <= insubt(3 downto 0);
 			ctrl <= "00";
-			saida_led <= '1';		  
+			saida_led <= insubt(4);		  
 		else
 			ctrl <= "01";
-			saida_led <= '0';
+			saida_led <= insubt(4);
 		end if;
 	
 	elsif (operator = "010") then -- maiorq
@@ -52,7 +53,7 @@ begin
 			ctrl <= "10";
 			saida_led <= '0';
 		else
-			ctrl <= "01";
+			ctrl <= "10";
 			saida_led <= '1';
 		end if;
 
@@ -62,14 +63,14 @@ begin
 			ctrl <= "10";
 			saida_led <= '0';
 		else
-			ctrl <= "01";
+			ctrl <= "10";
 			saida_led <= '1';
 		end if;
 	
 	elsif (operator = "100") then -- inverter
 		y <= ininv;
 		ctrl <= "00";
-		saida_led <= '1';
+		saida_led <= '0';
 		
 	end if;
 	

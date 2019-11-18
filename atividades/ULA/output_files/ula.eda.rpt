@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ula
-Fri Nov 15 01:18:22 2019
+Mon Nov 18 13:43:49 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 15 01:18:22 2019 ;
+; EDA Netlist Writer Status ; Successful - Mon Nov 18 13:43:49 2019 ;
 ; Revision Name             ; ula                                   ;
 ; Top-level Entity Name     ; ula                                   ;
 ; Family                    ; Cyclone II                            ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------+
-; Simulation Generated Files                            ;
-+-------------------------------------------------------+
-; Generated Files                                       ;
-+-------------------------------------------------------+
-; /home/samuel/Downloads/ULA/simulation/modelsim/ula.vo ;
-+-------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                       ;
++------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                  ;
++------------------------------------------------------------------------------------------------------------------+
+; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/ULA/simulation/modelsim/ula.vo ;
++------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 15 01:18:22 2019
+    Info: Processing started: Mon Nov 18 13:43:47 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off ula -c ula
-Info (204019): Generated file ula.vo in folder "/home/samuel/Downloads/ULA/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file ula.vo in folder "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/ULA/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 326 megabytes
-    Info: Processing ended: Fri Nov 15 01:18:22 2019
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Mon Nov 18 13:43:49 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

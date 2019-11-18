@@ -2,84 +2,132 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow Model Setup 'mux_ula:seletor|ctrl[0]'
+Slack : -4.736
+TNS   : -9.449
+
 Type  : Slow Model Setup 'operator[0]'
-Slack : -2.006
-TNS   : -9.231
+Slack : -2.222
+TNS   : -5.582
 
 Type  : Slow Model Setup 'inputdata1[0]'
-Slack : -0.596
-TNS   : -1.137
-
-Type  : Slow Model Hold 'inputdata1[0]'
-Slack : -1.912
-TNS   : -9.063
-
-Type  : Slow Model Hold 'operator[0]'
-Slack : -0.721
-TNS   : -2.960
-
-Type  : Slow Model Recovery 'operator[0]'
-Slack : -0.168
-TNS   : -0.168
-
-Type  : Slow Model Recovery 'inputdata1[0]'
-Slack : 1.092
+Slack : 0.011
 TNS   : 0.000
 
-Type  : Slow Model Removal 'inputdata1[0]'
-Slack : -3.455
-TNS   : -6.910
+Type  : Slow Model Setup 'key_0'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow Model Hold 'inputdata1[0]'
+Slack : -1.052
+TNS   : -3.890
+
+Type  : Slow Model Hold 'operator[0]'
+Slack : -0.284
+TNS   : -0.818
+
+Type  : Slow Model Hold 'key_0'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'mux_ula:seletor|ctrl[0]'
+Slack : 3.159
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'operator[0]'
+Slack : -1.696
+TNS   : -2.475
+
+Type  : Slow Model Recovery 'mux_ula:seletor|ctrl[0]'
+Slack : 1.879
+TNS   : 0.000
+
+Type  : Slow Model Removal 'mux_ula:seletor|ctrl[0]'
+Slack : -2.373
+TNS   : -4.746
 
 Type  : Slow Model Removal 'operator[0]'
-Slack : -2.315
-TNS   : -5.305
+Slack : -0.135
+TNS   : -0.135
 
 Type  : Slow Model Minimum Pulse Width 'inputdata1[0]'
-Slack : -1.222
-TNS   : -1.222
+Slack : -1.380
+TNS   : -1.380
 
 Type  : Slow Model Minimum Pulse Width 'operator[0]'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Slow Model Minimum Pulse Width 'key_0'
 Slack : -1.222
-TNS   : -1.222
+TNS   : -2.222
+
+Type  : Slow Model Minimum Pulse Width 'mux_ula:seletor|ctrl[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'mux_ula:seletor|ctrl[0]'
+Slack : -1.932
+TNS   : -3.863
 
 Type  : Fast Model Setup 'operator[0]'
-Slack : -0.570
-TNS   : -1.986
+Slack : -0.600
+TNS   : -1.059
+
+Type  : Fast Model Setup 'key_0'
+Slack : 0.665
+TNS   : 0.000
 
 Type  : Fast Model Setup 'inputdata1[0]'
-Slack : 0.032
+Slack : 0.674
 TNS   : 0.000
 
 Type  : Fast Model Hold 'inputdata1[0]'
-Slack : -0.905
-TNS   : -5.251
+Slack : -0.797
+TNS   : -3.090
 
 Type  : Fast Model Hold 'operator[0]'
-Slack : -0.437
-TNS   : -2.602
+Slack : -0.477
+TNS   : -1.810
+
+Type  : Fast Model Hold 'key_0'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'mux_ula:seletor|ctrl[0]'
+Slack : 1.567
+TNS   : 0.000
 
 Type  : Fast Model Recovery 'operator[0]'
-Slack : 0.332
+Slack : -0.589
+TNS   : -0.589
+
+Type  : Fast Model Recovery 'mux_ula:seletor|ctrl[0]'
+Slack : 1.510
 TNS   : 0.000
 
-Type  : Fast Model Recovery 'inputdata1[0]'
-Slack : 1.103
-TNS   : 0.000
-
-Type  : Fast Model Removal 'inputdata1[0]'
-Slack : -1.828
-TNS   : -3.655
+Type  : Fast Model Removal 'mux_ula:seletor|ctrl[0]'
+Slack : -1.418
+TNS   : -2.835
 
 Type  : Fast Model Removal 'operator[0]'
-Slack : -1.343
-TNS   : -2.994
+Slack : -0.078
+TNS   : -0.078
 
 Type  : Fast Model Minimum Pulse Width 'inputdata1[0]'
-Slack : -1.222
-TNS   : -1.222
+Slack : -1.380
+TNS   : -1.380
 
 Type  : Fast Model Minimum Pulse Width 'operator[0]'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Fast Model Minimum Pulse Width 'key_0'
 Slack : -1.222
-TNS   : -1.222
+TNS   : -2.222
+
+Type  : Fast Model Minimum Pulse Width 'mux_ula:seletor|ctrl[0]'
+Slack : 0.500
+TNS   : 0.000
 
 ------------------------------------------------------------

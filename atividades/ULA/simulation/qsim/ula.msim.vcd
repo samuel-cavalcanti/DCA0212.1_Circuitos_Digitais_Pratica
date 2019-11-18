@@ -3,7 +3,7 @@ $comment
 		vcd file ula.msim.vcd -direction
 $end
 $date
-	Fri Nov 15 00:09:14 2019
+	Sun Nov 17 20:54:00 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,52 +11,54 @@ $end
 $timescale
 	1ps
 $end
-$scope module ula_vlg_vec_tst $end
-$var reg 4 ! inputdata1 [3:0] $end
-$var reg 4 " inputdata2 [3:0] $end
-$var reg 1 # keyonoff $end
-$var reg 1 $ operate0 $end
-$var reg 1 % operate1 $end
-$var reg 1 & operate2 $end
-$var wire 1 ' co $end
-$var wire 1 ( ctrl [1] $end
-$var wire 1 ) ctrl [0] $end
-$var wire 1 * y [3] $end
-$var wire 1 + y [2] $end
-$var wire 1 , y [1] $end
-$var wire 1 - y [0] $end
-$var wire 1 . sampler $end
+$scope module menorq_vlg_vec_tst $end
+$var reg 4 ! a [3:0] $end
+$var reg 4 " b [3:0] $end
+$var wire 1 # resultmeq $end
+$var wire 1 $ sampler $end
 $scope module i1 $end
-$var wire 1 / gnd $end
-$var wire 1 0 vcc $end
-$var wire 1 1 unknown $end
-$var tri1 1 2 devclrn $end
-$var tri1 1 3 devpor $end
-$var tri1 1 4 devoe $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + resultmeq~0_combout $end
+$var wire 1 , resultmeq~1_combout $end
+$var wire 1 - resultmeq~2_combout $end
+$var wire 1 . b~combout [3] $end
+$var wire 1 / b~combout [2] $end
+$var wire 1 0 b~combout [1] $end
+$var wire 1 1 b~combout [0] $end
+$var wire 1 2 a~combout [3] $end
+$var wire 1 3 a~combout [2] $end
+$var wire 1 4 a~combout [1] $end
+$var wire 1 5 a~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b111 !
-b1 "
+b101 !
+b111 "
 1#
-0$
+x$
 0%
-0&
-0'
-0)
-0(
-0-
-0,
-0+
-0*
-x.
-0/
+1&
+x'
+1(
+1)
+1*
+1+
+1,
+1-
+11
 10
-x1
-12
+1/
+0.
+15
+04
 13
-14
+02
 $end
 #1000000

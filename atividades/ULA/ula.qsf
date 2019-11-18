@@ -62,10 +62,6 @@ set_global_assignment -name VHDL_FILE maiorq.vhd
 set_global_assignment -name VHDL_FILE menorq.vhd
 set_global_assignment -name VHDL_FILE mux.vhd
 set_global_assignment -name VHDL_FILE convdisplay.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/tiago/Documents/ULA/Waveformula.vwf"
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_AF10 -to display[0]
 set_location_assignment PIN_AB12 -to display[1]
@@ -76,5 +72,25 @@ set_location_assignment PIN_V14 -to display[5]
 set_location_assignment PIN_V13 -to display[6]
 set_location_assignment PIN_AE23 -to led
 set_global_assignment -name VHDL_FILE button.vhd
-set_location_assignment PIN_G26 -to key_0
+set_location_assignment PIN_N23 -to key_0
+set_global_assignment -name VECTOR_WAVEFORM_FILE button.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE soma.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE a_maiorq_b.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE subtrator.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE a_menorq_b.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/ULA/a_menorq_b.vwf"
+set_location_assignment PIN_N25 -to inputdata1[0]
+set_location_assignment PIN_N26 -to inputdata1[1]
+set_location_assignment PIN_P25 -to inputdata1[2]
+set_location_assignment PIN_AE14 -to inputdata1[3]
+set_location_assignment PIN_U3 -to inputdata2[0]
+set_location_assignment PIN_U4 -to inputdata2[1]
+set_location_assignment PIN_V1 -to inputdata2[2]
+set_location_assignment PIN_V2 -to inputdata2[3]
+set_location_assignment PIN_B13 -to operator[0]
+set_location_assignment PIN_A13 -to operator[1]
+set_location_assignment PIN_N1 -to operator[2]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
