@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/17/2019 20:53:56"
+// Generated on "11/18/2019 23:24:03"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    menorq
 // 
@@ -171,12 +171,12 @@ menorq i1 (
 // a[ 3 ]
 initial
 begin
-	a[3] = 1'b0;
+	a[3] = 1'b1;
 end 
 // a[ 2 ]
 initial
 begin
-	a[2] = 1'b1;
+	a[2] = 1'b0;
 end 
 // a[ 1 ]
 initial
@@ -186,7 +186,7 @@ end
 // a[ 0 ]
 initial
 begin
-	a[0] = 1'b1;
+	a[0] = 1'b0;
 end 
 // b[ 3 ]
 initial

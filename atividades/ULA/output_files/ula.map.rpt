@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ula
-Mon Nov 18 13:42:49 2019
+Tue Nov 19 00:11:11 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 18 13:42:49 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 19 00:11:11 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ula                                             ;
 ; Top-level Entity Name              ; ula                                             ;
@@ -272,7 +272,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -282,7 +282,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 18 13:42:42 2019
+    Info: Processing started: Tue Nov 19 00:11:09 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ula -c ula
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
@@ -388,8 +388,8 @@ Info (21057): Implemented 96 device resources after synthesis - the final resour
     Info (21061): Implemented 76 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 46 warnings
     Info: Peak virtual memory: 364 megabytes
-    Info: Processing ended: Mon Nov 18 13:42:49 2019
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Processing ended: Tue Nov 19 00:11:11 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -327,7 +327,7 @@ TRANSITION_LIST("menorq_vlg_vec_tst|a[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -336,7 +336,7 @@ TRANSITION_LIST("menorq_vlg_vec_tst|a[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -354,7 +354,7 @@ TRANSITION_LIST("menorq_vlg_vec_tst|a[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -399,7 +399,7 @@ TRANSITION_LIST("menorq_vlg_vec_tst|resultmeq")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -489,7 +489,7 @@ TRANSITION_LIST("menorq_vlg_vec_tst|i1|resultmeq~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -534,7 +534,7 @@ TRANSITION_LIST("menorq_vlg_vec_tst|i1|a~combout[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -543,7 +543,7 @@ TRANSITION_LIST("menorq_vlg_vec_tst|i1|a~combout[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -561,7 +561,7 @@ TRANSITION_LIST("menorq_vlg_vec_tst|i1|a~combout[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 

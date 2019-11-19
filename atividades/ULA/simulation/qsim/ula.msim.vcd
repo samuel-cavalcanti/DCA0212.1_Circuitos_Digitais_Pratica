@@ -3,7 +3,7 @@ $comment
 		vcd file ula.msim.vcd -direction
 $end
 $date
-	Sun Nov 17 20:54:00 2019
+	Mon Nov 18 23:24:07 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -39,9 +39,9 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b101 !
+b1000 !
 b111 "
-1#
+0#
 x$
 0%
 1&
@@ -51,14 +51,14 @@ x'
 1*
 1+
 1,
-1-
+0-
 11
 10
 1/
 0.
-15
+05
 04
-13
-02
+03
+12
 $end
 #1000000
