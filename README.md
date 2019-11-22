@@ -10,7 +10,7 @@ atividades e exercícios dados em sala aula da disciplina Circuitos digitais
 
 - [marca-passo](atividades/pacemaker)
 
-- [Robô que desvia de obstáculos] ](atividades/orivaldo_robot)
+- [Robô que desvia de obstáculos](atividades/orivaldo_robot)
 
 - [Mini-Calculadora ](atividades/ULA)
 
