@@ -1,6 +1,6 @@
 EDA Netlist Writer report for register_bank
-Mon Oct 14 15:21:43 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Nov 22 15:18:31 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Oct 14 15:21:43 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 22 15:18:31 2019 ;
 ; Revision Name             ; register_bank                         ;
 ; Top-level Entity Name     ; register_bank                         ;
 ; Family                    ; Cyclone II                            ;
@@ -78,15 +78,15 @@ applicable agreement for further details.
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
+Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 14 15:21:43 2019
+    Info: Processing started: Fri Nov 22 15:18:30 2019
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog register_bank -c register_bank
 Info (204019): Generated file register_bank.vo in folder "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/register_bank/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 783 megabytes
-    Info: Processing ended: Mon Oct 14 15:21:43 2019
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 322 megabytes
+    Info: Processing ended: Fri Nov 22 15:18:31 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

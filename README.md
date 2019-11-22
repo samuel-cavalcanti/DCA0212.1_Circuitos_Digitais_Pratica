@@ -10,9 +10,11 @@ atividades e exercícios dados em sala aula da disciplina Circuitos digitais
 
 - [marca-passo](atividades/pacemaker)
 
-- [medidor de  distância ](atividades/utrasonic_decision)
+- [Robô que desvia de obstáculos] ](atividades/orivaldo_robot)
 
 - [Mini-Calculadora ](atividades/ULA)
+
+- [processador Programável](processador_programavel)
 
 ## exercícios dados em aula  
 

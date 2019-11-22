@@ -1,6 +1,6 @@
 Analysis & Synthesis report for register_bank
-Mon Oct 14 14:17:06 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Nov 22 15:17:03 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -13,10 +13,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 14 14:17:06 2019           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 22 15:17:03 2019           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; register_bank                                   ;
 ; Top-level Entity Name              ; register_bank                                   ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 29                                              ;
+; Total logic elements               ; 336                                             ;
+;     Total combinational functions  ; 208                                             ;
+;     Dedicated logic registers      ; 256                                             ;
+; Total registers                    ; 256                                             ;
+; Total pins                         ; 30                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -171,75 +170,56 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
+; Estimated Total logic elements              ; 336   ;
 ;                                             ;       ;
-; Total combinational functions               ; 0     ;
+; Total combinational functions               ; 208   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 56    ;
 ;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
+;     -- <=2 input functions                  ; 152   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
+;     -- normal mode                          ; 208   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
+; Total registers                             ; 256   ;
+;     -- Dedicated logic registers            ; 256   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 29    ;
+; I/O pins                                    ; 30    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 256   ;
+; Total fan-out                               ; 1176  ;
+; Average fan-out                             ; 2.38  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |register_bank             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 29   ; 0            ; |register_bank      ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
++---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Library Name ;
++---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; |register_bank                                    ; 208 (8)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |register_bank                                              ; work         ;
+;    |four_ors:ors|                                 ; 40 (40)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|four_ors:ors                                 ; work         ;
+;    |simple_register:\registerI:0:registerJ:0:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:0:registerJ:0:reg ; work         ;
+;    |simple_register:\registerI:0:registerJ:1:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:0:registerJ:1:reg ; work         ;
+;    |simple_register:\registerI:0:registerJ:2:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:0:registerJ:2:reg ; work         ;
+;    |simple_register:\registerI:0:registerJ:3:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:0:registerJ:3:reg ; work         ;
+;    |simple_register:\registerI:1:registerJ:0:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:1:registerJ:0:reg ; work         ;
+;    |simple_register:\registerI:1:registerJ:1:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:1:registerJ:1:reg ; work         ;
+;    |simple_register:\registerI:1:registerJ:2:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:1:registerJ:2:reg ; work         ;
+;    |simple_register:\registerI:1:registerJ:3:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:1:registerJ:3:reg ; work         ;
+;    |simple_register:\registerI:2:registerJ:0:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:2:registerJ:0:reg ; work         ;
+;    |simple_register:\registerI:2:registerJ:1:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:2:registerJ:1:reg ; work         ;
+;    |simple_register:\registerI:2:registerJ:2:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:2:registerJ:2:reg ; work         ;
+;    |simple_register:\registerI:2:registerJ:3:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:2:registerJ:3:reg ; work         ;
+;    |simple_register:\registerI:3:registerJ:0:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:3:registerJ:0:reg ; work         ;
+;    |simple_register:\registerI:3:registerJ:1:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:3:registerJ:1:reg ; work         ;
+;    |simple_register:\registerI:3:registerJ:2:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:3:registerJ:2:reg ; work         ;
+;    |simple_register:\registerI:3:registerJ:3:reg| ; 10 (10)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |register_bank|simple_register:\registerI:3:registerJ:3:reg ; work         ;
++---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+----------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                 ;
-+-------------------------------------------------------------+--------------------------------------+
-; Register name                                               ; Reason for Removal                   ;
-+-------------------------------------------------------------+--------------------------------------+
-; simple_register:\registerI:3:registerJ:3:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:3:registerJ:3:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:3:registerJ:2:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:3:registerJ:2:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:3:registerJ:1:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:3:registerJ:1:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:3:registerJ:0:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:3:registerJ:0:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:2:registerJ:3:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:2:registerJ:3:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:2:registerJ:2:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:2:registerJ:2:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:2:registerJ:1:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:2:registerJ:1:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:2:registerJ:0:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:2:registerJ:0:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:1:registerJ:3:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:1:registerJ:3:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:1:registerJ:2:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:1:registerJ:2:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:1:registerJ:1:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:1:registerJ:1:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:1:registerJ:0:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:1:registerJ:0:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:0:registerJ:3:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:0:registerJ:3:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:0:registerJ:2:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:0:registerJ:2:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:0:registerJ:1:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:0:registerJ:1:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:0:registerJ:0:reg|data_out[0..7] ; Stuck at GND due to stuck port clock ;
-; simple_register:\registerI:0:registerJ:0:reg|q[0..7]        ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 256                     ;                                      ;
-+-------------------------------------------------------------+--------------------------------------+
 
 
 +------------------------------------------------------+
@@ -247,12 +227,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 256   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 128   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -270,9 +250,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 14 14:17:03 2019
+    Info: Processing started: Fri Nov 22 15:17:00 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off register_bank -c register_bank
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file demux2to4.vhd
@@ -288,49 +268,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file four_or
     Info (12022): Found design unit 1: four_ors-behavior
     Info (12023): Found entity 1: four_ors
 Info (12127): Elaborating entity "register_bank" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at register_bank.vhd(19): used implicit default value for signal "clock" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12129): Elaborating entity "demux2to4" using architecture "A:behavior" for hierarchy "demux2to4:x"
 Info (12129): Elaborating entity "simple_register" using architecture "A:behavior" for hierarchy "simple_register:\registerI:0:registerJ:0:reg"
 Info (12129): Elaborating entity "four_ors" using architecture "A:behavior" for hierarchy "four_ors:\registerI:0:ors"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "output_data[0]" is stuck at GND
-    Warning (13410): Pin "output_data[1]" is stuck at GND
-    Warning (13410): Pin "output_data[2]" is stuck at GND
-    Warning (13410): Pin "output_data[3]" is stuck at GND
-    Warning (13410): Pin "output_data[4]" is stuck at GND
-    Warning (13410): Pin "output_data[5]" is stuck at GND
-    Warning (13410): Pin "output_data[6]" is stuck at GND
-    Warning (13410): Pin "output_data[7]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 21 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "index[0]"
-    Warning (15610): No output dependent on input pin "index[1]"
-    Warning (15610): No output dependent on input pin "index[2]"
-    Warning (15610): No output dependent on input pin "index[3]"
-    Warning (15610): No output dependent on input pin "input_data[0]"
-    Warning (15610): No output dependent on input pin "input_data[1]"
-    Warning (15610): No output dependent on input pin "input_data[2]"
-    Warning (15610): No output dependent on input pin "input_data[3]"
-    Warning (15610): No output dependent on input pin "input_data[4]"
-    Warning (15610): No output dependent on input pin "input_data[5]"
-    Warning (15610): No output dependent on input pin "input_data[6]"
-    Warning (15610): No output dependent on input pin "input_data[7]"
-    Warning (15610): No output dependent on input pin "write_option"
-    Warning (15610): No output dependent on input pin "read_option[0]"
-    Warning (15610): No output dependent on input pin "read_option[1]"
-    Warning (15610): No output dependent on input pin "read_option[2]"
-    Warning (15610): No output dependent on input pin "read_option[3]"
-    Warning (15610): No output dependent on input pin "read_option[4]"
-    Warning (15610): No output dependent on input pin "read_option[5]"
-    Warning (15610): No output dependent on input pin "read_option[6]"
-    Warning (15610): No output dependent on input pin "read_option[7]"
-Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 21 input pins
+Info (21057): Implemented 366 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
     Info (21059): Implemented 8 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 618 megabytes
-    Info: Processing ended: Mon Oct 14 14:17:06 2019
+    Info (21061): Implemented 336 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 372 megabytes
+    Info: Processing ended: Fri Nov 22 15:17:03 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

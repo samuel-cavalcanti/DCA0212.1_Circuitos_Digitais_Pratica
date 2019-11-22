@@ -7,6 +7,7 @@ entity register_bank is
 port ( index : in std_logic_vector (3 downto 0);
 		input_data : in std_logic_vector (7 downto 0);
 		write_option : in std_logic;
+		clock : in std_logic;
 		read_option : in std_logic_vector (7 downto 0);
 		output_data : out std_logic_vector (7 downto 0));
 
@@ -16,7 +17,6 @@ architecture behavior of register_bank is
 signal decode_x_index : std_logic_vector(3 downto 0);
 signal decode_y_index : std_logic_vector(3 downto 0);
 signal registers_output : std_logic_vector (7 downto 0);
-signal clock : std_logic;
 type all_registers_output is array(0 to 15) of std_logic_vector(7 downto 0);
 signal outputs : all_registers_output;
 type four_registers is array(0 to 3) of std_logic_vector(7 downto 0);

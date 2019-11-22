@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for register_bank
-Mon Oct 14 14:17:25 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Nov 22 15:17:25 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -16,19 +16,42 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Datasheet Report
- 12. Fast Model Setup Summary
- 13. Fast Model Hold Summary
- 14. Fast Model Recovery Summary
- 15. Fast Model Removal Summary
- 16. Fast Model Minimum Pulse Width Summary
- 17. Fast Model Datasheet Report
- 18. Multicorner Timing Analysis Summary
- 19. Clock Transfers
- 20. Report TCCS
- 21. Report RSKM
- 22. Unconstrained Paths
- 23. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Setup: 'clock'
+ 12. Slow Model Hold: 'clock'
+ 13. Slow Model Minimum Pulse Width: 'clock'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'clock'
+ 26. Fast Model Hold: 'clock'
+ 27. Fast Model Minimum Pulse Width: 'clock'
+ 28. Setup Times
+ 29. Hold Times
+ 30. Clock to Output Times
+ 31. Minimum Clock to Output Times
+ 32. Propagation Delay
+ 33. Minimum Propagation Delay
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Progagation Delay
+ 40. Minimum Progagation Delay
+ 41. Setup Transfers
+ 42. Hold Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
 
 
 
@@ -75,28 +98,41 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-----------
-; Clocks ;
-----------
-No clocks to report.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; clock      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
 
 
----------------------------
-; Slow Model Fmax Summary ;
----------------------------
-No paths to report.
++-----------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                   ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 1058.2 MHz ; 420.17 MHz      ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-----------------------------
-; Slow Model Setup Summary ;
-----------------------------
-No paths to report.
++-------------------------------+
+; Slow Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 0.055 ; 0.000         ;
++-------+-------+---------------+
 
 
----------------------------
-; Slow Model Hold Summary ;
----------------------------
-No paths to report.
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 0.513 ; 0.000         ;
++-------+-------+---------------+
 
 
 -------------------------------
@@ -111,28 +147,467 @@ No paths to report.
 No paths to report.
 
 
-------------------------------------------
++----------------------------------------+
 ; Slow Model Minimum Pulse Width Summary ;
-------------------------------------------
-No paths to report.
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clock ; -1.380 ; -257.380              ;
++-------+--------+-----------------------+
 
 
--------------------------------
-; Slow Model Datasheet Report ;
--------------------------------
-Nothing to report.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock'                                                                                                                                                                  ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.055 ; simple_register:\registerI:0:registerJ:2:reg|q[1] ; simple_register:\registerI:0:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 1.000        ; -0.002     ; 0.979      ;
+; 0.055 ; simple_register:\registerI:0:registerJ:2:reg|q[4] ; simple_register:\registerI:0:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 1.000        ; -0.002     ; 0.979      ;
+; 0.055 ; simple_register:\registerI:0:registerJ:2:reg|q[5] ; simple_register:\registerI:0:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 1.000        ; -0.002     ; 0.979      ;
+; 0.057 ; simple_register:\registerI:0:registerJ:2:reg|q[0] ; simple_register:\registerI:0:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 1.000        ; -0.002     ; 0.977      ;
+; 0.057 ; simple_register:\registerI:0:registerJ:3:reg|q[1] ; simple_register:\registerI:0:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 1.000        ; -0.002     ; 0.977      ;
+; 0.057 ; simple_register:\registerI:0:registerJ:3:reg|q[6] ; simple_register:\registerI:0:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 1.000        ; -0.002     ; 0.977      ;
+; 0.059 ; simple_register:\registerI:0:registerJ:3:reg|q[3] ; simple_register:\registerI:0:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 1.000        ; -0.002     ; 0.975      ;
+; 0.075 ; simple_register:\registerI:0:registerJ:3:reg|q[4] ; simple_register:\registerI:0:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.004      ; 0.965      ;
+; 0.092 ; simple_register:\registerI:0:registerJ:2:reg|q[3] ; simple_register:\registerI:0:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 1.000        ; -0.002     ; 0.942      ;
+; 0.104 ; simple_register:\registerI:0:registerJ:2:reg|q[7] ; simple_register:\registerI:0:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.004      ; 0.936      ;
+; 0.119 ; simple_register:\registerI:0:registerJ:1:reg|q[0] ; simple_register:\registerI:0:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.917      ;
+; 0.119 ; simple_register:\registerI:3:registerJ:1:reg|q[4] ; simple_register:\registerI:3:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.917      ;
+; 0.121 ; simple_register:\registerI:2:registerJ:3:reg|q[0] ; simple_register:\registerI:2:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.915      ;
+; 0.121 ; simple_register:\registerI:1:registerJ:2:reg|q[2] ; simple_register:\registerI:1:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.915      ;
+; 0.121 ; simple_register:\registerI:2:registerJ:1:reg|q[4] ; simple_register:\registerI:2:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.915      ;
+; 0.121 ; simple_register:\registerI:2:registerJ:2:reg|q[6] ; simple_register:\registerI:2:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.915      ;
+; 0.124 ; simple_register:\registerI:1:registerJ:1:reg|q[0] ; simple_register:\registerI:1:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.912      ;
+; 0.242 ; simple_register:\registerI:2:registerJ:0:reg|q[4] ; simple_register:\registerI:2:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.794      ;
+; 0.243 ; simple_register:\registerI:3:registerJ:0:reg|q[1] ; simple_register:\registerI:3:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.793      ;
+; 0.243 ; simple_register:\registerI:2:registerJ:3:reg|q[2] ; simple_register:\registerI:2:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.793      ;
+; 0.244 ; simple_register:\registerI:0:registerJ:0:reg|q[5] ; simple_register:\registerI:0:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.792      ;
+; 0.245 ; simple_register:\registerI:1:registerJ:0:reg|q[1] ; simple_register:\registerI:1:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:1:registerJ:3:reg|q[1] ; simple_register:\registerI:1:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:2:registerJ:3:reg|q[1] ; simple_register:\registerI:2:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:3:registerJ:3:reg|q[1] ; simple_register:\registerI:3:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:2:registerJ:0:reg|q[2] ; simple_register:\registerI:2:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:1:registerJ:1:reg|q[3] ; simple_register:\registerI:1:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:3:registerJ:2:reg|q[3] ; simple_register:\registerI:3:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:1:registerJ:0:reg|q[4] ; simple_register:\registerI:1:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:1:registerJ:2:reg|q[4] ; simple_register:\registerI:1:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:1:registerJ:1:reg|q[5] ; simple_register:\registerI:1:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:2:registerJ:1:reg|q[5] ; simple_register:\registerI:2:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:2:registerJ:1:reg|q[6] ; simple_register:\registerI:2:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.245 ; simple_register:\registerI:1:registerJ:0:reg|q[7] ; simple_register:\registerI:1:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.791      ;
+; 0.246 ; simple_register:\registerI:3:registerJ:3:reg|q[0] ; simple_register:\registerI:3:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; simple_register:\registerI:1:registerJ:2:reg|q[1] ; simple_register:\registerI:1:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; simple_register:\registerI:1:registerJ:3:reg|q[2] ; simple_register:\registerI:1:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; simple_register:\registerI:1:registerJ:2:reg|q[3] ; simple_register:\registerI:1:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; simple_register:\registerI:1:registerJ:3:reg|q[4] ; simple_register:\registerI:1:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; simple_register:\registerI:0:registerJ:0:reg|q[7] ; simple_register:\registerI:0:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; simple_register:\registerI:1:registerJ:1:reg|q[7] ; simple_register:\registerI:1:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; simple_register:\registerI:2:registerJ:1:reg|q[7] ; simple_register:\registerI:2:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; simple_register:\registerI:3:registerJ:2:reg|q[7] ; simple_register:\registerI:3:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.790      ;
+; 0.247 ; simple_register:\registerI:2:registerJ:0:reg|q[0] ; simple_register:\registerI:2:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.789      ;
+; 0.247 ; simple_register:\registerI:3:registerJ:2:reg|q[0] ; simple_register:\registerI:3:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.789      ;
+; 0.247 ; simple_register:\registerI:1:registerJ:0:reg|q[2] ; simple_register:\registerI:1:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.789      ;
+; 0.247 ; simple_register:\registerI:2:registerJ:0:reg|q[3] ; simple_register:\registerI:2:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.789      ;
+; 0.247 ; simple_register:\registerI:3:registerJ:3:reg|q[3] ; simple_register:\registerI:3:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.789      ;
+; 0.247 ; simple_register:\registerI:2:registerJ:0:reg|q[6] ; simple_register:\registerI:2:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.789      ;
+; 0.247 ; simple_register:\registerI:2:registerJ:3:reg|q[6] ; simple_register:\registerI:2:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.789      ;
+; 0.247 ; simple_register:\registerI:2:registerJ:3:reg|q[7] ; simple_register:\registerI:2:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.789      ;
+; 0.248 ; simple_register:\registerI:3:registerJ:0:reg|q[0] ; simple_register:\registerI:3:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:2:registerJ:1:reg|q[1] ; simple_register:\registerI:2:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:2:registerJ:2:reg|q[1] ; simple_register:\registerI:2:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:2:registerJ:2:reg|q[2] ; simple_register:\registerI:2:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:1:registerJ:0:reg|q[3] ; simple_register:\registerI:1:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:3:registerJ:2:reg|q[4] ; simple_register:\registerI:3:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:1:registerJ:3:reg|q[5] ; simple_register:\registerI:1:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:0:registerJ:0:reg|q[6] ; simple_register:\registerI:0:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:1:registerJ:0:reg|q[6] ; simple_register:\registerI:1:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:0:registerJ:1:reg|q[7] ; simple_register:\registerI:0:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:1:registerJ:3:reg|q[7] ; simple_register:\registerI:1:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.248 ; simple_register:\registerI:2:registerJ:2:reg|q[7] ; simple_register:\registerI:2:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.788      ;
+; 0.249 ; simple_register:\registerI:1:registerJ:2:reg|q[0] ; simple_register:\registerI:1:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:0:registerJ:1:reg|q[1] ; simple_register:\registerI:0:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:0:registerJ:3:reg|q[2] ; simple_register:\registerI:0:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:1:registerJ:1:reg|q[2] ; simple_register:\registerI:1:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:0:registerJ:0:reg|q[3] ; simple_register:\registerI:0:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:0:registerJ:1:reg|q[3] ; simple_register:\registerI:0:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:2:registerJ:1:reg|q[3] ; simple_register:\registerI:2:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:2:registerJ:2:reg|q[3] ; simple_register:\registerI:2:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:2:registerJ:2:reg|q[4] ; simple_register:\registerI:2:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:2:registerJ:3:reg|q[4] ; simple_register:\registerI:2:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:3:registerJ:0:reg|q[4] ; simple_register:\registerI:3:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:0:registerJ:3:reg|q[5] ; simple_register:\registerI:0:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:3:registerJ:1:reg|q[6] ; simple_register:\registerI:3:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:3:registerJ:2:reg|q[6] ; simple_register:\registerI:3:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.249 ; simple_register:\registerI:2:registerJ:0:reg|q[7] ; simple_register:\registerI:2:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.787      ;
+; 0.250 ; simple_register:\registerI:2:registerJ:2:reg|q[0] ; simple_register:\registerI:2:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:3:registerJ:1:reg|q[0] ; simple_register:\registerI:3:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:1:registerJ:1:reg|q[1] ; simple_register:\registerI:1:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:3:registerJ:1:reg|q[1] ; simple_register:\registerI:3:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:0:registerJ:1:reg|q[2] ; simple_register:\registerI:0:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:2:registerJ:1:reg|q[2] ; simple_register:\registerI:2:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:3:registerJ:0:reg|q[2] ; simple_register:\registerI:3:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:3:registerJ:1:reg|q[2] ; simple_register:\registerI:3:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:0:registerJ:1:reg|q[5] ; simple_register:\registerI:0:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:2:registerJ:0:reg|q[5] ; simple_register:\registerI:2:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:2:registerJ:2:reg|q[5] ; simple_register:\registerI:2:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:3:registerJ:0:reg|q[5] ; simple_register:\registerI:3:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:3:registerJ:1:reg|q[5] ; simple_register:\registerI:3:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; simple_register:\registerI:1:registerJ:2:reg|q[6] ; simple_register:\registerI:1:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.786      ;
+; 0.251 ; simple_register:\registerI:0:registerJ:0:reg|q[0] ; simple_register:\registerI:0:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.785      ;
+; 0.251 ; simple_register:\registerI:0:registerJ:3:reg|q[0] ; simple_register:\registerI:0:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.785      ;
+; 0.251 ; simple_register:\registerI:2:registerJ:3:reg|q[3] ; simple_register:\registerI:2:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.785      ;
+; 0.251 ; simple_register:\registerI:3:registerJ:1:reg|q[3] ; simple_register:\registerI:3:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.785      ;
+; 0.251 ; simple_register:\registerI:1:registerJ:2:reg|q[5] ; simple_register:\registerI:1:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.785      ;
+; 0.251 ; simple_register:\registerI:3:registerJ:3:reg|q[5] ; simple_register:\registerI:3:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.785      ;
+; 0.251 ; simple_register:\registerI:0:registerJ:1:reg|q[6] ; simple_register:\registerI:0:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.785      ;
+; 0.251 ; simple_register:\registerI:3:registerJ:0:reg|q[6] ; simple_register:\registerI:3:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.785      ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
-----------------------------
-; Fast Model Setup Summary ;
-----------------------------
-No paths to report.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock'                                                                                                                                                                   ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.513 ; simple_register:\registerI:1:registerJ:0:reg|q[5] ; simple_register:\registerI:1:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.779      ;
+; 0.514 ; simple_register:\registerI:3:registerJ:2:reg|q[2] ; simple_register:\registerI:3:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.780      ;
+; 0.516 ; simple_register:\registerI:1:registerJ:0:reg|q[0] ; simple_register:\registerI:1:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:1:registerJ:3:reg|q[0] ; simple_register:\registerI:1:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:2:registerJ:0:reg|q[1] ; simple_register:\registerI:2:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:3:registerJ:2:reg|q[1] ; simple_register:\registerI:3:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:0:registerJ:0:reg|q[2] ; simple_register:\registerI:0:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:3:registerJ:0:reg|q[3] ; simple_register:\registerI:3:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:1:registerJ:1:reg|q[4] ; simple_register:\registerI:1:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:3:registerJ:3:reg|q[4] ; simple_register:\registerI:3:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:0:registerJ:2:reg|q[6] ; simple_register:\registerI:0:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:1:registerJ:1:reg|q[6] ; simple_register:\registerI:1:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.516 ; simple_register:\registerI:3:registerJ:3:reg|q[6] ; simple_register:\registerI:3:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.782      ;
+; 0.517 ; simple_register:\registerI:2:registerJ:1:reg|q[0] ; simple_register:\registerI:2:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.517 ; simple_register:\registerI:0:registerJ:0:reg|q[1] ; simple_register:\registerI:0:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.517 ; simple_register:\registerI:3:registerJ:3:reg|q[2] ; simple_register:\registerI:3:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.517 ; simple_register:\registerI:1:registerJ:3:reg|q[3] ; simple_register:\registerI:1:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.517 ; simple_register:\registerI:0:registerJ:0:reg|q[4] ; simple_register:\registerI:0:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.517 ; simple_register:\registerI:2:registerJ:3:reg|q[5] ; simple_register:\registerI:2:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.517 ; simple_register:\registerI:1:registerJ:3:reg|q[6] ; simple_register:\registerI:1:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.517 ; simple_register:\registerI:0:registerJ:3:reg|q[7] ; simple_register:\registerI:0:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.517 ; simple_register:\registerI:3:registerJ:0:reg|q[7] ; simple_register:\registerI:3:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.783      ;
+; 0.518 ; simple_register:\registerI:0:registerJ:2:reg|q[2] ; simple_register:\registerI:0:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.784      ;
+; 0.518 ; simple_register:\registerI:0:registerJ:1:reg|q[4] ; simple_register:\registerI:0:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.784      ;
+; 0.518 ; simple_register:\registerI:3:registerJ:2:reg|q[5] ; simple_register:\registerI:3:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.784      ;
+; 0.518 ; simple_register:\registerI:1:registerJ:2:reg|q[7] ; simple_register:\registerI:1:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.784      ;
+; 0.519 ; simple_register:\registerI:0:registerJ:0:reg|q[0] ; simple_register:\registerI:0:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:0:registerJ:3:reg|q[0] ; simple_register:\registerI:0:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:2:registerJ:3:reg|q[3] ; simple_register:\registerI:2:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:3:registerJ:1:reg|q[3] ; simple_register:\registerI:3:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:1:registerJ:2:reg|q[5] ; simple_register:\registerI:1:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:3:registerJ:3:reg|q[5] ; simple_register:\registerI:3:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:0:registerJ:1:reg|q[6] ; simple_register:\registerI:0:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:3:registerJ:0:reg|q[6] ; simple_register:\registerI:3:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:3:registerJ:1:reg|q[7] ; simple_register:\registerI:3:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.519 ; simple_register:\registerI:3:registerJ:3:reg|q[7] ; simple_register:\registerI:3:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.520 ; simple_register:\registerI:2:registerJ:2:reg|q[0] ; simple_register:\registerI:2:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:3:registerJ:1:reg|q[0] ; simple_register:\registerI:3:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:1:registerJ:1:reg|q[1] ; simple_register:\registerI:1:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:3:registerJ:1:reg|q[1] ; simple_register:\registerI:3:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:0:registerJ:1:reg|q[2] ; simple_register:\registerI:0:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:2:registerJ:1:reg|q[2] ; simple_register:\registerI:2:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:3:registerJ:0:reg|q[2] ; simple_register:\registerI:3:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:3:registerJ:1:reg|q[2] ; simple_register:\registerI:3:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:0:registerJ:1:reg|q[5] ; simple_register:\registerI:0:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:2:registerJ:0:reg|q[5] ; simple_register:\registerI:2:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:2:registerJ:2:reg|q[5] ; simple_register:\registerI:2:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:3:registerJ:0:reg|q[5] ; simple_register:\registerI:3:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:3:registerJ:1:reg|q[5] ; simple_register:\registerI:3:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.520 ; simple_register:\registerI:1:registerJ:2:reg|q[6] ; simple_register:\registerI:1:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.786      ;
+; 0.521 ; simple_register:\registerI:1:registerJ:2:reg|q[0] ; simple_register:\registerI:1:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:0:registerJ:1:reg|q[1] ; simple_register:\registerI:0:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:0:registerJ:3:reg|q[2] ; simple_register:\registerI:0:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:1:registerJ:1:reg|q[2] ; simple_register:\registerI:1:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:0:registerJ:0:reg|q[3] ; simple_register:\registerI:0:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:0:registerJ:1:reg|q[3] ; simple_register:\registerI:0:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:2:registerJ:1:reg|q[3] ; simple_register:\registerI:2:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:2:registerJ:2:reg|q[3] ; simple_register:\registerI:2:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:2:registerJ:2:reg|q[4] ; simple_register:\registerI:2:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:2:registerJ:3:reg|q[4] ; simple_register:\registerI:2:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:3:registerJ:0:reg|q[4] ; simple_register:\registerI:3:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:0:registerJ:3:reg|q[5] ; simple_register:\registerI:0:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:3:registerJ:1:reg|q[6] ; simple_register:\registerI:3:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:3:registerJ:2:reg|q[6] ; simple_register:\registerI:3:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.521 ; simple_register:\registerI:2:registerJ:0:reg|q[7] ; simple_register:\registerI:2:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
+; 0.522 ; simple_register:\registerI:3:registerJ:0:reg|q[0] ; simple_register:\registerI:3:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:2:registerJ:1:reg|q[1] ; simple_register:\registerI:2:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:2:registerJ:2:reg|q[1] ; simple_register:\registerI:2:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:2:registerJ:2:reg|q[2] ; simple_register:\registerI:2:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:1:registerJ:0:reg|q[3] ; simple_register:\registerI:1:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:3:registerJ:2:reg|q[4] ; simple_register:\registerI:3:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:1:registerJ:3:reg|q[5] ; simple_register:\registerI:1:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:0:registerJ:0:reg|q[6] ; simple_register:\registerI:0:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:1:registerJ:0:reg|q[6] ; simple_register:\registerI:1:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:0:registerJ:1:reg|q[7] ; simple_register:\registerI:0:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:1:registerJ:3:reg|q[7] ; simple_register:\registerI:1:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.522 ; simple_register:\registerI:2:registerJ:2:reg|q[7] ; simple_register:\registerI:2:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.788      ;
+; 0.523 ; simple_register:\registerI:2:registerJ:0:reg|q[0] ; simple_register:\registerI:2:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.523 ; simple_register:\registerI:3:registerJ:2:reg|q[0] ; simple_register:\registerI:3:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.523 ; simple_register:\registerI:1:registerJ:0:reg|q[2] ; simple_register:\registerI:1:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.523 ; simple_register:\registerI:2:registerJ:0:reg|q[3] ; simple_register:\registerI:2:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.523 ; simple_register:\registerI:3:registerJ:3:reg|q[3] ; simple_register:\registerI:3:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.523 ; simple_register:\registerI:2:registerJ:0:reg|q[6] ; simple_register:\registerI:2:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.523 ; simple_register:\registerI:2:registerJ:3:reg|q[6] ; simple_register:\registerI:2:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.523 ; simple_register:\registerI:2:registerJ:3:reg|q[7] ; simple_register:\registerI:2:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.789      ;
+; 0.524 ; simple_register:\registerI:3:registerJ:3:reg|q[0] ; simple_register:\registerI:3:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.524 ; simple_register:\registerI:1:registerJ:2:reg|q[1] ; simple_register:\registerI:1:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.524 ; simple_register:\registerI:1:registerJ:3:reg|q[2] ; simple_register:\registerI:1:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.524 ; simple_register:\registerI:1:registerJ:2:reg|q[3] ; simple_register:\registerI:1:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.524 ; simple_register:\registerI:1:registerJ:3:reg|q[4] ; simple_register:\registerI:1:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.524 ; simple_register:\registerI:0:registerJ:0:reg|q[7] ; simple_register:\registerI:0:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.524 ; simple_register:\registerI:1:registerJ:1:reg|q[7] ; simple_register:\registerI:1:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.524 ; simple_register:\registerI:2:registerJ:1:reg|q[7] ; simple_register:\registerI:2:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.524 ; simple_register:\registerI:3:registerJ:2:reg|q[7] ; simple_register:\registerI:3:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.525 ; simple_register:\registerI:1:registerJ:0:reg|q[1] ; simple_register:\registerI:1:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.791      ;
+; 0.525 ; simple_register:\registerI:1:registerJ:3:reg|q[1] ; simple_register:\registerI:1:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.791      ;
+; 0.525 ; simple_register:\registerI:2:registerJ:3:reg|q[1] ; simple_register:\registerI:2:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.791      ;
+; 0.525 ; simple_register:\registerI:3:registerJ:3:reg|q[1] ; simple_register:\registerI:3:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.791      ;
+; 0.525 ; simple_register:\registerI:2:registerJ:0:reg|q[2] ; simple_register:\registerI:2:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.791      ;
+; 0.525 ; simple_register:\registerI:1:registerJ:1:reg|q[3] ; simple_register:\registerI:1:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.791      ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
----------------------------
-; Fast Model Hold Summary ;
----------------------------
-No paths to report.
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock'                                                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                   ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock ; Rise       ; clock                                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:3:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:3:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:3:reg|data_out[1] ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; index[*]       ; clock      ; 6.959 ; 6.959 ; Rise       ; clock           ;
+;  index[0]      ; clock      ; 6.760 ; 6.760 ; Rise       ; clock           ;
+;  index[1]      ; clock      ; 6.593 ; 6.593 ; Rise       ; clock           ;
+;  index[2]      ; clock      ; 6.347 ; 6.347 ; Rise       ; clock           ;
+;  index[3]      ; clock      ; 6.959 ; 6.959 ; Rise       ; clock           ;
+; input_data[*]  ; clock      ; 4.335 ; 4.335 ; Rise       ; clock           ;
+;  input_data[0] ; clock      ; 3.921 ; 3.921 ; Rise       ; clock           ;
+;  input_data[1] ; clock      ; 4.011 ; 4.011 ; Rise       ; clock           ;
+;  input_data[2] ; clock      ; 4.335 ; 4.335 ; Rise       ; clock           ;
+;  input_data[3] ; clock      ; 4.129 ; 4.129 ; Rise       ; clock           ;
+;  input_data[4] ; clock      ; 3.970 ; 3.970 ; Rise       ; clock           ;
+;  input_data[5] ; clock      ; 3.907 ; 3.907 ; Rise       ; clock           ;
+;  input_data[6] ; clock      ; 3.983 ; 3.983 ; Rise       ; clock           ;
+;  input_data[7] ; clock      ; 3.891 ; 3.891 ; Rise       ; clock           ;
+; write_option   ; clock      ; 5.112 ; 5.112 ; Rise       ; clock           ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; index[*]       ; clock      ; -4.069 ; -4.069 ; Rise       ; clock           ;
+;  index[0]      ; clock      ; -4.267 ; -4.267 ; Rise       ; clock           ;
+;  index[1]      ; clock      ; -4.278 ; -4.278 ; Rise       ; clock           ;
+;  index[2]      ; clock      ; -4.069 ; -4.069 ; Rise       ; clock           ;
+;  index[3]      ; clock      ; -4.199 ; -4.199 ; Rise       ; clock           ;
+; input_data[*]  ; clock      ; -2.933 ; -2.933 ; Rise       ; clock           ;
+;  input_data[0] ; clock      ; -3.008 ; -3.008 ; Rise       ; clock           ;
+;  input_data[1] ; clock      ; -3.009 ; -3.009 ; Rise       ; clock           ;
+;  input_data[2] ; clock      ; -2.983 ; -2.983 ; Rise       ; clock           ;
+;  input_data[3] ; clock      ; -3.187 ; -3.187 ; Rise       ; clock           ;
+;  input_data[4] ; clock      ; -2.953 ; -2.953 ; Rise       ; clock           ;
+;  input_data[5] ; clock      ; -2.933 ; -2.933 ; Rise       ; clock           ;
+;  input_data[6] ; clock      ; -3.214 ; -3.214 ; Rise       ; clock           ;
+;  input_data[7] ; clock      ; -2.963 ; -2.963 ; Rise       ; clock           ;
+; write_option   ; clock      ; -3.811 ; -3.811 ; Rise       ; clock           ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Clock to Output Times                                                         ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; output_data[*]  ; clock      ; 10.294 ; 10.294 ; Rise       ; clock           ;
+;  output_data[0] ; clock      ; 9.600  ; 9.600  ; Rise       ; clock           ;
+;  output_data[1] ; clock      ; 9.111  ; 9.111  ; Rise       ; clock           ;
+;  output_data[2] ; clock      ; 9.947  ; 9.947  ; Rise       ; clock           ;
+;  output_data[3] ; clock      ; 9.216  ; 9.216  ; Rise       ; clock           ;
+;  output_data[4] ; clock      ; 9.806  ; 9.806  ; Rise       ; clock           ;
+;  output_data[5] ; clock      ; 9.105  ; 9.105  ; Rise       ; clock           ;
+;  output_data[6] ; clock      ; 9.478  ; 9.478  ; Rise       ; clock           ;
+;  output_data[7] ; clock      ; 10.294 ; 10.294 ; Rise       ; clock           ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; output_data[*]  ; clock      ; 7.614 ; 7.614 ; Rise       ; clock           ;
+;  output_data[0] ; clock      ; 7.646 ; 7.646 ; Rise       ; clock           ;
+;  output_data[1] ; clock      ; 7.614 ; 7.614 ; Rise       ; clock           ;
+;  output_data[2] ; clock      ; 7.638 ; 7.638 ; Rise       ; clock           ;
+;  output_data[3] ; clock      ; 8.096 ; 8.096 ; Rise       ; clock           ;
+;  output_data[4] ; clock      ; 8.620 ; 8.620 ; Rise       ; clock           ;
+;  output_data[5] ; clock      ; 7.992 ; 7.992 ; Rise       ; clock           ;
+;  output_data[6] ; clock      ; 8.472 ; 8.472 ; Rise       ; clock           ;
+;  output_data[7] ; clock      ; 7.958 ; 7.958 ; Rise       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++----------------+----------------+--------+----+----+--------+
+; Input Port     ; Output Port    ; RR     ; RF ; FR ; FF     ;
++----------------+----------------+--------+----+----+--------+
+; read_option[0] ; output_data[0] ; 5.524  ;    ;    ; 5.524  ;
+; read_option[1] ; output_data[1] ; 5.671  ;    ;    ; 5.671  ;
+; read_option[2] ; output_data[2] ; 9.948  ;    ;    ; 9.948  ;
+; read_option[3] ; output_data[3] ; 10.392 ;    ;    ; 10.392 ;
+; read_option[4] ; output_data[4] ; 9.179  ;    ;    ; 9.179  ;
+; read_option[5] ; output_data[5] ; 10.111 ;    ;    ; 10.111 ;
+; read_option[6] ; output_data[6] ; 10.158 ;    ;    ; 10.158 ;
+; read_option[7] ; output_data[7] ; 9.871  ;    ;    ; 9.871  ;
++----------------+----------------+--------+----+----+--------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++----------------+----------------+--------+----+----+--------+
+; Input Port     ; Output Port    ; RR     ; RF ; FR ; FF     ;
++----------------+----------------+--------+----+----+--------+
+; read_option[0] ; output_data[0] ; 5.524  ;    ;    ; 5.524  ;
+; read_option[1] ; output_data[1] ; 5.671  ;    ;    ; 5.671  ;
+; read_option[2] ; output_data[2] ; 9.948  ;    ;    ; 9.948  ;
+; read_option[3] ; output_data[3] ; 10.392 ;    ;    ; 10.392 ;
+; read_option[4] ; output_data[4] ; 9.179  ;    ;    ; 9.179  ;
+; read_option[5] ; output_data[5] ; 10.111 ;    ;    ; 10.111 ;
+; read_option[6] ; output_data[6] ; 10.158 ;    ;    ; 10.158 ;
+; read_option[7] ; output_data[7] ; 9.871  ;    ;    ; 9.871  ;
++----------------+----------------+--------+----+----+--------+
+
+
++-------------------------------+
+; Fast Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 0.551 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clock ; 0.235 ; 0.000         ;
++-------+-------+---------------+
 
 
 -------------------------------
@@ -147,32 +622,593 @@ No paths to report.
 No paths to report.
 
 
-------------------------------------------
++----------------------------------------+
 ; Fast Model Minimum Pulse Width Summary ;
-------------------------------------------
-No paths to report.
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clock ; -1.380 ; -257.380              ;
++-------+--------+-----------------------+
 
 
--------------------------------
-; Fast Model Datasheet Report ;
--------------------------------
-Nothing to report.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock'                                                                                                                                                                  ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.551 ; simple_register:\registerI:0:registerJ:2:reg|q[1] ; simple_register:\registerI:0:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 1.000        ; -0.001     ; 0.480      ;
+; 0.551 ; simple_register:\registerI:0:registerJ:2:reg|q[5] ; simple_register:\registerI:0:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 1.000        ; -0.001     ; 0.480      ;
+; 0.552 ; simple_register:\registerI:0:registerJ:2:reg|q[4] ; simple_register:\registerI:0:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 1.000        ; -0.001     ; 0.479      ;
+; 0.553 ; simple_register:\registerI:0:registerJ:2:reg|q[0] ; simple_register:\registerI:0:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 1.000        ; -0.001     ; 0.478      ;
+; 0.553 ; simple_register:\registerI:0:registerJ:3:reg|q[1] ; simple_register:\registerI:0:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 1.000        ; -0.001     ; 0.478      ;
+; 0.554 ; simple_register:\registerI:0:registerJ:3:reg|q[6] ; simple_register:\registerI:0:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 1.000        ; -0.001     ; 0.477      ;
+; 0.555 ; simple_register:\registerI:0:registerJ:3:reg|q[3] ; simple_register:\registerI:0:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 1.000        ; -0.001     ; 0.476      ;
+; 0.562 ; simple_register:\registerI:0:registerJ:2:reg|q[3] ; simple_register:\registerI:0:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 1.000        ; -0.001     ; 0.469      ;
+; 0.565 ; simple_register:\registerI:0:registerJ:1:reg|q[0] ; simple_register:\registerI:0:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.467      ;
+; 0.565 ; simple_register:\registerI:0:registerJ:3:reg|q[4] ; simple_register:\registerI:0:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.002      ; 0.469      ;
+; 0.566 ; simple_register:\registerI:1:registerJ:1:reg|q[0] ; simple_register:\registerI:1:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.466      ;
+; 0.566 ; simple_register:\registerI:3:registerJ:1:reg|q[4] ; simple_register:\registerI:3:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.466      ;
+; 0.567 ; simple_register:\registerI:2:registerJ:3:reg|q[0] ; simple_register:\registerI:2:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.465      ;
+; 0.567 ; simple_register:\registerI:1:registerJ:2:reg|q[2] ; simple_register:\registerI:1:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.465      ;
+; 0.567 ; simple_register:\registerI:2:registerJ:1:reg|q[4] ; simple_register:\registerI:2:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.465      ;
+; 0.567 ; simple_register:\registerI:0:registerJ:2:reg|q[7] ; simple_register:\registerI:0:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.002      ; 0.467      ;
+; 0.568 ; simple_register:\registerI:2:registerJ:2:reg|q[6] ; simple_register:\registerI:2:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.464      ;
+; 0.634 ; simple_register:\registerI:2:registerJ:0:reg|q[4] ; simple_register:\registerI:2:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.398      ;
+; 0.635 ; simple_register:\registerI:3:registerJ:0:reg|q[1] ; simple_register:\registerI:3:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.397      ;
+; 0.635 ; simple_register:\registerI:2:registerJ:3:reg|q[2] ; simple_register:\registerI:2:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.397      ;
+; 0.636 ; simple_register:\registerI:0:registerJ:0:reg|q[5] ; simple_register:\registerI:0:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.396      ;
+; 0.637 ; simple_register:\registerI:1:registerJ:0:reg|q[1] ; simple_register:\registerI:1:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:1:registerJ:3:reg|q[1] ; simple_register:\registerI:1:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:2:registerJ:3:reg|q[1] ; simple_register:\registerI:2:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:3:registerJ:3:reg|q[1] ; simple_register:\registerI:3:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:2:registerJ:0:reg|q[2] ; simple_register:\registerI:2:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:1:registerJ:1:reg|q[3] ; simple_register:\registerI:1:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:3:registerJ:2:reg|q[3] ; simple_register:\registerI:3:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:1:registerJ:0:reg|q[4] ; simple_register:\registerI:1:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:1:registerJ:2:reg|q[4] ; simple_register:\registerI:1:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:1:registerJ:1:reg|q[5] ; simple_register:\registerI:1:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:2:registerJ:1:reg|q[5] ; simple_register:\registerI:2:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:2:registerJ:0:reg|q[6] ; simple_register:\registerI:2:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:2:registerJ:1:reg|q[6] ; simple_register:\registerI:2:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.637 ; simple_register:\registerI:1:registerJ:0:reg|q[7] ; simple_register:\registerI:1:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.395      ;
+; 0.638 ; simple_register:\registerI:3:registerJ:3:reg|q[0] ; simple_register:\registerI:3:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:1:registerJ:2:reg|q[1] ; simple_register:\registerI:1:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:1:registerJ:3:reg|q[2] ; simple_register:\registerI:1:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:2:registerJ:2:reg|q[2] ; simple_register:\registerI:2:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:1:registerJ:2:reg|q[3] ; simple_register:\registerI:1:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:1:registerJ:3:reg|q[4] ; simple_register:\registerI:1:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:0:registerJ:1:reg|q[7] ; simple_register:\registerI:0:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:1:registerJ:1:reg|q[7] ; simple_register:\registerI:1:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:2:registerJ:1:reg|q[7] ; simple_register:\registerI:2:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.638 ; simple_register:\registerI:3:registerJ:2:reg|q[7] ; simple_register:\registerI:3:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.394      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:0:reg|q[0] ; simple_register:\registerI:2:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:3:registerJ:0:reg|q[0] ; simple_register:\registerI:3:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:3:registerJ:2:reg|q[0] ; simple_register:\registerI:3:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:1:reg|q[1] ; simple_register:\registerI:2:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:2:reg|q[1] ; simple_register:\registerI:2:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:1:registerJ:0:reg|q[2] ; simple_register:\registerI:1:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:1:registerJ:1:reg|q[2] ; simple_register:\registerI:1:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:1:registerJ:0:reg|q[3] ; simple_register:\registerI:1:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:0:reg|q[3] ; simple_register:\registerI:2:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:2:reg|q[3] ; simple_register:\registerI:2:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:3:registerJ:3:reg|q[3] ; simple_register:\registerI:3:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:2:reg|q[4] ; simple_register:\registerI:2:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:3:registerJ:0:reg|q[4] ; simple_register:\registerI:3:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:3:registerJ:2:reg|q[4] ; simple_register:\registerI:3:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:1:registerJ:3:reg|q[5] ; simple_register:\registerI:1:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:0:registerJ:0:reg|q[6] ; simple_register:\registerI:0:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:1:registerJ:0:reg|q[6] ; simple_register:\registerI:1:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:3:reg|q[6] ; simple_register:\registerI:2:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:0:registerJ:0:reg|q[7] ; simple_register:\registerI:0:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:1:registerJ:3:reg|q[7] ; simple_register:\registerI:1:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:0:reg|q[7] ; simple_register:\registerI:2:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:2:reg|q[7] ; simple_register:\registerI:2:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.639 ; simple_register:\registerI:2:registerJ:3:reg|q[7] ; simple_register:\registerI:2:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.393      ;
+; 0.640 ; simple_register:\registerI:1:registerJ:2:reg|q[0] ; simple_register:\registerI:1:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:0:registerJ:1:reg|q[1] ; simple_register:\registerI:0:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:0:registerJ:3:reg|q[2] ; simple_register:\registerI:0:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:3:registerJ:0:reg|q[2] ; simple_register:\registerI:3:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:0:registerJ:0:reg|q[3] ; simple_register:\registerI:0:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:0:registerJ:1:reg|q[3] ; simple_register:\registerI:0:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:2:registerJ:1:reg|q[3] ; simple_register:\registerI:2:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:2:registerJ:3:reg|q[4] ; simple_register:\registerI:2:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:0:registerJ:1:reg|q[5] ; simple_register:\registerI:0:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:0:registerJ:3:reg|q[5] ; simple_register:\registerI:0:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:2:registerJ:2:reg|q[5] ; simple_register:\registerI:2:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:3:registerJ:1:reg|q[5] ; simple_register:\registerI:3:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:3:registerJ:1:reg|q[6] ; simple_register:\registerI:3:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.640 ; simple_register:\registerI:3:registerJ:2:reg|q[6] ; simple_register:\registerI:3:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.392      ;
+; 0.641 ; simple_register:\registerI:0:registerJ:0:reg|q[0] ; simple_register:\registerI:0:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:0:registerJ:3:reg|q[0] ; simple_register:\registerI:0:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:2:registerJ:2:reg|q[0] ; simple_register:\registerI:2:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:3:registerJ:1:reg|q[0] ; simple_register:\registerI:3:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:1:registerJ:1:reg|q[1] ; simple_register:\registerI:1:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:3:registerJ:1:reg|q[1] ; simple_register:\registerI:3:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:0:registerJ:1:reg|q[2] ; simple_register:\registerI:0:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:0:registerJ:2:reg|q[2] ; simple_register:\registerI:0:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:2:registerJ:1:reg|q[2] ; simple_register:\registerI:2:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:3:registerJ:1:reg|q[2] ; simple_register:\registerI:3:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:2:registerJ:3:reg|q[3] ; simple_register:\registerI:2:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:0:registerJ:1:reg|q[4] ; simple_register:\registerI:0:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:1:registerJ:2:reg|q[5] ; simple_register:\registerI:1:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:2:registerJ:0:reg|q[5] ; simple_register:\registerI:2:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:3:registerJ:0:reg|q[5] ; simple_register:\registerI:3:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:3:registerJ:2:reg|q[5] ; simple_register:\registerI:3:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:0:registerJ:1:reg|q[6] ; simple_register:\registerI:0:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
+; 0.641 ; simple_register:\registerI:1:registerJ:2:reg|q[6] ; simple_register:\registerI:1:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 1.000        ; 0.000      ; 0.391      ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock'                                                                                                                                                                   ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.235 ; simple_register:\registerI:1:registerJ:0:reg|q[5] ; simple_register:\registerI:1:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.387      ;
+; 0.236 ; simple_register:\registerI:1:registerJ:0:reg|q[0] ; simple_register:\registerI:1:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.236 ; simple_register:\registerI:1:registerJ:3:reg|q[0] ; simple_register:\registerI:1:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.236 ; simple_register:\registerI:2:registerJ:0:reg|q[1] ; simple_register:\registerI:2:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.236 ; simple_register:\registerI:3:registerJ:2:reg|q[1] ; simple_register:\registerI:3:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.236 ; simple_register:\registerI:3:registerJ:2:reg|q[2] ; simple_register:\registerI:3:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.236 ; simple_register:\registerI:3:registerJ:0:reg|q[3] ; simple_register:\registerI:3:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.236 ; simple_register:\registerI:1:registerJ:1:reg|q[4] ; simple_register:\registerI:1:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.236 ; simple_register:\registerI:3:registerJ:3:reg|q[4] ; simple_register:\registerI:3:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.236 ; simple_register:\registerI:1:registerJ:1:reg|q[6] ; simple_register:\registerI:1:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.388      ;
+; 0.237 ; simple_register:\registerI:0:registerJ:0:reg|q[1] ; simple_register:\registerI:0:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.389      ;
+; 0.237 ; simple_register:\registerI:0:registerJ:0:reg|q[2] ; simple_register:\registerI:0:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.389      ;
+; 0.237 ; simple_register:\registerI:1:registerJ:3:reg|q[3] ; simple_register:\registerI:1:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.389      ;
+; 0.237 ; simple_register:\registerI:0:registerJ:2:reg|q[6] ; simple_register:\registerI:0:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.389      ;
+; 0.237 ; simple_register:\registerI:3:registerJ:3:reg|q[6] ; simple_register:\registerI:3:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.389      ;
+; 0.237 ; simple_register:\registerI:0:registerJ:3:reg|q[7] ; simple_register:\registerI:0:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.389      ;
+; 0.237 ; simple_register:\registerI:3:registerJ:0:reg|q[7] ; simple_register:\registerI:3:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.389      ;
+; 0.238 ; simple_register:\registerI:2:registerJ:1:reg|q[0] ; simple_register:\registerI:2:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:3:registerJ:3:reg|q[2] ; simple_register:\registerI:3:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:3:registerJ:1:reg|q[3] ; simple_register:\registerI:3:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:0:registerJ:0:reg|q[4] ; simple_register:\registerI:0:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:2:registerJ:3:reg|q[5] ; simple_register:\registerI:2:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:3:registerJ:3:reg|q[5] ; simple_register:\registerI:3:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:1:registerJ:3:reg|q[6] ; simple_register:\registerI:1:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:3:registerJ:0:reg|q[6] ; simple_register:\registerI:3:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:3:registerJ:1:reg|q[7] ; simple_register:\registerI:3:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.238 ; simple_register:\registerI:3:registerJ:3:reg|q[7] ; simple_register:\registerI:3:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.390      ;
+; 0.239 ; simple_register:\registerI:0:registerJ:0:reg|q[0] ; simple_register:\registerI:0:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:0:registerJ:3:reg|q[0] ; simple_register:\registerI:0:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:2:registerJ:2:reg|q[0] ; simple_register:\registerI:2:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:3:registerJ:1:reg|q[0] ; simple_register:\registerI:3:registerJ:1:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:1:registerJ:1:reg|q[1] ; simple_register:\registerI:1:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:3:registerJ:1:reg|q[1] ; simple_register:\registerI:3:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:0:registerJ:1:reg|q[2] ; simple_register:\registerI:0:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:0:registerJ:2:reg|q[2] ; simple_register:\registerI:0:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:2:registerJ:1:reg|q[2] ; simple_register:\registerI:2:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:3:registerJ:1:reg|q[2] ; simple_register:\registerI:3:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:2:registerJ:3:reg|q[3] ; simple_register:\registerI:2:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:0:registerJ:1:reg|q[4] ; simple_register:\registerI:0:registerJ:1:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:1:registerJ:2:reg|q[5] ; simple_register:\registerI:1:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:2:registerJ:0:reg|q[5] ; simple_register:\registerI:2:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:3:registerJ:0:reg|q[5] ; simple_register:\registerI:3:registerJ:0:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:3:registerJ:2:reg|q[5] ; simple_register:\registerI:3:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:0:registerJ:1:reg|q[6] ; simple_register:\registerI:0:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:1:registerJ:2:reg|q[6] ; simple_register:\registerI:1:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.239 ; simple_register:\registerI:1:registerJ:2:reg|q[7] ; simple_register:\registerI:1:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.391      ;
+; 0.240 ; simple_register:\registerI:1:registerJ:2:reg|q[0] ; simple_register:\registerI:1:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:0:registerJ:1:reg|q[1] ; simple_register:\registerI:0:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:0:registerJ:3:reg|q[2] ; simple_register:\registerI:0:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:3:registerJ:0:reg|q[2] ; simple_register:\registerI:3:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:0:registerJ:0:reg|q[3] ; simple_register:\registerI:0:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:0:registerJ:1:reg|q[3] ; simple_register:\registerI:0:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:2:registerJ:1:reg|q[3] ; simple_register:\registerI:2:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:2:registerJ:3:reg|q[4] ; simple_register:\registerI:2:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:0:registerJ:1:reg|q[5] ; simple_register:\registerI:0:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:0:registerJ:3:reg|q[5] ; simple_register:\registerI:0:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:2:registerJ:2:reg|q[5] ; simple_register:\registerI:2:registerJ:2:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:3:registerJ:1:reg|q[5] ; simple_register:\registerI:3:registerJ:1:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:3:registerJ:1:reg|q[6] ; simple_register:\registerI:3:registerJ:1:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.240 ; simple_register:\registerI:3:registerJ:2:reg|q[6] ; simple_register:\registerI:3:registerJ:2:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:0:reg|q[0] ; simple_register:\registerI:2:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:3:registerJ:0:reg|q[0] ; simple_register:\registerI:3:registerJ:0:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:3:registerJ:2:reg|q[0] ; simple_register:\registerI:3:registerJ:2:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:1:reg|q[1] ; simple_register:\registerI:2:registerJ:1:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:2:reg|q[1] ; simple_register:\registerI:2:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:1:registerJ:0:reg|q[2] ; simple_register:\registerI:1:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:1:registerJ:1:reg|q[2] ; simple_register:\registerI:1:registerJ:1:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:1:registerJ:0:reg|q[3] ; simple_register:\registerI:1:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:0:reg|q[3] ; simple_register:\registerI:2:registerJ:0:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:2:reg|q[3] ; simple_register:\registerI:2:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:3:registerJ:3:reg|q[3] ; simple_register:\registerI:3:registerJ:3:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:2:reg|q[4] ; simple_register:\registerI:2:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:3:registerJ:0:reg|q[4] ; simple_register:\registerI:3:registerJ:0:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:3:registerJ:2:reg|q[4] ; simple_register:\registerI:3:registerJ:2:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:1:registerJ:3:reg|q[5] ; simple_register:\registerI:1:registerJ:3:reg|data_out[5] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:0:registerJ:0:reg|q[6] ; simple_register:\registerI:0:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:1:registerJ:0:reg|q[6] ; simple_register:\registerI:1:registerJ:0:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:3:reg|q[6] ; simple_register:\registerI:2:registerJ:3:reg|data_out[6] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:0:registerJ:0:reg|q[7] ; simple_register:\registerI:0:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:1:registerJ:3:reg|q[7] ; simple_register:\registerI:1:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:0:reg|q[7] ; simple_register:\registerI:2:registerJ:0:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:2:reg|q[7] ; simple_register:\registerI:2:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; simple_register:\registerI:2:registerJ:3:reg|q[7] ; simple_register:\registerI:2:registerJ:3:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.242 ; simple_register:\registerI:3:registerJ:3:reg|q[0] ; simple_register:\registerI:3:registerJ:3:reg|data_out[0] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:1:registerJ:2:reg|q[1] ; simple_register:\registerI:1:registerJ:2:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:1:registerJ:3:reg|q[2] ; simple_register:\registerI:1:registerJ:3:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:2:registerJ:2:reg|q[2] ; simple_register:\registerI:2:registerJ:2:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:1:registerJ:2:reg|q[3] ; simple_register:\registerI:1:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:1:registerJ:3:reg|q[4] ; simple_register:\registerI:1:registerJ:3:reg|data_out[4] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:0:registerJ:1:reg|q[7] ; simple_register:\registerI:0:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:1:registerJ:1:reg|q[7] ; simple_register:\registerI:1:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:2:registerJ:1:reg|q[7] ; simple_register:\registerI:2:registerJ:1:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; simple_register:\registerI:3:registerJ:2:reg|q[7] ; simple_register:\registerI:3:registerJ:2:reg|data_out[7] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.243 ; simple_register:\registerI:1:registerJ:0:reg|q[1] ; simple_register:\registerI:1:registerJ:0:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.395      ;
+; 0.243 ; simple_register:\registerI:1:registerJ:3:reg|q[1] ; simple_register:\registerI:1:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.395      ;
+; 0.243 ; simple_register:\registerI:2:registerJ:3:reg|q[1] ; simple_register:\registerI:2:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.395      ;
+; 0.243 ; simple_register:\registerI:3:registerJ:3:reg|q[1] ; simple_register:\registerI:3:registerJ:3:reg|data_out[1] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.395      ;
+; 0.243 ; simple_register:\registerI:2:registerJ:0:reg|q[2] ; simple_register:\registerI:2:registerJ:0:reg|data_out[2] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.395      ;
+; 0.243 ; simple_register:\registerI:1:registerJ:1:reg|q[3] ; simple_register:\registerI:1:registerJ:1:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.395      ;
+; 0.243 ; simple_register:\registerI:3:registerJ:2:reg|q[3] ; simple_register:\registerI:3:registerJ:2:reg|data_out[3] ; clock        ; clock       ; 0.000        ; 0.000      ; 0.395      ;
++-------+---------------------------------------------------+----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock'                                                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                   ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock ; Rise       ; clock                                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:0:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:1:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|data_out[7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:2:reg|q[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:3:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; simple_register:\registerI:0:registerJ:3:reg|data_out[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; simple_register:\registerI:0:registerJ:3:reg|data_out[1] ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                        ;
-+------------------+-------+------+----------+---------+---------------------+
-; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+-------+------+----------+---------+---------------------+
-; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
-+------------------+-------+------+----------+---------+---------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; index[*]       ; clock      ; 3.581 ; 3.581 ; Rise       ; clock           ;
+;  index[0]      ; clock      ; 3.483 ; 3.483 ; Rise       ; clock           ;
+;  index[1]      ; clock      ; 3.369 ; 3.369 ; Rise       ; clock           ;
+;  index[2]      ; clock      ; 3.271 ; 3.271 ; Rise       ; clock           ;
+;  index[3]      ; clock      ; 3.581 ; 3.581 ; Rise       ; clock           ;
+; input_data[*]  ; clock      ; 2.335 ; 2.335 ; Rise       ; clock           ;
+;  input_data[0] ; clock      ; 2.106 ; 2.106 ; Rise       ; clock           ;
+;  input_data[1] ; clock      ; 2.130 ; 2.130 ; Rise       ; clock           ;
+;  input_data[2] ; clock      ; 2.335 ; 2.335 ; Rise       ; clock           ;
+;  input_data[3] ; clock      ; 2.190 ; 2.190 ; Rise       ; clock           ;
+;  input_data[4] ; clock      ; 2.138 ; 2.138 ; Rise       ; clock           ;
+;  input_data[5] ; clock      ; 2.103 ; 2.103 ; Rise       ; clock           ;
+;  input_data[6] ; clock      ; 2.144 ; 2.144 ; Rise       ; clock           ;
+;  input_data[7] ; clock      ; 2.095 ; 2.095 ; Rise       ; clock           ;
+; write_option   ; clock      ; 2.702 ; 2.702 ; Rise       ; clock           ;
++----------------+------------+-------+-------+------------+-----------------+
 
 
--------------------
-; Clock Transfers ;
--------------------
-Nothing to report.
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; index[*]       ; clock      ; -2.098 ; -2.098 ; Rise       ; clock           ;
+;  index[0]      ; clock      ; -2.238 ; -2.238 ; Rise       ; clock           ;
+;  index[1]      ; clock      ; -2.196 ; -2.196 ; Rise       ; clock           ;
+;  index[2]      ; clock      ; -2.098 ; -2.098 ; Rise       ; clock           ;
+;  index[3]      ; clock      ; -2.194 ; -2.194 ; Rise       ; clock           ;
+; input_data[*]  ; clock      ; -1.601 ; -1.601 ; Rise       ; clock           ;
+;  input_data[0] ; clock      ; -1.650 ; -1.650 ; Rise       ; clock           ;
+;  input_data[1] ; clock      ; -1.645 ; -1.645 ; Rise       ; clock           ;
+;  input_data[2] ; clock      ; -1.628 ; -1.628 ; Rise       ; clock           ;
+;  input_data[3] ; clock      ; -1.712 ; -1.712 ; Rise       ; clock           ;
+;  input_data[4] ; clock      ; -1.601 ; -1.601 ; Rise       ; clock           ;
+;  input_data[5] ; clock      ; -1.613 ; -1.613 ; Rise       ; clock           ;
+;  input_data[6] ; clock      ; -1.729 ; -1.729 ; Rise       ; clock           ;
+;  input_data[7] ; clock      ; -1.606 ; -1.606 ; Rise       ; clock           ;
+; write_option   ; clock      ; -2.081 ; -2.081 ; Rise       ; clock           ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; output_data[*]  ; clock      ; 5.358 ; 5.358 ; Rise       ; clock           ;
+;  output_data[0] ; clock      ; 5.063 ; 5.063 ; Rise       ; clock           ;
+;  output_data[1] ; clock      ; 4.805 ; 4.805 ; Rise       ; clock           ;
+;  output_data[2] ; clock      ; 5.186 ; 5.186 ; Rise       ; clock           ;
+;  output_data[3] ; clock      ; 4.856 ; 4.856 ; Rise       ; clock           ;
+;  output_data[4] ; clock      ; 5.150 ; 5.150 ; Rise       ; clock           ;
+;  output_data[5] ; clock      ; 4.873 ; 4.873 ; Rise       ; clock           ;
+;  output_data[6] ; clock      ; 5.028 ; 5.028 ; Rise       ; clock           ;
+;  output_data[7] ; clock      ; 5.358 ; 5.358 ; Rise       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; output_data[*]  ; clock      ; 4.172 ; 4.172 ; Rise       ; clock           ;
+;  output_data[0] ; clock      ; 4.178 ; 4.178 ; Rise       ; clock           ;
+;  output_data[1] ; clock      ; 4.172 ; 4.172 ; Rise       ; clock           ;
+;  output_data[2] ; clock      ; 4.179 ; 4.179 ; Rise       ; clock           ;
+;  output_data[3] ; clock      ; 4.377 ; 4.377 ; Rise       ; clock           ;
+;  output_data[4] ; clock      ; 4.619 ; 4.619 ; Rise       ; clock           ;
+;  output_data[5] ; clock      ; 4.345 ; 4.345 ; Rise       ; clock           ;
+;  output_data[6] ; clock      ; 4.588 ; 4.588 ; Rise       ; clock           ;
+;  output_data[7] ; clock      ; 4.351 ; 4.351 ; Rise       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++----------------+----------------+-------+----+----+-------+
+; Input Port     ; Output Port    ; RR    ; RF ; FR ; FF    ;
++----------------+----------------+-------+----+----+-------+
+; read_option[0] ; output_data[0] ; 2.896 ;    ;    ; 2.896 ;
+; read_option[1] ; output_data[1] ; 2.938 ;    ;    ; 2.938 ;
+; read_option[2] ; output_data[2] ; 5.510 ;    ;    ; 5.510 ;
+; read_option[3] ; output_data[3] ; 5.701 ;    ;    ; 5.701 ;
+; read_option[4] ; output_data[4] ; 5.163 ;    ;    ; 5.163 ;
+; read_option[5] ; output_data[5] ; 5.655 ;    ;    ; 5.655 ;
+; read_option[6] ; output_data[6] ; 5.672 ;    ;    ; 5.672 ;
+; read_option[7] ; output_data[7] ; 5.529 ;    ;    ; 5.529 ;
++----------------+----------------+-------+----+----+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++----------------+----------------+-------+----+----+-------+
+; Input Port     ; Output Port    ; RR    ; RF ; FR ; FF    ;
++----------------+----------------+-------+----+----+-------+
+; read_option[0] ; output_data[0] ; 2.896 ;    ;    ; 2.896 ;
+; read_option[1] ; output_data[1] ; 2.938 ;    ;    ; 2.938 ;
+; read_option[2] ; output_data[2] ; 5.510 ;    ;    ; 5.510 ;
+; read_option[3] ; output_data[3] ; 5.701 ;    ;    ; 5.701 ;
+; read_option[4] ; output_data[4] ; 5.163 ;    ;    ; 5.163 ;
+; read_option[5] ; output_data[5] ; 5.655 ;    ;    ; 5.655 ;
+; read_option[6] ; output_data[6] ; 5.672 ;    ;    ; 5.672 ;
+; read_option[7] ; output_data[7] ; 5.529 ;    ;    ; 5.529 ;
++----------------+----------------+-------+----+----+-------+
+
+
++-----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                         ;
++------------------+-------+-------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 0.055 ; 0.235 ; N/A      ; N/A     ; -1.380              ;
+;  clock           ; 0.055 ; 0.235 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; -257.38             ;
+;  clock           ; 0.000 ; 0.000 ; N/A      ; N/A     ; -257.380            ;
++------------------+-------+-------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; index[*]       ; clock      ; 6.959 ; 6.959 ; Rise       ; clock           ;
+;  index[0]      ; clock      ; 6.760 ; 6.760 ; Rise       ; clock           ;
+;  index[1]      ; clock      ; 6.593 ; 6.593 ; Rise       ; clock           ;
+;  index[2]      ; clock      ; 6.347 ; 6.347 ; Rise       ; clock           ;
+;  index[3]      ; clock      ; 6.959 ; 6.959 ; Rise       ; clock           ;
+; input_data[*]  ; clock      ; 4.335 ; 4.335 ; Rise       ; clock           ;
+;  input_data[0] ; clock      ; 3.921 ; 3.921 ; Rise       ; clock           ;
+;  input_data[1] ; clock      ; 4.011 ; 4.011 ; Rise       ; clock           ;
+;  input_data[2] ; clock      ; 4.335 ; 4.335 ; Rise       ; clock           ;
+;  input_data[3] ; clock      ; 4.129 ; 4.129 ; Rise       ; clock           ;
+;  input_data[4] ; clock      ; 3.970 ; 3.970 ; Rise       ; clock           ;
+;  input_data[5] ; clock      ; 3.907 ; 3.907 ; Rise       ; clock           ;
+;  input_data[6] ; clock      ; 3.983 ; 3.983 ; Rise       ; clock           ;
+;  input_data[7] ; clock      ; 3.891 ; 3.891 ; Rise       ; clock           ;
+; write_option   ; clock      ; 5.112 ; 5.112 ; Rise       ; clock           ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; index[*]       ; clock      ; -2.098 ; -2.098 ; Rise       ; clock           ;
+;  index[0]      ; clock      ; -2.238 ; -2.238 ; Rise       ; clock           ;
+;  index[1]      ; clock      ; -2.196 ; -2.196 ; Rise       ; clock           ;
+;  index[2]      ; clock      ; -2.098 ; -2.098 ; Rise       ; clock           ;
+;  index[3]      ; clock      ; -2.194 ; -2.194 ; Rise       ; clock           ;
+; input_data[*]  ; clock      ; -1.601 ; -1.601 ; Rise       ; clock           ;
+;  input_data[0] ; clock      ; -1.650 ; -1.650 ; Rise       ; clock           ;
+;  input_data[1] ; clock      ; -1.645 ; -1.645 ; Rise       ; clock           ;
+;  input_data[2] ; clock      ; -1.628 ; -1.628 ; Rise       ; clock           ;
+;  input_data[3] ; clock      ; -1.712 ; -1.712 ; Rise       ; clock           ;
+;  input_data[4] ; clock      ; -1.601 ; -1.601 ; Rise       ; clock           ;
+;  input_data[5] ; clock      ; -1.613 ; -1.613 ; Rise       ; clock           ;
+;  input_data[6] ; clock      ; -1.729 ; -1.729 ; Rise       ; clock           ;
+;  input_data[7] ; clock      ; -1.606 ; -1.606 ; Rise       ; clock           ;
+; write_option   ; clock      ; -2.081 ; -2.081 ; Rise       ; clock           ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Clock to Output Times                                                         ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; output_data[*]  ; clock      ; 10.294 ; 10.294 ; Rise       ; clock           ;
+;  output_data[0] ; clock      ; 9.600  ; 9.600  ; Rise       ; clock           ;
+;  output_data[1] ; clock      ; 9.111  ; 9.111  ; Rise       ; clock           ;
+;  output_data[2] ; clock      ; 9.947  ; 9.947  ; Rise       ; clock           ;
+;  output_data[3] ; clock      ; 9.216  ; 9.216  ; Rise       ; clock           ;
+;  output_data[4] ; clock      ; 9.806  ; 9.806  ; Rise       ; clock           ;
+;  output_data[5] ; clock      ; 9.105  ; 9.105  ; Rise       ; clock           ;
+;  output_data[6] ; clock      ; 9.478  ; 9.478  ; Rise       ; clock           ;
+;  output_data[7] ; clock      ; 10.294 ; 10.294 ; Rise       ; clock           ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; output_data[*]  ; clock      ; 4.172 ; 4.172 ; Rise       ; clock           ;
+;  output_data[0] ; clock      ; 4.178 ; 4.178 ; Rise       ; clock           ;
+;  output_data[1] ; clock      ; 4.172 ; 4.172 ; Rise       ; clock           ;
+;  output_data[2] ; clock      ; 4.179 ; 4.179 ; Rise       ; clock           ;
+;  output_data[3] ; clock      ; 4.377 ; 4.377 ; Rise       ; clock           ;
+;  output_data[4] ; clock      ; 4.619 ; 4.619 ; Rise       ; clock           ;
+;  output_data[5] ; clock      ; 4.345 ; 4.345 ; Rise       ; clock           ;
+;  output_data[6] ; clock      ; 4.588 ; 4.588 ; Rise       ; clock           ;
+;  output_data[7] ; clock      ; 4.351 ; 4.351 ; Rise       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------+
+; Progagation Delay                                           ;
++----------------+----------------+--------+----+----+--------+
+; Input Port     ; Output Port    ; RR     ; RF ; FR ; FF     ;
++----------------+----------------+--------+----+----+--------+
+; read_option[0] ; output_data[0] ; 5.524  ;    ;    ; 5.524  ;
+; read_option[1] ; output_data[1] ; 5.671  ;    ;    ; 5.671  ;
+; read_option[2] ; output_data[2] ; 9.948  ;    ;    ; 9.948  ;
+; read_option[3] ; output_data[3] ; 10.392 ;    ;    ; 10.392 ;
+; read_option[4] ; output_data[4] ; 9.179  ;    ;    ; 9.179  ;
+; read_option[5] ; output_data[5] ; 10.111 ;    ;    ; 10.111 ;
+; read_option[6] ; output_data[6] ; 10.158 ;    ;    ; 10.158 ;
+; read_option[7] ; output_data[7] ; 9.871  ;    ;    ; 9.871  ;
++----------------+----------------+--------+----+----+--------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++----------------+----------------+-------+----+----+-------+
+; Input Port     ; Output Port    ; RR    ; RF ; FR ; FF    ;
++----------------+----------------+-------+----+----+-------+
+; read_option[0] ; output_data[0] ; 2.896 ;    ;    ; 2.896 ;
+; read_option[1] ; output_data[1] ; 2.938 ;    ;    ; 2.938 ;
+; read_option[2] ; output_data[2] ; 5.510 ;    ;    ; 5.510 ;
+; read_option[3] ; output_data[3] ; 5.701 ;    ;    ; 5.701 ;
+; read_option[4] ; output_data[4] ; 5.163 ;    ;    ; 5.163 ;
+; read_option[5] ; output_data[5] ; 5.655 ;    ;    ; 5.655 ;
+; read_option[6] ; output_data[6] ; 5.672 ;    ;    ; 5.672 ;
+; read_option[7] ; output_data[7] ; 5.529 ;    ;    ; 5.529 ;
++----------------+----------------+-------+----+----+-------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 128      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 128      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
 ---------------
@@ -194,10 +1230,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 0     ; 0    ;
-; Unconstrained Output Port Paths ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 21    ; 21   ;
+; Unconstrained Input Port Paths  ; 1288  ; 1288 ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 136   ; 136  ;
 +---------------------------------+-------+------+
 
 
@@ -205,41 +1241,56 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 14 14:17:24 2019
+    Info: Processing started: Fri Nov 22 15:17:24 2019
 Info: Command: quartus_sta register_bank -c register_bank
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'register_bank.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock clock
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
-Info (332159): No clocks to report
 Info: Analyzing Slow Model
-Info (332140): No fmax paths to report
-Info (332140): No Setup paths to report
-Info (332140): No Hold paths to report
+Info (332146): Worst-case setup slack is 0.055
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.055         0.000 clock 
+Info (332146): Worst-case hold slack is 0.513
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.513         0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -257.380 clock 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
-Info (332140): No Setup paths to report
-Info (332140): No Hold paths to report
+Info (332146): Worst-case setup slack is 0.551
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.551         0.000 clock 
+Info (332146): Worst-case hold slack is 0.235
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.235         0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332140): No Minimum Pulse Width paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -257.380 clock 
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332101): Design is fully constrained for setup requirements
-Info (332101): Design is fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 481 megabytes
-    Info: Processing ended: Mon Oct 14 14:17:25 2019
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 316 megabytes
+    Info: Processing ended: Fri Nov 22 15:17:25 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -4,78 +4,78 @@ K3
 cModel Technology
 Z0 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/register_bank/simulation/qsim
 vregister_bank
-Z1 Ie5F`ANlID2P@5CW?[Tjc_3
-Z2 VMQE=]TJieEjg99Ll3mClh0
+Z1 IPb=MT=O8Kn9g?ae9U2;bc3
+Z2 VKW]oW>5S88aKXRLSMJVW;1
 Z3 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/register_bank/simulation/qsim
-Z4 w1571077303
+Z4 w1574446711
 Z5 8register_bank.vo
 Z6 Fregister_bank.vo
 L0 31
 Z7 OV;L;10.1d;51
 r1
 31
-Z8 o-work work -O0
+Z8 !s90 -work|work|register_bank.vo|
+Z9 o-work work -O0
 !i10b 1
-Z9 !s100 g2EnB0j6T@Mf@<T?]ZSa<1
+Z10 !s100 B??N^6nGO]_egz9aXBB2R1
 !s85 0
-Z10 !s108 1571077304.401849
-Z11 !s107 register_bank.vo|
-Z12 !s90 -work|work|register_bank.vo|
+Z11 !s108 1574446712.462596
+Z12 !s107 register_bank.vo|
 !s101 -O0
 vregister_bank_vlg_check_tst
 !i10b 1
-!s100 igllY16<80@o=XGCFi?>G1
-IDTz:fXZcH<g5GiFzeGh@>1
-VT;Vc=GK>2XRn965bSG38g2
+!s100 0SfNlhNd_3^NZ8hk;eM9;2
+IUGHeJU8VCFB@lh]JdM@oQ2
+Z13 VT;Vc=GK>2XRn965bSG38g2
 R3
-Z13 w1571077301
-Z14 8register_bank.vt
-Z15 Fregister_bank.vt
-L0 63
+Z14 w1574446707
+Z15 8register_bank.vt
+Z16 Fregister_bank.vt
+L0 65
 R7
 r1
 !s85 0
 31
-Z16 !s108 1571077304.464165
-Z17 !s107 register_bank.vt|
-Z18 !s90 -work|work|register_bank.vt|
+Z17 !s108 1574446712.594456
+Z18 !s107 register_bank.vt|
+Z19 !s90 -work|work|register_bank.vt|
 !s101 -O0
-R8
+R9
 vregister_bank_vlg_sample_tst
 !i10b 1
-!s100 1=SIROll[CJUmBnz7_=Pz0
-IY5^0<SR7j:OmP=^M2C5A`0
-V?OQ<X>PnP0XoRK11MF4B=0
+!s100 W4MhN1dHIGL`5A?fc0lk12
+I0UMZlTj@TL;oD1PdCB^5e2
+VfWPn7nhiF=92TdJT7QU]S3
 R3
-R13
 R14
 R15
+R16
 L0 29
 R7
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !s101 -O0
-R8
+R9
 vregister_bank_vlg_vec_tst
 !i10b 1
-!s100 b?4i9hUaCHnb<o`a4eeFW2
-I:U^_JSN6hW>0CE0ZU=:7X1
-V62RXU;`dRJSNY9LXzRoP`3
+!s100 XTP]_DgX30CziBGK0fY`=1
+I@n@BjaH`DLG=]6KA2G3On3
+Z20 V62RXU;`dRJSNY9LXzRoP`3
 R3
-R13
 R14
 R15
-L0 283
+R16
+L0 285
 R7
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !s101 -O0
-R8
+R9

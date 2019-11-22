@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/14/2019 15:21:41"
+// Generated on "11/22/2019 15:18:27"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    register_bank
 // 
@@ -27,12 +27,14 @@
 
 `timescale 1 ps/ 1 ps
 module register_bank_vlg_sample_tst(
+	clock,
 	index,
 	input_data,
 	read_option,
 	write_option,
 	sampler_tx
 );
+input  clock;
 input [3:0] index;
 input [7:0] input_data;
 input [7:0] read_option;
@@ -41,7 +43,7 @@ output sampler_tx;
 
 reg sample;
 time current_time;
-always @(index or input_data or read_option or write_option)
+always @(clock or index or input_data or read_option or write_option)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -283,6 +285,7 @@ endmodule
 module register_bank_vlg_vec_tst();
 // constants                                           
 // general purpose registers
+reg clock;
 reg [3:0] index;
 reg [7:0] input_data;
 reg [7:0] read_option;
@@ -295,12 +298,21 @@ wire sampler;
 // assign statements (if any)                          
 register_bank i1 (
 // port map - connection between master ports and signals/registers   
+	.clock(clock),
 	.index(index),
 	.input_data(input_data),
 	.output_data(output_data),
 	.read_option(read_option),
 	.write_option(write_option)
 );
+
+// clock
+always
+begin
+	clock = 1'b0;
+	clock = #10000 1'b1;
+	#10000;
+end 
 // index[ 3 ]
 initial
 begin
@@ -409,6 +421,7 @@ begin
 end 
 
 register_bank_vlg_sample_tst tb_sample (
+	.clock(clock),
 	.index(index),
 	.input_data(input_data),
 	.read_option(read_option),
