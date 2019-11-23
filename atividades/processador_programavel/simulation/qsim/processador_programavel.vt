@@ -18,30 +18,26 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/23/2019 02:15:17"
+// Generated on "11/23/2019 03:11:47"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    mux_3x1
+// Verilog Self-Checking Test Bench (with test vectors) for design :    registrador_de_instrucao
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module mux_3x1_vlg_sample_tst(
-	constante,
-	saida_memoria,
-	saida_ula,
-	seletor,
+module registrador_de_instrucao_vlg_sample_tst(
+	carregar,
+	dado_de_entrada,
 	sampler_tx
 );
-input [8:0] constante;
-input [15:0] saida_memoria;
-input [15:0] saida_ula;
-input [1:0] seletor;
+input  carregar;
+input [15:0] dado_de_entrada;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(constante or saida_memoria or saida_ula or seletor)
+always @(carregar or dado_de_entrada)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -60,20 +56,20 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module mux_3x1_vlg_check_tst (
-	saida_mux,
+module registrador_de_instrucao_vlg_check_tst (
+	memoria,
 	sampler_rx
 );
-input [15:0] saida_mux;
+input [15:0] memoria;
 input sampler_rx;
 
-reg [15:0] saida_mux_expected;
+reg [15:0] memoria_expected;
 
-reg [15:0] saida_mux_prev;
+reg [15:0] memoria_prev;
 
-reg [15:0] saida_mux_expected_prev;
+reg [15:0] memoria_expected_prev;
 
-reg [15:0] last_saida_mux_exp;
+reg [15:0] last_memoria_exp;
 
 reg trigger;
 
@@ -95,99 +91,99 @@ end
 
 always @(trigger)
 begin
-	saida_mux_prev = saida_mux;
+	memoria_prev = memoria;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	saida_mux_expected_prev = saida_mux_expected;
+	memoria_expected_prev = memoria_expected;
 end
 
 
-// expected saida_mux[ 15 ]
+// expected memoria[ 15 ]
 initial
 begin
-	saida_mux_expected[15] = 1'bX;
+	memoria_expected[15] = 1'bX;
 end 
-// expected saida_mux[ 14 ]
+// expected memoria[ 14 ]
 initial
 begin
-	saida_mux_expected[14] = 1'bX;
+	memoria_expected[14] = 1'bX;
 end 
-// expected saida_mux[ 13 ]
+// expected memoria[ 13 ]
 initial
 begin
-	saida_mux_expected[13] = 1'bX;
+	memoria_expected[13] = 1'bX;
 end 
-// expected saida_mux[ 12 ]
+// expected memoria[ 12 ]
 initial
 begin
-	saida_mux_expected[12] = 1'bX;
+	memoria_expected[12] = 1'bX;
 end 
-// expected saida_mux[ 11 ]
+// expected memoria[ 11 ]
 initial
 begin
-	saida_mux_expected[11] = 1'bX;
+	memoria_expected[11] = 1'bX;
 end 
-// expected saida_mux[ 10 ]
+// expected memoria[ 10 ]
 initial
 begin
-	saida_mux_expected[10] = 1'bX;
+	memoria_expected[10] = 1'bX;
 end 
-// expected saida_mux[ 9 ]
+// expected memoria[ 9 ]
 initial
 begin
-	saida_mux_expected[9] = 1'bX;
+	memoria_expected[9] = 1'bX;
 end 
-// expected saida_mux[ 8 ]
+// expected memoria[ 8 ]
 initial
 begin
-	saida_mux_expected[8] = 1'bX;
+	memoria_expected[8] = 1'bX;
 end 
-// expected saida_mux[ 7 ]
+// expected memoria[ 7 ]
 initial
 begin
-	saida_mux_expected[7] = 1'bX;
+	memoria_expected[7] = 1'bX;
 end 
-// expected saida_mux[ 6 ]
+// expected memoria[ 6 ]
 initial
 begin
-	saida_mux_expected[6] = 1'bX;
+	memoria_expected[6] = 1'bX;
 end 
-// expected saida_mux[ 5 ]
+// expected memoria[ 5 ]
 initial
 begin
-	saida_mux_expected[5] = 1'bX;
+	memoria_expected[5] = 1'bX;
 end 
-// expected saida_mux[ 4 ]
+// expected memoria[ 4 ]
 initial
 begin
-	saida_mux_expected[4] = 1'bX;
+	memoria_expected[4] = 1'bX;
 end 
-// expected saida_mux[ 3 ]
+// expected memoria[ 3 ]
 initial
 begin
-	saida_mux_expected[3] = 1'bX;
+	memoria_expected[3] = 1'bX;
 end 
-// expected saida_mux[ 2 ]
+// expected memoria[ 2 ]
 initial
 begin
-	saida_mux_expected[2] = 1'bX;
+	memoria_expected[2] = 1'bX;
 end 
-// expected saida_mux[ 1 ]
+// expected memoria[ 1 ]
 initial
 begin
-	saida_mux_expected[1] = 1'bX;
+	memoria_expected[1] = 1'bX;
 end 
-// expected saida_mux[ 0 ]
+// expected memoria[ 0 ]
 initial
 begin
-	saida_mux_expected[0] = 1'bX;
+	memoria_expected[0] = 1'bX;
 end 
 // generate trigger
-always @(saida_mux_expected or saida_mux)
+always @(memoria_expected or memoria)
 begin
 	trigger <= ~trigger;
 end
@@ -197,216 +193,216 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected saida_mux = %b | ",saida_mux_expected_prev);
-	$display("| real saida_mux = %b | ",saida_mux_prev);
+	$display("| expected memoria = %b | ",memoria_expected_prev);
+	$display("| real memoria = %b | ",memoria_prev);
 `endif
 	if (
-		( saida_mux_expected_prev[0] !== 1'bx ) && ( saida_mux_prev[0] !== saida_mux_expected_prev[0] )
-		&& ((saida_mux_expected_prev[0] !== last_saida_mux_exp[0]) ||
+		( memoria_expected_prev[0] !== 1'bx ) && ( memoria_prev[0] !== memoria_expected_prev[0] )
+		&& ((memoria_expected_prev[0] !== last_memoria_exp[0]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[0] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[0] = saida_mux_expected_prev[0];
+		last_memoria_exp[0] = memoria_expected_prev[0];
 	end
 	if (
-		( saida_mux_expected_prev[1] !== 1'bx ) && ( saida_mux_prev[1] !== saida_mux_expected_prev[1] )
-		&& ((saida_mux_expected_prev[1] !== last_saida_mux_exp[1]) ||
+		( memoria_expected_prev[1] !== 1'bx ) && ( memoria_prev[1] !== memoria_expected_prev[1] )
+		&& ((memoria_expected_prev[1] !== last_memoria_exp[1]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[1] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[1] = saida_mux_expected_prev[1];
+		last_memoria_exp[1] = memoria_expected_prev[1];
 	end
 	if (
-		( saida_mux_expected_prev[2] !== 1'bx ) && ( saida_mux_prev[2] !== saida_mux_expected_prev[2] )
-		&& ((saida_mux_expected_prev[2] !== last_saida_mux_exp[2]) ||
+		( memoria_expected_prev[2] !== 1'bx ) && ( memoria_prev[2] !== memoria_expected_prev[2] )
+		&& ((memoria_expected_prev[2] !== last_memoria_exp[2]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[2] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[2] = saida_mux_expected_prev[2];
+		last_memoria_exp[2] = memoria_expected_prev[2];
 	end
 	if (
-		( saida_mux_expected_prev[3] !== 1'bx ) && ( saida_mux_prev[3] !== saida_mux_expected_prev[3] )
-		&& ((saida_mux_expected_prev[3] !== last_saida_mux_exp[3]) ||
+		( memoria_expected_prev[3] !== 1'bx ) && ( memoria_prev[3] !== memoria_expected_prev[3] )
+		&& ((memoria_expected_prev[3] !== last_memoria_exp[3]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[3] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[3] = saida_mux_expected_prev[3];
+		last_memoria_exp[3] = memoria_expected_prev[3];
 	end
 	if (
-		( saida_mux_expected_prev[4] !== 1'bx ) && ( saida_mux_prev[4] !== saida_mux_expected_prev[4] )
-		&& ((saida_mux_expected_prev[4] !== last_saida_mux_exp[4]) ||
+		( memoria_expected_prev[4] !== 1'bx ) && ( memoria_prev[4] !== memoria_expected_prev[4] )
+		&& ((memoria_expected_prev[4] !== last_memoria_exp[4]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[4] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[4] = saida_mux_expected_prev[4];
+		last_memoria_exp[4] = memoria_expected_prev[4];
 	end
 	if (
-		( saida_mux_expected_prev[5] !== 1'bx ) && ( saida_mux_prev[5] !== saida_mux_expected_prev[5] )
-		&& ((saida_mux_expected_prev[5] !== last_saida_mux_exp[5]) ||
+		( memoria_expected_prev[5] !== 1'bx ) && ( memoria_prev[5] !== memoria_expected_prev[5] )
+		&& ((memoria_expected_prev[5] !== last_memoria_exp[5]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[5] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[5] = saida_mux_expected_prev[5];
+		last_memoria_exp[5] = memoria_expected_prev[5];
 	end
 	if (
-		( saida_mux_expected_prev[6] !== 1'bx ) && ( saida_mux_prev[6] !== saida_mux_expected_prev[6] )
-		&& ((saida_mux_expected_prev[6] !== last_saida_mux_exp[6]) ||
+		( memoria_expected_prev[6] !== 1'bx ) && ( memoria_prev[6] !== memoria_expected_prev[6] )
+		&& ((memoria_expected_prev[6] !== last_memoria_exp[6]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[6] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[6] = saida_mux_expected_prev[6];
+		last_memoria_exp[6] = memoria_expected_prev[6];
 	end
 	if (
-		( saida_mux_expected_prev[7] !== 1'bx ) && ( saida_mux_prev[7] !== saida_mux_expected_prev[7] )
-		&& ((saida_mux_expected_prev[7] !== last_saida_mux_exp[7]) ||
+		( memoria_expected_prev[7] !== 1'bx ) && ( memoria_prev[7] !== memoria_expected_prev[7] )
+		&& ((memoria_expected_prev[7] !== last_memoria_exp[7]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[7] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[7] = saida_mux_expected_prev[7];
+		last_memoria_exp[7] = memoria_expected_prev[7];
 	end
 	if (
-		( saida_mux_expected_prev[8] !== 1'bx ) && ( saida_mux_prev[8] !== saida_mux_expected_prev[8] )
-		&& ((saida_mux_expected_prev[8] !== last_saida_mux_exp[8]) ||
+		( memoria_expected_prev[8] !== 1'bx ) && ( memoria_prev[8] !== memoria_expected_prev[8] )
+		&& ((memoria_expected_prev[8] !== last_memoria_exp[8]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[8] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[8] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[8] = saida_mux_expected_prev[8];
+		last_memoria_exp[8] = memoria_expected_prev[8];
 	end
 	if (
-		( saida_mux_expected_prev[9] !== 1'bx ) && ( saida_mux_prev[9] !== saida_mux_expected_prev[9] )
-		&& ((saida_mux_expected_prev[9] !== last_saida_mux_exp[9]) ||
+		( memoria_expected_prev[9] !== 1'bx ) && ( memoria_prev[9] !== memoria_expected_prev[9] )
+		&& ((memoria_expected_prev[9] !== last_memoria_exp[9]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[9] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[9] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[9] = saida_mux_expected_prev[9];
+		last_memoria_exp[9] = memoria_expected_prev[9];
 	end
 	if (
-		( saida_mux_expected_prev[10] !== 1'bx ) && ( saida_mux_prev[10] !== saida_mux_expected_prev[10] )
-		&& ((saida_mux_expected_prev[10] !== last_saida_mux_exp[10]) ||
+		( memoria_expected_prev[10] !== 1'bx ) && ( memoria_prev[10] !== memoria_expected_prev[10] )
+		&& ((memoria_expected_prev[10] !== last_memoria_exp[10]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[10] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[10] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[10] = saida_mux_expected_prev[10];
+		last_memoria_exp[10] = memoria_expected_prev[10];
 	end
 	if (
-		( saida_mux_expected_prev[11] !== 1'bx ) && ( saida_mux_prev[11] !== saida_mux_expected_prev[11] )
-		&& ((saida_mux_expected_prev[11] !== last_saida_mux_exp[11]) ||
+		( memoria_expected_prev[11] !== 1'bx ) && ( memoria_prev[11] !== memoria_expected_prev[11] )
+		&& ((memoria_expected_prev[11] !== last_memoria_exp[11]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[11] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[11] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[11] = saida_mux_expected_prev[11];
+		last_memoria_exp[11] = memoria_expected_prev[11];
 	end
 	if (
-		( saida_mux_expected_prev[12] !== 1'bx ) && ( saida_mux_prev[12] !== saida_mux_expected_prev[12] )
-		&& ((saida_mux_expected_prev[12] !== last_saida_mux_exp[12]) ||
+		( memoria_expected_prev[12] !== 1'bx ) && ( memoria_prev[12] !== memoria_expected_prev[12] )
+		&& ((memoria_expected_prev[12] !== last_memoria_exp[12]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[12] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[12] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[12] = saida_mux_expected_prev[12];
+		last_memoria_exp[12] = memoria_expected_prev[12];
 	end
 	if (
-		( saida_mux_expected_prev[13] !== 1'bx ) && ( saida_mux_prev[13] !== saida_mux_expected_prev[13] )
-		&& ((saida_mux_expected_prev[13] !== last_saida_mux_exp[13]) ||
+		( memoria_expected_prev[13] !== 1'bx ) && ( memoria_prev[13] !== memoria_expected_prev[13] )
+		&& ((memoria_expected_prev[13] !== last_memoria_exp[13]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[13] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[13] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[13] = saida_mux_expected_prev[13];
+		last_memoria_exp[13] = memoria_expected_prev[13];
 	end
 	if (
-		( saida_mux_expected_prev[14] !== 1'bx ) && ( saida_mux_prev[14] !== saida_mux_expected_prev[14] )
-		&& ((saida_mux_expected_prev[14] !== last_saida_mux_exp[14]) ||
+		( memoria_expected_prev[14] !== 1'bx ) && ( memoria_prev[14] !== memoria_expected_prev[14] )
+		&& ((memoria_expected_prev[14] !== last_memoria_exp[14]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[14] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[14] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[14] = saida_mux_expected_prev[14];
+		last_memoria_exp[14] = memoria_expected_prev[14];
 	end
 	if (
-		( saida_mux_expected_prev[15] !== 1'bx ) && ( saida_mux_prev[15] !== saida_mux_expected_prev[15] )
-		&& ((saida_mux_expected_prev[15] !== last_saida_mux_exp[15]) ||
+		( memoria_expected_prev[15] !== 1'bx ) && ( memoria_prev[15] !== memoria_expected_prev[15] )
+		&& ((memoria_expected_prev[15] !== last_memoria_exp[15]) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port saida_mux[15] :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", saida_mux_expected_prev);
-		$display ("     Real value = %b", saida_mux_prev);
+		$display ("ERROR! Vector Mismatch for output port memoria[15] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", memoria_expected_prev);
+		$display ("     Real value = %b", memoria_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_saida_mux_exp[15] = saida_mux_expected_prev[15];
+		last_memoria_exp[15] = memoria_expected_prev[15];
 	end
 
 	trigger <= ~trigger;
@@ -424,253 +420,120 @@ $finish;
 end 
 endmodule
 
-module mux_3x1_vlg_vec_tst();
+module registrador_de_instrucao_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [8:0] constante;
-reg [15:0] saida_memoria;
-reg [15:0] saida_ula;
-reg [1:0] seletor;
+reg carregar;
+reg [15:0] dado_de_entrada;
 // wires                                               
-wire [15:0] saida_mux;
+wire [15:0] memoria;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-mux_3x1 i1 (
+registrador_de_instrucao i1 (
 // port map - connection between master ports and signals/registers   
-	.constante(constante),
-	.saida_memoria(saida_memoria),
-	.saida_mux(saida_mux),
-	.saida_ula(saida_ula),
-	.seletor(seletor)
+	.carregar(carregar),
+	.dado_de_entrada(dado_de_entrada),
+	.memoria(memoria)
 );
-// constante[ 8 ]
-initial
+
+// carregar
+always
 begin
-	constante[8] = 1'b0;
+	carregar = 1'b0;
+	carregar = #10000 1'b1;
+	#10000;
 end 
-// constante[ 7 ]
+// dado_de_entrada[ 15 ]
 initial
 begin
-	constante[7] = 1'b0;
+	dado_de_entrada[15] = 1'b0;
 end 
-// constante[ 6 ]
+// dado_de_entrada[ 14 ]
 initial
 begin
-	constante[6] = 1'b0;
+	dado_de_entrada[14] = 1'b0;
 end 
-// constante[ 5 ]
+// dado_de_entrada[ 13 ]
 initial
 begin
-	constante[5] = 1'b0;
+	dado_de_entrada[13] = 1'b0;
 end 
-// constante[ 4 ]
+// dado_de_entrada[ 12 ]
 initial
 begin
-	constante[4] = 1'b0;
+	dado_de_entrada[12] = 1'b0;
 end 
-// constante[ 3 ]
+// dado_de_entrada[ 11 ]
 initial
 begin
-	constante[3] = 1'b0;
+	dado_de_entrada[11] = 1'b0;
 end 
-// constante[ 2 ]
+// dado_de_entrada[ 10 ]
 initial
 begin
-	constante[2] = 1'b0;
+	dado_de_entrada[10] = 1'b0;
 end 
-// constante[ 1 ]
+// dado_de_entrada[ 9 ]
 initial
 begin
-	constante[1] = 1'b0;
+	dado_de_entrada[9] = 1'b0;
 end 
-// constante[ 0 ]
+// dado_de_entrada[ 8 ]
 initial
 begin
-	constante[0] = 1'b1;
+	dado_de_entrada[8] = 1'b0;
 end 
-// saida_memoria[ 15 ]
+// dado_de_entrada[ 7 ]
 initial
 begin
-	saida_memoria[15] = 1'b0;
+	dado_de_entrada[7] = 1'b0;
 end 
-// saida_memoria[ 14 ]
+// dado_de_entrada[ 6 ]
 initial
 begin
-	saida_memoria[14] = 1'b0;
+	dado_de_entrada[6] = 1'b0;
 end 
-// saida_memoria[ 13 ]
+// dado_de_entrada[ 5 ]
 initial
 begin
-	saida_memoria[13] = 1'b0;
+	dado_de_entrada[5] = 1'b0;
 end 
-// saida_memoria[ 12 ]
+// dado_de_entrada[ 4 ]
 initial
 begin
-	saida_memoria[12] = 1'b0;
+	dado_de_entrada[4] = 1'b0;
 end 
-// saida_memoria[ 11 ]
+// dado_de_entrada[ 3 ]
 initial
 begin
-	saida_memoria[11] = 1'b0;
+	dado_de_entrada[3] = 1'b1;
 end 
-// saida_memoria[ 10 ]
+// dado_de_entrada[ 2 ]
 initial
 begin
-	saida_memoria[10] = 1'b0;
+	dado_de_entrada[2] = 1'b1;
 end 
-// saida_memoria[ 9 ]
+// dado_de_entrada[ 1 ]
 initial
 begin
-	saida_memoria[9] = 1'b0;
+	dado_de_entrada[1] = 1'b1;
 end 
-// saida_memoria[ 8 ]
+// dado_de_entrada[ 0 ]
 initial
 begin
-	saida_memoria[8] = 1'b0;
-end 
-// saida_memoria[ 7 ]
-initial
-begin
-	saida_memoria[7] = 1'b0;
-end 
-// saida_memoria[ 6 ]
-initial
-begin
-	saida_memoria[6] = 1'b0;
-end 
-// saida_memoria[ 5 ]
-initial
-begin
-	saida_memoria[5] = 1'b0;
-end 
-// saida_memoria[ 4 ]
-initial
-begin
-	saida_memoria[4] = 1'b0;
-end 
-// saida_memoria[ 3 ]
-initial
-begin
-	saida_memoria[3] = 1'b0;
-end 
-// saida_memoria[ 2 ]
-initial
-begin
-	saida_memoria[2] = 1'b0;
-end 
-// saida_memoria[ 1 ]
-initial
-begin
-	saida_memoria[1] = 1'b1;
-end 
-// saida_memoria[ 0 ]
-initial
-begin
-	saida_memoria[0] = 1'b0;
-end 
-// saida_ula[ 15 ]
-initial
-begin
-	saida_ula[15] = 1'b0;
-end 
-// saida_ula[ 14 ]
-initial
-begin
-	saida_ula[14] = 1'b0;
-end 
-// saida_ula[ 13 ]
-initial
-begin
-	saida_ula[13] = 1'b0;
-end 
-// saida_ula[ 12 ]
-initial
-begin
-	saida_ula[12] = 1'b0;
-end 
-// saida_ula[ 11 ]
-initial
-begin
-	saida_ula[11] = 1'b0;
-end 
-// saida_ula[ 10 ]
-initial
-begin
-	saida_ula[10] = 1'b0;
-end 
-// saida_ula[ 9 ]
-initial
-begin
-	saida_ula[9] = 1'b0;
-end 
-// saida_ula[ 8 ]
-initial
-begin
-	saida_ula[8] = 1'b0;
-end 
-// saida_ula[ 7 ]
-initial
-begin
-	saida_ula[7] = 1'b0;
-end 
-// saida_ula[ 6 ]
-initial
-begin
-	saida_ula[6] = 1'b0;
-end 
-// saida_ula[ 5 ]
-initial
-begin
-	saida_ula[5] = 1'b0;
-end 
-// saida_ula[ 4 ]
-initial
-begin
-	saida_ula[4] = 1'b0;
-end 
-// saida_ula[ 3 ]
-initial
-begin
-	saida_ula[3] = 1'b0;
-end 
-// saida_ula[ 2 ]
-initial
-begin
-	saida_ula[2] = 1'b0;
-end 
-// saida_ula[ 1 ]
-initial
-begin
-	saida_ula[1] = 1'b1;
-end 
-// saida_ula[ 0 ]
-initial
-begin
-	saida_ula[0] = 1'b1;
-end 
-// seletor[ 1 ]
-initial
-begin
-	seletor[1] = 1'b1;
-end 
-// seletor[ 0 ]
-initial
-begin
-	seletor[0] = 1'b0;
+	dado_de_entrada[0] = 1'b1;
 end 
 
-mux_3x1_vlg_sample_tst tb_sample (
-	.constante(constante),
-	.saida_memoria(saida_memoria),
-	.saida_ula(saida_ula),
-	.seletor(seletor),
+registrador_de_instrucao_vlg_sample_tst tb_sample (
+	.carregar(carregar),
+	.dado_de_entrada(dado_de_entrada),
 	.sampler_tx(sampler)
 );
 
-mux_3x1_vlg_check_tst tb_out(
-	.saida_mux(saida_mux),
+registrador_de_instrucao_vlg_check_tst tb_out(
+	.memoria(memoria),
 	.sampler_rx(sampler)
 );
 endmodule

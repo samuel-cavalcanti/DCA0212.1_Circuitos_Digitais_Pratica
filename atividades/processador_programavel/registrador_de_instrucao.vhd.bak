@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity registrador_de_instrucao is
+generic(numeros_de_bits : positive := 16);
+
+port (dado_de_entrada: in std_logic_vector (numeros_de_bits-1 downto 0);
+		carregar : in std_logic;
+	   dado_de_saida : buffer std_logic_vector(numeros_de_bits-1 downto 0));
+		
+end ffd;
+
+architecture behavior of ffd is 
+
+begin
+	process (carregar)
+		begin
+				if carregar ='1' then
+					dado_de_saida <= dado_de_entrada;
+				else
+					dado_de_saida <= data;
+				end if ;
+ 
+	end process;
+	
+end architecture;

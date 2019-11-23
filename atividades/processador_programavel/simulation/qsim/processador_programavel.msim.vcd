@@ -3,7 +3,7 @@ $comment
 		vcd file processador_programavel.msim.vcd -direction
 $end
 $date
-	Sat Nov 23 02:15:21 2019
+	Sat Nov 23 03:11:50 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,114 +11,87 @@ $end
 $timescale
 	1ps
 $end
-$scope module mux_3x1_vlg_vec_tst $end
-$var reg 9 ! constante [8:0] $end
-$var reg 16 " saida_memoria [15:0] $end
-$var reg 16 # saida_ula [15:0] $end
-$var reg 2 $ seletor [1:0] $end
-$var wire 1 % saida_mux [15] $end
-$var wire 1 & saida_mux [14] $end
-$var wire 1 ' saida_mux [13] $end
-$var wire 1 ( saida_mux [12] $end
-$var wire 1 ) saida_mux [11] $end
-$var wire 1 * saida_mux [10] $end
-$var wire 1 + saida_mux [9] $end
-$var wire 1 , saida_mux [8] $end
-$var wire 1 - saida_mux [7] $end
-$var wire 1 . saida_mux [6] $end
-$var wire 1 / saida_mux [5] $end
-$var wire 1 0 saida_mux [4] $end
-$var wire 1 1 saida_mux [3] $end
-$var wire 1 2 saida_mux [2] $end
-$var wire 1 3 saida_mux [1] $end
-$var wire 1 4 saida_mux [0] $end
-$var wire 1 5 sampler $end
+$scope module registrador_de_instrucao_vlg_vec_tst $end
+$var reg 1 ! carregar $end
+$var reg 16 " dado_de_entrada [15:0] $end
+$var wire 1 # memoria [15] $end
+$var wire 1 $ memoria [14] $end
+$var wire 1 % memoria [13] $end
+$var wire 1 & memoria [12] $end
+$var wire 1 ' memoria [11] $end
+$var wire 1 ( memoria [10] $end
+$var wire 1 ) memoria [9] $end
+$var wire 1 * memoria [8] $end
+$var wire 1 + memoria [7] $end
+$var wire 1 , memoria [6] $end
+$var wire 1 - memoria [5] $end
+$var wire 1 . memoria [4] $end
+$var wire 1 / memoria [3] $end
+$var wire 1 0 memoria [2] $end
+$var wire 1 1 memoria [1] $end
+$var wire 1 2 memoria [0] $end
+$var wire 1 3 sampler $end
 $scope module i1 $end
-$var wire 1 6 gnd $end
-$var wire 1 7 vcc $end
-$var wire 1 8 unknown $end
-$var tri1 1 9 devclrn $end
-$var tri1 1 : devpor $end
-$var tri1 1 ; devoe $end
-$var wire 1 < Mux15~0_combout $end
-$var wire 1 = Mux15~1_combout $end
-$var wire 1 > Mux14~0_combout $end
-$var wire 1 ? Mux14~1_combout $end
-$var wire 1 @ Mux13~0_combout $end
-$var wire 1 A Mux13~1_combout $end
-$var wire 1 B Mux12~0_combout $end
-$var wire 1 C Mux12~1_combout $end
-$var wire 1 D Mux11~0_combout $end
-$var wire 1 E Mux11~1_combout $end
-$var wire 1 F Mux10~0_combout $end
-$var wire 1 G Mux10~1_combout $end
-$var wire 1 H Mux9~0_combout $end
-$var wire 1 I Mux9~1_combout $end
-$var wire 1 J Mux8~0_combout $end
-$var wire 1 K Mux8~1_combout $end
-$var wire 1 L Mux7~0_combout $end
-$var wire 1 M Mux7~1_combout $end
-$var wire 1 N Mux6~0_combout $end
-$var wire 1 O Mux5~0_combout $end
-$var wire 1 P Mux4~0_combout $end
-$var wire 1 Q Mux3~0_combout $end
-$var wire 1 R Mux2~0_combout $end
-$var wire 1 S Mux1~0_combout $end
-$var wire 1 T Mux0~0_combout $end
-$var wire 1 U constante~combout [8] $end
-$var wire 1 V constante~combout [7] $end
-$var wire 1 W constante~combout [6] $end
-$var wire 1 X constante~combout [5] $end
-$var wire 1 Y constante~combout [4] $end
-$var wire 1 Z constante~combout [3] $end
-$var wire 1 [ constante~combout [2] $end
-$var wire 1 \ constante~combout [1] $end
-$var wire 1 ] constante~combout [0] $end
-$var wire 1 ^ saida_memoria~combout [15] $end
-$var wire 1 _ saida_memoria~combout [14] $end
-$var wire 1 ` saida_memoria~combout [13] $end
-$var wire 1 a saida_memoria~combout [12] $end
-$var wire 1 b saida_memoria~combout [11] $end
-$var wire 1 c saida_memoria~combout [10] $end
-$var wire 1 d saida_memoria~combout [9] $end
-$var wire 1 e saida_memoria~combout [8] $end
-$var wire 1 f saida_memoria~combout [7] $end
-$var wire 1 g saida_memoria~combout [6] $end
-$var wire 1 h saida_memoria~combout [5] $end
-$var wire 1 i saida_memoria~combout [4] $end
-$var wire 1 j saida_memoria~combout [3] $end
-$var wire 1 k saida_memoria~combout [2] $end
-$var wire 1 l saida_memoria~combout [1] $end
-$var wire 1 m saida_memoria~combout [0] $end
-$var wire 1 n saida_ula~combout [15] $end
-$var wire 1 o saida_ula~combout [14] $end
-$var wire 1 p saida_ula~combout [13] $end
-$var wire 1 q saida_ula~combout [12] $end
-$var wire 1 r saida_ula~combout [11] $end
-$var wire 1 s saida_ula~combout [10] $end
-$var wire 1 t saida_ula~combout [9] $end
-$var wire 1 u saida_ula~combout [8] $end
-$var wire 1 v saida_ula~combout [7] $end
-$var wire 1 w saida_ula~combout [6] $end
-$var wire 1 x saida_ula~combout [5] $end
-$var wire 1 y saida_ula~combout [4] $end
-$var wire 1 z saida_ula~combout [3] $end
-$var wire 1 { saida_ula~combout [2] $end
-$var wire 1 | saida_ula~combout [1] $end
-$var wire 1 } saida_ula~combout [0] $end
-$var wire 1 ~ seletor~combout [1] $end
-$var wire 1 !! seletor~combout [0] $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vcc $end
+$var wire 1 6 unknown $end
+$var tri1 1 7 devclrn $end
+$var tri1 1 8 devpor $end
+$var tri1 1 9 devoe $end
+$var wire 1 : carregar~combout $end
+$var wire 1 ; carregar~clkctrl_outclk $end
+$var wire 1 < memoria[0]~reg0_regout $end
+$var wire 1 = memoria[1]~reg0feeder_combout $end
+$var wire 1 > memoria[1]~reg0_regout $end
+$var wire 1 ? memoria[2]~reg0feeder_combout $end
+$var wire 1 @ memoria[2]~reg0_regout $end
+$var wire 1 A memoria[3]~reg0feeder_combout $end
+$var wire 1 B memoria[3]~reg0_regout $end
+$var wire 1 C memoria[4]~reg0feeder_combout $end
+$var wire 1 D memoria[4]~reg0_regout $end
+$var wire 1 E memoria[5]~reg0_regout $end
+$var wire 1 F memoria[6]~reg0_regout $end
+$var wire 1 G memoria[7]~reg0feeder_combout $end
+$var wire 1 H memoria[7]~reg0_regout $end
+$var wire 1 I memoria[8]~reg0feeder_combout $end
+$var wire 1 J memoria[8]~reg0_regout $end
+$var wire 1 K memoria[9]~reg0feeder_combout $end
+$var wire 1 L memoria[9]~reg0_regout $end
+$var wire 1 M memoria[10]~reg0feeder_combout $end
+$var wire 1 N memoria[10]~reg0_regout $end
+$var wire 1 O memoria[11]~reg0feeder_combout $end
+$var wire 1 P memoria[11]~reg0_regout $end
+$var wire 1 Q memoria[12]~reg0feeder_combout $end
+$var wire 1 R memoria[12]~reg0_regout $end
+$var wire 1 S memoria[13]~reg0feeder_combout $end
+$var wire 1 T memoria[13]~reg0_regout $end
+$var wire 1 U memoria[14]~reg0feeder_combout $end
+$var wire 1 V memoria[14]~reg0_regout $end
+$var wire 1 W memoria[15]~reg0feeder_combout $end
+$var wire 1 X memoria[15]~reg0_regout $end
+$var wire 1 Y dado_de_entrada~combout [15] $end
+$var wire 1 Z dado_de_entrada~combout [14] $end
+$var wire 1 [ dado_de_entrada~combout [13] $end
+$var wire 1 \ dado_de_entrada~combout [12] $end
+$var wire 1 ] dado_de_entrada~combout [11] $end
+$var wire 1 ^ dado_de_entrada~combout [10] $end
+$var wire 1 _ dado_de_entrada~combout [9] $end
+$var wire 1 ` dado_de_entrada~combout [8] $end
+$var wire 1 a dado_de_entrada~combout [7] $end
+$var wire 1 b dado_de_entrada~combout [6] $end
+$var wire 1 c dado_de_entrada~combout [5] $end
+$var wire 1 d dado_de_entrada~combout [4] $end
+$var wire 1 e dado_de_entrada~combout [3] $end
+$var wire 1 f dado_de_entrada~combout [2] $end
+$var wire 1 g dado_de_entrada~combout [1] $end
+$var wire 1 h dado_de_entrada~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b1 !
-b10 "
-b11 #
-b10 $
-14
-03
+0!
+b1111 "
 02
 01
 00
@@ -133,19 +106,23 @@ b10 $
 0'
 0&
 0%
-x5
-06
+0$
+0#
+x3
+04
+15
+x6
 17
-x8
+18
 19
-1:
-1;
-1<
+0:
+0;
+0<
 1=
 0>
-0?
+1?
 0@
-0A
+1A
 0B
 0C
 0D
@@ -165,24 +142,14 @@ x8
 0R
 0S
 0T
-1]
-0\
-0[
-0Z
-0Y
-0X
-0W
-0V
 0U
-0m
-1l
-0k
-0j
-0i
-0h
-0g
-0f
-0e
+0V
+0W
+0X
+1h
+1g
+1f
+1e
 0d
 0c
 0b
@@ -190,23 +157,513 @@ x8
 0`
 0_
 0^
-1}
-1|
-0{
-0z
-0y
-0x
-0w
-0v
-0u
-0t
-0s
-0r
-0q
-0p
-0o
-0n
-0!!
-1~
+0]
+0\
+0[
+0Z
+0Y
 $end
+#10000
+1!
+1:
+1;
+03
+1B
+1@
+1>
+1<
+1/
+10
+11
+12
+#20000
+0!
+0:
+0;
+13
+#30000
+1!
+1:
+1;
+03
+#40000
+0!
+0:
+0;
+13
+#50000
+1!
+1:
+1;
+03
+#60000
+0!
+0:
+0;
+13
+#70000
+1!
+1:
+1;
+03
+#80000
+0!
+0:
+0;
+13
+#90000
+1!
+1:
+1;
+03
+#100000
+0!
+0:
+0;
+13
+#110000
+1!
+1:
+1;
+03
+#120000
+0!
+0:
+0;
+13
+#130000
+1!
+1:
+1;
+03
+#140000
+0!
+0:
+0;
+13
+#150000
+1!
+1:
+1;
+03
+#160000
+0!
+0:
+0;
+13
+#170000
+1!
+1:
+1;
+03
+#180000
+0!
+0:
+0;
+13
+#190000
+1!
+1:
+1;
+03
+#200000
+0!
+0:
+0;
+13
+#210000
+1!
+1:
+1;
+03
+#220000
+0!
+0:
+0;
+13
+#230000
+1!
+1:
+1;
+03
+#240000
+0!
+0:
+0;
+13
+#250000
+1!
+1:
+1;
+03
+#260000
+0!
+0:
+0;
+13
+#270000
+1!
+1:
+1;
+03
+#280000
+0!
+0:
+0;
+13
+#290000
+1!
+1:
+1;
+03
+#300000
+0!
+0:
+0;
+13
+#310000
+1!
+1:
+1;
+03
+#320000
+0!
+0:
+0;
+13
+#330000
+1!
+1:
+1;
+03
+#340000
+0!
+0:
+0;
+13
+#350000
+1!
+1:
+1;
+03
+#360000
+0!
+0:
+0;
+13
+#370000
+1!
+1:
+1;
+03
+#380000
+0!
+0:
+0;
+13
+#390000
+1!
+1:
+1;
+03
+#400000
+0!
+0:
+0;
+13
+#410000
+1!
+1:
+1;
+03
+#420000
+0!
+0:
+0;
+13
+#430000
+1!
+1:
+1;
+03
+#440000
+0!
+0:
+0;
+13
+#450000
+1!
+1:
+1;
+03
+#460000
+0!
+0:
+0;
+13
+#470000
+1!
+1:
+1;
+03
+#480000
+0!
+0:
+0;
+13
+#490000
+1!
+1:
+1;
+03
+#500000
+0!
+0:
+0;
+13
+#510000
+1!
+1:
+1;
+03
+#520000
+0!
+0:
+0;
+13
+#530000
+1!
+1:
+1;
+03
+#540000
+0!
+0:
+0;
+13
+#550000
+1!
+1:
+1;
+03
+#560000
+0!
+0:
+0;
+13
+#570000
+1!
+1:
+1;
+03
+#580000
+0!
+0:
+0;
+13
+#590000
+1!
+1:
+1;
+03
+#600000
+0!
+0:
+0;
+13
+#610000
+1!
+1:
+1;
+03
+#620000
+0!
+0:
+0;
+13
+#630000
+1!
+1:
+1;
+03
+#640000
+0!
+0:
+0;
+13
+#650000
+1!
+1:
+1;
+03
+#660000
+0!
+0:
+0;
+13
+#670000
+1!
+1:
+1;
+03
+#680000
+0!
+0:
+0;
+13
+#690000
+1!
+1:
+1;
+03
+#700000
+0!
+0:
+0;
+13
+#710000
+1!
+1:
+1;
+03
+#720000
+0!
+0:
+0;
+13
+#730000
+1!
+1:
+1;
+03
+#740000
+0!
+0:
+0;
+13
+#750000
+1!
+1:
+1;
+03
+#760000
+0!
+0:
+0;
+13
+#770000
+1!
+1:
+1;
+03
+#780000
+0!
+0:
+0;
+13
+#790000
+1!
+1:
+1;
+03
+#800000
+0!
+0:
+0;
+13
+#810000
+1!
+1:
+1;
+03
+#820000
+0!
+0:
+0;
+13
+#830000
+1!
+1:
+1;
+03
+#840000
+0!
+0:
+0;
+13
+#850000
+1!
+1:
+1;
+03
+#860000
+0!
+0:
+0;
+13
+#870000
+1!
+1:
+1;
+03
+#880000
+0!
+0:
+0;
+13
+#890000
+1!
+1:
+1;
+03
+#900000
+0!
+0:
+0;
+13
+#910000
+1!
+1:
+1;
+03
+#920000
+0!
+0:
+0;
+13
+#930000
+1!
+1:
+1;
+03
+#940000
+0!
+0:
+0;
+13
+#950000
+1!
+1:
+1;
+03
+#960000
+0!
+0:
+0;
+13
+#970000
+1!
+1:
+1;
+03
+#980000
+0!
+0:
+0;
+13
+#990000
+1!
+1:
+1;
+03
 #1000000

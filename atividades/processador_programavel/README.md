@@ -14,7 +14,7 @@
 - [ ] Bloco de controle (decodificador)
 - [ ] Memória D
 - [ ] Banco de registradores
-- [ ] IR
+- [x] Registrador de instrução
 - [ ] PC
 - [ ] Comparador
 - [x] ULA

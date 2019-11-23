@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for processador_programavel
-Sat Nov 23 02:12:29 2019
+Sat Nov 23 03:23:45 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,23 +16,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Propagation Delay
- 12. Minimum Propagation Delay
- 13. Fast Model Setup Summary
- 14. Fast Model Hold Summary
- 15. Fast Model Recovery Summary
- 16. Fast Model Removal Summary
- 17. Fast Model Minimum Pulse Width Summary
- 18. Propagation Delay
- 19. Minimum Propagation Delay
- 20. Multicorner Timing Analysis Summary
- 21. Progagation Delay
- 22. Minimum Progagation Delay
- 23. Clock Transfers
- 24. Report TCCS
- 25. Report RSKM
- 26. Unconstrained Paths
- 27. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Datasheet Report
+ 12. Fast Model Setup Summary
+ 13. Fast Model Hold Summary
+ 14. Fast Model Recovery Summary
+ 15. Fast Model Removal Summary
+ 16. Fast Model Minimum Pulse Width Summary
+ 17. Fast Model Datasheet Report
+ 18. Multicorner Timing Analysis Summary
+ 19. Clock Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
 
 
 
@@ -121,166 +117,10 @@ No paths to report.
 No paths to report.
 
 
-+-----------------------------------------------------------------------+
-; Propagation Delay                                                     ;
-+-------------------+---------------+--------+--------+--------+--------+
-; Input Port        ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
-+-------------------+---------------+--------+--------+--------+--------+
-; constante[0]      ; saida_mux[0]  ; 10.212 ;        ;        ; 10.212 ;
-; constante[1]      ; saida_mux[1]  ; 10.799 ;        ;        ; 10.799 ;
-; constante[2]      ; saida_mux[2]  ; 9.879  ;        ;        ; 9.879  ;
-; constante[3]      ; saida_mux[3]  ; 10.421 ;        ;        ; 10.421 ;
-; constante[4]      ; saida_mux[4]  ; 10.542 ;        ;        ; 10.542 ;
-; constante[5]      ; saida_mux[5]  ; 10.600 ;        ;        ; 10.600 ;
-; constante[6]      ; saida_mux[6]  ; 10.600 ;        ;        ; 10.600 ;
-; constante[7]      ; saida_mux[7]  ; 10.075 ;        ;        ; 10.075 ;
-; constante[8]      ; saida_mux[8]  ; 11.502 ;        ;        ; 11.502 ;
-; saida_memoria[0]  ; saida_mux[0]  ; 9.814  ;        ;        ; 9.814  ;
-; saida_memoria[1]  ; saida_mux[1]  ; 9.586  ;        ;        ; 9.586  ;
-; saida_memoria[2]  ; saida_mux[2]  ; 9.556  ;        ;        ; 9.556  ;
-; saida_memoria[3]  ; saida_mux[3]  ; 9.465  ;        ;        ; 9.465  ;
-; saida_memoria[4]  ; saida_mux[4]  ; 9.575  ;        ;        ; 9.575  ;
-; saida_memoria[5]  ; saida_mux[5]  ; 9.805  ;        ;        ; 9.805  ;
-; saida_memoria[6]  ; saida_mux[6]  ; 9.967  ;        ;        ; 9.967  ;
-; saida_memoria[7]  ; saida_mux[7]  ; 9.709  ;        ;        ; 9.709  ;
-; saida_memoria[8]  ; saida_mux[8]  ; 9.604  ;        ;        ; 9.604  ;
-; saida_memoria[9]  ; saida_mux[9]  ; 9.674  ;        ;        ; 9.674  ;
-; saida_memoria[10] ; saida_mux[10] ; 9.923  ;        ;        ; 9.923  ;
-; saida_memoria[11] ; saida_mux[11] ; 10.121 ;        ;        ; 10.121 ;
-; saida_memoria[12] ; saida_mux[12] ; 10.069 ;        ;        ; 10.069 ;
-; saida_memoria[13] ; saida_mux[13] ; 10.120 ;        ;        ; 10.120 ;
-; saida_memoria[14] ; saida_mux[14] ; 9.835  ;        ;        ; 9.835  ;
-; saida_memoria[15] ; saida_mux[15] ; 9.615  ;        ;        ; 9.615  ;
-; saida_ula[0]      ; saida_mux[0]  ; 10.252 ;        ;        ; 10.252 ;
-; saida_ula[1]      ; saida_mux[1]  ; 10.431 ;        ;        ; 10.431 ;
-; saida_ula[2]      ; saida_mux[2]  ; 10.305 ;        ;        ; 10.305 ;
-; saida_ula[3]      ; saida_mux[3]  ; 10.260 ;        ;        ; 10.260 ;
-; saida_ula[4]      ; saida_mux[4]  ; 10.395 ;        ;        ; 10.395 ;
-; saida_ula[5]      ; saida_mux[5]  ; 10.566 ;        ;        ; 10.566 ;
-; saida_ula[6]      ; saida_mux[6]  ; 10.885 ;        ;        ; 10.885 ;
-; saida_ula[7]      ; saida_mux[7]  ; 10.256 ;        ;        ; 10.256 ;
-; saida_ula[8]      ; saida_mux[8]  ; 10.301 ;        ;        ; 10.301 ;
-; saida_ula[9]      ; saida_mux[9]  ; 9.907  ;        ;        ; 9.907  ;
-; saida_ula[10]     ; saida_mux[10] ; 9.662  ;        ;        ; 9.662  ;
-; saida_ula[11]     ; saida_mux[11] ; 9.911  ;        ;        ; 9.911  ;
-; saida_ula[12]     ; saida_mux[12] ; 11.196 ;        ;        ; 11.196 ;
-; saida_ula[13]     ; saida_mux[13] ; 9.337  ;        ;        ; 9.337  ;
-; saida_ula[14]     ; saida_mux[14] ; 10.284 ;        ;        ; 10.284 ;
-; saida_ula[15]     ; saida_mux[15] ; 9.414  ;        ;        ; 9.414  ;
-; seletor[0]        ; saida_mux[0]  ; 10.109 ; 10.557 ; 10.557 ; 10.109 ;
-; seletor[0]        ; saida_mux[1]  ; 10.049 ; 10.716 ; 10.716 ; 10.049 ;
-; seletor[0]        ; saida_mux[2]  ; 10.168 ; 10.475 ; 10.475 ; 10.168 ;
-; seletor[0]        ; saida_mux[3]  ; 10.327 ; 10.755 ; 10.755 ; 10.327 ;
-; seletor[0]        ; saida_mux[4]  ; 10.055 ; 10.737 ; 10.737 ; 10.055 ;
-; seletor[0]        ; saida_mux[5]  ; 10.089 ; 10.975 ; 10.975 ; 10.089 ;
-; seletor[0]        ; saida_mux[6]  ; 10.287 ; 11.193 ; 11.193 ; 10.287 ;
-; seletor[0]        ; saida_mux[7]  ; 9.830  ; 10.327 ; 10.327 ; 9.830  ;
-; seletor[0]        ; saida_mux[8]  ; 10.647 ; 11.098 ; 11.098 ; 10.647 ;
-; seletor[0]        ; saida_mux[9]  ; 10.318 ; 10.318 ; 10.318 ; 10.318 ;
-; seletor[0]        ; saida_mux[10] ; 10.551 ; 10.551 ; 10.551 ; 10.551 ;
-; seletor[0]        ; saida_mux[11] ; 10.305 ; 10.305 ; 10.305 ; 10.305 ;
-; seletor[0]        ; saida_mux[12] ; 10.611 ; 10.611 ; 10.611 ; 10.611 ;
-; seletor[0]        ; saida_mux[13] ; 10.208 ; 10.208 ; 10.208 ; 10.208 ;
-; seletor[0]        ; saida_mux[14] ; 10.630 ; 10.630 ; 10.630 ; 10.630 ;
-; seletor[0]        ; saida_mux[15] ; 10.457 ; 10.457 ; 10.457 ; 10.457 ;
-; seletor[1]        ; saida_mux[0]  ; 10.633 ; 10.633 ; 10.633 ; 10.633 ;
-; seletor[1]        ; saida_mux[1]  ; 11.204 ; 11.204 ; 11.204 ; 11.204 ;
-; seletor[1]        ; saida_mux[2]  ; 10.951 ; 10.951 ; 10.951 ; 10.951 ;
-; seletor[1]        ; saida_mux[3]  ; 11.241 ; 11.241 ; 11.241 ; 11.241 ;
-; seletor[1]        ; saida_mux[4]  ; 11.226 ; 11.226 ; 11.226 ; 11.226 ;
-; seletor[1]        ; saida_mux[5]  ; 11.057 ; 11.057 ; 11.057 ; 11.057 ;
-; seletor[1]        ; saida_mux[6]  ; 11.277 ; 11.277 ; 11.277 ; 11.277 ;
-; seletor[1]        ; saida_mux[7]  ; 10.804 ; 10.804 ; 10.804 ; 10.804 ;
-; seletor[1]        ; saida_mux[8]  ; 10.741 ; 10.741 ; 10.741 ; 10.741 ;
-; seletor[1]        ; saida_mux[9]  ;        ; 10.011 ; 10.011 ;        ;
-; seletor[1]        ; saida_mux[10] ;        ; 10.253 ; 10.253 ;        ;
-; seletor[1]        ; saida_mux[11] ;        ; 9.990  ; 9.990  ;        ;
-; seletor[1]        ; saida_mux[12] ;        ; 10.202 ; 10.202 ;        ;
-; seletor[1]        ; saida_mux[13] ;        ; 9.772  ; 9.772  ;        ;
-; seletor[1]        ; saida_mux[14] ;        ; 10.077 ; 10.077 ;        ;
-; seletor[1]        ; saida_mux[15] ;        ; 10.026 ; 10.026 ;        ;
-+-------------------+---------------+--------+--------+--------+--------+
-
-
-+-----------------------------------------------------------------------+
-; Minimum Propagation Delay                                             ;
-+-------------------+---------------+--------+--------+--------+--------+
-; Input Port        ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
-+-------------------+---------------+--------+--------+--------+--------+
-; constante[0]      ; saida_mux[0]  ; 10.212 ;        ;        ; 10.212 ;
-; constante[1]      ; saida_mux[1]  ; 10.799 ;        ;        ; 10.799 ;
-; constante[2]      ; saida_mux[2]  ; 9.879  ;        ;        ; 9.879  ;
-; constante[3]      ; saida_mux[3]  ; 10.421 ;        ;        ; 10.421 ;
-; constante[4]      ; saida_mux[4]  ; 10.542 ;        ;        ; 10.542 ;
-; constante[5]      ; saida_mux[5]  ; 10.600 ;        ;        ; 10.600 ;
-; constante[6]      ; saida_mux[6]  ; 10.600 ;        ;        ; 10.600 ;
-; constante[7]      ; saida_mux[7]  ; 10.075 ;        ;        ; 10.075 ;
-; constante[8]      ; saida_mux[8]  ; 11.502 ;        ;        ; 11.502 ;
-; saida_memoria[0]  ; saida_mux[0]  ; 9.814  ;        ;        ; 9.814  ;
-; saida_memoria[1]  ; saida_mux[1]  ; 9.586  ;        ;        ; 9.586  ;
-; saida_memoria[2]  ; saida_mux[2]  ; 9.556  ;        ;        ; 9.556  ;
-; saida_memoria[3]  ; saida_mux[3]  ; 9.465  ;        ;        ; 9.465  ;
-; saida_memoria[4]  ; saida_mux[4]  ; 9.575  ;        ;        ; 9.575  ;
-; saida_memoria[5]  ; saida_mux[5]  ; 9.805  ;        ;        ; 9.805  ;
-; saida_memoria[6]  ; saida_mux[6]  ; 9.967  ;        ;        ; 9.967  ;
-; saida_memoria[7]  ; saida_mux[7]  ; 9.709  ;        ;        ; 9.709  ;
-; saida_memoria[8]  ; saida_mux[8]  ; 9.604  ;        ;        ; 9.604  ;
-; saida_memoria[9]  ; saida_mux[9]  ; 9.674  ;        ;        ; 9.674  ;
-; saida_memoria[10] ; saida_mux[10] ; 9.923  ;        ;        ; 9.923  ;
-; saida_memoria[11] ; saida_mux[11] ; 10.121 ;        ;        ; 10.121 ;
-; saida_memoria[12] ; saida_mux[12] ; 10.069 ;        ;        ; 10.069 ;
-; saida_memoria[13] ; saida_mux[13] ; 10.120 ;        ;        ; 10.120 ;
-; saida_memoria[14] ; saida_mux[14] ; 9.835  ;        ;        ; 9.835  ;
-; saida_memoria[15] ; saida_mux[15] ; 9.615  ;        ;        ; 9.615  ;
-; saida_ula[0]      ; saida_mux[0]  ; 10.252 ;        ;        ; 10.252 ;
-; saida_ula[1]      ; saida_mux[1]  ; 10.431 ;        ;        ; 10.431 ;
-; saida_ula[2]      ; saida_mux[2]  ; 10.305 ;        ;        ; 10.305 ;
-; saida_ula[3]      ; saida_mux[3]  ; 10.260 ;        ;        ; 10.260 ;
-; saida_ula[4]      ; saida_mux[4]  ; 10.395 ;        ;        ; 10.395 ;
-; saida_ula[5]      ; saida_mux[5]  ; 10.566 ;        ;        ; 10.566 ;
-; saida_ula[6]      ; saida_mux[6]  ; 10.885 ;        ;        ; 10.885 ;
-; saida_ula[7]      ; saida_mux[7]  ; 10.256 ;        ;        ; 10.256 ;
-; saida_ula[8]      ; saida_mux[8]  ; 10.301 ;        ;        ; 10.301 ;
-; saida_ula[9]      ; saida_mux[9]  ; 9.907  ;        ;        ; 9.907  ;
-; saida_ula[10]     ; saida_mux[10] ; 9.662  ;        ;        ; 9.662  ;
-; saida_ula[11]     ; saida_mux[11] ; 9.911  ;        ;        ; 9.911  ;
-; saida_ula[12]     ; saida_mux[12] ; 11.196 ;        ;        ; 11.196 ;
-; saida_ula[13]     ; saida_mux[13] ; 9.337  ;        ;        ; 9.337  ;
-; saida_ula[14]     ; saida_mux[14] ; 10.284 ;        ;        ; 10.284 ;
-; saida_ula[15]     ; saida_mux[15] ; 9.414  ;        ;        ; 9.414  ;
-; seletor[0]        ; saida_mux[0]  ; 10.109 ; 10.557 ; 10.557 ; 10.109 ;
-; seletor[0]        ; saida_mux[1]  ; 10.049 ; 10.716 ; 10.716 ; 10.049 ;
-; seletor[0]        ; saida_mux[2]  ; 10.168 ; 10.475 ; 10.475 ; 10.168 ;
-; seletor[0]        ; saida_mux[3]  ; 10.327 ; 10.755 ; 10.755 ; 10.327 ;
-; seletor[0]        ; saida_mux[4]  ; 10.055 ; 10.737 ; 10.737 ; 10.055 ;
-; seletor[0]        ; saida_mux[5]  ; 10.089 ; 10.975 ; 10.975 ; 10.089 ;
-; seletor[0]        ; saida_mux[6]  ; 10.287 ; 11.193 ; 11.193 ; 10.287 ;
-; seletor[0]        ; saida_mux[7]  ; 9.830  ; 10.327 ; 10.327 ; 9.830  ;
-; seletor[0]        ; saida_mux[8]  ; 10.647 ; 11.098 ; 11.098 ; 10.647 ;
-; seletor[0]        ; saida_mux[9]  ; 10.318 ; 10.318 ; 10.318 ; 10.318 ;
-; seletor[0]        ; saida_mux[10] ; 10.551 ; 10.551 ; 10.551 ; 10.551 ;
-; seletor[0]        ; saida_mux[11] ; 10.305 ; 10.305 ; 10.305 ; 10.305 ;
-; seletor[0]        ; saida_mux[12] ; 10.611 ; 10.611 ; 10.611 ; 10.611 ;
-; seletor[0]        ; saida_mux[13] ; 10.208 ; 10.208 ; 10.208 ; 10.208 ;
-; seletor[0]        ; saida_mux[14] ; 10.630 ; 10.630 ; 10.630 ; 10.630 ;
-; seletor[0]        ; saida_mux[15] ; 10.457 ; 10.457 ; 10.457 ; 10.457 ;
-; seletor[1]        ; saida_mux[0]  ; 10.633 ; 10.325 ; 10.325 ; 10.633 ;
-; seletor[1]        ; saida_mux[1]  ; 11.204 ; 10.363 ; 10.363 ; 11.204 ;
-; seletor[1]        ; saida_mux[2]  ; 10.951 ; 10.204 ; 10.204 ; 10.951 ;
-; seletor[1]        ; saida_mux[3]  ; 11.241 ; 10.366 ; 10.366 ; 11.241 ;
-; seletor[1]        ; saida_mux[4]  ; 11.226 ; 10.541 ; 10.541 ; 11.226 ;
-; seletor[1]        ; saida_mux[5]  ; 11.057 ; 10.575 ; 10.575 ; 11.057 ;
-; seletor[1]        ; saida_mux[6]  ; 11.277 ; 10.763 ; 10.763 ; 11.277 ;
-; seletor[1]        ; saida_mux[7]  ; 10.804 ; 10.312 ; 10.312 ; 10.804 ;
-; seletor[1]        ; saida_mux[8]  ; 10.741 ; 10.252 ; 10.252 ; 10.741 ;
-; seletor[1]        ; saida_mux[9]  ;        ; 10.011 ; 10.011 ;        ;
-; seletor[1]        ; saida_mux[10] ;        ; 10.253 ; 10.253 ;        ;
-; seletor[1]        ; saida_mux[11] ;        ; 9.990  ; 9.990  ;        ;
-; seletor[1]        ; saida_mux[12] ;        ; 10.202 ; 10.202 ;        ;
-; seletor[1]        ; saida_mux[13] ;        ; 9.772  ; 9.772  ;        ;
-; seletor[1]        ; saida_mux[14] ;        ; 10.077 ; 10.077 ;        ;
-; seletor[1]        ; saida_mux[15] ;        ; 10.026 ; 10.026 ;        ;
-+-------------------+---------------+--------+--------+--------+--------+
+-------------------------------
+; Slow Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 ----------------------------
@@ -313,166 +153,10 @@ No paths to report.
 No paths to report.
 
 
-+-------------------------------------------------------------------+
-; Propagation Delay                                                 ;
-+-------------------+---------------+-------+-------+-------+-------+
-; Input Port        ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
-+-------------------+---------------+-------+-------+-------+-------+
-; constante[0]      ; saida_mux[0]  ; 5.646 ;       ;       ; 5.646 ;
-; constante[1]      ; saida_mux[1]  ; 5.877 ;       ;       ; 5.877 ;
-; constante[2]      ; saida_mux[2]  ; 5.487 ;       ;       ; 5.487 ;
-; constante[3]      ; saida_mux[3]  ; 5.673 ;       ;       ; 5.673 ;
-; constante[4]      ; saida_mux[4]  ; 5.786 ;       ;       ; 5.786 ;
-; constante[5]      ; saida_mux[5]  ; 5.821 ;       ;       ; 5.821 ;
-; constante[6]      ; saida_mux[6]  ; 5.828 ;       ;       ; 5.828 ;
-; constante[7]      ; saida_mux[7]  ; 5.572 ;       ;       ; 5.572 ;
-; constante[8]      ; saida_mux[8]  ; 6.309 ;       ;       ; 6.309 ;
-; saida_memoria[0]  ; saida_mux[0]  ; 5.460 ;       ;       ; 5.460 ;
-; saida_memoria[1]  ; saida_mux[1]  ; 5.352 ;       ;       ; 5.352 ;
-; saida_memoria[2]  ; saida_mux[2]  ; 5.323 ;       ;       ; 5.323 ;
-; saida_memoria[3]  ; saida_mux[3]  ; 5.278 ;       ;       ; 5.278 ;
-; saida_memoria[4]  ; saida_mux[4]  ; 5.326 ;       ;       ; 5.326 ;
-; saida_memoria[5]  ; saida_mux[5]  ; 5.462 ;       ;       ; 5.462 ;
-; saida_memoria[6]  ; saida_mux[6]  ; 5.554 ;       ;       ; 5.554 ;
-; saida_memoria[7]  ; saida_mux[7]  ; 5.412 ;       ;       ; 5.412 ;
-; saida_memoria[8]  ; saida_mux[8]  ; 5.349 ;       ;       ; 5.349 ;
-; saida_memoria[9]  ; saida_mux[9]  ; 5.403 ;       ;       ; 5.403 ;
-; saida_memoria[10] ; saida_mux[10] ; 5.508 ;       ;       ; 5.508 ;
-; saida_memoria[11] ; saida_mux[11] ; 5.590 ;       ;       ; 5.590 ;
-; saida_memoria[12] ; saida_mux[12] ; 5.554 ;       ;       ; 5.554 ;
-; saida_memoria[13] ; saida_mux[13] ; 5.641 ;       ;       ; 5.641 ;
-; saida_memoria[14] ; saida_mux[14] ; 5.461 ;       ;       ; 5.461 ;
-; saida_memoria[15] ; saida_mux[15] ; 5.368 ;       ;       ; 5.368 ;
-; saida_ula[0]      ; saida_mux[0]  ; 5.650 ;       ;       ; 5.650 ;
-; saida_ula[1]      ; saida_mux[1]  ; 5.753 ;       ;       ; 5.753 ;
-; saida_ula[2]      ; saida_mux[2]  ; 5.644 ;       ;       ; 5.644 ;
-; saida_ula[3]      ; saida_mux[3]  ; 5.591 ;       ;       ; 5.591 ;
-; saida_ula[4]      ; saida_mux[4]  ; 5.681 ;       ;       ; 5.681 ;
-; saida_ula[5]      ; saida_mux[5]  ; 5.819 ;       ;       ; 5.819 ;
-; saida_ula[6]      ; saida_mux[6]  ; 5.928 ;       ;       ; 5.928 ;
-; saida_ula[7]      ; saida_mux[7]  ; 5.698 ;       ;       ; 5.698 ;
-; saida_ula[8]      ; saida_mux[8]  ; 5.641 ;       ;       ; 5.641 ;
-; saida_ula[9]      ; saida_mux[9]  ; 5.477 ;       ;       ; 5.477 ;
-; saida_ula[10]     ; saida_mux[10] ; 5.389 ;       ;       ; 5.389 ;
-; saida_ula[11]     ; saida_mux[11] ; 5.509 ;       ;       ; 5.509 ;
-; saida_ula[12]     ; saida_mux[12] ; 6.198 ;       ;       ; 6.198 ;
-; saida_ula[13]     ; saida_mux[13] ; 5.212 ;       ;       ; 5.212 ;
-; saida_ula[14]     ; saida_mux[14] ; 5.721 ;       ;       ; 5.721 ;
-; saida_ula[15]     ; saida_mux[15] ; 5.271 ;       ;       ; 5.271 ;
-; seletor[0]        ; saida_mux[0]  ; 5.611 ; 5.820 ; 5.820 ; 5.611 ;
-; seletor[0]        ; saida_mux[1]  ; 5.588 ; 5.871 ; 5.871 ; 5.588 ;
-; seletor[0]        ; saida_mux[2]  ; 5.629 ; 5.758 ; 5.758 ; 5.629 ;
-; seletor[0]        ; saida_mux[3]  ; 5.668 ; 5.840 ; 5.840 ; 5.668 ;
-; seletor[0]        ; saida_mux[4]  ; 5.555 ; 5.847 ; 5.847 ; 5.555 ;
-; seletor[0]        ; saida_mux[5]  ; 5.622 ; 6.013 ; 6.013 ; 5.622 ;
-; seletor[0]        ; saida_mux[6]  ; 5.694 ; 6.100 ; 6.100 ; 5.694 ;
-; seletor[0]        ; saida_mux[7]  ; 5.487 ; 5.700 ; 5.700 ; 5.487 ;
-; seletor[0]        ; saida_mux[8]  ; 5.820 ; 6.032 ; 6.032 ; 5.820 ;
-; seletor[0]        ; saida_mux[9]  ; 5.671 ; 5.671 ; 5.671 ; 5.671 ;
-; seletor[0]        ; saida_mux[10] ; 5.790 ; 5.790 ; 5.790 ; 5.790 ;
-; seletor[0]        ; saida_mux[11] ; 5.680 ; 5.680 ; 5.680 ; 5.680 ;
-; seletor[0]        ; saida_mux[12] ; 5.814 ; 5.814 ; 5.814 ; 5.814 ;
-; seletor[0]        ; saida_mux[13] ; 5.638 ; 5.638 ; 5.638 ; 5.638 ;
-; seletor[0]        ; saida_mux[14] ; 5.842 ; 5.842 ; 5.842 ; 5.842 ;
-; seletor[0]        ; saida_mux[15] ; 5.750 ; 5.750 ; 5.750 ; 5.750 ;
-; seletor[1]        ; saida_mux[0]  ; 5.845 ; 5.845 ; 5.845 ; 5.845 ;
-; seletor[1]        ; saida_mux[1]  ; 6.106 ; 6.106 ; 6.106 ; 6.106 ;
-; seletor[1]        ; saida_mux[2]  ; 5.982 ; 5.982 ; 5.982 ; 5.982 ;
-; seletor[1]        ; saida_mux[3]  ; 6.075 ; 6.075 ; 6.075 ; 6.075 ;
-; seletor[1]        ; saida_mux[4]  ; 6.083 ; 6.083 ; 6.083 ; 6.083 ;
-; seletor[1]        ; saida_mux[5]  ; 6.044 ; 6.044 ; 6.044 ; 6.044 ;
-; seletor[1]        ; saida_mux[6]  ; 6.131 ; 6.131 ; 6.131 ; 6.131 ;
-; seletor[1]        ; saida_mux[7]  ; 5.925 ; 5.925 ; 5.925 ; 5.925 ;
-; seletor[1]        ; saida_mux[8]  ; 5.848 ; 5.848 ; 5.848 ; 5.848 ;
-; seletor[1]        ; saida_mux[9]  ;       ; 5.548 ; 5.548 ;       ;
-; seletor[1]        ; saida_mux[10] ;       ; 5.676 ; 5.676 ;       ;
-; seletor[1]        ; saida_mux[11] ;       ; 5.549 ; 5.549 ;       ;
-; seletor[1]        ; saida_mux[12] ;       ; 5.630 ; 5.630 ;       ;
-; seletor[1]        ; saida_mux[13] ;       ; 5.452 ; 5.452 ;       ;
-; seletor[1]        ; saida_mux[14] ;       ; 5.563 ; 5.563 ;       ;
-; seletor[1]        ; saida_mux[15] ;       ; 5.568 ; 5.568 ;       ;
-+-------------------+---------------+-------+-------+-------+-------+
-
-
-+-------------------------------------------------------------------+
-; Minimum Propagation Delay                                         ;
-+-------------------+---------------+-------+-------+-------+-------+
-; Input Port        ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
-+-------------------+---------------+-------+-------+-------+-------+
-; constante[0]      ; saida_mux[0]  ; 5.646 ;       ;       ; 5.646 ;
-; constante[1]      ; saida_mux[1]  ; 5.877 ;       ;       ; 5.877 ;
-; constante[2]      ; saida_mux[2]  ; 5.487 ;       ;       ; 5.487 ;
-; constante[3]      ; saida_mux[3]  ; 5.673 ;       ;       ; 5.673 ;
-; constante[4]      ; saida_mux[4]  ; 5.786 ;       ;       ; 5.786 ;
-; constante[5]      ; saida_mux[5]  ; 5.821 ;       ;       ; 5.821 ;
-; constante[6]      ; saida_mux[6]  ; 5.828 ;       ;       ; 5.828 ;
-; constante[7]      ; saida_mux[7]  ; 5.572 ;       ;       ; 5.572 ;
-; constante[8]      ; saida_mux[8]  ; 6.309 ;       ;       ; 6.309 ;
-; saida_memoria[0]  ; saida_mux[0]  ; 5.460 ;       ;       ; 5.460 ;
-; saida_memoria[1]  ; saida_mux[1]  ; 5.352 ;       ;       ; 5.352 ;
-; saida_memoria[2]  ; saida_mux[2]  ; 5.323 ;       ;       ; 5.323 ;
-; saida_memoria[3]  ; saida_mux[3]  ; 5.278 ;       ;       ; 5.278 ;
-; saida_memoria[4]  ; saida_mux[4]  ; 5.326 ;       ;       ; 5.326 ;
-; saida_memoria[5]  ; saida_mux[5]  ; 5.462 ;       ;       ; 5.462 ;
-; saida_memoria[6]  ; saida_mux[6]  ; 5.554 ;       ;       ; 5.554 ;
-; saida_memoria[7]  ; saida_mux[7]  ; 5.412 ;       ;       ; 5.412 ;
-; saida_memoria[8]  ; saida_mux[8]  ; 5.349 ;       ;       ; 5.349 ;
-; saida_memoria[9]  ; saida_mux[9]  ; 5.403 ;       ;       ; 5.403 ;
-; saida_memoria[10] ; saida_mux[10] ; 5.508 ;       ;       ; 5.508 ;
-; saida_memoria[11] ; saida_mux[11] ; 5.590 ;       ;       ; 5.590 ;
-; saida_memoria[12] ; saida_mux[12] ; 5.554 ;       ;       ; 5.554 ;
-; saida_memoria[13] ; saida_mux[13] ; 5.641 ;       ;       ; 5.641 ;
-; saida_memoria[14] ; saida_mux[14] ; 5.461 ;       ;       ; 5.461 ;
-; saida_memoria[15] ; saida_mux[15] ; 5.368 ;       ;       ; 5.368 ;
-; saida_ula[0]      ; saida_mux[0]  ; 5.650 ;       ;       ; 5.650 ;
-; saida_ula[1]      ; saida_mux[1]  ; 5.753 ;       ;       ; 5.753 ;
-; saida_ula[2]      ; saida_mux[2]  ; 5.644 ;       ;       ; 5.644 ;
-; saida_ula[3]      ; saida_mux[3]  ; 5.591 ;       ;       ; 5.591 ;
-; saida_ula[4]      ; saida_mux[4]  ; 5.681 ;       ;       ; 5.681 ;
-; saida_ula[5]      ; saida_mux[5]  ; 5.819 ;       ;       ; 5.819 ;
-; saida_ula[6]      ; saida_mux[6]  ; 5.928 ;       ;       ; 5.928 ;
-; saida_ula[7]      ; saida_mux[7]  ; 5.698 ;       ;       ; 5.698 ;
-; saida_ula[8]      ; saida_mux[8]  ; 5.641 ;       ;       ; 5.641 ;
-; saida_ula[9]      ; saida_mux[9]  ; 5.477 ;       ;       ; 5.477 ;
-; saida_ula[10]     ; saida_mux[10] ; 5.389 ;       ;       ; 5.389 ;
-; saida_ula[11]     ; saida_mux[11] ; 5.509 ;       ;       ; 5.509 ;
-; saida_ula[12]     ; saida_mux[12] ; 6.198 ;       ;       ; 6.198 ;
-; saida_ula[13]     ; saida_mux[13] ; 5.212 ;       ;       ; 5.212 ;
-; saida_ula[14]     ; saida_mux[14] ; 5.721 ;       ;       ; 5.721 ;
-; saida_ula[15]     ; saida_mux[15] ; 5.271 ;       ;       ; 5.271 ;
-; seletor[0]        ; saida_mux[0]  ; 5.611 ; 5.820 ; 5.820 ; 5.611 ;
-; seletor[0]        ; saida_mux[1]  ; 5.588 ; 5.871 ; 5.871 ; 5.588 ;
-; seletor[0]        ; saida_mux[2]  ; 5.629 ; 5.758 ; 5.758 ; 5.629 ;
-; seletor[0]        ; saida_mux[3]  ; 5.668 ; 5.840 ; 5.840 ; 5.668 ;
-; seletor[0]        ; saida_mux[4]  ; 5.555 ; 5.847 ; 5.847 ; 5.555 ;
-; seletor[0]        ; saida_mux[5]  ; 5.622 ; 6.013 ; 6.013 ; 5.622 ;
-; seletor[0]        ; saida_mux[6]  ; 5.694 ; 6.100 ; 6.100 ; 5.694 ;
-; seletor[0]        ; saida_mux[7]  ; 5.487 ; 5.700 ; 5.700 ; 5.487 ;
-; seletor[0]        ; saida_mux[8]  ; 5.820 ; 6.032 ; 6.032 ; 5.820 ;
-; seletor[0]        ; saida_mux[9]  ; 5.671 ; 5.671 ; 5.671 ; 5.671 ;
-; seletor[0]        ; saida_mux[10] ; 5.790 ; 5.790 ; 5.790 ; 5.790 ;
-; seletor[0]        ; saida_mux[11] ; 5.680 ; 5.680 ; 5.680 ; 5.680 ;
-; seletor[0]        ; saida_mux[12] ; 5.814 ; 5.814 ; 5.814 ; 5.814 ;
-; seletor[0]        ; saida_mux[13] ; 5.638 ; 5.638 ; 5.638 ; 5.638 ;
-; seletor[0]        ; saida_mux[14] ; 5.842 ; 5.842 ; 5.842 ; 5.842 ;
-; seletor[0]        ; saida_mux[15] ; 5.750 ; 5.750 ; 5.750 ; 5.750 ;
-; seletor[1]        ; saida_mux[0]  ; 5.845 ; 5.722 ; 5.722 ; 5.845 ;
-; seletor[1]        ; saida_mux[1]  ; 6.106 ; 5.736 ; 5.736 ; 6.106 ;
-; seletor[1]        ; saida_mux[2]  ; 5.982 ; 5.660 ; 5.660 ; 5.982 ;
-; seletor[1]        ; saida_mux[3]  ; 6.075 ; 5.695 ; 5.695 ; 6.075 ;
-; seletor[1]        ; saida_mux[4]  ; 6.083 ; 5.783 ; 5.783 ; 6.083 ;
-; seletor[1]        ; saida_mux[5]  ; 6.044 ; 5.850 ; 5.850 ; 6.044 ;
-; seletor[1]        ; saida_mux[6]  ; 6.131 ; 5.912 ; 5.912 ; 6.131 ;
-; seletor[1]        ; saida_mux[7]  ; 5.925 ; 5.710 ; 5.710 ; 5.925 ;
-; seletor[1]        ; saida_mux[8]  ; 5.848 ; 5.639 ; 5.639 ; 5.848 ;
-; seletor[1]        ; saida_mux[9]  ;       ; 5.548 ; 5.548 ;       ;
-; seletor[1]        ; saida_mux[10] ;       ; 5.676 ; 5.676 ;       ;
-; seletor[1]        ; saida_mux[11] ;       ; 5.549 ; 5.549 ;       ;
-; seletor[1]        ; saida_mux[12] ;       ; 5.630 ; 5.630 ;       ;
-; seletor[1]        ; saida_mux[13] ;       ; 5.452 ; 5.452 ;       ;
-; seletor[1]        ; saida_mux[14] ;       ; 5.563 ; 5.563 ;       ;
-; seletor[1]        ; saida_mux[15] ;       ; 5.568 ; 5.568 ;       ;
-+-------------------+---------------+-------+-------+-------+-------+
+-------------------------------
+; Fast Model Datasheet Report ;
+-------------------------------
+Nothing to report.
 
 
 +----------------------------------------------------------------------------+
@@ -483,168 +167,6 @@ No paths to report.
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
 ; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
-
-
-+-----------------------------------------------------------------------+
-; Progagation Delay                                                     ;
-+-------------------+---------------+--------+--------+--------+--------+
-; Input Port        ; Output Port   ; RR     ; RF     ; FR     ; FF     ;
-+-------------------+---------------+--------+--------+--------+--------+
-; constante[0]      ; saida_mux[0]  ; 10.212 ;        ;        ; 10.212 ;
-; constante[1]      ; saida_mux[1]  ; 10.799 ;        ;        ; 10.799 ;
-; constante[2]      ; saida_mux[2]  ; 9.879  ;        ;        ; 9.879  ;
-; constante[3]      ; saida_mux[3]  ; 10.421 ;        ;        ; 10.421 ;
-; constante[4]      ; saida_mux[4]  ; 10.542 ;        ;        ; 10.542 ;
-; constante[5]      ; saida_mux[5]  ; 10.600 ;        ;        ; 10.600 ;
-; constante[6]      ; saida_mux[6]  ; 10.600 ;        ;        ; 10.600 ;
-; constante[7]      ; saida_mux[7]  ; 10.075 ;        ;        ; 10.075 ;
-; constante[8]      ; saida_mux[8]  ; 11.502 ;        ;        ; 11.502 ;
-; saida_memoria[0]  ; saida_mux[0]  ; 9.814  ;        ;        ; 9.814  ;
-; saida_memoria[1]  ; saida_mux[1]  ; 9.586  ;        ;        ; 9.586  ;
-; saida_memoria[2]  ; saida_mux[2]  ; 9.556  ;        ;        ; 9.556  ;
-; saida_memoria[3]  ; saida_mux[3]  ; 9.465  ;        ;        ; 9.465  ;
-; saida_memoria[4]  ; saida_mux[4]  ; 9.575  ;        ;        ; 9.575  ;
-; saida_memoria[5]  ; saida_mux[5]  ; 9.805  ;        ;        ; 9.805  ;
-; saida_memoria[6]  ; saida_mux[6]  ; 9.967  ;        ;        ; 9.967  ;
-; saida_memoria[7]  ; saida_mux[7]  ; 9.709  ;        ;        ; 9.709  ;
-; saida_memoria[8]  ; saida_mux[8]  ; 9.604  ;        ;        ; 9.604  ;
-; saida_memoria[9]  ; saida_mux[9]  ; 9.674  ;        ;        ; 9.674  ;
-; saida_memoria[10] ; saida_mux[10] ; 9.923  ;        ;        ; 9.923  ;
-; saida_memoria[11] ; saida_mux[11] ; 10.121 ;        ;        ; 10.121 ;
-; saida_memoria[12] ; saida_mux[12] ; 10.069 ;        ;        ; 10.069 ;
-; saida_memoria[13] ; saida_mux[13] ; 10.120 ;        ;        ; 10.120 ;
-; saida_memoria[14] ; saida_mux[14] ; 9.835  ;        ;        ; 9.835  ;
-; saida_memoria[15] ; saida_mux[15] ; 9.615  ;        ;        ; 9.615  ;
-; saida_ula[0]      ; saida_mux[0]  ; 10.252 ;        ;        ; 10.252 ;
-; saida_ula[1]      ; saida_mux[1]  ; 10.431 ;        ;        ; 10.431 ;
-; saida_ula[2]      ; saida_mux[2]  ; 10.305 ;        ;        ; 10.305 ;
-; saida_ula[3]      ; saida_mux[3]  ; 10.260 ;        ;        ; 10.260 ;
-; saida_ula[4]      ; saida_mux[4]  ; 10.395 ;        ;        ; 10.395 ;
-; saida_ula[5]      ; saida_mux[5]  ; 10.566 ;        ;        ; 10.566 ;
-; saida_ula[6]      ; saida_mux[6]  ; 10.885 ;        ;        ; 10.885 ;
-; saida_ula[7]      ; saida_mux[7]  ; 10.256 ;        ;        ; 10.256 ;
-; saida_ula[8]      ; saida_mux[8]  ; 10.301 ;        ;        ; 10.301 ;
-; saida_ula[9]      ; saida_mux[9]  ; 9.907  ;        ;        ; 9.907  ;
-; saida_ula[10]     ; saida_mux[10] ; 9.662  ;        ;        ; 9.662  ;
-; saida_ula[11]     ; saida_mux[11] ; 9.911  ;        ;        ; 9.911  ;
-; saida_ula[12]     ; saida_mux[12] ; 11.196 ;        ;        ; 11.196 ;
-; saida_ula[13]     ; saida_mux[13] ; 9.337  ;        ;        ; 9.337  ;
-; saida_ula[14]     ; saida_mux[14] ; 10.284 ;        ;        ; 10.284 ;
-; saida_ula[15]     ; saida_mux[15] ; 9.414  ;        ;        ; 9.414  ;
-; seletor[0]        ; saida_mux[0]  ; 10.109 ; 10.557 ; 10.557 ; 10.109 ;
-; seletor[0]        ; saida_mux[1]  ; 10.049 ; 10.716 ; 10.716 ; 10.049 ;
-; seletor[0]        ; saida_mux[2]  ; 10.168 ; 10.475 ; 10.475 ; 10.168 ;
-; seletor[0]        ; saida_mux[3]  ; 10.327 ; 10.755 ; 10.755 ; 10.327 ;
-; seletor[0]        ; saida_mux[4]  ; 10.055 ; 10.737 ; 10.737 ; 10.055 ;
-; seletor[0]        ; saida_mux[5]  ; 10.089 ; 10.975 ; 10.975 ; 10.089 ;
-; seletor[0]        ; saida_mux[6]  ; 10.287 ; 11.193 ; 11.193 ; 10.287 ;
-; seletor[0]        ; saida_mux[7]  ; 9.830  ; 10.327 ; 10.327 ; 9.830  ;
-; seletor[0]        ; saida_mux[8]  ; 10.647 ; 11.098 ; 11.098 ; 10.647 ;
-; seletor[0]        ; saida_mux[9]  ; 10.318 ; 10.318 ; 10.318 ; 10.318 ;
-; seletor[0]        ; saida_mux[10] ; 10.551 ; 10.551 ; 10.551 ; 10.551 ;
-; seletor[0]        ; saida_mux[11] ; 10.305 ; 10.305 ; 10.305 ; 10.305 ;
-; seletor[0]        ; saida_mux[12] ; 10.611 ; 10.611 ; 10.611 ; 10.611 ;
-; seletor[0]        ; saida_mux[13] ; 10.208 ; 10.208 ; 10.208 ; 10.208 ;
-; seletor[0]        ; saida_mux[14] ; 10.630 ; 10.630 ; 10.630 ; 10.630 ;
-; seletor[0]        ; saida_mux[15] ; 10.457 ; 10.457 ; 10.457 ; 10.457 ;
-; seletor[1]        ; saida_mux[0]  ; 10.633 ; 10.633 ; 10.633 ; 10.633 ;
-; seletor[1]        ; saida_mux[1]  ; 11.204 ; 11.204 ; 11.204 ; 11.204 ;
-; seletor[1]        ; saida_mux[2]  ; 10.951 ; 10.951 ; 10.951 ; 10.951 ;
-; seletor[1]        ; saida_mux[3]  ; 11.241 ; 11.241 ; 11.241 ; 11.241 ;
-; seletor[1]        ; saida_mux[4]  ; 11.226 ; 11.226 ; 11.226 ; 11.226 ;
-; seletor[1]        ; saida_mux[5]  ; 11.057 ; 11.057 ; 11.057 ; 11.057 ;
-; seletor[1]        ; saida_mux[6]  ; 11.277 ; 11.277 ; 11.277 ; 11.277 ;
-; seletor[1]        ; saida_mux[7]  ; 10.804 ; 10.804 ; 10.804 ; 10.804 ;
-; seletor[1]        ; saida_mux[8]  ; 10.741 ; 10.741 ; 10.741 ; 10.741 ;
-; seletor[1]        ; saida_mux[9]  ;        ; 10.011 ; 10.011 ;        ;
-; seletor[1]        ; saida_mux[10] ;        ; 10.253 ; 10.253 ;        ;
-; seletor[1]        ; saida_mux[11] ;        ; 9.990  ; 9.990  ;        ;
-; seletor[1]        ; saida_mux[12] ;        ; 10.202 ; 10.202 ;        ;
-; seletor[1]        ; saida_mux[13] ;        ; 9.772  ; 9.772  ;        ;
-; seletor[1]        ; saida_mux[14] ;        ; 10.077 ; 10.077 ;        ;
-; seletor[1]        ; saida_mux[15] ;        ; 10.026 ; 10.026 ;        ;
-+-------------------+---------------+--------+--------+--------+--------+
-
-
-+-------------------------------------------------------------------+
-; Minimum Progagation Delay                                         ;
-+-------------------+---------------+-------+-------+-------+-------+
-; Input Port        ; Output Port   ; RR    ; RF    ; FR    ; FF    ;
-+-------------------+---------------+-------+-------+-------+-------+
-; constante[0]      ; saida_mux[0]  ; 5.646 ;       ;       ; 5.646 ;
-; constante[1]      ; saida_mux[1]  ; 5.877 ;       ;       ; 5.877 ;
-; constante[2]      ; saida_mux[2]  ; 5.487 ;       ;       ; 5.487 ;
-; constante[3]      ; saida_mux[3]  ; 5.673 ;       ;       ; 5.673 ;
-; constante[4]      ; saida_mux[4]  ; 5.786 ;       ;       ; 5.786 ;
-; constante[5]      ; saida_mux[5]  ; 5.821 ;       ;       ; 5.821 ;
-; constante[6]      ; saida_mux[6]  ; 5.828 ;       ;       ; 5.828 ;
-; constante[7]      ; saida_mux[7]  ; 5.572 ;       ;       ; 5.572 ;
-; constante[8]      ; saida_mux[8]  ; 6.309 ;       ;       ; 6.309 ;
-; saida_memoria[0]  ; saida_mux[0]  ; 5.460 ;       ;       ; 5.460 ;
-; saida_memoria[1]  ; saida_mux[1]  ; 5.352 ;       ;       ; 5.352 ;
-; saida_memoria[2]  ; saida_mux[2]  ; 5.323 ;       ;       ; 5.323 ;
-; saida_memoria[3]  ; saida_mux[3]  ; 5.278 ;       ;       ; 5.278 ;
-; saida_memoria[4]  ; saida_mux[4]  ; 5.326 ;       ;       ; 5.326 ;
-; saida_memoria[5]  ; saida_mux[5]  ; 5.462 ;       ;       ; 5.462 ;
-; saida_memoria[6]  ; saida_mux[6]  ; 5.554 ;       ;       ; 5.554 ;
-; saida_memoria[7]  ; saida_mux[7]  ; 5.412 ;       ;       ; 5.412 ;
-; saida_memoria[8]  ; saida_mux[8]  ; 5.349 ;       ;       ; 5.349 ;
-; saida_memoria[9]  ; saida_mux[9]  ; 5.403 ;       ;       ; 5.403 ;
-; saida_memoria[10] ; saida_mux[10] ; 5.508 ;       ;       ; 5.508 ;
-; saida_memoria[11] ; saida_mux[11] ; 5.590 ;       ;       ; 5.590 ;
-; saida_memoria[12] ; saida_mux[12] ; 5.554 ;       ;       ; 5.554 ;
-; saida_memoria[13] ; saida_mux[13] ; 5.641 ;       ;       ; 5.641 ;
-; saida_memoria[14] ; saida_mux[14] ; 5.461 ;       ;       ; 5.461 ;
-; saida_memoria[15] ; saida_mux[15] ; 5.368 ;       ;       ; 5.368 ;
-; saida_ula[0]      ; saida_mux[0]  ; 5.650 ;       ;       ; 5.650 ;
-; saida_ula[1]      ; saida_mux[1]  ; 5.753 ;       ;       ; 5.753 ;
-; saida_ula[2]      ; saida_mux[2]  ; 5.644 ;       ;       ; 5.644 ;
-; saida_ula[3]      ; saida_mux[3]  ; 5.591 ;       ;       ; 5.591 ;
-; saida_ula[4]      ; saida_mux[4]  ; 5.681 ;       ;       ; 5.681 ;
-; saida_ula[5]      ; saida_mux[5]  ; 5.819 ;       ;       ; 5.819 ;
-; saida_ula[6]      ; saida_mux[6]  ; 5.928 ;       ;       ; 5.928 ;
-; saida_ula[7]      ; saida_mux[7]  ; 5.698 ;       ;       ; 5.698 ;
-; saida_ula[8]      ; saida_mux[8]  ; 5.641 ;       ;       ; 5.641 ;
-; saida_ula[9]      ; saida_mux[9]  ; 5.477 ;       ;       ; 5.477 ;
-; saida_ula[10]     ; saida_mux[10] ; 5.389 ;       ;       ; 5.389 ;
-; saida_ula[11]     ; saida_mux[11] ; 5.509 ;       ;       ; 5.509 ;
-; saida_ula[12]     ; saida_mux[12] ; 6.198 ;       ;       ; 6.198 ;
-; saida_ula[13]     ; saida_mux[13] ; 5.212 ;       ;       ; 5.212 ;
-; saida_ula[14]     ; saida_mux[14] ; 5.721 ;       ;       ; 5.721 ;
-; saida_ula[15]     ; saida_mux[15] ; 5.271 ;       ;       ; 5.271 ;
-; seletor[0]        ; saida_mux[0]  ; 5.611 ; 5.820 ; 5.820 ; 5.611 ;
-; seletor[0]        ; saida_mux[1]  ; 5.588 ; 5.871 ; 5.871 ; 5.588 ;
-; seletor[0]        ; saida_mux[2]  ; 5.629 ; 5.758 ; 5.758 ; 5.629 ;
-; seletor[0]        ; saida_mux[3]  ; 5.668 ; 5.840 ; 5.840 ; 5.668 ;
-; seletor[0]        ; saida_mux[4]  ; 5.555 ; 5.847 ; 5.847 ; 5.555 ;
-; seletor[0]        ; saida_mux[5]  ; 5.622 ; 6.013 ; 6.013 ; 5.622 ;
-; seletor[0]        ; saida_mux[6]  ; 5.694 ; 6.100 ; 6.100 ; 5.694 ;
-; seletor[0]        ; saida_mux[7]  ; 5.487 ; 5.700 ; 5.700 ; 5.487 ;
-; seletor[0]        ; saida_mux[8]  ; 5.820 ; 6.032 ; 6.032 ; 5.820 ;
-; seletor[0]        ; saida_mux[9]  ; 5.671 ; 5.671 ; 5.671 ; 5.671 ;
-; seletor[0]        ; saida_mux[10] ; 5.790 ; 5.790 ; 5.790 ; 5.790 ;
-; seletor[0]        ; saida_mux[11] ; 5.680 ; 5.680 ; 5.680 ; 5.680 ;
-; seletor[0]        ; saida_mux[12] ; 5.814 ; 5.814 ; 5.814 ; 5.814 ;
-; seletor[0]        ; saida_mux[13] ; 5.638 ; 5.638 ; 5.638 ; 5.638 ;
-; seletor[0]        ; saida_mux[14] ; 5.842 ; 5.842 ; 5.842 ; 5.842 ;
-; seletor[0]        ; saida_mux[15] ; 5.750 ; 5.750 ; 5.750 ; 5.750 ;
-; seletor[1]        ; saida_mux[0]  ; 5.845 ; 5.722 ; 5.722 ; 5.845 ;
-; seletor[1]        ; saida_mux[1]  ; 6.106 ; 5.736 ; 5.736 ; 6.106 ;
-; seletor[1]        ; saida_mux[2]  ; 5.982 ; 5.660 ; 5.660 ; 5.982 ;
-; seletor[1]        ; saida_mux[3]  ; 6.075 ; 5.695 ; 5.695 ; 6.075 ;
-; seletor[1]        ; saida_mux[4]  ; 6.083 ; 5.783 ; 5.783 ; 6.083 ;
-; seletor[1]        ; saida_mux[5]  ; 6.044 ; 5.850 ; 5.850 ; 6.044 ;
-; seletor[1]        ; saida_mux[6]  ; 6.131 ; 5.912 ; 5.912 ; 6.131 ;
-; seletor[1]        ; saida_mux[7]  ; 5.925 ; 5.710 ; 5.710 ; 5.925 ;
-; seletor[1]        ; saida_mux[8]  ; 5.848 ; 5.639 ; 5.639 ; 5.848 ;
-; seletor[1]        ; saida_mux[9]  ;       ; 5.548 ; 5.548 ;       ;
-; seletor[1]        ; saida_mux[10] ;       ; 5.676 ; 5.676 ;       ;
-; seletor[1]        ; saida_mux[11] ;       ; 5.549 ; 5.549 ;       ;
-; seletor[1]        ; saida_mux[12] ;       ; 5.630 ; 5.630 ;       ;
-; seletor[1]        ; saida_mux[13] ;       ; 5.452 ; 5.452 ;       ;
-; seletor[1]        ; saida_mux[14] ;       ; 5.563 ; 5.563 ;       ;
-; seletor[1]        ; saida_mux[15] ;       ; 5.568 ; 5.568 ;       ;
-+-------------------+---------------+-------+-------+-------+-------+
 
 
 -------------------
@@ -672,10 +194,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 43    ; 43   ;
-; Unconstrained Input Port Paths  ; 73    ; 73   ;
-; Unconstrained Output Ports      ; 16    ; 16   ;
-; Unconstrained Output Port Paths ; 73    ; 73   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
@@ -685,7 +207,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 23 02:12:28 2019
+    Info: Processing started: Sat Nov 23 03:23:45 2019
 Info: Command: quartus_sta processador_programavel -c processador_programavel
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -715,12 +237,12 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332102): Design is not fully constrained for setup requirements
-Info (332102): Design is not fully constrained for hold requirements
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 485 megabytes
-    Info: Processing ended: Sat Nov 23 02:12:29 2019
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Sat Nov 23 03:23:45 2019
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
