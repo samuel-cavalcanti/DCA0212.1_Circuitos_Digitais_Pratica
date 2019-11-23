@@ -3,12 +3,12 @@ K3
 13
 cModel Technology
 Z0 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/simulation/qsim
-vula
-Z1 !s100 V?XmZe2V66EcZ1>N4;E]g2
-Z2 IYBbicmgYhEF@?W4>I^6Y@0
-Z3 VNPVL?A]G2oA<<][dM>9La0
+vmux_3x1
+Z1 !s100 H?`cl64fSY@MoC3>XcA`^2
+Z2 IKdEWNEzBW<kCd_;<mZPZ60
+Z3 V;Efm^?lO=E9z]<MP9RN8J2
 Z4 d/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/simulation/qsim
-Z5 w1574477798
+Z5 w1574486120
 Z6 8processador_programavel.vo
 Z7 Fprocessador_programavel.vo
 L0 31
@@ -19,33 +19,33 @@ Z9 !s90 -work|work|processador_programavel.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1574477799.398636
+Z11 !s108 1574486120.951293
 Z12 !s107 processador_programavel.vo|
 !s101 -O0
-vula_vlg_check_tst
+vmux_3x1_vlg_check_tst
 !i10b 1
-Z13 !s100 31WWdm5afYg3gg9L]9MlW0
-Z14 I3f]^5m@:nmeZ]]nJR_;g51
-Z15 VQI0VmOTl]fD;kMXolT]o=2
+Z13 !s100 d8FnjgIM1naJOnddHnZM60
+Z14 I461j]k^nWoo_Z:K@0[[BR0
+Z15 VkA^3m<@[NH7i?SDM9McCG3
 R4
-Z16 w1574477796
+Z16 w1574486117
 Z17 8processador_programavel.vt
 Z18 Fprocessador_programavel.vt
-L0 61
+L0 63
 R8
 r1
 !s85 0
 31
-Z19 !s108 1574477799.454827
+Z19 !s108 1574486121.004595
 Z20 !s107 processador_programavel.vt|
 Z21 !s90 -work|work|processador_programavel.vt|
 !s101 -O0
 R10
-vula_vlg_sample_tst
+vmux_3x1_vlg_sample_tst
 !i10b 1
-Z22 !s100 eeBP6z<?nf[]FT[YH8n[62
-Z23 ID40@89WRTzQB`ACXcGW:>1
-Z24 Va9l6=HNB?49Jh[jeQ<9]a0
+Z22 !s100 i[YX_Tce91CAnTz<L9GLN3
+Z23 IlIk5QFMdLFME<5f@Y6fJ[0
+Z24 VO:F78QGN_lYC6d8=9a1Z@0
 R4
 R16
 R17
@@ -60,16 +60,16 @@ R20
 R21
 !s101 -O0
 R10
-vula_vlg_vec_tst
+vmux_3x1_vlg_vec_tst
 !i10b 1
-!s100 `EY]1d882Hno2Kn2_Bnk@0
-IXU28g?CkKTC7REZWN<SI:0
-Z25 VBSK`iV7TVbh_f_eCb<4Km2
+!s100 zi6HlJF`Vh<Wez^AJC`[M2
+IOjike]alF0aRSbS=V1@ea2
+Z25 VUNfLkNISR2U:L3o4EXLA;3
 R4
 R16
 R17
 R18
-Z26 L0 425
+Z26 L0 427
 R8
 r1
 !s85 0
@@ -79,3 +79,79 @@ R20
 R21
 !s101 -O0
 R10
+vula
+Z27 !s100 V?XmZe2V66EcZ1>N4;E]g2
+Z28 IYBbicmgYhEF@?W4>I^6Y@0
+Z29 VNPVL?A]G2oA<<][dM>9La0
+R4
+Z30 w1574477798
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z31 !s108 1574477799.398636
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vula_vlg_check_tst
+Z32 !s100 31WWdm5afYg3gg9L]9MlW0
+Z33 I3f]^5m@:nmeZ]]nJR_;g51
+Z34 VQI0VmOTl]fD;kMXolT]o=2
+R4
+Z35 w1574477796
+R17
+R18
+L0 61
+R8
+r1
+31
+Z36 !s108 1574477799.454827
+Z37 !s107 processador_programavel.vt|
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vula_vlg_sample_tst
+Z38 !s100 eeBP6z<?nf[]FT[YH8n[62
+Z39 ID40@89WRTzQB`ACXcGW:>1
+Z40 Va9l6=HNB?49Jh[jeQ<9]a0
+R4
+R35
+R17
+R18
+L0 29
+R8
+r1
+31
+R36
+R37
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vula_vlg_vec_tst
+Z41 IXU28g?CkKTC7REZWN<SI:0
+Z42 VBSK`iV7TVbh_f_eCb<4Km2
+R4
+R35
+R17
+R18
+Z43 L0 425
+R8
+r1
+31
+R36
+R37
+R21
+R10
+Z44 !s100 `EY]1d882Hno2Kn2_Bnk@0
+!i10b 1
+!s85 0
+!s101 -O0

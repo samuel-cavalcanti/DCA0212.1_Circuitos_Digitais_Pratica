@@ -12,8 +12,10 @@
 # Componentes do processador
 
 - [ ] Bloco de controle (decodificador)
-- [ ] Memória
+- [ ] Memória D
 - [ ] Banco de registradores
 - [ ] IR
 - [ ] PC
+- [ ] Comparador
 - [x] ULA
+- [x] Mux 3x1 16 bits

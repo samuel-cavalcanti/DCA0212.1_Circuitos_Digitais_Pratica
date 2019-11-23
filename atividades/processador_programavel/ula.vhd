@@ -30,7 +30,7 @@ subtrator : entity work.subtrator(behavior)
 			saida_ula <= a when "00",
 			saida_somador when "01",
 			saida_subtrator when "10",
-			b					 when "11";
+			b					 when "11"; -- isso nunca deve acontecer
 					
 
 end architecture;
