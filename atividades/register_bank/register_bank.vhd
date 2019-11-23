@@ -3,23 +3,23 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity register_bank is 
-
+generic (number_bits : positive :=8);
 port ( index : in std_logic_vector (3 downto 0);
-		input_data : in std_logic_vector (7 downto 0);
+		input_data : in std_logic_vector (number_bits-1 downto 0);
 		write_option : in std_logic;
 		clock : in std_logic;
-		read_option : in std_logic_vector (7 downto 0);
-		output_data : out std_logic_vector (7 downto 0));
+		read_option : in std_logic_vector (number_bits-1 downto 0);
+		output_data : out std_logic_vector (number_bits-1 downto 0));
 
 end entity;
 
 architecture behavior of register_bank is 
 signal decode_x_index : std_logic_vector(3 downto 0);
 signal decode_y_index : std_logic_vector(3 downto 0);
-signal registers_output : std_logic_vector (7 downto 0);
-type all_registers_output is array(0 to 15) of std_logic_vector(7 downto 0);
+signal registers_output : std_logic_vector (number_bits-1 downto 0);
+type all_registers_output is array(0 to 15) of std_logic_vector(number_bits-1 downto 0);
 signal outputs : all_registers_output;
-type four_registers is array(0 to 3) of std_logic_vector(7 downto 0);
+type four_registers is array(0 to 3) of std_logic_vector(number_bits-1 downto 0);
 signal output_for_ors : four_registers;
  
 

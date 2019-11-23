@@ -14,7 +14,7 @@ atividades e exercícios dados em sala aula da disciplina Circuitos digitais
 
 - [Mini-Calculadora ](atividades/ULA)
 
-- [processador Programável](processador_programavel)
+- [processador Programável](atividades/processador_programavel)
 
 ## exercícios dados em aula  
 

@@ -1,0 +1,376 @@
+$comment
+	File created using the following command:
+		vcd file processador_programavel.msim.vcd -direction
+$end
+$date
+	Fri Nov 22 23:56:39 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module ula_vlg_vec_tst $end
+$var reg 16 ! a [15:0] $end
+$var reg 16 " b [15:0] $end
+$var reg 2 # operador [1:0] $end
+$var wire 1 $ saida_ula [15] $end
+$var wire 1 % saida_ula [14] $end
+$var wire 1 & saida_ula [13] $end
+$var wire 1 ' saida_ula [12] $end
+$var wire 1 ( saida_ula [11] $end
+$var wire 1 ) saida_ula [10] $end
+$var wire 1 * saida_ula [9] $end
+$var wire 1 + saida_ula [8] $end
+$var wire 1 , saida_ula [7] $end
+$var wire 1 - saida_ula [6] $end
+$var wire 1 . saida_ula [5] $end
+$var wire 1 / saida_ula [4] $end
+$var wire 1 0 saida_ula [3] $end
+$var wire 1 1 saida_ula [2] $end
+$var wire 1 2 saida_ula [1] $end
+$var wire 1 3 saida_ula [0] $end
+$var wire 1 4 sampler $end
+$scope module i1 $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vcc $end
+$var wire 1 7 unknown $end
+$var tri1 1 8 devclrn $end
+$var tri1 1 9 devpor $end
+$var tri1 1 : devoe $end
+$var wire 1 ; subtrator|borrow~0_combout $end
+$var wire 1 < subtrator|borrow~1_combout $end
+$var wire 1 = subtrator|borrow~2_combout $end
+$var wire 1 > somador|carry~4_combout $end
+$var wire 1 ? somador|carry~9_combout $end
+$var wire 1 @ subtrator|borrow~7_combout $end
+$var wire 1 A somador|carry~16_combout $end
+$var wire 1 B subtrator|resultsubt[15]~2_combout $end
+$var wire 1 C subtrator|borrow~15_combout $end
+$var wire 1 D subtrator|borrow~16_combout $end
+$var wire 1 E Mux15~0_combout $end
+$var wire 1 F Mux15~1_combout $end
+$var wire 1 G Mux14~0_combout $end
+$var wire 1 H Mux14~1_combout $end
+$var wire 1 I Mux14~2_combout $end
+$var wire 1 J somador|carry~0_combout $end
+$var wire 1 K Mux13~0_combout $end
+$var wire 1 L Mux13~1_combout $end
+$var wire 1 M Mux13~2_combout $end
+$var wire 1 N somador|carry~2_combout $end
+$var wire 1 O Mux12~1_combout $end
+$var wire 1 P Mux12~0_combout $end
+$var wire 1 Q Mux12~2_combout $end
+$var wire 1 R Mux12~3_combout $end
+$var wire 1 S subtrator|borrow~3_combout $end
+$var wire 1 T Mux11~1_combout $end
+$var wire 1 U somador|carry~1_combout $end
+$var wire 1 V somador|carry~3_combout $end
+$var wire 1 W Mux11~0_combout $end
+$var wire 1 X Mux11~2_combout $end
+$var wire 1 Y somador|carry~5_combout $end
+$var wire 1 Z somador|carry~6_combout $end
+$var wire 1 [ Mux10~0_combout $end
+$var wire 1 \ subtrator|borrow~4_combout $end
+$var wire 1 ] Mux10~1_combout $end
+$var wire 1 ^ Mux10~2_combout $end
+$var wire 1 _ somador|carry~7_combout $end
+$var wire 1 ` Mux9~0_combout $end
+$var wire 1 a subtrator|borrow~5_combout $end
+$var wire 1 b Mux9~1_combout $end
+$var wire 1 c Mux9~2_combout $end
+$var wire 1 d subtrator|borrow~6_combout $end
+$var wire 1 e somador|carry~8_combout $end
+$var wire 1 f Mux8~0_combout $end
+$var wire 1 g Mux8~1_combout $end
+$var wire 1 h Mux8~2_combout $end
+$var wire 1 i Mux7~1_combout $end
+$var wire 1 j somador|carry~10_combout $end
+$var wire 1 k Mux7~0_combout $end
+$var wire 1 l Mux7~2_combout $end
+$var wire 1 m subtrator|borrow~8_combout $end
+$var wire 1 n somador|carry~11_combout $end
+$var wire 1 o somador|carry~12_combout $end
+$var wire 1 p Mux6~0_combout $end
+$var wire 1 q Mux6~1_combout $end
+$var wire 1 r Mux6~2_combout $end
+$var wire 1 s subtrator|borrow~9_combout $end
+$var wire 1 t Mux5~1_combout $end
+$var wire 1 u somador|carry~13_combout $end
+$var wire 1 v Mux5~0_combout $end
+$var wire 1 w Mux5~2_combout $end
+$var wire 1 x somador|carry~15_combout $end
+$var wire 1 y somador|carry~14_combout $end
+$var wire 1 z Mux4~0_combout $end
+$var wire 1 { Mux4~1_combout $end
+$var wire 1 | Mux4~2_combout $end
+$var wire 1 } subtrator|borrow~10_combout $end
+$var wire 1 ~ Mux3~1_combout $end
+$var wire 1 !! Mux3~2_combout $end
+$var wire 1 "! Mux3~0_combout $end
+$var wire 1 #! somador|carry~18_combout $end
+$var wire 1 $! somador|carry~17_combout $end
+$var wire 1 %! Mux2~1_combout $end
+$var wire 1 &! subtrator|borrow~12_combout $end
+$var wire 1 '! subtrator|borrow~13_combout $end
+$var wire 1 (! Mux2~0_combout $end
+$var wire 1 )! Mux2~2_combout $end
+$var wire 1 *! somador|carry~19_combout $end
+$var wire 1 +! Mux1~0_combout $end
+$var wire 1 ,! Mux1~1_combout $end
+$var wire 1 -! Mux1~2_combout $end
+$var wire 1 .! subtrator|borrow~11_combout $end
+$var wire 1 /! subtrator|borrow~14_combout $end
+$var wire 1 0! Mux0~0_combout $end
+$var wire 1 1! Mux0~1_combout $end
+$var wire 1 2! b~combout [15] $end
+$var wire 1 3! b~combout [14] $end
+$var wire 1 4! b~combout [13] $end
+$var wire 1 5! b~combout [12] $end
+$var wire 1 6! b~combout [11] $end
+$var wire 1 7! b~combout [10] $end
+$var wire 1 8! b~combout [9] $end
+$var wire 1 9! b~combout [8] $end
+$var wire 1 :! b~combout [7] $end
+$var wire 1 ;! b~combout [6] $end
+$var wire 1 <! b~combout [5] $end
+$var wire 1 =! b~combout [4] $end
+$var wire 1 >! b~combout [3] $end
+$var wire 1 ?! b~combout [2] $end
+$var wire 1 @! b~combout [1] $end
+$var wire 1 A! b~combout [0] $end
+$var wire 1 B! somador|resultado_soma [15] $end
+$var wire 1 C! somador|resultado_soma [14] $end
+$var wire 1 D! somador|resultado_soma [13] $end
+$var wire 1 E! somador|resultado_soma [12] $end
+$var wire 1 F! somador|resultado_soma [11] $end
+$var wire 1 G! somador|resultado_soma [10] $end
+$var wire 1 H! somador|resultado_soma [9] $end
+$var wire 1 I! somador|resultado_soma [8] $end
+$var wire 1 J! somador|resultado_soma [7] $end
+$var wire 1 K! somador|resultado_soma [6] $end
+$var wire 1 L! somador|resultado_soma [5] $end
+$var wire 1 M! somador|resultado_soma [4] $end
+$var wire 1 N! somador|resultado_soma [3] $end
+$var wire 1 O! somador|resultado_soma [2] $end
+$var wire 1 P! somador|resultado_soma [1] $end
+$var wire 1 Q! somador|resultado_soma [0] $end
+$var wire 1 R! operador~combout [1] $end
+$var wire 1 S! operador~combout [0] $end
+$var wire 1 T! a~combout [15] $end
+$var wire 1 U! a~combout [14] $end
+$var wire 1 V! a~combout [13] $end
+$var wire 1 W! a~combout [12] $end
+$var wire 1 X! a~combout [11] $end
+$var wire 1 Y! a~combout [10] $end
+$var wire 1 Z! a~combout [9] $end
+$var wire 1 [! a~combout [8] $end
+$var wire 1 \! a~combout [7] $end
+$var wire 1 ]! a~combout [6] $end
+$var wire 1 ^! a~combout [5] $end
+$var wire 1 _! a~combout [4] $end
+$var wire 1 `! a~combout [3] $end
+$var wire 1 a! a~combout [2] $end
+$var wire 1 b! a~combout [1] $end
+$var wire 1 c! a~combout [0] $end
+$var wire 1 d! subtrator|resultsubt [15] $end
+$var wire 1 e! subtrator|resultsubt [14] $end
+$var wire 1 f! subtrator|resultsubt [13] $end
+$var wire 1 g! subtrator|resultsubt [12] $end
+$var wire 1 h! subtrator|resultsubt [11] $end
+$var wire 1 i! subtrator|resultsubt [10] $end
+$var wire 1 j! subtrator|resultsubt [9] $end
+$var wire 1 k! subtrator|resultsubt [8] $end
+$var wire 1 l! subtrator|resultsubt [7] $end
+$var wire 1 m! subtrator|resultsubt [6] $end
+$var wire 1 n! subtrator|resultsubt [5] $end
+$var wire 1 o! subtrator|resultsubt [4] $end
+$var wire 1 p! subtrator|resultsubt [3] $end
+$var wire 1 q! subtrator|resultsubt [2] $end
+$var wire 1 r! subtrator|resultsubt [1] $end
+$var wire 1 s! subtrator|resultsubt [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1110 !
+b1010 "
+b10 #
+03
+02
+11
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+x4
+05
+16
+x7
+18
+19
+1:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+1H
+0I
+1J
+0K
+1L
+1M
+1N
+1O
+0P
+1Q
+0R
+0S
+0T
+0U
+1V
+0W
+0X
+1Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+1&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+0A!
+1@!
+0?!
+1>!
+0=!
+0<!
+0;!
+0:!
+09!
+08!
+07!
+06!
+05!
+04!
+03!
+02!
+zQ!
+zP!
+zO!
+zN!
+zM!
+zL!
+zK!
+zJ!
+zI!
+zH!
+zG!
+zF!
+zE!
+zD!
+zC!
+0B!
+0S!
+1R!
+0c!
+1b!
+1a!
+1`!
+0_!
+0^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+0W!
+0V!
+0U!
+0T!
+zs!
+zr!
+zq!
+zp!
+zo!
+zn!
+zm!
+zl!
+zk!
+zj!
+zi!
+zh!
+zg!
+zf!
+ze!
+0d!
+$end
+#1000000

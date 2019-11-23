@@ -1,0 +1,34 @@
+ 
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity subtrator is
+	generic(numero_de_bits : positive := 16);
+	
+	port(a: in std_logic_vector(numero_de_bits-1 downto 0);
+		  b: in std_logic_vector(numero_de_bits-1 downto 0);
+		  resultsubt: out std_logic_vector(numero_de_bits-1 downto 0));
+end entity;
+
+architecture behavior of subtrator is 
+
+begin		
+
+	process (a, b)
+		variable borrow: std_logic; 
+		begin
+					
+			for i in 0 to numero_de_bits-1 loop
+				resultsubt(i)<= (a(i) xor b(i) xor borrow); -- se o resultado for 0 - 1 = 11, o c recebe o bit menos significativo, no caso o '0'
+				borrow := (not a(i) and  b(i)) or (not a(i) and borrow) or (b(i) and borrow);
+
+			end loop;
+		
+			
+		end process;
+		
+		
+		
+		
+end architecture;
