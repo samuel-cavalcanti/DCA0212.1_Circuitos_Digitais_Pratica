@@ -12,7 +12,7 @@
 # Componentes do processador
 
 - [ ] Bloco de controle (decodificador)
-- [ ] Memória D
+- [x] Memória D (gambiarra)
 - [ ] Banco de registradores
 - [x] Registrador de instrução
 - [x] PC

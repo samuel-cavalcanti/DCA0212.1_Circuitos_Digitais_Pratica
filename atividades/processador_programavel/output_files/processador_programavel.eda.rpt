@@ -1,5 +1,5 @@
 EDA Netlist Writer report for processador_programavel
-Sat Nov 23 22:21:41 2019
+Sat Nov 23 23:46:59 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Nov 23 22:21:41 2019 ;
+; EDA Netlist Writer Status ; Successful - Sat Nov 23 23:46:59 2019 ;
 ; Revision Name             ; processador_programavel               ;
-; Top-level Entity Name     ; comparador                            ;
+; Top-level Entity Name     ; memoriaD                              ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 23 22:21:40 2019
+    Info: Processing started: Sat Nov 23 23:46:57 2019
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog processador_programavel -c processador_programavel
 Info (204019): Generated file processador_programavel.vo in folder "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 321 megabytes
-    Info: Processing ended: Sat Nov 23 22:21:41 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 343 megabytes
+    Info: Processing ended: Sat Nov 23 23:46:59 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

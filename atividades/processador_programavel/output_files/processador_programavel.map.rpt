@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_programavel
-Sat Nov 23 22:19:52 2019
+Sat Nov 23 23:41:49 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,7 +14,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |comparador
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |memoriaD
  10. Elapsed Time Per Partition
  11. Analysis & Synthesis Messages
 
@@ -42,16 +42,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 23 22:19:52 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 23 23:41:48 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador_programavel                         ;
-; Top-level Entity Name              ; comparador                                      ;
+; Top-level Entity Name              ; memoriaD                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 5                                               ;
-;     Total combinational functions  ; 5                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 17                                              ;
+; Total logic elements               ; 7,105                                           ;
+;     Total combinational functions  ; 3,009                                           ;
+;     Dedicated logic registers      ; 4,112                                           ;
+; Total registers                    ; 4112                                            ;
+; Total pins                         ; 44                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -65,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value           ;
 +----------------------------------------------------------------------------+--------------------+-------------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                         ;
-; Top-level entity name                                                      ; comparador         ; processador_programavel ;
+; Top-level entity name                                                      ; memoriaD           ; processador_programavel ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX           ;
 ; Use smart compilation                                                      ; Off                ; Off                     ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                      ;
@@ -155,43 +155,43 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                        ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
-; comparator/comparador.vhd        ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/comparator/comparador.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; memory/memoriaD.vhd              ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/memory/memoriaD.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 5        ;
-;                                             ;          ;
-; Total combinational functions               ; 5        ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 5        ;
-;     -- 3 input functions                    ; 0        ;
-;     -- <=2 input functions                  ; 0        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 5        ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 17       ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; Equal0~0 ;
-; Maximum fan-out                             ; 1        ;
-; Total fan-out                               ; 21       ;
-; Average fan-out                             ; 0.95     ;
-+---------------------------------------------+----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 7,105 ;
+;                                             ;       ;
+; Total combinational functions               ; 3009  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 2752  ;
+;     -- 3 input functions                    ; 256   ;
+;     -- <=2 input functions                  ; 1     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 3009  ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 4112  ;
+;     -- Dedicated logic registers            ; 4112  ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 44    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 4112  ;
+; Total fan-out                               ; 24130 ;
+; Average fan-out                             ; 3.37  ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -199,7 +199,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |comparador                ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |comparador         ; work         ;
+; |memoriaD                  ; 3009 (3009)       ; 4112 (4112)  ; 0           ; 0            ; 0       ; 0         ; 44   ; 0            ; |memoriaD           ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -209,23 +209,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 4112  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 4112  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |comparador ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; numero_de_bits ; 16    ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |memoriaD ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; numero_de_bits ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -234,7 +234,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -244,7 +244,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 23 22:19:50 2019
+    Info: Processing started: Sat Nov 23 23:41:33 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_programavel -c processador_programavel
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file ALU/somador.vhd
@@ -277,17 +277,24 @@ Info (12021): Found 2 design units, including 1 entities, in source file process
 Info (12021): Found 2 design units, including 1 entities, in source file comparator/comparador.vhd
     Info (12022): Found design unit 1: comparador-behavior
     Info (12023): Found entity 1: comparador
-Info (12127): Elaborating entity "comparador" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file memory/memoriaD.vhd
+    Info (12022): Found design unit 1: memoriaD-behavior
+    Info (12023): Found entity 1: memoriaD
+Info (12127): Elaborating entity "memoriaD" for the top level hierarchy
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "memoria" is uninferred due to asynchronous read logic
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 384 megabytes
-    Info: Processing ended: Sat Nov 23 22:19:52 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "endereco[8]"
+Info (21057): Implemented 7149 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 28 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 7105 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 390 megabytes
+    Info: Processing ended: Sat Nov 23 23:41:49 2019
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
 
 
