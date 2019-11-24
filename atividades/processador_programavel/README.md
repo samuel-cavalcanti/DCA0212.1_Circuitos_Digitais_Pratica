@@ -15,7 +15,7 @@
 - [ ] Memória D
 - [ ] Banco de registradores
 - [x] Registrador de instrução
-- [ ] PC
+- [x] PC
 - [ ] Comparador
 - [x] ULA
 - [x] Mux 3x1 16 bits

@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity somador is
+	generic(numero_de_bits : positive := 16);
+	
+	port(a: in std_logic_vector(numero_de_bits-1 downto 0);
+		  b: in std_logic_vector(numero_de_bits-1 downto 0);
+		  resultado_soma: out std_logic_vector(numero_de_bits-1 downto 0));
+end entity;
+
+architecture behavior of somador is
+begin
+	process (a, b)
+		variable carry: std_logic; -- c é o vetor com todos os 'vai 1', carry
+		begin
+			carry := '0';
+			
+			for i in 0 to numero_de_bits-1 loop
+				resultado_soma(i) <= a(i) xor b(i) xor carry ;
+				carry := (a(i) and carry) or (b(i) and carry) or (a(i) and b(i)) ;
+			end loop;
+
+	
+	end process;
+
+			
+			
+	
+end architecture;

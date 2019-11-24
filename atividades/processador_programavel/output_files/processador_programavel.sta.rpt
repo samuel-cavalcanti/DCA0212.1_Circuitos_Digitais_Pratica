@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for processador_programavel
-Sat Nov 23 03:23:45 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Sat Nov 23 22:04:27 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -205,9 +205,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 23 03:23:45 2019
+    Info: Processing started: Sat Nov 23 22:04:26 2019
 Info: Command: quartus_sta processador_programavel -c processador_programavel
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -239,10 +239,10 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 485 megabytes
-    Info: Processing ended: Sat Nov 23 03:23:45 2019
-    Info: Elapsed time: 00:00:00
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 300 megabytes
+    Info: Processing ended: Sat Nov 23 22:04:27 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

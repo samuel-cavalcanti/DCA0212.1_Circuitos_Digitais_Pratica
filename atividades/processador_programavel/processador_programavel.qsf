@@ -49,22 +49,18 @@ set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name VHDL_FILE ../register_bank/register_bank.vhd
-set_global_assignment -name VHDL_FILE ../register_bank/simple_register.vhd
-set_global_assignment -name VHDL_FILE ../register_bank/four_ors.vhd
-set_global_assignment -name VHDL_FILE ../register_bank/demux2to4.vhd
-set_global_assignment -name VHDL_FILE ula.vhd
-set_global_assignment -name VHDL_FILE somador.vhd
-set_global_assignment -name VHDL_FILE subtrator.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE ula_teste.vwf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/contador_de_programa.vwf"
+set_global_assignment -name VHDL_FILE ALU/somador.vhd
+set_global_assignment -name VHDL_FILE ALU/subtrator.vhd
+set_global_assignment -name VHDL_FILE ALU/ula.vhd
+set_global_assignment -name VHDL_FILE program_counter/contador_de_programa.vhd
+set_global_assignment -name VHDL_FILE program_counter/soma_1.vhd
+set_global_assignment -name VHDL_FILE mux3x1/mux_3x1.vhd
+set_global_assignment -name VHDL_FILE instruction_register/registrador_de_instrucao.vhd
+set_global_assignment -name VHDL_FILE registrador.vhd
 set_global_assignment -name VHDL_FILE processador_programavel.vhd
-set_global_assignment -name VHDL_FILE mux_3x1.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE mux3x1.vwf
-set_global_assignment -name VHDL_FILE registrador_de_instrucao.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE registrador_de_instrucao.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/registrador_de_instrucao.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

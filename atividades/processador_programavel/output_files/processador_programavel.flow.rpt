@@ -1,6 +1,6 @@
 Flow report for processador_programavel
-Sat Nov 23 03:23:48 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Sat Nov 23 22:04:30 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -40,8 +40,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat Nov 23 03:23:48 2019           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Flow Status                        ; Successful - Sat Nov 23 22:04:30 2019           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador_programavel                         ;
 ; Top-level Entity Name              ; processador_programavel                         ;
 ; Family                             ; Cyclone II                                      ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 11/23/2019 03:23:31     ;
+; Start date & time ; 11/23/2019 22:04:07     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; processador_programavel ;
 +-------------------+-------------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                     ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.157449021122960         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.157455744719090         ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                        ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl               ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog) ; <None>        ; --          ; --             ;
@@ -93,12 +93,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 595 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 704 MB              ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 554 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 480 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 777 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 366 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 472 MB              ; 00:00:06                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 345 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 300 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 298 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

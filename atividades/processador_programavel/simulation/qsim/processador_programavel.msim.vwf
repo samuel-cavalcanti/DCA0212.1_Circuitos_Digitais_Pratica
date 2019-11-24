@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|carregar")
+SIGNAL("contador_de_programa_vlg_vec_tst|clock")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -42,7 +42,37 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|carregar")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada")
+SIGNAL("contador_de_programa_vlg_vec_tst|escrever")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|incrementar_registrador")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|limpar_registrador")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -52,167 +82,167 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[15]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[14]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[13]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[12]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[11]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[10]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[9]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[8]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[7]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[6]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[5]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[4]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[3]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[2]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[1]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[0]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	PARENT = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[15]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -222,7 +252,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[15]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[14]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -232,7 +262,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[14]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[13]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -242,7 +272,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[13]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[12]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -252,7 +282,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[12]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[11]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -262,7 +292,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[11]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[10]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -272,7 +302,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[10]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[9]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -282,7 +312,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[9]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[8]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -292,7 +322,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[8]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[7]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -302,7 +332,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[7]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[6]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -312,7 +342,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[6]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[5]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -322,7 +352,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[5]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[4]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -332,7 +362,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[4]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[3]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -342,7 +372,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[3]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[2]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -352,7 +382,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[2]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[1]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -362,7 +392,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[1]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[0]")
+SIGNAL("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -372,7 +402,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|memoria[0]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|sampler")
+SIGNAL("contador_de_programa_vlg_vec_tst|sampler")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -382,7 +412,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|sampler")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|gnd")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|gnd")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -392,7 +422,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|gnd")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|vcc")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|vcc")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -402,7 +432,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|vcc")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|unknown")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|unknown")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -412,7 +442,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|unknown")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|devclrn")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|devclrn")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -422,7 +452,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|devclrn")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|devpor")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|devpor")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -432,7 +462,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|devpor")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|devoe")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|devoe")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -442,7 +472,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|devoe")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|carregar~combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|clock~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -452,7 +482,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|carregar~combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|carregar~clkctrl_outclk")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|clock~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -462,7 +492,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|carregar~clkctrl_outclk")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[0]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]~16_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -472,7 +502,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[0]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|limpar_registrador~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -482,7 +512,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|limpar_registrador~clkctrl_outclk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -492,7 +522,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|incrementar_registrador~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -502,7 +532,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|escrever~combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -512,7 +542,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]~17")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -522,7 +552,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]~18_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -532,7 +562,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]~19")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -542,7 +572,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]~20_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -552,7 +582,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[5]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]~21")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -562,7 +592,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[5]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[6]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]~22_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -572,7 +602,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[6]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[7]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]~23")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -582,7 +612,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[7]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[7]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]~24_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -592,7 +622,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[7]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[8]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]~25")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -602,7 +632,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[8]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[8]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]~26_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -612,7 +642,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[8]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[9]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]~27")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -622,7 +652,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[9]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[9]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]~28_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -632,7 +662,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[9]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[10]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]~29")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -642,7 +672,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[10]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[10]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]~30_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -652,7 +682,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[10]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[11]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]~31")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -662,7 +692,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[11]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[11]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]~32_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -672,7 +702,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[11]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[12]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]~33")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -682,7 +712,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[12]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[12]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]~34_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -692,7 +722,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[12]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[13]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]~35")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -702,7 +732,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[13]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[13]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]~36_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -712,7 +742,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[13]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[14]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]~37")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -722,7 +752,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[14]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[14]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]~38_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -732,7 +762,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[14]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[15]~reg0feeder_combout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]~39")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -742,7 +772,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[15]~reg0feeder_combout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[15]~reg0_regout")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]~40_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -752,7 +782,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|memoria[15]~reg0_regout")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[15]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]~41")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -762,7 +792,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[15]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[14]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]~42_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -772,7 +802,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[14]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[13]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]~43")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -782,7 +812,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[13]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[12]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]~44_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -792,7 +822,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[12]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[11]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]~45")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -802,7 +832,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[11]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[10]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[15]~46_combout")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -812,7 +842,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[10]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[9]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -822,7 +852,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[9]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[8]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -832,7 +862,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[8]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[7]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -842,7 +872,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[7]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[6]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -852,7 +882,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[6]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[5]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -862,7 +892,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[5]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[4]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -872,7 +902,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[4]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[3]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -882,7 +912,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[3]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[2]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -892,7 +922,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[2]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[1]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -902,7 +932,7 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[1]")
 	PARENT = "";
 }
 
-SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[0]")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -912,524 +942,285 @@ SIGNAL("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[0]")
 	PARENT = "";
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|carregar")
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|clock")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[15]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[15]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 990.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 990.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 990.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|memoria[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 990.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|sampler")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|gnd")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|vcc")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|escrever")
 {
 	NODE
 	{
@@ -1438,7 +1229,420 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|vcc")
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|unknown")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|incrementar_registrador")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 270.0;
+		LEVEL 0 FOR 690.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|limpar_registrador")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 280.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_da_soma_jump[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 680.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 680.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|saida_contador_de_programa[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 440.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|sampler")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|gnd")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|vcc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|unknown")
 {
 	NODE
 	{
@@ -1447,7 +1651,7 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|unknown")
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|devclrn")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|devclrn")
 {
 	NODE
 	{
@@ -1456,7 +1660,7 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|devclrn")
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|devpor")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|devpor")
 {
 	NODE
 	{
@@ -1465,7 +1669,7 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|devpor")
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|devoe")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|devoe")
 {
 	NODE
 	{
@@ -1474,233 +1678,174 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|devoe")
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|carregar~combout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|clock~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|carregar~clkctrl_outclk")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|clock~clkctrl_outclk")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[0]~reg0_regout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]~16_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 990.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 440.0;
+		LEVEL 0 FOR 260.0;
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0feeder_combout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|limpar_registrador~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 280.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|limpar_registrador~clkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 280.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|incrementar_registrador~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 270.0;
+		LEVEL 0 FOR 690.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|escrever~combout")
 {
 	NODE
 	{
@@ -1709,17 +1854,126 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0feeder_c
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0_regout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]~17")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 990.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 440.0;
+		LEVEL 1 FOR 260.0;
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0feeder_combout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]~18_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 680.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]~19")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 520.0;
+		LEVEL 0 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]~20_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 680.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]~21")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 680.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]~22_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]~23")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 680.0;
+		LEVEL 0 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]~24_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 300.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]~25")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]~26_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]~27")
 {
 	NODE
 	{
@@ -1728,17 +1982,34 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0feeder_c
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0_regout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]~28_combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 990.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0feeder_combout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]~29")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]~30_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]~31")
 {
 	NODE
 	{
@@ -1747,17 +2018,7 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0feeder_c
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 990.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0feeder_combout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]~32_combout")
 {
 	NODE
 	{
@@ -1766,7 +2027,7 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0feeder_c
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0_regout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]~33")
 {
 	NODE
 	{
@@ -1775,7 +2036,7 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0_regout"
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[5]~reg0_regout")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]~34_combout")
 {
 	NODE
 	{
@@ -1784,286 +2045,7 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[5]~reg0_regout"
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[6]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[7]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[7]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[8]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[8]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[9]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[9]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[10]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[10]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[11]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[11]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[12]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[12]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[13]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[13]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[14]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[14]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[15]~reg0feeder_combout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|memoria[15]~reg0_regout")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[15]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[3]")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]~35")
 {
 	NODE
 	{
@@ -2072,7 +2054,34 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[2]")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]~36_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]~37")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]~38_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]~39")
 {
 	NODE
 	{
@@ -2081,7 +2090,34 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[1]")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]~40_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]~41")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]~42_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]~43")
 {
 	NODE
 	{
@@ -2090,18 +2126,350 @@ TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout
 	}
 }
 
-TRANSITION_LIST("registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[0]")
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]~44_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]~45")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[15]~46_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 260.0;
+		LEVEL 0 FOR 680.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 680.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 420.0;
+		LEVEL 1 FOR 260.0;
+	}
+}
+
+TRANSITION_LIST("contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 440.0;
+		LEVEL 1 FOR 260.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|carregar";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|clock";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -2110,204 +2478,204 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|escrever";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
-	CHILDREN = 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[15]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|incrementar_registrador";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
-	TREE_LEVEL = 1;
-	PARENT = 1;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[14]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|limpar_registrador";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
-	TREE_LEVEL = 1;
-	PARENT = 1;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[13]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
-	TREE_LEVEL = 1;
-	PARENT = 1;
+	TREE_LEVEL = 0;
+	CHILDREN = 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[12]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[11]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[10]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[9]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[8]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[7]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[6]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[5]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[4]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[3]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[2]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[1]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|dado_de_entrada[0]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[15]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[14]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[13]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_da_soma_jump[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[12]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -2316,7 +2684,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[11]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
@@ -2325,7 +2693,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[10]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
@@ -2334,7 +2702,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[9]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 24;
@@ -2343,7 +2711,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[8]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -2352,7 +2720,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[7]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;
@@ -2361,7 +2729,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[6]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 27;
@@ -2370,7 +2738,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[5]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 28;
@@ -2379,7 +2747,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[4]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 29;
@@ -2388,7 +2756,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[3]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 30;
@@ -2397,7 +2765,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[2]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 31;
@@ -2406,7 +2774,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[1]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 32;
@@ -2415,7 +2783,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|memoria[0]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 33;
@@ -2424,7 +2792,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|sampler";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 34;
@@ -2433,7 +2801,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|gnd";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 35;
@@ -2442,7 +2810,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|vcc";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|saida_contador_de_programa[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 36;
@@ -2451,7 +2819,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|unknown";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|sampler";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 37;
@@ -2460,7 +2828,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|devclrn";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|gnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 38;
@@ -2469,7 +2837,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|devpor";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|vcc";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 39;
@@ -2478,7 +2846,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|devoe";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|unknown";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 40;
@@ -2487,7 +2855,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|carregar~combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|devclrn";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 41;
@@ -2496,7 +2864,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|carregar~clkctrl_outclk";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|devpor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 42;
@@ -2505,7 +2873,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[0]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|devoe";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 43;
@@ -2514,7 +2882,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|clock~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 44;
@@ -2523,7 +2891,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[1]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|clock~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 45;
@@ -2532,7 +2900,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]~16_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 46;
@@ -2541,7 +2909,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[2]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|limpar_registrador~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 47;
@@ -2550,7 +2918,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|limpar_registrador~clkctrl_outclk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 48;
@@ -2559,7 +2927,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[3]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|incrementar_registrador~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
@@ -2568,7 +2936,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|escrever~combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -2577,7 +2945,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[4]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]~17";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -2586,7 +2954,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[5]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]~18_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -2595,7 +2963,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[6]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]~19";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -2604,7 +2972,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[7]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]~20_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
@@ -2613,7 +2981,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[7]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]~21";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
@@ -2622,7 +2990,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[8]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]~22_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
@@ -2631,7 +2999,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[8]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]~23";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
@@ -2640,7 +3008,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[9]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]~24_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
@@ -2649,7 +3017,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[9]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]~25";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
@@ -2658,7 +3026,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[10]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]~26_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
@@ -2667,7 +3035,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[10]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]~27";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
@@ -2676,7 +3044,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[11]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]~28_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
@@ -2685,7 +3053,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[11]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]~29";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 63;
@@ -2694,7 +3062,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[12]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]~30_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 64;
@@ -2703,7 +3071,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[12]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]~31";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 65;
@@ -2712,7 +3080,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[13]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]~32_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 66;
@@ -2721,7 +3089,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[13]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]~33";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 67;
@@ -2730,7 +3098,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[14]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]~34_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 68;
@@ -2739,7 +3107,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[14]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]~35";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 69;
@@ -2748,7 +3116,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[15]~reg0feeder_combout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]~36_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 70;
@@ -2757,7 +3125,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|memoria[15]~reg0_regout";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]~37";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 71;
@@ -2766,7 +3134,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[15]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]~38_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 72;
@@ -2775,7 +3143,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[14]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]~39";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 73;
@@ -2784,7 +3152,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[13]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]~40_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 74;
@@ -2793,7 +3161,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[12]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]~41";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 75;
@@ -2802,7 +3170,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[11]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]~42_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 76;
@@ -2811,7 +3179,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[10]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]~43";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 77;
@@ -2820,7 +3188,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[9]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]~44_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 78;
@@ -2829,7 +3197,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[8]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]~45";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 79;
@@ -2838,7 +3206,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[7]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[15]~46_combout";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 80;
@@ -2847,7 +3215,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[6]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 81;
@@ -2856,7 +3224,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[5]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 82;
@@ -2865,7 +3233,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[4]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 83;
@@ -2874,7 +3242,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[3]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 84;
@@ -2883,7 +3251,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[2]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 85;
@@ -2892,7 +3260,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[1]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 86;
@@ -2901,10 +3269,235 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "registrador_de_instrucao_vlg_vec_tst|i1|dado_de_entrada~combout[0]";
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 87;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 88;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 89;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 90;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 91;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 92;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 93;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 94;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 95;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|saida_da_soma_jump~combout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 96;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 97;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 98;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 99;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 100;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 101;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 102;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 103;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 104;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 105;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 106;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 107;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 108;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 109;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 110;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 111;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "contador_de_programa_vlg_vec_tst|i1|registrador|memoria[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 112;
 	TREE_LEVEL = 0;
 }
 ;

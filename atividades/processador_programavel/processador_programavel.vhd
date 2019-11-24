@@ -23,16 +23,9 @@ signal constate : std_logic_vector(8 downto 0);
 signal mux_seletor :Std_logic_vector (1 downto 0);
 signal operador_ula : std_logic_vector(1 downto 0);
 
--- index : in std_logic_vector (3 downto 0);
---		input_data : in std_logic_vector (7 downto 0);
---		write_option : in std_logic;
---		clock : in std_logic;
---		read_option : in std_logic_vector (7 downto 0);
---		output_data : out std_logic_vector (7 downto 0
 
 begin 
 
---	register_banck : entity work.register_banck(behavior)
 	
 	ula : entity work.ula(behavior)
 		generic map ( numero_de_bits)
@@ -46,6 +39,7 @@ begin
 		generic map (numero_de_bits)
 		port map (saida_da_memoria_de_instrucao,
 					 carregar_registrador_de_intrucao,
+					 clock,
 					 saida_do_registrador_de_intrucao);
 		
 		
