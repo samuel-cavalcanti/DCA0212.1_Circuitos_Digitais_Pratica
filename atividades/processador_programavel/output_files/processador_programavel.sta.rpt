@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for processador_programavel
-Sat Nov 23 22:04:27 2019
+Sat Nov 23 22:20:07 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,19 +16,23 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Datasheet Report
- 12. Fast Model Setup Summary
- 13. Fast Model Hold Summary
- 14. Fast Model Recovery Summary
- 15. Fast Model Removal Summary
- 16. Fast Model Minimum Pulse Width Summary
- 17. Fast Model Datasheet Report
- 18. Multicorner Timing Analysis Summary
- 19. Clock Transfers
- 20. Report TCCS
- 21. Report RSKM
- 22. Unconstrained Paths
- 23. TimeQuest Timing Analyzer Messages
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
 
 
 
@@ -117,10 +121,52 @@ No paths to report.
 No paths to report.
 
 
--------------------------------
-; Slow Model Datasheet Report ;
--------------------------------
-Nothing to report.
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++---------------+------------------+----+--------+--------+----+
+; Input Port    ; Output Port      ; RR ; RF     ; FR     ; FF ;
++---------------+------------------+----+--------+--------+----+
+; saida_ula[0]  ; saida_comparador ;    ; 9.278  ; 9.278  ;    ;
+; saida_ula[1]  ; saida_comparador ;    ; 8.965  ; 8.965  ;    ;
+; saida_ula[2]  ; saida_comparador ;    ; 11.010 ; 11.010 ;    ;
+; saida_ula[3]  ; saida_comparador ;    ; 12.588 ; 12.588 ;    ;
+; saida_ula[4]  ; saida_comparador ;    ; 11.269 ; 11.269 ;    ;
+; saida_ula[5]  ; saida_comparador ;    ; 11.141 ; 11.141 ;    ;
+; saida_ula[6]  ; saida_comparador ;    ; 12.279 ; 12.279 ;    ;
+; saida_ula[7]  ; saida_comparador ;    ; 11.787 ; 11.787 ;    ;
+; saida_ula[8]  ; saida_comparador ;    ; 11.374 ; 11.374 ;    ;
+; saida_ula[9]  ; saida_comparador ;    ; 11.033 ; 11.033 ;    ;
+; saida_ula[10] ; saida_comparador ;    ; 11.570 ; 11.570 ;    ;
+; saida_ula[11] ; saida_comparador ;    ; 11.497 ; 11.497 ;    ;
+; saida_ula[12] ; saida_comparador ;    ; 11.299 ; 11.299 ;    ;
+; saida_ula[13] ; saida_comparador ;    ; 11.192 ; 11.192 ;    ;
+; saida_ula[14] ; saida_comparador ;    ; 11.101 ; 11.101 ;    ;
+; saida_ula[15] ; saida_comparador ;    ; 11.174 ; 11.174 ;    ;
++---------------+------------------+----+--------+--------+----+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++---------------+------------------+----+--------+--------+----+
+; Input Port    ; Output Port      ; RR ; RF     ; FR     ; FF ;
++---------------+------------------+----+--------+--------+----+
+; saida_ula[0]  ; saida_comparador ;    ; 9.278  ; 9.278  ;    ;
+; saida_ula[1]  ; saida_comparador ;    ; 8.965  ; 8.965  ;    ;
+; saida_ula[2]  ; saida_comparador ;    ; 11.010 ; 11.010 ;    ;
+; saida_ula[3]  ; saida_comparador ;    ; 12.588 ; 12.588 ;    ;
+; saida_ula[4]  ; saida_comparador ;    ; 11.269 ; 11.269 ;    ;
+; saida_ula[5]  ; saida_comparador ;    ; 11.141 ; 11.141 ;    ;
+; saida_ula[6]  ; saida_comparador ;    ; 12.279 ; 12.279 ;    ;
+; saida_ula[7]  ; saida_comparador ;    ; 11.787 ; 11.787 ;    ;
+; saida_ula[8]  ; saida_comparador ;    ; 11.374 ; 11.374 ;    ;
+; saida_ula[9]  ; saida_comparador ;    ; 11.033 ; 11.033 ;    ;
+; saida_ula[10] ; saida_comparador ;    ; 11.570 ; 11.570 ;    ;
+; saida_ula[11] ; saida_comparador ;    ; 11.497 ; 11.497 ;    ;
+; saida_ula[12] ; saida_comparador ;    ; 11.299 ; 11.299 ;    ;
+; saida_ula[13] ; saida_comparador ;    ; 11.192 ; 11.192 ;    ;
+; saida_ula[14] ; saida_comparador ;    ; 11.101 ; 11.101 ;    ;
+; saida_ula[15] ; saida_comparador ;    ; 11.174 ; 11.174 ;    ;
++---------------+------------------+----+--------+--------+----+
 
 
 ----------------------------
@@ -153,10 +199,52 @@ No paths to report.
 No paths to report.
 
 
--------------------------------
-; Fast Model Datasheet Report ;
--------------------------------
-Nothing to report.
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++---------------+------------------+----+-------+-------+----+
+; Input Port    ; Output Port      ; RR ; RF    ; FR    ; FF ;
++---------------+------------------+----+-------+-------+----+
+; saida_ula[0]  ; saida_comparador ;    ; 4.906 ; 4.906 ;    ;
+; saida_ula[1]  ; saida_comparador ;    ; 4.712 ; 4.712 ;    ;
+; saida_ula[2]  ; saida_comparador ;    ; 6.096 ; 6.096 ;    ;
+; saida_ula[3]  ; saida_comparador ;    ; 6.909 ; 6.909 ;    ;
+; saida_ula[4]  ; saida_comparador ;    ; 6.207 ; 6.207 ;    ;
+; saida_ula[5]  ; saida_comparador ;    ; 6.179 ; 6.179 ;    ;
+; saida_ula[6]  ; saida_comparador ;    ; 6.742 ; 6.742 ;    ;
+; saida_ula[7]  ; saida_comparador ;    ; 6.480 ; 6.480 ;    ;
+; saida_ula[8]  ; saida_comparador ;    ; 6.263 ; 6.263 ;    ;
+; saida_ula[9]  ; saida_comparador ;    ; 6.095 ; 6.095 ;    ;
+; saida_ula[10] ; saida_comparador ;    ; 6.371 ; 6.371 ;    ;
+; saida_ula[11] ; saida_comparador ;    ; 6.343 ; 6.343 ;    ;
+; saida_ula[12] ; saida_comparador ;    ; 6.218 ; 6.218 ;    ;
+; saida_ula[13] ; saida_comparador ;    ; 6.184 ; 6.184 ;    ;
+; saida_ula[14] ; saida_comparador ;    ; 6.151 ; 6.151 ;    ;
+; saida_ula[15] ; saida_comparador ;    ; 6.192 ; 6.192 ;    ;
++---------------+------------------+----+-------+-------+----+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++---------------+------------------+----+-------+-------+----+
+; Input Port    ; Output Port      ; RR ; RF    ; FR    ; FF ;
++---------------+------------------+----+-------+-------+----+
+; saida_ula[0]  ; saida_comparador ;    ; 4.906 ; 4.906 ;    ;
+; saida_ula[1]  ; saida_comparador ;    ; 4.712 ; 4.712 ;    ;
+; saida_ula[2]  ; saida_comparador ;    ; 6.096 ; 6.096 ;    ;
+; saida_ula[3]  ; saida_comparador ;    ; 6.909 ; 6.909 ;    ;
+; saida_ula[4]  ; saida_comparador ;    ; 6.207 ; 6.207 ;    ;
+; saida_ula[5]  ; saida_comparador ;    ; 6.179 ; 6.179 ;    ;
+; saida_ula[6]  ; saida_comparador ;    ; 6.742 ; 6.742 ;    ;
+; saida_ula[7]  ; saida_comparador ;    ; 6.480 ; 6.480 ;    ;
+; saida_ula[8]  ; saida_comparador ;    ; 6.263 ; 6.263 ;    ;
+; saida_ula[9]  ; saida_comparador ;    ; 6.095 ; 6.095 ;    ;
+; saida_ula[10] ; saida_comparador ;    ; 6.371 ; 6.371 ;    ;
+; saida_ula[11] ; saida_comparador ;    ; 6.343 ; 6.343 ;    ;
+; saida_ula[12] ; saida_comparador ;    ; 6.218 ; 6.218 ;    ;
+; saida_ula[13] ; saida_comparador ;    ; 6.184 ; 6.184 ;    ;
+; saida_ula[14] ; saida_comparador ;    ; 6.151 ; 6.151 ;    ;
+; saida_ula[15] ; saida_comparador ;    ; 6.192 ; 6.192 ;    ;
++---------------+------------------+----+-------+-------+----+
 
 
 +----------------------------------------------------------------------------+
@@ -167,6 +255,54 @@ Nothing to report.
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
 ; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++---------------+------------------+----+--------+--------+----+
+; Input Port    ; Output Port      ; RR ; RF     ; FR     ; FF ;
++---------------+------------------+----+--------+--------+----+
+; saida_ula[0]  ; saida_comparador ;    ; 9.278  ; 9.278  ;    ;
+; saida_ula[1]  ; saida_comparador ;    ; 8.965  ; 8.965  ;    ;
+; saida_ula[2]  ; saida_comparador ;    ; 11.010 ; 11.010 ;    ;
+; saida_ula[3]  ; saida_comparador ;    ; 12.588 ; 12.588 ;    ;
+; saida_ula[4]  ; saida_comparador ;    ; 11.269 ; 11.269 ;    ;
+; saida_ula[5]  ; saida_comparador ;    ; 11.141 ; 11.141 ;    ;
+; saida_ula[6]  ; saida_comparador ;    ; 12.279 ; 12.279 ;    ;
+; saida_ula[7]  ; saida_comparador ;    ; 11.787 ; 11.787 ;    ;
+; saida_ula[8]  ; saida_comparador ;    ; 11.374 ; 11.374 ;    ;
+; saida_ula[9]  ; saida_comparador ;    ; 11.033 ; 11.033 ;    ;
+; saida_ula[10] ; saida_comparador ;    ; 11.570 ; 11.570 ;    ;
+; saida_ula[11] ; saida_comparador ;    ; 11.497 ; 11.497 ;    ;
+; saida_ula[12] ; saida_comparador ;    ; 11.299 ; 11.299 ;    ;
+; saida_ula[13] ; saida_comparador ;    ; 11.192 ; 11.192 ;    ;
+; saida_ula[14] ; saida_comparador ;    ; 11.101 ; 11.101 ;    ;
+; saida_ula[15] ; saida_comparador ;    ; 11.174 ; 11.174 ;    ;
++---------------+------------------+----+--------+--------+----+
+
+
++------------------------------------------------------------+
+; Minimum Progagation Delay                                  ;
++---------------+------------------+----+-------+-------+----+
+; Input Port    ; Output Port      ; RR ; RF    ; FR    ; FF ;
++---------------+------------------+----+-------+-------+----+
+; saida_ula[0]  ; saida_comparador ;    ; 4.906 ; 4.906 ;    ;
+; saida_ula[1]  ; saida_comparador ;    ; 4.712 ; 4.712 ;    ;
+; saida_ula[2]  ; saida_comparador ;    ; 6.096 ; 6.096 ;    ;
+; saida_ula[3]  ; saida_comparador ;    ; 6.909 ; 6.909 ;    ;
+; saida_ula[4]  ; saida_comparador ;    ; 6.207 ; 6.207 ;    ;
+; saida_ula[5]  ; saida_comparador ;    ; 6.179 ; 6.179 ;    ;
+; saida_ula[6]  ; saida_comparador ;    ; 6.742 ; 6.742 ;    ;
+; saida_ula[7]  ; saida_comparador ;    ; 6.480 ; 6.480 ;    ;
+; saida_ula[8]  ; saida_comparador ;    ; 6.263 ; 6.263 ;    ;
+; saida_ula[9]  ; saida_comparador ;    ; 6.095 ; 6.095 ;    ;
+; saida_ula[10] ; saida_comparador ;    ; 6.371 ; 6.371 ;    ;
+; saida_ula[11] ; saida_comparador ;    ; 6.343 ; 6.343 ;    ;
+; saida_ula[12] ; saida_comparador ;    ; 6.218 ; 6.218 ;    ;
+; saida_ula[13] ; saida_comparador ;    ; 6.184 ; 6.184 ;    ;
+; saida_ula[14] ; saida_comparador ;    ; 6.151 ; 6.151 ;    ;
+; saida_ula[15] ; saida_comparador ;    ; 6.192 ; 6.192 ;    ;
++---------------+------------------+----+-------+-------+----+
 
 
 -------------------
@@ -194,10 +330,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 0     ; 0    ;
-; Unconstrained Output Port Paths ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 16    ; 16   ;
+; Unconstrained Input Port Paths  ; 16    ; 16   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 16    ; 16   ;
 +---------------------------------+-------+------+
 
 
@@ -207,7 +343,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 23 22:04:26 2019
+    Info: Processing started: Sat Nov 23 22:20:06 2019
 Info: Command: quartus_sta processador_programavel -c processador_programavel
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -237,11 +373,11 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332101): Design is fully constrained for setup requirements
-Info (332101): Design is fully constrained for hold requirements
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 300 megabytes
-    Info: Processing ended: Sat Nov 23 22:04:27 2019
+    Info: Peak virtual memory: 304 megabytes
+    Info: Processing ended: Sat Nov 23 22:20:07 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

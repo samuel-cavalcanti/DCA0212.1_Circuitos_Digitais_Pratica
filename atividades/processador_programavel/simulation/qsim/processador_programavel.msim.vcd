@@ -3,7 +3,7 @@ $comment
 		vcd file processador_programavel.msim.vcd -direction
 $end
 $date
-	Sat Nov 23 21:39:20 2019
+	Sat Nov 23 22:21:41 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,115 +11,66 @@ $end
 $timescale
 	1ps
 $end
-$scope module contador_de_programa_vlg_vec_tst $end
-$var reg 1 ! clock $end
-$var reg 1 " escrever $end
-$var reg 1 # incrementar_registrador $end
-$var reg 1 $ limpar_registrador $end
-$var reg 16 % saida_da_soma_jump [15:0] $end
-$var wire 1 & saida_contador_de_programa [15] $end
-$var wire 1 ' saida_contador_de_programa [14] $end
-$var wire 1 ( saida_contador_de_programa [13] $end
-$var wire 1 ) saida_contador_de_programa [12] $end
-$var wire 1 * saida_contador_de_programa [11] $end
-$var wire 1 + saida_contador_de_programa [10] $end
-$var wire 1 , saida_contador_de_programa [9] $end
-$var wire 1 - saida_contador_de_programa [8] $end
-$var wire 1 . saida_contador_de_programa [7] $end
-$var wire 1 / saida_contador_de_programa [6] $end
-$var wire 1 0 saida_contador_de_programa [5] $end
-$var wire 1 1 saida_contador_de_programa [4] $end
-$var wire 1 2 saida_contador_de_programa [3] $end
-$var wire 1 3 saida_contador_de_programa [2] $end
-$var wire 1 4 saida_contador_de_programa [1] $end
-$var wire 1 5 saida_contador_de_programa [0] $end
-$var wire 1 6 sampler $end
+$scope module comparador_vlg_vec_tst $end
+$var reg 16 ! saida_ula [15:0] $end
+$var wire 1 " saida_comparador $end
+$var wire 1 # sampler $end
 $scope module i1 $end
-$var wire 1 7 gnd $end
-$var wire 1 8 vcc $end
-$var wire 1 9 unknown $end
-$var tri1 1 : devclrn $end
-$var tri1 1 ; devpor $end
-$var tri1 1 < devoe $end
-$var wire 1 = clock~combout $end
-$var wire 1 > clock~clkctrl_outclk $end
-$var wire 1 ? registrador|memoria[0]~16_combout $end
-$var wire 1 @ limpar_registrador~combout $end
-$var wire 1 A limpar_registrador~clkctrl_outclk $end
-$var wire 1 B incrementar_registrador~combout $end
-$var wire 1 C escrever~combout $end
-$var wire 1 D registrador|memoria[0]~17 $end
-$var wire 1 E registrador|memoria[1]~18_combout $end
-$var wire 1 F registrador|memoria[1]~19 $end
-$var wire 1 G registrador|memoria[2]~20_combout $end
-$var wire 1 H registrador|memoria[2]~21 $end
-$var wire 1 I registrador|memoria[3]~22_combout $end
-$var wire 1 J registrador|memoria[3]~23 $end
-$var wire 1 K registrador|memoria[4]~24_combout $end
-$var wire 1 L registrador|memoria[4]~25 $end
-$var wire 1 M registrador|memoria[5]~26_combout $end
-$var wire 1 N registrador|memoria[5]~27 $end
-$var wire 1 O registrador|memoria[6]~28_combout $end
-$var wire 1 P registrador|memoria[6]~29 $end
-$var wire 1 Q registrador|memoria[7]~30_combout $end
-$var wire 1 R registrador|memoria[7]~31 $end
-$var wire 1 S registrador|memoria[8]~32_combout $end
-$var wire 1 T registrador|memoria[8]~33 $end
-$var wire 1 U registrador|memoria[9]~34_combout $end
-$var wire 1 V registrador|memoria[9]~35 $end
-$var wire 1 W registrador|memoria[10]~36_combout $end
-$var wire 1 X registrador|memoria[10]~37 $end
-$var wire 1 Y registrador|memoria[11]~38_combout $end
-$var wire 1 Z registrador|memoria[11]~39 $end
-$var wire 1 [ registrador|memoria[12]~40_combout $end
-$var wire 1 \ registrador|memoria[12]~41 $end
-$var wire 1 ] registrador|memoria[13]~42_combout $end
-$var wire 1 ^ registrador|memoria[13]~43 $end
-$var wire 1 _ registrador|memoria[14]~44_combout $end
-$var wire 1 ` registrador|memoria[14]~45 $end
-$var wire 1 a registrador|memoria[15]~46_combout $end
-$var wire 1 b saida_da_soma_jump~combout [15] $end
-$var wire 1 c saida_da_soma_jump~combout [14] $end
-$var wire 1 d saida_da_soma_jump~combout [13] $end
-$var wire 1 e saida_da_soma_jump~combout [12] $end
-$var wire 1 f saida_da_soma_jump~combout [11] $end
-$var wire 1 g saida_da_soma_jump~combout [10] $end
-$var wire 1 h saida_da_soma_jump~combout [9] $end
-$var wire 1 i saida_da_soma_jump~combout [8] $end
-$var wire 1 j saida_da_soma_jump~combout [7] $end
-$var wire 1 k saida_da_soma_jump~combout [6] $end
-$var wire 1 l saida_da_soma_jump~combout [5] $end
-$var wire 1 m saida_da_soma_jump~combout [4] $end
-$var wire 1 n saida_da_soma_jump~combout [3] $end
-$var wire 1 o saida_da_soma_jump~combout [2] $end
-$var wire 1 p saida_da_soma_jump~combout [1] $end
-$var wire 1 q saida_da_soma_jump~combout [0] $end
-$var wire 1 r registrador|memoria [15] $end
-$var wire 1 s registrador|memoria [14] $end
-$var wire 1 t registrador|memoria [13] $end
-$var wire 1 u registrador|memoria [12] $end
-$var wire 1 v registrador|memoria [11] $end
-$var wire 1 w registrador|memoria [10] $end
-$var wire 1 x registrador|memoria [9] $end
-$var wire 1 y registrador|memoria [8] $end
-$var wire 1 z registrador|memoria [7] $end
-$var wire 1 { registrador|memoria [6] $end
-$var wire 1 | registrador|memoria [5] $end
-$var wire 1 } registrador|memoria [4] $end
-$var wire 1 ~ registrador|memoria [3] $end
-$var wire 1 !! registrador|memoria [2] $end
-$var wire 1 "! registrador|memoria [1] $end
-$var wire 1 #! registrador|memoria [0] $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * Equal0~3_combout $end
+$var wire 1 + Equal0~1_combout $end
+$var wire 1 , Equal0~0_combout $end
+$var wire 1 - Equal0~2_combout $end
+$var wire 1 . Equal0~4_combout $end
+$var wire 1 / saida_ula~combout [15] $end
+$var wire 1 0 saida_ula~combout [14] $end
+$var wire 1 1 saida_ula~combout [13] $end
+$var wire 1 2 saida_ula~combout [12] $end
+$var wire 1 3 saida_ula~combout [11] $end
+$var wire 1 4 saida_ula~combout [10] $end
+$var wire 1 5 saida_ula~combout [9] $end
+$var wire 1 6 saida_ula~combout [8] $end
+$var wire 1 7 saida_ula~combout [7] $end
+$var wire 1 8 saida_ula~combout [6] $end
+$var wire 1 9 saida_ula~combout [5] $end
+$var wire 1 : saida_ula~combout [4] $end
+$var wire 1 ; saida_ula~combout [3] $end
+$var wire 1 < saida_ula~combout [2] $end
+$var wire 1 = saida_ula~combout [1] $end
+$var wire 1 > saida_ula~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0!
+b0 !
 1"
-0#
+x#
 0$
-b1111 %
+1%
+x&
+1'
+1(
+1)
+1*
+1+
+1,
+1-
+1.
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
 05
 04
 03
@@ -127,485 +78,5 @@ b1111 %
 01
 00
 0/
-0.
-0-
-0,
-0+
-0*
-0)
-0(
-0'
-0&
-x6
-07
-18
-x9
-1:
-1;
-1<
-0=
-0>
-1?
-0@
-0A
-0B
-1C
-0D
-0E
-1F
-0G
-0H
-0I
-1J
-0K
-0L
-0M
-1N
-0O
-0P
-0Q
-1R
-0S
-0T
-0U
-1V
-0W
-0X
-0Y
-1Z
-0[
-0\
-0]
-1^
-0_
-0`
-0a
-1q
-1p
-1o
-1n
-0m
-0l
-0k
-0j
-0i
-0h
-0g
-0f
-0e
-0d
-0c
-0b
-0#!
-0"!
-0!!
-0~
-0}
-0|
-0{
-0z
-0y
-0x
-0w
-0v
-0u
-0t
-0s
-0r
 $end
-#20000
-1!
-1=
-1>
-06
-1~
-1!!
-1"!
-1#!
-1I
-1G
-1E
-1D
-0?
-12
-13
-14
-15
-0F
-0E
-1H
-0G
-0J
-0I
-1K
-#40000
-1#
-0!
-1B
-0=
-0>
-16
-#60000
-1!
-1=
-1>
-06
-1}
-0~
-0!!
-0"!
-0#!
-1L
-0K
-1J
-1I
-0H
-1G
-1F
-1E
-0D
-1?
-11
-02
-03
-04
-05
-1M
-0L
-1K
-0I
-0G
-0E
-0M
-#80000
-0!
-0=
-0>
-16
-#100000
-1!
-1=
-1>
-06
-1#!
-1D
-0?
-15
-1E
-#120000
-0!
-0=
-0>
-16
-#140000
-1!
-1=
-1>
-06
-1"!
-0#!
-0F
-0E
-0D
-1?
-14
-05
-1G
-1F
-1E
-0G
-#160000
-0!
-0=
-0>
-16
-#180000
-1!
-1=
-1>
-06
-1#!
-1D
-0?
-15
-0F
-0E
-1G
-#200000
-0!
-0=
-0>
-16
-#220000
-1!
-1=
-1>
-06
-1!!
-0"!
-0#!
-1H
-0G
-1F
-1E
-0D
-1?
-13
-04
-05
-1I
-0H
-1G
-0E
-0I
-#240000
-0!
-0=
-0>
-16
-#260000
-1!
-1=
-1>
-06
-1#!
-1D
-0?
-15
-1E
-#280000
-0!
-0=
-0>
-16
-#300000
-1!
-1=
-1>
-06
-1"!
-0#!
-0F
-0E
-0D
-1?
-14
-05
-1H
-0G
-1F
-1E
-1I
-0H
-1G
-0I
-#310000
-0#
-0B
-16
-#320000
-1$
-0!
-1@
-0=
-0>
-1A
-06
-0}
-0!!
-0"!
-0K
-0G
-0E
-01
-03
-04
-#340000
-1!
-1=
-1>
-16
-#360000
-0!
-0=
-0>
-06
-#380000
-1!
-1=
-1>
-16
-#400000
-0!
-0=
-0>
-06
-#420000
-1!
-1=
-1>
-16
-#440000
-0!
-0=
-0>
-06
-#460000
-1!
-1=
-1>
-16
-#480000
-0!
-0=
-0>
-06
-#500000
-1!
-1=
-1>
-16
-#520000
-0!
-0=
-0>
-06
-#540000
-1!
-1=
-1>
-16
-#560000
-0!
-0=
-0>
-06
-#580000
-1!
-1=
-1>
-16
-#600000
-0!
-0=
-0>
-06
-#620000
-1!
-1=
-1>
-16
-#640000
-0!
-0=
-0>
-06
-#660000
-1!
-1=
-1>
-16
-#680000
-0!
-0=
-0>
-06
-#700000
-1!
-1=
-1>
-16
-#720000
-0$
-0!
-0@
-0=
-0>
-0A
-06
-#740000
-1!
-1=
-1>
-16
-1~
-1!!
-1"!
-1#!
-1I
-1G
-1E
-1D
-0?
-12
-13
-14
-15
-0F
-0E
-1H
-0G
-0J
-0I
-1K
-#760000
-0!
-0=
-0>
-06
-#780000
-1!
-1=
-1>
-16
-#800000
-0!
-0=
-0>
-06
-#820000
-1!
-1=
-1>
-16
-#840000
-0!
-0=
-0>
-06
-#860000
-1!
-1=
-1>
-16
-#880000
-0!
-0=
-0>
-06
-#900000
-1!
-1=
-1>
-16
-#920000
-0!
-0=
-0>
-06
-#940000
-1!
-1=
-1>
-16
-#960000
-0!
-0=
-0>
-06
-#980000
-1!
-1=
-1>
-16
 #1000000

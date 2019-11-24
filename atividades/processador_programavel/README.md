@@ -16,6 +16,6 @@
 - [ ] Banco de registradores
 - [x] Registrador de instrução
 - [x] PC
-- [ ] Comparador
+- [x] Comparador
 - [x] ULA
 - [x] Mux 3x1 16 bits
