@@ -6,7 +6,7 @@ entity mux_3x1 is
 	
 	port ( saida_ula : in std_logic_vector(numero_de_bits -1 downto 0);
 			 saida_memoria: in std_logic_vector(numero_de_bits-1 downto 0);
-			 constante : in std_logic_vector(8 downto 0 );
+			 constante : in std_logic_vector(7 downto 0 );
 			 seletor : in	 std_logic_vector(1 downto 0);
 			 saida_mux : out std_logic_vector(numero_de_bits -1 downto 0));
 
@@ -28,7 +28,7 @@ begin
 					saida_mux <= saida_memoria;
 				
 				when "10" =>
-					saida_mux(8 downto 0) <= constante;
+					saida_mux(7 downto 0) <= constante;
 					saida_mux(numero_de_bits-1 downto 9) <= (others => '0');
 				
 				when "11" =>

@@ -9,39 +9,78 @@ end entity;
 
 
 architecture behavior of processador_programavel is 
-type ula_data is array(1 downto 0) of std_logic_vector(numero_de_bits -1 downto 0);
-signal entrada_ula : ula_data;
-
-signal saida_memoria : std_logic_vector (numero_de_bits-1 downto 0);
-signal saida_mux : std_logic_vector (numero_de_bits-1 downto 0);
-signal saida_ula : std_logic_vector(numero_de_bits -1 downto 0);
-signal saida_da_memoria_de_instrucao : std_logic_vector(numero_de_bits-1 downto 0);
-signal saida_do_registrador_de_intrucao : std_logic_vector(numero_de_bits-1 downto 0);
-signal carregar_registrador_de_intrucao : std_logic;
-signal constate : std_logic_vector(8 downto 0);
-
-signal mux_seletor :Std_logic_vector (1 downto 0);
-signal operador_ula : std_logic_vector(1 downto 0);
-
+signal dados_da_memoria_de_instrucoes : std_logic_vector(numero_de_bits -1 downto 0);
+signal saida_comparador_datapah 		  : std_logic;
+signal endereco_memoria_de_instrucoes : std_logic_vector(numero_de_bits-1 downto 0);
+signal leitura_memoria_de_instrucoes  : std_logic;
+signal endereco_memoria_de_dados		  : std_logic_vector(7 downto 0);
+signal ler_memoria_de_dados			  : std_logic;
+signal escrever_memoria_de_dados		  : std_logic;
+signal constante							  : std_logic_vector(7 downto 0);
+signal seletor_mux						  : std_logic_vector(1 downto 0);
+signal endereco_para_escrita_no_banco : std_logic_vector(3 downto 0);
+signal habilitar_escrita_no_banco	  : std_logic;
+signal endereco_1_para_leitura_banco  : std_logic_vector(3 downto 0);
+signal habilitar_leitura_no_banco	  : std_logic_vector(1 downto 0);
+signal endereco_2_para_leitura_banco  : std_logic_vector(3 downto 0);
+signal seletor_ALU						  : std_logic_vector(1 downto 0);
+signal entrada_de_dados_para_memoriaD : std_logic_vector(numero_de_bits- 1 downto 0);
+signal saida_de_dados_para_memoriaD   : std_logic_vector(numero_de_bits- 1 downto 0);
 
 begin 
-
 	
-	alu : entity work.alu(behavior)
-		generic map ( numero_de_bits)
-		port map (entrada_ula(0),entrada_ula(1),operador_ula,saida_ula);
+	unidade_de_controle : entity work.unidade_de_controle(behavior)
+							generic map (numero_de_bits)
+							port map ( dados_da_memoria_de_instrucoes,
+										  saida_comparador_datapah,
+										  clock,	  
+										  endereco_memoria_de_instrucoes, 
+										  leitura_memoria_de_instrucoes,
+										  endereco_memoria_de_dados,		   
+										  ler_memoria_de_dados,			
+										  escrever_memoria_de_dados,		
+										  constante,							 
+										  seletor_mux,						  
+										  endereco_para_escrita_no_banco, 
+										  habilitar_escrita_no_banco,				 
+										  endereco_1_para_leitura_banco,  
+										  habilitar_leitura_no_banco,	  
+										  endereco_2_para_leitura_banco,  
+										  seletor_ALU);
 	
-	mux : entity work.mux_3x1(behavior)
-		generic map ( numero_de_bits)
-		port map (saida_ula, saida_memoria, constate, mux_seletor, saida_mux);
-	
-	registrador_de_instrucao : entity work.registrador_de_instrucao
-		generic map (numero_de_bits)
-		port map (saida_da_memoria_de_instrucao,
-					 carregar_registrador_de_intrucao,
-					 clock,
-					 saida_do_registrador_de_intrucao);
-		
+	bloco_operacional : entity work.bloco_operacional(behavior)
+								 generic map (numero_de_bits)
+								 port map (clock,
+											  constante,
+											  seletor_mux,
+											  endereco_para_escrita_no_banco,
+											  habilitar_escrita_no_banco,
+											  endereco_1_para_leitura_banco,
+											  habilitar_leitura_no_banco,
+											  endereco_2_para_leitura_banco,
+											  seletor_ALU,
+											  entrada_de_dados_para_memoriaD,
+											  saida_comparador_datapah,
+											  saida_de_dados_para_memoriaD);	
+											  
+   memoria_de_dados : entity work.memoriaD(behavior)
+								generic map (numero_de_bits)
+								port map (endereco_memoria_de_dados,
+											 saida_de_dados_para_memoriaD,
+											 ler_memoria_de_dados,
+											 escrever_memoria_de_dados,
+											 clock,
+											 entrada_de_dados_para_memoriaD);
+											 
+											 
+  memoria_de_instrucoes : entity work.memoria_de_instrucoes(behavior)
+								generic map (numero_de_bits)
+								port map (clock,
+											 leitura_memoria_de_instrucoes,
+											 endereco_memoria_de_instrucoes,
+											 dados_da_memoria_de_instrucoes);
+														 
+											 
 		
 
 		

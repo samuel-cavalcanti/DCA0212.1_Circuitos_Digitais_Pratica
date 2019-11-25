@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity memoriaD is 
 	generic (numero_de_bits : positive := 16);
-	port ( endereco        : in  std_logic_vector( 8 downto 0);
+	port ( endereco        : in  std_logic_vector( 7 downto 0);
 			 dado_de_entrada : in std_logic_vector(numero_de_bits-1 downto 0);
 			 leitura			  : in std_logic;
 			 escrita			  : in std_logic;

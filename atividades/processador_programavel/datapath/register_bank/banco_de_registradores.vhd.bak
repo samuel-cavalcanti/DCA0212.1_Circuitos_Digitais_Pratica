@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity banco_de_registradores is 
+	generic (numero_de_bits : positive := 16);
+	port (clock : in std_logic;
+			endereco_leitura_1 : in std_logic_vector(3 downto 0);
+			endereco_leitura_2 : in std_logic_vector(3 downto 0);
+			endereco_escrita 	 : in std_logic_vector(3 downto 0);
+			habilitar_leitura  : in std_logic_vector(1 downto 0);
+			habilitar_escrita  : std_logic);
+end entity;
+
+
+architecture behavior of banco_de_registradores is 
+
+
+begin
+
+
+
+end architecture;
