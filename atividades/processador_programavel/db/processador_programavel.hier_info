@@ -1,7 +1,436 @@
-|bloco_de_controle
+|unidade_de_controle
+dados_da_memoria_de_instrucoes[0] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[0]
+dados_da_memoria_de_instrucoes[1] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[1]
+dados_da_memoria_de_instrucoes[2] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[2]
+dados_da_memoria_de_instrucoes[3] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[3]
+dados_da_memoria_de_instrucoes[4] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[4]
+dados_da_memoria_de_instrucoes[5] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[5]
+dados_da_memoria_de_instrucoes[6] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[6]
+dados_da_memoria_de_instrucoes[7] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[7]
+dados_da_memoria_de_instrucoes[8] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[8]
+dados_da_memoria_de_instrucoes[9] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[9]
+dados_da_memoria_de_instrucoes[10] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[10]
+dados_da_memoria_de_instrucoes[11] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[11]
+dados_da_memoria_de_instrucoes[12] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[12]
+dados_da_memoria_de_instrucoes[13] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[13]
+dados_da_memoria_de_instrucoes[14] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[14]
+dados_da_memoria_de_instrucoes[15] => registrador_de_instrucao:registrador_de_instrucao.entrada_de_dados[15]
+saida_comparador_datapah => bloco_de_controle:bloco_de_controle.saida_comparador
+clock => contador_de_programa:contador_de_programa.clock
+clock => registrador_de_instrucao:registrador_de_instrucao.clock
+clock => bloco_de_controle:bloco_de_controle.clock
+endereco_memoria_de_instrucoes[0] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[0]
+endereco_memoria_de_instrucoes[1] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[1]
+endereco_memoria_de_instrucoes[2] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[2]
+endereco_memoria_de_instrucoes[3] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[3]
+endereco_memoria_de_instrucoes[4] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[4]
+endereco_memoria_de_instrucoes[5] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[5]
+endereco_memoria_de_instrucoes[6] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[6]
+endereco_memoria_de_instrucoes[7] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[7]
+endereco_memoria_de_instrucoes[8] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[8]
+endereco_memoria_de_instrucoes[9] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[9]
+endereco_memoria_de_instrucoes[10] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[10]
+endereco_memoria_de_instrucoes[11] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[11]
+endereco_memoria_de_instrucoes[12] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[12]
+endereco_memoria_de_instrucoes[13] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[13]
+endereco_memoria_de_instrucoes[14] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[14]
+endereco_memoria_de_instrucoes[15] <= contador_de_programa:contador_de_programa.saida_contador_de_programa[15]
+leitura_memoria_de_instrucoes <= bloco_de_controle:bloco_de_controle.ler_memoria_de_instrucoes
+endereco_memoria_de_dados[0] <= bloco_de_controle:bloco_de_controle.endereco_memoria_de_dados[0]
+endereco_memoria_de_dados[1] <= bloco_de_controle:bloco_de_controle.endereco_memoria_de_dados[1]
+endereco_memoria_de_dados[2] <= bloco_de_controle:bloco_de_controle.endereco_memoria_de_dados[2]
+endereco_memoria_de_dados[3] <= bloco_de_controle:bloco_de_controle.endereco_memoria_de_dados[3]
+endereco_memoria_de_dados[4] <= bloco_de_controle:bloco_de_controle.endereco_memoria_de_dados[4]
+endereco_memoria_de_dados[5] <= bloco_de_controle:bloco_de_controle.endereco_memoria_de_dados[5]
+endereco_memoria_de_dados[6] <= bloco_de_controle:bloco_de_controle.endereco_memoria_de_dados[6]
+endereco_memoria_de_dados[7] <= bloco_de_controle:bloco_de_controle.endereco_memoria_de_dados[7]
+ler_memoria_de_dados <= bloco_de_controle:bloco_de_controle.ler_memoria_de_dados
+escrever_memoria_de_dados <= bloco_de_controle:bloco_de_controle.escrever_memoria_de_dados
+constante[0] <= bloco_de_controle:bloco_de_controle.constante[0]
+constante[1] <= bloco_de_controle:bloco_de_controle.constante[1]
+constante[2] <= bloco_de_controle:bloco_de_controle.constante[2]
+constante[3] <= bloco_de_controle:bloco_de_controle.constante[3]
+constante[4] <= bloco_de_controle:bloco_de_controle.constante[4]
+constante[5] <= bloco_de_controle:bloco_de_controle.constante[5]
+constante[6] <= bloco_de_controle:bloco_de_controle.constante[6]
+constante[7] <= bloco_de_controle:bloco_de_controle.constante[7]
+seletor_mux[0] <= bloco_de_controle:bloco_de_controle.seletor_mux[0]
+seletor_mux[1] <= bloco_de_controle:bloco_de_controle.seletor_mux[1]
+endereco_para_escrita_no_banco[0] <= bloco_de_controle:bloco_de_controle.endereco_para_escrita_no_banco[0]
+endereco_para_escrita_no_banco[1] <= bloco_de_controle:bloco_de_controle.endereco_para_escrita_no_banco[1]
+endereco_para_escrita_no_banco[2] <= bloco_de_controle:bloco_de_controle.endereco_para_escrita_no_banco[2]
+endereco_para_escrita_no_banco[3] <= bloco_de_controle:bloco_de_controle.endereco_para_escrita_no_banco[3]
+escrever_no_banco <= bloco_de_controle:bloco_de_controle.escrever_no_banco
+endereco_1_para_leitura_banco[0] <= bloco_de_controle:bloco_de_controle.endereco_1_para_leitura_banco[0]
+endereco_1_para_leitura_banco[1] <= bloco_de_controle:bloco_de_controle.endereco_1_para_leitura_banco[1]
+endereco_1_para_leitura_banco[2] <= bloco_de_controle:bloco_de_controle.endereco_1_para_leitura_banco[2]
+endereco_1_para_leitura_banco[3] <= bloco_de_controle:bloco_de_controle.endereco_1_para_leitura_banco[3]
+habilitar_leitura_no_banco[0] <= bloco_de_controle:bloco_de_controle.habilitar_leitura_no_banco[0]
+habilitar_leitura_no_banco[1] <= bloco_de_controle:bloco_de_controle.habilitar_leitura_no_banco[1]
+endereco_2_para_leitura_banco[0] <= bloco_de_controle:bloco_de_controle.endereco_2_para_leitura_banco[0]
+endereco_2_para_leitura_banco[1] <= bloco_de_controle:bloco_de_controle.endereco_2_para_leitura_banco[1]
+endereco_2_para_leitura_banco[2] <= bloco_de_controle:bloco_de_controle.endereco_2_para_leitura_banco[2]
+endereco_2_para_leitura_banco[3] <= bloco_de_controle:bloco_de_controle.endereco_2_para_leitura_banco[3]
+seletor_ALU[0] <= bloco_de_controle:bloco_de_controle.seletor_ALU[0]
+seletor_ALU[1] <= bloco_de_controle:bloco_de_controle.seletor_ALU[1]
+
+
+|unidade_de_controle|somador_complemento_de_2:somador
+a[0] => Add0.IN17
+a[1] => Add0.IN16
+a[2] => Add0.IN15
+a[3] => Add0.IN14
+a[4] => Add0.IN13
+a[5] => Add0.IN12
+a[6] => Add0.IN11
+a[7] => Add0.IN10
+a[8] => Add0.IN9
+a[9] => Add0.IN8
+a[10] => Add0.IN7
+a[11] => Add0.IN6
+a[12] => Add0.IN5
+a[13] => Add0.IN4
+a[14] => Add0.IN3
+a[15] => Add0.IN2
+b[0] => Add0.IN34
+b[1] => Add0.IN33
+b[2] => Add0.IN32
+b[3] => Add0.IN31
+b[4] => Add0.IN30
+b[5] => Add0.IN29
+b[6] => Add0.IN28
+b[7] => Add0.IN18
+b[7] => Add0.IN19
+b[7] => Add0.IN20
+b[7] => Add0.IN21
+b[7] => Add0.IN22
+b[7] => Add0.IN23
+b[7] => Add0.IN24
+b[7] => Add0.IN25
+b[7] => Add0.IN26
+b[7] => Add0.IN27
+b[7] => Add0.IN35
+b[8] => ~NO_FANOUT~
+b[9] => ~NO_FANOUT~
+b[10] => ~NO_FANOUT~
+b[11] => ~NO_FANOUT~
+b[12] => ~NO_FANOUT~
+b[13] => ~NO_FANOUT~
+b[14] => ~NO_FANOUT~
+b[15] => ~NO_FANOUT~
+saida[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[8] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[9] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[10] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[11] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[12] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[13] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[14] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+saida[15] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unidade_de_controle|contador_de_programa:contador_de_programa
+limpar_registrador => registrador:registrador.limpar
+incrementar_registrador => comb.IN0
+clock => registrador:registrador.clock
+escrever => entrada_registrador[15].OUTPUTSELECT
+escrever => entrada_registrador[14].OUTPUTSELECT
+escrever => entrada_registrador[13].OUTPUTSELECT
+escrever => entrada_registrador[12].OUTPUTSELECT
+escrever => entrada_registrador[11].OUTPUTSELECT
+escrever => entrada_registrador[10].OUTPUTSELECT
+escrever => entrada_registrador[9].OUTPUTSELECT
+escrever => entrada_registrador[8].OUTPUTSELECT
+escrever => entrada_registrador[7].OUTPUTSELECT
+escrever => entrada_registrador[6].OUTPUTSELECT
+escrever => entrada_registrador[5].OUTPUTSELECT
+escrever => entrada_registrador[4].OUTPUTSELECT
+escrever => entrada_registrador[3].OUTPUTSELECT
+escrever => entrada_registrador[2].OUTPUTSELECT
+escrever => entrada_registrador[1].OUTPUTSELECT
+escrever => entrada_registrador[0].OUTPUTSELECT
+escrever => comb.IN1
+saida_da_soma_jump[0] => entrada_registrador[0].DATAB
+saida_da_soma_jump[1] => entrada_registrador[1].DATAB
+saida_da_soma_jump[2] => entrada_registrador[2].DATAB
+saida_da_soma_jump[3] => entrada_registrador[3].DATAB
+saida_da_soma_jump[4] => entrada_registrador[4].DATAB
+saida_da_soma_jump[5] => entrada_registrador[5].DATAB
+saida_da_soma_jump[6] => entrada_registrador[6].DATAB
+saida_da_soma_jump[7] => entrada_registrador[7].DATAB
+saida_da_soma_jump[8] => entrada_registrador[8].DATAB
+saida_da_soma_jump[9] => entrada_registrador[9].DATAB
+saida_da_soma_jump[10] => entrada_registrador[10].DATAB
+saida_da_soma_jump[11] => entrada_registrador[11].DATAB
+saida_da_soma_jump[12] => entrada_registrador[12].DATAB
+saida_da_soma_jump[13] => entrada_registrador[13].DATAB
+saida_da_soma_jump[14] => entrada_registrador[14].DATAB
+saida_da_soma_jump[15] => entrada_registrador[15].DATAB
+saida_contador_de_programa[0] <= registrador:registrador.saida_de_dados[0]
+saida_contador_de_programa[1] <= registrador:registrador.saida_de_dados[1]
+saida_contador_de_programa[2] <= registrador:registrador.saida_de_dados[2]
+saida_contador_de_programa[3] <= registrador:registrador.saida_de_dados[3]
+saida_contador_de_programa[4] <= registrador:registrador.saida_de_dados[4]
+saida_contador_de_programa[5] <= registrador:registrador.saida_de_dados[5]
+saida_contador_de_programa[6] <= registrador:registrador.saida_de_dados[6]
+saida_contador_de_programa[7] <= registrador:registrador.saida_de_dados[7]
+saida_contador_de_programa[8] <= registrador:registrador.saida_de_dados[8]
+saida_contador_de_programa[9] <= registrador:registrador.saida_de_dados[9]
+saida_contador_de_programa[10] <= registrador:registrador.saida_de_dados[10]
+saida_contador_de_programa[11] <= registrador:registrador.saida_de_dados[11]
+saida_contador_de_programa[12] <= registrador:registrador.saida_de_dados[12]
+saida_contador_de_programa[13] <= registrador:registrador.saida_de_dados[13]
+saida_contador_de_programa[14] <= registrador:registrador.saida_de_dados[14]
+saida_contador_de_programa[15] <= registrador:registrador.saida_de_dados[15]
+
+
+|unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador
+entrada_de_dados[0] => memoria[0].DATAIN
+entrada_de_dados[1] => memoria[1].DATAIN
+entrada_de_dados[2] => memoria[2].DATAIN
+entrada_de_dados[3] => memoria[3].DATAIN
+entrada_de_dados[4] => memoria[4].DATAIN
+entrada_de_dados[5] => memoria[5].DATAIN
+entrada_de_dados[6] => memoria[6].DATAIN
+entrada_de_dados[7] => memoria[7].DATAIN
+entrada_de_dados[8] => memoria[8].DATAIN
+entrada_de_dados[9] => memoria[9].DATAIN
+entrada_de_dados[10] => memoria[10].DATAIN
+entrada_de_dados[11] => memoria[11].DATAIN
+entrada_de_dados[12] => memoria[12].DATAIN
+entrada_de_dados[13] => memoria[13].DATAIN
+entrada_de_dados[14] => memoria[14].DATAIN
+entrada_de_dados[15] => memoria[15].DATAIN
+clock => memoria[0].CLK
+clock => memoria[1].CLK
+clock => memoria[2].CLK
+clock => memoria[3].CLK
+clock => memoria[4].CLK
+clock => memoria[5].CLK
+clock => memoria[6].CLK
+clock => memoria[7].CLK
+clock => memoria[8].CLK
+clock => memoria[9].CLK
+clock => memoria[10].CLK
+clock => memoria[11].CLK
+clock => memoria[12].CLK
+clock => memoria[13].CLK
+clock => memoria[14].CLK
+clock => memoria[15].CLK
+escrever => memoria[0].ENA
+escrever => memoria[1].ENA
+escrever => memoria[2].ENA
+escrever => memoria[3].ENA
+escrever => memoria[4].ENA
+escrever => memoria[5].ENA
+escrever => memoria[6].ENA
+escrever => memoria[7].ENA
+escrever => memoria[8].ENA
+escrever => memoria[9].ENA
+escrever => memoria[10].ENA
+escrever => memoria[11].ENA
+escrever => memoria[12].ENA
+escrever => memoria[13].ENA
+escrever => memoria[14].ENA
+escrever => memoria[15].ENA
+limpar => memoria[0].ACLR
+limpar => memoria[1].ACLR
+limpar => memoria[2].ACLR
+limpar => memoria[3].ACLR
+limpar => memoria[4].ACLR
+limpar => memoria[5].ACLR
+limpar => memoria[6].ACLR
+limpar => memoria[7].ACLR
+limpar => memoria[8].ACLR
+limpar => memoria[9].ACLR
+limpar => memoria[10].ACLR
+limpar => memoria[11].ACLR
+limpar => memoria[12].ACLR
+limpar => memoria[13].ACLR
+limpar => memoria[14].ACLR
+limpar => memoria[15].ACLR
+saida_de_dados[0] <= memoria[0].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[1] <= memoria[1].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[2] <= memoria[2].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[3] <= memoria[3].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[4] <= memoria[4].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[5] <= memoria[5].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[6] <= memoria[6].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[7] <= memoria[7].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[8] <= memoria[8].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[9] <= memoria[9].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[10] <= memoria[10].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[11] <= memoria[11].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[12] <= memoria[12].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[13] <= memoria[13].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[14] <= memoria[14].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[15] <= memoria[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unidade_de_controle|contador_de_programa:contador_de_programa|soma_1:soma_1
+a[0] => Add0.IN32
+a[1] => Add0.IN31
+a[2] => Add0.IN30
+a[3] => Add0.IN29
+a[4] => Add0.IN28
+a[5] => Add0.IN27
+a[6] => Add0.IN26
+a[7] => Add0.IN25
+a[8] => Add0.IN24
+a[9] => Add0.IN23
+a[10] => Add0.IN22
+a[11] => Add0.IN21
+a[12] => Add0.IN20
+a[13] => Add0.IN19
+a[14] => Add0.IN18
+a[15] => Add0.IN17
+resultado_soma[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+resultado_soma[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao
+entrada_de_dados[0] => registrador:registrador.entrada_de_dados[0]
+entrada_de_dados[1] => registrador:registrador.entrada_de_dados[1]
+entrada_de_dados[2] => registrador:registrador.entrada_de_dados[2]
+entrada_de_dados[3] => registrador:registrador.entrada_de_dados[3]
+entrada_de_dados[4] => registrador:registrador.entrada_de_dados[4]
+entrada_de_dados[5] => registrador:registrador.entrada_de_dados[5]
+entrada_de_dados[6] => registrador:registrador.entrada_de_dados[6]
+entrada_de_dados[7] => registrador:registrador.entrada_de_dados[7]
+entrada_de_dados[8] => registrador:registrador.entrada_de_dados[8]
+entrada_de_dados[9] => registrador:registrador.entrada_de_dados[9]
+entrada_de_dados[10] => registrador:registrador.entrada_de_dados[10]
+entrada_de_dados[11] => registrador:registrador.entrada_de_dados[11]
+entrada_de_dados[12] => registrador:registrador.entrada_de_dados[12]
+entrada_de_dados[13] => registrador:registrador.entrada_de_dados[13]
+entrada_de_dados[14] => registrador:registrador.entrada_de_dados[14]
+entrada_de_dados[15] => registrador:registrador.entrada_de_dados[15]
+escrever => registrador:registrador.escrever
+clock => registrador:registrador.clock
+saida_de_dados[0] <= registrador:registrador.saida_de_dados[0]
+saida_de_dados[1] <= registrador:registrador.saida_de_dados[1]
+saida_de_dados[2] <= registrador:registrador.saida_de_dados[2]
+saida_de_dados[3] <= registrador:registrador.saida_de_dados[3]
+saida_de_dados[4] <= registrador:registrador.saida_de_dados[4]
+saida_de_dados[5] <= registrador:registrador.saida_de_dados[5]
+saida_de_dados[6] <= registrador:registrador.saida_de_dados[6]
+saida_de_dados[7] <= registrador:registrador.saida_de_dados[7]
+saida_de_dados[8] <= registrador:registrador.saida_de_dados[8]
+saida_de_dados[9] <= registrador:registrador.saida_de_dados[9]
+saida_de_dados[10] <= registrador:registrador.saida_de_dados[10]
+saida_de_dados[11] <= registrador:registrador.saida_de_dados[11]
+saida_de_dados[12] <= registrador:registrador.saida_de_dados[12]
+saida_de_dados[13] <= registrador:registrador.saida_de_dados[13]
+saida_de_dados[14] <= registrador:registrador.saida_de_dados[14]
+saida_de_dados[15] <= registrador:registrador.saida_de_dados[15]
+
+
+|unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador
+entrada_de_dados[0] => memoria[0].DATAIN
+entrada_de_dados[1] => memoria[1].DATAIN
+entrada_de_dados[2] => memoria[2].DATAIN
+entrada_de_dados[3] => memoria[3].DATAIN
+entrada_de_dados[4] => memoria[4].DATAIN
+entrada_de_dados[5] => memoria[5].DATAIN
+entrada_de_dados[6] => memoria[6].DATAIN
+entrada_de_dados[7] => memoria[7].DATAIN
+entrada_de_dados[8] => memoria[8].DATAIN
+entrada_de_dados[9] => memoria[9].DATAIN
+entrada_de_dados[10] => memoria[10].DATAIN
+entrada_de_dados[11] => memoria[11].DATAIN
+entrada_de_dados[12] => memoria[12].DATAIN
+entrada_de_dados[13] => memoria[13].DATAIN
+entrada_de_dados[14] => memoria[14].DATAIN
+entrada_de_dados[15] => memoria[15].DATAIN
+clock => memoria[0].CLK
+clock => memoria[1].CLK
+clock => memoria[2].CLK
+clock => memoria[3].CLK
+clock => memoria[4].CLK
+clock => memoria[5].CLK
+clock => memoria[6].CLK
+clock => memoria[7].CLK
+clock => memoria[8].CLK
+clock => memoria[9].CLK
+clock => memoria[10].CLK
+clock => memoria[11].CLK
+clock => memoria[12].CLK
+clock => memoria[13].CLK
+clock => memoria[14].CLK
+clock => memoria[15].CLK
+escrever => memoria[0].ENA
+escrever => memoria[1].ENA
+escrever => memoria[2].ENA
+escrever => memoria[3].ENA
+escrever => memoria[4].ENA
+escrever => memoria[5].ENA
+escrever => memoria[6].ENA
+escrever => memoria[7].ENA
+escrever => memoria[8].ENA
+escrever => memoria[9].ENA
+escrever => memoria[10].ENA
+escrever => memoria[11].ENA
+escrever => memoria[12].ENA
+escrever => memoria[13].ENA
+escrever => memoria[14].ENA
+escrever => memoria[15].ENA
+limpar => memoria[0].ACLR
+limpar => memoria[1].ACLR
+limpar => memoria[2].ACLR
+limpar => memoria[3].ACLR
+limpar => memoria[4].ACLR
+limpar => memoria[5].ACLR
+limpar => memoria[6].ACLR
+limpar => memoria[7].ACLR
+limpar => memoria[8].ACLR
+limpar => memoria[9].ACLR
+limpar => memoria[10].ACLR
+limpar => memoria[11].ACLR
+limpar => memoria[12].ACLR
+limpar => memoria[13].ACLR
+limpar => memoria[14].ACLR
+limpar => memoria[15].ACLR
+saida_de_dados[0] <= memoria[0].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[1] <= memoria[1].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[2] <= memoria[2].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[3] <= memoria[3].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[4] <= memoria[4].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[5] <= memoria[5].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[6] <= memoria[6].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[7] <= memoria[7].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[8] <= memoria[8].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[9] <= memoria[9].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[10] <= memoria[10].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[11] <= memoria[11].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[12] <= memoria[12].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[13] <= memoria[13].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[14] <= memoria[14].DB_MAX_OUTPUT_PORT_TYPE
+saida_de_dados[15] <= memoria[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|unidade_de_controle|bloco_de_controle:bloco_de_controle
 clock => maquina_de_estados:maquina_de_estados.clock
-estado_atual[0] << maquina_de_estados:maquina_de_estados.estato[0]
-estado_atual[1] << maquina_de_estados:maquina_de_estados.estato[1]
 saida_registrador_de_instrucao[0] => decodificador:decodificador.saida_registrador_de_instrucao[0]
 saida_registrador_de_instrucao[1] => decodificador:decodificador.saida_registrador_de_instrucao[1]
 saida_registrador_de_instrucao[2] => decodificador:decodificador.saida_registrador_de_instrucao[2]
@@ -63,7 +492,7 @@ seletor_ALU[0] <= decodificador:decodificador.seletor_ALU[0]
 seletor_ALU[1] <= decodificador:decodificador.seletor_ALU[1]
 
 
-|bloco_de_controle|decodificador:decodificador
+|unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador
 saida_registrador_de_instrucao[0] => decodificador_memoria_de_dados:decodificador_memoria_de_dados.endereco[0]
 saida_registrador_de_instrucao[0] => decodificador_mux:decodificador_mux.valor_do_registrador_de_instrucao[0]
 saida_registrador_de_instrucao[0] => decodificador_banco:decodificador_banco.enderecos[0]
@@ -147,7 +576,7 @@ seletor_ALU[0] <= decodificador_alu:decodificador_ALU.seletor_ALU[0]
 seletor_ALU[1] <= decodificador_alu:decodificador_ALU.seletor_ALU[1]
 
 
-|bloco_de_controle|decodificador:decodificador|decodificador_memoria_de_dados:decodificador_memoria_de_dados
+|unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_memoria_de_dados:decodificador_memoria_de_dados
 operacao[0] => Equal0.IN3
 operacao[0] => Equal1.IN3
 operacao[1] => Equal0.IN2
@@ -176,7 +605,7 @@ ler_memoria_de_dados <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 escrever_memoria_de_dados <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux
+|unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux
 operacao[0] => Equal0.IN3
 operacao[0] => Equal1.IN3
 operacao[0] => Equal2.IN2
@@ -213,7 +642,7 @@ constante[6] <= valor_do_registrador_de_instrucao[6].DB_MAX_OUTPUT_PORT_TYPE
 constante[7] <= valor_do_registrador_de_instrucao[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco
+|unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco
 operacao[0] => Equal0.IN3
 operacao[0] => Equal1.IN3
 operacao[0] => Equal2.IN2
@@ -271,7 +700,7 @@ endereco_2_para_leitura_banco[2] <= enderecos[6].DB_MAX_OUTPUT_PORT_TYPE
 endereco_2_para_leitura_banco[3] <= enderecos[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bloco_de_controle|decodificador:decodificador|decodificador_ALU:decodificador_ALU
+|unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_ALU:decodificador_ALU
 operacao[0] => Equal0.IN2
 operacao[0] => Equal1.IN2
 operacao[1] => Equal0.IN1
@@ -284,7 +713,7 @@ seletor_ALU[0] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 seletor_ALU[1] <= seletor_ALU.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|bloco_de_controle|maquina_de_estados:maquina_de_estados
+|unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados
 clock => estado_atual[0].CLK
 clock => estado_atual[1].CLK
 reiniciar => estado_atual[0].ACLR

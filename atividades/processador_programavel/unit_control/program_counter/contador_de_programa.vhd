@@ -21,15 +21,15 @@ signal saida_soma_1 : std_logic_vector(numero_de_bits-1 downto 0);
 
 begin
 
-	entrada_registrador <= saida_soma_1 when incrementar_registrador ='1' else
-								  saida_da_soma_jump;
+	entrada_registrador <= saida_da_soma_jump when escrever ='1' else
+								  saida_soma_1;
 								  
 	
 	registrador: entity work.registrador(behavior)
 				generic map (numero_de_bits)
 				port map (entrada_de_dados => entrada_registrador,
 							 clock => clock,
-							 escrever => escrever,
+							 escrever => escrever or incrementar_registrador,
 							 limpar => limpar_registrador,
 							 saida_de_dados => saida_registrador);
 							 

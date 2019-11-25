@@ -3,7 +3,7 @@ $comment
 		vcd file processador_programavel.msim.vcd -direction
 $end
 $date
-	Sun Nov 24 20:58:48 2019
+	Sun Nov 24 22:19:16 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,101 +11,106 @@ $end
 $timescale
 	1ps
 $end
-$scope module bloco_de_controle_vlg_vec_tst $end
+$scope module contador_de_programa_vlg_vec_tst $end
 $var reg 1 ! clock $end
-$var reg 1 " saida_comparador $end
-$var reg 16 # saida_registrador_de_instrucao [15:0] $end
-$var wire 1 $ constante [7] $end
-$var wire 1 % constante [6] $end
-$var wire 1 & constante [5] $end
-$var wire 1 ' constante [4] $end
-$var wire 1 ( constante [3] $end
-$var wire 1 ) constante [2] $end
-$var wire 1 * constante [1] $end
-$var wire 1 + constante [0] $end
-$var wire 1 , endereco_1_para_leitura_banco [3] $end
-$var wire 1 - endereco_1_para_leitura_banco [2] $end
-$var wire 1 . endereco_1_para_leitura_banco [1] $end
-$var wire 1 / endereco_1_para_leitura_banco [0] $end
-$var wire 1 0 endereco_2_para_leitura_banco [3] $end
-$var wire 1 1 endereco_2_para_leitura_banco [2] $end
-$var wire 1 2 endereco_2_para_leitura_banco [1] $end
-$var wire 1 3 endereco_2_para_leitura_banco [0] $end
-$var wire 1 4 endereco_memoria_de_dados [7] $end
-$var wire 1 5 endereco_memoria_de_dados [6] $end
-$var wire 1 6 endereco_memoria_de_dados [5] $end
-$var wire 1 7 endereco_memoria_de_dados [4] $end
-$var wire 1 8 endereco_memoria_de_dados [3] $end
-$var wire 1 9 endereco_memoria_de_dados [2] $end
-$var wire 1 : endereco_memoria_de_dados [1] $end
-$var wire 1 ; endereco_memoria_de_dados [0] $end
-$var wire 1 < endereco_para_escrita_no_banco [3] $end
-$var wire 1 = endereco_para_escrita_no_banco [2] $end
-$var wire 1 > endereco_para_escrita_no_banco [1] $end
-$var wire 1 ? endereco_para_escrita_no_banco [0] $end
-$var wire 1 @ escrever_contador_de_programa $end
-$var wire 1 A escrever_memoria_de_dados $end
-$var wire 1 B escrever_no_banco $end
-$var wire 1 C estado_atual [1] $end
-$var wire 1 D estado_atual [0] $end
-$var wire 1 E habilitar_leitura_no_banco [1] $end
-$var wire 1 F habilitar_leitura_no_banco [0] $end
-$var wire 1 G incrementar_contador_de_programa $end
-$var wire 1 H ler_memoria_de_dados $end
-$var wire 1 I ler_memoria_de_instrucoes $end
-$var wire 1 J ler_registrador_de_instrucao $end
-$var wire 1 K limpar_contador_de_programa $end
-$var wire 1 L seletor_ALU [1] $end
-$var wire 1 M seletor_ALU [0] $end
-$var wire 1 N seletor_mux [1] $end
-$var wire 1 O seletor_mux [0] $end
-$var wire 1 P sampler $end
+$var reg 1 " escrever $end
+$var reg 1 # incrementar_registrador $end
+$var reg 1 $ limpar_registrador $end
+$var reg 16 % saida_da_soma_jump [15:0] $end
+$var wire 1 & saida_contador_de_programa [15] $end
+$var wire 1 ' saida_contador_de_programa [14] $end
+$var wire 1 ( saida_contador_de_programa [13] $end
+$var wire 1 ) saida_contador_de_programa [12] $end
+$var wire 1 * saida_contador_de_programa [11] $end
+$var wire 1 + saida_contador_de_programa [10] $end
+$var wire 1 , saida_contador_de_programa [9] $end
+$var wire 1 - saida_contador_de_programa [8] $end
+$var wire 1 . saida_contador_de_programa [7] $end
+$var wire 1 / saida_contador_de_programa [6] $end
+$var wire 1 0 saida_contador_de_programa [5] $end
+$var wire 1 1 saida_contador_de_programa [4] $end
+$var wire 1 2 saida_contador_de_programa [3] $end
+$var wire 1 3 saida_contador_de_programa [2] $end
+$var wire 1 4 saida_contador_de_programa [1] $end
+$var wire 1 5 saida_contador_de_programa [0] $end
+$var wire 1 6 sampler $end
 $scope module i1 $end
-$var wire 1 Q gnd $end
-$var wire 1 R vcc $end
-$var wire 1 S unknown $end
-$var tri1 1 T devclrn $end
-$var tri1 1 U devpor $end
-$var tri1 1 V devoe $end
-$var wire 1 W clock~combout $end
-$var wire 1 X clock~clkctrl_outclk $end
-$var wire 1 Y saida_comparador~combout $end
-$var wire 1 Z maquina_de_estados|estado_atual~0_combout $end
-$var wire 1 [ maquina_de_estados|Equal2~1_combout $end
-$var wire 1 \ maquina_de_estados|estado_atual[0]~1_combout $end
-$var wire 1 ] maquina_de_estados|Equal2~0_combout $end
-$var wire 1 ^ Equal2~0_combout $end
-$var wire 1 _ decodificador|decodificador_memoria_de_dados|Equal1~0_combout $end
-$var wire 1 ` decodificador|decodificador_memoria_de_dados|Equal0~0_combout $end
-$var wire 1 a decodificador|decodificador_mux|seletor_mux[0]~0_combout $end
-$var wire 1 b decodificador|decodificador_mux|seletor_mux[1]~1_combout $end
-$var wire 1 c decodificador|decodificador_mux|seletor_mux~2_combout $end
-$var wire 1 d decodificador|decodificador_banco|endereco_para_escrita_no_banco[0]~0_combout $end
-$var wire 1 e decodificador|decodificador_banco|endereco_para_escrita_no_banco[1]~1_combout $end
-$var wire 1 f decodificador|decodificador_banco|endereco_para_escrita_no_banco[2]~2_combout $end
-$var wire 1 g decodificador|decodificador_banco|endereco_para_escrita_no_banco[3]~3_combout $end
-$var wire 1 h decodificador|decodificador_banco|escrever_no_banco~combout $end
-$var wire 1 i decodificador|decodificador_banco|habilitar_leitura_no_banco[0]~0_combout $end
-$var wire 1 j decodificador|decodificador_mux|Equal2~0_combout $end
-$var wire 1 k decodificador|decodificador_mux|Equal3~0_combout $end
-$var wire 1 l maquina_de_estados|estado_atual [1] $end
-$var wire 1 m maquina_de_estados|estado_atual [0] $end
-$var wire 1 n saida_registrador_de_instrucao~combout [15] $end
-$var wire 1 o saida_registrador_de_instrucao~combout [14] $end
-$var wire 1 p saida_registrador_de_instrucao~combout [13] $end
-$var wire 1 q saida_registrador_de_instrucao~combout [12] $end
-$var wire 1 r saida_registrador_de_instrucao~combout [11] $end
-$var wire 1 s saida_registrador_de_instrucao~combout [10] $end
-$var wire 1 t saida_registrador_de_instrucao~combout [9] $end
-$var wire 1 u saida_registrador_de_instrucao~combout [8] $end
-$var wire 1 v saida_registrador_de_instrucao~combout [7] $end
-$var wire 1 w saida_registrador_de_instrucao~combout [6] $end
-$var wire 1 x saida_registrador_de_instrucao~combout [5] $end
-$var wire 1 y saida_registrador_de_instrucao~combout [4] $end
-$var wire 1 z saida_registrador_de_instrucao~combout [3] $end
-$var wire 1 { saida_registrador_de_instrucao~combout [2] $end
-$var wire 1 | saida_registrador_de_instrucao~combout [1] $end
-$var wire 1 } saida_registrador_de_instrucao~combout [0] $end
+$var wire 1 7 gnd $end
+$var wire 1 8 vcc $end
+$var wire 1 9 unknown $end
+$var tri1 1 : devclrn $end
+$var tri1 1 ; devpor $end
+$var tri1 1 < devoe $end
+$var wire 1 = clock~combout $end
+$var wire 1 > clock~clkctrl_outclk $end
+$var wire 1 ? registrador|memoria[0]~16_combout $end
+$var wire 1 @ limpar_registrador~combout $end
+$var wire 1 A limpar_registrador~clkctrl_outclk $end
+$var wire 1 B escrever~combout $end
+$var wire 1 C incrementar_registrador~combout $end
+$var wire 1 D comb~0_combout $end
+$var wire 1 E registrador|memoria[0]~17 $end
+$var wire 1 F registrador|memoria[1]~18_combout $end
+$var wire 1 G registrador|memoria[1]~19 $end
+$var wire 1 H registrador|memoria[2]~20_combout $end
+$var wire 1 I registrador|memoria[2]~21 $end
+$var wire 1 J registrador|memoria[3]~22_combout $end
+$var wire 1 K registrador|memoria[3]~23 $end
+$var wire 1 L registrador|memoria[4]~24_combout $end
+$var wire 1 M registrador|memoria[4]~25 $end
+$var wire 1 N registrador|memoria[5]~26_combout $end
+$var wire 1 O registrador|memoria[5]~27 $end
+$var wire 1 P registrador|memoria[6]~28_combout $end
+$var wire 1 Q registrador|memoria[6]~29 $end
+$var wire 1 R registrador|memoria[7]~30_combout $end
+$var wire 1 S registrador|memoria[7]~31 $end
+$var wire 1 T registrador|memoria[8]~32_combout $end
+$var wire 1 U registrador|memoria[8]~33 $end
+$var wire 1 V registrador|memoria[9]~34_combout $end
+$var wire 1 W registrador|memoria[9]~35 $end
+$var wire 1 X registrador|memoria[10]~36_combout $end
+$var wire 1 Y registrador|memoria[10]~37 $end
+$var wire 1 Z registrador|memoria[11]~38_combout $end
+$var wire 1 [ registrador|memoria[11]~39 $end
+$var wire 1 \ registrador|memoria[12]~40_combout $end
+$var wire 1 ] registrador|memoria[12]~41 $end
+$var wire 1 ^ registrador|memoria[13]~42_combout $end
+$var wire 1 _ registrador|memoria[13]~43 $end
+$var wire 1 ` registrador|memoria[14]~44_combout $end
+$var wire 1 a registrador|memoria[14]~45 $end
+$var wire 1 b registrador|memoria[15]~46_combout $end
+$var wire 1 c registrador|memoria [15] $end
+$var wire 1 d registrador|memoria [14] $end
+$var wire 1 e registrador|memoria [13] $end
+$var wire 1 f registrador|memoria [12] $end
+$var wire 1 g registrador|memoria [11] $end
+$var wire 1 h registrador|memoria [10] $end
+$var wire 1 i registrador|memoria [9] $end
+$var wire 1 j registrador|memoria [8] $end
+$var wire 1 k registrador|memoria [7] $end
+$var wire 1 l registrador|memoria [6] $end
+$var wire 1 m registrador|memoria [5] $end
+$var wire 1 n registrador|memoria [4] $end
+$var wire 1 o registrador|memoria [3] $end
+$var wire 1 p registrador|memoria [2] $end
+$var wire 1 q registrador|memoria [1] $end
+$var wire 1 r registrador|memoria [0] $end
+$var wire 1 s saida_da_soma_jump~combout [15] $end
+$var wire 1 t saida_da_soma_jump~combout [14] $end
+$var wire 1 u saida_da_soma_jump~combout [13] $end
+$var wire 1 v saida_da_soma_jump~combout [12] $end
+$var wire 1 w saida_da_soma_jump~combout [11] $end
+$var wire 1 x saida_da_soma_jump~combout [10] $end
+$var wire 1 y saida_da_soma_jump~combout [9] $end
+$var wire 1 z saida_da_soma_jump~combout [8] $end
+$var wire 1 { saida_da_soma_jump~combout [7] $end
+$var wire 1 | saida_da_soma_jump~combout [6] $end
+$var wire 1 } saida_da_soma_jump~combout [5] $end
+$var wire 1 ~ saida_da_soma_jump~combout [4] $end
+$var wire 1 !! saida_da_soma_jump~combout [3] $end
+$var wire 1 "! saida_da_soma_jump~combout [2] $end
+$var wire 1 #! saida_da_soma_jump~combout [1] $end
+$var wire 1 $! saida_da_soma_jump~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -113,593 +118,499 @@ $enddefinitions $end
 $dumpvars
 0!
 0"
-b101011110100 #
+0#
+0$
+b1111 %
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
 0+
 0*
-1)
+0)
 0(
-1'
-1&
-1%
-1$
-0/
-1.
-0-
-1,
-13
-12
-11
-10
-0;
-0:
-19
-08
-17
-16
-15
-14
-0?
-1>
-0=
+0'
+0&
+x6
+07
+18
+x9
+1:
+1;
 1<
+0=
+0>
+1?
 0@
 0A
-1B
-0D
+0B
 0C
-0F
+0D
 0E
-0G
-1H
+0F
+1G
+0H
 0I
 0J
 1K
-0M
 0L
-1O
+0M
 0N
-xP
+1O
+0P
 0Q
-1R
-xS
-1T
-1U
-1V
-0W
+0R
+1S
+0T
+0U
+0V
+1W
 0X
 0Y
 0Z
-0[
-1\
+1[
+0\
 0]
 0^
-0_
+1_
 0`
-1a
+0a
 0b
-0c
-0d
-1e
-0f
-1g
-1h
-0i
-0j
-0k
-0m
-0l
-0}
-0|
-1{
-0z
-1y
-1x
-1w
-1v
-0u
-1t
-0s
-1r
+0r
 0q
 0p
 0o
 0n
+0m
+0l
+0k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+1$!
+1#!
+1"!
+1!!
+0~
+0}
+0|
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+0t
+0s
 $end
 #20000
 1!
-1W
-1X
-0P
-1m
-1^
-1[
-1Z
-1D
-0\
-1J
-1I
-1G
-0K
+1=
+1>
+06
 #40000
+1#
 0!
-0W
-0X
-1P
+1C
+0=
+0>
+16
+1D
 #60000
 1!
-1W
-1X
-0P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1=
+1>
+06
+1r
+1E
+0?
+15
+1F
 #80000
 0!
-0W
-0X
-1P
-#90000
-1"
-1Y
-0P
-1Z
+0=
+0>
+16
 #100000
 1!
-1W
-1X
-1P
-1m
-1]
-0Z
-1D
-1@
+1=
+1>
+06
+1q
+0r
+0G
+0F
+0E
+1?
+14
+05
+1H
+1G
+1F
+0H
 #120000
 0!
-0W
-0X
-0P
+0=
+0>
+16
 #140000
-0"
 1!
-0Y
-1W
-1X
-1P
-0l
-0]
-1[
-1Z
-0C
-0\
-0@
-1J
-1I
-1G
+1=
+1>
+06
+1r
+1E
+0?
+15
+0G
+0F
+1H
 #160000
 0!
-0W
-0X
-0P
+0=
+0>
+16
 #180000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
+1=
+1>
+06
+1p
+0q
+0r
+1I
+0H
+1G
+1F
+0E
+1?
+13
+04
+05
+1J
 0I
-0G
+1H
+0F
+0J
 #200000
 0!
-0W
-0X
-0P
+0=
+0>
+16
 #220000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
-1I
-1G
+1=
+1>
+06
+1r
+1E
+0?
+15
+1F
 #240000
 0!
-0W
-0X
-0P
+0=
+0>
+16
 #260000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
+1=
+1>
+06
+1q
+0r
 0G
+0F
+0E
+1?
+14
+05
+1I
+0H
+1G
+1F
+1J
+0I
+1H
+0J
 #280000
 0!
-0W
-0X
-0P
+0=
+0>
+16
 #300000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
+1=
+1>
+06
+1r
+1E
+0?
+15
+0G
+0F
 1I
-1G
+0H
+1J
+#310000
+0#
+0C
+16
+0D
 #320000
+1$
 0!
-0W
-0X
-0P
+1@
+0=
+0>
+1A
+06
+0p
+0q
+0r
+0I
+1H
+1G
+1F
+0E
+1?
+03
+04
+05
+0J
+0H
+0F
 #340000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1=
+1>
+16
 #360000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #380000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
-1I
-1G
+1=
+1>
+16
 #400000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #420000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1=
+1>
+16
 #440000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #460000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
-1I
-1G
+1=
+1>
+16
 #480000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #500000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1=
+1>
+16
 #520000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #540000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
-1I
-1G
+1=
+1>
+16
 #560000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #580000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1=
+1>
+16
 #600000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #620000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
-1I
-1G
+1=
+1>
+16
 #640000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #660000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1=
+1>
+16
 #680000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #700000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
-1I
-1G
+1=
+1>
+16
 #720000
+0$
 0!
-0W
-0X
-0P
+0@
+0=
+0>
+0A
+06
 #740000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1=
+1>
+16
 #760000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #780000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
-1I
-1G
+1=
+1>
+16
 #800000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #820000
+1"
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1B
+1=
+1>
+16
+1D
 #840000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #860000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
+1=
+1>
+16
+1o
+1p
+1q
+1r
 1J
+1H
+1F
+1E
+0?
+12
+13
+14
+15
+0G
+0F
 1I
-1G
+0H
+0K
+0J
+1L
 #880000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #900000
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
-0D
-1C
-1\
-0J
-0I
-0G
+1=
+1>
+16
 #920000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #940000
 1!
-1W
-1X
-1P
-1m
-0l
-1[
-1Z
-1D
-0C
-0\
-1J
-1I
-1G
+1=
+1>
+16
 #960000
 0!
-0W
-0X
-0P
+0=
+0>
+06
 #980000
+0"
 1!
-1W
-1X
-1P
-0m
-1l
-0[
-0Z
+0B
+1=
+1>
+16
 0D
-1C
-1\
-0J
+1n
+0o
+0p
+0q
+0r
+1M
+0L
+1K
+1J
 0I
-0G
+1H
+1G
+1F
+0E
+1?
+11
+02
+03
+04
+05
+1N
+0M
+1L
+0J
+0H
+0F
+0N
 #1000000

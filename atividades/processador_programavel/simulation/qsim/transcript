@@ -1,20 +1,20 @@
 # do processador_programavel.do 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module bloco_de_controle
+# -- Compiling module contador_de_programa
 # 
 # Top level modules:
-# 	bloco_de_controle
+# 	contador_de_programa
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module bloco_de_controle_vlg_sample_tst
-# -- Compiling module bloco_de_controle_vlg_check_tst
-# -- Compiling module bloco_de_controle_vlg_vec_tst
+# -- Compiling module contador_de_programa_vlg_sample_tst
+# -- Compiling module contador_de_programa_vlg_check_tst
+# -- Compiling module contador_de_programa_vlg_vec_tst
 # 
 # Top level modules:
-# 	bloco_de_controle_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.bloco_de_controle_vlg_vec_tst 
-# Loading work.bloco_de_controle_vlg_vec_tst
-# Loading work.bloco_de_controle
+# 	contador_de_programa_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.contador_de_programa_vlg_vec_tst 
+# Loading work.contador_de_programa_vlg_vec_tst
+# Loading work.contador_de_programa
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
@@ -24,15 +24,9 @@
 # Loading cycloneii_ver.cycloneii_ena_reg
 # Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_lcell_ff
-# Loading work.bloco_de_controle_vlg_sample_tst
-# Loading work.bloco_de_controle_vlg_check_tst
+# Loading work.contador_de_programa_vlg_sample_tst
+# Loading work.contador_de_programa_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ERROR! Vector Mismatch for output port estado_atual[0] :: @time = 40000.000 ps
-#      Expected value = 00
-#      Real value = 01
-# ERROR! Vector Mismatch for output port estado_atual[1] :: @time = 80000.000 ps
-#      Expected value = 00
-#      Real value = 10
-#           2 mismatched vectors : Simulation failed !
-# ** Note: $finish    : processador_programavel.vt(359)
-#    Time: 1 us  Iteration: 0  Instance: /bloco_de_controle_vlg_vec_tst/tb_out
+# Simulation passed !
+# ** Note: $finish    : processador_programavel.vt(425)
+#    Time: 1 us  Iteration: 0  Instance: /contador_de_programa_vlg_vec_tst/tb_out

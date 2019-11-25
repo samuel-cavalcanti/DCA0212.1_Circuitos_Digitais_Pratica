@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_programavel
-Sun Nov 24 20:55:50 2019
+Sun Nov 24 22:38:38 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,12 +14,20 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |bloco_de_controle
- 10. Parameter Settings for User Entity Instance: decodificador:decodificador
- 11. Parameter Settings for User Entity Instance: decodificador:decodificador|decodificador_banco:decodificador_banco
- 12. Port Connectivity Checks: "maquina_de_estados:maquina_de_estados"
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |unidade_de_controle
+ 10. Parameter Settings for User Entity Instance: somador_complemento_de_2:somador
+ 11. Parameter Settings for User Entity Instance: contador_de_programa:contador_de_programa
+ 12. Parameter Settings for User Entity Instance: contador_de_programa:contador_de_programa|registrador:registrador
+ 13. Parameter Settings for User Entity Instance: contador_de_programa:contador_de_programa|soma_1:soma_1
+ 14. Parameter Settings for User Entity Instance: registrador_de_instrucao:registrador_de_instrucao
+ 15. Parameter Settings for User Entity Instance: registrador_de_instrucao:registrador_de_instrucao|registrador:registrador
+ 16. Parameter Settings for User Entity Instance: bloco_de_controle:bloco_de_controle
+ 17. Parameter Settings for User Entity Instance: bloco_de_controle:bloco_de_controle|decodificador:decodificador
+ 18. Parameter Settings for User Entity Instance: bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco
+ 19. Port Connectivity Checks: "bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
+ 20. Port Connectivity Checks: "registrador_de_instrucao:registrador_de_instrucao|registrador:registrador"
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +53,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 24 20:55:50 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 24 22:38:38 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador_programavel                         ;
-; Top-level Entity Name              ; bloco_de_controle                               ;
+; Top-level Entity Name              ; unidade_de_controle                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 18                                              ;
-;     Total combinational functions  ; 18                                              ;
-;     Dedicated logic registers      ; 2                                               ;
-; Total registers                    ; 2                                               ;
-; Total pins                         ; 62                                              ;
+; Total logic elements               ; 82                                              ;
+;     Total combinational functions  ; 66                                              ;
+;     Dedicated logic registers      ; 34                                              ;
+; Total registers                    ; 34                                              ;
+; Total pins                         ; 72                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -62,89 +70,89 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+----------------------------------------------------------------------------+--------------------+-------------------------+
-; Option                                                                     ; Setting            ; Default Value           ;
-+----------------------------------------------------------------------------+--------------------+-------------------------+
-; Device                                                                     ; EP2C35F672C6       ;                         ;
-; Top-level entity name                                                      ; bloco_de_controle  ; processador_programavel ;
-; Family name                                                                ; Cyclone II         ; Cyclone IV GX           ;
-; Use smart compilation                                                      ; Off                ; Off                     ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                      ;
-; Enable compact report table                                                ; Off                ; Off                     ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto                    ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                     ;
-; Preserve fewer node names                                                  ; On                 ; On                      ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                     ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001            ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993               ;
-; State Machine Processing                                                   ; Auto               ; Auto                    ;
-; Safe State Machine                                                         ; Off                ; Off                     ;
-; Extract Verilog State Machines                                             ; On                 ; On                      ;
-; Extract VHDL State Machines                                                ; On                 ; On                      ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                     ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000                    ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                     ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                      ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                      ;
-; Parallel Synthesis                                                         ; On                 ; On                      ;
-; DSP Block Balancing                                                        ; Auto               ; Auto                    ;
-; NOT Gate Push-Back                                                         ; On                 ; On                      ;
-; Power-Up Don't Care                                                        ; On                 ; On                      ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                     ;
-; Remove Duplicate Registers                                                 ; On                 ; On                      ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                     ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                     ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                     ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                     ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                     ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                      ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                     ;
-; Optimization Technique                                                     ; Balanced           ; Balanced                ;
-; Carry Chain Length                                                         ; 70                 ; 70                      ;
-; Auto Carry Chains                                                          ; On                 ; On                      ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                      ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                     ;
-; Auto ROM Replacement                                                       ; On                 ; On                      ;
-; Auto RAM Replacement                                                       ; On                 ; On                      ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto                    ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto                    ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                      ;
-; Strict RAM Replacement                                                     ; Off                ; Off                     ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                      ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                     ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                     ;
-; Auto Resource Sharing                                                      ; Off                ; Off                     ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                     ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                     ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                     ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                      ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                     ;
-; Timing-Driven Synthesis                                                    ; Off                ; Off                     ;
-; Report Parameter Settings                                                  ; On                 ; On                      ;
-; Report Source Assignments                                                  ; On                 ; On                      ;
-; Report Connectivity Checks                                                 ; On                 ; On                      ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                     ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                       ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation      ;
-; HDL message level                                                          ; Level2             ; Level2                  ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                     ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000                    ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000                    ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                     ;
-; Clock MUX Protection                                                       ; On                 ; On                      ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                     ;
-; Block Design Naming                                                        ; Auto               ; Auto                    ;
-; SDC constraint protection                                                  ; Off                ; Off                     ;
-; Synthesis Effort                                                           ; Auto               ; Auto                    ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                      ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                     ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium                  ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto                    ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                      ;
-; Synthesis Seed                                                             ; 1                  ; 1                       ;
-+----------------------------------------------------------------------------+--------------------+-------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                              ;
++----------------------------------------------------------------------------+---------------------+-------------------------+
+; Option                                                                     ; Setting             ; Default Value           ;
++----------------------------------------------------------------------------+---------------------+-------------------------+
+; Device                                                                     ; EP2C35F672C6        ;                         ;
+; Top-level entity name                                                      ; unidade_de_controle ; processador_programavel ;
+; Family name                                                                ; Cyclone II          ; Cyclone IV GX           ;
+; Use smart compilation                                                      ; Off                 ; Off                     ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                  ; On                      ;
+; Enable compact report table                                                ; Off                 ; Off                     ;
+; Restructure Multiplexers                                                   ; Auto                ; Auto                    ;
+; Create Debugging Nodes for IP Cores                                        ; Off                 ; Off                     ;
+; Preserve fewer node names                                                  ; On                  ; On                      ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                 ; Off                     ;
+; Verilog Version                                                            ; Verilog_2001        ; Verilog_2001            ;
+; VHDL Version                                                               ; VHDL_1993           ; VHDL_1993               ;
+; State Machine Processing                                                   ; Auto                ; Auto                    ;
+; Safe State Machine                                                         ; Off                 ; Off                     ;
+; Extract Verilog State Machines                                             ; On                  ; On                      ;
+; Extract VHDL State Machines                                                ; On                  ; On                      ;
+; Ignore Verilog initial constructs                                          ; Off                 ; Off                     ;
+; Iteration limit for constant Verilog loops                                 ; 5000                ; 5000                    ;
+; Iteration limit for non-constant Verilog loops                             ; 250                 ; 250                     ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                  ; On                      ;
+; Infer RAMs from Raw Logic                                                  ; On                  ; On                      ;
+; Parallel Synthesis                                                         ; On                  ; On                      ;
+; DSP Block Balancing                                                        ; Auto                ; Auto                    ;
+; NOT Gate Push-Back                                                         ; On                  ; On                      ;
+; Power-Up Don't Care                                                        ; On                  ; On                      ;
+; Remove Redundant Logic Cells                                               ; Off                 ; Off                     ;
+; Remove Duplicate Registers                                                 ; On                  ; On                      ;
+; Ignore CARRY Buffers                                                       ; Off                 ; Off                     ;
+; Ignore CASCADE Buffers                                                     ; Off                 ; Off                     ;
+; Ignore GLOBAL Buffers                                                      ; Off                 ; Off                     ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                 ; Off                     ;
+; Ignore LCELL Buffers                                                       ; Off                 ; Off                     ;
+; Ignore SOFT Buffers                                                        ; On                  ; On                      ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                 ; Off                     ;
+; Optimization Technique                                                     ; Balanced            ; Balanced                ;
+; Carry Chain Length                                                         ; 70                  ; 70                      ;
+; Auto Carry Chains                                                          ; On                  ; On                      ;
+; Auto Open-Drain Pins                                                       ; On                  ; On                      ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                 ; Off                     ;
+; Auto ROM Replacement                                                       ; On                  ; On                      ;
+; Auto RAM Replacement                                                       ; On                  ; On                      ;
+; Auto Shift Register Replacement                                            ; Auto                ; Auto                    ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                ; Auto                    ;
+; Auto Clock Enable Replacement                                              ; On                  ; On                      ;
+; Strict RAM Replacement                                                     ; Off                 ; Off                     ;
+; Allow Synchronous Control Signals                                          ; On                  ; On                      ;
+; Force Use of Synchronous Clear Signals                                     ; Off                 ; Off                     ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                 ; Off                     ;
+; Auto Resource Sharing                                                      ; Off                 ; Off                     ;
+; Allow Any RAM Size For Recognition                                         ; Off                 ; Off                     ;
+; Allow Any ROM Size For Recognition                                         ; Off                 ; Off                     ;
+; Allow Any Shift Register Size For Recognition                              ; Off                 ; Off                     ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                  ; On                      ;
+; Ignore translate_off and synthesis_off directives                          ; Off                 ; Off                     ;
+; Timing-Driven Synthesis                                                    ; Off                 ; Off                     ;
+; Report Parameter Settings                                                  ; On                  ; On                      ;
+; Report Source Assignments                                                  ; On                  ; On                      ;
+; Report Connectivity Checks                                                 ; On                  ; On                      ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                 ; Off                     ;
+; Synchronization Register Chain Length                                      ; 2                   ; 2                       ;
+; PowerPlay Power Optimization                                               ; Normal compilation  ; Normal compilation      ;
+; HDL message level                                                          ; Level2              ; Level2                  ;
+; Suppress Register Optimization Related Messages                            ; Off                 ; Off                     ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                ; 5000                    ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                ; 5000                    ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                 ; 100                     ;
+; Clock MUX Protection                                                       ; On                  ; On                      ;
+; Auto Gated Clock Conversion                                                ; Off                 ; Off                     ;
+; Block Design Naming                                                        ; Auto                ; Auto                    ;
+; SDC constraint protection                                                  ; Off                 ; Off                     ;
+; Synthesis Effort                                                           ; Auto                ; Auto                    ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                  ; On                      ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                 ; Off                     ;
+; Analysis & Synthesis Message Level                                         ; Medium              ; Medium                  ;
+; Disable Register Merging Across Hierarchies                                ; Auto                ; Auto                    ;
+; Resource Aware Inference For Block RAM                                     ; On                  ; On                      ;
+; Synthesis Seed                                                             ; 1                   ; 1                       ;
++----------------------------------------------------------------------------+---------------------+-------------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -158,63 +166,75 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                        ;
-+---------------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                                                        ; Library ;
-+---------------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; controller/bloco_de_controle.vhd                                          ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/controller/bloco_de_controle.vhd                                          ;         ;
-; controller/decoder/decodificador.vhd                                      ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/controller/decoder/decodificador.vhd                                      ;         ;
-; controller/decoder/ALU_decoder/decodificador_ALU.vhd                      ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/controller/decoder/ALU_decoder/decodificador_ALU.vhd                      ;         ;
-; controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd ;         ;
-; controller/decoder/register_banck_decoder/decodificador_banco.vhd         ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/controller/decoder/register_banck_decoder/decodificador_banco.vhd         ;         ;
-; controller/decoder/mux3x1_decoder/decodificador_mux.vhd                   ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/controller/decoder/mux3x1_decoder/decodificador_mux.vhd                   ;         ;
-; controller/state_machine/maquina_de_estados.vhd                           ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/controller/state_machine/maquina_de_estados.vhd                           ;         ;
-+---------------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                                  ;
++----------------------------------------------------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                                       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                                                                     ; Library ;
++----------------------------------------------------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd         ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd         ;         ;
+; unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd                   ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd                   ;         ;
+; registrador.vhd                                                                        ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/registrador.vhd                                                                        ;         ;
+; unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd                      ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd                      ;         ;
+; unit_control/program_counter/soma_1.vhd                                                ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/program_counter/soma_1.vhd                                                ;         ;
+; unit_control/program_counter/contador_de_programa.vhd                                  ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/program_counter/contador_de_programa.vhd                                  ;         ;
+; unit_control/controller/bloco_de_controle.vhd                                          ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/bloco_de_controle.vhd                                          ;         ;
+; unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd ;         ;
+; unit_control/controller/decoder/decodificador.vhd                                      ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/decodificador.vhd                                      ;         ;
+; unit_control/sum/somador_complemento_de_2.vhd                                          ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/sum/somador_complemento_de_2.vhd                                          ;         ;
+; unit_control/instruction_register/registrador_de_instrucao.vhd                         ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/instruction_register/registrador_de_instrucao.vhd                         ;         ;
+; unit_control/controller/state_machine/maquina_de_estados.vhd                           ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/state_machine/maquina_de_estados.vhd                           ;         ;
+; unit_control/unidade_de_controle.vhd                                                   ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/unidade_de_controle.vhd                                                   ;         ;
++----------------------------------------------------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                      ;
-+---------------------------------------------+------------------------------------+
-; Resource                                    ; Usage                              ;
-+---------------------------------------------+------------------------------------+
-; Estimated Total logic elements              ; 18                                 ;
-;                                             ;                                    ;
-; Total combinational functions               ; 18                                 ;
-; Logic element usage by number of LUT inputs ;                                    ;
-;     -- 4 input functions                    ; 9                                  ;
-;     -- 3 input functions                    ; 5                                  ;
-;     -- <=2 input functions                  ; 4                                  ;
-;                                             ;                                    ;
-; Logic elements by mode                      ;                                    ;
-;     -- normal mode                          ; 18                                 ;
-;     -- arithmetic mode                      ; 0                                  ;
-;                                             ;                                    ;
-; Total registers                             ; 2                                  ;
-;     -- Dedicated logic registers            ; 2                                  ;
-;     -- I/O registers                        ; 0                                  ;
-;                                             ;                                    ;
-; I/O pins                                    ; 62                                 ;
-; Embedded Multiplier 9-bit elements          ; 0                                  ;
-; Maximum fan-out node                        ; saida_registrador_de_instrucao[13] ;
-; Maximum fan-out                             ; 9                                  ;
-; Total fan-out                               ; 106                                ;
-; Average fan-out                             ; 1.29                               ;
-+---------------------------------------------+------------------------------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 82    ;
+;                                             ;       ;
+; Total combinational functions               ; 66    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 9     ;
+;     -- 3 input functions                    ; 20    ;
+;     -- <=2 input functions                  ; 37    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 21    ;
+;     -- arithmetic mode                      ; 45    ;
+;                                             ;       ;
+; Total registers                             ; 34    ;
+;     -- Dedicated logic registers            ; 34    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 72    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 34    ;
+; Total fan-out                               ; 369   ;
+; Average fan-out                             ; 2.15  ;
++---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                             ;
-+-----------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                                            ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                          ; Library Name ;
-+-----------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+--------------+
-; |bloco_de_controle                                                    ; 18 (1)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 62   ; 0            ; |bloco_de_controle                                                                                           ; work         ;
-;    |decodificador:decodificador|                                      ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bloco_de_controle|decodificador:decodificador                                                               ; work         ;
-;       |decodificador_banco:decodificador_banco|                       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco                       ; work         ;
-;       |decodificador_memoria_de_dados:decodificador_memoria_de_dados| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bloco_de_controle|decodificador:decodificador|decodificador_memoria_de_dados:decodificador_memoria_de_dados ; work         ;
-;       |decodificador_mux:decodificador_mux|                           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux                           ; work         ;
-;    |maquina_de_estados:maquina_de_estados|                            ; 4 (4)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bloco_de_controle|maquina_de_estados:maquina_de_estados                                                     ; work         ;
-+-----------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                      ;
++--------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                ; Library Name ;
++--------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |unidade_de_controle                                                     ; 66 (0)            ; 34 (0)       ; 0           ; 0            ; 0       ; 0         ; 72   ; 0            ; |unidade_de_controle                                                                                                                               ; work         ;
+;    |bloco_de_controle:bloco_de_controle|                                 ; 18 (1)            ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|bloco_de_controle:bloco_de_controle                                                                                           ; work         ;
+;       |decodificador:decodificador|                                      ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador                                                               ; work         ;
+;          |decodificador_banco:decodificador_banco|                       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco                       ; work         ;
+;          |decodificador_memoria_de_dados:decodificador_memoria_de_dados| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_memoria_de_dados:decodificador_memoria_de_dados ; work         ;
+;          |decodificador_mux:decodificador_mux|                           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux                           ; work         ;
+;       |maquina_de_estados:maquina_de_estados|                            ; 4 (4)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados                                                     ; work         ;
+;    |contador_de_programa:contador_de_programa|                           ; 16 (0)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|contador_de_programa:contador_de_programa                                                                                     ; work         ;
+;       |registrador:registrador|                                          ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador                                                             ; work         ;
+;    |registrador_de_instrucao:registrador_de_instrucao|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao                                                                             ; work         ;
+;       |registrador:registrador|                                          ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador                                                     ; work         ;
+;    |somador_complemento_de_2:somador|                                    ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |unidade_de_controle|somador_complemento_de_2:somador                                                                                              ; work         ;
++--------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -223,53 +243,132 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2     ;
+; Total registers                              ; 34    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |bloco_de_controle ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; numero_de_bits ; 16    ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |unidade_de_controle ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; numero_de_bits ; 16    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decodificador:decodificador ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; numero_de_bits ; 16    ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somador_complemento_de_2:somador ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; numero_de_bits ; 16    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decodificador:decodificador|decodificador_banco:decodificador_banco ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                    ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; numero_de_bits ; 4     ; Signed Integer                                                                          ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_programa:contador_de_programa ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; numero_de_bits ; 16    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "maquina_de_estados:maquina_de_estados" ;
-+-----------+-------+----------+------------------------------------+
-; Port      ; Type  ; Severity ; Details                            ;
-+-----------+-------+----------+------------------------------------+
-; reiniciar ; Input ; Info     ; Stuck at GND                       ;
-+-----------+-------+----------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_programa:contador_de_programa|registrador:registrador ;
++-----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                                                 ;
++-----------------+-------+--------------------------------------------------------------------------------------+
+; numeros_de_bits ; 16    ; Signed Integer                                                                       ;
++-----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_programa:contador_de_programa|soma_1:soma_1 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; numero_de_bits ; 16    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador_de_instrucao:registrador_de_instrucao ;
++-----------------+-------+----------------------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                                 ;
++-----------------+-------+----------------------------------------------------------------------+
+; numeros_de_bits ; 16    ; Signed Integer                                                       ;
++-----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador_de_instrucao:registrador_de_instrucao|registrador:registrador ;
++-----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                                                         ;
++-----------------+-------+----------------------------------------------------------------------------------------------+
+; numeros_de_bits ; 16    ; Signed Integer                                                                               ;
++-----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bloco_de_controle:bloco_de_controle ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; numero_de_bits ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bloco_de_controle:bloco_de_controle|decodificador:decodificador ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; numero_de_bits ; 16    ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; numero_de_bits ; 4     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados" ;
++-----------+-------+----------+------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                ;
++-----------+-------+----------+------------------------------------------------------------------------+
+; reiniciar ; Input ; Info     ; Stuck at GND                                                           ;
++-----------+-------+----------+------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_de_instrucao:registrador_de_instrucao|registrador:registrador" ;
++--------+-------+----------+---------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                   ;
++--------+-------+----------+---------------------------------------------------------------------------+
+; limpar ; Input ; Info     ; Stuck at GND                                                              ;
++--------+-------+----------+---------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -287,80 +386,92 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Nov 24 20:55:47 2019
+    Info: Processing started: Sun Nov 24 22:38:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_programavel -c processador_programavel
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file ALU/somador.vhd
-    Info (12022): Found design unit 1: somador-behavior
-    Info (12023): Found entity 1: somador
-Info (12021): Found 2 design units, including 1 entities, in source file ALU/subtrator.vhd
-    Info (12022): Found design unit 1: subtrator-behavior
-    Info (12023): Found entity 1: subtrator
-Info (12021): Found 2 design units, including 1 entities, in source file program_counter/contador_de_programa.vhd
-    Info (12022): Found design unit 1: contador_de_programa-behavior
-    Info (12023): Found entity 1: contador_de_programa
-Info (12021): Found 2 design units, including 1 entities, in source file program_counter/soma_1.vhd
-    Info (12022): Found design unit 1: soma_1-behavior
-    Info (12023): Found entity 1: soma_1
-Info (12021): Found 2 design units, including 1 entities, in source file mux3x1/mux_3x1.vhd
-    Info (12022): Found design unit 1: mux_3x1-behavior
-    Info (12023): Found entity 1: mux_3x1
-Info (12021): Found 2 design units, including 1 entities, in source file instruction_register/registrador_de_instrucao.vhd
-    Info (12022): Found design unit 1: registrador_de_instrucao-behavior
-    Info (12023): Found entity 1: registrador_de_instrucao
-Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
-    Info (12022): Found design unit 1: registrador-behavior
-    Info (12023): Found entity 1: registrador
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd
+    Info (12022): Found design unit 1: decodificador_banco-behavior
+    Info (12023): Found entity 1: decodificador_banco
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd
+    Info (12022): Found design unit 1: decodificador_mux-behavior
+    Info (12023): Found entity 1: decodificador_mux
 Info (12021): Found 2 design units, including 1 entities, in source file processador_programavel.vhd
     Info (12022): Found design unit 1: processador_programavel-behavior
     Info (12023): Found entity 1: processador_programavel
-Info (12021): Found 2 design units, including 1 entities, in source file comparator/comparador.vhd
-    Info (12022): Found design unit 1: comparador-behavior
-    Info (12023): Found entity 1: comparador
-Info (12021): Found 2 design units, including 1 entities, in source file memory/memoriaD.vhd
-    Info (12022): Found design unit 1: memoriaD-behavior
-    Info (12023): Found entity 1: memoriaD
-Info (12021): Found 2 design units, including 1 entities, in source file controller/bloco_de_controle.vhd
-    Info (12022): Found design unit 1: bloco_de_controle-behavior
-    Info (12023): Found entity 1: bloco_de_controle
-Info (12021): Found 2 design units, including 1 entities, in source file ALU/alu.vhd
-    Info (12022): Found design unit 1: alu-behavior
-    Info (12023): Found entity 1: alu
-Info (12021): Found 2 design units, including 1 entities, in source file controller/decoder/decodificador.vhd
-    Info (12022): Found design unit 1: decodificador-behavior
-    Info (12023): Found entity 1: decodificador
-Info (12021): Found 2 design units, including 1 entities, in source file controller/decoder/ALU_decoder/decodificador_ALU.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
+    Info (12022): Found design unit 1: registrador-behavior
+    Info (12023): Found entity 1: registrador
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd
     Info (12022): Found design unit 1: decodificador_ALU-behavior
     Info (12023): Found entity 1: decodificador_ALU
-Info (12021): Found 2 design units, including 1 entities, in source file controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/program_counter/soma_1.vhd
+    Info (12022): Found design unit 1: soma_1-behavior
+    Info (12023): Found entity 1: soma_1
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/program_counter/contador_de_programa.vhd
+    Info (12022): Found design unit 1: contador_de_programa-behavior
+    Info (12023): Found entity 1: contador_de_programa
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/controller/bloco_de_controle.vhd
+    Info (12022): Found design unit 1: bloco_de_controle-behavior
+    Info (12023): Found entity 1: bloco_de_controle
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd
     Info (12022): Found design unit 1: decodificador_memoria_de_dados-behavior
     Info (12023): Found entity 1: decodificador_memoria_de_dados
-Info (12021): Found 2 design units, including 1 entities, in source file controller/decoder/register_banck_decoder/decodificador_banco.vhd
-    Info (12022): Found design unit 1: decodificador_banco-behavior
-    Info (12023): Found entity 1: decodificador_banco
-Info (12021): Found 2 design units, including 1 entities, in source file controller/decoder/mux3x1_decoder/decodificador_mux.vhd
-    Info (12022): Found design unit 1: decodificador_mux-behavior
-    Info (12023): Found entity 1: decodificador_mux
-Info (12021): Found 2 design units, including 1 entities, in source file controller/state_machine/maquina_de_estados.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/controller/decoder/decodificador.vhd
+    Info (12022): Found design unit 1: decodificador-behavior
+    Info (12023): Found entity 1: decodificador
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/mux3x1/mux_3x1.vhd
+    Info (12022): Found design unit 1: mux_3x1-behavior
+    Info (12023): Found entity 1: mux_3x1
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/memory/memoriaD.vhd
+    Info (12022): Found design unit 1: memoriaD-behavior
+    Info (12023): Found entity 1: memoriaD
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/comparator/comparador.vhd
+    Info (12022): Found design unit 1: comparador-behavior
+    Info (12023): Found entity 1: comparador
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/ALU/alu.vhd
+    Info (12022): Found design unit 1: alu-behavior
+    Info (12023): Found entity 1: alu
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/ALU/subtrator.vhd
+    Info (12022): Found design unit 1: subtrator-behavior
+    Info (12023): Found entity 1: subtrator
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/ALU/somador.vhd
+    Info (12022): Found design unit 1: somador-behavior
+    Info (12023): Found entity 1: somador
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/sum/somador_complemento_de_2.vhd
+    Info (12022): Found design unit 1: somador_complemento_de_2-behavior
+    Info (12023): Found entity 1: somador_complemento_de_2
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/instruction_register/registrador_de_instrucao.vhd
+    Info (12022): Found design unit 1: registrador_de_instrucao-behavior
+    Info (12023): Found entity 1: registrador_de_instrucao
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/controller/state_machine/maquina_de_estados.vhd
     Info (12022): Found design unit 1: maquina_de_estados-behavior
     Info (12023): Found entity 1: maquina_de_estados
-Info (12127): Elaborating entity "bloco_de_controle" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at bloco_de_controle.vhd(39): used explicit default value for signal "reinicar_maquina_de_estados" because signal was never assigned a value
-Info (12129): Elaborating entity "decodificador" using architecture "A:behavior" for hierarchy "decodificador:decodificador"
-Info (12129): Elaborating entity "decodificador_memoria_de_dados" using architecture "A:behavior" for hierarchy "decodificador:decodificador|decodificador_memoria_de_dados:decodificador_memoria_de_dados"
-Info (12129): Elaborating entity "decodificador_mux" using architecture "A:behavior" for hierarchy "decodificador:decodificador|decodificador_mux:decodificador_mux"
-Info (12129): Elaborating entity "decodificador_banco" using architecture "A:behavior" for hierarchy "decodificador:decodificador|decodificador_banco:decodificador_banco"
-Info (12129): Elaborating entity "decodificador_ALU" using architecture "A:behavior" for hierarchy "decodificador:decodificador|decodificador_ALU:decodificador_ALU"
-Info (12129): Elaborating entity "maquina_de_estados" using architecture "A:behavior" for hierarchy "maquina_de_estados:maquina_de_estados"
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/unidade_de_controle.vhd
+    Info (12022): Found design unit 1: unidade_de_controle-behavior
+    Info (12023): Found entity 1: unidade_de_controle
+Info (12127): Elaborating entity "unidade_de_controle" for the top level hierarchy
+Info (12129): Elaborating entity "somador_complemento_de_2" using architecture "A:behavior" for hierarchy "somador_complemento_de_2:somador"
+Info (12129): Elaborating entity "contador_de_programa" using architecture "A:behavior" for hierarchy "contador_de_programa:contador_de_programa"
+Info (12129): Elaborating entity "registrador" using architecture "A:behavior" for hierarchy "contador_de_programa:contador_de_programa|registrador:registrador"
+Info (12129): Elaborating entity "soma_1" using architecture "A:behavior" for hierarchy "contador_de_programa:contador_de_programa|soma_1:soma_1"
+Info (12129): Elaborating entity "registrador_de_instrucao" using architecture "A:behavior" for hierarchy "registrador_de_instrucao:registrador_de_instrucao"
+Info (12129): Elaborating entity "bloco_de_controle" using architecture "A:behavior" for hierarchy "bloco_de_controle:bloco_de_controle"
+Warning (10540): VHDL Signal Declaration warning at bloco_de_controle.vhd(38): used explicit default value for signal "reinicar_maquina_de_estados" because signal was never assigned a value
+Info (12129): Elaborating entity "decodificador" using architecture "A:behavior" for hierarchy "bloco_de_controle:bloco_de_controle|decodificador:decodificador"
+Info (12129): Elaborating entity "decodificador_memoria_de_dados" using architecture "A:behavior" for hierarchy "bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_memoria_de_dados:decodificador_memoria_de_dados"
+Info (12129): Elaborating entity "decodificador_mux" using architecture "A:behavior" for hierarchy "bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux"
+Info (12129): Elaborating entity "decodificador_banco" using architecture "A:behavior" for hierarchy "bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco"
+Info (12129): Elaborating entity "decodificador_ALU" using architecture "A:behavior" for hierarchy "bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_ALU:decodificador_ALU"
+Info (12129): Elaborating entity "maquina_de_estados" using architecture "A:behavior" for hierarchy "bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 154 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 44 output pins
-    Info (21061): Implemented 18 logic cells
+    Info (21059): Implemented 54 output pins
+    Info (21061): Implemented 82 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 366 megabytes
-    Info: Processing ended: Sun Nov 24 20:55:50 2019
+    Info: Peak virtual memory: 368 megabytes
+    Info: Processing ended: Sun Nov 24 22:38:38 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

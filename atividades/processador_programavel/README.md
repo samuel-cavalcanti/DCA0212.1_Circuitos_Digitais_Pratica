@@ -13,6 +13,7 @@
 
 - [x] Bloco controle
 - [x] Memória D (gambiarra)
+- [x] somador (complemento de 2)
 - [ ] Banco de registradores
 - [x] Registrador de instrução
 - [x] PC

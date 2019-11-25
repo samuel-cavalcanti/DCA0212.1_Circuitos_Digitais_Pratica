@@ -719,7 +719,9 @@ TRANSITION_LIST("escrever")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 820.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 20.0;
 	}
 }
 

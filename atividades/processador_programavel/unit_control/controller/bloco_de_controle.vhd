@@ -4,7 +4,6 @@ use ieee.std_logic_1164.all;
 entity bloco_de_controle is
 	generic (numero_de_bits : positive := 16);
 	port (clock									     : in std_logic;
-			estado_atual							  : buffer std_logic_vector(1 downto 0);
 			saida_registrador_de_instrucao     : in std_logic_vector(numero_de_bits -1 downto 0);
 			saida_comparador 					     : in std_logic;
 			escrever_contador_de_programa      : out std_logic;
@@ -37,7 +36,7 @@ constant Execucao : std_logic_vector(1 downto 0) := "10";
 constant Saltar   : std_logic_vector(1 downto 0) := "11";
 
 signal reinicar_maquina_de_estados : std_logic:= '0';
---signal estado_atual: std_logic_vector(1 downto 0) := Inicio;
+signal estado_atual: std_logic_vector(1 downto 0) := Inicio;
 signal operacao : std_logic_vector(numero_de_bits_operecao -1  downto 0);
 
 begin
