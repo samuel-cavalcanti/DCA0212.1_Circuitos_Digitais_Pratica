@@ -11,7 +11,7 @@
 
 # Componentes do processador
 
-- [ ] Bloco de controle (decodificador)
+- [x] Bloco controle
 - [x] Memória D (gambiarra)
 - [ ] Banco de registradores
 - [x] Registrador de instrução

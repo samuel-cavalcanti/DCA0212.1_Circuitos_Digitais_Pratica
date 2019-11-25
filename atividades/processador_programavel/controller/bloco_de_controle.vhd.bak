@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity bloco_de_controle is
+	generic (numero_de_bits : positive := 16);
+	constant numero_bits_endereco_banco: integer := 4;
+	port (clock									   : in std_logic;
+			saida_registrador_de_instrucao   : in std_logic_vector(numero_de_bits -1 downto 0);
+			saida_comparador 					   : in std_logic;
+			escrever_contador_de_programa    : out std_logic;
+			limpar_contador_de_programa	   : out std_logic;
+			incrementar_contador_de_programa : out std_logic;
+			ler_memoria_de_instrucoes			: out std_logic;
+			escrever_registrador_de_instrucao: out std_logic;
+			endereco_memoria_de_dados			: out std_logic_vector(8 downto 0);
+			ler_memoria_de_dados					: out std_logic;
+			escrever_memoria_de_dados			: out std_logic;
+			constante								: out std_logic_vector(8 downto 0);
+			seletor_mux								: out std_logic_vector(1 downto 0);
+			endereco_constante					: out std_logic_vector(3 downto 0);
+		)
+
+end entity;
+
+
+architecture behavior of bloco_de_controle is 
+
+
+begin
+
+
+end architecture;

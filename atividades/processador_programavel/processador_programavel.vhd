@@ -27,7 +27,7 @@ signal operador_ula : std_logic_vector(1 downto 0);
 begin 
 
 	
-	ula : entity work.ula(behavior)
+	alu : entity work.alu(behavior)
 		generic map ( numero_de_bits)
 		port map (entrada_ula(0),entrada_ula(1),operador_ula,saida_ula);
 	

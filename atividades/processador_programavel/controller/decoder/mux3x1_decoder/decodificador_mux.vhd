@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity decodificador_mux is 
+
+	port ( operacao                         : in std_logic_vector(3 downto 0); 
+			 valor_do_registrador_de_instrucao: in std_logic_vector(7 downto 0);
+			 seletor_mux                      : out std_logic_vector(1 downto 0);
+			 constante								 : out std_logic_vector(7 downto 0));
+
+end entity;
+
+
+architecture behavior of decodificador_mux is 
+constant numero_de_bis : integer := 4;
+constant Carregar : std_logic_vector(numero_de_bis-1 downto 0) := "0000";
+constant Somar : std_logic_vector(numero_de_bis-1 downto 0)    := "0010";
+constant Carregar_constante : std_logic_vector(numero_de_bis-1 downto 0) := "0011";
+constant Subtrair : std_logic_vector(numero_de_bis-1 downto 0) := "0100";
+
+begin
+
+	constante <= valor_do_registrador_de_instrucao;
+	
+	seletor_mux <= "00" when  operacao = Somar or operacao = Subtrair else
+						"01" when  operacao = Carregar else
+						"10" when  operacao = Carregar_constante else
+						"11"; -- nunca deve acontecer
+	
+	
+
+end architecture;			 

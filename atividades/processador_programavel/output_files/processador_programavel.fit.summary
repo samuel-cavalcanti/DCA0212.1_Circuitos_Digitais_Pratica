@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sat Nov 23 23:42:54 2019
+Fitter Status : Successful - Sun Nov 24 20:56:02 2019
 Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : processador_programavel
-Top-level Entity Name : memoriaD
+Top-level Entity Name : bloco_de_controle
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 4,996 / 33,216 ( 15 % )
-    Total combinational functions : 3,009 / 33,216 ( 9 % )
-    Dedicated logic registers : 4,112 / 33,216 ( 12 % )
-Total registers : 4112
-Total pins : 44 / 475 ( 9 % )
+Total logic elements : 18 / 33,216 ( < 1 % )
+    Total combinational functions : 18 / 33,216 ( < 1 % )
+    Dedicated logic registers : 2 / 33,216 ( < 1 % )
+Total registers : 2
+Total pins : 62 / 475 ( 13 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )

@@ -1,0 +1,40 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity decodificador is
+	port (operacao 								  : in std_logic_vector(3 downto 0);
+			escrever_contador_de_programa      : out std_logic;
+			limpar_contador_de_programa	     : out std_logic;
+			incrementar_contador_de_programa   : out std_logic;
+			ler_memoria_de_instrucoes			  : out std_logic;
+			escrever_registrador_de_instrucao  : out std_logic;
+			endereco_memoria_de_dados			  : out std_logic_vector(8 downto 0);
+			ler_memoria_de_dados					  : out std_logic;
+			escrever_memoria_de_dados			  : out std_logic;
+			constante								  : out std_logic_vector(8 downto 0);
+			seletor_mux								  : out std_logic_vector(1 downto 0);
+			endereco_para_escrita_no_banco	  : out std_logic_vector(3 downto 0);
+			escrever_no_banco						  : out std_logic;
+			endereco_1_para_leitura_banco		  : out std_logic_vector(3 downto 0);
+			habilitar_leitura_1_no_banco		  : out std_logic;
+			endereco_2_para_leitura_banco      : out std_logic_vector(3 downto 0);
+			habilitar_leitura_2_no_banco       : out std_logic;
+			seletor_ALU								  : out std_logic_vector(1 downto 0)
+		);
+
+end entity;
+
+
+architecture behavior of decodificador is 
+
+
+begin
+
+		 
+	
+
+	seletor_ALU <= "01" when operacao = "0010" else
+						"10" when operacao = "0100" else
+						"00";
+
+end architecture;

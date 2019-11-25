@@ -70,7 +70,7 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 GND                          : A2        : gnd    :                   :         :           :                
 VCCIO3                       : A3        : power  :                   : 3.3V    : 3         :                
-GND*                         : A4        :        :                   :         : 3         :                
+endereco_memoria_de_dados[7] : A4        : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : A5        :        :                   :         : 3         :                
 GND*                         : A6        :        :                   :         : 3         :                
 GND*                         : A7        :        :                   :         : 3         :                
@@ -80,11 +80,11 @@ GND*                         : A10       :        :                   :         
 VCCIO3                       : A11       : power  :                   : 3.3V    : 3         :                
 GND                          : A12       : gnd    :                   :         :           :                
 GND+                         : A13       :        :                   :         : 4         :                
-dado_de_saida[11]            : A14       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A14       :        :                   :         : 4         :                
 GND                          : A15       : gnd    :                   :         :           :                
 VCCIO4                       : A16       : power  :                   : 3.3V    : 4         :                
-escrita                      : A17       : input  : 3.3-V LVTTL       :         : 4         : N              
-endereco[4]                  : A18       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : A17       :        :                   :         : 4         :                
+GND*                         : A18       :        :                   :         : 4         :                
 GND*                         : A19       :        :                   :         : 4         :                
 GND*                         : A20       :        :                   :         : 4         :                
 GND*                         : A21       :        :                   :         : 4         :                
@@ -92,20 +92,20 @@ GND*                         : A22       :        :                   :         
 GND*                         : A23       :        :                   :         : 4         :                
 VCCIO4                       : A24       : power  :                   : 3.3V    : 4         :                
 GND                          : A25       : gnd    :                   :         :           :                
-GND*                         : AA1       :        :                   :         : 1         :                
-GND*                         : AA2       :        :                   :         : 1         :                
-GND*                         : AA3       :        :                   :         : 1         :                
-GND*                         : AA4       :        :                   :         : 1         :                
-GND*                         : AA5       :        :                   :         : 1         :                
-GND*                         : AA6       :        :                   :         : 1         :                
-GND*                         : AA7       :        :                   :         : 1         :                
+endereco_1_para_leitura_banco[3] : AA1       : output : 3.3-V LVTTL       :         : 1         : N              
+saida_registrador_de_instrucao[12] : AA2       : input  : 3.3-V LVTTL       :         : 1         : N              
+habilitar_leitura_no_banco[0] : AA3       : output : 3.3-V LVTTL       :         : 1         : N              
+endereco_para_escrita_no_banco[3] : AA4       : output : 3.3-V LVTTL       :         : 1         : N              
+saida_registrador_de_instrucao[15] : AA5       : input  : 3.3-V LVTTL       :         : 1         : N              
+endereco_memoria_de_dados[1] : AA6       : output : 3.3-V LVTTL       :         : 1         : N              
+saida_registrador_de_instrucao[1] : AA7       : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCA_PLL1                    : AA8       : power  :                   : 1.2V    :           :                
 GND*                         : AA9       :        :                   :         : 8         :                
 GND*                         : AA10      :        :                   :         : 8         :                
 GND*                         : AA11      :        :                   :         : 8         :                
 GND*                         : AA12      :        :                   :         : 8         :                
 GND*                         : AA13      :        :                   :         : 7         :                
-dado_de_saida[3]             : AA14      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AA14      :        :                   :         : 7         :                
 GND*                         : AA15      :        :                   :         : 7         :                
 GND*                         : AA16      :        :                   :         : 7         :                
 GND*                         : AA17      :        :                   :         : 7         :                
@@ -118,10 +118,10 @@ GND*                         : AA23      :        :                   :         
 GND*                         : AA24      :        :                   :         : 6         :                
 GND*                         : AA25      :        :                   :         : 6         :                
 GND*                         : AA26      :        :                   :         : 6         :                
-GND*                         : AB1       :        :                   :         : 1         :                
-GND*                         : AB2       :        :                   :         : 1         :                
-GND*                         : AB3       :        :                   :         : 1         :                
-GND*                         : AB4       :        :                   :         : 1         :                
+endereco_1_para_leitura_banco[1] : AB1       : output : 3.3-V LVTTL       :         : 1         : N              
+endereco_para_escrita_no_banco[1] : AB2       : output : 3.3-V LVTTL       :         : 1         : N              
+ler_memoria_de_dados         : AB3       : output : 3.3-V LVTTL       :         : 1         : N              
+endereco_para_escrita_no_banco[2] : AB4       : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : AB5       : power  :                   : 3.3V    : 1         :                
 VCCIO8                       : AB6       : power  :                   : 3.3V    : 8         :                
 GND                          : AB7       : gnd    :                   :         :           :                
@@ -144,17 +144,17 @@ GND*                         : AB23      :        :                   :         
 GND*                         : AB24      :        :                   :         : 6         :                
 GND*                         : AB25      :        :                   :         : 6         :                
 GND*                         : AB26      :        :                   :         : 6         :                
-GND*                         : AC1       :        :                   :         : 1         :                
-GND*                         : AC2       :        :                   :         : 1         :                
-GND*                         : AC3       :        :                   :         : 1         :                
+seletor_ALU[1]               : AC1       : output : 3.3-V LVTTL       :         : 1         : N              
+saida_registrador_de_instrucao[14] : AC2       : input  : 3.3-V LVTTL       :         : 1         : N              
+constante[1]                 : AC3       : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : AC4       : gnd    :                   :         :           :                
-GND*                         : AC5       :        :                   :         : 8         :                
-GND*                         : AC6       :        :                   :         : 8         :                
+saida_registrador_de_instrucao[3] : AC5       : input  : 3.3-V LVTTL       :         : 8         : N              
+saida_registrador_de_instrucao[8] : AC6       : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AC7       :        :                   :         : 8         :                
 GND*                         : AC8       :        :                   :         : 8         :                
 GND*                         : AC9       :        :                   :         : 8         :                
-GND*                         : AC10      :        :                   :         : 8         :                
-GND*                         : AC11      :        :                   :         : 8         :                
+endereco_memoria_de_dados[6] : AC10      : output : 3.3-V LVTTL       :         : 8         : N              
+saida_registrador_de_instrucao[6] : AC11      : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AC12      :        :                   :         : 8         :                
 GND+                         : AC13      :        :                   :         : 8         :                
 GND*                         : AC14      :        :                   :         : 7         :                
@@ -171,12 +171,12 @@ NC                           : AC24      :        :                   :         
 GND*                         : AC25      :        :                   :         : 6         :                
 GND*                         : AC26      :        :                   :         : 6         :                
 VCCIO1                       : AD1       : power  :                   : 3.3V    : 1         :                
-GND*                         : AD2       :        :                   :         : 1         :                
-GND*                         : AD3       :        :                   :         : 1         :                
-GND*                         : AD4       :        :                   :         : 8         :                
-GND*                         : AD5       :        :                   :         : 8         :                
-GND*                         : AD6       :        :                   :         : 8         :                
-GND*                         : AD7       :        :                   :         : 8         :                
+seletor_ALU[0]               : AD2       : output : 3.3-V LVTTL       :         : 1         : N              
+escrever_memoria_de_dados    : AD3       : output : 3.3-V LVTTL       :         : 1         : N              
+constante[2]                 : AD4       : output : 3.3-V LVTTL       :         : 8         : N              
+endereco_memoria_de_dados[2] : AD5       : output : 3.3-V LVTTL       :         : 8         : N              
+constante[0]                 : AD6       : output : 3.3-V LVTTL       :         : 8         : N              
+endereco_memoria_de_dados[0] : AD7       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AD8       :        :                   :         : 8         :                
 GND                          : AD9       : gnd    :                   :         :           :                
 GND*                         : AD10      :        :                   :         : 8         :                
@@ -197,14 +197,14 @@ GND*                         : AD24      :        :                   :         
 GND*                         : AD25      :        :                   :         : 6         :                
 VCCIO6                       : AD26      : power  :                   : 3.3V    : 6         :                
 GND                          : AE1       : gnd    :                   :         :           :                
-GND*                         : AE2       :        :                   :         : 1         :                
-GND*                         : AE3       :        :                   :         : 1         :                
-GND*                         : AE4       :        :                   :         : 8         :                
-GND*                         : AE5       :        :                   :         : 8         :                
+endereco_para_escrita_no_banco[0] : AE2       : output : 3.3-V LVTTL       :         : 1         : N              
+saida_registrador_de_instrucao[13] : AE3       : input  : 3.3-V LVTTL       :         : 1         : N              
+endereco_1_para_leitura_banco[0] : AE4       : output : 3.3-V LVTTL       :         : 8         : N              
+constante[3]                 : AE5       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AE6       :        :                   :         : 8         :                
 GND*                         : AE7       :        :                   :         : 8         :                
 GND*                         : AE8       :        :                   :         : 8         :                
-GND*                         : AE9       :        :                   :         : 8         :                
+constante[6]                 : AE9       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AE10      :        :                   :         : 8         :                
 GND*                         : AE11      :        :                   :         : 8         :                
 GND*                         : AE12      :        :                   :         : 8         :                
@@ -224,12 +224,12 @@ GND*                         : AE25      :        :                   :         
 GND                          : AE26      : gnd    :                   :         :           :                
 GND                          : AF2       : gnd    :                   :         :           :                
 VCCIO8                       : AF3       : power  :                   : 3.3V    : 8         :                
-GND*                         : AF4       :        :                   :         : 8         :                
-GND*                         : AF5       :        :                   :         : 8         :                
+endereco_memoria_de_dados[3] : AF4       : output : 3.3-V LVTTL       :         : 8         : N              
+saida_registrador_de_instrucao[2] : AF5       : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AF6       :        :                   :         : 8         :                
 GND*                         : AF7       :        :                   :         : 8         :                
 GND*                         : AF8       :        :                   :         : 8         :                
-GND*                         : AF9       :        :                   :         : 8         :                
+endereco_2_para_leitura_banco[2] : AF9       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AF10      :        :                   :         : 8         :                
 VCCIO8                       : AF11      : power  :                   : 3.3V    : 8         :                
 GND                          : AF12      : gnd    :                   :         :           :                
@@ -249,20 +249,20 @@ GND                          : AF25      : gnd    :                   :         
 GND                          : B1        : gnd    :                   :         :           :                
 GND*                         : B2        :        :                   :         : 2         :                
 GND*                         : B3        :        :                   :         : 2         :                
-GND*                         : B4        :        :                   :         : 3         :                
+saida_registrador_de_instrucao[7] : B4        : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : B5        :        :                   :         : 3         :                
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
 GND*                         : B9        :        :                   :         : 3         :                
 GND*                         : B10       :        :                   :         : 3         :                
-dado_de_saida[14]            : B11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B11       :        :                   :         : 3         :                
 GND*                         : B12       :        :                   :         : 3         :                
 GND+                         : B13       :        :                   :         : 4         :                
-dado_de_saida[13]            : B14       : output : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[15]          : B15       : input  : 3.3-V LVTTL       :         : 4         : N              
-dado_de_saida[2]             : B16       : output : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[3]           : B17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : B14       :        :                   :         : 4         :                
+GND*                         : B15       :        :                   :         : 4         :                
+GND*                         : B16       :        :                   :         : 4         :                
+GND*                         : B17       :        :                   :         : 4         :                
 GND*                         : B18       :        :                   :         : 4         :                
 GND*                         : B19       :        :                   :         : 4         :                
 GND*                         : B20       :        :                   :         : 4         :                
@@ -276,19 +276,19 @@ VCCIO2                       : C1        : power  :                   : 3.3V    
 GND*                         : C2        :        :                   :         : 2         :                
 GND*                         : C3        :        :                   :         : 2         :                
 GND*                         : C4        :        :                   :         : 3         :                
-GND*                         : C5        :        :                   :         : 3         :                
-GND*                         : C6        :        :                   :         : 3         :                
+constante[7]                 : C5        : output : 3.3-V LVTTL       :         : 3         : N              
+endereco_2_para_leitura_banco[3] : C6        : output : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : C7        :        :                   :         : 3         :                
 GND*                         : C8        :        :                   :         : 3         :                
 GND*                         : C9        :        :                   :         : 3         :                
 GND*                         : C10       :        :                   :         : 3         :                
-dado_de_saida[6]             : C11       : output : 3.3-V LVTTL       :         : 3         : N              
-dado_de_saida[9]             : C12       : output : 3.3-V LVTTL       :         : 3         : N              
-endereco[8]                  : C13       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : C11       :        :                   :         : 3         :                
+GND*                         : C12       :        :                   :         : 3         :                
+GND+                         : C13       :        :                   :         : 3         :                
 GND                          : C14       : gnd    :                   :         :           :                
-endereco[5]                  : C15       : input  : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[9]           : C16       : input  : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[13]          : C17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C15       :        :                   :         : 4         :                
+GND*                         : C16       :        :                   :         : 4         :                
+GND*                         : C17       :        :                   :         : 4         :                
 GND                          : C18       : gnd    :                   :         :           :                
 GND*                         : C19       :        :                   :         : 4         :                
 VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
@@ -309,12 +309,12 @@ GND*                         : D8        :        :                   :         
 GND*                         : D9        :        :                   :         : 3         :                
 GND*                         : D10       :        :                   :         : 3         :                
 GND*                         : D11       :        :                   :         : 3         :                
-dado_de_entrada[0]           : D12       : input  : 3.3-V LVTTL       :         : 3         : N              
-endereco[1]                  : D13       : input  : 3.3-V LVTTL       :         : 3         : N              
-dado_de_saida[1]             : D14       : output : 3.3-V LVTTL       :         : 4         : N              
-dado_de_saida[4]             : D15       : output : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[6]           : D16       : input  : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[7]           : D17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : D12       :        :                   :         : 3         :                
+GND+                         : D13       :        :                   :         : 3         :                
+GND*                         : D14       :        :                   :         : 4         :                
+GND*                         : D15       :        :                   :         : 4         :                
+GND*                         : D16       :        :                   :         : 4         :                
+GND*                         : D17       :        :                   :         : 4         :                
 GND*                         : D18       :        :                   :         : 4         :                
 GND*                         : D19       :        :                   :         : 4         :                
 GND*                         : D20       :        :                   :         : 4         :                
@@ -324,8 +324,8 @@ GND*                         : D23       :        :                   :         
 GND                          : D24       : gnd    :                   :         :           :                
 GND*                         : D25       :        :                   :         : 5         :                
 GND*                         : D26       :        :                   :         : 5         :                
-GND*                         : E1        :        :                   :         : 2         :                
-GND*                         : E2        :        :                   :         : 2         :                
+estado_atual[1]              : E1        : output : 3.3-V LVTTL       :         : 2         : N              
+saida_comparador             : E2        : input  : 3.3-V LVTTL       :         : 2         : N              
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E3        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND_PLL3                     : E4        : gnd    :                   :         :           :                
 GND*                         : E5        :        :                   :         : 2         :                
@@ -338,7 +338,7 @@ GND                          : E11       : gnd    :                   :         
 GND*                         : E12       :        :                   :         : 3         :                
 VCCIO3                       : E13       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : E14       : power  :                   : 3.3V    : 4         :                
-dado_de_saida[15]            : E15       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : E15       :        :                   :         : 4         :                
 GND                          : E16       : gnd    :                   :         :           :                
 VCCIO4                       : E17       : power  :                   : 3.3V    : 4         :                
 GND*                         : E18       :        :                   :         : 4         :                
@@ -361,12 +361,12 @@ GNDA_PLL3                    : F8        : gnd    :                   :         
 GND*                         : F9        :        :                   :         : 3         :                
 GND*                         : F10       :        :                   :         : 3         :                
 GND*                         : F11       :        :                   :         : 3         :                
-dado_de_entrada[12]          : F12       : input  : 3.3-V LVTTL       :         : 3         : N              
-dado_de_saida[10]            : F13       : output : 3.3-V LVTTL       :         : 4         : N              
-dado_de_saida[12]            : F14       : output : 3.3-V LVTTL       :         : 4         : N              
-endereco[3]                  : F15       : input  : 3.3-V LVTTL       :         : 4         : N              
+endereco_2_para_leitura_banco[0] : F12       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : F13       :        :                   :         : 4         :                
+GND*                         : F14       :        :                   :         : 4         :                
+GND*                         : F15       :        :                   :         : 4         :                
 GND*                         : F16       :        :                   :         : 4         :                
-dado_de_entrada[10]          : F17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : F17       :        :                   :         : 4         :                
 GND*                         : F18       :        :                   :         : 4         :                
 GNDA_PLL2                    : F19       : gnd    :                   :         :           :                
 GND*                         : F20       :        :                   :         : 5         :                
@@ -378,8 +378,8 @@ GND*                         : F25       :        :                   :         
 GND*                         : F26       :        :                   :         : 5         :                
 GND*                         : G1        :        :                   :         : 2         :                
 GND*                         : G2        :        :                   :         : 2         :                
-GND*                         : G3        :        :                   :         : 2         :                
-GND*                         : G4        :        :                   :         : 2         :                
+ler_registrador_de_instrucao : G3        : output : 3.3-V LVTTL       :         : 2         : N              
+limpar_contador_de_programa  : G4        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : G5        :        :                   :         : 2         :                
 GND*                         : G6        :        :                   :         : 2         :                
 GND_PLL3                     : G7        : gnd    :                   :         :           :                
@@ -387,12 +387,12 @@ VCCA_PLL3                    : G8        : power  :                   : 1.2V    
 GND*                         : G9        :        :                   :         : 3         :                
 GND*                         : G10       :        :                   :         : 3         :                
 GND*                         : G11       :        :                   :         : 3         :                
-dado_de_entrada[1]           : G12       : input  : 3.3-V LVTTL       :         : 3         : N              
-leitura                      : G13       : input  : 3.3-V LVTTL       :         : 4         : N              
-dado_de_saida[8]             : G14       : output : 3.3-V LVTTL       :         : 4         : N              
-endereco[2]                  : G15       : input  : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[5]           : G16       : input  : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[11]          : G17       : input  : 3.3-V LVTTL       :         : 4         : N              
+constante[4]                 : G12       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : G13       :        :                   :         : 4         :                
+GND*                         : G14       :        :                   :         : 4         :                
+GND*                         : G15       :        :                   :         : 4         :                
+GND*                         : G16       :        :                   :         : 4         :                
+GND*                         : G17       :        :                   :         : 4         :                
 GND*                         : G18       :        :                   :         : 4         :                
 VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : G20       : gnd    :                   :         :           :                
@@ -416,9 +416,9 @@ GND*                         : H11       :        :                   :         
 GND*                         : H12       :        :                   :         : 3         :                
 GND                          : H13       : gnd    :                   :         :           :                
 GND                          : H14       : gnd    :                   :         :           :                
-dado_de_entrada[8]           : H15       : input  : 3.3-V LVTTL       :         : 4         : N              
-dado_de_entrada[4]           : H16       : input  : 3.3-V LVTTL       :         : 4         : N              
-endereco[7]                  : H17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : H15       :        :                   :         : 4         :                
+GND*                         : H16       :        :                   :         : 4         :                
+GND*                         : H17       :        :                   :         : 4         :                
 VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
 GND*                         : H19       :        :                   :         : 5         :                
 VCCD_PLL2                    : H20       : power  :                   : 1.2V    :           :                
@@ -433,18 +433,18 @@ GND*                         : J2        :        :                   :         
 GND*                         : J3        :        :                   :         : 2         :                
 GND*                         : J4        :        :                   :         : 2         :                
 GND*                         : J5        :        :                   :         : 2         :                
-GND*                         : J6        :        :                   :         : 2         :                
+ler_memoria_de_instrucoes    : J6        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : J7        :        :                   :         : 2         :                
 GND*                         : J8        :        :                   :         : 2         :                
 GND*                         : J9        :        :                   :         : 3         :                
-dado_de_entrada[2]           : J10       : input  : 3.3-V LVTTL       :         : 3         : N              
-endereco[6]                  : J11       : input  : 3.3-V LVTTL       :         : 3         : N              
+saida_registrador_de_instrucao[4] : J10       : input  : 3.3-V LVTTL       :         : 3         : N              
+endereco_memoria_de_dados[4] : J11       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : J12       : power  :                   : 3.3V    : 3         :                
-dado_de_entrada[14]          : J13       : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : J13       :        :                   :         : 3         :                
 GND*                         : J14       :        :                   :         : 3         :                
 VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
 GND*                         : J16       :        :                   :         : 4         :                
-endereco[0]                  : J17       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : J17       :        :                   :         : 4         :                
 GND*                         : J18       :        :                   :         : 4         :                
 VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
 GND*                         : J20       :        :                   :         : 5         :                
@@ -458,9 +458,9 @@ GND*                         : K1        :        :                   :         
 GND*                         : K2        :        :                   :         : 2         :                
 GND*                         : K3        :        :                   :         : 2         :                
 GND*                         : K4        :        :                   :         : 2         :                
-GND*                         : K5        :        :                   :         : 2         :                
-GND*                         : K6        :        :                   :         : 2         :                
-GND*                         : K7        :        :                   :         : 2         :                
+estado_atual[0]              : K5        : output : 3.3-V LVTTL       :         : 2         : N              
+escrever_contador_de_programa : K6        : output : 3.3-V LVTTL       :         : 2         : N              
+incrementar_contador_de_programa : K7        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : K8        :        :                   :         : 2         :                
 GND*                         : K9        :        :                   :         : 3         :                
 VCCINT                       : K10       : power  :                   : 1.2V    :           :                
@@ -499,7 +499,7 @@ VCCINT                       : L16       : power  :                   : 1.2V    
 VCCINT                       : L17       : power  :                   : 1.2V    :           :                
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
 GND*                         : L19       :        :                   :         : 5         :                
-dado_de_saida[7]             : L20       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : L20       :        :                   :         : 5         :                
 GND*                         : L21       :        :                   :         : 5         :                
 GND                          : L22       : gnd    :                   :         :           :                
 GND*                         : L23       :        :                   :         : 5         :                
@@ -527,7 +527,7 @@ VCCIO5                       : M18       : power  :                   : 3.3V    
 GND*                         : M19       :        :                   :         : 5         :                
 GND*                         : M20       :        :                   :         : 5         :                
 GND*                         : M21       :        :                   :         : 5         :                
-dado_de_saida[0]             : M22       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : M22       :        :                   :         : 5         :                
 GND*                         : M23       :        :                   :         : 5         :                
 GND*                         : M24       :        :                   :         : 5         :                
 GND*                         : M25       :        :                   :         : 5         :                
@@ -591,7 +591,7 @@ GND*                         : R4        :        :                   :         
 GND*                         : R5        :        :                   :         : 1         :                
 GND*                         : R6        :        :                   :         : 1         :                
 GND*                         : R7        :        :                   :         : 1         :                
-GND*                         : R8        :        :                   :         : 1         :                
+saida_registrador_de_instrucao[10] : R8        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : R9        : power  :                   : 3.3V    : 1         :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
 VCCINT                       : R11       : power  :                   : 1.2V    :           :                
@@ -617,7 +617,7 @@ GND*                         : T4        :        :                   :         
 GND                          : T5        : gnd    :                   :         :           :                
 GND*                         : T6        :        :                   :         : 1         :                
 GND*                         : T7        :        :                   :         : 1         :                
-GND*                         : T8        :        :                   :         : 1         :                
+escrever_no_banco            : T8        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : T9        :        :                   :         : 1         :                
 GND*                         : T10       :        :                   :         : 1         :                
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
@@ -640,7 +640,7 @@ GND*                         : U1        :        :                   :         
 GND*                         : U2        :        :                   :         : 1         :                
 GND*                         : U3        :        :                   :         : 1         :                
 GND*                         : U4        :        :                   :         : 1         :                
-GND*                         : U5        :        :                   :         : 1         :                
+constante[5]                 : U5        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : U6        :        :                   :         : 1         :                
 GND*                         : U7        :        :                   :         : 1         :                
 GND                          : U8        : gnd    :                   :         :           :                
@@ -666,12 +666,12 @@ GND*                         : V1        :        :                   :         
 GND*                         : V2        :        :                   :         : 1         :                
 GND*                         : V3        :        :                   :         : 1         :                
 GND*                         : V4        :        :                   :         : 1         :                
-GND*                         : V5        :        :                   :         : 1         :                
+saida_registrador_de_instrucao[11] : V5        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : V6        :        :                   :         : 1         :                
-GND*                         : V7        :        :                   :         : 1         :                
+habilitar_leitura_no_banco[1] : V7        : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : V8        : power  :                   : 3.3V    : 1         :                
 GND*                         : V9        :        :                   :         : 8         :                
-GND*                         : V10       :        :                   :         : 8         :                
+saida_registrador_de_instrucao[0] : V10       : input  : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : V11       :        :                   :         : 8         :                
 VCCIO8                       : V12       : power  :                   : 3.3V    : 8         :                
 GND*                         : V13       :        :                   :         : 8         :                
@@ -690,10 +690,10 @@ GND*                         : V25       :        :                   :         
 GND*                         : V26       :        :                   :         : 6         :                
 GND*                         : W1        :        :                   :         : 1         :                
 GND*                         : W2        :        :                   :         : 1         :                
-GND*                         : W3        :        :                   :         : 1         :                
-GND*                         : W4        :        :                   :         : 1         :                
+endereco_2_para_leitura_banco[1] : W3        : output : 3.3-V LVTTL       :         : 1         : N              
+endereco_memoria_de_dados[5] : W4        : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : W5        : gnd    :                   :         :           :                
-GND*                         : W6        :        :                   :         : 1         :                
+saida_registrador_de_instrucao[9] : W6        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND_PLL1                     : W7        : gnd    :                   :         :           :                
 GND*                         : W8        :        :                   :         : 8         :                
 VCCIO8                       : W9        : power  :                   : 3.3V    : 8         :                
@@ -714,11 +714,11 @@ GND*                         : W23       :        :                   :         
 GND*                         : W24       :        :                   :         : 6         :                
 GND*                         : W25       :        :                   :         : 6         :                
 GND*                         : W26       :        :                   :         : 6         :                
-GND*                         : Y1        :        :                   :         : 1         :                
+saida_registrador_de_instrucao[5] : Y1        : input  : 3.3-V LVTTL       :         : 1         : N              
 NC                           : Y2        :        :                   :         :           :                
-GND*                         : Y3        :        :                   :         : 1         :                
-GND*                         : Y4        :        :                   :         : 1         :                
-GND*                         : Y5        :        :                   :         : 1         :                
+seletor_mux[0]               : Y3        : output : 3.3-V LVTTL       :         : 1         : N              
+endereco_1_para_leitura_banco[2] : Y4        : output : 3.3-V LVTTL       :         : 1         : N              
+seletor_mux[1]               : Y5        : output : 3.3-V LVTTL       :         : 1         : N              
 GND_PLL1                     : Y6        : gnd    :                   :         :           :                
 VCCD_PLL1                    : Y7        : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : Y8        : gnd    :                   :         :           :                
@@ -726,7 +726,7 @@ GND                          : Y9        : gnd    :                   :         
 GND*                         : Y10       :        :                   :         : 8         :                
 GND*                         : Y11       :        :                   :         : 8         :                
 GND*                         : Y12       :        :                   :         : 8         :                
-dado_de_saida[5]             : Y13       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : Y13       :        :                   :         : 7         :                
 GND*                         : Y14       :        :                   :         : 7         :                
 GND*                         : Y15       :        :                   :         : 7         :                
 GND*                         : Y16       :        :                   :         : 7         :                

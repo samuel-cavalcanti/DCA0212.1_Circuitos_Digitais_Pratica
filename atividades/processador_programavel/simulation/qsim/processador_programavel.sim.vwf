@@ -35,6 +35,206 @@ HEADER
 
 
 
+SIGNAL("saida_registrador_de_instrucao")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 16;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("saida_registrador_de_instrucao[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("saida_registrador_de_instrucao[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "saida_registrador_de_instrucao";
+}
+
+SIGNAL("estado_atual")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("estado_atual[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "estado_atual";
+}
+
+SIGNAL("estado_atual[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "estado_atual";
+}
+
 SIGNAL("clock")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -45,447 +245,57 @@ SIGNAL("clock")
 	PARENT = "";
 }
 
-SIGNAL("dado_de_entrada")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 16;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("dado_de_entrada[15]")
+SIGNAL("escrever_contador_de_programa")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[14]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[13]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[12]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_entrada[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "dado_de_entrada";
-}
-
-SIGNAL("dado_de_saida")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 16;
-	LSB_INDEX = 0;
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("dado_de_saida[15]")
+SIGNAL("incrementar_contador_de_programa")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[14]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[13]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[12]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[11]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("dado_de_saida[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "dado_de_saida";
-}
-
-SIGNAL("endereco")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 9;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("endereco[8]")
+SIGNAL("ler_memoria_de_instrucoes")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
-SIGNAL("endereco[7]")
+SIGNAL("ler_registrador_de_instrucao")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
-SIGNAL("endereco[6]")
+SIGNAL("limpar_contador_de_programa")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
-SIGNAL("endereco[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
-}
-
-SIGNAL("endereco[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
-}
-
-SIGNAL("endereco[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
-}
-
-SIGNAL("endereco[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
-}
-
-SIGNAL("endereco[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
-}
-
-SIGNAL("endereco[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "endereco";
-}
-
-SIGNAL("escrita")
+SIGNAL("saida_comparador")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -495,16 +305,197 @@ SIGNAL("escrita")
 	PARENT = "";
 }
 
-SIGNAL("leitura")
+TRANSITION_LIST("saida_registrador_de_instrucao[15]")
 {
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
 }
-
+TRANSITION_LIST("saida_registrador_de_instrucao[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("saida_registrador_de_instrucao[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+TRANSITION_LIST("estado_atual[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 20.0;
+	}
+}
+TRANSITION_LIST("estado_atual[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+	}
+}
 TRANSITION_LIST("clock")
 {
 	NODE
@@ -562,355 +553,129 @@ TRANSITION_LIST("clock")
 		LEVEL 1 FOR 20.0;
 	}
 }
-TRANSITION_LIST("dado_de_entrada[15]")
+TRANSITION_LIST("escrever_contador_de_programa")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_entrada[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[15]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 860.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 860.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("dado_de_saida[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 860.0;
-	}
-}
-TRANSITION_LIST("endereco[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("endereco[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("endereco[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("endereco[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("endereco[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("endereco[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("endereco[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("endereco[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("endereco[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-TRANSITION_LIST("escrita")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 100.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 950.0;
+		LEVEL 0 FOR 860.0;
 	}
 }
-TRANSITION_LIST("leitura")
+TRANSITION_LIST("incrementar_contador_de_programa")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 130.0;
+		LEVEL 0 FOR 20.0;
 		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 830.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+	}
+}
+TRANSITION_LIST("ler_memoria_de_instrucoes")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+	}
+}
+TRANSITION_LIST("ler_registrador_de_instrucao")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+	}
+}
+TRANSITION_LIST("limpar_contador_de_programa")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 980.0;
+	}
+}
+TRANSITION_LIST("saida_comparador")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 860.0;
 	}
 }
 
@@ -926,460 +691,256 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "leitura";
+	CHANNEL = "estado_atual";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
+	CHILDREN = 2, 3;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "escrita";
+	CHANNEL = "estado_atual[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 2;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco";
+	CHANNEL = "estado_atual[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 3;
-	TREE_LEVEL = 0;
-	CHILDREN = 4, 5, 6, 7, 8, 9, 10, 11, 12;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "endereco[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 1;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco[7]";
+	CHANNEL = "saida_registrador_de_instrucao";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 0;
+	CHILDREN = 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "saida_registrador_de_instrucao[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco[6]";
+	CHANNEL = "saida_registrador_de_instrucao[14]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco[5]";
+	CHANNEL = "saida_registrador_de_instrucao[13]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco[4]";
+	CHANNEL = "saida_registrador_de_instrucao[12]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco[3]";
+	CHANNEL = "saida_registrador_de_instrucao[11]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco[2]";
+	CHANNEL = "saida_registrador_de_instrucao[10]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco[1]";
+	CHANNEL = "saida_registrador_de_instrucao[9]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "endereco[0]";
+	CHANNEL = "saida_registrador_de_instrucao[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
-	PARENT = 3;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada";
+	CHANNEL = "saida_registrador_de_instrucao[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 13;
-	TREE_LEVEL = 0;
-	CHILDREN = 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29;
+	TREE_LEVEL = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada[15]";
+	CHANNEL = "saida_registrador_de_instrucao[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada[14]";
+	CHANNEL = "saida_registrador_de_instrucao[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada[13]";
+	CHANNEL = "saida_registrador_de_instrucao[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada[12]";
+	CHANNEL = "saida_registrador_de_instrucao[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada[11]";
+	CHANNEL = "saida_registrador_de_instrucao[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 18;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada[10]";
+	CHANNEL = "saida_registrador_de_instrucao[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 19;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada[9]";
+	CHANNEL = "saida_registrador_de_instrucao[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 20;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_entrada[8]";
+	CHANNEL = "saida_comparador";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 21;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_entrada[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 22;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_entrada[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 23;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_entrada[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 24;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_entrada[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 25;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_entrada[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 26;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_entrada[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 27;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_entrada[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 28;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_entrada[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 29;
-	TREE_LEVEL = 1;
-	PARENT = 13;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 30;
 	TREE_LEVEL = 0;
-	CHILDREN = 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_saida[15]";
+	CHANNEL = "escrever_contador_de_programa";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 31;
-	TREE_LEVEL = 1;
-	PARENT = 30;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_saida[14]";
+	CHANNEL = "incrementar_contador_de_programa";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 32;
-	TREE_LEVEL = 1;
-	PARENT = 30;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_saida[13]";
+	CHANNEL = "ler_memoria_de_instrucoes";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 33;
-	TREE_LEVEL = 1;
-	PARENT = 30;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_saida[12]";
+	CHANNEL = "ler_registrador_de_instrucao";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 34;
-	TREE_LEVEL = 1;
-	PARENT = 30;
+	RADIX = Binary;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "dado_de_saida[11]";
+	CHANNEL = "limpar_contador_de_programa";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 35;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 36;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 37;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 38;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 39;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 40;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 41;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 42;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 43;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 44;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 45;
-	TREE_LEVEL = 1;
-	PARENT = 30;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "dado_de_saida[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 46;
-	TREE_LEVEL = 1;
-	PARENT = 30;
+	RADIX = Binary;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 0;
 }
 TIME_BAR
 {

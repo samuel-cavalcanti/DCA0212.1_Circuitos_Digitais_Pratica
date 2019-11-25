@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity maquina_de_estados is 
+
+port (clock : in std_logic;
+		reiniciar : in std_logic;
+		estato : out std_logic);
+end entity;
+
+
+architecture behavior of maquina_de_estados is
+signal estado_atual : std_logic;
+
+begin
+		process (clock, reiniciar) begin
+			
+			if reiniciar = '1' then
+				estado_atual <= '0';
+			
+			elsif rising_edge(clock) then
+					if estado_atual =  '1' then
+					
+						estado_atual <= '0'
+					else 
+						estado_atual <= '1';
+					
+					end if 	
+			
+			end if ;
+			
+			
+		
+		end process;
+
+end architecture;

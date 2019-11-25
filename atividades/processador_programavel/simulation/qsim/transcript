@@ -1,22 +1,20 @@
 # do processador_programavel.do 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module memoriaD
+# -- Compiling module bloco_de_controle
 # 
 # Top level modules:
-# 	memoriaD
+# 	bloco_de_controle
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module memoriaD_vlg_sample_tst
-# -- Compiling module memoriaD_vlg_check_tst
-# -- Compiling module memoriaD_vlg_vec_tst
+# -- Compiling module bloco_de_controle_vlg_sample_tst
+# -- Compiling module bloco_de_controle_vlg_check_tst
+# -- Compiling module bloco_de_controle_vlg_vec_tst
 # 
 # Top level modules:
-# 	memoriaD_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.memoriaD_vlg_vec_tst 
-# Loading work.memoriaD_vlg_vec_tst
-# Loading work.memoriaD
-# Loading cycloneii_ver.cycloneii_lcell_ff
-# Loading cycloneii_ver.cycloneii_lcell_comb
+# 	bloco_de_controle_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.bloco_de_controle_vlg_vec_tst 
+# Loading work.bloco_de_controle_vlg_vec_tst
+# Loading work.bloco_de_controle
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
@@ -24,12 +22,17 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
-# Loading work.memoriaD_vlg_sample_tst
-# Loading work.memoriaD_vlg_check_tst
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading work.bloco_de_controle_vlg_sample_tst
+# Loading work.bloco_de_controle_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim Altera version. Expect performance to be adversely affected.
-# Simulation passed !
-# ** Note: $finish    : processador_programavel.vt(425)
-#    Time: 1 us  Iteration: 0  Instance: /memoriaD_vlg_vec_tst/tb_out
+# ERROR! Vector Mismatch for output port estado_atual[0] :: @time = 40000.000 ps
+#      Expected value = 00
+#      Real value = 01
+# ERROR! Vector Mismatch for output port estado_atual[1] :: @time = 80000.000 ps
+#      Expected value = 00
+#      Real value = 10
+#           2 mismatched vectors : Simulation failed !
+# ** Note: $finish    : processador_programavel.vt(359)
+#    Time: 1 us  Iteration: 0  Instance: /bloco_de_controle_vlg_vec_tst/tb_out
