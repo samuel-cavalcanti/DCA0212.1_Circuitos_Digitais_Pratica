@@ -14,9 +14,28 @@ end entity;
 
 
 architecture behavior of memoriaD is 
-type memoria_ram is array(0 to 256) of std_logic_vector(numero_de_bits-1 downto 0);
+type memoria_ram is array(0 to 19) of std_logic_vector(numero_de_bits-1 downto 0);
 
-signal memoria : memoria_ram;
+signal memoria : memoria_ram := ( 0  => "0000000000000000",
+											 1  => "0000000000000001",
+											 2  => "0000000000000010",
+											 3  => "0000000000000011",
+											 4  => "0000000000000100",
+											 5  => "0000000000000101",
+											 6  => "0000000000000110",
+											 7  => "0000000000000111",
+											 8  => "0000000000001000",
+											 9  => "0000000000001001",
+											 10 => "0000000000001010",
+											 11 => "0000000000001011",
+											 12 => "0000000000001100",
+											 13 => "0000000000001110",
+											 14 => "0000000000001111",
+											 15 => "0000000000010000",
+											 16 => "0000000000010001",
+											 18 => "0000000000001010",
+											others => (others=> '0'));-- 
+											 
 
 begin
 		process (clock,leitura,escrita) begin

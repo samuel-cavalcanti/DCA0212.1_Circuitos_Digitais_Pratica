@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="processador_programavel">
+		<CBX_INST_ENTRY INSTANCE_NAME="|processador_programavel|memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0" CBX_FILE_NAME="altsyncram_fio1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for processador_programavel
-Mon Nov 25 01:41:04 2019
+Wed Nov 27 03:47:44 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Nov 25 01:41:04 2019 ;
+; EDA Netlist Writer Status ; Successful - Wed Nov 27 03:47:44 2019 ;
 ; Revision Name             ; processador_programavel               ;
 ; Top-level Entity Name     ; processador_programavel               ;
 ; Family                    ; Cyclone II                            ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 25 01:41:04 2019
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off processador_programavel -c processador_programavel
+    Info: Processing started: Wed Nov 27 03:47:43 2019
+Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog processador_programavel -c processador_programavel
 Info (204019): Generated file processador_programavel.vo in folder "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 310 megabytes
-    Info: Processing ended: Mon Nov 25 01:41:04 2019
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 322 megabytes
+    Info: Processing ended: Wed Nov 27 03:47:44 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

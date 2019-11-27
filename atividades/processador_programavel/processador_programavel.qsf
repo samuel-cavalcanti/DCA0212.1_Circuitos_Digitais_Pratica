@@ -77,11 +77,15 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/sum/sum.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/unidade_de_controle.vwf
 set_global_assignment -name VHDL_FILE datapath/register_bank/banco_de_registradores.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/register_bank/banco_de_registradores.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/register_bank/banco_de_registradores.vwf"
 set_global_assignment -name VHDL_FILE datapath/bloco_operacional.vhd
+set_global_assignment -name VHDL_FILE memory/memoriaD.vhd
+set_global_assignment -name VHDL_FILE memory/memoria_de_instrucoes.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/bloco_operacional.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE processador.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/comparator/comparador.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/mux3x1/mux3x1.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE memory/memoriaD.vhd
-set_global_assignment -name VHDL_FILE memory/memoria_de_instrucoes.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/processador.vwf"

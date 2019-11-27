@@ -857,7 +857,12 @@ TRANSITION_LIST("clock")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 25;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
 	}
 }
 
@@ -956,7 +961,11 @@ TRANSITION_LIST("dados_da_memoria_de_instrucoes[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 840.0;
 	}
 }
 
@@ -992,7 +1001,13 @@ TRANSITION_LIST("dados_da_memoria_de_instrucoes[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 840.0;
 	}
 }
 
@@ -1001,7 +1016,9 @@ TRANSITION_LIST("dados_da_memoria_de_instrucoes[8]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 910.0;
 	}
 }
 
@@ -1028,7 +1045,11 @@ TRANSITION_LIST("dados_da_memoria_de_instrucoes[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 840.0;
 	}
 }
 
@@ -1055,7 +1076,9 @@ TRANSITION_LIST("dados_da_memoria_de_instrucoes[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 910.0;
 	}
 }
 
@@ -1064,7 +1087,9 @@ TRANSITION_LIST("dados_da_memoria_de_instrucoes[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 910.0;
 	}
 }
 
@@ -1073,7 +1098,9 @@ TRANSITION_LIST("dados_da_memoria_de_instrucoes[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 910.0;
 	}
 }
 

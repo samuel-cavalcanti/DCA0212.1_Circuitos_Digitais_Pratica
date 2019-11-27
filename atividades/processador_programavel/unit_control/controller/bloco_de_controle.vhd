@@ -21,7 +21,8 @@ entity bloco_de_controle is
 			endereco_1_para_leitura_banco		  : out std_logic_vector(3 downto 0);
 			endereco_2_para_leitura_banco      : out std_logic_vector(3 downto 0);
 			habilitar_leitura_no_banco			  : out std_logic_vector(1 downto 0);
-			seletor_ALU								  : out std_logic_vector(1 downto 0)
+			seletor_ALU								  : out std_logic_vector(1 downto 0);
+			estado_atual_debug					  : out std_logic_vector(2 downto 0)
 		);
 
 end entity;
@@ -30,13 +31,14 @@ end entity;
 architecture behavior of bloco_de_controle is 
 constant numero_de_bits_operecao : integer := 4;
 
-constant Inicio   : std_logic_vector(1 downto 0) := "00";
-constant Busca    : std_logic_vector(1 downto 0) := "01";
-constant Execucao : std_logic_vector(1 downto 0) := "10";
-constant Saltar   : std_logic_vector(1 downto 0) := "11";
+constant Inicio   : std_logic_vector(2 downto 0) := "000";
+constant Busca    : std_logic_vector(2 downto 0) := "001";
+--constant Decodificacao : std_logic_vector (2 downto 0) := "010";
+constant Execucao : std_logic_vector(2 downto 0) := "011";
+constant Saltar   : std_logic_vector(2 downto 0) := "100";
 
 signal reinicar_maquina_de_estados : std_logic:= '0';
-signal estado_atual: std_logic_vector(1 downto 0) := Inicio;
+signal estado_atual: std_logic_vector(2 downto 0) := Inicio;
 signal operacao : std_logic_vector(numero_de_bits_operecao -1  downto 0);
 
 begin
@@ -62,7 +64,8 @@ begin
 											 reinicar_maquina_de_estados,
 											 saida_comparador,
 											 estado_atual);
-											 
+	
+	estado_atual_debug <= estado_atual;
 		
 	escrever_contador_de_programa<= '1' when estado_atual = Saltar else
 											  '0';

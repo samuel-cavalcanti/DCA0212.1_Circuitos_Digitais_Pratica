@@ -3,7 +3,14 @@ use ieee.std_logic_1164.all;
 
 entity processador_programavel is 
 	generic (numero_de_bits : positive := 16);
-	port (clock : in std_logic);
+	port (clock : in std_logic;
+			saida_banco_2: out std_logic_vector(numero_de_bits-1 downto 0);
+			saida_ALU : out std_logic_vector(numero_de_bits-1 downto 0);
+			saida_memoria_de_dados: out std_logic_vector(numero_de_bits-1 downto 0);
+			saida_comprador : out std_logic;
+			estado_atual_debug: out std_logic_vector(2 downto 0);
+			saida_memoria_de_instrucoes:out std_logic_vector(numero_de_bits-1 downto 0);
+			habilitar_escrita_no_banco_debug : out std_logic);
 
 end entity;
 
@@ -46,7 +53,8 @@ begin
 										  endereco_1_para_leitura_banco,  
 										  habilitar_leitura_no_banco,	  
 										  endereco_2_para_leitura_banco,  
-										  seletor_ALU);
+										  seletor_ALU,
+										  estado_atual_debug);
 	
 	bloco_operacional : entity work.bloco_operacional(behavior)
 								 generic map (numero_de_bits)
@@ -61,7 +69,10 @@ begin
 											  seletor_ALU,
 											  entrada_de_dados_para_memoriaD,
 											  saida_comparador_datapah,
-											  saida_de_dados_para_memoriaD);	
+											  saida_de_dados_para_memoriaD,
+											  saida_ALU,
+											  saida_banco_2
+											  );	
 											  
    memoria_de_dados : entity work.memoriaD(behavior)
 								generic map (numero_de_bits)
@@ -80,8 +91,9 @@ begin
 											 endereco_memoria_de_instrucoes,
 											 dados_da_memoria_de_instrucoes);
 														 
-											 
-		
-
+ saida_memoria_de_instrucoes <= dados_da_memoria_de_instrucoes;											 
+ saida_comprador <= saida_comparador_datapah;
+ saida_memoria_de_dados <= saida_de_dados_para_memoriaD;
+ habilitar_escrita_no_banco_debug <= habilitar_escrita_no_banco;
 		
 end architecture;

@@ -18,7 +18,8 @@ port ( dados_da_memoria_de_instrucoes : in std_logic_vector(numero_de_bits -1 do
 		 endereco_1_para_leitura_banco  : out std_logic_vector(3 downto 0);
 		 habilitar_leitura_no_banco	  : out std_logic_vector(1 downto 0);
 		 endereco_2_para_leitura_banco  : out std_logic_vector(3 downto 0);
-		 seletor_ALU						  : out std_logic_vector(1 downto 0));
+		 seletor_ALU						  : out std_logic_vector(1 downto 0);
+		 estado_atual_debug				  : out std_logic_vector(2 downto 0));
 end entity;
 
 
@@ -77,7 +78,8 @@ begin
 									 endereco_1_para_leitura_banco,	  
 									 endereco_2_para_leitura_banco,     
 									 habilitar_leitura_no_banco,		  
-									 seletor_ALU);
+									 seletor_ALU,
+									 estado_atual_debug);
 									 
 	
 	endereco_memoria_de_instrucoes <= saida_contador_de_programa;

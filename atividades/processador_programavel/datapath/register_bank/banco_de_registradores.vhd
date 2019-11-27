@@ -3,6 +3,8 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
+
+
 entity banco_de_registradores is 
 	generic (numero_de_bits : positive := 16);
 	port (clock : in std_logic;
@@ -28,15 +30,18 @@ signal limpar           : std_logic_vector(numero_de_bits-1 downto 0);
 
 
 begin
-
-	dado_de_entrada_registrador(to_integer(unsigned(endereco_escrita))) <= dado_de_entrada;
-	escrita(to_integer(unsigned(endereco_escrita))) <= habilitar_escrita;
+	
+	demux4x16: for i in 0 to 15 generate
+								escrita(i) <= habilitar_escrita when to_integer(unsigned(endereco_escrita)) = i else 
+																										  '0';
+							 end generate demux4x16;
+	
 	
 								
 	gerando_registradores : for i in 0 to 15 generate
 							registrador : entity work.registrador(behavior)
 								generic map (numero_de_bits)
-								port map (dado_de_entrada_registrador(i),
+								port map (dado_de_entrada,
 											 clock,
 											 escrita(i),
 											 '0',

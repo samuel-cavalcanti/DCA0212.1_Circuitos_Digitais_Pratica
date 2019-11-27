@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_programavel
-Mon Nov 25 01:40:43 2019
+Wed Nov 27 03:46:57 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,63 +13,73 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |processador_programavel
- 10. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle
- 11. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|somador_complemento_de_2:somador
- 12. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa
- 13. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador
- 14. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|soma_1:soma_1
- 15. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao
- 16. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador
- 17. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle
- 18. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador
- 19. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco
- 20. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional
- 21. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|mux_3x1:mux
- 22. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco
- 23. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador
- 24. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador
- 25. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador
- 26. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador
- 27. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador
- 28. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador
- 29. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador
- 30. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador
- 31. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador
- 32. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador
- 33. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador
- 34. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador
- 35. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador
- 36. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador
- 37. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador
- 38. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador
- 39. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU
- 40. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|somador:somador
- 41. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator
- 42. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|comparador:comparador
- 43. Parameter Settings for User Entity Instance: memoriaD:memoria_de_dados
- 44. Parameter Settings for User Entity Instance: memoria_de_instrucoes:memoria_de_instrucoes
- 45. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador"
- 46. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador"
- 47. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador"
- 48. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador"
- 49. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador"
- 50. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador"
- 51. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador"
- 52. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador"
- 53. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador"
- 54. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador"
- 55. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador"
- 56. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador"
- 57. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador"
- 58. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador"
- 59. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador"
- 60. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador"
- 61. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
- 62. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador"
- 63. Elapsed Time Per Partition
- 64. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Logic Cells Representing Combinational Loops
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Registers Added for RAM Pass-Through Logic
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0|altsyncram_fio1:auto_generated
+ 17. Parameter Settings for User Entity Instance: Top-level Entity: |processador_programavel
+ 18. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle
+ 19. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|somador_complemento_de_2:somador
+ 20. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa
+ 21. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador
+ 22. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|soma_1:soma_1
+ 23. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao
+ 24. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador
+ 25. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle
+ 26. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador
+ 27. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco
+ 28. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional
+ 29. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|mux_3x1:mux
+ 30. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco
+ 31. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador
+ 32. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador
+ 33. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador
+ 34. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador
+ 35. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador
+ 36. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador
+ 37. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador
+ 38. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador
+ 39. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador
+ 40. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador
+ 41. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador
+ 42. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador
+ 43. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador
+ 44. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador
+ 45. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador
+ 46. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador
+ 47. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU
+ 48. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|somador:somador
+ 49. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator
+ 50. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|comparador:comparador
+ 51. Parameter Settings for User Entity Instance: memoriaD:memoria_de_dados
+ 52. Parameter Settings for User Entity Instance: memoria_de_instrucoes:memoria_de_instrucoes
+ 53. Parameter Settings for Inferred Entity Instance: memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0
+ 54. altsyncram Parameter Settings by Entity Instance
+ 55. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador"
+ 56. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador"
+ 57. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador"
+ 58. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador"
+ 59. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador"
+ 60. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador"
+ 61. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador"
+ 62. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador"
+ 63. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador"
+ 64. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador"
+ 65. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador"
+ 66. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador"
+ 67. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador"
+ 68. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador"
+ 69. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador"
+ 70. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador"
+ 71. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
+ 72. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador"
+ 73. Elapsed Time Per Partition
+ 74. Analysis & Synthesis Messages
 
 
 
@@ -95,18 +105,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 25 01:40:43 2019           ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 27 03:46:57 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador_programavel                         ;
 ; Top-level Entity Name              ; processador_programavel                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 1                                               ;
+; Total logic elements               ; 692                                             ;
+;     Total combinational functions  ; 435                                             ;
+;     Dedicated logic registers      ; 325                                             ;
+; Total registers                    ; 325                                             ;
+; Total pins                         ; 70                                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
+; Total memory bits                  ; 320                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -208,35 +218,46 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                                  ;
-+----------------------------------------------------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                                       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                                                                     ; Library ;
-+----------------------------------------------------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd         ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd         ;         ;
-; unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd                   ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd                   ;         ;
-; processador_programavel.vhd                                                            ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/processador_programavel.vhd                                                            ;         ;
-; registrador.vhd                                                                        ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/registrador.vhd                                                                        ;         ;
-; unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd                      ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd                      ;         ;
-; unit_control/program_counter/soma_1.vhd                                                ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/program_counter/soma_1.vhd                                                ;         ;
-; unit_control/program_counter/contador_de_programa.vhd                                  ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/program_counter/contador_de_programa.vhd                                  ;         ;
-; unit_control/controller/bloco_de_controle.vhd                                          ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/bloco_de_controle.vhd                                          ;         ;
-; unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd ;         ;
-; unit_control/controller/decoder/decodificador.vhd                                      ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/decodificador.vhd                                      ;         ;
-; datapath/mux3x1/mux_3x1.vhd                                                            ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/mux3x1/mux_3x1.vhd                                                            ;         ;
-; datapath/comparator/comparador.vhd                                                     ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/comparator/comparador.vhd                                                     ;         ;
-; datapath/ALU/alu.vhd                                                                   ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/alu.vhd                                                                   ;         ;
-; datapath/ALU/subtrator.vhd                                                             ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/subtrator.vhd                                                             ;         ;
-; datapath/ALU/somador.vhd                                                               ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/somador.vhd                                                               ;         ;
-; unit_control/sum/somador_complemento_de_2.vhd                                          ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/sum/somador_complemento_de_2.vhd                                          ;         ;
-; unit_control/instruction_register/registrador_de_instrucao.vhd                         ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/instruction_register/registrador_de_instrucao.vhd                         ;         ;
-; unit_control/controller/state_machine/maquina_de_estados.vhd                           ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/state_machine/maquina_de_estados.vhd                           ;         ;
-; unit_control/unidade_de_controle.vhd                                                   ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/unidade_de_controle.vhd                                                   ;         ;
-; datapath/register_bank/banco_de_registradores.vhd                                      ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/register_bank/banco_de_registradores.vhd                                      ;         ;
-; datapath/bloco_operacional.vhd                                                         ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/bloco_operacional.vhd                                                         ;         ;
-; memory/memoriaD.vhd                                                                    ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/memory/memoriaD.vhd                                                                    ;         ;
-; memory/memoria_de_instrucoes.vhd                                                       ; yes             ; User VHDL File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/memory/memoria_de_instrucoes.vhd                                                       ;         ;
-+----------------------------------------------------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                                                                        ;
++----------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                                       ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                                                                                     ; Library ;
++----------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd         ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd         ;         ;
+; unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd                   ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd                   ;         ;
+; processador_programavel.vhd                                                            ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/processador_programavel.vhd                                                            ;         ;
+; registrador.vhd                                                                        ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/registrador.vhd                                                                        ;         ;
+; unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd                      ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd                      ;         ;
+; unit_control/program_counter/soma_1.vhd                                                ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/program_counter/soma_1.vhd                                                ;         ;
+; unit_control/program_counter/contador_de_programa.vhd                                  ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/program_counter/contador_de_programa.vhd                                  ;         ;
+; unit_control/controller/bloco_de_controle.vhd                                          ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/bloco_de_controle.vhd                                          ;         ;
+; unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd ;         ;
+; unit_control/controller/decoder/decodificador.vhd                                      ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/decoder/decodificador.vhd                                      ;         ;
+; datapath/mux3x1/mux_3x1.vhd                                                            ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/mux3x1/mux_3x1.vhd                                                            ;         ;
+; datapath/comparator/comparador.vhd                                                     ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/comparator/comparador.vhd                                                     ;         ;
+; datapath/ALU/alu.vhd                                                                   ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/alu.vhd                                                                   ;         ;
+; datapath/ALU/subtrator.vhd                                                             ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/subtrator.vhd                                                             ;         ;
+; datapath/ALU/somador.vhd                                                               ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/somador.vhd                                                               ;         ;
+; unit_control/sum/somador_complemento_de_2.vhd                                          ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/sum/somador_complemento_de_2.vhd                                          ;         ;
+; unit_control/instruction_register/registrador_de_instrucao.vhd                         ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/instruction_register/registrador_de_instrucao.vhd                         ;         ;
+; unit_control/controller/state_machine/maquina_de_estados.vhd                           ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/controller/state_machine/maquina_de_estados.vhd                           ;         ;
+; unit_control/unidade_de_controle.vhd                                                   ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/unidade_de_controle.vhd                                                   ;         ;
+; datapath/register_bank/banco_de_registradores.vhd                                      ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/register_bank/banco_de_registradores.vhd                                      ;         ;
+; datapath/bloco_operacional.vhd                                                         ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/bloco_operacional.vhd                                                         ;         ;
+; memory/memoriaD.vhd                                                                    ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/memory/memoriaD.vhd                                                                    ;         ;
+; memory/memoria_de_instrucoes.vhd                                                       ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/memory/memoria_de_instrucoes.vhd                                                       ;         ;
+; altsyncram.tdf                                                                         ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                               ;         ;
+; stratix_ram_block.inc                                                                  ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                                        ;         ;
+; lpm_mux.inc                                                                            ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                                  ;         ;
+; lpm_decode.inc                                                                         ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                                               ;         ;
+; aglobal130.inc                                                                         ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                                                                               ;         ;
+; a_rdenreg.inc                                                                          ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                                                ;         ;
+; altrom.inc                                                                             ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                                                                                   ;         ;
+; altram.inc                                                                             ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                                                                   ;         ;
+; altdpram.inc                                                                           ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                                                                                 ;         ;
+; db/altsyncram_fio1.tdf                                                                 ; yes             ; Auto-Generated Megafunction                           ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/db/altsyncram_fio1.tdf                                                                 ;         ;
+; db/processador_programavel.ram0_memoriaD_a029977d.hdl.mif                              ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/db/processador_programavel.ram0_memoriaD_a029977d.hdl.mif                              ;         ;
++----------------------------------------------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -244,34 +265,145 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
+; Estimated Total logic elements              ; 692   ;
 ;                                             ;       ;
-; Total combinational functions               ; 0     ;
+; Total combinational functions               ; 435   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
+;     -- 4 input functions                    ; 361   ;
+;     -- 3 input functions                    ; 61    ;
+;     -- <=2 input functions                  ; 13    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
+;     -- normal mode                          ; 426   ;
+;     -- arithmetic mode                      ; 9     ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
+; Total registers                             ; 325   ;
+;     -- Dedicated logic registers            ; 325   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 1     ;
+; I/O pins                                    ; 70    ;
+; Total memory bits                           ; 320   ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 341   ;
+; Total fan-out                               ; 2881  ;
+; Average fan-out                             ; 3.41  ;
 +---------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; |processador_programavel   ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |processador_programavel ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                      ; Library Name ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |processador_programavel                                     ; 435 (1)           ; 325 (0)      ; 320         ; 0            ; 0       ; 0         ; 70   ; 0            ; |processador_programavel                                                                                                                                                 ; work         ;
+;    |bloco_operacional:bloco_operacional|                     ; 370 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional                                                                                                             ; work         ;
+;       |alu:ALU|                                              ; 86 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU                                                                                                     ; work         ;
+;          |somador:somador|                                   ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|somador:somador                                                                                     ; work         ;
+;          |subtrator:subtrator|                               ; 39 (39)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator                                                                                 ; work         ;
+;       |banco_de_registradores:banco|                         ; 258 (258)         ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco                                                                                ; work         ;
+;          |registrador:\gerando_registradores:0:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:10:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador                              ; work         ;
+;          |registrador:\gerando_registradores:11:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador                              ; work         ;
+;          |registrador:\gerando_registradores:12:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador                              ; work         ;
+;          |registrador:\gerando_registradores:13:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador                              ; work         ;
+;          |registrador:\gerando_registradores:14:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador                              ; work         ;
+;          |registrador:\gerando_registradores:15:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador                              ; work         ;
+;          |registrador:\gerando_registradores:1:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:2:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:3:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:4:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:5:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:6:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:7:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:8:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador                               ; work         ;
+;          |registrador:\gerando_registradores:9:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador                               ; work         ;
+;       |comparador:comparador|                                ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|comparador:comparador                                                                                       ; work         ;
+;       |mux_3x1:mux|                                          ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux                                                                                                 ; work         ;
+;    |memoriaD:memoria_de_dados|                               ; 19 (19)           ; 38 (38)      ; 320         ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoriaD:memoria_de_dados                                                                                                                       ; work         ;
+;       |altsyncram:memoria_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 320         ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0                                                                                              ; work         ;
+;          |altsyncram_fio1:auto_generated|                    ; 0 (0)             ; 0 (0)        ; 320         ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0|altsyncram_fio1:auto_generated                                                               ; work         ;
+;    |memoria_de_instrucoes:memoria_de_instrucoes|             ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoria_de_instrucoes:memoria_de_instrucoes                                                                                                     ; work         ;
+;    |unidade_de_controle:unidade_de_controle|                 ; 33 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle                                                                                                         ; work         ;
+;       |bloco_de_controle:bloco_de_controle|                  ; 20 (4)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle                                                                     ; work         ;
+;          |decodificador:decodificador|                       ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador                                         ; work         ;
+;             |decodificador_banco:decodificador_banco|        ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco ; work         ;
+;             |decodificador_mux:decodificador_mux|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux     ; work         ;
+;          |maquina_de_estados:maquina_de_estados|             ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados                               ; work         ;
+;       |contador_de_programa:contador_de_programa|            ; 5 (1)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa                                                               ; work         ;
+;          |registrador:registrador|                           ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador                                       ; work         ;
+;       |registrador_de_instrucao:registrador_de_instrucao|    ; 0 (0)             ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao                                                       ; work         ;
+;          |registrador:registrador|                           ; 0 (0)             ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador                               ; work         ;
+;       |somador_complemento_de_2:somador|                     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|somador_complemento_de_2:somador                                                                        ; work         ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-----------------------------------------------------------+
+; Name                                                                                         ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                                       ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-----------------------------------------------------------+
+; memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0|altsyncram_fio1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 20           ; 16           ; 20           ; 16           ; 320  ; db/processador_programavel.ram0_memoriaD_a029977d.hdl.mif ;
++----------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-----------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                                     ;
++------------------------------------------------------------------------------+---+
+; Logic Cell Name                                                              ;   ;
++------------------------------------------------------------------------------+---+
+; bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator|resultsubt~1 ;   ;
+; Number of logic cells representing combinational loops                       ; 1 ;
++------------------------------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                                                             ;
++-------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                                       ; Reason for Removal                                                                                                                       ;
++-------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+; memoria_de_instrucoes:memoria_de_instrucoes|dado[3,6,7,15]                                                                          ; Stuck at GND due to stuck port data_in                                                                                                   ;
+; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[3,6,7,15] ; Stuck at GND due to stuck port data_in                                                                                                   ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[7,8]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                   ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[18]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[18]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[10]                                                                                  ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[4] ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[2]                                                                                   ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[0] ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[4]                                                                                   ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[1] ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[6]                                                                                   ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[2] ;
+; unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador|memoria[4..15]            ; Lost fanout                                                                                                                              ;
+; Total Number of Removed Registers = 41                                                                                              ;                                                                                                                                          ;
++-------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                      ;
++------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                        ; Reason for Removal        ; Registers Removed due to This Register                                                                                        ;
++------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+; memoria_de_instrucoes:memoria_de_instrucoes|dado[3]  ; Stuck at GND              ; memoria_de_instrucoes:memoria_de_instrucoes|dado[7],                                                                          ;
+;                                                      ; due to stuck port data_in ; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[3], ;
+;                                                      ;                           ; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[7]  ;
+; memoria_de_instrucoes:memoria_de_instrucoes|dado[6]  ; Stuck at GND              ; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[6]  ;
+;                                                      ; due to stuck port data_in ;                                                                                                                               ;
+; memoria_de_instrucoes:memoria_de_instrucoes|dado[15] ; Stuck at GND              ; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[15] ;
+;                                                      ; due to stuck port data_in ;                                                                                                                               ;
++------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -279,14 +411,99 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 325   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 4     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 300   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------------------+
+; Inverted Register Statistics                                 ;
++----------------------------------------------------+---------+
+; Inverted Register                                  ; Fan out ;
++----------------------------------------------------+---------+
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12] ; 1       ;
+; Total number of inverted registers = 1             ;         ;
++----------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------+
+; Registers Added for RAM Pass-Through Logic                                                   ;
++----------------------------------------------------+-----------------------------------------+
+; Register Name                                      ; RAM Name                                ;
++----------------------------------------------------+-----------------------------------------+
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[0]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[1]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[2]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[3]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[4]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[5]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[6]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[7]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[8]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[9]  ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[10] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[11] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[13] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[15] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[17] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[18] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[19] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[21] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[23] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[25] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[27] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[29] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[31] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[33] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[35] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[37] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[39] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[41] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42] ; memoriaD:memoria_de_dados|memoria_rtl_0 ;
++----------------------------------------------------+-----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados|estado_atual[2] ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|Mux17                                                            ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|Mux5                                                                                  ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux6                                                                              ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux15                                                                             ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|dado_de_saida_2[0]                                               ;
+; 17:1               ; 16 bits   ; 176 LEs       ; 176 LEs              ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|dado_de_saida_1[6]                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Source assignments for memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0|altsyncram_fio1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                         ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
++---------------------------------+--------------------+------+--------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------+
@@ -649,6 +866,87 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0             ;
++------------------------------------+-----------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                     ; Type           ;
++------------------------------------+-----------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                         ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                        ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                       ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                        ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                       ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                         ; Untyped        ;
+; OPERATION_MODE                     ; DUAL_PORT                                                 ; Untyped        ;
+; WIDTH_A                            ; 16                                                        ; Untyped        ;
+; WIDTHAD_A                          ; 5                                                         ; Untyped        ;
+; NUMWORDS_A                         ; 20                                                        ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                              ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                      ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                      ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; WIDTH_B                            ; 16                                                        ; Untyped        ;
+; WIDTHAD_B                          ; 5                                                         ; Untyped        ;
+; NUMWORDS_B                         ; 20                                                        ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                                    ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                    ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                    ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK0                                                    ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                              ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                    ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                      ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                         ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                                         ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                      ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                         ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                                  ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
+; INIT_FILE                          ; db/processador_programavel.ram0_memoriaD_a029977d.hdl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                    ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                         ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                                    ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                                    ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                                    ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                                    ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                           ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                           ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                     ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                     ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                         ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone II                                                ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_fio1                                           ; Untyped        ;
++------------------------------------+-----------------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                               ;
++-------------------------------------------+----------------------------------------------------+
+; Name                                      ; Value                                              ;
++-------------------------------------------+----------------------------------------------------+
+; Number of entity instances                ; 1                                                  ;
+; Entity Instance                           ; memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                          ;
+;     -- WIDTH_A                            ; 16                                                 ;
+;     -- NUMWORDS_A                         ; 20                                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
+;     -- WIDTH_B                            ; 16                                                 ;
+;     -- NUMWORDS_B                         ; 20                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                           ;
++-------------------------------------------+----------------------------------------------------+
+
+
 +------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador" ;
 +--------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
@@ -816,7 +1114,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -826,7 +1124,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 25 01:40:38 2019
+    Info: Processing started: Wed Nov 27 03:46:54 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_programavel -c processador_programavel
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd
@@ -906,7 +1204,7 @@ Info (12129): Elaborating entity "registrador" using architecture "A:behavior" f
 Info (12129): Elaborating entity "soma_1" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|soma_1:soma_1"
 Info (12129): Elaborating entity "registrador_de_instrucao" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao"
 Info (12129): Elaborating entity "bloco_de_controle" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle"
-Warning (10540): VHDL Signal Declaration warning at bloco_de_controle.vhd(38): used explicit default value for signal "reinicar_maquina_de_estados" because signal was never assigned a value
+Warning (10540): VHDL Signal Declaration warning at bloco_de_controle.vhd(40): used explicit default value for signal "reinicar_maquina_de_estados" because signal was never assigned a value
 Info (12129): Elaborating entity "decodificador" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador"
 Info (12129): Elaborating entity "decodificador_memoria_de_dados" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_memoria_de_dados:decodificador_memoria_de_dados"
 Info (12129): Elaborating entity "decodificador_mux" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux"
@@ -915,301 +1213,71 @@ Info (12129): Elaborating entity "decodificador_ALU" using architecture "A:behav
 Info (12129): Elaborating entity "maquina_de_estados" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
 Info (12129): Elaborating entity "bloco_operacional" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional"
 Info (12129): Elaborating entity "mux_3x1" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|mux_3x1:mux"
-Warning (10492): VHDL Process Statement warning at mux_3x1.vhd(25): signal "saida_ula" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mux_3x1.vhd(28): signal "saida_memoria" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at mux_3x1.vhd(31): signal "constante" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at mux_3x1.vhd(20): inferring latch(es) for signal or variable "saida_mux", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "saida_mux[8]" at mux_3x1.vhd(20)
 Info (12129): Elaborating entity "banco_de_registradores" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|banco_de_registradores:banco"
-Info (10041): Inferred latch for "escrita[0]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[1]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[2]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[3]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[4]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[5]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[6]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[7]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[8]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[9]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[10]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[11]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[12]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[13]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[14]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "escrita[15]" at banco_de_registradores.vhd(33)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[0][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[1][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[2][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[3][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[4][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[5][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[6][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[7][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[8][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[9][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[10][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[11][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[12][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[13][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[14][15]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][0]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][1]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][2]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][3]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][4]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][5]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][6]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][7]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][8]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][9]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][10]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][11]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][12]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][13]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][14]" at banco_de_registradores.vhd(32)
-Info (10041): Inferred latch for "dado_de_entrada_registrador[15][15]" at banco_de_registradores.vhd(32)
 Info (12129): Elaborating entity "alu" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|alu:ALU"
 Info (12129): Elaborating entity "somador" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|alu:ALU|somador:somador"
 Info (12129): Elaborating entity "subtrator" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator"
 Info (12129): Elaborating entity "comparador" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|comparador:comparador"
 Info (12129): Elaborating entity "memoriaD" using architecture "A:behavior" for hierarchy "memoriaD:memoria_de_dados"
 Info (12129): Elaborating entity "memoria_de_instrucoes" using architecture "A:behavior" for hierarchy "memoria_de_instrucoes:memoria_de_instrucoes"
+Warning (113028): 12 out of 32 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported.
+    Warning (113027): Addresses ranging from 20 to 31 are not initialized
+Warning (276020): Inferred RAM node "memoriaD:memoria_de_dados|memoria_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "memoriaD:memoria_de_dados|memoria_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 16
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 20
+        Info (286033): Parameter WIDTH_B set to 16
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 20
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/processador_programavel.ram0_memoriaD_a029977d.hdl.mif
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+Info (12130): Elaborated megafunction instantiation "memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0"
+Info (12133): Instantiated megafunction "memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "16"
+    Info (12134): Parameter "WIDTHAD_A" = "5"
+    Info (12134): Parameter "NUMWORDS_A" = "20"
+    Info (12134): Parameter "WIDTH_B" = "16"
+    Info (12134): Parameter "WIDTHAD_B" = "5"
+    Info (12134): Parameter "NUMWORDS_B" = "20"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/processador_programavel.ram0_memoriaD_a029977d.hdl.mif"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fio1.tdf
+    Info (12023): Found entity 1: altsyncram_fio1
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "saida_memoria_de_instrucoes[3]" is stuck at GND
+    Warning (13410): Pin "saida_memoria_de_instrucoes[6]" is stuck at GND
+    Warning (13410): Pin "saida_memoria_de_instrucoes[7]" is stuck at GND
+    Warning (13410): Pin "saida_memoria_de_instrucoes[15]" is stuck at GND
+Info (17049): 12 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clock"
-Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 811 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 390 megabytes
-    Info: Processing ended: Mon Nov 25 01:40:43 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info (21059): Implemented 69 output pins
+    Info (21061): Implemented 725 logic cells
+    Info (21064): Implemented 16 RAM segments
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 387 megabytes
+    Info: Processing ended: Wed Nov 27 03:46:57 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

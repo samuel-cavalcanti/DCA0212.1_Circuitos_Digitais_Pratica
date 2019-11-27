@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Nov 25 01:40:43 2019
+Analysis & Synthesis Status : Successful - Wed Nov 27 03:46:57 2019
 Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : processador_programavel
 Top-level Entity Name : processador_programavel
 Family : Cyclone II
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 1
+Total logic elements : 692
+    Total combinational functions : 435
+    Dedicated logic registers : 325
+Total registers : 325
+Total pins : 70
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 320
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

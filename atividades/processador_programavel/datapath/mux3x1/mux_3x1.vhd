@@ -1,5 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
 
 entity mux_3x1 is
 	generic(numero_de_bits : positive := 16);
@@ -15,30 +17,22 @@ end entity;
 
 architecture behavior of mux_3x1 is 
 
+signal const : std_logic_vector(numero_de_bits-1 downto 0) := (others => '0');
+
 begin
 		
-		process (seletor) begin
-			
-			case seletor is 
-			
-				when "00" =>
-					saida_mux <= saida_ula;
-				
-				when "01" =>
-					saida_mux <= saida_memoria;
-				
-				when "10" =>
-					saida_mux(7 downto 0) <= constante;
-					saida_mux(numero_de_bits-1 downto 9) <= (others => '0');
-				
-				when "11" =>
-					saida_mux <= (others => '0');
-				
-			end case;
-				
-		
-		end process;
+		const(7 downto 0) <= constante(7 downto 0);
+	
+	
 
+		with seletor select
+		
+		saida_mux <= saida_ula when "00",
+						 saida_memoria when "01",
+						 const  when "10",
+						 (others => '0') when "11";
+		
+		
 
 
 end architecture;
