@@ -5,10 +5,11 @@ use ieee.numeric_std.all;
 
 entity memoria_de_instrucoes is 
 	generic (numero_de_bits : positive := 16);
-	port ( clock    : in std_logic;
-			 leitura  : in  std_logic;
-			 endereco : in std_logic_vector(numero_de_bits-1 downto 0);
-			 dado 	 : out std_logic_vector(numero_de_bits-1 downto 0));	
+	port ( clock            : in std_logic;
+			 leitura          : in  std_logic;
+			 endereco         : in std_logic_vector(numero_de_bits-1 downto 0);
+			 saida_da_memoria : out std_logic_vector(numero_de_bits-1 downto 0));
+			 	
 			 
 end entity;
 
@@ -25,23 +26,25 @@ type memoria is array (0 to tamanho_memoria) of std_logic_vector(numero_de_bits-
 												--  _|_
 constant dados : memoria := ( 0  => "0000000100000011",-- carrregar valor 3 para o banco
 									   1  => "0000001000000100",-- carregar  valor 4 para o banco 
-									   2  => "0010001100100011",-- somar 4+3
-									   3  => "0011010000000001",-- R[3] = const 1
+									   2  => "0010001000010011",-- somar 4+3
+									   3  => "0011010000000001",-- R[4] = const 1
 										4  => "0100001000010101",-- R[2] - R[1]
-										5  => "0101111000000010",-- R[14] == 0 entao PC=7
+										5  => "0101111000000001",-- R[14] == 0 entao PC=7
 										6  => "0001010100010011",-- M[19] = R[5]
 										7  => "0001001100010011",-- M[19] = R[3]
 									   others => (others=>'0')); 
 
-signal indice : integer range 0 to tamanho_memoria;										
+signal indice : integer range 0 to tamanho_memoria := 0;		
+--signal dado_atual : std_logic_vector(numero_de_bits-1 downto 0) := dados(0);								
 begin 
 	
-	indice <= to_integer(unsigned(endereco));
 	
-	process (clock, leitura) begin
 	
+	process (clock, leitura,endereco) begin
+		indice <= to_integer(unsigned(endereco));
+		
 		if rising_edge(clock) and leitura = '1' then
-			dado <= dados(indice);
+			saida_da_memoria <= dados(indice);
 		end if ;
 		
 	

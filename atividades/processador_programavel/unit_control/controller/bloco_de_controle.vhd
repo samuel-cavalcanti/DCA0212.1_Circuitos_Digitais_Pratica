@@ -10,7 +10,7 @@ entity bloco_de_controle is
 			limpar_contador_de_programa	     : out std_logic;
 			incrementar_contador_de_programa   : out std_logic;
 			ler_memoria_de_instrucoes			  : out std_logic;
-			ler_registrador_de_instrucao       : out std_logic;
+			carregar_registrador_de_instrucao  : out std_logic;
 			endereco_memoria_de_dados			  : out std_logic_vector(7 downto 0);
 			ler_memoria_de_dados					  : out std_logic;
 			escrever_memoria_de_dados			  : out std_logic;
@@ -59,11 +59,7 @@ begin
 									 seletor_ALU);
 	
 	
-	maquina_de_estados : entity work.maquina_de_estados(behavior)
-								port map (clock,
-											 reinicar_maquina_de_estados,
-											 saida_comparador,
-											 estado_atual);
+	
 	
 	estado_atual_debug <= estado_atual;
 		
@@ -79,7 +75,15 @@ begin
 	incrementar_contador_de_programa <= '1' when estado_atual = Busca else
 													'0';
 													
-	ler_registrador_de_instrucao <= '1' when estado_atual = Busca else
+	carregar_registrador_de_instrucao <= '1' when estado_atual = Busca else
 											  '0';
-		
+	operacao <= saida_registrador_de_instrucao(15 downto 12);
+	
+	maquina_de_estados : entity work.maquina_de_estados(behavior)
+								port map (clock,
+											 reinicar_maquina_de_estados,
+											 operacao,
+											 saida_comparador,
+											 estado=>estado_atual);
+	
 end architecture;

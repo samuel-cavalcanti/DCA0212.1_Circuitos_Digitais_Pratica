@@ -3,7 +3,7 @@ $comment
 		vcd file processador_programavel.msim.vcd -direction
 $end
 $date
-	Wed Nov 27 03:47:45 2019
+	Thu Nov 28 15:30:58 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -13,1542 +13,1110 @@ $timescale
 $end
 $scope module processador_programavel_vlg_vec_tst $end
 $var reg 1 ! clock $end
-$var wire 1 " estado_atual_debug [2] $end
-$var wire 1 # estado_atual_debug [1] $end
-$var wire 1 $ estado_atual_debug [0] $end
-$var wire 1 % habilitar_escrita_no_banco_debug $end
-$var wire 1 & saida_ALU [15] $end
-$var wire 1 ' saida_ALU [14] $end
-$var wire 1 ( saida_ALU [13] $end
-$var wire 1 ) saida_ALU [12] $end
-$var wire 1 * saida_ALU [11] $end
-$var wire 1 + saida_ALU [10] $end
-$var wire 1 , saida_ALU [9] $end
-$var wire 1 - saida_ALU [8] $end
-$var wire 1 . saida_ALU [7] $end
-$var wire 1 / saida_ALU [6] $end
-$var wire 1 0 saida_ALU [5] $end
-$var wire 1 1 saida_ALU [4] $end
-$var wire 1 2 saida_ALU [3] $end
-$var wire 1 3 saida_ALU [2] $end
-$var wire 1 4 saida_ALU [1] $end
-$var wire 1 5 saida_ALU [0] $end
-$var wire 1 6 saida_banco_2 [15] $end
-$var wire 1 7 saida_banco_2 [14] $end
-$var wire 1 8 saida_banco_2 [13] $end
-$var wire 1 9 saida_banco_2 [12] $end
-$var wire 1 : saida_banco_2 [11] $end
-$var wire 1 ; saida_banco_2 [10] $end
-$var wire 1 < saida_banco_2 [9] $end
-$var wire 1 = saida_banco_2 [8] $end
-$var wire 1 > saida_banco_2 [7] $end
-$var wire 1 ? saida_banco_2 [6] $end
-$var wire 1 @ saida_banco_2 [5] $end
-$var wire 1 A saida_banco_2 [4] $end
-$var wire 1 B saida_banco_2 [3] $end
-$var wire 1 C saida_banco_2 [2] $end
-$var wire 1 D saida_banco_2 [1] $end
-$var wire 1 E saida_banco_2 [0] $end
-$var wire 1 F saida_comprador $end
-$var wire 1 G saida_memoria_de_dados [15] $end
-$var wire 1 H saida_memoria_de_dados [14] $end
-$var wire 1 I saida_memoria_de_dados [13] $end
-$var wire 1 J saida_memoria_de_dados [12] $end
-$var wire 1 K saida_memoria_de_dados [11] $end
-$var wire 1 L saida_memoria_de_dados [10] $end
-$var wire 1 M saida_memoria_de_dados [9] $end
-$var wire 1 N saida_memoria_de_dados [8] $end
-$var wire 1 O saida_memoria_de_dados [7] $end
-$var wire 1 P saida_memoria_de_dados [6] $end
-$var wire 1 Q saida_memoria_de_dados [5] $end
-$var wire 1 R saida_memoria_de_dados [4] $end
-$var wire 1 S saida_memoria_de_dados [3] $end
-$var wire 1 T saida_memoria_de_dados [2] $end
-$var wire 1 U saida_memoria_de_dados [1] $end
-$var wire 1 V saida_memoria_de_dados [0] $end
-$var wire 1 W saida_memoria_de_instrucoes [15] $end
-$var wire 1 X saida_memoria_de_instrucoes [14] $end
-$var wire 1 Y saida_memoria_de_instrucoes [13] $end
-$var wire 1 Z saida_memoria_de_instrucoes [12] $end
-$var wire 1 [ saida_memoria_de_instrucoes [11] $end
-$var wire 1 \ saida_memoria_de_instrucoes [10] $end
-$var wire 1 ] saida_memoria_de_instrucoes [9] $end
-$var wire 1 ^ saida_memoria_de_instrucoes [8] $end
-$var wire 1 _ saida_memoria_de_instrucoes [7] $end
-$var wire 1 ` saida_memoria_de_instrucoes [6] $end
-$var wire 1 a saida_memoria_de_instrucoes [5] $end
-$var wire 1 b saida_memoria_de_instrucoes [4] $end
-$var wire 1 c saida_memoria_de_instrucoes [3] $end
-$var wire 1 d saida_memoria_de_instrucoes [2] $end
-$var wire 1 e saida_memoria_de_instrucoes [1] $end
-$var wire 1 f saida_memoria_de_instrucoes [0] $end
-$var wire 1 g sampler $end
+$var wire 1 " estado_botao [1] $end
+$var wire 1 # estado_botao [0] $end
+$var wire 1 $ saida_comprador $end
+$var wire 1 % saida_display_ALU [6] $end
+$var wire 1 & saida_display_ALU [5] $end
+$var wire 1 ' saida_display_ALU [4] $end
+$var wire 1 ( saida_display_ALU [3] $end
+$var wire 1 ) saida_display_ALU [2] $end
+$var wire 1 * saida_display_ALU [1] $end
+$var wire 1 + saida_display_ALU [0] $end
+$var wire 1 , saida_display_banco_1 [6] $end
+$var wire 1 - saida_display_banco_1 [5] $end
+$var wire 1 . saida_display_banco_1 [4] $end
+$var wire 1 / saida_display_banco_1 [3] $end
+$var wire 1 0 saida_display_banco_1 [2] $end
+$var wire 1 1 saida_display_banco_1 [1] $end
+$var wire 1 2 saida_display_banco_1 [0] $end
+$var wire 1 3 saida_display_banco_2 [6] $end
+$var wire 1 4 saida_display_banco_2 [5] $end
+$var wire 1 5 saida_display_banco_2 [4] $end
+$var wire 1 6 saida_display_banco_2 [3] $end
+$var wire 1 7 saida_display_banco_2 [2] $end
+$var wire 1 8 saida_display_banco_2 [1] $end
+$var wire 1 9 saida_display_banco_2 [0] $end
+$var wire 1 : saida_display_contador [6] $end
+$var wire 1 ; saida_display_contador [5] $end
+$var wire 1 < saida_display_contador [4] $end
+$var wire 1 = saida_display_contador [3] $end
+$var wire 1 > saida_display_contador [2] $end
+$var wire 1 ? saida_display_contador [1] $end
+$var wire 1 @ saida_display_contador [0] $end
+$var wire 1 A saida_display_enderesso_1 [6] $end
+$var wire 1 B saida_display_enderesso_1 [5] $end
+$var wire 1 C saida_display_enderesso_1 [4] $end
+$var wire 1 D saida_display_enderesso_1 [3] $end
+$var wire 1 E saida_display_enderesso_1 [2] $end
+$var wire 1 F saida_display_enderesso_1 [1] $end
+$var wire 1 G saida_display_enderesso_1 [0] $end
+$var wire 1 H saida_display_enderesso_2 [6] $end
+$var wire 1 I saida_display_enderesso_2 [5] $end
+$var wire 1 J saida_display_enderesso_2 [4] $end
+$var wire 1 K saida_display_enderesso_2 [3] $end
+$var wire 1 L saida_display_enderesso_2 [2] $end
+$var wire 1 M saida_display_enderesso_2 [1] $end
+$var wire 1 N saida_display_enderesso_2 [0] $end
+$var wire 1 O saida_display_estado [6] $end
+$var wire 1 P saida_display_estado [5] $end
+$var wire 1 Q saida_display_estado [4] $end
+$var wire 1 R saida_display_estado [3] $end
+$var wire 1 S saida_display_estado [2] $end
+$var wire 1 T saida_display_estado [1] $end
+$var wire 1 U saida_display_estado [0] $end
+$var wire 1 V saida_display_operacao [6] $end
+$var wire 1 W saida_display_operacao [5] $end
+$var wire 1 X saida_display_operacao [4] $end
+$var wire 1 Y saida_display_operacao [3] $end
+$var wire 1 Z saida_display_operacao [2] $end
+$var wire 1 [ saida_display_operacao [1] $end
+$var wire 1 \ saida_display_operacao [0] $end
+$var wire 1 ] sampler $end
 $scope module i1 $end
-$var wire 1 h gnd $end
-$var wire 1 i vcc $end
-$var wire 1 j unknown $end
-$var tri1 1 k devclrn $end
-$var tri1 1 l devpor $end
-$var tri1 1 m devoe $end
-$var wire 1 n memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a6 $end
-$var wire 1 o memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a3 $end
-$var wire 1 p memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a13 $end
-$var wire 1 q memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a11 $end
-$var wire 1 r memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a10 $end
-$var wire 1 s memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a9 $end
-$var wire 1 t unidade_de_controle|somador|Add0~0_combout $end
-$var wire 1 u unidade_de_controle|somador|Add0~4_combout $end
-$var wire 1 v bloco_operacional|banco|dado_de_saida_1[0]~37_combout $end
-$var wire 1 w bloco_operacional|banco|dado_de_saida_1[0]~38_combout $end
-$var wire 1 x bloco_operacional|banco|dado_de_saida_1[3]~63_combout $end
-$var wire 1 y bloco_operacional|banco|dado_de_saida_1[3]~64_combout $end
-$var wire 1 z bloco_operacional|banco|dado_de_saida_1[5]~83_combout $end
-$var wire 1 { bloco_operacional|banco|dado_de_saida_1[5]~84_combout $end
-$var wire 1 | bloco_operacional|banco|dado_de_saida_1[6]~100_combout $end
-$var wire 1 } bloco_operacional|banco|dado_de_saida_1[6]~101_combout $end
-$var wire 1 ~ bloco_operacional|banco|dado_de_saida_1[8]~113_combout $end
-$var wire 1 !! bloco_operacional|banco|dado_de_saida_1[8]~114_combout $end
-$var wire 1 "! bloco_operacional|banco|dado_de_saida_1[9]~130_combout $end
-$var wire 1 #! bloco_operacional|banco|dado_de_saida_1[9]~131_combout $end
-$var wire 1 $! bloco_operacional|ALU|subtrator|resultsubt[10]~10_combout $end
-$var wire 1 %! bloco_operacional|banco|dado_de_saida_1[12]~153_combout $end
-$var wire 1 &! bloco_operacional|banco|dado_de_saida_1[12]~154_combout $end
-$var wire 1 '! bloco_operacional|banco|dado_de_saida_1[13]~163_combout $end
-$var wire 1 (! bloco_operacional|banco|dado_de_saida_1[13]~164_combout $end
-$var wire 1 )! bloco_operacional|banco|dado_de_saida_1[13]~170_combout $end
-$var wire 1 *! bloco_operacional|comparador|Equal0~0_combout $end
-$var wire 1 +! bloco_operacional|banco|Equal0~4_combout $end
-$var wire 1 ,! bloco_operacional|banco|Equal0~11_combout $end
-$var wire 1 -! bloco_operacional|banco|Equal0~15_combout $end
-$var wire 1 .! memoria_de_dados|memoria~22_combout $end
-$var wire 1 /! memoria_de_dados|memoria~27_combout $end
-$var wire 1 0! memoria_de_dados|memoria~30_combout $end
-$var wire 1 1! memoria_de_dados|memoria~33_combout $end
-$var wire 1 2! memoria_de_dados|memoria~35_combout $end
-$var wire 1 3! bloco_operacional|banco|gerando_registradores:6:registrador|memoria[0]~feeder_combout $end
-$var wire 1 4! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[0]~feeder_combout $end
-$var wire 1 5! memoria_de_dados|memoria_rtl_0_bypass[3]~feeder_combout $end
-$var wire 1 6! bloco_operacional|banco|gerando_registradores:12:registrador|memoria[1]~feeder_combout $end
-$var wire 1 7! bloco_operacional|banco|gerando_registradores:15:registrador|memoria[2]~feeder_combout $end
-$var wire 1 8! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[3]~feeder_combout $end
-$var wire 1 9! bloco_operacional|banco|gerando_registradores:14:registrador|memoria[4]~feeder_combout $end
-$var wire 1 :! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[4]~feeder_combout $end
-$var wire 1 ;! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[5]~feeder_combout $end
-$var wire 1 <! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[6]~feeder_combout $end
-$var wire 1 =! bloco_operacional|banco|gerando_registradores:3:registrador|memoria[6]~feeder_combout $end
-$var wire 1 >! bloco_operacional|banco|gerando_registradores:0:registrador|memoria[7]~feeder_combout $end
-$var wire 1 ?! bloco_operacional|banco|gerando_registradores:12:registrador|memoria[7]~feeder_combout $end
-$var wire 1 @! bloco_operacional|banco|gerando_registradores:10:registrador|memoria[8]~feeder_combout $end
-$var wire 1 A! bloco_operacional|banco|gerando_registradores:14:registrador|memoria[8]~feeder_combout $end
-$var wire 1 B! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[8]~feeder_combout $end
-$var wire 1 C! bloco_operacional|banco|gerando_registradores:0:registrador|memoria[9]~feeder_combout $end
-$var wire 1 D! bloco_operacional|banco|gerando_registradores:7:registrador|memoria[9]~feeder_combout $end
-$var wire 1 E! bloco_operacional|banco|gerando_registradores:2:registrador|memoria[10]~feeder_combout $end
-$var wire 1 F! bloco_operacional|banco|gerando_registradores:14:registrador|memoria[11]~feeder_combout $end
-$var wire 1 G! bloco_operacional|banco|gerando_registradores:0:registrador|memoria[11]~feeder_combout $end
-$var wire 1 H! bloco_operacional|banco|gerando_registradores:2:registrador|memoria[13]~feeder_combout $end
-$var wire 1 I! bloco_operacional|banco|gerando_registradores:6:registrador|memoria[13]~feeder_combout $end
-$var wire 1 J! bloco_operacional|banco|gerando_registradores:4:registrador|memoria[13]~feeder_combout $end
-$var wire 1 K! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[14]~feeder_combout $end
-$var wire 1 L! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[15]~feeder_combout $end
-$var wire 1 M! memoria_de_dados|memoria_rtl_0_bypass[17]~feeder_combout $end
-$var wire 1 N! unidade_de_controle|contador_de_programa|registrador|memoria[0]~5 $end
-$var wire 1 O! unidade_de_controle|contador_de_programa|registrador|memoria[1]~6_combout $end
-$var wire 1 P! unidade_de_controle|contador_de_programa|registrador|memoria[1]~7 $end
-$var wire 1 Q! unidade_de_controle|contador_de_programa|registrador|memoria[2]~8_combout $end
-$var wire 1 R! unidade_de_controle|somador|Add1~1 $end
-$var wire 1 S! unidade_de_controle|somador|Add1~3 $end
-$var wire 1 T! unidade_de_controle|somador|Add1~4_combout $end
-$var wire 1 U! unidade_de_controle|contador_de_programa|registrador|memoria[0]~4_combout $end
-$var wire 1 V! unidade_de_controle|somador|Add1~0_combout $end
-$var wire 1 W! unidade_de_controle|bloco_de_controle|Equal2~2_combout $end
-$var wire 1 X! unidade_de_controle|contador_de_programa|comb~0_combout $end
-$var wire 1 Y! memoria_de_instrucoes|Mux2~0_combout $end
-$var wire 1 Z! unidade_de_controle|bloco_de_controle|Equal2~0_combout $end
-$var wire 1 [! memoria_de_instrucoes|Mux4~0_combout $end
-$var wire 1 \! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|Equal0~3_combout $end
-$var wire 1 ]! memoria_de_instrucoes|Mux8~0_combout $end
-$var wire 1 ^! memoria_de_dados|memoria_rtl_0_bypass[9]~feeder_combout $end
-$var wire 1 _! memoria_de_instrucoes|Mux9~0_combout $end
-$var wire 1 `! unidade_de_controle|registrador_de_instrucao|registrador|memoria[2]~feeder_combout $end
-$var wire 1 a! memoria_de_dados|memoria~23_combout $end
-$var wire 1 b! memoria_de_dados|memoria_rtl_0_bypass[12]~feeder_combout $end
-$var wire 1 c! memoria_de_dados|memoria~combout $end
-$var wire 1 d! unidade_de_controle|bloco_de_controle|Equal2~0_wirecell_combout $end
-$var wire 1 e! clock~combout $end
-$var wire 1 f! clock~clkctrl_outclk $end
-$var wire 1 g! memoria_de_instrucoes|Mux3~0_combout $end
-$var wire 1 h! memoria_de_dados|memoria_rtl_0_bypass[11]~feeder_combout $end
-$var wire 1 i! memoria_de_instrucoes|Mux11~0_combout $end
-$var wire 1 j! ~GND~combout $end
-$var wire 1 k! memoria_de_instrucoes|Mux0~0_combout $end
-$var wire 1 l! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|habilitar_leitura_no_banco[0]~1_combout $end
-$var wire 1 m! memoria_de_instrucoes|Mux6~0_combout $end
-$var wire 1 n! memoria_de_instrucoes|Mux5~0_combout $end
-$var wire 1 o! bloco_operacional|banco|dado_de_saida_1[3]~195_combout $end
-$var wire 1 p! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|escrever_no_banco~0_combout $end
-$var wire 1 q! memoria_de_dados|memoria_rtl_0_bypass[19]~feeder_combout $end
-$var wire 1 r! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|habilitar_leitura_no_banco[1]~0_combout $end
-$var wire 1 s! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|Equal0~2_combout $end
-$var wire 1 t! memoria_de_instrucoes|Mux7~0_combout $end
-$var wire 1 u! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|endereco_para_escrita_no_banco[1]~1_combout $end
-$var wire 1 v! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|endereco_para_escrita_no_banco[3]~3_combout $end
-$var wire 1 w! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|endereco_para_escrita_no_banco[2]~2_combout $end
-$var wire 1 x! bloco_operacional|banco|Equal0~0_combout $end
-$var wire 1 y! bloco_operacional|banco|escrita[2]~32_combout $end
-$var wire 1 z! bloco_operacional|banco|Equal0~2_combout $end
-$var wire 1 {! bloco_operacional|banco|escrita[0]~34_combout $end
-$var wire 1 |! bloco_operacional|banco|Mux25~0_combout $end
-$var wire 1 }! bloco_operacional|banco|Mux25~1_combout $end
-$var wire 1 ~! bloco_operacional|banco|dado_de_saida_2[6]~44_combout $end
-$var wire 1 !" bloco_operacional|ALU|subtrator|resultsubt[6]~6_combout $end
-$var wire 1 "" unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|Equal0~1_combout $end
-$var wire 1 #" bloco_operacional|banco|gerando_registradores:3:registrador|memoria[5]~feeder_combout $end
-$var wire 1 $" bloco_operacional|banco|Equal0~3_combout $end
-$var wire 1 %" bloco_operacional|banco|escrita[3]~35_combout $end
-$var wire 1 &" bloco_operacional|banco|gerando_registradores:2:registrador|memoria[5]~feeder_combout $end
-$var wire 1 '" bloco_operacional|banco|Mux26~0_combout $end
-$var wire 1 (" bloco_operacional|banco|Mux26~1_combout $end
-$var wire 1 )" bloco_operacional|ALU|subtrator|borrow~7_combout $end
-$var wire 1 *" bloco_operacional|ALU|Mux9~0_combout $end
-$var wire 1 +" bloco_operacional|ALU|Mux9~1_combout $end
-$var wire 1 ," bloco_operacional|mux|Mux9~0_combout $end
-$var wire 1 -" bloco_operacional|banco|escrita[7]~43_combout $end
-$var wire 1 ." bloco_operacional|banco|Equal0~10_combout $end
-$var wire 1 /" bloco_operacional|banco|escrita[4]~42_combout $end
-$var wire 1 0" bloco_operacional|banco|dado_de_saida_1[6]~93_combout $end
-$var wire 1 1" bloco_operacional|banco|dado_de_saida_1[6]~94_combout $end
-$var wire 1 2" bloco_operacional|banco|Equal0~1_combout $end
-$var wire 1 3" bloco_operacional|banco|escrita[1]~33_combout $end
-$var wire 1 4" bloco_operacional|banco|dado_de_saida_1[6]~97_combout $end
-$var wire 1 5" bloco_operacional|banco|dado_de_saida_1[6]~98_combout $end
-$var wire 1 6" unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|endereco_para_escrita_no_banco[0]~0_combout $end
-$var wire 1 7" bloco_operacional|banco|Equal0~5_combout $end
-$var wire 1 8" bloco_operacional|banco|escrita[9]~37_combout $end
-$var wire 1 9" bloco_operacional|banco|gerando_registradores:10:registrador|memoria[6]~feeder_combout $end
-$var wire 1 :" bloco_operacional|banco|escrita[10]~36_combout $end
-$var wire 1 ;" bloco_operacional|banco|Equal0~6_combout $end
-$var wire 1 <" bloco_operacional|banco|escrita[8]~38_combout $end
-$var wire 1 =" bloco_operacional|banco|dado_de_saida_1[6]~95_combout $end
-$var wire 1 >" bloco_operacional|banco|dado_de_saida_1[6]~96_combout $end
-$var wire 1 ?" bloco_operacional|banco|dado_de_saida_1[6]~99_combout $end
-$var wire 1 @" bloco_operacional|banco|dado_de_saida_1[6]~102_combout $end
-$var wire 1 A" bloco_operacional|banco|dado_de_saida_1[6]~198_combout $end
-$var wire 1 B" bloco_operacional|banco|Mux27~0_combout $end
-$var wire 1 C" bloco_operacional|banco|Mux27~1_combout $end
-$var wire 1 D" bloco_operacional|banco|dado_de_saida_2[1]~34_combout $end
-$var wire 1 E" bloco_operacional|banco|dado_de_saida_2[1]~35_combout $end
-$var wire 1 F" bloco_operacional|banco|dado_de_saida_2[1]~39_combout $end
-$var wire 1 G" bloco_operacional|ALU|somador|carry~0_combout $end
-$var wire 1 H" bloco_operacional|ALU|somador|carry~1_combout $end
-$var wire 1 I" bloco_operacional|banco|Equal0~13_combout $end
-$var wire 1 J" bloco_operacional|banco|escrita[14]~45_combout $end
-$var wire 1 K" bloco_operacional|banco|gerando_registradores:2:registrador|memoria[3]~feeder_combout $end
-$var wire 1 L" bloco_operacional|banco|Equal0~9_combout $end
-$var wire 1 M" bloco_operacional|banco|escrita[6]~41_combout $end
-$var wire 1 N" bloco_operacional|banco|dado_de_saida_1[3]~65_combout $end
-$var wire 1 O" bloco_operacional|banco|dado_de_saida_1[3]~66_combout $end
-$var wire 1 P" bloco_operacional|banco|Equal0~14_combout $end
-$var wire 1 Q" bloco_operacional|banco|escrita[12]~46_combout $end
-$var wire 1 R" bloco_operacional|banco|dado_de_saida_1[3]~67_combout $end
-$var wire 1 S" bloco_operacional|banco|dado_de_saida_1[3]~68_combout $end
-$var wire 1 T" bloco_operacional|banco|dado_de_saida_1[3]~69_combout $end
-$var wire 1 U" bloco_operacional|banco|gerando_registradores:15:registrador|memoria[3]~feeder_combout $end
-$var wire 1 V" bloco_operacional|banco|escrita[15]~47_combout $end
-$var wire 1 W" bloco_operacional|banco|Equal0~7_combout $end
-$var wire 1 X" bloco_operacional|banco|escrita[11]~39_combout $end
-$var wire 1 Y" bloco_operacional|banco|dado_de_saida_1[3]~70_combout $end
-$var wire 1 Z" bloco_operacional|banco|dado_de_saida_1[3]~71_combout $end
-$var wire 1 [" bloco_operacional|banco|dado_de_saida_1[3]~72_combout $end
-$var wire 1 \" bloco_operacional|banco|dado_de_saida_2[3]~41_combout $end
-$var wire 1 ]" bloco_operacional|ALU|subtrator|resultsubt[3]~3_combout $end
-$var wire 1 ^" unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|Equal0~0_combout $end
-$var wire 1 _" bloco_operacional|ALU|subtrator|borrow~0_combout $end
-$var wire 1 `" bloco_operacional|ALU|subtrator|borrow~1_combout $end
-$var wire 1 a" bloco_operacional|ALU|subtrator|borrow~2_combout $end
-$var wire 1 b" bloco_operacional|ALU|Mux12~0_combout $end
-$var wire 1 c" bloco_operacional|ALU|Mux12~1_combout $end
-$var wire 1 d" bloco_operacional|mux|Mux12~0_combout $end
-$var wire 1 e" bloco_operacional|banco|Mux28~0_combout $end
-$var wire 1 f" bloco_operacional|banco|gerando_registradores:1:registrador|memoria[3]~feeder_combout $end
-$var wire 1 g" bloco_operacional|banco|Mux28~1_combout $end
-$var wire 1 h" bloco_operacional|ALU|somador|carry~2_combout $end
-$var wire 1 i" bloco_operacional|ALU|somador|carry~3_combout $end
-$var wire 1 j" bloco_operacional|ALU|somador|carry~4_combout $end
-$var wire 1 k" bloco_operacional|ALU|somador|carry~5_combout $end
-$var wire 1 l" bloco_operacional|banco|Mux24~0_combout $end
-$var wire 1 m" bloco_operacional|banco|Mux24~1_combout $end
-$var wire 1 n" bloco_operacional|ALU|somador|carry~6_combout $end
-$var wire 1 o" bloco_operacional|ALU|somador|carry~7_combout $end
-$var wire 1 p" bloco_operacional|ALU|subtrator|resultsubt[9]~9_combout $end
-$var wire 1 q" bloco_operacional|banco|Mux23~0_combout $end
-$var wire 1 r" bloco_operacional|banco|Mux23~1_combout $end
-$var wire 1 s" bloco_operacional|banco|dado_de_saida_2[8]~46_combout $end
-$var wire 1 t" bloco_operacional|ALU|subtrator|borrow~9_combout $end
-$var wire 1 u" bloco_operacional|ALU|Mux6~0_combout $end
-$var wire 1 v" bloco_operacional|ALU|Mux6~1_combout $end
-$var wire 1 w" bloco_operacional|mux|Mux6~0_combout $end
-$var wire 1 x" bloco_operacional|banco|gerando_registradores:2:registrador|memoria[9]~feeder_combout $end
-$var wire 1 y" bloco_operacional|banco|dado_de_saida_1[9]~123_combout $end
-$var wire 1 z" bloco_operacional|banco|dado_de_saida_1[9]~124_combout $end
-$var wire 1 {" bloco_operacional|banco|gerando_registradores:13:registrador|memoria[9]~feeder_combout $end
-$var wire 1 |" bloco_operacional|banco|Equal0~12_combout $end
-$var wire 1 }" bloco_operacional|banco|escrita[13]~44_combout $end
-$var wire 1 ~" bloco_operacional|banco|Equal0~8_combout $end
-$var wire 1 !# bloco_operacional|banco|escrita[5]~40_combout $end
-$var wire 1 "# bloco_operacional|banco|dado_de_saida_1[9]~125_combout $end
-$var wire 1 ## bloco_operacional|banco|dado_de_saida_1[9]~126_combout $end
-$var wire 1 $# bloco_operacional|banco|dado_de_saida_1[9]~127_combout $end
-$var wire 1 %# bloco_operacional|banco|dado_de_saida_1[9]~128_combout $end
-$var wire 1 &# bloco_operacional|banco|dado_de_saida_1[9]~129_combout $end
-$var wire 1 '# bloco_operacional|banco|dado_de_saida_1[9]~132_combout $end
-$var wire 1 (# bloco_operacional|banco|dado_de_saida_1[9]~201_combout $end
-$var wire 1 )# memoria_de_dados|memoria_rtl_0_bypass[31]~feeder_combout $end
-$var wire 1 *# memoria_de_dados|memoria~34_combout $end
-$var wire 1 +# bloco_operacional|banco|Mux22~0_combout $end
-$var wire 1 ,# bloco_operacional|banco|Mux22~1_combout $end
-$var wire 1 -# bloco_operacional|ALU|somador|carry~8_combout $end
-$var wire 1 .# bloco_operacional|banco|Mux21~0_combout $end
-$var wire 1 /# bloco_operacional|banco|Mux21~1_combout $end
-$var wire 1 0# bloco_operacional|banco|dado_de_saida_2[10]~48_combout $end
-$var wire 1 1# bloco_operacional|ALU|subtrator|borrow~11_combout $end
-$var wire 1 2# bloco_operacional|ALU|subtrator|borrow~12_combout $end
-$var wire 1 3# bloco_operacional|ALU|Mux5~0_combout $end
-$var wire 1 4# bloco_operacional|ALU|Mux5~1_combout $end
-$var wire 1 5# bloco_operacional|mux|Mux5~0_combout $end
-$var wire 1 6# bloco_operacional|banco|gerando_registradores:7:registrador|memoria[10]~feeder_combout $end
-$var wire 1 7# bloco_operacional|banco|gerando_registradores:5:registrador|memoria[10]~feeder_combout $end
-$var wire 1 8# bloco_operacional|banco|dado_de_saida_1[10]~133_combout $end
-$var wire 1 9# bloco_operacional|banco|dado_de_saida_1[10]~134_combout $end
-$var wire 1 :# bloco_operacional|banco|dado_de_saida_1[10]~140_combout $end
-$var wire 1 ;# bloco_operacional|banco|dado_de_saida_1[10]~141_combout $end
-$var wire 1 <# bloco_operacional|banco|dado_de_saida_1[10]~137_combout $end
-$var wire 1 =# bloco_operacional|banco|dado_de_saida_1[10]~138_combout $end
-$var wire 1 ># bloco_operacional|banco|dado_de_saida_1[10]~135_combout $end
-$var wire 1 ?# bloco_operacional|banco|dado_de_saida_1[10]~136_combout $end
-$var wire 1 @# bloco_operacional|banco|dado_de_saida_1[10]~139_combout $end
-$var wire 1 A# bloco_operacional|banco|dado_de_saida_1[10]~142_combout $end
-$var wire 1 B# bloco_operacional|banco|dado_de_saida_1[10]~202_combout $end
-$var wire 1 C# bloco_operacional|banco|Mux20~0_combout $end
-$var wire 1 D# bloco_operacional|banco|Mux20~1_combout $end
-$var wire 1 E# bloco_operacional|banco|dado_de_saida_2[11]~49_combout $end
-$var wire 1 F# bloco_operacional|ALU|subtrator|resultsubt[11]~11_combout $end
-$var wire 1 G# bloco_operacional|ALU|somador|carry~9_combout $end
-$var wire 1 H# bloco_operacional|ALU|subtrator|borrow~10_combout $end
-$var wire 1 I# bloco_operacional|ALU|subtrator|borrow~13_combout $end
-$var wire 1 J# bloco_operacional|ALU|Mux4~0_combout $end
-$var wire 1 K# bloco_operacional|ALU|Mux4~1_combout $end
-$var wire 1 L# bloco_operacional|mux|Mux4~0_combout $end
-$var wire 1 M# bloco_operacional|banco|dado_de_saida_1[11]~150_combout $end
-$var wire 1 N# bloco_operacional|banco|gerando_registradores:7:registrador|memoria[11]~feeder_combout $end
-$var wire 1 O# bloco_operacional|banco|dado_de_saida_1[11]~151_combout $end
-$var wire 1 P# bloco_operacional|banco|dado_de_saida_1[11]~143_combout $end
-$var wire 1 Q# bloco_operacional|banco|dado_de_saida_1[11]~144_combout $end
-$var wire 1 R# bloco_operacional|banco|dado_de_saida_1[11]~147_combout $end
-$var wire 1 S# bloco_operacional|banco|dado_de_saida_1[11]~148_combout $end
-$var wire 1 T# bloco_operacional|banco|dado_de_saida_1[11]~145_combout $end
-$var wire 1 U# bloco_operacional|banco|dado_de_saida_1[11]~146_combout $end
-$var wire 1 V# bloco_operacional|banco|dado_de_saida_1[11]~149_combout $end
-$var wire 1 W# bloco_operacional|banco|dado_de_saida_1[11]~152_combout $end
-$var wire 1 X# bloco_operacional|banco|dado_de_saida_1[11]~203_combout $end
-$var wire 1 Y# memoria_de_dados|memoria~37_combout $end
-$var wire 1 Z# bloco_operacional|banco|gerando_registradores:1:registrador|memoria[13]~feeder_combout $end
-$var wire 1 [# bloco_operacional|banco|Mux18~0_combout $end
-$var wire 1 \# bloco_operacional|banco|Mux18~1_combout $end
-$var wire 1 ]# bloco_operacional|banco|dado_de_saida_2[13]~51_combout $end
-$var wire 1 ^# bloco_operacional|ALU|subtrator|resultsubt[13]~13_combout $end
-$var wire 1 _# bloco_operacional|banco|Mux19~0_combout $end
-$var wire 1 `# bloco_operacional|banco|Mux19~1_combout $end
-$var wire 1 a# bloco_operacional|banco|dado_de_saida_2[12]~50_combout $end
-$var wire 1 b# bloco_operacional|ALU|subtrator|borrow~14_combout $end
-$var wire 1 c# bloco_operacional|ALU|Mux2~0_combout $end
-$var wire 1 d# bloco_operacional|ALU|Mux2~1_combout $end
-$var wire 1 e# bloco_operacional|mux|Mux2~0_combout $end
-$var wire 1 f# bloco_operacional|banco|dado_de_saida_1[13]~171_combout $end
-$var wire 1 g# bloco_operacional|banco|dado_de_saida_1[13]~167_combout $end
-$var wire 1 h# bloco_operacional|banco|dado_de_saida_1[13]~168_combout $end
-$var wire 1 i# bloco_operacional|banco|gerando_registradores:9:registrador|memoria[13]~feeder_combout $end
-$var wire 1 j# bloco_operacional|banco|dado_de_saida_1[13]~165_combout $end
-$var wire 1 k# bloco_operacional|banco|dado_de_saida_1[13]~166_combout $end
-$var wire 1 l# bloco_operacional|banco|dado_de_saida_1[13]~169_combout $end
-$var wire 1 m# bloco_operacional|banco|dado_de_saida_1[13]~172_combout $end
-$var wire 1 n# bloco_operacional|banco|dado_de_saida_1[13]~205_combout $end
-$var wire 1 o# memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a15 $end
-$var wire 1 p# memoria_de_dados|memoria~39_combout $end
-$var wire 1 q# bloco_operacional|ALU|somador|carry~10_combout $end
-$var wire 1 r# bloco_operacional|ALU|somador|carry~11_combout $end
-$var wire 1 s# bloco_operacional|ALU|somador|carry~12_combout $end
-$var wire 1 t# bloco_operacional|banco|gerando_registradores:2:registrador|memoria[14]~feeder_combout $end
-$var wire 1 u# bloco_operacional|banco|Mux17~0_combout $end
-$var wire 1 v# bloco_operacional|banco|Mux17~1_combout $end
-$var wire 1 w# bloco_operacional|ALU|somador|carry~13_combout $end
-$var wire 1 x# bloco_operacional|banco|gerando_registradores:1:registrador|memoria[15]~feeder_combout $end
-$var wire 1 y# bloco_operacional|banco|gerando_registradores:2:registrador|memoria[15]~feeder_combout $end
-$var wire 1 z# bloco_operacional|banco|dado_de_saida_2[15]~36_combout $end
-$var wire 1 {# bloco_operacional|banco|dado_de_saida_2[15]~37_combout $end
-$var wire 1 |# bloco_operacional|ALU|subtrator|resultsubt[15]~15_combout $end
-$var wire 1 }# bloco_operacional|banco|dado_de_saida_2[14]~52_combout $end
-$var wire 1 ~# bloco_operacional|ALU|subtrator|borrow~15_combout $end
-$var wire 1 !$ bloco_operacional|ALU|subtrator|borrow~18_combout $end
-$var wire 1 "$ bloco_operacional|ALU|Mux0~0_combout $end
-$var wire 1 #$ bloco_operacional|ALU|Mux0~1_combout $end
-$var wire 1 $$ bloco_operacional|mux|Mux0~0_combout $end
-$var wire 1 %$ bloco_operacional|banco|gerando_registradores:15:registrador|memoria[15]~feeder_combout $end
-$var wire 1 &$ bloco_operacional|banco|dado_de_saida_1[15]~190_combout $end
-$var wire 1 '$ bloco_operacional|banco|dado_de_saida_1[15]~191_combout $end
-$var wire 1 ($ bloco_operacional|banco|dado_de_saida_1[15]~183_combout $end
-$var wire 1 )$ bloco_operacional|banco|dado_de_saida_1[15]~184_combout $end
-$var wire 1 *$ bloco_operacional|banco|dado_de_saida_1[15]~185_combout $end
-$var wire 1 +$ bloco_operacional|banco|dado_de_saida_1[15]~186_combout $end
-$var wire 1 ,$ bloco_operacional|banco|dado_de_saida_1[15]~187_combout $end
-$var wire 1 -$ bloco_operacional|banco|dado_de_saida_1[15]~188_combout $end
-$var wire 1 .$ bloco_operacional|banco|dado_de_saida_1[15]~189_combout $end
-$var wire 1 /$ bloco_operacional|banco|dado_de_saida_1[15]~192_combout $end
-$var wire 1 0$ bloco_operacional|banco|dado_de_saida_1[15]~207_combout $end
-$var wire 1 1$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a14 $end
-$var wire 1 2$ memoria_de_dados|memoria_rtl_0_bypass[39]~feeder_combout $end
-$var wire 1 3$ memoria_de_dados|memoria~38_combout $end
-$var wire 1 4$ bloco_operacional|ALU|subtrator|resultsubt[14]~14_combout $end
-$var wire 1 5$ bloco_operacional|ALU|subtrator|borrow~16_combout $end
-$var wire 1 6$ bloco_operacional|ALU|subtrator|borrow~17_combout $end
-$var wire 1 7$ bloco_operacional|ALU|Mux1~0_combout $end
-$var wire 1 8$ bloco_operacional|ALU|Mux1~1_combout $end
-$var wire 1 9$ bloco_operacional|mux|Mux1~0_combout $end
-$var wire 1 :$ bloco_operacional|banco|dado_de_saida_1[14]~173_combout $end
-$var wire 1 ;$ bloco_operacional|banco|dado_de_saida_1[14]~174_combout $end
-$var wire 1 <$ bloco_operacional|banco|gerando_registradores:1:registrador|memoria[14]~feeder_combout $end
-$var wire 1 =$ bloco_operacional|banco|dado_de_saida_1[14]~177_combout $end
-$var wire 1 >$ bloco_operacional|banco|dado_de_saida_1[14]~178_combout $end
-$var wire 1 ?$ bloco_operacional|banco|gerando_registradores:10:registrador|memoria[14]~feeder_combout $end
-$var wire 1 @$ bloco_operacional|banco|dado_de_saida_1[14]~175_combout $end
-$var wire 1 A$ bloco_operacional|banco|dado_de_saida_1[14]~176_combout $end
-$var wire 1 B$ bloco_operacional|banco|dado_de_saida_1[14]~179_combout $end
-$var wire 1 C$ bloco_operacional|banco|gerando_registradores:15:registrador|memoria[14]~feeder_combout $end
-$var wire 1 D$ bloco_operacional|banco|dado_de_saida_1[14]~180_combout $end
-$var wire 1 E$ bloco_operacional|banco|dado_de_saida_1[14]~181_combout $end
-$var wire 1 F$ bloco_operacional|banco|dado_de_saida_1[14]~182_combout $end
-$var wire 1 G$ bloco_operacional|banco|dado_de_saida_1[14]~206_combout $end
-$var wire 1 H$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a12 $end
-$var wire 1 I$ memoria_de_dados|memoria~36_combout $end
-$var wire 1 J$ bloco_operacional|ALU|subtrator|resultsubt[12]~12_combout $end
-$var wire 1 K$ bloco_operacional|ALU|Mux3~0_combout $end
-$var wire 1 L$ bloco_operacional|ALU|Mux3~1_combout $end
-$var wire 1 M$ bloco_operacional|mux|Mux3~0_combout $end
-$var wire 1 N$ bloco_operacional|banco|gerando_registradores:13:registrador|memoria[12]~feeder_combout $end
-$var wire 1 O$ bloco_operacional|banco|dado_de_saida_1[12]~160_combout $end
-$var wire 1 P$ bloco_operacional|banco|dado_de_saida_1[12]~161_combout $end
-$var wire 1 Q$ bloco_operacional|banco|dado_de_saida_1[12]~155_combout $end
-$var wire 1 R$ bloco_operacional|banco|dado_de_saida_1[12]~156_combout $end
-$var wire 1 S$ bloco_operacional|banco|dado_de_saida_1[12]~157_combout $end
-$var wire 1 T$ bloco_operacional|banco|dado_de_saida_1[12]~158_combout $end
-$var wire 1 U$ bloco_operacional|banco|dado_de_saida_1[12]~159_combout $end
-$var wire 1 V$ bloco_operacional|banco|dado_de_saida_1[12]~162_combout $end
-$var wire 1 W$ bloco_operacional|banco|dado_de_saida_1[12]~204_combout $end
-$var wire 1 X$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a8 $end
-$var wire 1 Y$ memoria_de_dados|memoria~32_combout $end
-$var wire 1 Z$ bloco_operacional|ALU|subtrator|resultsubt[8]~8_combout $end
-$var wire 1 [$ bloco_operacional|ALU|Mux7~0_combout $end
-$var wire 1 \$ bloco_operacional|ALU|Mux7~1_combout $end
-$var wire 1 ]$ bloco_operacional|mux|Mux7~0_combout $end
-$var wire 1 ^$ bloco_operacional|banco|dado_de_saida_1[8]~120_combout $end
-$var wire 1 _$ bloco_operacional|banco|dado_de_saida_1[8]~121_combout $end
-$var wire 1 `$ bloco_operacional|banco|dado_de_saida_1[8]~117_combout $end
-$var wire 1 a$ bloco_operacional|banco|dado_de_saida_1[8]~118_combout $end
-$var wire 1 b$ bloco_operacional|banco|gerando_registradores:6:registrador|memoria[8]~feeder_combout $end
-$var wire 1 c$ bloco_operacional|banco|dado_de_saida_1[8]~115_combout $end
-$var wire 1 d$ bloco_operacional|banco|dado_de_saida_1[8]~116_combout $end
-$var wire 1 e$ bloco_operacional|banco|dado_de_saida_1[8]~119_combout $end
-$var wire 1 f$ bloco_operacional|banco|dado_de_saida_1[8]~122_combout $end
-$var wire 1 g$ bloco_operacional|banco|dado_de_saida_1[8]~200_combout $end
-$var wire 1 h$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a5 $end
-$var wire 1 i$ memoria_de_dados|memoria~29_combout $end
-$var wire 1 j$ unidade_de_controle|bloco_de_controle|decodificador|decodificador_mux|seletor_mux[0]~0_combout $end
-$var wire 1 k$ bloco_operacional|banco|dado_de_saida_2[5]~43_combout $end
-$var wire 1 l$ bloco_operacional|ALU|subtrator|resultsubt[5]~5_combout $end
-$var wire 1 m$ bloco_operacional|banco|dado_de_saida_2[4]~42_combout $end
-$var wire 1 n$ bloco_operacional|ALU|subtrator|borrow~3_combout $end
-$var wire 1 o$ bloco_operacional|ALU|subtrator|borrow~6_combout $end
-$var wire 1 p$ bloco_operacional|ALU|Mux10~0_combout $end
-$var wire 1 q$ bloco_operacional|ALU|Mux10~1_combout $end
-$var wire 1 r$ bloco_operacional|mux|Mux10~0_combout $end
-$var wire 1 s$ bloco_operacional|mux|Mux10~1_combout $end
-$var wire 1 t$ bloco_operacional|banco|dado_de_saida_1[5]~90_combout $end
-$var wire 1 u$ bloco_operacional|banco|dado_de_saida_1[5]~91_combout $end
-$var wire 1 v$ bloco_operacional|banco|gerando_registradores:4:registrador|memoria[5]~feeder_combout $end
-$var wire 1 w$ bloco_operacional|banco|dado_de_saida_1[5]~87_combout $end
-$var wire 1 x$ bloco_operacional|banco|dado_de_saida_1[5]~88_combout $end
-$var wire 1 y$ bloco_operacional|banco|gerando_registradores:1:registrador|memoria[5]~feeder_combout $end
-$var wire 1 z$ bloco_operacional|banco|dado_de_saida_1[5]~85_combout $end
-$var wire 1 {$ bloco_operacional|banco|dado_de_saida_1[5]~86_combout $end
-$var wire 1 |$ bloco_operacional|banco|dado_de_saida_1[5]~89_combout $end
-$var wire 1 }$ bloco_operacional|banco|dado_de_saida_1[5]~92_combout $end
-$var wire 1 ~$ bloco_operacional|banco|dado_de_saida_1[5]~197_combout $end
-$var wire 1 !% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a4 $end
-$var wire 1 "% memoria_de_dados|memoria~28_combout $end
-$var wire 1 #% bloco_operacional|ALU|subtrator|resultsubt[4]~4_combout $end
-$var wire 1 $% bloco_operacional|banco|Mux29~0_combout $end
-$var wire 1 %% bloco_operacional|banco|Mux29~1_combout $end
-$var wire 1 &% bloco_operacional|banco|dado_de_saida_2[2]~40_combout $end
-$var wire 1 '% bloco_operacional|ALU|subtrator|borrow~4_combout $end
-$var wire 1 (% bloco_operacional|ALU|subtrator|borrow~5_combout $end
-$var wire 1 )% bloco_operacional|ALU|Mux11~0_combout $end
-$var wire 1 *% bloco_operacional|ALU|Mux11~1_combout $end
-$var wire 1 +% bloco_operacional|mux|Mux11~0_combout $end
-$var wire 1 ,% bloco_operacional|mux|Mux11~1_combout $end
-$var wire 1 -% bloco_operacional|banco|dado_de_saida_1[4]~80_combout $end
-$var wire 1 .% bloco_operacional|banco|dado_de_saida_1[4]~81_combout $end
-$var wire 1 /% bloco_operacional|banco|gerando_registradores:7:registrador|memoria[4]~feeder_combout $end
-$var wire 1 0% bloco_operacional|banco|dado_de_saida_1[4]~75_combout $end
-$var wire 1 1% bloco_operacional|banco|dado_de_saida_1[4]~76_combout $end
-$var wire 1 2% bloco_operacional|banco|gerando_registradores:1:registrador|memoria[4]~feeder_combout $end
-$var wire 1 3% bloco_operacional|banco|dado_de_saida_1[4]~77_combout $end
-$var wire 1 4% bloco_operacional|banco|dado_de_saida_1[4]~78_combout $end
-$var wire 1 5% bloco_operacional|banco|dado_de_saida_1[4]~79_combout $end
-$var wire 1 6% bloco_operacional|banco|dado_de_saida_1[4]~73_combout $end
-$var wire 1 7% bloco_operacional|banco|dado_de_saida_1[4]~74_combout $end
-$var wire 1 8% bloco_operacional|banco|dado_de_saida_1[4]~82_combout $end
-$var wire 1 9% bloco_operacional|banco|dado_de_saida_1[4]~196_combout $end
-$var wire 1 :% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a2 $end
-$var wire 1 ;% memoria_de_dados|memoria~26_combout $end
-$var wire 1 <% bloco_operacional|ALU|subtrator|resultsubt[2]~2_combout $end
-$var wire 1 =% bloco_operacional|ALU|Mux13~0_combout $end
-$var wire 1 >% bloco_operacional|ALU|Mux13~1_combout $end
-$var wire 1 ?% bloco_operacional|mux|Mux13~0_combout $end
-$var wire 1 @% bloco_operacional|mux|Mux13~1_combout $end
-$var wire 1 A% bloco_operacional|banco|gerando_registradores:13:registrador|memoria[2]~feeder_combout $end
-$var wire 1 B% bloco_operacional|banco|dado_de_saida_1[2]~60_combout $end
-$var wire 1 C% bloco_operacional|banco|dado_de_saida_1[2]~61_combout $end
-$var wire 1 D% bloco_operacional|banco|gerando_registradores:5:registrador|memoria[2]~feeder_combout $end
-$var wire 1 E% bloco_operacional|banco|dado_de_saida_1[2]~53_combout $end
-$var wire 1 F% bloco_operacional|banco|dado_de_saida_1[2]~54_combout $end
-$var wire 1 G% bloco_operacional|banco|gerando_registradores:9:registrador|memoria[2]~feeder_combout $end
-$var wire 1 H% bloco_operacional|banco|dado_de_saida_1[2]~55_combout $end
-$var wire 1 I% bloco_operacional|banco|dado_de_saida_1[2]~56_combout $end
-$var wire 1 J% bloco_operacional|banco|dado_de_saida_1[2]~57_combout $end
-$var wire 1 K% bloco_operacional|banco|dado_de_saida_1[2]~58_combout $end
-$var wire 1 L% bloco_operacional|banco|dado_de_saida_1[2]~59_combout $end
-$var wire 1 M% bloco_operacional|banco|dado_de_saida_1[2]~62_combout $end
-$var wire 1 N% bloco_operacional|banco|dado_de_saida_1[2]~194_combout $end
-$var wire 1 O% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a1 $end
-$var wire 1 P% memoria_de_dados|memoria~25_combout $end
-$var wire 1 Q% bloco_operacional|ALU|Mux14~0_combout $end
-$var wire 1 R% bloco_operacional|ALU|Mux14~1_combout $end
-$var wire 1 S% bloco_operacional|mux|Mux14~0_combout $end
-$var wire 1 T% bloco_operacional|mux|Mux14~1_combout $end
-$var wire 1 U% bloco_operacional|banco|dado_de_saida_1[1]~40_combout $end
-$var wire 1 V% bloco_operacional|banco|dado_de_saida_1[1]~41_combout $end
-$var wire 1 W% bloco_operacional|banco|dado_de_saida_1[1]~42_combout $end
-$var wire 1 X% bloco_operacional|banco|dado_de_saida_1[1]~43_combout $end
-$var wire 1 Y% bloco_operacional|banco|dado_de_saida_1[1]~44_combout $end
-$var wire 1 Z% bloco_operacional|banco|dado_de_saida_1[1]~45_combout $end
-$var wire 1 [% bloco_operacional|banco|dado_de_saida_1[1]~46_combout $end
-$var wire 1 \% bloco_operacional|banco|gerando_registradores:2:registrador|memoria[1]~feeder_combout $end
-$var wire 1 ]% bloco_operacional|banco|dado_de_saida_1[1]~47_combout $end
-$var wire 1 ^% bloco_operacional|banco|gerando_registradores:11:registrador|memoria[1]~feeder_combout $end
-$var wire 1 _% bloco_operacional|banco|dado_de_saida_1[1]~48_combout $end
-$var wire 1 `% bloco_operacional|banco|dado_de_saida_1[1]~49_combout $end
-$var wire 1 a% bloco_operacional|banco|dado_de_saida_1[1]~50_combout $end
-$var wire 1 b% bloco_operacional|banco|dado_de_saida_1[1]~51_combout $end
-$var wire 1 c% bloco_operacional|banco|dado_de_saida_1[1]~52_combout $end
-$var wire 1 d% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0~portbdataout $end
-$var wire 1 e% memoria_de_dados|memoria~24_combout $end
-$var wire 1 f% bloco_operacional|ALU|subtrator|borrow~19_combout $end
-$var wire 1 g% bloco_operacional|ALU|Mux15~0_combout $end
-$var wire 1 h% bloco_operacional|ALU|Mux15~1_combout $end
-$var wire 1 i% bloco_operacional|mux|Mux15~0_combout $end
-$var wire 1 j% bloco_operacional|mux|Mux15~1_combout $end
-$var wire 1 k% bloco_operacional|banco|dado_de_saida_1[0]~34_combout $end
-$var wire 1 l% bloco_operacional|banco|dado_de_saida_1[0]~35_combout $end
-$var wire 1 m% bloco_operacional|banco|dado_de_saida_1[0]~32_combout $end
-$var wire 1 n% bloco_operacional|banco|dado_de_saida_1[0]~33_combout $end
-$var wire 1 o% bloco_operacional|banco|dado_de_saida_1[0]~36_combout $end
-$var wire 1 p% bloco_operacional|banco|dado_de_saida_1[0]~30_combout $end
-$var wire 1 q% bloco_operacional|banco|dado_de_saida_1[0]~31_combout $end
-$var wire 1 r% bloco_operacional|banco|dado_de_saida_1[0]~39_combout $end
-$var wire 1 s% bloco_operacional|banco|dado_de_saida_1[0]~193_combout $end
-$var wire 1 t% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a7 $end
-$var wire 1 u% memoria_de_dados|memoria~31_combout $end
-$var wire 1 v% bloco_operacional|ALU|subtrator|resultsubt[7]~7_combout $end
-$var wire 1 w% bloco_operacional|banco|dado_de_saida_2[7]~45_combout $end
-$var wire 1 x% bloco_operacional|ALU|subtrator|borrow~8_combout $end
-$var wire 1 y% bloco_operacional|ALU|Mux8~0_combout $end
-$var wire 1 z% bloco_operacional|ALU|Mux8~1_combout $end
-$var wire 1 {% bloco_operacional|mux|Mux8~0_combout $end
-$var wire 1 |% bloco_operacional|banco|gerando_registradores:1:registrador|memoria[7]~feeder_combout $end
-$var wire 1 }% bloco_operacional|banco|dado_de_saida_1[7]~103_combout $end
-$var wire 1 ~% bloco_operacional|banco|dado_de_saida_1[7]~104_combout $end
-$var wire 1 !& bloco_operacional|banco|dado_de_saida_1[7]~107_combout $end
-$var wire 1 "& bloco_operacional|banco|dado_de_saida_1[7]~108_combout $end
-$var wire 1 #& bloco_operacional|banco|gerando_registradores:14:registrador|memoria[7]~feeder_combout $end
-$var wire 1 $& bloco_operacional|banco|dado_de_saida_1[7]~105_combout $end
-$var wire 1 %& bloco_operacional|banco|dado_de_saida_1[7]~106_combout $end
-$var wire 1 && bloco_operacional|banco|dado_de_saida_1[7]~109_combout $end
-$var wire 1 '& bloco_operacional|banco|gerando_registradores:15:registrador|memoria[7]~feeder_combout $end
-$var wire 1 (& bloco_operacional|banco|dado_de_saida_1[7]~110_combout $end
-$var wire 1 )& bloco_operacional|banco|dado_de_saida_1[7]~111_combout $end
-$var wire 1 *& bloco_operacional|banco|dado_de_saida_1[7]~112_combout $end
-$var wire 1 +& bloco_operacional|banco|dado_de_saida_1[7]~199_combout $end
-$var wire 1 ,& bloco_operacional|comparador|Equal0~1_combout $end
-$var wire 1 -& bloco_operacional|comparador|Equal0~3_combout $end
-$var wire 1 .& bloco_operacional|comparador|Equal0~2_combout $end
-$var wire 1 /& bloco_operacional|comparador|Equal0~4_combout $end
-$var wire 1 0& unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual~2_combout $end
-$var wire 1 1& unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual~0_combout $end
-$var wire 1 2& unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual[1]~1_combout $end
-$var wire 1 3& unidade_de_controle|bloco_de_controle|Equal2~1_combout $end
-$var wire 1 4& unidade_de_controle|contador_de_programa|registrador|memoria[2]~9 $end
-$var wire 1 5& unidade_de_controle|contador_de_programa|registrador|memoria[3]~10_combout $end
-$var wire 1 6& unidade_de_controle|somador|Add0~1 $end
-$var wire 1 7& unidade_de_controle|somador|Add0~3 $end
-$var wire 1 8& unidade_de_controle|somador|Add0~5 $end
-$var wire 1 9& unidade_de_controle|somador|Add0~6_combout $end
-$var wire 1 :& unidade_de_controle|somador|Add1~5 $end
-$var wire 1 ;& unidade_de_controle|somador|Add1~6_combout $end
-$var wire 1 <& memoria_de_instrucoes|Mux10~0_combout $end
-$var wire 1 =& unidade_de_controle|registrador_de_instrucao|registrador|memoria[1]~feeder_combout $end
-$var wire 1 >& unidade_de_controle|somador|Add0~2_combout $end
-$var wire 1 ?& unidade_de_controle|somador|Add1~2_combout $end
-$var wire 1 @& memoria_de_instrucoes|Mux1~0_combout $end
-$var wire 1 A& bloco_operacional|banco|dado_de_saida_2[0]~32_combout $end
-$var wire 1 B& bloco_operacional|banco|dado_de_saida_2[0]~33_combout $end
-$var wire 1 C& bloco_operacional|banco|dado_de_saida_2[0]~38_combout $end
-$var wire 1 D& bloco_operacional|banco|dado_de_saida_2[9]~47_combout $end
-$var wire 1 E& bloco_operacional|banco|dado_de_saida_2[15]~53_combout $end
-$var wire 1 F& unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|escrever_no_banco~combout $end
-$var wire 1 G& bloco_operacional|ALU|somador|resultado_soma [15] $end
-$var wire 1 H& bloco_operacional|ALU|somador|resultado_soma [14] $end
-$var wire 1 I& bloco_operacional|ALU|somador|resultado_soma [13] $end
-$var wire 1 J& bloco_operacional|ALU|somador|resultado_soma [12] $end
-$var wire 1 K& bloco_operacional|ALU|somador|resultado_soma [11] $end
-$var wire 1 L& bloco_operacional|ALU|somador|resultado_soma [10] $end
-$var wire 1 M& bloco_operacional|ALU|somador|resultado_soma [9] $end
-$var wire 1 N& bloco_operacional|ALU|somador|resultado_soma [8] $end
-$var wire 1 O& bloco_operacional|ALU|somador|resultado_soma [7] $end
-$var wire 1 P& bloco_operacional|ALU|somador|resultado_soma [6] $end
-$var wire 1 Q& bloco_operacional|ALU|somador|resultado_soma [5] $end
-$var wire 1 R& bloco_operacional|ALU|somador|resultado_soma [4] $end
-$var wire 1 S& bloco_operacional|ALU|somador|resultado_soma [3] $end
-$var wire 1 T& bloco_operacional|ALU|somador|resultado_soma [2] $end
-$var wire 1 U& bloco_operacional|ALU|somador|resultado_soma [1] $end
-$var wire 1 V& bloco_operacional|ALU|somador|resultado_soma [0] $end
-$var wire 1 W& bloco_operacional|ALU|subtrator|resultsubt [15] $end
-$var wire 1 X& bloco_operacional|ALU|subtrator|resultsubt [14] $end
-$var wire 1 Y& bloco_operacional|ALU|subtrator|resultsubt [13] $end
-$var wire 1 Z& bloco_operacional|ALU|subtrator|resultsubt [12] $end
-$var wire 1 [& bloco_operacional|ALU|subtrator|resultsubt [11] $end
-$var wire 1 \& bloco_operacional|ALU|subtrator|resultsubt [10] $end
-$var wire 1 ]& bloco_operacional|ALU|subtrator|resultsubt [9] $end
-$var wire 1 ^& bloco_operacional|ALU|subtrator|resultsubt [8] $end
-$var wire 1 _& bloco_operacional|ALU|subtrator|resultsubt [7] $end
-$var wire 1 `& bloco_operacional|ALU|subtrator|resultsubt [6] $end
-$var wire 1 a& bloco_operacional|ALU|subtrator|resultsubt [5] $end
-$var wire 1 b& bloco_operacional|ALU|subtrator|resultsubt [4] $end
-$var wire 1 c& bloco_operacional|ALU|subtrator|resultsubt [3] $end
-$var wire 1 d& bloco_operacional|ALU|subtrator|resultsubt [2] $end
-$var wire 1 e& bloco_operacional|ALU|subtrator|resultsubt [1] $end
-$var wire 1 f& bloco_operacional|ALU|subtrator|resultsubt [0] $end
-$var wire 1 g& memoria_de_dados|dado_de_saida [15] $end
-$var wire 1 h& memoria_de_dados|dado_de_saida [14] $end
-$var wire 1 i& memoria_de_dados|dado_de_saida [13] $end
-$var wire 1 j& memoria_de_dados|dado_de_saida [12] $end
-$var wire 1 k& memoria_de_dados|dado_de_saida [11] $end
-$var wire 1 l& memoria_de_dados|dado_de_saida [10] $end
-$var wire 1 m& memoria_de_dados|dado_de_saida [9] $end
-$var wire 1 n& memoria_de_dados|dado_de_saida [8] $end
-$var wire 1 o& memoria_de_dados|dado_de_saida [7] $end
-$var wire 1 p& memoria_de_dados|dado_de_saida [6] $end
-$var wire 1 q& memoria_de_dados|dado_de_saida [5] $end
-$var wire 1 r& memoria_de_dados|dado_de_saida [4] $end
-$var wire 1 s& memoria_de_dados|dado_de_saida [3] $end
-$var wire 1 t& memoria_de_dados|dado_de_saida [2] $end
-$var wire 1 u& memoria_de_dados|dado_de_saida [1] $end
-$var wire 1 v& memoria_de_dados|dado_de_saida [0] $end
-$var wire 1 w& memoria_de_instrucoes|dado [15] $end
-$var wire 1 x& memoria_de_instrucoes|dado [14] $end
-$var wire 1 y& memoria_de_instrucoes|dado [13] $end
-$var wire 1 z& memoria_de_instrucoes|dado [12] $end
-$var wire 1 {& memoria_de_instrucoes|dado [11] $end
-$var wire 1 |& memoria_de_instrucoes|dado [10] $end
-$var wire 1 }& memoria_de_instrucoes|dado [9] $end
-$var wire 1 ~& memoria_de_instrucoes|dado [8] $end
-$var wire 1 !' memoria_de_instrucoes|dado [7] $end
-$var wire 1 "' memoria_de_instrucoes|dado [6] $end
-$var wire 1 #' memoria_de_instrucoes|dado [5] $end
-$var wire 1 $' memoria_de_instrucoes|dado [4] $end
-$var wire 1 %' memoria_de_instrucoes|dado [3] $end
-$var wire 1 &' memoria_de_instrucoes|dado [2] $end
-$var wire 1 '' memoria_de_instrucoes|dado [1] $end
-$var wire 1 (' memoria_de_instrucoes|dado [0] $end
-$var wire 1 )' memoria_de_dados|memoria_rtl_0_bypass [0] $end
-$var wire 1 *' memoria_de_dados|memoria_rtl_0_bypass [1] $end
-$var wire 1 +' memoria_de_dados|memoria_rtl_0_bypass [2] $end
-$var wire 1 ,' memoria_de_dados|memoria_rtl_0_bypass [3] $end
-$var wire 1 -' memoria_de_dados|memoria_rtl_0_bypass [4] $end
-$var wire 1 .' memoria_de_dados|memoria_rtl_0_bypass [5] $end
-$var wire 1 /' memoria_de_dados|memoria_rtl_0_bypass [6] $end
-$var wire 1 0' memoria_de_dados|memoria_rtl_0_bypass [7] $end
-$var wire 1 1' memoria_de_dados|memoria_rtl_0_bypass [8] $end
-$var wire 1 2' memoria_de_dados|memoria_rtl_0_bypass [9] $end
-$var wire 1 3' memoria_de_dados|memoria_rtl_0_bypass [10] $end
-$var wire 1 4' memoria_de_dados|memoria_rtl_0_bypass [11] $end
-$var wire 1 5' memoria_de_dados|memoria_rtl_0_bypass [12] $end
-$var wire 1 6' memoria_de_dados|memoria_rtl_0_bypass [13] $end
-$var wire 1 7' memoria_de_dados|memoria_rtl_0_bypass [14] $end
-$var wire 1 8' memoria_de_dados|memoria_rtl_0_bypass [15] $end
-$var wire 1 9' memoria_de_dados|memoria_rtl_0_bypass [16] $end
-$var wire 1 :' memoria_de_dados|memoria_rtl_0_bypass [17] $end
-$var wire 1 ;' memoria_de_dados|memoria_rtl_0_bypass [18] $end
-$var wire 1 <' memoria_de_dados|memoria_rtl_0_bypass [19] $end
-$var wire 1 =' memoria_de_dados|memoria_rtl_0_bypass [20] $end
-$var wire 1 >' memoria_de_dados|memoria_rtl_0_bypass [21] $end
-$var wire 1 ?' memoria_de_dados|memoria_rtl_0_bypass [22] $end
-$var wire 1 @' memoria_de_dados|memoria_rtl_0_bypass [23] $end
-$var wire 1 A' memoria_de_dados|memoria_rtl_0_bypass [24] $end
-$var wire 1 B' memoria_de_dados|memoria_rtl_0_bypass [25] $end
-$var wire 1 C' memoria_de_dados|memoria_rtl_0_bypass [26] $end
-$var wire 1 D' memoria_de_dados|memoria_rtl_0_bypass [27] $end
-$var wire 1 E' memoria_de_dados|memoria_rtl_0_bypass [28] $end
-$var wire 1 F' memoria_de_dados|memoria_rtl_0_bypass [29] $end
-$var wire 1 G' memoria_de_dados|memoria_rtl_0_bypass [30] $end
-$var wire 1 H' memoria_de_dados|memoria_rtl_0_bypass [31] $end
-$var wire 1 I' memoria_de_dados|memoria_rtl_0_bypass [32] $end
-$var wire 1 J' memoria_de_dados|memoria_rtl_0_bypass [33] $end
-$var wire 1 K' memoria_de_dados|memoria_rtl_0_bypass [34] $end
-$var wire 1 L' memoria_de_dados|memoria_rtl_0_bypass [35] $end
-$var wire 1 M' memoria_de_dados|memoria_rtl_0_bypass [36] $end
-$var wire 1 N' memoria_de_dados|memoria_rtl_0_bypass [37] $end
-$var wire 1 O' memoria_de_dados|memoria_rtl_0_bypass [38] $end
-$var wire 1 P' memoria_de_dados|memoria_rtl_0_bypass [39] $end
-$var wire 1 Q' memoria_de_dados|memoria_rtl_0_bypass [40] $end
-$var wire 1 R' memoria_de_dados|memoria_rtl_0_bypass [41] $end
-$var wire 1 S' memoria_de_dados|memoria_rtl_0_bypass [42] $end
-$var wire 1 T' unidade_de_controle|registrador_de_instrucao|registrador|memoria [15] $end
-$var wire 1 U' unidade_de_controle|registrador_de_instrucao|registrador|memoria [14] $end
-$var wire 1 V' unidade_de_controle|registrador_de_instrucao|registrador|memoria [13] $end
-$var wire 1 W' unidade_de_controle|registrador_de_instrucao|registrador|memoria [12] $end
-$var wire 1 X' unidade_de_controle|registrador_de_instrucao|registrador|memoria [11] $end
-$var wire 1 Y' unidade_de_controle|registrador_de_instrucao|registrador|memoria [10] $end
-$var wire 1 Z' unidade_de_controle|registrador_de_instrucao|registrador|memoria [9] $end
-$var wire 1 [' unidade_de_controle|registrador_de_instrucao|registrador|memoria [8] $end
-$var wire 1 \' unidade_de_controle|registrador_de_instrucao|registrador|memoria [7] $end
-$var wire 1 ]' unidade_de_controle|registrador_de_instrucao|registrador|memoria [6] $end
-$var wire 1 ^' unidade_de_controle|registrador_de_instrucao|registrador|memoria [5] $end
-$var wire 1 _' unidade_de_controle|registrador_de_instrucao|registrador|memoria [4] $end
-$var wire 1 `' unidade_de_controle|registrador_de_instrucao|registrador|memoria [3] $end
-$var wire 1 a' unidade_de_controle|registrador_de_instrucao|registrador|memoria [2] $end
-$var wire 1 b' unidade_de_controle|registrador_de_instrucao|registrador|memoria [1] $end
-$var wire 1 c' unidade_de_controle|registrador_de_instrucao|registrador|memoria [0] $end
-$var wire 1 d' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [15] $end
-$var wire 1 e' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [14] $end
-$var wire 1 f' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [13] $end
-$var wire 1 g' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [12] $end
-$var wire 1 h' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [11] $end
-$var wire 1 i' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [10] $end
-$var wire 1 j' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [9] $end
-$var wire 1 k' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [8] $end
-$var wire 1 l' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [7] $end
-$var wire 1 m' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [6] $end
-$var wire 1 n' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [5] $end
-$var wire 1 o' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [4] $end
-$var wire 1 p' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [3] $end
-$var wire 1 q' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [2] $end
-$var wire 1 r' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [1] $end
-$var wire 1 s' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [0] $end
-$var wire 1 t' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [15] $end
-$var wire 1 u' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [14] $end
-$var wire 1 v' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [13] $end
-$var wire 1 w' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [12] $end
-$var wire 1 x' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [11] $end
-$var wire 1 y' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [10] $end
-$var wire 1 z' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [9] $end
-$var wire 1 {' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [8] $end
-$var wire 1 |' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [7] $end
-$var wire 1 }' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [6] $end
-$var wire 1 ~' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [5] $end
-$var wire 1 !( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [4] $end
-$var wire 1 "( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [3] $end
-$var wire 1 #( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [2] $end
-$var wire 1 $( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [1] $end
-$var wire 1 %( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [0] $end
-$var wire 1 &( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [15] $end
-$var wire 1 '( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [14] $end
-$var wire 1 (( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [13] $end
-$var wire 1 )( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [12] $end
-$var wire 1 *( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [11] $end
-$var wire 1 +( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [10] $end
-$var wire 1 ,( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [9] $end
-$var wire 1 -( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [8] $end
-$var wire 1 .( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [7] $end
-$var wire 1 /( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [6] $end
-$var wire 1 0( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [5] $end
-$var wire 1 1( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [4] $end
-$var wire 1 2( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [3] $end
-$var wire 1 3( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [2] $end
-$var wire 1 4( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [1] $end
-$var wire 1 5( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [0] $end
-$var wire 1 6( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [15] $end
-$var wire 1 7( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [14] $end
-$var wire 1 8( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [13] $end
-$var wire 1 9( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [12] $end
-$var wire 1 :( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [11] $end
-$var wire 1 ;( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [10] $end
-$var wire 1 <( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [9] $end
-$var wire 1 =( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [8] $end
-$var wire 1 >( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [7] $end
-$var wire 1 ?( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [6] $end
-$var wire 1 @( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [5] $end
-$var wire 1 A( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [4] $end
-$var wire 1 B( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [3] $end
-$var wire 1 C( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [2] $end
-$var wire 1 D( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [1] $end
-$var wire 1 E( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [0] $end
-$var wire 1 F( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [15] $end
-$var wire 1 G( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [14] $end
-$var wire 1 H( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [13] $end
-$var wire 1 I( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [12] $end
-$var wire 1 J( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [11] $end
-$var wire 1 K( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [10] $end
-$var wire 1 L( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [9] $end
-$var wire 1 M( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [8] $end
-$var wire 1 N( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [7] $end
-$var wire 1 O( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [6] $end
-$var wire 1 P( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [5] $end
-$var wire 1 Q( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [4] $end
-$var wire 1 R( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [3] $end
-$var wire 1 S( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [2] $end
-$var wire 1 T( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [1] $end
-$var wire 1 U( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [0] $end
-$var wire 1 V( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [15] $end
-$var wire 1 W( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [14] $end
-$var wire 1 X( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [13] $end
-$var wire 1 Y( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [12] $end
-$var wire 1 Z( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [11] $end
-$var wire 1 [( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [10] $end
-$var wire 1 \( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [9] $end
-$var wire 1 ]( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [8] $end
-$var wire 1 ^( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [7] $end
-$var wire 1 _( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [6] $end
-$var wire 1 `( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [5] $end
-$var wire 1 a( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [4] $end
-$var wire 1 b( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [3] $end
-$var wire 1 c( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [2] $end
-$var wire 1 d( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [1] $end
-$var wire 1 e( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [0] $end
-$var wire 1 f( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [15] $end
-$var wire 1 g( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [14] $end
-$var wire 1 h( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [13] $end
-$var wire 1 i( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [12] $end
-$var wire 1 j( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [11] $end
-$var wire 1 k( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [10] $end
-$var wire 1 l( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [9] $end
-$var wire 1 m( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [8] $end
-$var wire 1 n( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [7] $end
-$var wire 1 o( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [6] $end
-$var wire 1 p( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [5] $end
-$var wire 1 q( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [4] $end
-$var wire 1 r( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [3] $end
-$var wire 1 s( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [2] $end
-$var wire 1 t( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [1] $end
-$var wire 1 u( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [0] $end
-$var wire 1 v( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [15] $end
-$var wire 1 w( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [14] $end
-$var wire 1 x( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [13] $end
-$var wire 1 y( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [12] $end
-$var wire 1 z( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [11] $end
-$var wire 1 {( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [10] $end
-$var wire 1 |( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [9] $end
-$var wire 1 }( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [8] $end
-$var wire 1 ~( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [7] $end
-$var wire 1 !) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [6] $end
-$var wire 1 ") bloco_operacional|banco|gerando_registradores:7:registrador|memoria [5] $end
-$var wire 1 #) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [4] $end
-$var wire 1 $) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [3] $end
-$var wire 1 %) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [2] $end
-$var wire 1 &) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [1] $end
-$var wire 1 ') bloco_operacional|banco|gerando_registradores:7:registrador|memoria [0] $end
-$var wire 1 () bloco_operacional|banco|gerando_registradores:8:registrador|memoria [15] $end
-$var wire 1 )) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [14] $end
-$var wire 1 *) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [13] $end
-$var wire 1 +) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [12] $end
-$var wire 1 ,) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [11] $end
-$var wire 1 -) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [10] $end
-$var wire 1 .) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [9] $end
-$var wire 1 /) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [8] $end
-$var wire 1 0) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [7] $end
-$var wire 1 1) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [6] $end
-$var wire 1 2) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [5] $end
-$var wire 1 3) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [4] $end
-$var wire 1 4) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [3] $end
-$var wire 1 5) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [2] $end
-$var wire 1 6) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [1] $end
-$var wire 1 7) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [0] $end
-$var wire 1 8) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [15] $end
-$var wire 1 9) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [14] $end
-$var wire 1 :) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [13] $end
-$var wire 1 ;) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [12] $end
-$var wire 1 <) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [11] $end
-$var wire 1 =) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [10] $end
-$var wire 1 >) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [9] $end
-$var wire 1 ?) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [8] $end
-$var wire 1 @) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [7] $end
-$var wire 1 A) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [6] $end
-$var wire 1 B) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [5] $end
-$var wire 1 C) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [4] $end
-$var wire 1 D) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [3] $end
-$var wire 1 E) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [2] $end
-$var wire 1 F) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [1] $end
-$var wire 1 G) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [0] $end
-$var wire 1 H) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [15] $end
-$var wire 1 I) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [14] $end
-$var wire 1 J) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [13] $end
-$var wire 1 K) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [12] $end
-$var wire 1 L) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [11] $end
-$var wire 1 M) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [10] $end
-$var wire 1 N) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [9] $end
-$var wire 1 O) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [8] $end
-$var wire 1 P) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [7] $end
-$var wire 1 Q) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [6] $end
-$var wire 1 R) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [5] $end
-$var wire 1 S) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [4] $end
-$var wire 1 T) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [3] $end
-$var wire 1 U) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [2] $end
-$var wire 1 V) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [1] $end
-$var wire 1 W) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [0] $end
-$var wire 1 X) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [15] $end
-$var wire 1 Y) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [14] $end
-$var wire 1 Z) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [13] $end
-$var wire 1 [) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [12] $end
-$var wire 1 \) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [11] $end
-$var wire 1 ]) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [10] $end
-$var wire 1 ^) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [9] $end
-$var wire 1 _) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [8] $end
-$var wire 1 `) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [7] $end
-$var wire 1 a) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [6] $end
-$var wire 1 b) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [5] $end
-$var wire 1 c) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [4] $end
-$var wire 1 d) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [3] $end
-$var wire 1 e) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [2] $end
-$var wire 1 f) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [1] $end
-$var wire 1 g) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [0] $end
-$var wire 1 h) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [15] $end
-$var wire 1 i) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [14] $end
-$var wire 1 j) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [13] $end
-$var wire 1 k) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [12] $end
-$var wire 1 l) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [11] $end
-$var wire 1 m) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [10] $end
-$var wire 1 n) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [9] $end
-$var wire 1 o) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [8] $end
-$var wire 1 p) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [7] $end
-$var wire 1 q) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [6] $end
-$var wire 1 r) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [5] $end
-$var wire 1 s) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [4] $end
-$var wire 1 t) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [3] $end
-$var wire 1 u) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [2] $end
-$var wire 1 v) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [1] $end
-$var wire 1 w) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [0] $end
-$var wire 1 x) bloco_operacional|banco|gerando_registradores:13:registrador|memoria [15] $end
-$var wire 1 y) bloco_operacional|banco|gerando_registradores:13:registrador|memoria [14] $end
-$var wire 1 z) bloco_operacional|banco|gerando_registradores:13:registrador|memoria [13] $end
-$var wire 1 {) bloco_operacional|banco|gerando_registradores:13:registrador|memoria [12] $end
-$var wire 1 |) bloco_operacional|banco|gerando_registradores:13:registrador|memoria [11] $end
-$var wire 1 }) bloco_operacional|banco|gerando_registradores:13:registrador|memoria [10] $end
-$var wire 1 ~) bloco_operacional|banco|gerando_registradores:13:registrador|memoria [9] $end
-$var wire 1 !* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [8] $end
-$var wire 1 "* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [7] $end
-$var wire 1 #* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [6] $end
-$var wire 1 $* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [5] $end
-$var wire 1 %* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [4] $end
-$var wire 1 &* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [3] $end
-$var wire 1 '* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [2] $end
-$var wire 1 (* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [1] $end
-$var wire 1 )* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [0] $end
-$var wire 1 ** bloco_operacional|banco|gerando_registradores:14:registrador|memoria [15] $end
-$var wire 1 +* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [14] $end
-$var wire 1 ,* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [13] $end
-$var wire 1 -* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [12] $end
-$var wire 1 .* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [11] $end
-$var wire 1 /* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [10] $end
-$var wire 1 0* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [9] $end
-$var wire 1 1* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [8] $end
-$var wire 1 2* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [7] $end
-$var wire 1 3* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [6] $end
-$var wire 1 4* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [5] $end
-$var wire 1 5* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [4] $end
-$var wire 1 6* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [3] $end
-$var wire 1 7* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [2] $end
-$var wire 1 8* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [1] $end
-$var wire 1 9* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [0] $end
-$var wire 1 :* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [15] $end
-$var wire 1 ;* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [14] $end
-$var wire 1 <* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [13] $end
-$var wire 1 =* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [12] $end
-$var wire 1 >* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [11] $end
-$var wire 1 ?* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [10] $end
-$var wire 1 @* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [9] $end
-$var wire 1 A* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [8] $end
-$var wire 1 B* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [7] $end
-$var wire 1 C* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [6] $end
-$var wire 1 D* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [5] $end
-$var wire 1 E* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [4] $end
-$var wire 1 F* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [3] $end
-$var wire 1 G* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [2] $end
-$var wire 1 H* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [1] $end
-$var wire 1 I* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [0] $end
-$var wire 1 J* unidade_de_controle|contador_de_programa|registrador|memoria [15] $end
-$var wire 1 K* unidade_de_controle|contador_de_programa|registrador|memoria [14] $end
-$var wire 1 L* unidade_de_controle|contador_de_programa|registrador|memoria [13] $end
-$var wire 1 M* unidade_de_controle|contador_de_programa|registrador|memoria [12] $end
-$var wire 1 N* unidade_de_controle|contador_de_programa|registrador|memoria [11] $end
-$var wire 1 O* unidade_de_controle|contador_de_programa|registrador|memoria [10] $end
-$var wire 1 P* unidade_de_controle|contador_de_programa|registrador|memoria [9] $end
-$var wire 1 Q* unidade_de_controle|contador_de_programa|registrador|memoria [8] $end
-$var wire 1 R* unidade_de_controle|contador_de_programa|registrador|memoria [7] $end
-$var wire 1 S* unidade_de_controle|contador_de_programa|registrador|memoria [6] $end
-$var wire 1 T* unidade_de_controle|contador_de_programa|registrador|memoria [5] $end
-$var wire 1 U* unidade_de_controle|contador_de_programa|registrador|memoria [4] $end
-$var wire 1 V* unidade_de_controle|contador_de_programa|registrador|memoria [3] $end
-$var wire 1 W* unidade_de_controle|contador_de_programa|registrador|memoria [2] $end
-$var wire 1 X* unidade_de_controle|contador_de_programa|registrador|memoria [1] $end
-$var wire 1 Y* unidade_de_controle|contador_de_programa|registrador|memoria [0] $end
-$var wire 1 Z* unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual [2] $end
-$var wire 1 [* unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual [1] $end
-$var wire 1 \* unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual [0] $end
-$var wire 1 ]* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [15] $end
-$var wire 1 ^* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [14] $end
-$var wire 1 _* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [13] $end
-$var wire 1 `* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [12] $end
-$var wire 1 a* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [11] $end
-$var wire 1 b* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [10] $end
-$var wire 1 c* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [9] $end
-$var wire 1 d* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [8] $end
-$var wire 1 e* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [7] $end
-$var wire 1 f* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [6] $end
-$var wire 1 g* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [5] $end
-$var wire 1 h* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [4] $end
-$var wire 1 i* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [3] $end
-$var wire 1 j* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [2] $end
-$var wire 1 k* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [1] $end
-$var wire 1 l* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 ^ gnd $end
+$var wire 1 _ vcc $end
+$var wire 1 ` unknown $end
+$var tri1 1 a devclrn $end
+$var tri1 1 b devpor $end
+$var tri1 1 c devoe $end
+$var wire 1 d unidade_de_controle|somador|Add0~0_combout $end
+$var wire 1 e unidade_de_controle|somador|Add0~4_combout $end
+$var wire 1 f memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a8 $end
+$var wire 1 g memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a6 $end
+$var wire 1 h memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a2 $end
+$var wire 1 i memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a14 $end
+$var wire 1 j bloco_operacional|banco|Mux15~7_combout $end
+$var wire 1 k bloco_operacional|banco|Mux15~8_combout $end
+$var wire 1 l bloco_operacional|comparador|Equal0~0_combout $end
+$var wire 1 m bloco_operacional|banco|Mux3~7_combout $end
+$var wire 1 n bloco_operacional|banco|Mux3~8_combout $end
+$var wire 1 o bloco_operacional|banco|Mux0~0_combout $end
+$var wire 1 p bloco_operacional|banco|Mux0~1_combout $end
+$var wire 1 q bloco_operacional|banco|Mux0~7_combout $end
+$var wire 1 r bloco_operacional|banco|Mux1~0_combout $end
+$var wire 1 s bloco_operacional|banco|Mux1~1_combout $end
+$var wire 1 t bloco_operacional|banco|Mux9~7_combout $end
+$var wire 1 u bloco_operacional|banco|Equal0~1_combout $end
+$var wire 1 v bloco_operacional|banco|Equal0~4_combout $end
+$var wire 1 w bloco_operacional|banco|Equal0~5_combout $end
+$var wire 1 x bloco_operacional|banco|Equal0~7_combout $end
+$var wire 1 y bloco_operacional|banco|Equal0~8_combout $end
+$var wire 1 z bloco_operacional|banco|Equal0~10_combout $end
+$var wire 1 { bloco_operacional|banco|Equal0~12_combout $end
+$var wire 1 | bloco_operacional|banco|Equal0~14_combout $end
+$var wire 1 } bloco_operacional|banco|Equal0~15_combout $end
+$var wire 1 ~ memoria_de_dados|memoria~26_combout $end
+$var wire 1 !! memoria_de_dados|memoria~30_combout $end
+$var wire 1 "! bloco_operacional|ALU|subtrator|resultsubt[13]~12_combout $end
+$var wire 1 #! bloco_operacional|ALU|subtrator|resultsubt[10]~13_combout $end
+$var wire 1 $! bloco_operacional|ALU|subtrator|resultsubt[8]~14_combout $end
+$var wire 1 %! bloco_operacional|banco|gerando_registradores:11:registrador|memoria[0]~feeder_combout $end
+$var wire 1 &! bloco_operacional|banco|gerando_registradores:10:registrador|memoria[1]~feeder_combout $end
+$var wire 1 '! bloco_operacional|banco|gerando_registradores:6:registrador|memoria[1]~feeder_combout $end
+$var wire 1 (! bloco_operacional|banco|gerando_registradores:12:registrador|memoria[2]~feeder_combout $end
+$var wire 1 )! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[2]~feeder_combout $end
+$var wire 1 *! bloco_operacional|banco|gerando_registradores:10:registrador|memoria[2]~feeder_combout $end
+$var wire 1 +! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[3]~feeder_combout $end
+$var wire 1 ,! bloco_operacional|banco|gerando_registradores:2:registrador|memoria[3]~feeder_combout $end
+$var wire 1 -! bloco_operacional|banco|gerando_registradores:2:registrador|memoria[12]~feeder_combout $end
+$var wire 1 .! bloco_operacional|banco|gerando_registradores:9:registrador|memoria[12]~feeder_combout $end
+$var wire 1 /! bloco_operacional|banco|gerando_registradores:4:registrador|memoria[15]~feeder_combout $end
+$var wire 1 0! bloco_operacional|banco|gerando_registradores:7:registrador|memoria[15]~feeder_combout $end
+$var wire 1 1! bloco_operacional|banco|gerando_registradores:14:registrador|memoria[15]~feeder_combout $end
+$var wire 1 2! bloco_operacional|banco|gerando_registradores:1:registrador|memoria[14]~feeder_combout $end
+$var wire 1 3! bloco_operacional|banco|gerando_registradores:11:registrador|memoria[14]~feeder_combout $end
+$var wire 1 4! bloco_operacional|banco|gerando_registradores:7:registrador|memoria[14]~feeder_combout $end
+$var wire 1 5! bloco_operacional|banco|gerando_registradores:10:registrador|memoria[13]~feeder_combout $end
+$var wire 1 6! bloco_operacional|banco|gerando_registradores:10:registrador|memoria[11]~feeder_combout $end
+$var wire 1 7! bloco_operacional|banco|gerando_registradores:5:registrador|memoria[11]~feeder_combout $end
+$var wire 1 8! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[10]~feeder_combout $end
+$var wire 1 9! bloco_operacional|banco|gerando_registradores:9:registrador|memoria[9]~feeder_combout $end
+$var wire 1 :! bloco_operacional|banco|gerando_registradores:15:registrador|memoria[9]~feeder_combout $end
+$var wire 1 ;! bloco_operacional|banco|gerando_registradores:12:registrador|memoria[8]~feeder_combout $end
+$var wire 1 <! bloco_operacional|banco|gerando_registradores:7:registrador|memoria[7]~feeder_combout $end
+$var wire 1 =! bloco_operacional|banco|gerando_registradores:14:registrador|memoria[7]~feeder_combout $end
+$var wire 1 >! bloco_operacional|banco|gerando_registradores:9:registrador|memoria[6]~feeder_combout $end
+$var wire 1 ?! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[4]~feeder_combout $end
+$var wire 1 @! bloco_operacional|banco|gerando_registradores:6:registrador|memoria[5]~feeder_combout $end
+$var wire 1 A! memoria_de_dados|memoria_rtl_0_bypass[18]~feeder_combout $end
+$var wire 1 B! unidade_de_controle|contador_de_programa|registrador|memoria[0]~4_combout $end
+$var wire 1 C! unidade_de_controle|somador|Add1~0_combout $end
+$var wire 1 D! memoria_de_instrucoes|Mux1~0_combout $end
+$var wire 1 E! unidade_de_controle|bloco_de_controle|Equal2~0_combout $end
+$var wire 1 F! unidade_de_controle|registrador_de_instrucao|registrador|memoria[13]~feeder_combout $end
+$var wire 1 G! memoria_de_instrucoes|Mux0~0_combout $end
+$var wire 1 H! unidade_de_controle|registrador_de_instrucao|registrador|memoria[14]~feeder_combout $end
+$var wire 1 I! memoria_de_instrucoes|Mux5~0_combout $end
+$var wire 1 J! unidade_de_controle|registrador_de_instrucao|registrador|memoria[9]~feeder_combout $end
+$var wire 1 K! memoria_de_instrucoes|Mux2~0_combout $end
+$var wire 1 L! unidade_de_controle|registrador_de_instrucao|registrador|memoria[12]~feeder_combout $end
+$var wire 1 M! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|Equal0~0_combout $end
+$var wire 1 N! memoria_de_instrucoes|Mux7~0_combout $end
+$var wire 1 O! unidade_de_controle|registrador_de_instrucao|registrador|memoria[4]~feeder_combout $end
+$var wire 1 P! bloco_operacional|mux|Mux1~0_combout $end
+$var wire 1 Q! memoria_de_instrucoes|Mux4~0_combout $end
+$var wire 1 R! bloco_operacional|banco|gerando_registradores:15:registrador|memoria[14]~feeder_combout $end
+$var wire 1 S! bloco_operacional|banco|escrita[15]~15_combout $end
+$var wire 1 T! bloco_operacional|banco|escrita[14]~7_combout $end
+$var wire 1 U! unidade_de_controle|contador_de_programa|registrador|memoria[2]~9 $end
+$var wire 1 V! unidade_de_controle|contador_de_programa|registrador|memoria[3]~10_combout $end
+$var wire 1 W! memoria_de_instrucoes|Mux8~0_combout $end
+$var wire 1 X! unidade_de_controle|registrador_de_instrucao|registrador|memoria[2]~feeder_combout $end
+$var wire 1 Y! memoria_de_instrucoes|Mux9~0_combout $end
+$var wire 1 Z! unidade_de_controle|registrador_de_instrucao|registrador|memoria[1]~feeder_combout $end
+$var wire 1 [! unidade_de_controle|somador|Add0~1 $end
+$var wire 1 \! unidade_de_controle|somador|Add0~3 $end
+$var wire 1 ]! unidade_de_controle|somador|Add0~5 $end
+$var wire 1 ^! unidade_de_controle|somador|Add0~6_combout $end
+$var wire 1 _! unidade_de_controle|somador|Add0~2_combout $end
+$var wire 1 `! unidade_de_controle|somador|Add1~1 $end
+$var wire 1 a! unidade_de_controle|somador|Add1~3 $end
+$var wire 1 b! unidade_de_controle|somador|Add1~5 $end
+$var wire 1 c! unidade_de_controle|somador|Add1~6_combout $end
+$var wire 1 d! unidade_de_controle|bloco_de_controle|Equal2~2_combout $end
+$var wire 1 e! display_estado|Mux6~0_combout $end
+$var wire 1 f! memoria_de_instrucoes|Mux6~0_combout $end
+$var wire 1 g! unidade_de_controle|registrador_de_instrucao|registrador|memoria[8]~feeder_combout $end
+$var wire 1 h! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|endereco_para_escrita_no_banco[2]~2_combout $end
+$var wire 1 i! unidade_de_controle|bloco_de_controle|decodificador|decodificador_mux|seletor_mux~1_combout $end
+$var wire 1 j! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|endereco_para_escrita_no_banco[1]~1_combout $end
+$var wire 1 k! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|endereco_para_escrita_no_banco[3]~3_combout $end
+$var wire 1 l! bloco_operacional|banco|Equal0~11_combout $end
+$var wire 1 m! bloco_operacional|banco|escrita[12]~11_combout $end
+$var wire 1 n! bloco_operacional|banco|gerando_registradores:13:registrador|memoria[14]~feeder_combout $end
+$var wire 1 o! bloco_operacional|banco|Equal0~3_combout $end
+$var wire 1 p! bloco_operacional|banco|escrita[13]~3_combout $end
+$var wire 1 q! bloco_operacional|banco|Mux1~7_combout $end
+$var wire 1 r! bloco_operacional|banco|Mux1~8_combout $end
+$var wire 1 s! bloco_operacional|banco|escrita[9]~1_combout $end
+$var wire 1 t! bloco_operacional|banco|gerando_registradores:10:registrador|memoria[14]~feeder_combout $end
+$var wire 1 u! bloco_operacional|banco|escrita[10]~4_combout $end
+$var wire 1 v! bloco_operacional|banco|escrita[8]~8_combout $end
+$var wire 1 w! bloco_operacional|banco|Mux1~2_combout $end
+$var wire 1 x! bloco_operacional|banco|Mux1~3_combout $end
+$var wire 1 y! bloco_operacional|banco|escrita[3]~14_combout $end
+$var wire 1 z! memoria_de_instrucoes|Mux10~0_combout $end
+$var wire 1 {! unidade_de_controle|registrador_de_instrucao|registrador|memoria[0]~feeder_combout $end
+$var wire 1 |! unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|endereco_para_escrita_no_banco[0]~0_combout $end
+$var wire 1 }! bloco_operacional|banco|Equal0~6_combout $end
+$var wire 1 ~! bloco_operacional|banco|escrita[2]~6_combout $end
+$var wire 1 !" bloco_operacional|banco|Mux1~4_combout $end
+$var wire 1 "" bloco_operacional|banco|Mux1~5_combout $end
+$var wire 1 #" bloco_operacional|banco|Mux1~6_combout $end
+$var wire 1 $" bloco_operacional|banco|Mux1~9_combout $end
+$var wire 1 %" bloco_operacional|banco|Equal0~0_combout $end
+$var wire 1 &" bloco_operacional|banco|escrita[5]~0_combout $end
+$var wire 1 '" bloco_operacional|banco|Mux2~0_combout $end
+$var wire 1 (" bloco_operacional|banco|Mux2~1_combout $end
+$var wire 1 )" bloco_operacional|banco|gerando_registradores:7:registrador|memoria[13]~feeder_combout $end
+$var wire 1 *" bloco_operacional|banco|escrita[7]~12_combout $end
+$var wire 1 +" bloco_operacional|banco|Mux2~7_combout $end
+$var wire 1 ," bloco_operacional|banco|Mux2~8_combout $end
+$var wire 1 -" bloco_operacional|banco|Equal0~9_combout $end
+$var wire 1 ." bloco_operacional|banco|escrita[4]~9_combout $end
+$var wire 1 /" bloco_operacional|banco|Mux2~4_combout $end
+$var wire 1 0" bloco_operacional|banco|Mux2~5_combout $end
+$var wire 1 1" bloco_operacional|banco|Mux2~2_combout $end
+$var wire 1 2" bloco_operacional|banco|Mux2~3_combout $end
+$var wire 1 3" bloco_operacional|banco|Mux2~6_combout $end
+$var wire 1 4" bloco_operacional|banco|Mux2~9_combout $end
+$var wire 1 5" unidade_de_controle|bloco_de_controle|Equal2~0_wirecell_combout $end
+$var wire 1 6" clock~clk_delay_ctrl_clkout $end
+$var wire 1 7" clock~clkctrl_outclk $end
+$var wire 1 8" unidade_de_controle|bloco_de_controle|decodificador|decodificador_mux|seletor_mux[0]~0_combout $end
+$var wire 1 9" ~GND~combout $end
+$var wire 1 :" unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|Equal0~1_combout $end
+$var wire 1 ;" bloco_operacional|banco|Equal0~2_combout $end
+$var wire 1 <" bloco_operacional|banco|escrita[1]~2_combout $end
+$var wire 1 =" bloco_operacional|banco|Mux30~0_combout $end
+$var wire 1 >" bloco_operacional|banco|escrita[0]~10_combout $end
+$var wire 1 ?" bloco_operacional|banco|Mux31~0_combout $end
+$var wire 1 @" bloco_operacional|ALU|subtrator|borrow~12_combout $end
+$var wire 1 A" bloco_operacional|ALU|Mux14~0_combout $end
+$var wire 1 B" bloco_operacional|ALU|Mux14~1_combout $end
+$var wire 1 C" bloco_operacional|mux|Mux14~0_combout $end
+$var wire 1 D" memoria_de_dados|memoria~23_combout $end
+$var wire 1 E" unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|Equal0~3_combout $end
+$var wire 1 F" memoria_de_dados|memoria_rtl_0_bypass[3]~feeder_combout $end
+$var wire 1 G" memoria_de_dados|memoria~22_combout $end
+$var wire 1 H" memoria_de_dados|memoria~combout $end
+$var wire 1 I" unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|escrever_no_banco~0_combout $end
+$var wire 1 J" bloco_operacional|ALU|somador|carry~10_combout $end
+$var wire 1 K" bloco_operacional|banco|Mux29~0_combout $end
+$var wire 1 L" bloco_operacional|ALU|Mux13~0_combout $end
+$var wire 1 M" bloco_operacional|ALU|Mux13~1_combout $end
+$var wire 1 N" bloco_operacional|ALU|Mux13~2_combout $end
+$var wire 1 O" bloco_operacional|mux|Mux13~0_combout $end
+$var wire 1 P" bloco_operacional|mux|Mux13~1_combout $end
+$var wire 1 Q" bloco_operacional|banco|gerando_registradores:15:registrador|memoria[2]~feeder_combout $end
+$var wire 1 R" bloco_operacional|banco|Equal0~13_combout $end
+$var wire 1 S" bloco_operacional|banco|escrita[11]~13_combout $end
+$var wire 1 T" bloco_operacional|banco|gerando_registradores:7:registrador|memoria[2]~feeder_combout $end
+$var wire 1 U" bloco_operacional|banco|Mux13~7_combout $end
+$var wire 1 V" bloco_operacional|banco|Mux13~8_combout $end
+$var wire 1 W" bloco_operacional|banco|Mux13~0_combout $end
+$var wire 1 X" bloco_operacional|banco|Mux13~1_combout $end
+$var wire 1 Y" bloco_operacional|banco|Mux13~2_combout $end
+$var wire 1 Z" bloco_operacional|banco|Mux13~3_combout $end
+$var wire 1 [" bloco_operacional|banco|Mux13~4_combout $end
+$var wire 1 \" bloco_operacional|banco|Mux13~5_combout $end
+$var wire 1 ]" bloco_operacional|banco|Mux13~6_combout $end
+$var wire 1 ^" bloco_operacional|banco|Mux13~9_combout $end
+$var wire 1 _" bloco_operacional|banco|Mux28~0_combout $end
+$var wire 1 `" bloco_operacional|ALU|somador|carry~11_combout $end
+$var wire 1 a" bloco_operacional|ALU|somador|carry~23_combout $end
+$var wire 1 b" bloco_operacional|mux|Mux11~1_combout $end
+$var wire 1 c" bloco_operacional|banco|Mux27~0_combout $end
+$var wire 1 d" bloco_operacional|ALU|subtrator|borrow~27_combout $end
+$var wire 1 e" bloco_operacional|ALU|subtrator|borrow~16_combout $end
+$var wire 1 f" bloco_operacional|mux|Mux11~0_combout $end
+$var wire 1 g" memoria_de_dados|memoria_rtl_0_bypass[19]~feeder_combout $end
+$var wire 1 h" memoria_de_dados|memoria_rtl_0_bypass[23]~feeder_combout $end
+$var wire 1 i" memoria_de_dados|memoria~37_combout $end
+$var wire 1 j" unidade_de_controle|bloco_de_controle|decodificador|decodificador_banco|Equal0~2_combout $end
+$var wire 1 k" bloco_operacional|mux|Mux9~0_combout $end
+$var wire 1 l" bloco_operacional|ALU|subtrator|borrow~31_combout $end
+$var wire 1 m" bloco_operacional|ALU|subtrator|borrow~32_combout $end
+$var wire 1 n" bloco_operacional|ALU|subtrator|borrow~17_combout $end
+$var wire 1 o" bloco_operacional|mux|Mux9~1_combout $end
+$var wire 1 p" bloco_operacional|mux|Mux9~2_combout $end
+$var wire 1 q" bloco_operacional|mux|Mux9~3_combout $end
+$var wire 1 r" bloco_operacional|banco|gerando_registradores:14:registrador|memoria[6]~feeder_combout $end
+$var wire 1 s" bloco_operacional|banco|escrita[6]~5_combout $end
+$var wire 1 t" bloco_operacional|banco|Mux9~0_combout $end
+$var wire 1 u" bloco_operacional|banco|Mux9~1_combout $end
+$var wire 1 v" bloco_operacional|banco|Mux9~8_combout $end
+$var wire 1 w" bloco_operacional|banco|gerando_registradores:1:registrador|memoria[6]~feeder_combout $end
+$var wire 1 x" bloco_operacional|banco|Mux9~2_combout $end
+$var wire 1 y" bloco_operacional|banco|Mux9~3_combout $end
+$var wire 1 z" bloco_operacional|banco|Mux9~4_combout $end
+$var wire 1 {" bloco_operacional|banco|gerando_registradores:4:registrador|memoria[6]~feeder_combout $end
+$var wire 1 |" bloco_operacional|banco|Mux9~5_combout $end
+$var wire 1 }" bloco_operacional|banco|Mux9~6_combout $end
+$var wire 1 ~" bloco_operacional|banco|Mux9~9_combout $end
+$var wire 1 !# memoria_de_dados|memoria_rtl_0_bypass[27]~feeder_combout $end
+$var wire 1 "# memoria_de_dados|memoria~35_combout $end
+$var wire 1 ## bloco_operacional|banco|Mux25~0_combout $end
+$var wire 1 $# bloco_operacional|banco|Mux26~0_combout $end
+$var wire 1 %# bloco_operacional|ALU|somador|carry~12_combout $end
+$var wire 1 &# bloco_operacional|ALU|somador|carry~13_combout $end
+$var wire 1 '# bloco_operacional|ALU|somador|carry~14_combout $end
+$var wire 1 (# bloco_operacional|ALU|somador|carry~15_combout $end
+$var wire 1 )# bloco_operacional|ALU|somador|carry~27_combout $end
+$var wire 1 *# bloco_operacional|ALU|somador|carry~16_combout $end
+$var wire 1 +# bloco_operacional|banco|Mux24~0_combout $end
+$var wire 1 ,# bloco_operacional|ALU|subtrator|borrow~18_combout $end
+$var wire 1 -# bloco_operacional|mux|Mux7~0_combout $end
+$var wire 1 .# bloco_operacional|mux|Mux7~1_combout $end
+$var wire 1 /# bloco_operacional|mux|Mux7~2_combout $end
+$var wire 1 0# bloco_operacional|mux|Mux7~3_combout $end
+$var wire 1 1# bloco_operacional|banco|gerando_registradores:13:registrador|memoria[8]~feeder_combout $end
+$var wire 1 2# bloco_operacional|banco|Mux7~0_combout $end
+$var wire 1 3# bloco_operacional|banco|Mux7~1_combout $end
+$var wire 1 4# bloco_operacional|banco|Mux7~7_combout $end
+$var wire 1 5# bloco_operacional|banco|Mux7~8_combout $end
+$var wire 1 6# bloco_operacional|banco|gerando_registradores:14:registrador|memoria[8]~feeder_combout $end
+$var wire 1 7# bloco_operacional|banco|Mux7~2_combout $end
+$var wire 1 8# bloco_operacional|banco|Mux7~3_combout $end
+$var wire 1 9# bloco_operacional|banco|Mux7~4_combout $end
+$var wire 1 :# bloco_operacional|banco|Mux7~5_combout $end
+$var wire 1 ;# bloco_operacional|banco|Mux7~6_combout $end
+$var wire 1 <# bloco_operacional|banco|Mux7~9_combout $end
+$var wire 1 =# memoria_de_dados|memoria_rtl_0_bypass[31]~feeder_combout $end
+$var wire 1 ># memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a12 $end
+$var wire 1 ?# memoria_de_dados|memoria~28_combout $end
+$var wire 1 @# bloco_operacional|mux|Mux3~1_combout $end
+$var wire 1 A# bloco_operacional|ALU|somador|carry~25_combout $end
+$var wire 1 B# bloco_operacional|banco|Mux21~0_combout $end
+$var wire 1 C# bloco_operacional|ALU|somador|carry~26_combout $end
+$var wire 1 D# bloco_operacional|banco|Mux23~0_combout $end
+$var wire 1 E# bloco_operacional|ALU|somador|carry~17_combout $end
+$var wire 1 F# bloco_operacional|ALU|somador|carry~18_combout $end
+$var wire 1 G# bloco_operacional|ALU|somador|carry~19_combout $end
+$var wire 1 H# bloco_operacional|ALU|somador|carry~20_combout $end
+$var wire 1 I# bloco_operacional|mux|Mux3~0_combout $end
+$var wire 1 J# bloco_operacional|banco|gerando_registradores:1:registrador|memoria[12]~feeder_combout $end
+$var wire 1 K# bloco_operacional|ALU|subtrator|resultsubt[12]~11_combout $end
+$var wire 1 L# bloco_operacional|banco|Mux20~0_combout $end
+$var wire 1 M# bloco_operacional|ALU|subtrator|borrow~21_combout $end
+$var wire 1 N# bloco_operacional|mux|Mux3~2_combout $end
+$var wire 1 O# bloco_operacional|mux|Mux3~3_combout $end
+$var wire 1 P# bloco_operacional|banco|gerando_registradores:11:registrador|memoria[12]~feeder_combout $end
+$var wire 1 Q# bloco_operacional|banco|Mux3~0_combout $end
+$var wire 1 R# bloco_operacional|banco|Mux3~1_combout $end
+$var wire 1 S# bloco_operacional|banco|Mux3~4_combout $end
+$var wire 1 T# bloco_operacional|banco|Mux3~5_combout $end
+$var wire 1 U# bloco_operacional|banco|Mux3~2_combout $end
+$var wire 1 V# bloco_operacional|banco|Mux3~3_combout $end
+$var wire 1 W# bloco_operacional|banco|Mux3~6_combout $end
+$var wire 1 X# bloco_operacional|banco|Mux3~9_combout $end
+$var wire 1 Y# memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a11 $end
+$var wire 1 Z# memoria_de_dados|memoria~32_combout $end
+$var wire 1 [# memoria_de_dados|dado_de_saida[11]~feeder_combout $end
+$var wire 1 \# bloco_operacional|mux|Mux4~0_combout $end
+$var wire 1 ]# bloco_operacional|mux|Mux4~1_combout $end
+$var wire 1 ^# bloco_operacional|mux|Mux4~2_combout $end
+$var wire 1 _# bloco_operacional|banco|gerando_registradores:15:registrador|memoria[11]~feeder_combout $end
+$var wire 1 `# bloco_operacional|banco|Mux4~7_combout $end
+$var wire 1 a# bloco_operacional|banco|Mux4~8_combout $end
+$var wire 1 b# bloco_operacional|banco|gerando_registradores:6:registrador|memoria[11]~feeder_combout $end
+$var wire 1 c# bloco_operacional|banco|Mux4~2_combout $end
+$var wire 1 d# bloco_operacional|banco|Mux4~3_combout $end
+$var wire 1 e# bloco_operacional|banco|gerando_registradores:2:registrador|memoria[11]~feeder_combout $end
+$var wire 1 f# bloco_operacional|banco|gerando_registradores:1:registrador|memoria[11]~feeder_combout $end
+$var wire 1 g# bloco_operacional|banco|Mux4~4_combout $end
+$var wire 1 h# bloco_operacional|banco|Mux4~5_combout $end
+$var wire 1 i# bloco_operacional|banco|Mux4~6_combout $end
+$var wire 1 j# bloco_operacional|banco|gerando_registradores:9:registrador|memoria[11]~feeder_combout $end
+$var wire 1 k# bloco_operacional|banco|Mux4~0_combout $end
+$var wire 1 l# bloco_operacional|banco|Mux4~1_combout $end
+$var wire 1 m# bloco_operacional|banco|Mux4~9_combout $end
+$var wire 1 n# memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a10 $end
+$var wire 1 o# memoria_de_dados|memoria~33_combout $end
+$var wire 1 p# bloco_operacional|ALU|subtrator|borrow~15_combout $end
+$var wire 1 q# bloco_operacional|ALU|subtrator|borrow~19_combout $end
+$var wire 1 r# bloco_operacional|ALU|subtrator|borrow~30_combout $end
+$var wire 1 s# bloco_operacional|ALU|subtrator|borrow~20_combout $end
+$var wire 1 t# bloco_operacional|mux|Mux5~0_combout $end
+$var wire 1 u# bloco_operacional|mux|Mux5~1_combout $end
+$var wire 1 v# bloco_operacional|mux|Mux5~2_combout $end
+$var wire 1 w# bloco_operacional|banco|Mux5~0_combout $end
+$var wire 1 x# bloco_operacional|banco|Mux5~1_combout $end
+$var wire 1 y# bloco_operacional|banco|Mux5~7_combout $end
+$var wire 1 z# bloco_operacional|banco|Mux5~8_combout $end
+$var wire 1 {# bloco_operacional|banco|Mux5~2_combout $end
+$var wire 1 |# bloco_operacional|banco|Mux5~3_combout $end
+$var wire 1 }# bloco_operacional|banco|Mux5~4_combout $end
+$var wire 1 ~# bloco_operacional|banco|Mux5~5_combout $end
+$var wire 1 !$ bloco_operacional|banco|Mux5~6_combout $end
+$var wire 1 "$ bloco_operacional|banco|Mux5~9_combout $end
+$var wire 1 #$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a9 $end
+$var wire 1 $$ memoria_de_dados|memoria~34_combout $end
+$var wire 1 %$ bloco_operacional|banco|Mux22~0_combout $end
+$var wire 1 &$ bloco_operacional|mux|Mux6~0_combout $end
+$var wire 1 '$ bloco_operacional|mux|Mux6~1_combout $end
+$var wire 1 ($ bloco_operacional|mux|Mux6~2_combout $end
+$var wire 1 )$ bloco_operacional|banco|gerando_registradores:7:registrador|memoria[9]~feeder_combout $end
+$var wire 1 *$ bloco_operacional|banco|gerando_registradores:5:registrador|memoria[9]~feeder_combout $end
+$var wire 1 +$ bloco_operacional|banco|Mux6~0_combout $end
+$var wire 1 ,$ bloco_operacional|banco|Mux6~1_combout $end
+$var wire 1 -$ bloco_operacional|banco|gerando_registradores:13:registrador|memoria[9]~feeder_combout $end
+$var wire 1 .$ bloco_operacional|banco|Mux6~7_combout $end
+$var wire 1 /$ bloco_operacional|banco|Mux6~8_combout $end
+$var wire 1 0$ bloco_operacional|banco|gerando_registradores:10:registrador|memoria[9]~feeder_combout $end
+$var wire 1 1$ bloco_operacional|banco|Mux6~2_combout $end
+$var wire 1 2$ bloco_operacional|banco|Mux6~3_combout $end
+$var wire 1 3$ bloco_operacional|banco|Mux6~4_combout $end
+$var wire 1 4$ bloco_operacional|banco|Mux6~5_combout $end
+$var wire 1 5$ bloco_operacional|banco|Mux6~6_combout $end
+$var wire 1 6$ bloco_operacional|banco|Mux6~9_combout $end
+$var wire 1 7$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a7 $end
+$var wire 1 8$ memoria_de_dados|memoria~36_combout $end
+$var wire 1 9$ memoria_de_dados|dado_de_saida[7]~feeder_combout $end
+$var wire 1 :$ bloco_operacional|mux|Mux8~0_combout $end
+$var wire 1 ;$ bloco_operacional|mux|Mux8~1_combout $end
+$var wire 1 <$ bloco_operacional|mux|Mux8~2_combout $end
+$var wire 1 =$ bloco_operacional|banco|Mux8~7_combout $end
+$var wire 1 >$ bloco_operacional|banco|Mux8~8_combout $end
+$var wire 1 ?$ bloco_operacional|banco|gerando_registradores:6:registrador|memoria[7]~feeder_combout $end
+$var wire 1 @$ bloco_operacional|banco|Mux8~2_combout $end
+$var wire 1 A$ bloco_operacional|banco|Mux8~3_combout $end
+$var wire 1 B$ bloco_operacional|banco|gerando_registradores:3:registrador|memoria[7]~feeder_combout $end
+$var wire 1 C$ bloco_operacional|banco|Mux8~4_combout $end
+$var wire 1 D$ bloco_operacional|banco|Mux8~5_combout $end
+$var wire 1 E$ bloco_operacional|banco|Mux8~6_combout $end
+$var wire 1 F$ bloco_operacional|banco|gerando_registradores:9:registrador|memoria[7]~feeder_combout $end
+$var wire 1 G$ bloco_operacional|banco|Mux8~0_combout $end
+$var wire 1 H$ bloco_operacional|banco|Mux8~1_combout $end
+$var wire 1 I$ bloco_operacional|banco|Mux8~9_combout $end
+$var wire 1 J$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a5 $end
+$var wire 1 K$ memoria_de_dados|memoria~39_combout $end
+$var wire 1 L$ bloco_operacional|ALU|somador|carry~28_combout $end
+$var wire 1 M$ bloco_operacional|ALU|subtrator|borrow~26_combout $end
+$var wire 1 N$ bloco_operacional|mux|Mux10~0_combout $end
+$var wire 1 O$ bloco_operacional|mux|Mux10~1_combout $end
+$var wire 1 P$ bloco_operacional|mux|Mux10~2_combout $end
+$var wire 1 Q$ bloco_operacional|banco|gerando_registradores:11:registrador|memoria[5]~feeder_combout $end
+$var wire 1 R$ bloco_operacional|banco|Mux10~7_combout $end
+$var wire 1 S$ bloco_operacional|banco|Mux10~8_combout $end
+$var wire 1 T$ bloco_operacional|banco|gerando_registradores:5:registrador|memoria[5]~feeder_combout $end
+$var wire 1 U$ bloco_operacional|banco|Mux10~0_combout $end
+$var wire 1 V$ bloco_operacional|banco|Mux10~1_combout $end
+$var wire 1 W$ bloco_operacional|banco|Mux10~2_combout $end
+$var wire 1 X$ bloco_operacional|banco|Mux10~3_combout $end
+$var wire 1 Y$ bloco_operacional|banco|Mux10~4_combout $end
+$var wire 1 Z$ bloco_operacional|banco|Mux10~5_combout $end
+$var wire 1 [$ bloco_operacional|banco|Mux10~6_combout $end
+$var wire 1 \$ bloco_operacional|banco|Mux10~9_combout $end
+$var wire 1 ]$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a4 $end
+$var wire 1 ^$ memoria_de_dados|memoria~38_combout $end
+$var wire 1 _$ bloco_operacional|mux|Mux11~2_combout $end
+$var wire 1 `$ bloco_operacional|mux|Mux11~3_combout $end
+$var wire 1 a$ bloco_operacional|banco|gerando_registradores:7:registrador|memoria[4]~feeder_combout $end
+$var wire 1 b$ bloco_operacional|banco|gerando_registradores:5:registrador|memoria[4]~feeder_combout $end
+$var wire 1 c$ bloco_operacional|banco|Mux11~0_combout $end
+$var wire 1 d$ bloco_operacional|banco|Mux11~1_combout $end
+$var wire 1 e$ bloco_operacional|banco|Mux11~7_combout $end
+$var wire 1 f$ bloco_operacional|banco|Mux11~8_combout $end
+$var wire 1 g$ bloco_operacional|banco|Mux11~4_combout $end
+$var wire 1 h$ bloco_operacional|banco|Mux11~5_combout $end
+$var wire 1 i$ bloco_operacional|banco|gerando_registradores:9:registrador|memoria[4]~feeder_combout $end
+$var wire 1 j$ bloco_operacional|banco|Mux11~2_combout $end
+$var wire 1 k$ bloco_operacional|banco|Mux11~3_combout $end
+$var wire 1 l$ bloco_operacional|banco|Mux11~6_combout $end
+$var wire 1 m$ bloco_operacional|banco|Mux11~9_combout $end
+$var wire 1 n$ memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a3 $end
+$var wire 1 o$ memoria_de_dados|memoria~27_combout $end
+$var wire 1 p$ memoria_de_dados|dado_de_saida[3]~feeder_combout $end
+$var wire 1 q$ bloco_operacional|ALU|somador|carry~24_combout $end
+$var wire 1 r$ bloco_operacional|ALU|Mux12~0_combout $end
+$var wire 1 s$ bloco_operacional|ALU|subtrator|borrow~28_combout $end
+$var wire 1 t$ bloco_operacional|ALU|subtrator|borrow~13_combout $end
+$var wire 1 u$ bloco_operacional|ALU|Mux12~1_combout $end
+$var wire 1 v$ bloco_operacional|ALU|Mux12~2_combout $end
+$var wire 1 w$ bloco_operacional|mux|Mux12~0_combout $end
+$var wire 1 x$ bloco_operacional|banco|gerando_registradores:14:registrador|memoria[3]~feeder_combout $end
+$var wire 1 y$ bloco_operacional|banco|Mux12~7_combout $end
+$var wire 1 z$ bloco_operacional|banco|Mux12~8_combout $end
+$var wire 1 {$ bloco_operacional|banco|gerando_registradores:11:registrador|memoria[3]~feeder_combout $end
+$var wire 1 |$ bloco_operacional|banco|gerando_registradores:9:registrador|memoria[3]~feeder_combout $end
+$var wire 1 }$ bloco_operacional|banco|Mux12~0_combout $end
+$var wire 1 ~$ bloco_operacional|banco|Mux12~1_combout $end
+$var wire 1 !% bloco_operacional|banco|Mux12~4_combout $end
+$var wire 1 "% bloco_operacional|banco|Mux12~5_combout $end
+$var wire 1 #% bloco_operacional|banco|gerando_registradores:7:registrador|memoria[3]~feeder_combout $end
+$var wire 1 $% bloco_operacional|banco|Mux12~2_combout $end
+$var wire 1 %% bloco_operacional|banco|Mux12~3_combout $end
+$var wire 1 &% bloco_operacional|banco|Mux12~6_combout $end
+$var wire 1 '% bloco_operacional|banco|Mux12~9_combout $end
+$var wire 1 (% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a1 $end
+$var wire 1 )% memoria_de_dados|memoria~25_combout $end
+$var wire 1 *% bloco_operacional|mux|Mux14~1_combout $end
+$var wire 1 +% bloco_operacional|banco|gerando_registradores:13:registrador|memoria[1]~feeder_combout $end
+$var wire 1 ,% bloco_operacional|banco|Mux14~7_combout $end
+$var wire 1 -% bloco_operacional|banco|Mux14~8_combout $end
+$var wire 1 .% bloco_operacional|banco|Mux14~0_combout $end
+$var wire 1 /% bloco_operacional|banco|Mux14~1_combout $end
+$var wire 1 0% bloco_operacional|banco|Mux14~4_combout $end
+$var wire 1 1% bloco_operacional|banco|Mux14~5_combout $end
+$var wire 1 2% bloco_operacional|banco|Mux14~2_combout $end
+$var wire 1 3% bloco_operacional|banco|Mux14~3_combout $end
+$var wire 1 4% bloco_operacional|banco|Mux14~6_combout $end
+$var wire 1 5% bloco_operacional|banco|Mux14~9_combout $end
+$var wire 1 6% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0~portbdataout $end
+$var wire 1 7% memoria_de_dados|memoria~24_combout $end
+$var wire 1 8% bloco_operacional|ALU|subtrator|borrow~24_combout $end
+$var wire 1 9% bloco_operacional|banco|Mux16~0_combout $end
+$var wire 1 :% bloco_operacional|ALU|subtrator|borrow~25_combout $end
+$var wire 1 ;% bloco_operacional|ALU|Mux15~0_combout $end
+$var wire 1 <% bloco_operacional|ALU|Mux15~1_combout $end
+$var wire 1 =% bloco_operacional|mux|Mux15~0_combout $end
+$var wire 1 >% bloco_operacional|mux|Mux15~1_combout $end
+$var wire 1 ?% bloco_operacional|banco|gerando_registradores:5:registrador|memoria[0]~feeder_combout $end
+$var wire 1 @% bloco_operacional|banco|Mux15~0_combout $end
+$var wire 1 A% bloco_operacional|banco|Mux15~1_combout $end
+$var wire 1 B% bloco_operacional|banco|gerando_registradores:10:registrador|memoria[0]~feeder_combout $end
+$var wire 1 C% bloco_operacional|banco|Mux15~2_combout $end
+$var wire 1 D% bloco_operacional|banco|Mux15~3_combout $end
+$var wire 1 E% bloco_operacional|banco|Mux15~4_combout $end
+$var wire 1 F% bloco_operacional|banco|Mux15~5_combout $end
+$var wire 1 G% bloco_operacional|banco|Mux15~6_combout $end
+$var wire 1 H% bloco_operacional|banco|Mux15~9_combout $end
+$var wire 1 I% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a13 $end
+$var wire 1 J% memoria_de_dados|memoria~31_combout $end
+$var wire 1 K% bloco_operacional|mux|Mux2~0_combout $end
+$var wire 1 L% bloco_operacional|mux|Mux2~2_combout $end
+$var wire 1 M% bloco_operacional|mux|Mux2~3_combout $end
+$var wire 1 N% bloco_operacional|ALU|subtrator|borrow~29_combout $end
+$var wire 1 O% bloco_operacional|ALU|subtrator|borrow~14_combout $end
+$var wire 1 P% bloco_operacional|ALU|subtrator|borrow~22_combout $end
+$var wire 1 Q% bloco_operacional|mux|Mux2~1_combout $end
+$var wire 1 R% bloco_operacional|mux|Mux2~4_combout $end
+$var wire 1 S% bloco_operacional|banco|Mux18~0_combout $end
+$var wire 1 T% bloco_operacional|banco|Mux19~0_combout $end
+$var wire 1 U% bloco_operacional|ALU|somador|carry~21_combout $end
+$var wire 1 V% bloco_operacional|ALU|somador|carry~22_combout $end
+$var wire 1 W% bloco_operacional|ALU|subtrator|borrow~23_combout $end
+$var wire 1 X% bloco_operacional|mux|Mux1~1_combout $end
+$var wire 1 Y% bloco_operacional|mux|Mux1~2_combout $end
+$var wire 1 Z% bloco_operacional|mux|Mux1~3_combout $end
+$var wire 1 [% bloco_operacional|banco|Mux17~0_combout $end
+$var wire 1 \% bloco_operacional|ALU|subtrator|resultsubt[15]~10_combout $end
+$var wire 1 ]% bloco_operacional|mux|Mux0~2_combout $end
+$var wire 1 ^% memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a15 $end
+$var wire 1 _% memoria_de_dados|memoria~29_combout $end
+$var wire 1 `% bloco_operacional|mux|Mux0~0_combout $end
+$var wire 1 a% bloco_operacional|mux|Mux0~1_combout $end
+$var wire 1 b% bloco_operacional|mux|Mux0~3_combout $end
+$var wire 1 c% bloco_operacional|banco|Mux0~8_combout $end
+$var wire 1 d% bloco_operacional|banco|Mux0~4_combout $end
+$var wire 1 e% bloco_operacional|banco|Mux0~5_combout $end
+$var wire 1 f% bloco_operacional|banco|Mux0~2_combout $end
+$var wire 1 g% bloco_operacional|banco|Mux0~3_combout $end
+$var wire 1 h% bloco_operacional|banco|Mux0~6_combout $end
+$var wire 1 i% bloco_operacional|banco|Mux0~9_combout $end
+$var wire 1 j% bloco_operacional|comparador|Equal0~1_combout $end
+$var wire 1 k% bloco_operacional|comparador|Equal0~3_combout $end
+$var wire 1 l% bloco_operacional|comparador|Equal0~2_combout $end
+$var wire 1 m% bloco_operacional|comparador|Equal0~4_combout $end
+$var wire 1 n% unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual~0_combout $end
+$var wire 1 o% unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual~1_combout $end
+$var wire 1 p% unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual[1]~3_combout $end
+$var wire 1 q% unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual~2_combout $end
+$var wire 1 r% unidade_de_controle|bloco_de_controle|Equal2~1_combout $end
+$var wire 1 s% unidade_de_controle|contador_de_programa|registrador|memoria[0]~5 $end
+$var wire 1 t% unidade_de_controle|contador_de_programa|registrador|memoria[1]~6_combout $end
+$var wire 1 u% unidade_de_controle|somador|Add1~2_combout $end
+$var wire 1 v% unidade_de_controle|contador_de_programa|registrador|memoria[1]~7 $end
+$var wire 1 w% unidade_de_controle|contador_de_programa|registrador|memoria[2]~8_combout $end
+$var wire 1 x% unidade_de_controle|somador|Add1~4_combout $end
+$var wire 1 y% memoria_de_instrucoes|Mux3~0_combout $end
+$var wire 1 z% unidade_de_controle|registrador_de_instrucao|registrador|memoria[11]~feeder_combout $end
+$var wire 1 {% display_adress_1|Mux6~0_combout $end
+$var wire 1 |% display_adress_1|Mux5~0_combout $end
+$var wire 1 }% display_adress_1|Mux4~0_combout $end
+$var wire 1 ~% display_adress_1|Mux3~0_combout $end
+$var wire 1 !& display_adress_1|Mux2~0_combout $end
+$var wire 1 "& display_adress_1|Mux1~0_combout $end
+$var wire 1 #& display_adress_1|Mux0~0_combout $end
+$var wire 1 $& display_banco_1|Mux6~0_combout $end
+$var wire 1 %& display_banco_1|Mux5~0_combout $end
+$var wire 1 && display_banco_1|Mux4~0_combout $end
+$var wire 1 '& display_banco_1|Mux3~0_combout $end
+$var wire 1 (& display_banco_1|Mux2~0_combout $end
+$var wire 1 )& display_banco_1|Mux1~0_combout $end
+$var wire 1 *& display_banco_1|Mux0~0_combout $end
+$var wire 1 +& display_banco_2|Mux6~0_combout $end
+$var wire 1 ,& display_banco_2|Mux5~0_combout $end
+$var wire 1 -& display_banco_2|Mux4~0_combout $end
+$var wire 1 .& display_banco_2|Mux3~0_combout $end
+$var wire 1 /& display_banco_2|Mux2~0_combout $end
+$var wire 1 0& display_banco_2|Mux1~0_combout $end
+$var wire 1 1& display_banco_2|Mux0~0_combout $end
+$var wire 1 2& display_ula|Mux6~0_combout $end
+$var wire 1 3& display_ula|Mux5~0_combout $end
+$var wire 1 4& display_ula|Mux4~0_combout $end
+$var wire 1 5& display_ula|Mux3~0_combout $end
+$var wire 1 6& display_ula|Mux2~0_combout $end
+$var wire 1 7& display_ula|Mux1~0_combout $end
+$var wire 1 8& display_ula|Mux0~0_combout $end
+$var wire 1 9& display_estado|Mux5~0_combout $end
+$var wire 1 :& display_estado|Mux4~0_combout $end
+$var wire 1 ;& display_estado|Mux3~0_combout $end
+$var wire 1 <& display_estado|Mux2~0_combout $end
+$var wire 1 =& display_estado|Mux1~0_combout $end
+$var wire 1 >& display_estado|Mux0~0_combout $end
+$var wire 1 ?& display_contador_de_intrucoes|Mux6~0_combout $end
+$var wire 1 @& display_contador_de_intrucoes|Mux5~0_combout $end
+$var wire 1 A& display_contador_de_intrucoes|Mux4~0_combout $end
+$var wire 1 B& display_contador_de_intrucoes|Mux3~0_combout $end
+$var wire 1 C& display_contador_de_intrucoes|Mux2~0_combout $end
+$var wire 1 D& display_contador_de_intrucoes|Mux1~0_combout $end
+$var wire 1 E& display_contador_de_intrucoes|Mux0~0_combout $end
+$var wire 1 F& display_operacao|Mux6~0_combout $end
+$var wire 1 G& display_operacao|Mux5~0_combout $end
+$var wire 1 H& display_operacao|Mux3~0_combout $end
+$var wire 1 I& display_operacao|Mux2~0_combout $end
+$var wire 1 J& display_operacao|Mux1~0_combout $end
+$var wire 1 K& display_operacao|Mux0~0_combout $end
+$var wire 1 L& clock~combout $end
+$var wire 1 M& bloco_operacional|ALU|somador|resultado_soma [15] $end
+$var wire 1 N& bloco_operacional|ALU|somador|resultado_soma [14] $end
+$var wire 1 O& bloco_operacional|ALU|somador|resultado_soma [13] $end
+$var wire 1 P& bloco_operacional|ALU|somador|resultado_soma [12] $end
+$var wire 1 Q& bloco_operacional|ALU|somador|resultado_soma [11] $end
+$var wire 1 R& bloco_operacional|ALU|somador|resultado_soma [10] $end
+$var wire 1 S& bloco_operacional|ALU|somador|resultado_soma [9] $end
+$var wire 1 T& bloco_operacional|ALU|somador|resultado_soma [8] $end
+$var wire 1 U& bloco_operacional|ALU|somador|resultado_soma [7] $end
+$var wire 1 V& bloco_operacional|ALU|somador|resultado_soma [6] $end
+$var wire 1 W& bloco_operacional|ALU|somador|resultado_soma [5] $end
+$var wire 1 X& bloco_operacional|ALU|somador|resultado_soma [4] $end
+$var wire 1 Y& bloco_operacional|ALU|somador|resultado_soma [3] $end
+$var wire 1 Z& bloco_operacional|ALU|somador|resultado_soma [2] $end
+$var wire 1 [& bloco_operacional|ALU|somador|resultado_soma [1] $end
+$var wire 1 \& bloco_operacional|ALU|somador|resultado_soma [0] $end
+$var wire 1 ]& bloco_operacional|ALU|subtrator|resultsubt [15] $end
+$var wire 1 ^& bloco_operacional|ALU|subtrator|resultsubt [14] $end
+$var wire 1 _& bloco_operacional|ALU|subtrator|resultsubt [13] $end
+$var wire 1 `& bloco_operacional|ALU|subtrator|resultsubt [12] $end
+$var wire 1 a& bloco_operacional|ALU|subtrator|resultsubt [11] $end
+$var wire 1 b& bloco_operacional|ALU|subtrator|resultsubt [10] $end
+$var wire 1 c& bloco_operacional|ALU|subtrator|resultsubt [9] $end
+$var wire 1 d& bloco_operacional|ALU|subtrator|resultsubt [8] $end
+$var wire 1 e& bloco_operacional|ALU|subtrator|resultsubt [7] $end
+$var wire 1 f& bloco_operacional|ALU|subtrator|resultsubt [6] $end
+$var wire 1 g& bloco_operacional|ALU|subtrator|resultsubt [5] $end
+$var wire 1 h& bloco_operacional|ALU|subtrator|resultsubt [4] $end
+$var wire 1 i& bloco_operacional|ALU|subtrator|resultsubt [3] $end
+$var wire 1 j& bloco_operacional|ALU|subtrator|resultsubt [2] $end
+$var wire 1 k& bloco_operacional|ALU|subtrator|resultsubt [1] $end
+$var wire 1 l& bloco_operacional|ALU|subtrator|resultsubt [0] $end
+$var wire 1 m& memoria_de_dados|dado_de_saida [15] $end
+$var wire 1 n& memoria_de_dados|dado_de_saida [14] $end
+$var wire 1 o& memoria_de_dados|dado_de_saida [13] $end
+$var wire 1 p& memoria_de_dados|dado_de_saida [12] $end
+$var wire 1 q& memoria_de_dados|dado_de_saida [11] $end
+$var wire 1 r& memoria_de_dados|dado_de_saida [10] $end
+$var wire 1 s& memoria_de_dados|dado_de_saida [9] $end
+$var wire 1 t& memoria_de_dados|dado_de_saida [8] $end
+$var wire 1 u& memoria_de_dados|dado_de_saida [7] $end
+$var wire 1 v& memoria_de_dados|dado_de_saida [6] $end
+$var wire 1 w& memoria_de_dados|dado_de_saida [5] $end
+$var wire 1 x& memoria_de_dados|dado_de_saida [4] $end
+$var wire 1 y& memoria_de_dados|dado_de_saida [3] $end
+$var wire 1 z& memoria_de_dados|dado_de_saida [2] $end
+$var wire 1 {& memoria_de_dados|dado_de_saida [1] $end
+$var wire 1 |& memoria_de_dados|dado_de_saida [0] $end
+$var wire 1 }& memoria_de_instrucoes|saida_da_memoria [15] $end
+$var wire 1 ~& memoria_de_instrucoes|saida_da_memoria [14] $end
+$var wire 1 !' memoria_de_instrucoes|saida_da_memoria [13] $end
+$var wire 1 "' memoria_de_instrucoes|saida_da_memoria [12] $end
+$var wire 1 #' memoria_de_instrucoes|saida_da_memoria [11] $end
+$var wire 1 $' memoria_de_instrucoes|saida_da_memoria [10] $end
+$var wire 1 %' memoria_de_instrucoes|saida_da_memoria [9] $end
+$var wire 1 &' memoria_de_instrucoes|saida_da_memoria [8] $end
+$var wire 1 '' memoria_de_instrucoes|saida_da_memoria [7] $end
+$var wire 1 (' memoria_de_instrucoes|saida_da_memoria [6] $end
+$var wire 1 )' memoria_de_instrucoes|saida_da_memoria [5] $end
+$var wire 1 *' memoria_de_instrucoes|saida_da_memoria [4] $end
+$var wire 1 +' memoria_de_instrucoes|saida_da_memoria [3] $end
+$var wire 1 ,' memoria_de_instrucoes|saida_da_memoria [2] $end
+$var wire 1 -' memoria_de_instrucoes|saida_da_memoria [1] $end
+$var wire 1 .' memoria_de_instrucoes|saida_da_memoria [0] $end
+$var wire 1 /' memoria_de_dados|memoria_rtl_0_bypass [0] $end
+$var wire 1 0' memoria_de_dados|memoria_rtl_0_bypass [1] $end
+$var wire 1 1' memoria_de_dados|memoria_rtl_0_bypass [2] $end
+$var wire 1 2' memoria_de_dados|memoria_rtl_0_bypass [3] $end
+$var wire 1 3' memoria_de_dados|memoria_rtl_0_bypass [4] $end
+$var wire 1 4' memoria_de_dados|memoria_rtl_0_bypass [5] $end
+$var wire 1 5' memoria_de_dados|memoria_rtl_0_bypass [6] $end
+$var wire 1 6' memoria_de_dados|memoria_rtl_0_bypass [7] $end
+$var wire 1 7' memoria_de_dados|memoria_rtl_0_bypass [8] $end
+$var wire 1 8' memoria_de_dados|memoria_rtl_0_bypass [9] $end
+$var wire 1 9' memoria_de_dados|memoria_rtl_0_bypass [10] $end
+$var wire 1 :' memoria_de_dados|memoria_rtl_0_bypass [11] $end
+$var wire 1 ;' memoria_de_dados|memoria_rtl_0_bypass [12] $end
+$var wire 1 <' memoria_de_dados|memoria_rtl_0_bypass [13] $end
+$var wire 1 =' memoria_de_dados|memoria_rtl_0_bypass [14] $end
+$var wire 1 >' memoria_de_dados|memoria_rtl_0_bypass [15] $end
+$var wire 1 ?' memoria_de_dados|memoria_rtl_0_bypass [16] $end
+$var wire 1 @' memoria_de_dados|memoria_rtl_0_bypass [17] $end
+$var wire 1 A' memoria_de_dados|memoria_rtl_0_bypass [18] $end
+$var wire 1 B' memoria_de_dados|memoria_rtl_0_bypass [19] $end
+$var wire 1 C' memoria_de_dados|memoria_rtl_0_bypass [20] $end
+$var wire 1 D' memoria_de_dados|memoria_rtl_0_bypass [21] $end
+$var wire 1 E' memoria_de_dados|memoria_rtl_0_bypass [22] $end
+$var wire 1 F' memoria_de_dados|memoria_rtl_0_bypass [23] $end
+$var wire 1 G' memoria_de_dados|memoria_rtl_0_bypass [24] $end
+$var wire 1 H' memoria_de_dados|memoria_rtl_0_bypass [25] $end
+$var wire 1 I' memoria_de_dados|memoria_rtl_0_bypass [26] $end
+$var wire 1 J' memoria_de_dados|memoria_rtl_0_bypass [27] $end
+$var wire 1 K' memoria_de_dados|memoria_rtl_0_bypass [28] $end
+$var wire 1 L' memoria_de_dados|memoria_rtl_0_bypass [29] $end
+$var wire 1 M' memoria_de_dados|memoria_rtl_0_bypass [30] $end
+$var wire 1 N' memoria_de_dados|memoria_rtl_0_bypass [31] $end
+$var wire 1 O' memoria_de_dados|memoria_rtl_0_bypass [32] $end
+$var wire 1 P' memoria_de_dados|memoria_rtl_0_bypass [33] $end
+$var wire 1 Q' memoria_de_dados|memoria_rtl_0_bypass [34] $end
+$var wire 1 R' memoria_de_dados|memoria_rtl_0_bypass [35] $end
+$var wire 1 S' memoria_de_dados|memoria_rtl_0_bypass [36] $end
+$var wire 1 T' memoria_de_dados|memoria_rtl_0_bypass [37] $end
+$var wire 1 U' memoria_de_dados|memoria_rtl_0_bypass [38] $end
+$var wire 1 V' memoria_de_dados|memoria_rtl_0_bypass [39] $end
+$var wire 1 W' memoria_de_dados|memoria_rtl_0_bypass [40] $end
+$var wire 1 X' memoria_de_dados|memoria_rtl_0_bypass [41] $end
+$var wire 1 Y' memoria_de_dados|memoria_rtl_0_bypass [42] $end
+$var wire 1 Z' unidade_de_controle|registrador_de_instrucao|registrador|memoria [15] $end
+$var wire 1 [' unidade_de_controle|registrador_de_instrucao|registrador|memoria [14] $end
+$var wire 1 \' unidade_de_controle|registrador_de_instrucao|registrador|memoria [13] $end
+$var wire 1 ]' unidade_de_controle|registrador_de_instrucao|registrador|memoria [12] $end
+$var wire 1 ^' unidade_de_controle|registrador_de_instrucao|registrador|memoria [11] $end
+$var wire 1 _' unidade_de_controle|registrador_de_instrucao|registrador|memoria [10] $end
+$var wire 1 `' unidade_de_controle|registrador_de_instrucao|registrador|memoria [9] $end
+$var wire 1 a' unidade_de_controle|registrador_de_instrucao|registrador|memoria [8] $end
+$var wire 1 b' unidade_de_controle|registrador_de_instrucao|registrador|memoria [7] $end
+$var wire 1 c' unidade_de_controle|registrador_de_instrucao|registrador|memoria [6] $end
+$var wire 1 d' unidade_de_controle|registrador_de_instrucao|registrador|memoria [5] $end
+$var wire 1 e' unidade_de_controle|registrador_de_instrucao|registrador|memoria [4] $end
+$var wire 1 f' unidade_de_controle|registrador_de_instrucao|registrador|memoria [3] $end
+$var wire 1 g' unidade_de_controle|registrador_de_instrucao|registrador|memoria [2] $end
+$var wire 1 h' unidade_de_controle|registrador_de_instrucao|registrador|memoria [1] $end
+$var wire 1 i' unidade_de_controle|registrador_de_instrucao|registrador|memoria [0] $end
+$var wire 1 j' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [15] $end
+$var wire 1 k' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [14] $end
+$var wire 1 l' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [13] $end
+$var wire 1 m' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [12] $end
+$var wire 1 n' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [11] $end
+$var wire 1 o' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [10] $end
+$var wire 1 p' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [9] $end
+$var wire 1 q' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [8] $end
+$var wire 1 r' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [7] $end
+$var wire 1 s' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [6] $end
+$var wire 1 t' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [5] $end
+$var wire 1 u' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [4] $end
+$var wire 1 v' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [3] $end
+$var wire 1 w' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [2] $end
+$var wire 1 x' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [1] $end
+$var wire 1 y' bloco_operacional|banco|gerando_registradores:0:registrador|memoria [0] $end
+$var wire 1 z' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [15] $end
+$var wire 1 {' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [14] $end
+$var wire 1 |' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [13] $end
+$var wire 1 }' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [12] $end
+$var wire 1 ~' bloco_operacional|banco|gerando_registradores:1:registrador|memoria [11] $end
+$var wire 1 !( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [10] $end
+$var wire 1 "( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [9] $end
+$var wire 1 #( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [8] $end
+$var wire 1 $( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [7] $end
+$var wire 1 %( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [6] $end
+$var wire 1 &( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [5] $end
+$var wire 1 '( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [4] $end
+$var wire 1 (( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [3] $end
+$var wire 1 )( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [2] $end
+$var wire 1 *( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [1] $end
+$var wire 1 +( bloco_operacional|banco|gerando_registradores:1:registrador|memoria [0] $end
+$var wire 1 ,( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [15] $end
+$var wire 1 -( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [14] $end
+$var wire 1 .( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [13] $end
+$var wire 1 /( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [12] $end
+$var wire 1 0( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [11] $end
+$var wire 1 1( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [10] $end
+$var wire 1 2( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [9] $end
+$var wire 1 3( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [8] $end
+$var wire 1 4( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [7] $end
+$var wire 1 5( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [6] $end
+$var wire 1 6( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [5] $end
+$var wire 1 7( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [4] $end
+$var wire 1 8( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [3] $end
+$var wire 1 9( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [2] $end
+$var wire 1 :( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [1] $end
+$var wire 1 ;( bloco_operacional|banco|gerando_registradores:2:registrador|memoria [0] $end
+$var wire 1 <( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [15] $end
+$var wire 1 =( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [14] $end
+$var wire 1 >( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [13] $end
+$var wire 1 ?( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [12] $end
+$var wire 1 @( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [11] $end
+$var wire 1 A( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [10] $end
+$var wire 1 B( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [9] $end
+$var wire 1 C( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [8] $end
+$var wire 1 D( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [7] $end
+$var wire 1 E( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [6] $end
+$var wire 1 F( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [5] $end
+$var wire 1 G( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [4] $end
+$var wire 1 H( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [3] $end
+$var wire 1 I( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [2] $end
+$var wire 1 J( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [1] $end
+$var wire 1 K( bloco_operacional|banco|gerando_registradores:3:registrador|memoria [0] $end
+$var wire 1 L( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [15] $end
+$var wire 1 M( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [14] $end
+$var wire 1 N( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [13] $end
+$var wire 1 O( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [12] $end
+$var wire 1 P( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [11] $end
+$var wire 1 Q( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [10] $end
+$var wire 1 R( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [9] $end
+$var wire 1 S( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [8] $end
+$var wire 1 T( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [7] $end
+$var wire 1 U( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [6] $end
+$var wire 1 V( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [5] $end
+$var wire 1 W( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [4] $end
+$var wire 1 X( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [3] $end
+$var wire 1 Y( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [2] $end
+$var wire 1 Z( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [1] $end
+$var wire 1 [( bloco_operacional|banco|gerando_registradores:4:registrador|memoria [0] $end
+$var wire 1 \( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [15] $end
+$var wire 1 ]( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [14] $end
+$var wire 1 ^( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [13] $end
+$var wire 1 _( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [12] $end
+$var wire 1 `( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [11] $end
+$var wire 1 a( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [10] $end
+$var wire 1 b( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [9] $end
+$var wire 1 c( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [8] $end
+$var wire 1 d( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [7] $end
+$var wire 1 e( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [6] $end
+$var wire 1 f( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [5] $end
+$var wire 1 g( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [4] $end
+$var wire 1 h( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [3] $end
+$var wire 1 i( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [2] $end
+$var wire 1 j( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [1] $end
+$var wire 1 k( bloco_operacional|banco|gerando_registradores:5:registrador|memoria [0] $end
+$var wire 1 l( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [15] $end
+$var wire 1 m( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [14] $end
+$var wire 1 n( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [13] $end
+$var wire 1 o( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [12] $end
+$var wire 1 p( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [11] $end
+$var wire 1 q( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [10] $end
+$var wire 1 r( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [9] $end
+$var wire 1 s( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [8] $end
+$var wire 1 t( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [7] $end
+$var wire 1 u( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [6] $end
+$var wire 1 v( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [5] $end
+$var wire 1 w( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [4] $end
+$var wire 1 x( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [3] $end
+$var wire 1 y( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [2] $end
+$var wire 1 z( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [1] $end
+$var wire 1 {( bloco_operacional|banco|gerando_registradores:6:registrador|memoria [0] $end
+$var wire 1 |( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [15] $end
+$var wire 1 }( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [14] $end
+$var wire 1 ~( bloco_operacional|banco|gerando_registradores:7:registrador|memoria [13] $end
+$var wire 1 !) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [12] $end
+$var wire 1 ") bloco_operacional|banco|gerando_registradores:7:registrador|memoria [11] $end
+$var wire 1 #) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [10] $end
+$var wire 1 $) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [9] $end
+$var wire 1 %) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [8] $end
+$var wire 1 &) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [7] $end
+$var wire 1 ') bloco_operacional|banco|gerando_registradores:7:registrador|memoria [6] $end
+$var wire 1 () bloco_operacional|banco|gerando_registradores:7:registrador|memoria [5] $end
+$var wire 1 )) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [4] $end
+$var wire 1 *) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [3] $end
+$var wire 1 +) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [2] $end
+$var wire 1 ,) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [1] $end
+$var wire 1 -) bloco_operacional|banco|gerando_registradores:7:registrador|memoria [0] $end
+$var wire 1 .) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [15] $end
+$var wire 1 /) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [14] $end
+$var wire 1 0) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [13] $end
+$var wire 1 1) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [12] $end
+$var wire 1 2) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [11] $end
+$var wire 1 3) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [10] $end
+$var wire 1 4) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [9] $end
+$var wire 1 5) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [8] $end
+$var wire 1 6) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [7] $end
+$var wire 1 7) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [6] $end
+$var wire 1 8) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [5] $end
+$var wire 1 9) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [4] $end
+$var wire 1 :) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [3] $end
+$var wire 1 ;) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [2] $end
+$var wire 1 <) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [1] $end
+$var wire 1 =) bloco_operacional|banco|gerando_registradores:8:registrador|memoria [0] $end
+$var wire 1 >) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [15] $end
+$var wire 1 ?) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [14] $end
+$var wire 1 @) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [13] $end
+$var wire 1 A) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [12] $end
+$var wire 1 B) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [11] $end
+$var wire 1 C) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [10] $end
+$var wire 1 D) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [9] $end
+$var wire 1 E) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [8] $end
+$var wire 1 F) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [7] $end
+$var wire 1 G) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [6] $end
+$var wire 1 H) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [5] $end
+$var wire 1 I) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [4] $end
+$var wire 1 J) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [3] $end
+$var wire 1 K) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [2] $end
+$var wire 1 L) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [1] $end
+$var wire 1 M) bloco_operacional|banco|gerando_registradores:9:registrador|memoria [0] $end
+$var wire 1 N) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [15] $end
+$var wire 1 O) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [14] $end
+$var wire 1 P) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [13] $end
+$var wire 1 Q) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [12] $end
+$var wire 1 R) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [11] $end
+$var wire 1 S) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [10] $end
+$var wire 1 T) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [9] $end
+$var wire 1 U) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [8] $end
+$var wire 1 V) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [7] $end
+$var wire 1 W) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [6] $end
+$var wire 1 X) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [5] $end
+$var wire 1 Y) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [4] $end
+$var wire 1 Z) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [3] $end
+$var wire 1 [) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [2] $end
+$var wire 1 \) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [1] $end
+$var wire 1 ]) bloco_operacional|banco|gerando_registradores:10:registrador|memoria [0] $end
+$var wire 1 ^) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [15] $end
+$var wire 1 _) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [14] $end
+$var wire 1 `) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [13] $end
+$var wire 1 a) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [12] $end
+$var wire 1 b) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [11] $end
+$var wire 1 c) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [10] $end
+$var wire 1 d) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [9] $end
+$var wire 1 e) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [8] $end
+$var wire 1 f) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [7] $end
+$var wire 1 g) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [6] $end
+$var wire 1 h) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [5] $end
+$var wire 1 i) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [4] $end
+$var wire 1 j) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [3] $end
+$var wire 1 k) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [2] $end
+$var wire 1 l) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [1] $end
+$var wire 1 m) bloco_operacional|banco|gerando_registradores:11:registrador|memoria [0] $end
+$var wire 1 n) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [15] $end
+$var wire 1 o) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [14] $end
+$var wire 1 p) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [13] $end
+$var wire 1 q) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [12] $end
+$var wire 1 r) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [11] $end
+$var wire 1 s) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [10] $end
+$var wire 1 t) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [9] $end
+$var wire 1 u) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [8] $end
+$var wire 1 v) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [7] $end
+$var wire 1 w) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [6] $end
+$var wire 1 x) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [5] $end
+$var wire 1 y) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [4] $end
+$var wire 1 z) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [3] $end
+$var wire 1 {) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [2] $end
+$var wire 1 |) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [1] $end
+$var wire 1 }) bloco_operacional|banco|gerando_registradores:12:registrador|memoria [0] $end
+$var wire 1 ~) bloco_operacional|banco|gerando_registradores:13:registrador|memoria [15] $end
+$var wire 1 !* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [14] $end
+$var wire 1 "* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [13] $end
+$var wire 1 #* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [12] $end
+$var wire 1 $* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [11] $end
+$var wire 1 %* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [10] $end
+$var wire 1 &* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [9] $end
+$var wire 1 '* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [8] $end
+$var wire 1 (* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [7] $end
+$var wire 1 )* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [6] $end
+$var wire 1 ** bloco_operacional|banco|gerando_registradores:13:registrador|memoria [5] $end
+$var wire 1 +* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [4] $end
+$var wire 1 ,* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [3] $end
+$var wire 1 -* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [2] $end
+$var wire 1 .* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [1] $end
+$var wire 1 /* bloco_operacional|banco|gerando_registradores:13:registrador|memoria [0] $end
+$var wire 1 0* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [15] $end
+$var wire 1 1* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [14] $end
+$var wire 1 2* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [13] $end
+$var wire 1 3* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [12] $end
+$var wire 1 4* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [11] $end
+$var wire 1 5* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [10] $end
+$var wire 1 6* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [9] $end
+$var wire 1 7* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [8] $end
+$var wire 1 8* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [7] $end
+$var wire 1 9* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [6] $end
+$var wire 1 :* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [5] $end
+$var wire 1 ;* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [4] $end
+$var wire 1 <* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [3] $end
+$var wire 1 =* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [2] $end
+$var wire 1 >* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [1] $end
+$var wire 1 ?* bloco_operacional|banco|gerando_registradores:14:registrador|memoria [0] $end
+$var wire 1 @* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [15] $end
+$var wire 1 A* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [14] $end
+$var wire 1 B* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [13] $end
+$var wire 1 C* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [12] $end
+$var wire 1 D* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [11] $end
+$var wire 1 E* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [10] $end
+$var wire 1 F* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [9] $end
+$var wire 1 G* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [8] $end
+$var wire 1 H* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [7] $end
+$var wire 1 I* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [6] $end
+$var wire 1 J* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [5] $end
+$var wire 1 K* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [4] $end
+$var wire 1 L* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [3] $end
+$var wire 1 M* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [2] $end
+$var wire 1 N* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [1] $end
+$var wire 1 O* bloco_operacional|banco|gerando_registradores:15:registrador|memoria [0] $end
+$var wire 1 P* unidade_de_controle|contador_de_programa|registrador|memoria [15] $end
+$var wire 1 Q* unidade_de_controle|contador_de_programa|registrador|memoria [14] $end
+$var wire 1 R* unidade_de_controle|contador_de_programa|registrador|memoria [13] $end
+$var wire 1 S* unidade_de_controle|contador_de_programa|registrador|memoria [12] $end
+$var wire 1 T* unidade_de_controle|contador_de_programa|registrador|memoria [11] $end
+$var wire 1 U* unidade_de_controle|contador_de_programa|registrador|memoria [10] $end
+$var wire 1 V* unidade_de_controle|contador_de_programa|registrador|memoria [9] $end
+$var wire 1 W* unidade_de_controle|contador_de_programa|registrador|memoria [8] $end
+$var wire 1 X* unidade_de_controle|contador_de_programa|registrador|memoria [7] $end
+$var wire 1 Y* unidade_de_controle|contador_de_programa|registrador|memoria [6] $end
+$var wire 1 Z* unidade_de_controle|contador_de_programa|registrador|memoria [5] $end
+$var wire 1 [* unidade_de_controle|contador_de_programa|registrador|memoria [4] $end
+$var wire 1 \* unidade_de_controle|contador_de_programa|registrador|memoria [3] $end
+$var wire 1 ]* unidade_de_controle|contador_de_programa|registrador|memoria [2] $end
+$var wire 1 ^* unidade_de_controle|contador_de_programa|registrador|memoria [1] $end
+$var wire 1 _* unidade_de_controle|contador_de_programa|registrador|memoria [0] $end
+$var wire 1 `* unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual [2] $end
+$var wire 1 a* unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual [1] $end
+$var wire 1 b* unidade_de_controle|bloco_de_controle|maquina_de_estados|estado_atual [0] $end
+$var wire 1 c* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [15] $end
+$var wire 1 d* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [14] $end
+$var wire 1 e* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [13] $end
+$var wire 1 f* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [12] $end
+$var wire 1 g* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [11] $end
+$var wire 1 h* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [10] $end
+$var wire 1 i* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [9] $end
+$var wire 1 j* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [8] $end
+$var wire 1 k* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [7] $end
+$var wire 1 l* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [6] $end
+$var wire 1 m* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [5] $end
+$var wire 1 n* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [4] $end
+$var wire 1 o* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [3] $end
+$var wire 1 p* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [2] $end
+$var wire 1 q* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [1] $end
+$var wire 1 r* memoria_de_dados|memoria_rtl_0|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
 0!
-1/&
-00&
-11&
-02&
-13&
-04&
-05&
-06&
-17&
-08&
-09&
-0:&
-1;&
-1<&
-0=&
-0>&
-1?&
-0@&
-0A&
-0B&
-0C&
-0D&
-0E&
-1F&
-zV&
-0U&
-zT&
-zS&
-zR&
-zQ&
-zP&
-zO&
-zN&
-zM&
-zL&
-zK&
-zJ&
-zI&
-zH&
-zG&
-zf&
-ze&
-zd&
-zc&
-xb&
-za&
-z`&
-z_&
-z^&
-x]&
-x\&
-z[&
-zZ&
-xY&
-xX&
-zW&
-0v&
-0u&
-0t&
-0s&
-0r&
-0q&
-0p&
-0o&
-0n&
-0m&
-0l&
-0k&
-0j&
-0i&
-0h&
-0g&
-0('
-0''
-0&'
-z%'
-0$'
-0#'
-z"'
-z!'
-0~&
-0}&
-0|&
-0{&
-0z&
-0y&
-0x&
-zw&
-zS'
-0R'
-zQ'
-0P'
-zO'
-0N'
-zM'
-0L'
-zK'
-0J'
-zI'
-0H'
-zG'
-0F'
-zE'
-0D'
-zC'
-0B'
-zA'
-0@'
-z?'
-0>'
-z='
-0<'
-z;'
-0:'
-z9'
-08'
-z7'
-06'
-05'
-04'
-z3'
-02'
-z1'
-z0'
-z/'
-0.'
-z-'
-0,'
-z+'
-0*'
-0)'
-0c'
-0b'
-0a'
-z`'
-0_'
-0^'
-z]'
-z\'
-0['
-0Z'
-0Y'
-0X'
-0W'
-0V'
-0U'
-zT'
-0s'
-0r'
-0q'
-0p'
-0o'
-0n'
-0m'
-0l'
-0k'
-0j'
-0i'
-0h'
-0g'
-0f'
-0e'
-0d'
-0%(
-0$(
-0#(
-0"(
-0!(
-0~'
-0}'
-0|'
-0{'
-0z'
-0y'
-0x'
-0w'
-0v'
-0u'
-0t'
-05(
-04(
-03(
-02(
-01(
-00(
-0/(
-0.(
-0-(
-0,(
-0+(
-0*(
-0)(
-0((
-0'(
-0&(
-0E(
-0D(
-0C(
-0B(
-0A(
-0@(
-0?(
-0>(
-0=(
-0<(
-0;(
-0:(
-09(
-08(
-07(
-06(
-0U(
-0T(
-0S(
-0R(
-0Q(
-0P(
-0O(
-0N(
-0M(
-0L(
-0K(
-0J(
-0I(
-0H(
-0G(
-0F(
-0e(
-0d(
-0c(
-0b(
-0a(
-0`(
-0_(
-0^(
-0](
-0\(
-0[(
-0Z(
-0Y(
-0X(
-0W(
-0V(
-0u(
-0t(
-0s(
-0r(
-0q(
-0p(
-0o(
-0n(
-0m(
-0l(
-0k(
-0j(
-0i(
-0h(
-0g(
-0f(
-0')
-0&)
-0%)
-0$)
-0#)
-0")
-0!)
-0~(
-0}(
-0|(
-0{(
-0z(
-0y(
-0x(
-0w(
-0v(
-07)
-06)
-05)
-04)
-03)
-02)
-01)
-00)
-0/)
-0.)
-0-)
-0,)
-0+)
-0*)
-0))
-0()
-0G)
-0F)
-0E)
-0D)
-0C)
-0B)
-0A)
-0@)
-0?)
-0>)
-0=)
-0<)
-0;)
-0:)
-09)
-08)
-0W)
-0V)
-0U)
-0T)
-0S)
-0R)
-0Q)
-0P)
-0O)
-0N)
-0M)
-0L)
-0K)
-0J)
-0I)
-0H)
-0g)
-0f)
-0e)
-0d)
-0c)
-0b)
-0a)
-0`)
-0_)
-0^)
-0])
-0\)
-0[)
-0Z)
-0Y)
-0X)
-0w)
-0v)
-0u)
-0t)
-0s)
-0r)
-0q)
-0p)
-0o)
-0n)
-0m)
-0l)
-0k)
-0j)
-0i)
-0h)
-0)*
-0(*
-0'*
-0&*
-0%*
-0$*
-0#*
-0"*
-0!*
-0~)
-0})
-0|)
-0{)
-0z)
-0y)
-0x)
-09*
-08*
-07*
-06*
-05*
-04*
-03*
-02*
-01*
-00*
-0/*
-0.*
-0-*
-0,*
-0+*
-0**
-0I*
-0H*
-0G*
-0F*
-0E*
-0D*
-0C*
-0B*
-0A*
-0@*
-0?*
-0>*
-0=*
-0<*
-0;*
-0:*
-0Y*
-0X*
-0W*
-0V*
-zU*
-zT*
-zS*
-zR*
-zQ*
-zP*
-zO*
-zN*
-zM*
-zL*
-zK*
-zJ*
-0\*
-0[*
-0Z*
-0l*
-0k*
-0j*
-0i*
-0h*
-0g*
-0f*
-0e*
-0d*
-0c*
-0b*
-0a*
-0`*
-0_*
-0^*
-0]*
-0$
 0#
 0"
-1%
-05
-04
-03
-02
-01
-00
-0/
-0.
-0-
-0,
+1$
 0+
 0*
 0)
 0(
 0'
 0&
-0E
-0D
-0C
-0B
-0A
+1%
+02
+01
+00
+0/
+0.
+0-
+1,
+09
+08
+07
+06
+05
+04
+13
 0@
 0?
 0>
 0=
 0<
 0;
-0:
-09
-08
-07
-06
-1F
-0V
-0U
-0T
-0S
-0R
-0Q
-0P
-0O
+1:
+0G
+0F
+0E
+0D
+0C
+0B
+1A
 0N
 0M
 0L
 0K
 0J
 0I
-0H
-0G
-0f
-0e
-0d
-0c
-0b
-0a
-0`
-0_
-0^
-0]
+1H
+0U
+0T
+0S
+0R
+0Q
+0P
+1O
 0\
 0[
 0Z
 0Y
 0X
 0W
-xg
+1V
+x]
+0^
+1_
+x`
+1a
+1b
+1c
+0d
+0e
+0f
+0g
 0h
-1i
-xj
-1k
+0i
+0j
+0k
 1l
-1m
+0m
 0n
 0o
 0p
@@ -1561,7 +1129,7 @@ xj
 0w
 0x
 0y
-0z
+1z
 0{
 0|
 0}
@@ -1575,11 +1143,11 @@ xj
 0'!
 0(!
 0)!
-1*!
+0*!
 0+!
 0,!
 0-!
-1.!
+0.!
 0/!
 00!
 01!
@@ -1598,11 +1166,11 @@ xj
 0>!
 0?!
 0@!
-0A!
-0B!
-0C!
+1A!
+1B!
+1C!
 0D!
-0E!
+1E!
 0F!
 0G!
 0H!
@@ -1613,42 +1181,42 @@ xj
 0M!
 0N!
 0O!
-1P!
+0P!
 0Q!
 0R!
-1S!
-1T!
-1U!
-1V!
+0S!
+0T!
+0U!
+0V!
 0W!
 0X!
-0Y!
-1Z!
+1Y!
+0Z!
 0[!
-0\!
+1\!
 0]!
 0^!
 0_!
 0`!
 1a!
-1b!
+0b!
 1c!
 0d!
 0e!
-0f!
+1f!
 0g!
 0h!
-1i!
+0i!
 0j!
 0k!
 0l!
-1m!
+0m!
 0n!
 0o!
 0p!
 0q!
 0r!
-1s!
+0s!
 0t!
 0u!
 0v!
@@ -1656,7 +1224,7 @@ xj
 0x!
 0y!
 1z!
-1{!
+0{!
 0|!
 0}!
 0~!
@@ -1668,7 +1236,7 @@ xj
 0&"
 0'"
 0("
-x)"
+0)"
 0*"
 0+"
 0,"
@@ -1683,27 +1251,27 @@ x)"
 05"
 06"
 07"
-08"
+18"
 09"
 0:"
 0;"
 0<"
 0="
-0>"
+1>"
 0?"
-0@"
+x@"
 0A"
 0B"
 0C"
-0D"
+1D"
 0E"
 0F"
-0G"
-0H"
+1G"
+1H"
 0I"
 0J"
 0K"
-0L"
+xL"
 0M"
 0N"
 0O"
@@ -1722,28 +1290,28 @@ x)"
 0\"
 0]"
 0^"
-x_"
-x`"
-xa"
+0_"
+0`"
+0a"
 0b"
 0c"
 0d"
-0e"
+xe"
 0f"
 0g"
 0h"
 0i"
-0j"
+1j"
 0k"
 0l"
-0m"
-0n"
+1m"
+xn"
 0o"
 0p"
 0q"
 0r"
 0s"
-xt"
+0t"
 0u"
 0v"
 0w"
@@ -1765,13 +1333,13 @@ xt"
 0)#
 0*#
 0+#
-0,#
-0-#
+x,#
+x-#
 0.#
 0/#
 00#
-11#
-x2#
+01#
+02#
 03#
 04#
 05#
@@ -1794,11 +1362,11 @@ x2#
 0F#
 0G#
 0H#
-xI#
+0I#
 0J#
 0K#
 0L#
-0M#
+xM#
 0N#
 0O#
 0P#
@@ -1819,7 +1387,7 @@ xI#
 0_#
 0`#
 0a#
-xb#
+0b#
 0c#
 0d#
 0e#
@@ -1833,10 +1401,10 @@ xb#
 0m#
 0n#
 0o#
-0p#
-0q#
+1p#
+xq#
 0r#
-0s#
+xs#
 0t#
 0u#
 0v#
@@ -1848,7 +1416,7 @@ xb#
 0|#
 0}#
 0~#
-x!$
+0!$
 0"$
 0#$
 0$$
@@ -1868,8 +1436,8 @@ x!$
 02$
 03$
 04$
-15$
-x6$
+05$
+06$
 07$
 08$
 09$
@@ -1892,7 +1460,7 @@ x6$
 0J$
 0K$
 0L$
-0M$
+xM$
 0N$
 0O$
 0P$
@@ -1926,13 +1494,13 @@ x6$
 0l$
 0m$
 0n$
-xo$
+0o$
 0p$
 0q$
 0r$
-0s$
-0t$
-0u$
+1s$
+xt$
+xu$
 0v$
 0w$
 0x$
@@ -1948,8 +1516,8 @@ xo$
 0$%
 0%%
 0&%
-1'%
-x(%
+0'%
+0(%
 0)%
 0*%
 0+%
@@ -1965,9 +1533,9 @@ x(%
 05%
 06%
 07%
-08%
+x8%
 09%
-0:%
+x:%
 0;%
 0<%
 0=%
@@ -1988,15 +1556,15 @@ x(%
 0L%
 0M%
 0N%
-0O%
-0P%
+1O%
+xP%
 0Q%
 0R%
 0S%
 0T%
 0U%
 0V%
-0W%
+xW%
 0X%
 0Y%
 0Z%
@@ -2011,25 +1579,25 @@ x(%
 0c%
 0d%
 0e%
-xf%
+0f%
 0g%
 0h%
 0i%
-0j%
-0k%
-0l%
-0m%
+1j%
+1k%
+1l%
+1m%
 0n%
-0o%
+1o%
 0p%
 0q%
-0r%
+1r%
 0s%
 0t%
-0u%
-0v%
+1u%
+1v%
 0w%
-xx%
+1x%
 0y%
 0z%
 0{%
@@ -2047,224 +1615,2166 @@ xx%
 0)&
 0*&
 0+&
-1,&
-1-&
-1.&
+0,&
+0-&
+0.&
+0/&
+00&
+01&
+02&
+03&
+04&
+05&
+06&
+07&
+08&
+09&
+0:&
+0;&
+0<&
+0=&
+1>&
+0?&
+0@&
+0A&
+0B&
+0C&
+0D&
+0E&
+0F&
+0G&
+0H&
+0I&
+0J&
+1K&
+0L&
+z\&
+0[&
+zZ&
+zY&
+zX&
+0W&
+zV&
+0U&
+zT&
+0S&
+zR&
+0Q&
+zP&
+zO&
+zN&
+0M&
+zl&
+zk&
+zj&
+zi&
+zh&
+zg&
+zf&
+ze&
+zd&
+xc&
+zb&
+za&
+x`&
+z_&
+z^&
+z]&
+0|&
+0{&
+0z&
+0y&
+0x&
+0w&
+0v&
+0u&
+0t&
+0s&
+0r&
+0q&
+0p&
+0o&
+0n&
+0m&
+0.'
+0-'
+0,'
+z+'
+0*'
+z)'
+z('
+z''
+0&'
+0%'
+0$'
+0#'
+0"'
+0!'
+0~&
+z}&
+zY'
+0X'
+zW'
+0V'
+zU'
+0T'
+zS'
+0R'
+zQ'
+0P'
+zO'
+0N'
+zM'
+0L'
+zK'
+0J'
+zI'
+0H'
+zG'
+0F'
+zE'
+0D'
+zC'
+0B'
+0A'
+0@'
+z?'
+0>'
+z='
+0<'
+z;'
+0:'
+z9'
+08'
+z7'
+z6'
+z5'
+04'
+z3'
+02'
+z1'
+00'
+0/'
+0i'
+0h'
+0g'
+zf'
+0e'
+zd'
+zc'
+zb'
+0a'
+0`'
+0_'
+0^'
+0]'
+0\'
+0['
+zZ'
+0y'
+0x'
+0w'
+0v'
+0u'
+0t'
+0s'
+0r'
+0q'
+0p'
+0o'
+0n'
+0m'
+0l'
+0k'
+0j'
+0+(
+0*(
+0)(
+0((
+0'(
+0&(
+0%(
+0$(
+0#(
+0"(
+0!(
+0~'
+0}'
+0|'
+0{'
+0z'
+0;(
+0:(
+09(
+08(
+07(
+06(
+05(
+04(
+03(
+02(
+01(
+00(
+0/(
+0.(
+0-(
+0,(
+0K(
+0J(
+0I(
+0H(
+0G(
+0F(
+0E(
+0D(
+0C(
+0B(
+0A(
+0@(
+0?(
+0>(
+0=(
+0<(
+0[(
+0Z(
+0Y(
+0X(
+0W(
+0V(
+0U(
+0T(
+0S(
+0R(
+0Q(
+0P(
+0O(
+0N(
+0M(
+0L(
+0k(
+0j(
+0i(
+0h(
+0g(
+0f(
+0e(
+0d(
+0c(
+0b(
+0a(
+0`(
+0_(
+0^(
+0](
+0\(
+0{(
+0z(
+0y(
+0x(
+0w(
+0v(
+0u(
+0t(
+0s(
+0r(
+0q(
+0p(
+0o(
+0n(
+0m(
+0l(
+0-)
+0,)
+0+)
+0*)
+0))
+0()
+0')
+0&)
+0%)
+0$)
+0#)
+0")
+0!)
+0~(
+0}(
+0|(
+0=)
+0<)
+0;)
+0:)
+09)
+08)
+07)
+06)
+05)
+04)
+03)
+02)
+01)
+00)
+0/)
+0.)
+0M)
+0L)
+0K)
+0J)
+0I)
+0H)
+0G)
+0F)
+0E)
+0D)
+0C)
+0B)
+0A)
+0@)
+0?)
+0>)
+0])
+0\)
+0[)
+0Z)
+0Y)
+0X)
+0W)
+0V)
+0U)
+0T)
+0S)
+0R)
+0Q)
+0P)
+0O)
+0N)
+0m)
+0l)
+0k)
+0j)
+0i)
+0h)
+0g)
+0f)
+0e)
+0d)
+0c)
+0b)
+0a)
+0`)
+0_)
+0^)
+0})
+0|)
+0{)
+0z)
+0y)
+0x)
+0w)
+0v)
+0u)
+0t)
+0s)
+0r)
+0q)
+0p)
+0o)
+0n)
+0/*
+0.*
+0-*
+0,*
+0+*
+0**
+0)*
+0(*
+0'*
+0&*
+0%*
+0$*
+0#*
+0"*
+0!*
+0~)
+0?*
+0>*
+0=*
+0<*
+0;*
+0:*
+09*
+08*
+07*
+06*
+05*
+04*
+03*
+02*
+01*
+00*
+0O*
+0N*
+0M*
+0L*
+0K*
+0J*
+0I*
+0H*
+0G*
+0F*
+0E*
+0D*
+0C*
+0B*
+0A*
+0@*
+0_*
+0^*
+0]*
+0\*
+z[*
+zZ*
+zY*
+zX*
+zW*
+zV*
+zU*
+zT*
+zS*
+zR*
+zQ*
+zP*
+0b*
+0a*
+0`*
+0r*
+0q*
+0p*
+0o*
+0n*
+0m*
+0l*
+0k*
+0j*
+0i*
+0h*
+0g*
+0f*
+0e*
+0d*
+0c*
 $end
 #20000
 1!
+1L&
+0]
+16"
+17"
+1"
+1#
+1b*
+1A'
+1=&
+1<&
+1;&
+0r%
+1p%
 1e!
-1f!
-0g
-1\*
-15'
-03&
-12&
-01&
-0Z!
-1X!
-0c!
-1$
-1d!
+0E!
+0H"
+15"
+1P
+1Q
+1R
+1U
 #40000
 0!
-0e!
-0f!
-1g
+0L&
+1]
+06"
+07"
+0"
+0#
 #60000
 1!
-1e!
-1f!
-0g
-1''
-1[*
-0\*
-1~&
-1('
-1Y*
-1=&
-11&
-1Z!
-0X!
-0<&
-1n!
-0m!
-0i!
-1_!
-1N!
-0U!
-1t
-1e
+1L&
+0]
+16"
+17"
+1"
 1#
-0$
-1^
-1f
-0d!
-1O!
-1R!
-0V!
-0S!
-0?&
-1:&
-0T!
+1_*
+1a*
+1.'
+1&'
+1-'
+1D&
+1C&
+1B&
+1?&
+0z!
+0f!
+0Y!
+1W!
+1I!
+1s%
+0B!
+1d
+0>&
 0;&
+0p%
+0e!
+1E!
+1{!
+1g!
+1Z!
+1t%
+1`!
+0C!
+05"
+1;
+1<
+1=
+1@
+0O
+0R
+0U
+0a!
+0u%
+1b!
+0x%
+0c!
 #80000
 0!
-0e!
-0f!
-1g
+0L&
+1]
+06"
+07"
+0"
+0#
 #100000
 1!
+1L&
+0]
+16"
+17"
+1"
+1#
+0a*
+1>&
+1;&
+1p%
 1e!
-1f!
-0g
-1\*
-02&
-01&
-10&
-1$
+0E!
+15"
+1O
+1R
+1U
 #120000
 0!
-0e!
-0f!
-1g
+0L&
+1]
+06"
+07"
+0"
+0#
 #140000
 1!
-1e!
-1f!
-0g
-0[*
-0\*
-1Z*
-11&
-00&
-1X!
-1W!
-0#
-0$
+1L&
+0]
+16"
+17"
 1"
+1#
+1^*
+0_*
+1a*
+1i'
+0.'
+1a'
+0&'
+1h'
+0-'
+1,'
+1%'
+1E&
+0C&
+0B&
+1A&
+0?&
+0v%
+0t%
+1z!
+0\!
+1Y!
+1N!
+1D!
+0W!
+0s%
+1B!
+0>&
+0;&
+0p%
+0e!
+1E!
+0G"
+1|!
+0{!
+1"&
+1!&
+1~%
+1{%
+0g!
+1F"
+0Z!
+1X!
+1J!
+1w%
+1e
+1v%
+1t%
+05"
+1;"
+0z
+0<
+0=
+1>
+0@
+0O
+0R
+0U
+1B
+1C
+1D
+1G
+0:
+1x%
+0w%
+1<"
+0>"
+#140001
+1r*
+1q*
+16%
+1(%
+17%
+1)%
 #160000
 0!
-0e!
-0f!
-1g
+0L&
+1]
+06"
+07"
+0"
+0#
 #180000
 1!
-1e!
-1f!
-0g
-1\*
-0Z*
-0Y*
-12&
-01&
-0Z!
-0W!
-1<&
-0n!
-1m!
-1i!
-0_!
-0N!
-1U!
-0t
-1$
-0"
-1d!
-0O!
-0R!
-1V!
-1S!
-1?&
-0:&
-1T!
+1L&
+0]
+16"
+17"
+1"
+1#
+0a*
+1|&
+1{&
+10'
+12'
+1>&
 1;&
+1p%
+1e!
+0E!
+1>%
+1*%
+1G"
+15"
+1B%
+1?%
+1%!
+1+%
+1'!
+1&!
+1O
+1R
+1U
 #200000
 0!
-0e!
-0f!
-1g
+0L&
+1]
+06"
+07"
+0"
+0#
 #220000
 1!
-1e!
-1f!
-0g
-1b'
-1[*
-0\*
-1['
-1c'
-1Y*
-1>&
-15!
-0.!
-11&
-1Z!
-0X!
+1L&
+0]
 16"
-16&
-0<&
-1n!
-0m!
-0i!
-1_!
-1N!
-0U!
+17"
+1"
 1#
-0$
-0S!
-0?&
-0d!
-12"
-0z!
-07&
+1_*
+1a*
+1+(
+1*(
+0i'
+1.'
+0a'
+0h'
+1-'
+1g'
+0,'
+1*'
+1`'
+1!'
+1C&
+0A&
+0Y!
+1W!
+1Q!
+0N!
+1K!
+0I!
+1s%
+0B!
 0>&
-1O!
-1:&
-0T!
-13"
-0{!
-1u
-1S!
-1?&
 0;&
+0p%
+0e!
+1E!
+1@%
+0G"
+0|!
+1{!
+1#&
+0!&
+0~%
+1}%
+0{%
+0F"
+1j!
+1\!
+1_!
+1Z!
+0D"
+1]!
+0e
+0X!
+1O!
+1F!
+0v%
+0t%
+05"
+1A%
+0;"
+1}!
+0]!
+1e
+1u%
+1^!
+0x%
+1<
+0>
+0O
+0R
+0U
+0C
+0D
+1E
+0G
+0A
+1w%
+0<"
+1~!
+0^!
+1x%
+1c!
+0c!
 #220001
-1l*
-1k*
-1d%
-1O%
-1e%
-1P%
+0r*
+0q*
+1p*
+06%
+0(%
+1h
+07%
+0)%
+1~
 #240000
 0!
-0e!
-0f!
-1g
+0L&
+1]
+06"
+07"
+0"
+0#
 #260000
 1!
+1L&
+0]
+16"
+17"
+1"
+1#
+0a*
+1;(
+0|&
+1:(
+0{&
+00'
+02'
+14'
+1z&
+1>&
+1;&
+1p%
 1e!
-1f!
-0g
-1\*
-1v&
-1u&
-1*'
-1,'
-02&
-01&
-10&
-1j%
-1T%
-1.!
-1$
-14!
-13!
-1^%
-1\%
-16!
+0E!
+1C%
+0>%
+10%
+0*%
+1G"
+1D"
+1P"
+15"
+1D%
+0B%
+0?%
+0%!
+11%
+0+%
+0'!
+0&!
+1T"
+1Q"
+1*!
+1)!
+1(!
+1O
+1R
+1U
+1G%
+14%
+1H%
+15%
+1*&
+1)&
+1(&
+1;%
+0@"
+1[&
+0l
+0t$
+0L"
+1A"
+1<%
+1B"
+0m%
+0u$
+0e"
+1-
+1.
+0,
+18&
+17&
+16&
+0M$
+0n"
+0$
+0,#
+1&
+1'
+0%
+0q#
+0-#
+0c&
+0s#
+0M#
+0P%
+0`&
+0W%
+08%
+0:%
 #280000
 0!
+0L&
+1]
+06"
+07"
+0"
+0#
+#300000
+1!
+1L&
+0]
+16"
+17"
+1"
+1#
+1]*
+0^*
+0_*
+1a*
+0;(
+0:(
+19(
+1<'
+1:'
+1i'
+1h'
+0-'
+0g'
+1$'
+1e'
+0*'
+1"'
+0%'
+1\'
+0D&
+1B&
+1?&
+1U!
+0w%
+0Q!
+1N!
+0K!
+1I!
+1G!
+0D!
+1v%
+1t%
+0s%
+1B!
+0>&
+0;&
+0p%
 0e!
-0f!
-1g
+1E!
+0C%
+00%
+1W"
+0G"
+1F"
+0Z!
+0D"
+1?"
+1="
+0O!
+1L!
+0J!
+0K&
+1J&
+0j"
+1:"
+08"
+1i!
+1I
+1J
+1K
+1N
+1V!
+0U!
+1w%
+0t%
+05"
+0D%
+01%
+1X"
+11&
+10&
+1/&
+0<%
+1J"
+1k"
+1=%
+0P"
+1C"
+1|!
+0;
+1=
+1@
+0O
+0R
+0U
+0V
+1W
+1Z
+0V!
+0G%
+04%
+1^"
+06&
+14&
+0=%
+1N"
+1>%
+0T"
+0Q"
+0*!
+0)!
+0(!
+1*%
+0}!
+1|
+14
+15
+03
+0H%
+05%
+0*&
+1'&
+0s$
+1`"
+0N"
+0>%
+07&
+04&
+13&
+1O"
+1B%
+1?%
+1%!
+1+%
+1'!
+1&!
+0~!
+1y!
+0'
+1)
+1*&
+0)&
+1$&
+1<%
+0;%
+0J"
+1@"
+1L"
+0A"
+1r$
+17&
+14&
+03&
+0O"
+0B%
+0?%
+0%!
+1P"
+1/
+0&
+0)
+1*
+1,
+16&
+04&
+1=%
+0`"
+1N"
+1v$
+0P"
+1T"
+1Q"
+1*!
+1)!
+1(!
+0-
+12
+1&
+1)
+0*
+0,
+1>%
+0r$
+07&
+06&
+15&
+14&
+13&
+1O"
+1w$
+0T"
+0Q"
+0*!
+0)!
+0(!
+1'
+0)
+1B%
+1?%
+1%!
+0v$
+1P"
+1#%
+1|$
+1{$
+1x$
+1,!
+1+!
+0&
+0'
+1(
+1)
+1*
+08&
+17&
+16&
+04&
+03&
+0w$
+1T"
+1Q"
+1*!
+1)!
+1(!
+0#%
+0|$
+0{$
+0x$
+0,!
+0+!
+1&
+1'
+0)
+0*
+1%
+#300001
+0p*
+0h
+0~
+#320000
+0!
+0L&
+1]
+06"
+07"
+0"
+0#
+#340000
+1!
+1L&
+0]
+16"
+17"
+1"
+1#
+0a*
+1J(
+1I(
+0<'
+10'
+12'
+04'
+18'
+0:'
+1>'
+1K(
+1>&
+1;&
+1p%
+1e!
+0E!
+1U"
+1G"
+1D"
+1j
+15"
+1V"
+1k
+1O
+1R
+1U
+#360000
+0!
+0L&
+1]
+06"
+07"
+0"
+0#
+#380000
+1!
+1L&
+0]
+16"
+17"
+1"
+1#
+1_*
+1a*
+0h'
+1,'
+1_'
+0$'
+0e'
+1*'
+1]'
+0"'
+0`'
+1%'
+1~&
+0!'
+0B&
+1@&
+0?&
+1y%
+0W!
+1Q!
+0N!
+1K!
+1s%
+0B!
+1[!
+0d
+0>&
+0;&
+0p%
+0e!
+1E!
+0G"
+0F"
+0j!
+0_!
+1X!
+0"&
+1!&
+1~%
+0}%
+1{%
+0A%
+0@%
+0X"
+0W"
+0U"
+0k
+0j
+0D"
+0?"
+0="
+1O!
+1I&
+1I"
+0:"
+0i!
+0L!
+0^"
+1J!
+1H!
+0F!
+0I
+0J
+0K
+0N
+1t%
+1_!
+0`!
+1C!
+05"
+1;"
+0|
+0u%
+0V"
+01&
+00&
+0/&
+0<%
+0@"
+0[&
+0O"
+0C"
+0k"
+0N"
+0B"
+1q"
+0|!
+1h!
+0*&
+0(&
+0'&
+0$&
+1s$
+1l
+0=
+1?
+0@
+0O
+0R
+0U
+0B
+1C
+1D
+0E
+1G
+1X
+0Z
+1<"
+0y!
+07&
+06&
+05&
+0L"
+0P"
+0*%
+0q"
+1{"
+1w"
+1r"
+1>!
+0;"
+1-"
+1m%
+04
+05
+0.
+0/
+02
+13
+1,
+0T"
+0Q"
+0*!
+0)!
+0(!
+0+%
+0'!
+0&!
+0{"
+0w"
+0r"
+0>!
+0<"
+1."
+0&
+0'
+0(
+1$
+#380001
+1r*
+16%
+17%
+#400000
+0!
+0L&
+1]
+06"
+07"
+0"
+0#
+#420000
+1!
+1L&
+0]
+16"
+17"
+1"
+1#
+0a*
+1[(
+02'
+08'
+0>'
+1>&
+1;&
+1p%
+1e!
+0E!
+1E%
+1G"
+1D"
+15"
+1F%
+1O
+1R
+1U
+1G%
+1H%
+1)&
+1(&
+1'&
+1$&
+1;%
+0l
+1<%
+0m%
+1-
+1.
+1/
+12
+17&
+16&
+15&
+12&
+0$
+1&
+1'
+1(
+1+
+#440000
+0!
+0L&
+1]
+06"
+07"
+0"
+0#
+#460000
+1!
+1L&
+0]
+16"
+17"
+1"
+1#
+1#'
+1^*
+0_*
+1a*
+1:'
+1g'
+0,'
+0_'
+1$'
+1e'
+0*'
+0]'
+1"'
+1`'
+1['
+0\'
+1z%
+0C&
+0y%
+0v%
+0t%
+1f!
+0\!
+0_!
+1Y!
+1N!
+0I!
+0G!
+1W!
+0s%
+1B!
+0[!
+1d
+0>&
+0;&
+0p%
+0e!
+1E!
+1O"
+0D"
+0h!
+1]!
+0e
+0X!
+1"&
+0!&
+0~%
+1}%
+0{%
+0E%
+1@%
+1W"
+1U"
+1j
+1`$
+1?"
+1="
+0O!
+0J&
+1H&
+1F&
+0I"
+1i!
+1M!
+1L!
+0G%
+1j!
+1I
+1J
+1K
+1N
+1U!
+0w%
+1e
+1a!
+1u%
+1v%
+1t%
+1\!
+1_!
+1`!
+0C!
+05"
+1P"
+0-"
+1}!
+1^!
+0x%
+0F%
+1A%
+1X"
+1V"
+1k
+1i$
+1b$
+1a$
+1?!
+11&
+10&
+1/&
+0;%
+1J"
+1t$
+1L"
+1A"
+0`$
+0O"
+1|!
+0j!
+1h!
+1r$
+0H%
+0<
+0O
+0R
+0U
+1B
+0C
+0D
+1E
+0G
+0W
+1Y
+1\
+1V!
+0U!
+1w%
+0e
+0a!
+1T"
+1Q"
+1*!
+1)!
+1(!
+0."
+1~!
+1c!
+1^"
+0<%
+1u$
+1e"
+1M"
+1B"
+0i$
+0b$
+0a$
+0?!
+0P"
+1%"
+0}!
+0)&
+0(&
+0'&
+0$&
+1;%
+0J"
+1@"
+1[&
+1l
+14
+15
+03
+0V!
+1*&
+1(&
+1'&
+1$&
+0s$
+0l
+18&
+06&
+05&
+14&
+02&
+0=%
+1v$
+1M$
+1n"
+1f"
+1C"
+0T"
+0Q"
+0*!
+0)!
+0(!
+1&"
+0~!
+1<%
+0A"
+1m%
+0-
+0.
+0/
+02
+0t$
+0m%
+0>%
+07&
+04&
+13&
+12&
+1w$
+1N$
+1,#
+1o"
+1_$
+1*%
+1=%
+0B"
+1.
+1/
+12
+0'
+0(
+1)
+0+
+1$
+0,
+0%
+0u$
+0e"
+0B%
+0?%
+0%!
+1#%
+1|$
+1{$
+1x$
+1,!
+1+!
+1O$
+1:$
+1q#
+1-#
+1p"
+1`$
+1+%
+1'!
+1&!
+1>%
+16&
+03&
+02&
+0C"
+0$
+0&
+0)
+1*
+1+
+0v$
+0M$
+0n"
+0f"
+1P$
+1;$
+1c&
+1s#
+1.#
+1q"
+1i$
+1b$
+1a$
+1?!
+1B%
+1?%
+1%!
+0*%
+1'
+0*
+0+
+08&
+17&
+15&
+12&
+0w$
+0N$
+0,#
+0o"
+0_$
+1T$
+1Q$
+1@!
+1<$
+1&$
+1t#
+1M#
+1/#
+1{"
+1w"
+1r"
+1>!
+0+%
+0'!
+0&!
+0#%
+0|$
+0{$
+0x$
+0,!
+0+!
+0O$
+0:$
+0q#
+0-#
+0p"
+0`$
+1F$
+1B$
+1?$
+1=!
+1<!
+1'$
+1u#
+1P%
+1\#
+1`&
+10#
+1&
+1(
+1+
+1%
+0P$
+0;$
+0c&
+0s#
+0.#
+0q"
+0i$
+0b$
+0a$
+0?!
+1($
+1v#
+1W%
+1Q%
+1]#
+1N#
+16#
+11#
+1;!
+0T$
+0Q$
+0@!
+0<$
+0&$
+0t#
+0M#
+0/#
+0{"
+0w"
+0r"
+0>!
+10$
+1-$
+1*$
+1)$
+1:!
+19!
+18!
+1X%
+18%
+1R%
+1^#
+1O#
+0F$
+0B$
+0?$
+0=!
+0<!
+0'$
+0u#
+0P%
+0\#
+0`&
+00#
+1Y%
+1a%
+1:%
+1)"
+15!
+1j#
+1f#
+1e#
+1b#
+1_#
+17!
+16!
+1P#
+1J#
+1.!
+1-!
+0($
+0v#
+0W%
+0Q%
+0]#
+0N#
+06#
+01#
+0;!
+1Z%
+1b%
+0;%
+00$
+0-$
+0*$
+0)$
+0:!
+09!
+08!
+0X%
+08%
+0R%
+0^#
+0O#
+1t!
+1n!
+1R!
+14!
+13!
+12!
+11!
+10!
+1/!
+0<%
+0Y%
+0a%
+0:%
+0)"
+05!
+0j#
+0f#
+0e#
+0b#
+0_#
+07!
+06!
+0P#
+0J#
+0.!
+0-!
+07&
+06&
+05&
+02&
+0=%
+0Z%
+0b%
+1;%
+0>%
+0&
+0'
+0(
+0+
+0t!
+0n!
+0R!
+04!
+03!
+02!
+01!
+00!
+0/!
+1<%
+0B%
+0?%
+0%!
+17&
+16&
+15&
+12&
+1=%
+1>%
+1&
+1'
+1(
+1+
+1B%
+1?%
+1%!
+#460001
+0r*
+06%
+07%
+#480000
+0!
+0L&
+1]
+06"
+07"
+0"
+0#
+#500000
+1!
+1L&
+0]
+16"
+17"
+1"
+1#
+0a*
+1k(
+14'
+18'
+0:'
+1>'
+1>&
+1;&
+1p%
+1e!
+0E!
+1D"
+15"
+1O
+1R
+1U
+#520000
+0!
+0L&
+1]
+06"
+07"
+0"
+0#
+#540000
+1!
+1L&
+0]
+16"
+17"
+1"
+1#
+1^'
+0#'
+1_*
+1a*
+1&'
+1-'
+0g'
+1_'
+0e'
+1*'
+1]'
+0%'
+0~&
+0"&
+1|%
+1f%
+1d%
+1E%
+1C%
+14%
+1&%
+1l$
+1Y$
+1W$
+1U$
+1R$
+1E$
+15$
+1}#
+1{#
+1y#
+1w#
+1i#
+1W#
+19#
+17#
+14#
+12#
+1z"
+1x"
+1t"
+1["
+1Y"
+0V"
+11"
+1/"
+1+"
+1'"
+1#"
+1k!
+1t
+1q
+1o
+0z%
+0E&
+1D&
+1C&
+1B&
+0@&
+0W!
+0Q!
+1I!
+1s%
+0B!
+1[!
+0d
+0>&
+0;&
+0p%
+0e!
+1E!
+1g!
+1Z!
+0D"
+0h!
+0]!
+1e
+0A%
+0X"
+0k
+0?"
+0="
+1O!
+0H&
+1G&
+0F&
+1I"
+18"
+0&"
+0i!
+0M!
+0J!
+0H!
+0I
+0J
+0K
+0N
+0^"
+0%"
+1u
+0v%
+0t%
+0\!
+0_!
+0`!
+1C!
+05"
+0^!
+1x%
+01&
+00&
+0/&
+0;%
+0@"
+0[&
+0=%
+0|!
+1j!
+1h!
+0r$
+0M"
+0B
+1F
+1;
+1<
+1=
+0?
+0O
+0R
+0U
+0Y
+1[
+0\
+1:
+0*&
+0(&
+0'&
+0$&
+1s$
+1l
+1U!
+0w%
+1]!
+0e
+1a!
+0c!
+0<%
+0L"
+0>%
+1x
+0u
+04
+05
+13
+1m%
+1V!
+1^!
+0b!
+07&
+06&
+05&
+02&
+0B%
+0?%
+0%!
+0.
+0/
+02
+1,
+1n%
+1$
+0&
+0'
+0(
+0+
+1q%
+0o%
+#540001
+1r*
+16%
+17%
+#560000
+0!
+0L&
+1]
+06"
+07"
+0"
+0#
+#580000
+1!
+1L&
+0]
+16"
+17"
+1"
+1#
+1`*
+0a*
+0b*
+04'
+08'
+0>'
+0=&
+1;&
+0q%
+1o%
+1e!
+1d!
+1D"
+0P
+1R
+1U
+#600000
+0!
+0L&
+1]
+06"
+07"
+0"
+0#
 #1000000

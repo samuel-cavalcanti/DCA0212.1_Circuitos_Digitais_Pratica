@@ -44,16 +44,16 @@ begin
 								port map (dado_de_entrada,
 											 clock,
 											 escrita(i),
-											 '0',
+											 '0', -- limpar sempre 0
 											 saida_de_dados(i));
 						end generate gerando_registradores;
 						
 	
 	dado_de_saida_1 <= saida_de_dados(to_integer(unsigned(endereco_leitura_1))) when habilitar_leitura(0) ='1' else
-							 (others=>'0');
+							 (others=>'X');
 	
 	dado_de_saida_2 <= saida_de_dados(to_integer(unsigned(endereco_leitura_2)))when habilitar_leitura(1) ='1' else
-							 (others=>'0');
+							 (others=>'X');
 							 
 	
 end architecture;

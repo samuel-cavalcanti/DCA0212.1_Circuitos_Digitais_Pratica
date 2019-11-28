@@ -53,39 +53,103 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE processador_programavel.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE processador.vwf
+set_global_assignment -name VHDL_FILE registrador.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/program_counter/contador_de_programa.vwf
 set_global_assignment -name VHDL_FILE unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd
 set_global_assignment -name VHDL_FILE unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd
-set_global_assignment -name VHDL_FILE processador_programavel.vhd
-set_global_assignment -name VHDL_FILE registrador.vhd
 set_global_assignment -name VHDL_FILE unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd
 set_global_assignment -name VHDL_FILE unit_control/program_counter/soma_1.vhd
 set_global_assignment -name VHDL_FILE unit_control/program_counter/contador_de_programa.vhd
 set_global_assignment -name VHDL_FILE unit_control/controller/bloco_de_controle.vhd
 set_global_assignment -name VHDL_FILE unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd
 set_global_assignment -name VHDL_FILE unit_control/controller/decoder/decodificador.vhd
-set_global_assignment -name VHDL_FILE datapath/mux3x1/mux_3x1.vhd
-set_global_assignment -name VHDL_FILE datapath/comparator/comparador.vhd
-set_global_assignment -name VHDL_FILE datapath/ALU/alu.vhd
-set_global_assignment -name VHDL_FILE datapath/ALU/subtrator.vhd
-set_global_assignment -name VHDL_FILE datapath/ALU/somador.vhd
-set_global_assignment -name VHDL_FILE unit_control/sum/somador_complemento_de_2.vhd
 set_global_assignment -name VHDL_FILE unit_control/instruction_register/registrador_de_instrucao.vhd
 set_global_assignment -name VHDL_FILE unit_control/controller/state_machine/maquina_de_estados.vhd
 set_global_assignment -name VHDL_FILE unit_control/unidade_de_controle.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/sum/sum.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/unidade_de_controle.vwf
+set_global_assignment -name VHDL_FILE unit_control/sum/somador_complemento_de_2.vhd
+set_global_assignment -name VHDL_FILE datapath/mux3x1/mux_3x1.vhd
+set_global_assignment -name VHDL_FILE datapath/comparator/comparador.vhd
+set_global_assignment -name VHDL_FILE datapath/ALU/alu.vhd
+set_global_assignment -name VHDL_FILE datapath/ALU/subtrator.vhd
+set_global_assignment -name VHDL_FILE datapath/ALU/somador.vhd
 set_global_assignment -name VHDL_FILE datapath/register_bank/banco_de_registradores.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/register_bank/banco_de_registradores.vwf
 set_global_assignment -name VHDL_FILE datapath/bloco_operacional.vhd
-set_global_assignment -name VHDL_FILE memory/memoriaD.vhd
-set_global_assignment -name VHDL_FILE memory/memoria_de_instrucoes.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/bloco_operacional.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE processador.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/comparator/comparador.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/mux3x1/mux3x1.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VHDL_FILE memory/memoriaD.vhd
+set_global_assignment -name VHDL_FILE memory/memoria_de_instrucoes.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE memory/memoria_de_instrucoes.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE memory/memoria.vwf
+set_global_assignment -name VHDL_FILE display_7_segmentos.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_W26 -to clock
+set_location_assignment PIN_AD23 -to saida_comprador
+set_location_assignment PIN_Y23 -to saida_display_ALU[0]
+set_location_assignment PIN_AA25 -to saida_display_ALU[1]
+set_location_assignment PIN_AA26 -to saida_display_ALU[2]
+set_location_assignment PIN_Y26 -to saida_display_ALU[3]
+set_location_assignment PIN_Y25 -to saida_display_ALU[4]
+set_location_assignment PIN_U22 -to saida_display_ALU[5]
+set_location_assignment PIN_W24 -to saida_display_ALU[6]
+set_location_assignment PIN_Y18 -to estado_botao[0]
+set_location_assignment PIN_AA20 -to estado_botao[1]
+set_location_assignment PIN_T2 -to saida_display_banco_1[0]
+set_location_assignment PIN_P6 -to saida_display_banco_1[1]
+set_location_assignment PIN_P7 -to saida_display_banco_1[2]
+set_location_assignment PIN_T9 -to saida_display_banco_1[3]
+set_location_assignment PIN_R5 -to saida_display_banco_1[4]
+set_location_assignment PIN_R4 -to saida_display_banco_1[5]
+set_location_assignment PIN_R3 -to saida_display_banco_1[6]
+set_location_assignment PIN_U9 -to saida_display_banco_2[0]
+set_location_assignment PIN_U1 -to saida_display_banco_2[1]
+set_location_assignment PIN_U2 -to saida_display_banco_2[2]
+set_location_assignment PIN_T4 -to saida_display_banco_2[3]
+set_location_assignment PIN_R7 -to saida_display_banco_2[4]
+set_location_assignment PIN_R6 -to saida_display_banco_2[5]
+set_location_assignment PIN_T3 -to saida_display_banco_2[6]
+set_location_assignment PIN_L3 -to saida_display_enderesso_1[0]
+set_location_assignment PIN_L2 -to saida_display_enderesso_1[1]
+set_location_assignment PIN_L9 -to saida_display_enderesso_1[2]
+set_location_assignment PIN_L6 -to saida_display_enderesso_1[3]
+set_location_assignment PIN_L7 -to saida_display_enderesso_1[4]
+set_location_assignment PIN_P9 -to saida_display_enderesso_1[5]
+set_location_assignment PIN_N9 -to saida_display_enderesso_1[6]
+set_location_assignment PIN_R2 -to saida_display_enderesso_2[0]
+set_location_assignment PIN_P4 -to saida_display_enderesso_2[1]
+set_location_assignment PIN_P3 -to saida_display_enderesso_2[2]
+set_location_assignment PIN_M2 -to saida_display_enderesso_2[3]
+set_location_assignment PIN_M3 -to saida_display_enderesso_2[4]
+set_location_assignment PIN_M5 -to saida_display_enderesso_2[5]
+set_location_assignment PIN_M4 -to saida_display_enderesso_2[6]
+set_location_assignment PIN_AB23 -to saida_display_estado[0]
+set_location_assignment PIN_V22 -to saida_display_estado[1]
+set_location_assignment PIN_AC25 -to saida_display_estado[2]
+set_location_assignment PIN_AC26 -to saida_display_estado[3]
+set_location_assignment PIN_AB26 -to saida_display_estado[4]
+set_location_assignment PIN_AB25 -to saida_display_estado[5]
+set_location_assignment PIN_Y24 -to saida_display_estado[6]
+set_location_assignment PIN_AF10 -to saida_display_operacao[0]
+set_location_assignment PIN_AB12 -to saida_display_operacao[1]
+set_location_assignment PIN_AC12 -to saida_display_operacao[2]
+set_location_assignment PIN_AD11 -to saida_display_operacao[3]
+set_location_assignment PIN_AE11 -to saida_display_operacao[4]
+set_location_assignment PIN_V14 -to saida_display_operacao[5]
+set_location_assignment PIN_V13 -to saida_display_operacao[6]
+set_location_assignment PIN_V20 -to saida_display_contador[0]
+set_location_assignment PIN_V21 -to saida_display_contador[1]
+set_location_assignment PIN_W21 -to saida_display_contador[2]
+set_location_assignment PIN_Y22 -to saida_display_contador[3]
+set_location_assignment PIN_AA24 -to saida_display_contador[4]
+set_location_assignment PIN_AA23 -to saida_display_contador[5]
+set_location_assignment PIN_AB24 -to saida_display_contador[6]
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/processador.vwf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

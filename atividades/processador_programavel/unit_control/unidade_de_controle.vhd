@@ -19,7 +19,8 @@ port ( dados_da_memoria_de_instrucoes : in std_logic_vector(numero_de_bits -1 do
 		 habilitar_leitura_no_banco	  : out std_logic_vector(1 downto 0);
 		 endereco_2_para_leitura_banco  : out std_logic_vector(3 downto 0);
 		 seletor_ALU						  : out std_logic_vector(1 downto 0);
-		 estado_atual_debug				  : out std_logic_vector(2 downto 0));
+		 estado_atual_debug				  : out std_logic_vector(2 downto 0);
+		 saida_registrador_de_instrucao_debug: out std_logic_vector(numero_de_bits-1 downto 0));
 end entity;
 
 
@@ -28,7 +29,7 @@ architecture behavior of unidade_de_controle is
 signal incrementar_contador_de_programa : std_logic;
 signal limpar_contador_de_programa      : std_logic;
 signal escrever_contador_de_programa    : std_logic;
-signal ler_registrador_de_instrucao     : std_logic;
+signal carregar_registrador_de_instrucao     : std_logic;
 signal saida_registrador_de_instrucao   : std_logic_vector(numero_de_bits -1 downto 0);
 signal saida_contador_de_programa       : std_logic_vector(numero_de_bits-1 downto 0);
 signal saida_somador                    : std_logic_vector(numero_de_bits-1 downto 0);
@@ -54,20 +55,20 @@ begin
    registrador_de_instrucao: entity work.registrador_de_instrucao(behavior)
 						generic map(numero_de_bits)
 						port map(dados_da_memoria_de_instrucoes,
-									ler_registrador_de_instrucao,
+									carregar_registrador_de_instrucao,
 									clock,
 									saida_registrador_de_instrucao);
 									
 	bloco_de_controle: entity work.bloco_de_controle(behavior)
 						generic map (numero_de_bits)
-						port map (clock,									 
-									 saida_registrador_de_instrucao,     
-									 saida_comparador_datapah,					     
-									 escrever_contador_de_programa,     
-									 limpar_contador_de_programa,	     
-									 incrementar_contador_de_programa,  
-									 leitura_memoria_de_instrucoes,	  
-									 ler_registrador_de_instrucao,    
+						port map (clock,	-- 1				 
+									 saida_registrador_de_instrucao,  --2   
+									 saida_comparador_datapah,				--3	     
+									 escrever_contador_de_programa,     --4
+									 limpar_contador_de_programa,	     --5
+									 incrementar_contador_de_programa,  --6 
+									 leitura_memoria_de_instrucoes,	  --7
+									 carregar_registrador_de_instrucao,   --8 
 									 endereco_memoria_de_dados,	  
 									 ler_memoria_de_dados,	  
 									 escrever_memoria_de_dados,		
@@ -83,7 +84,7 @@ begin
 									 
 	
 	endereco_memoria_de_instrucoes <= saida_contador_de_programa;
-	
+	saida_registrador_de_instrucao_debug <= saida_registrador_de_instrucao;
 	
 
 end architecture;
