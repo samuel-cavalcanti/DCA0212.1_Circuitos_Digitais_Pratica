@@ -21,7 +21,10 @@ end entity;
 architecture behavior of processador_programavel is 
 signal buttom_clock                   : std_logic;
 signal dados_da_memoria_de_instrucoes : std_logic_vector(numero_de_bits -1 downto 0);
-signal saida_comparador_datapah 		  : std_logic;
+signal saida_comparador_datapath 	  : std_logic;
+-- nossa instrucao
+signal saida_menor_q_datapath			  : std_logic;
+
 signal endereco_memoria_de_instrucoes : std_logic_vector(numero_de_bits-1 downto 0);
 signal leitura_memoria_de_instrucoes  : std_logic;
 signal endereco_memoria_de_dados		  : std_logic_vector(7 downto 0);
@@ -52,8 +55,9 @@ begin
 	unidade_de_controle : entity work.unidade_de_controle(behavior)
 							generic map (numero_de_bits)
 							port map ( dados_da_memoria_de_instrucoes,
-										  saida_comparador_datapah,
-										  buttom_clock,	  
+										  saida_comparador_datapath,
+										  buttom_clock,
+										  saida_menor_q_datapath,
 										  endereco_memoria_de_instrucoes, 
 										  leitura_memoria_de_instrucoes,
 										  endereco_memoria_de_dados,		   
@@ -82,7 +86,8 @@ begin
 											  endereco_2_para_leitura_banco,
 											  seletor_ALU,
 											  entrada_de_dados_para_memoriaD,
-											  saida_comparador_datapah,
+											  saida_comparador_datapath,
+											  saida_menor_q_datapath,
 											  saida_de_dados_para_memoriaD,
 											  saida_ALU,
 											  saida_banco_2);	
@@ -108,7 +113,7 @@ begin
 		
 
    saida_estado(2 downto 0) <= estado_atual_debug(2 downto 0);
-	saida_comprador <= saida_comparador_datapah;	
+	saida_comprador <= saida_comparador_datapath;	
 	operacao(3 downto 0) <= saida_registrador_de_instrucao_debug(15 downto 12);
 	
 	estado_botao(0) <= buttom_clock;

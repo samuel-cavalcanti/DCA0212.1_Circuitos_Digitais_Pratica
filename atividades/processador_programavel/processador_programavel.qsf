@@ -53,43 +53,6 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE processador_programavel.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE processador.vwf
-set_global_assignment -name VHDL_FILE registrador.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/program_counter/contador_de_programa.vwf
-set_global_assignment -name VHDL_FILE unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd
-set_global_assignment -name VHDL_FILE unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd
-set_global_assignment -name VHDL_FILE unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd
-set_global_assignment -name VHDL_FILE unit_control/program_counter/soma_1.vhd
-set_global_assignment -name VHDL_FILE unit_control/program_counter/contador_de_programa.vhd
-set_global_assignment -name VHDL_FILE unit_control/controller/bloco_de_controle.vhd
-set_global_assignment -name VHDL_FILE unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd
-set_global_assignment -name VHDL_FILE unit_control/controller/decoder/decodificador.vhd
-set_global_assignment -name VHDL_FILE unit_control/instruction_register/registrador_de_instrucao.vhd
-set_global_assignment -name VHDL_FILE unit_control/controller/state_machine/maquina_de_estados.vhd
-set_global_assignment -name VHDL_FILE unit_control/unidade_de_controle.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/sum/sum.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/unidade_de_controle.vwf
-set_global_assignment -name VHDL_FILE unit_control/sum/somador_complemento_de_2.vhd
-set_global_assignment -name VHDL_FILE datapath/mux3x1/mux_3x1.vhd
-set_global_assignment -name VHDL_FILE datapath/comparator/comparador.vhd
-set_global_assignment -name VHDL_FILE datapath/ALU/alu.vhd
-set_global_assignment -name VHDL_FILE datapath/ALU/subtrator.vhd
-set_global_assignment -name VHDL_FILE datapath/ALU/somador.vhd
-set_global_assignment -name VHDL_FILE datapath/register_bank/banco_de_registradores.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/register_bank/banco_de_registradores.vwf
-set_global_assignment -name VHDL_FILE datapath/bloco_operacional.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/bloco_operacional.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/comparator/comparador.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/mux3x1/mux3x1.vwf
-set_global_assignment -name VHDL_FILE memory/memoriaD.vhd
-set_global_assignment -name VHDL_FILE memory/memoria_de_instrucoes.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE memory/memoria_de_instrucoes.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE memory/memoria.vwf
-set_global_assignment -name VHDL_FILE display_7_segmentos.vhd
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_W26 -to clock
 set_location_assignment PIN_AD23 -to saida_comprador
@@ -151,5 +114,44 @@ set_location_assignment PIN_Y22 -to saida_display_contador[3]
 set_location_assignment PIN_AA24 -to saida_display_contador[4]
 set_location_assignment PIN_AA23 -to saida_display_contador[5]
 set_location_assignment PIN_AB24 -to saida_display_contador[6]
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/processador.vwf"
+set_global_assignment -name VHDL_FILE processador_programavel.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE processador.vwf
+set_global_assignment -name VHDL_FILE registrador.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/program_counter/contador_de_programa.vwf
+set_global_assignment -name VHDL_FILE unit_control/controller/decoder/register_banck_decoder/decodificador_banco.vhd
+set_global_assignment -name VHDL_FILE unit_control/controller/decoder/mux3x1_decoder/decodificador_mux.vhd
+set_global_assignment -name VHDL_FILE unit_control/controller/decoder/ALU_decoder/decodificador_ALU.vhd
+set_global_assignment -name VHDL_FILE unit_control/program_counter/soma_1.vhd
+set_global_assignment -name VHDL_FILE unit_control/program_counter/contador_de_programa.vhd
+set_global_assignment -name VHDL_FILE unit_control/controller/bloco_de_controle.vhd
+set_global_assignment -name VHDL_FILE unit_control/controller/decoder/data_memory_decoder/decodificador_memoria_de_dados.vhd
+set_global_assignment -name VHDL_FILE unit_control/controller/decoder/decodificador.vhd
+set_global_assignment -name VHDL_FILE unit_control/instruction_register/registrador_de_instrucao.vhd
+set_global_assignment -name VHDL_FILE unit_control/controller/state_machine/maquina_de_estados.vhd
+set_global_assignment -name VHDL_FILE unit_control/unidade_de_controle.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/sum/sum.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE unit_control/unidade_de_controle.vwf
+set_global_assignment -name VHDL_FILE unit_control/sum/somador_complemento_de_2.vhd
+set_global_assignment -name VHDL_FILE datapath/mux3x1/mux_3x1.vhd
+set_global_assignment -name VHDL_FILE datapath/comparator/comparador.vhd
+set_global_assignment -name VHDL_FILE datapath/ALU/alu.vhd
+set_global_assignment -name VHDL_FILE datapath/ALU/subtrator.vhd
+set_global_assignment -name VHDL_FILE datapath/ALU/somador.vhd
+set_global_assignment -name VHDL_FILE datapath/ALU/menorq.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/ALU/menorq.vwf
+set_global_assignment -name VHDL_FILE datapath/register_bank/banco_de_registradores.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/register_bank/banco_de_registradores.vwf
+set_global_assignment -name VHDL_FILE datapath/bloco_operacional.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/bloco_operacional.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/comparator/comparador.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE datapath/mux3x1/mux3x1.vwf
+set_global_assignment -name VHDL_FILE memory/memoriaD.vhd
+set_global_assignment -name VHDL_FILE memory/memoria_de_instrucoes.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE memory/memoria_de_instrucoes.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE memory/memoria.vwf
+set_global_assignment -name VHDL_FILE display_7_segmentos.vhd
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/menorq.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

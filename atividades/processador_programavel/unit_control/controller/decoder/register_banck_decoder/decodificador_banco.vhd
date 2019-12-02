@@ -17,8 +17,9 @@ constant Carregar : std_logic_vector(numero_de_bits-1 downto 0) := "0000";
 constant Amazenar : std_logic_vector(numero_de_bits-1 downto 0) := "0001";
 constant Somar : std_logic_vector(numero_de_bits-1 downto 0)    := "0010";
 constant Carregar_constante : std_logic_vector(numero_de_bits-1 downto 0) := "0011";
-constant Subtrair : std_logic_vector(numero_de_bits-1 downto 0) := "0100";
-constant Saltar_se_zero : std_logic_vector(numero_de_bits-1 downto 0) := "0101";
+constant Subtrair : std_logic_vector(numero_de_bits-1 downto 0)           := "0100";
+constant Saltar_se_zero : std_logic_vector(numero_de_bits-1 downto 0)     := "0101";
+constant Saltar_se_menor_q : std_logic_vector(numero_de_bits-1 downto 0)  := "0110";
 
 type enderecos_4_bits is array (0 to 1) of std_logic_vector(numero_de_bits- 1 downto 0);
 signal endereco_de_leitura_banco : enderecos_4_bits;
@@ -39,12 +40,14 @@ begin
 	habilitar_leitura_no_banco(0) <= '1' when operacao = Somar
 													 or operacao = Subtrair
 													 or operacao = Amazenar
-													 or operacao = Saltar_se_zero else
-											   '0';
+													 or operacao = Saltar_se_zero
+													 or operacao = saltar_se_menor_q else
+												'0';
 											
 		--RF_Rq_rd
 	habilitar_leitura_no_banco(1) <= '1' when operacao = Somar
-													 or operacao = Subtrair else
+													 or operacao = Subtrair
+													 or operacao = saltar_se_menor_q else
 											   '0';
 	
 	endereco_1_para_leitura_banco <= enderecos(11 downto 8);

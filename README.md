@@ -25,4 +25,4 @@ atividades e exercícios dados em sala aula da disciplina Circuitos digitais
 
 # referencias
 
-- [guia de instalação Quartus no Linux](quartusLinux.md) (__INCOMPLETO__)
+- [guia de instalação Quartus no Linux](aula/quartusLinux.md) (__INCOMPLETO__)

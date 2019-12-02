@@ -6,6 +6,7 @@ entity bloco_de_controle is
 	port (clock									     : in std_logic;
 			saida_registrador_de_instrucao     : in std_logic_vector(numero_de_bits -1 downto 0);
 			saida_comparador 					     : in std_logic;
+			saida_menor_q							  : in std_logic;
 			escrever_contador_de_programa      : out std_logic;
 			limpar_contador_de_programa	     : out std_logic;
 			incrementar_contador_de_programa   : out std_logic;
@@ -84,6 +85,7 @@ begin
 											 reinicar_maquina_de_estados,
 											 operacao,
 											 saida_comparador,
+											 saida_menor_q,
 											 estado=>estado_atual);
 	
 end architecture;

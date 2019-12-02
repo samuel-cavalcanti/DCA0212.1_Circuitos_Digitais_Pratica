@@ -4,8 +4,9 @@ use ieee.std_logic_1164.all;
 entity unidade_de_controle is 
 generic(numero_de_bits: positive := 16);
 port ( dados_da_memoria_de_instrucoes : in std_logic_vector(numero_de_bits -1 downto 0);
-		 saida_comparador_datapah 		  : in std_logic;
+		 saida_comparador_datapath 	  : in std_logic;
 		 clock 								  : in std_logic;
+		 saida_menor_q_datapath         : in std_logic;
 		 endereco_memoria_de_instrucoes : out std_logic_vector(numero_de_bits-1 downto 0);
 		 leitura_memoria_de_instrucoes  : out std_logic;
 		 endereco_memoria_de_dados		  : out std_logic_vector(7 downto 0);
@@ -63,7 +64,8 @@ begin
 						generic map (numero_de_bits)
 						port map (clock,	-- 1				 
 									 saida_registrador_de_instrucao,  --2   
-									 saida_comparador_datapah,				--3	     
+									 saida_comparador_datapath,				--3	 
+									 saida_menor_q_datapath,
 									 escrever_contador_de_programa,     --4
 									 limpar_contador_de_programa,	     --5
 									 incrementar_contador_de_programa,  --6 

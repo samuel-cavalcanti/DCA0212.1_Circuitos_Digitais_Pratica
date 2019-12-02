@@ -24,6 +24,7 @@ subtrator : entity work.subtrator(behavior)
 				generic map (numero_de_bits)
 				port map(a,b,saida_subtrator);
 
+
 			
 			with operador select
 

@@ -7,6 +7,7 @@ port (clock : in std_logic;
 		reiniciar : in std_logic;
 		operacao : in std_logic_vector(3 downto 0);
 		saida_comparador : in std_logic;
+		saida_menor_q    : in std_logic;
 		estado : buffer std_logic_vector(2 downto 0));
 end entity;
 
@@ -18,6 +19,7 @@ constant Decodificacao : std_logic_vector (2 downto 0) := "010";
 constant Execucao : std_logic_vector(2 downto 0) := "011";
 constant Saltar   : std_logic_vector(2 downto 0) := "100";
 constant Saltar_se_zero : std_logic_vector(3 downto 0) := "0101";
+constant Saltar_Se_menor_q : std_logic_vector(3 downto 0) := "0110";
 
 begin
 		process (clock, reiniciar) begin
@@ -32,13 +34,12 @@ begin
 			
 					elsif  estado = Busca then
 							estado <= Execucao;
-					
-					elsif estado = Decodificacao then
-							estado <= Execucao;
 						
 					elsif estado = Execucao then
 					
-							if saida_comparador = '1' and operacao = saltar_se_zero then
+							if saida_comparador = '1' and operacao = Saltar_se_zero then
+								estado <= Saltar;
+							elsif saida_menor_q = '1' and operacao = Saltar_se_menor_q then
 								estado <= Saltar;
 							else 
 								estado <= Busca;
