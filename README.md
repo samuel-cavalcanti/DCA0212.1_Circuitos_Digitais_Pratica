@@ -23,6 +23,9 @@ atividades e exercícios dados em sala aula da disciplina Circuitos digitais
 - [flip-flop D](aula/ffd)
 
 
+## Extras
+- [Make CD list](make_cd_list/)
+
 # referencias
 
 - [guia de instalação Quartus no Linux](aula/quartusLinux.md) (__INCOMPLETO__)

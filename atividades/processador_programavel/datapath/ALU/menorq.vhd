@@ -14,7 +14,7 @@ begin
 	process(a, b)
 	variable igual : std_logic; 
 		begin
-			resultmeq <= '0';
+			resultmeq <=  '0';
 			igual := '1';
 			
 			for i in numero_de_bits-1 downto 0 loop

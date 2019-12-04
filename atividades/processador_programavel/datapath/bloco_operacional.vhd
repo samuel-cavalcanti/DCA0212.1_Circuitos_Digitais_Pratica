@@ -15,8 +15,9 @@ entity bloco_operacional is
 			seletor_ALU								  : in std_logic_vector(1 downto 0);
 			entrada_de_dados_para_memoriaD	  : in std_logic_vector(numero_de_bits-1 downto 0);
 			saida_comparador						  : out std_logic;
-			saida_menor_q                      : out std_logic;
+			saida_menor_q							  : out std_logic;
 			saida_de_dados_para_memoriaD		  : out std_logic_vector(numero_de_bits-1 downto 0);
+			saida_para_contador_de_programa    : out std_logic_vector(numero_de_bits-1 downto 0);
 			saida_ALU_debug						  : out std_logic_vector(numero_de_bits-1 downto 0);
 			saida_banco_2_debug					  : out std_logic_vector(numero_de_bits-1 downto 0)
 			
@@ -67,10 +68,12 @@ begin
  menor_q : entity work.menorq(behavior)
 				generic map( numero_de_bits)
 				port map (saida_banco(0),saida_banco(1),saida_menor_q);
-				
+			
  
  saida_de_dados_para_memoriaD <= saida_banco(0);
-
+ 
+ saida_para_contador_de_programa<= saida_banco(0);
+ 
  saida_ALU_debug <= saida_ALU;
  
  saida_banco_2_debug <= saida_banco(1);

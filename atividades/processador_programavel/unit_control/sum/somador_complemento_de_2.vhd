@@ -18,7 +18,7 @@ architecture behavior of somador_complemento_de_2 is
 
 begin
 
-saida <= std_logic_vector( to_unsigned(to_integer(unsigned(a)) + to_integer(signed(b(7 downto 0))) -1, numero_de_bits)) ;
+saida <= std_logic_vector( to_unsigned(to_integer(unsigned(a)) + to_integer(signed(b)) -1, numero_de_bits)) ;
 
 
 end architecture;

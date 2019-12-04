@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity mux_somador is 
+ generic (numero_de_bits : positive := 16);
+ port (saida_para_contador_de_programa : in std_logic_vector ( numero_de_bits -1 downto 0);
+  		 valor_salto_se_0 : in std_logic_vector ( numero_de_bits -1 downto 0);
+		 seletor         :  in std_logic_vector ( 2 downto 0);
+		 saida_mux : out std_logic_vector ( numero_de_bits -1 downto 0));
+		
+end entity;
+
+architecture  behavior of mux_somador is 
+constant Saltar_menor_q : std_logic_vector(2 downto 0) := "101";
+
+begin 
+
+
+	saida_mux <= saida_para_contador_de_programa when seletor = Saltar_menor_q else
+					 valor_salto_se_0;
+								 
+
+
+end architecture;

@@ -14,6 +14,7 @@ end entity;
 architecture behavior of alu is 
 signal saida_somador : std_logic_vector(numero_de_bits-1 downto 0);
 signal saida_subtrator : std_logic_vector(numero_de_bits-1 downto 0);
+signal saida_menor_q : std_logic_vector(numero_de_bits-1 downto 0);
 begin
 
 somador : entity work.somador(behavior)
@@ -25,13 +26,14 @@ subtrator : entity work.subtrator(behavior)
 				port map(a,b,saida_subtrator);
 
 
+
 			
 			with operador select
 
 			saida_alu <= a when "00",
 			saida_somador when "01",
 			saida_subtrator when "10",
-			b					 when "11"; -- isso nunca deve acontecer
+			b	 when "11"; -- isso nunca deve acontecer
 					
 
 end architecture;

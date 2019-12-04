@@ -13,6 +13,7 @@ entity processador_programavel is
 			saida_display_contador   : out std_logic_vector(6 downto 0); --HEX1 contador
 			saida_display_operacao   : out std_logic_vector(6 downto 0); --HEX0 operacao`
 			saida_comprador          : out std_logic;-- LEDR5
+			saida_menor_q            : out std_logic;-- LEDR17
 			estado_botao				 : out std_logic_vector(1 downto 0)); --LEDG7 e LEDG8
 
 end entity;
@@ -24,6 +25,7 @@ signal dados_da_memoria_de_instrucoes : std_logic_vector(numero_de_bits -1 downt
 signal saida_comparador_datapath 	  : std_logic;
 -- nossa instrucao
 signal saida_menor_q_datapath			  : std_logic;
+signal saida_para_contador_de_programa: std_logic_vector(numero_de_bits-1 downto 0);
 
 signal endereco_memoria_de_instrucoes : std_logic_vector(numero_de_bits-1 downto 0);
 signal leitura_memoria_de_instrucoes  : std_logic;
@@ -56,8 +58,9 @@ begin
 							generic map (numero_de_bits)
 							port map ( dados_da_memoria_de_instrucoes,
 										  saida_comparador_datapath,
-										  buttom_clock,
 										  saida_menor_q_datapath,
+										  saida_para_contador_de_programa,
+										  buttom_clock,
 										  endereco_memoria_de_instrucoes, 
 										  leitura_memoria_de_instrucoes,
 										  endereco_memoria_de_dados,		   
@@ -89,6 +92,7 @@ begin
 											  saida_comparador_datapath,
 											  saida_menor_q_datapath,
 											  saida_de_dados_para_memoriaD,
+											  saida_para_contador_de_programa,
 											  saida_ALU,
 											  saida_banco_2);	
 											  
@@ -114,6 +118,7 @@ begin
 
    saida_estado(2 downto 0) <= estado_atual_debug(2 downto 0);
 	saida_comprador <= saida_comparador_datapath;	
+	saida_menor_q <= saida_menor_q_datapath;
 	operacao(3 downto 0) <= saida_registrador_de_instrucao_debug(15 downto 12);
 	
 	estado_botao(0) <= buttom_clock;

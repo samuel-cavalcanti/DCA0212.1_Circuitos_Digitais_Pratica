@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_programavel
-Mon Dec  2 10:34:40 2019
+Mon Dec  2 14:20:56 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -33,57 +33,59 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  25. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle
  26. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador
  27. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco
- 28. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional
- 29. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|mux_3x1:mux
- 30. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco
- 31. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador
- 32. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador
- 33. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador
- 34. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador
- 35. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador
- 36. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador
- 37. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador
- 38. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador
- 39. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador
- 40. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador
- 41. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador
- 42. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador
- 43. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador
- 44. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador
- 45. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador
- 46. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador
- 47. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU
- 48. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|somador:somador
- 49. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator
- 50. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|comparador:comparador
- 51. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|menorq:menor_q
- 52. Parameter Settings for User Entity Instance: memoriaD:memoria_de_dados
- 53. Parameter Settings for User Entity Instance: memoria_de_instrucoes:memoria_de_instrucoes
- 54. Parameter Settings for Inferred Entity Instance: memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0
- 55. altsyncram Parameter Settings by Entity Instance
- 56. Port Connectivity Checks: "display_7_segmentos:display_estado"
- 57. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador"
- 58. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador"
- 59. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador"
- 60. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador"
- 61. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador"
- 62. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador"
- 63. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador"
- 64. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador"
- 65. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador"
- 66. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador"
- 67. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador"
- 68. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador"
- 69. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador"
- 70. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador"
- 71. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador"
- 72. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador"
- 73. Port Connectivity Checks: "bloco_operacional:bloco_operacional"
- 74. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
- 75. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador"
- 76. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle"
- 77. Elapsed Time Per Partition
- 78. Analysis & Synthesis Messages
+ 28. Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|mux_somador:mux_somador
+ 29. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional
+ 30. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|mux_3x1:mux
+ 31. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco
+ 32. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador
+ 33. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador
+ 34. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador
+ 35. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador
+ 36. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador
+ 37. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador
+ 38. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador
+ 39. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador
+ 40. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador
+ 41. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador
+ 42. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador
+ 43. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador
+ 44. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador
+ 45. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador
+ 46. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador
+ 47. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador
+ 48. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU
+ 49. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|somador:somador
+ 50. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator
+ 51. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|comparador:comparador
+ 52. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|menorq:menor_q
+ 53. Parameter Settings for User Entity Instance: memoriaD:memoria_de_dados
+ 54. Parameter Settings for User Entity Instance: memoria_de_instrucoes:memoria_de_instrucoes
+ 55. Parameter Settings for Inferred Entity Instance: memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0
+ 56. altsyncram Parameter Settings by Entity Instance
+ 57. Port Connectivity Checks: "display_7_segmentos:display_estado"
+ 58. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador"
+ 59. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador"
+ 60. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador"
+ 61. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador"
+ 62. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador"
+ 63. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador"
+ 64. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador"
+ 65. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador"
+ 66. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador"
+ 67. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador"
+ 68. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador"
+ 69. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador"
+ 70. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador"
+ 71. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador"
+ 72. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador"
+ 73. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador"
+ 74. Port Connectivity Checks: "bloco_operacional:bloco_operacional"
+ 75. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|mux_somador:mux_somador"
+ 76. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
+ 77. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador"
+ 78. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle"
+ 79. Elapsed Time Per Partition
+ 80. Analysis & Synthesis Messages
 
 
 
@@ -109,16 +111,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec  2 10:34:40 2019           ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec  2 14:20:56 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador_programavel                         ;
 ; Top-level Entity Name              ; processador_programavel                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 705                                             ;
-;     Total combinational functions  ; 449                                             ;
-;     Dedicated logic registers      ; 323                                             ;
-; Total registers                    ; 323                                             ;
-; Total pins                         ; 60                                              ;
+; Total logic elements               ; 730                                             ;
+;     Total combinational functions  ; 473                                             ;
+;     Dedicated logic registers      ; 325                                             ;
+; Total registers                    ; 325                                             ;
+; Total pins                         ; 61                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 320                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -252,6 +254,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; memory/memoriaD.vhd                                                                    ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/memory/memoriaD.vhd                                                                    ;         ;
 ; memory/memoria_de_instrucoes.vhd                                                       ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/memory/memoria_de_instrucoes.vhd                                                       ;         ;
 ; display_7_segmentos.vhd                                                                ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/display_7_segmentos.vhd                                                                ;         ;
+; unit_control/mux_sum/mux_somador.vhd                                                   ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/unit_control/mux_sum/mux_somador.vhd                                                   ;         ;
 ; altsyncram.tdf                                                                         ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                               ;         ;
 ; stratix_ram_block.inc                                                                  ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                                        ;         ;
 ; lpm_mux.inc                                                                            ; yes             ; Megafunction                                          ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                                  ;         ;
@@ -271,29 +274,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 705   ;
+; Estimated Total logic elements              ; 730   ;
 ;                                             ;       ;
-; Total combinational functions               ; 449   ;
+; Total combinational functions               ; 473   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 341   ;
-;     -- 3 input functions                    ; 94    ;
-;     -- <=2 input functions                  ; 14    ;
+;     -- 4 input functions                    ; 362   ;
+;     -- 3 input functions                    ; 70    ;
+;     -- <=2 input functions                  ; 41    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 440   ;
-;     -- arithmetic mode                      ; 9     ;
+;     -- normal mode                          ; 467   ;
+;     -- arithmetic mode                      ; 6     ;
 ;                                             ;       ;
-; Total registers                             ; 323   ;
-;     -- Dedicated logic registers            ; 323   ;
+; Total registers                             ; 325   ;
+;     -- Dedicated logic registers            ; 325   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 60    ;
+; I/O pins                                    ; 61    ;
 ; Total memory bits                           ; 320   ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clock ;
-; Maximum fan-out                             ; 341   ;
-; Total fan-out                               ; 2888  ;
-; Average fan-out                             ; 3.41  ;
+; Maximum fan-out                             ; 343   ;
+; Total fan-out                               ; 2950  ;
+; Average fan-out                             ; 3.37  ;
 +---------------------------------------------+-------+
 
 
@@ -302,12 +305,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                      ; Library Name ;
 +--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |processador_programavel                                     ; 449 (1)           ; 323 (0)      ; 320         ; 0            ; 0       ; 0         ; 60   ; 0            ; |processador_programavel                                                                                                                                                 ; work         ;
-;    |bloco_operacional:bloco_operacional|                     ; 324 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional                                                                                                             ; work         ;
-;       |alu:ALU|                                              ; 58 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU                                                                                                     ; work         ;
-;          |somador:somador|                                   ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|somador:somador                                                                                     ; work         ;
-;          |subtrator:subtrator|                               ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator                                                                                 ; work         ;
-;       |banco_de_registradores:banco|                         ; 208 (208)         ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco                                                                                ; work         ;
+; |processador_programavel                                     ; 473 (1)           ; 325 (0)      ; 320         ; 0            ; 0       ; 0         ; 61   ; 0            ; |processador_programavel                                                                                                                                                 ; work         ;
+;    |bloco_operacional:bloco_operacional|                     ; 350 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional                                                                                                             ; work         ;
+;       |alu:ALU|                                              ; 56 (8)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU                                                                                                     ; work         ;
+;          |somador:somador|                                   ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|somador:somador                                                                                     ; work         ;
+;          |subtrator:subtrator|                               ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator                                                                                 ; work         ;
+;       |banco_de_registradores:banco|                         ; 224 (224)         ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco                                                                                ; work         ;
 ;          |registrador:\gerando_registradores:0:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador                               ; work         ;
 ;          |registrador:\gerando_registradores:10:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador                              ; work         ;
 ;          |registrador:\gerando_registradores:11:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador                              ; work         ;
@@ -325,29 +328,30 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |registrador:\gerando_registradores:8:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador                               ; work         ;
 ;          |registrador:\gerando_registradores:9:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador                               ; work         ;
 ;       |comparador:comparador|                                ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|comparador:comparador                                                                                       ; work         ;
-;       |menorq:menor_q|                                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|menorq:menor_q                                                                                              ; work         ;
-;       |mux_3x1:mux|                                          ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux                                                                                                 ; work         ;
+;       |menorq:menor_q|                                       ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|menorq:menor_q                                                                                              ; work         ;
+;       |mux_3x1:mux|                                          ; 53 (53)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux                                                                                                 ; work         ;
 ;    |display_7_segmentos:display_adress_1|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_adress_1                                                                                                            ; work         ;
+;    |display_7_segmentos:display_adress_2|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_adress_2                                                                                                            ; work         ;
 ;    |display_7_segmentos:display_banco_1|                     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_banco_1                                                                                                             ; work         ;
 ;    |display_7_segmentos:display_banco_2|                     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_banco_2                                                                                                             ; work         ;
 ;    |display_7_segmentos:display_contador_de_intrucoes|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_contador_de_intrucoes                                                                                               ; work         ;
-;    |display_7_segmentos:display_estado|                      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_estado                                                                                                              ; work         ;
-;    |display_7_segmentos:display_operacao|                    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_operacao                                                                                                            ; work         ;
+;    |display_7_segmentos:display_operacao|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_operacao                                                                                                            ; work         ;
 ;    |display_7_segmentos:display_ula|                         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_ula                                                                                                                 ; work         ;
 ;    |memoriaD:memoria_de_dados|                               ; 19 (19)           ; 38 (38)      ; 320         ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoriaD:memoria_de_dados                                                                                                                       ; work         ;
 ;       |altsyncram:memoria_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 320         ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0                                                                                              ; work         ;
 ;          |altsyncram_fio1:auto_generated|                    ; 0 (0)             ; 0 (0)        ; 320         ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0|altsyncram_fio1:auto_generated                                                               ; work         ;
-;    |memoria_de_instrucoes:memoria_de_instrucoes|             ; 11 (11)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoria_de_instrucoes:memoria_de_instrucoes                                                                                                     ; work         ;
-;    |unidade_de_controle:unidade_de_controle|                 ; 46 (0)            ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle                                                                                                         ; work         ;
-;       |bloco_de_controle:bloco_de_controle|                  ; 34 (4)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle                                                                     ; work         ;
-;          |decodificador:decodificador|                       ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador                                         ; work         ;
-;             |decodificador_banco:decodificador_banco|        ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco ; work         ;
+;    |memoria_de_instrucoes:memoria_de_instrucoes|             ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoria_de_instrucoes:memoria_de_instrucoes                                                                                                     ; work         ;
+;    |unidade_de_controle:unidade_de_controle|                 ; 46 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle                                                                                                         ; work         ;
+;       |bloco_de_controle:bloco_de_controle|                  ; 29 (5)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle                                                                     ; work         ;
+;          |decodificador:decodificador|                       ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador                                         ; work         ;
+;             |decodificador_banco:decodificador_banco|        ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco ; work         ;
 ;             |decodificador_mux:decodificador_mux|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux     ; work         ;
-;          |maquina_de_estados:maquina_de_estados|             ; 19 (19)           ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados                               ; work         ;
-;       |contador_de_programa:contador_de_programa|            ; 4 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa                                                               ; work         ;
+;          |maquina_de_estados:maquina_de_estados|             ; 6 (6)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados                               ; work         ;
+;       |contador_de_programa:contador_de_programa|            ; 5 (1)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa                                                               ; work         ;
 ;          |registrador:registrador|                           ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador                                       ; work         ;
-;       |registrador_de_instrucao:registrador_de_instrucao|    ; 0 (0)             ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao                                                       ; work         ;
-;          |registrador:registrador|                           ; 0 (0)             ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador                               ; work         ;
+;       |mux_somador:mux_somador|                              ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|mux_somador:mux_somador                                                                                 ; work         ;
+;       |registrador_de_instrucao:registrador_de_instrucao|    ; 0 (0)             ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao                                                       ; work         ;
+;          |registrador:registrador|                           ; 0 (0)             ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador                               ; work         ;
 ;       |somador_complemento_de_2:somador|                     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|somador_complemento_de_2:somador                                                                        ; work         ;
 +--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -373,36 +377,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                        ; Reason for Removal                                                                                                                       ;
-+--------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-; memoria_de_instrucoes:memoria_de_instrucoes|saida_da_memoria[3,5..7,15]                                                              ; Stuck at GND due to stuck port data_in                                                                                                   ;
-; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[3,5..7,15] ; Stuck at GND due to stuck port data_in                                                                                                   ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[7,8]                                                                                  ; Stuck at GND due to stuck port data_in                                                                                                   ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16]                                                                                   ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[18]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[10]                                                                                   ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[4] ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[2]                                                                                    ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[0] ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[4]                                                                                    ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[1] ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[6]                                                                                    ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[2] ;
-; unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador|memoria[4..15]             ; Lost fanout                                                                                                                              ;
-; Total Number of Removed Registers = 43                                                                                               ;                                                                                                                                          ;
-+--------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                                                             ;
++-------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                                       ; Reason for Removal                                                                                                                       ;
++-------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+; memoria_de_instrucoes:memoria_de_instrucoes|saida_da_memoria[3,6,7,15]                                                              ; Stuck at GND due to stuck port data_in                                                                                                   ;
+; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[3,6,7,15] ; Stuck at GND due to stuck port data_in                                                                                                   ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[7,8]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                   ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[18]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[6]                                                                                   ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[2] ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[4]                                                                                   ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[1] ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[2]                                                                                   ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[0] ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[10]                                                                                  ; Merged with unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[4] ;
+; unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador|memoria[4..15]            ; Lost fanout                                                                                                                              ;
+; Total Number of Removed Registers = 41                                                                                              ;                                                                                                                                          ;
++-------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -411,8 +415,6 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Register name                                                    ; Reason for Removal        ; Registers Removed due to This Register                                                                                        ;
 +------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 ; memoria_de_instrucoes:memoria_de_instrucoes|saida_da_memoria[3]  ; Stuck at GND              ; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[3]  ;
-;                                                                  ; due to stuck port data_in ;                                                                                                                               ;
-; memoria_de_instrucoes:memoria_de_instrucoes|saida_da_memoria[5]  ; Stuck at GND              ; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[5]  ;
 ;                                                                  ; due to stuck port data_in ;                                                                                                                               ;
 ; memoria_de_instrucoes:memoria_de_instrucoes|saida_da_memoria[6]  ; Stuck at GND              ; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[6]  ;
 ;                                                                  ; due to stuck port data_in ;                                                                                                                               ;
@@ -428,12 +430,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 323   ;
-; Number of registers using Synchronous Clear  ; 1     ;
-; Number of registers using Synchronous Load   ; 4     ;
+; Total registers                              ; 325   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 298   ;
+; Number of registers using Clock Enable       ; 300   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -499,17 +501,18 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------------+-----------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; Yes        ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados|estado[2] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|Mux12                                                                           ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux15                                                                       ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|Mux8                                                       ;
-; 7:1                ; 11 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux6                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|Mux12                      ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|Mux17 ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux13                  ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux3                   ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux10                  ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|Mux3  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -628,6 +631,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; numero_de_bits ; 4     ; Signed Integer                                                                                                                                                      ;
 +----------------+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: unidade_de_controle:unidade_de_controle|mux_somador:mux_somador ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; numero_de_bits ; 16    ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1135,6 +1148,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++---------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|mux_somador:mux_somador" ;
++-------------------------+-------+----------+------------------------------------------------+
+; Port                    ; Type  ; Severity ; Details                                        ;
++-------------------------+-------+----------+------------------------------------------------+
+; valor_salto_se_0[15..8] ; Input ; Info     ; Stuck at GND                                   ;
++-------------------------+-------+----------+------------------------------------------------+
+
+
 +-----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados" ;
 +-----------+-------+----------+----------------------------------------------------------------------------------------------------------------+
@@ -1167,7 +1189,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1177,7 +1199,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec  2 10:34:36 2019
+    Info: Processing started: Mon Dec  2 14:20:51 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_programavel -c processador_programavel
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file processador_programavel.vhd
@@ -1255,21 +1277,26 @@ Info (12021): Found 2 design units, including 1 entities, in source file memory/
 Info (12021): Found 2 design units, including 1 entities, in source file display_7_segmentos.vhd
     Info (12022): Found design unit 1: display_7_segmentos-behavior
     Info (12023): Found entity 1: display_7_segmentos
+Info (12021): Found 2 design units, including 1 entities, in source file unit_control/mux_sum/mux_somador.vhd
+    Info (12022): Found design unit 1: mux_somador-behavior
+    Info (12023): Found entity 1: mux_somador
 Info (12127): Elaborating entity "processador_programavel" for the top level hierarchy
 Info (12129): Elaborating entity "unidade_de_controle" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle"
+Warning (10541): VHDL Signal Declaration warning at unidade_de_controle.vhd(24): used implicit default value for signal "estado_atual_debug" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12129): Elaborating entity "somador_complemento_de_2" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|somador_complemento_de_2:somador"
 Info (12129): Elaborating entity "contador_de_programa" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa"
 Info (12129): Elaborating entity "registrador" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador"
 Info (12129): Elaborating entity "soma_1" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|soma_1:soma_1"
 Info (12129): Elaborating entity "registrador_de_instrucao" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao"
 Info (12129): Elaborating entity "bloco_de_controle" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle"
-Warning (10540): VHDL Signal Declaration warning at bloco_de_controle.vhd(41): used explicit default value for signal "reinicar_maquina_de_estados" because signal was never assigned a value
+Warning (10540): VHDL Signal Declaration warning at bloco_de_controle.vhd(42): used explicit default value for signal "reinicar_maquina_de_estados" because signal was never assigned a value
 Info (12129): Elaborating entity "decodificador" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador"
 Info (12129): Elaborating entity "decodificador_memoria_de_dados" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_memoria_de_dados:decodificador_memoria_de_dados"
 Info (12129): Elaborating entity "decodificador_mux" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux"
 Info (12129): Elaborating entity "decodificador_banco" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco"
 Info (12129): Elaborating entity "decodificador_ALU" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_ALU:decodificador_ALU"
 Info (12129): Elaborating entity "maquina_de_estados" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
+Info (12129): Elaborating entity "mux_somador" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|mux_somador:mux_somador"
 Info (12129): Elaborating entity "bloco_operacional" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional"
 Info (12129): Elaborating entity "mux_3x1" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|mux_3x1:mux"
 Info (12129): Elaborating entity "banco_de_registradores" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|banco_de_registradores:banco"
@@ -1324,20 +1351,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_fio1
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "saida_display_enderesso_2[1]" is stuck at GND
-    Warning (13410): Pin "saida_display_enderesso_2[2]" is stuck at GND
-    Warning (13410): Pin "saida_display_enderesso_2[6]" is stuck at VCC
+    Warning (13410): Pin "saida_display_estado[0]" is stuck at GND
+    Warning (13410): Pin "saida_display_estado[1]" is stuck at GND
+    Warning (13410): Pin "saida_display_estado[2]" is stuck at GND
+    Warning (13410): Pin "saida_display_estado[3]" is stuck at GND
+    Warning (13410): Pin "saida_display_estado[4]" is stuck at GND
+    Warning (13410): Pin "saida_display_estado[5]" is stuck at GND
+    Warning (13410): Pin "saida_display_estado[6]" is stuck at VCC
 Info (17049): 12 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 814 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 840 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 59 output pins
-    Info (21061): Implemented 738 logic cells
+    Info (21059): Implemented 60 output pins
+    Info (21061): Implemented 763 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 392 megabytes
-    Info: Processing ended: Mon Dec  2 10:34:40 2019
-    Info: Elapsed time: 00:00:04
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 387 megabytes
+    Info: Processing ended: Mon Dec  2 14:20:56 2019
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 
 

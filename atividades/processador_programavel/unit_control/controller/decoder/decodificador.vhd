@@ -4,6 +4,7 @@ use ieee.std_logic_1164.all;
 entity decodificador is
 	generic (numero_de_bits : positive := 16);
 	port (saida_registrador_de_instrucao     : in std_logic_vector(numero_de_bits -1 downto 0);
+			estado_atual							  : in std_logic_vector(2 downto 0);
 			endereco_memoria_de_dados			  : out std_logic_vector(7 downto 0);
 			ler_memoria_de_dados					  : out std_logic;
 			escrever_memoria_de_dados			  : out std_logic;
@@ -42,8 +43,14 @@ signal enderecos : std_logic_vector(11 downto 0);
 
 ---Saltar se zero     0101 ra3,ra2,ra1,ra0 o7,o6,o5,o4,o3,o2,o1,o0
 --                    0123 4   5   6   7   8  9  10 11 12 13 14 15
+constant Saltar_Se_menor_q : std_logic_vector(3 downto 0) := "0110";
+constant Saltar_menor_q : std_logic_vector(2 downto 0) := "101";
+constant Saltando_menor_q  : std_logic_vector(3 downto 0)  := "0111";
+
 begin
-	operacao <= saida_registrador_de_instrucao(15 downto 12);
+	operacao <= Saltando_menor_q when estado_atual = Saltar_menor_q else
+				   saida_registrador_de_instrucao(15 downto 12);
+					
 	enderecos <= saida_registrador_de_instrucao(11 downto 0);
 	endereco_memoriaD <= saida_registrador_de_instrucao(7 downto 0);
 	valor_constante <= saida_registrador_de_instrucao(7 downto 0);

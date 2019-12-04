@@ -27,13 +27,15 @@ type memoria is array (0 to tamanho_memoria) of std_logic_vector(numero_de_bits-
 constant dados : memoria := ( 0  => "0000000100000011",-- carrregar valor 3 para o banco
 									   1  => "0000001000000100",-- carregar  valor 4 para o banco 
 									   2  => "0010001000010011",-- somar 4+3
-										3  => "0110000100100001",-- R[0] < R[1] entao salte 2
-									   4  => "0011010000000001",-- R[4] = const 1
+									   3  => "0011010000000010",-- R[4] = const 1
+								   	4  => "0110000100100100",-- R[0] < R[1] entao salte R[4]
 										5  => "0100001000010101",-- R[2] - R[1]
 										6  => "0101111000000001",-- R[14] == 0 entao PC=7
 										7  => "0001010100010011",-- M[19] = R[5]
 										8  => "0001001100010011",-- M[19] = R[3]
 									   others => (others=>'0')); 
+										
+										-- 0 0 0 0
 
 signal indice : integer range 0 to tamanho_memoria := 0;		
 --signal dado_atual : std_logic_vector(numero_de_bits-1 downto 0) := dados(0);								
