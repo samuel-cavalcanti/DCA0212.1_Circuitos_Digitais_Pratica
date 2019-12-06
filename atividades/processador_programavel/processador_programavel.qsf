@@ -150,10 +150,10 @@ set_global_assignment -name VHDL_FILE memory/memoria_de_instrucoes.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE memory/memoria_de_instrucoes.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE memory/memoria.vwf
 set_global_assignment -name VHDL_FILE display_7_segmentos.vhd
+set_global_assignment -name VHDL_FILE unit_control/mux_sum/mux_somador.vhd
+set_location_assignment PIN_AD12 -to saida_menor_q
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/menorq.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE unit_control/mux_sum/mux_somador.vhd
-set_location_assignment PIN_AD12 -to saida_menor_q
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

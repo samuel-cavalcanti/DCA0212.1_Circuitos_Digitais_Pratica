@@ -3,7 +3,7 @@ $comment
 		vcd file processador_programavel.msim.vcd -direction
 $end
 $date
-	Mon Dec  2 10:20:54 2019
+	Thu Dec  5 23:40:07 2019
 $end
 $version
 	ModelSim Version 10.1d
@@ -23,57 +23,62 @@ $var wire 1 ' unknown $end
 $var tri1 1 ( devclrn $end
 $var tri1 1 ) devpor $end
 $var tri1 1 * devoe $end
-$var wire 1 + resultmeq~3_combout $end
-$var wire 1 , process_0~0_combout $end
-$var wire 1 - resultmeq~5_combout $end
-$var wire 1 . resultmeq~6_combout $end
-$var wire 1 / resultmeq~7_combout $end
-$var wire 1 0 resultmeq~2_combout $end
-$var wire 1 1 resultmeq~0_combout $end
-$var wire 1 2 resultmeq~1_combout $end
-$var wire 1 3 resultmeq~4_combout $end
-$var wire 1 4 resultmeq~8_combout $end
-$var wire 1 5 resultmeq~9_combout $end
-$var wire 1 6 b~combout [15] $end
-$var wire 1 7 b~combout [14] $end
-$var wire 1 8 b~combout [13] $end
-$var wire 1 9 b~combout [12] $end
-$var wire 1 : b~combout [11] $end
-$var wire 1 ; b~combout [10] $end
-$var wire 1 < b~combout [9] $end
-$var wire 1 = b~combout [8] $end
-$var wire 1 > b~combout [7] $end
-$var wire 1 ? b~combout [6] $end
-$var wire 1 @ b~combout [5] $end
-$var wire 1 A b~combout [4] $end
-$var wire 1 B b~combout [3] $end
-$var wire 1 C b~combout [2] $end
-$var wire 1 D b~combout [1] $end
-$var wire 1 E b~combout [0] $end
-$var wire 1 F a~combout [15] $end
-$var wire 1 G a~combout [14] $end
-$var wire 1 H a~combout [13] $end
-$var wire 1 I a~combout [12] $end
-$var wire 1 J a~combout [11] $end
-$var wire 1 K a~combout [10] $end
-$var wire 1 L a~combout [9] $end
-$var wire 1 M a~combout [8] $end
-$var wire 1 N a~combout [7] $end
-$var wire 1 O a~combout [6] $end
-$var wire 1 P a~combout [5] $end
-$var wire 1 Q a~combout [4] $end
-$var wire 1 R a~combout [3] $end
-$var wire 1 S a~combout [2] $end
-$var wire 1 T a~combout [1] $end
-$var wire 1 U a~combout [0] $end
+$var wire 1 + LessThan0~1_cout $end
+$var wire 1 , LessThan0~3_cout $end
+$var wire 1 - LessThan0~5_cout $end
+$var wire 1 . LessThan0~7_cout $end
+$var wire 1 / LessThan0~9_cout $end
+$var wire 1 0 LessThan0~11_cout $end
+$var wire 1 1 LessThan0~13_cout $end
+$var wire 1 2 LessThan0~15_cout $end
+$var wire 1 3 LessThan0~17_cout $end
+$var wire 1 4 LessThan0~19_cout $end
+$var wire 1 5 LessThan0~21_cout $end
+$var wire 1 6 LessThan0~23_cout $end
+$var wire 1 7 LessThan0~25_cout $end
+$var wire 1 8 LessThan0~27_cout $end
+$var wire 1 9 LessThan0~29_cout $end
+$var wire 1 : LessThan0~30_combout $end
+$var wire 1 ; b~combout [15] $end
+$var wire 1 < b~combout [14] $end
+$var wire 1 = b~combout [13] $end
+$var wire 1 > b~combout [12] $end
+$var wire 1 ? b~combout [11] $end
+$var wire 1 @ b~combout [10] $end
+$var wire 1 A b~combout [9] $end
+$var wire 1 B b~combout [8] $end
+$var wire 1 C b~combout [7] $end
+$var wire 1 D b~combout [6] $end
+$var wire 1 E b~combout [5] $end
+$var wire 1 F b~combout [4] $end
+$var wire 1 G b~combout [3] $end
+$var wire 1 H b~combout [2] $end
+$var wire 1 I b~combout [1] $end
+$var wire 1 J b~combout [0] $end
+$var wire 1 K a~combout [15] $end
+$var wire 1 L a~combout [14] $end
+$var wire 1 M a~combout [13] $end
+$var wire 1 N a~combout [12] $end
+$var wire 1 O a~combout [11] $end
+$var wire 1 P a~combout [10] $end
+$var wire 1 Q a~combout [9] $end
+$var wire 1 R a~combout [8] $end
+$var wire 1 S a~combout [7] $end
+$var wire 1 T a~combout [6] $end
+$var wire 1 U a~combout [5] $end
+$var wire 1 V a~combout [4] $end
+$var wire 1 W a~combout [3] $end
+$var wire 1 X a~combout [2] $end
+$var wire 1 Y a~combout [1] $end
+$var wire 1 Z a~combout [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b111 !
-b1010 "
-1#
+b100 !
+b11 "
+0#
 x$
 0%
 1&
@@ -81,21 +86,31 @@ x'
 1(
 1)
 1*
-0+
+1+
 0,
 0-
-0.
-1/
-00
+1.
+0/
+10
 01
-02
+12
 03
-04
-15
+14
+05
+16
+07
+18
+09
+0:
+1J
+1I
+0H
+0G
+0F
 0E
-1D
+0D
 0C
-1B
+0B
 0A
 0@
 0?
@@ -103,14 +118,14 @@ x'
 0=
 0<
 0;
-0:
-09
-08
-07
-06
-1U
-1T
-1S
+0Z
+0Y
+1X
+0W
+0V
+0U
+0T
+0S
 0R
 0Q
 0P
@@ -119,25 +134,179 @@ x'
 0M
 0L
 0K
-0J
-0I
-0H
-0G
-0F
 $end
 #130000
-b1111 !
-b1011 !
-b1010 !
-0U
-0S
-1R
+b0 !
+b10 !
+1Y
+0X
 0$
-0/
-05
-0#
+1-
+0.
+1/
+00
+11
+02
+13
+04
+15
+06
+17
+08
+19
+1:
+1#
 #270000
+b11 !
+b111 !
+b101 !
+1Z
+0Y
+1X
+1$
+0+
+0-
+1.
+0/
+10
+01
+12
+03
+14
+05
+16
+07
+18
+09
+0:
+0#
+#370000
+b1 !
+0X
+0$
+1-
+0.
+1/
+00
+11
+02
+13
+04
+15
+06
+17
+08
+19
+1:
+1#
+#450000
+b1001 !
 b1011 !
-1U
+1Y
+1W
+1$
+1,
+1.
+0-
+0/
+10
+01
+12
+03
+14
+05
+16
+07
+18
+09
+0:
+0#
+#550000
+b1010 !
+b1000 !
+0Z
+0Y
+0$
+1+
+0,
+1-
+#640000
+b1100 !
+b100 !
+b110 !
+1Y
+1X
+0W
+1$
+0-
+0.
+1.
+1/
+0/
+00
+10
+11
+01
+02
+12
+13
+03
+04
+14
+15
+05
+06
+16
+17
+07
+08
+18
+19
+09
+1:
+0:
+1#
+0#
+#710000
+b111 !
+b11 !
+1Z
+0X
+0$
+0+
+1-
+1,
+0.
+0-
+1/
+1.
+00
+0/
+11
+10
+02
+01
+13
+12
+04
+03
+15
+14
+06
+05
+17
+16
+08
+07
+19
+18
+1:
+09
+1#
+0:
+0#
+#770000
+b1011 !
+1W
 1$
 #1000000

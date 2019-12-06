@@ -943,7 +943,7 @@ entrada_de_dados_para_memoriaD[13] => mux_3x1:mux.saida_memoria[13]
 entrada_de_dados_para_memoriaD[14] => mux_3x1:mux.saida_memoria[14]
 entrada_de_dados_para_memoriaD[15] => mux_3x1:mux.saida_memoria[15]
 saida_comparador <= comparador:comparador.saida_comparador
-saida_menor_q <= menorq:menor_q.resultmeq
+saida_menor_q <= comb.DB_MAX_OUTPUT_PORT_TYPE
 saida_de_dados_para_memoriaD[0] <= banco_de_registradores:banco.dado_de_saida_1[0]
 saida_de_dados_para_memoriaD[1] <= banco_de_registradores:banco.dado_de_saida_1[1]
 saida_de_dados_para_memoriaD[2] <= banco_de_registradores:banco.dado_de_saida_1[2]
@@ -3335,42 +3335,6 @@ saida_banco[13] => Equal0.IN18
 saida_banco[14] => Equal0.IN17
 saida_banco[15] => Equal0.IN16
 saida_comparador <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processador_programavel|bloco_operacional:bloco_operacional|menorq:menor_q
-a[0] => process_0.IN0
-a[1] => process_0.IN0
-a[2] => process_0.IN0
-a[3] => process_0.IN0
-a[4] => process_0.IN0
-a[5] => process_0.IN0
-a[6] => process_0.IN0
-a[7] => process_0.IN0
-a[8] => process_0.IN0
-a[9] => process_0.IN0
-a[10] => process_0.IN0
-a[11] => process_0.IN0
-a[12] => process_0.IN0
-a[13] => process_0.IN0
-a[14] => process_0.IN0
-a[15] => process_0.IN0
-b[0] => process_0.IN1
-b[1] => process_0.IN1
-b[2] => process_0.IN1
-b[3] => process_0.IN1
-b[4] => process_0.IN1
-b[5] => process_0.IN1
-b[6] => process_0.IN1
-b[7] => process_0.IN1
-b[8] => process_0.IN1
-b[9] => process_0.IN1
-b[10] => process_0.IN1
-b[11] => process_0.IN1
-b[12] => process_0.IN1
-b[13] => process_0.IN1
-b[14] => process_0.IN1
-b[15] => process_0.IN1
-resultmeq <= resultmeq.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processador_programavel|memoriaD:memoria_de_dados

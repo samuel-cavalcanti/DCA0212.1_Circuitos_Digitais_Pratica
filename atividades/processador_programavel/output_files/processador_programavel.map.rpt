@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador_programavel
-Mon Dec  2 14:20:56 2019
+Thu Dec  5 23:40:51 2019
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -57,35 +57,34 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  49. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|somador:somador
  50. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator
  51. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|comparador:comparador
- 52. Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|menorq:menor_q
- 53. Parameter Settings for User Entity Instance: memoriaD:memoria_de_dados
- 54. Parameter Settings for User Entity Instance: memoria_de_instrucoes:memoria_de_instrucoes
- 55. Parameter Settings for Inferred Entity Instance: memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0
- 56. altsyncram Parameter Settings by Entity Instance
- 57. Port Connectivity Checks: "display_7_segmentos:display_estado"
- 58. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador"
- 59. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador"
- 60. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador"
- 61. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador"
- 62. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador"
- 63. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador"
- 64. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador"
- 65. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador"
- 66. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador"
- 67. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador"
- 68. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador"
- 69. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador"
- 70. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador"
- 71. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador"
- 72. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador"
- 73. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador"
- 74. Port Connectivity Checks: "bloco_operacional:bloco_operacional"
- 75. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|mux_somador:mux_somador"
- 76. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
- 77. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador"
- 78. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle"
- 79. Elapsed Time Per Partition
- 80. Analysis & Synthesis Messages
+ 52. Parameter Settings for User Entity Instance: memoriaD:memoria_de_dados
+ 53. Parameter Settings for User Entity Instance: memoria_de_instrucoes:memoria_de_instrucoes
+ 54. Parameter Settings for Inferred Entity Instance: memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0
+ 55. altsyncram Parameter Settings by Entity Instance
+ 56. Port Connectivity Checks: "display_7_segmentos:display_estado"
+ 57. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:15:registrador"
+ 58. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:14:registrador"
+ 59. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:13:registrador"
+ 60. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:12:registrador"
+ 61. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:11:registrador"
+ 62. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador"
+ 63. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador"
+ 64. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador"
+ 65. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:7:registrador"
+ 66. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:6:registrador"
+ 67. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:5:registrador"
+ 68. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:4:registrador"
+ 69. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:3:registrador"
+ 70. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:2:registrador"
+ 71. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:1:registrador"
+ 72. Port Connectivity Checks: "bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador"
+ 73. Port Connectivity Checks: "bloco_operacional:bloco_operacional"
+ 74. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|mux_somador:mux_somador"
+ 75. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
+ 76. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador"
+ 77. Port Connectivity Checks: "unidade_de_controle:unidade_de_controle"
+ 78. Elapsed Time Per Partition
+ 79. Analysis & Synthesis Messages
 
 
 
@@ -111,13 +110,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec  2 14:20:56 2019           ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec  5 23:40:51 2019           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; processador_programavel                         ;
 ; Top-level Entity Name              ; processador_programavel                         ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 730                                             ;
-;     Total combinational functions  ; 473                                             ;
+; Total logic elements               ; 717                                             ;
+;     Total combinational functions  ; 460                                             ;
 ;     Dedicated logic registers      ; 325                                             ;
 ; Total registers                    ; 325                                             ;
 ; Total pins                         ; 61                                              ;
@@ -248,7 +247,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; datapath/ALU/alu.vhd                                                                   ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/alu.vhd                                                                   ;         ;
 ; datapath/ALU/subtrator.vhd                                                             ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/subtrator.vhd                                                             ;         ;
 ; datapath/ALU/somador.vhd                                                               ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/somador.vhd                                                               ;         ;
-; datapath/ALU/menorq.vhd                                                                ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/ALU/menorq.vhd                                                                ;         ;
 ; datapath/register_bank/banco_de_registradores.vhd                                      ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/register_bank/banco_de_registradores.vhd                                      ;         ;
 ; datapath/bloco_operacional.vhd                                                         ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/datapath/bloco_operacional.vhd                                                         ;         ;
 ; memory/memoriaD.vhd                                                                    ; yes             ; User VHDL File                                        ; /home/samuel/Documents/UFRN/CIRCUITOS DIGITAIS/pratica/QuartusProjects/atividades/processador_programavel/memory/memoriaD.vhd                                                                    ;         ;
@@ -274,16 +272,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 730   ;
+; Estimated Total logic elements              ; 717   ;
 ;                                             ;       ;
-; Total combinational functions               ; 473   ;
+; Total combinational functions               ; 460   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 362   ;
-;     -- 3 input functions                    ; 70    ;
-;     -- <=2 input functions                  ; 41    ;
+;     -- 4 input functions                    ; 351   ;
+;     -- 3 input functions                    ; 69    ;
+;     -- <=2 input functions                  ; 40    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 467   ;
+;     -- normal mode                          ; 454   ;
 ;     -- arithmetic mode                      ; 6     ;
 ;                                             ;       ;
 ; Total registers                             ; 325   ;
@@ -295,8 +293,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clock ;
 ; Maximum fan-out                             ; 343   ;
-; Total fan-out                               ; 2950  ;
-; Average fan-out                             ; 3.37  ;
+; Total fan-out                               ; 2900  ;
+; Average fan-out                             ; 3.36  ;
 +---------------------------------------------+-------+
 
 
@@ -305,11 +303,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                      ; Library Name ;
 +--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |processador_programavel                                     ; 473 (1)           ; 325 (0)      ; 320         ; 0            ; 0       ; 0         ; 61   ; 0            ; |processador_programavel                                                                                                                                                 ; work         ;
-;    |bloco_operacional:bloco_operacional|                     ; 350 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional                                                                                                             ; work         ;
-;       |alu:ALU|                                              ; 56 (8)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU                                                                                                     ; work         ;
+; |processador_programavel                                     ; 460 (1)           ; 325 (0)      ; 320         ; 0            ; 0       ; 0         ; 61   ; 0            ; |processador_programavel                                                                                                                                                 ; work         ;
+;    |bloco_operacional:bloco_operacional|                     ; 339 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional                                                                                                             ; work         ;
+;       |alu:ALU|                                              ; 55 (8)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU                                                                                                     ; work         ;
 ;          |somador:somador|                                   ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|somador:somador                                                                                     ; work         ;
-;          |subtrator:subtrator|                               ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator                                                                                 ; work         ;
+;          |subtrator:subtrator|                               ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator                                                                                 ; work         ;
 ;       |banco_de_registradores:banco|                         ; 224 (224)         ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco                                                                                ; work         ;
 ;          |registrador:\gerando_registradores:0:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:0:registrador                               ; work         ;
 ;          |registrador:\gerando_registradores:10:registrador| ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:10:registrador                              ; work         ;
@@ -328,8 +326,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |registrador:\gerando_registradores:8:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:8:registrador                               ; work         ;
 ;          |registrador:\gerando_registradores:9:registrador|  ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|registrador:\gerando_registradores:9:registrador                               ; work         ;
 ;       |comparador:comparador|                                ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|comparador:comparador                                                                                       ; work         ;
-;       |menorq:menor_q|                                       ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|menorq:menor_q                                                                                              ; work         ;
-;       |mux_3x1:mux|                                          ; 53 (53)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux                                                                                                 ; work         ;
+;       |mux_3x1:mux|                                          ; 55 (55)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux                                                                                                 ; work         ;
 ;    |display_7_segmentos:display_adress_1|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_adress_1                                                                                                            ; work         ;
 ;    |display_7_segmentos:display_adress_2|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_adress_2                                                                                                            ; work         ;
 ;    |display_7_segmentos:display_banco_1|                     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|display_7_segmentos:display_banco_1                                                                                                             ; work         ;
@@ -341,12 +338,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |altsyncram:memoria_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 320         ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0                                                                                              ; work         ;
 ;          |altsyncram_fio1:auto_generated|                    ; 0 (0)             ; 0 (0)        ; 320         ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoriaD:memoria_de_dados|altsyncram:memoria_rtl_0|altsyncram_fio1:auto_generated                                                               ; work         ;
 ;    |memoria_de_instrucoes:memoria_de_instrucoes|             ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|memoria_de_instrucoes:memoria_de_instrucoes                                                                                                     ; work         ;
-;    |unidade_de_controle:unidade_de_controle|                 ; 46 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle                                                                                                         ; work         ;
-;       |bloco_de_controle:bloco_de_controle|                  ; 29 (5)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle                                                                     ; work         ;
+;    |unidade_de_controle:unidade_de_controle|                 ; 44 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle                                                                                                         ; work         ;
+;       |bloco_de_controle:bloco_de_controle|                  ; 27 (5)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle                                                                     ; work         ;
 ;          |decodificador:decodificador|                       ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador                                         ; work         ;
 ;             |decodificador_banco:decodificador_banco|        ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_banco:decodificador_banco ; work         ;
 ;             |decodificador_mux:decodificador_mux|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|decodificador:decodificador|decodificador_mux:decodificador_mux     ; work         ;
-;          |maquina_de_estados:maquina_de_estados|             ; 6 (6)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados                               ; work         ;
+;          |maquina_de_estados:maquina_de_estados|             ; 4 (4)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados                               ; work         ;
 ;       |contador_de_programa:contador_de_programa|            ; 5 (1)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa                                                               ; work         ;
 ;          |registrador:registrador|                           ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|contador_de_programa:contador_de_programa|registrador:registrador                                       ; work         ;
 ;       |mux_somador:mux_somador|                              ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processador_programavel|unidade_de_controle:unidade_de_controle|mux_somador:mux_somador                                                                                 ; work         ;
@@ -385,18 +382,18 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; memoria_de_instrucoes:memoria_de_instrucoes|saida_da_memoria[3,6,7,15]                                                              ; Stuck at GND due to stuck port data_in                                                                                                   ;
 ; unidade_de_controle:unidade_de_controle|registrador_de_instrucao:registrador_de_instrucao|registrador:registrador|memoria[3,6,7,15] ; Stuck at GND due to stuck port data_in                                                                                                   ;
 ; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[7,8]                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                   ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                           ;
 ; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[28]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30]                                                                           ;
 ; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[30]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32]                                                                           ;
 ; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[32]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                           ;
-; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[36]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[34]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[40]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[42]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[38]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[20]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[22]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[24]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                           ;
+; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[26]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12]                                                                           ;
 ; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[12]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14]                                                                           ;
 ; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[14]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16]                                                                           ;
 ; memoriaD:memoria_de_dados|memoria_rtl_0_bypass[16]                                                                                  ; Merged with memoriaD:memoria_de_dados|memoria_rtl_0_bypass[18]                                                                           ;
@@ -507,11 +504,11 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|alu:ALU|Mux12                      ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|Mux17 ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|Mux22 ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux13                  ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux3                   ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux5                   ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|mux_3x1:mux|Mux10                  ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|Mux3  ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |processador_programavel|bloco_operacional:bloco_operacional|banco_de_registradores:banco|Mux8  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
 
 
@@ -874,16 +871,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: bloco_operacional:bloco_operacional|menorq:menor_q ;
-+----------------+-------+------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                   ;
-+----------------+-------+------------------------------------------------------------------------+
-; numero_de_bits ; 16    ; Signed Integer                                                         ;
-+----------------+-------+------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: memoriaD:memoria_de_dados ;
 +----------------+-------+-----------------------------------------------+
@@ -1199,7 +1186,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec  2 14:20:51 2019
+    Info: Processing started: Thu Dec  5 23:40:46 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador_programavel -c processador_programavel
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file processador_programavel.vhd
@@ -1298,13 +1285,13 @@ Info (12129): Elaborating entity "decodificador_ALU" using architecture "A:behav
 Info (12129): Elaborating entity "maquina_de_estados" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|bloco_de_controle:bloco_de_controle|maquina_de_estados:maquina_de_estados"
 Info (12129): Elaborating entity "mux_somador" using architecture "A:behavior" for hierarchy "unidade_de_controle:unidade_de_controle|mux_somador:mux_somador"
 Info (12129): Elaborating entity "bloco_operacional" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional"
+Warning (10541): VHDL Signal Declaration warning at bloco_operacional.vhd(18): used implicit default value for signal "saida_menor_q" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12129): Elaborating entity "mux_3x1" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|mux_3x1:mux"
 Info (12129): Elaborating entity "banco_de_registradores" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|banco_de_registradores:banco"
 Info (12129): Elaborating entity "alu" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|alu:ALU"
 Info (12129): Elaborating entity "somador" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|alu:ALU|somador:somador"
 Info (12129): Elaborating entity "subtrator" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|alu:ALU|subtrator:subtrator"
 Info (12129): Elaborating entity "comparador" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|comparador:comparador"
-Info (12129): Elaborating entity "menorq" using architecture "A:behavior" for hierarchy "bloco_operacional:bloco_operacional|menorq:menor_q"
 Info (12129): Elaborating entity "memoriaD" using architecture "A:behavior" for hierarchy "memoriaD:memoria_de_dados"
 Info (12129): Elaborating entity "memoria_de_instrucoes" using architecture "A:behavior" for hierarchy "memoria_de_instrucoes:memoria_de_instrucoes"
 Info (12129): Elaborating entity "display_7_segmentos" using architecture "A:behavior" for hierarchy "display_7_segmentos:display_ula"
@@ -1358,18 +1345,19 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "saida_display_estado[4]" is stuck at GND
     Warning (13410): Pin "saida_display_estado[5]" is stuck at GND
     Warning (13410): Pin "saida_display_estado[6]" is stuck at VCC
+    Warning (13410): Pin "saida_menor_q" is stuck at GND
 Info (17049): 12 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 840 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 827 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 763 logic cells
+    Info (21061): Implemented 750 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 387 megabytes
-    Info: Processing ended: Mon Dec  2 14:20:56 2019
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 384 megabytes
+    Info: Processing ended: Thu Dec  5 23:40:51 2019
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
 
 
