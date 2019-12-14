@@ -943,7 +943,7 @@ entrada_de_dados_para_memoriaD[13] => mux_3x1:mux.saida_memoria[13]
 entrada_de_dados_para_memoriaD[14] => mux_3x1:mux.saida_memoria[14]
 entrada_de_dados_para_memoriaD[15] => mux_3x1:mux.saida_memoria[15]
 saida_comparador <= comparador:comparador.saida_comparador
-saida_menor_q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida_menor_q <= menorq:menor_q.resultmeq
 saida_de_dados_para_memoriaD[0] <= banco_de_registradores:banco.dado_de_saida_1[0]
 saida_de_dados_para_memoriaD[1] <= banco_de_registradores:banco.dado_de_saida_1[1]
 saida_de_dados_para_memoriaD[2] <= banco_de_registradores:banco.dado_de_saida_1[2]
@@ -3335,6 +3335,42 @@ saida_banco[13] => Equal0.IN18
 saida_banco[14] => Equal0.IN17
 saida_banco[15] => Equal0.IN16
 saida_comparador <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|processador_programavel|bloco_operacional:bloco_operacional|menorq:menor_q
+a[0] => LessThan0.IN16
+a[1] => LessThan0.IN15
+a[2] => LessThan0.IN14
+a[3] => LessThan0.IN13
+a[4] => LessThan0.IN12
+a[5] => LessThan0.IN11
+a[6] => LessThan0.IN10
+a[7] => LessThan0.IN9
+a[8] => LessThan0.IN8
+a[9] => LessThan0.IN7
+a[10] => LessThan0.IN6
+a[11] => LessThan0.IN5
+a[12] => LessThan0.IN4
+a[13] => LessThan0.IN3
+a[14] => LessThan0.IN2
+a[15] => LessThan0.IN1
+b[0] => LessThan0.IN32
+b[1] => LessThan0.IN31
+b[2] => LessThan0.IN30
+b[3] => LessThan0.IN29
+b[4] => LessThan0.IN28
+b[5] => LessThan0.IN27
+b[6] => LessThan0.IN26
+b[7] => LessThan0.IN25
+b[8] => LessThan0.IN24
+b[9] => LessThan0.IN23
+b[10] => LessThan0.IN22
+b[11] => LessThan0.IN21
+b[12] => LessThan0.IN20
+b[13] => LessThan0.IN19
+b[14] => LessThan0.IN18
+b[15] => LessThan0.IN17
+resultmeq <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processador_programavel|memoriaD:memoria_de_dados

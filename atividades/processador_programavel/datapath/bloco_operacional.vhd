@@ -65,9 +65,9 @@ begin
 						port map (saida_banco(0),
 									 saida_comparador);
 
--- menor_q : entity work.menorq(behavior)
---				generic map( numero_de_bits)
---				port map (saida_banco(0),saida_banco(1),saida_menor_q);
+ menor_q : entity work.menorq(behavior)
+				generic map( numero_de_bits)
+				port map (saida_banco(0),saida_banco(1),saida_menor_q);
 			
  
  saida_de_dados_para_memoriaD <= saida_banco(0);
